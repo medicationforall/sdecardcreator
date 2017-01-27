@@ -1,0 +1,27 @@
+.wizard{
+
+
+}
+
+.wizardDialog{
+background:white;
+box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+}
+
+.wizard .text{
+padding:5px;
+}
+
+.wizard .content{
+min-height:150px;
+}
+
+.wizard .buttons{
+text-align:center;
+padding-top:10px;
+}
+
+.wizard .buttons a{
+padding:5px;
+background:lightgreen;
+}

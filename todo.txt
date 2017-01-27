@@ -1,0 +1,292 @@
+TODO list for SDE Card Creator version 0.3.7
+
+/*RECENT FEATURES ADDED*/
+
+0.3.7
+Added a bunch of new keywords.
+Slightly modified the regular expression for finding integer variable keywords so that Potion Stash X works correctly.
+Restored Todo History.
+Removed Helpful wizard button.
+The card image is now draggable.
+Organizedthe option selects.
+Minus now works as a modifier.
+Added an all affinity.   
+
+0.3.6
+Removed flavor text from being displayed for timeout and command card.
+Timeout card back is now a duplicate of the card front.
+Made form Abilities drag handler helper larger.
+Changed mouse pointer to indicate drag and drop on form abilities.
+Improved green region color gradient.
+Added region color to timeout cards.
+fixed loading template without region color causing display bugs.
+
+0.3.5
+Add command card option.
+Add timeout card option.
+Add Arcade card option.
+Abilities can now display name only and definition only.
+Ability form controly dynamically appear and disappear based in ability type chosen.
+Option to show keyword as definition on item / loot.
+
+0.3.4
+Paper cut fixes.
+Added templates for treasure, and wonder cards.
+Update area effect keyword descriptions.
+
+0.3.3
+Add keywords for trap types - line, area, scatter.
+fix set keywords on load for undefined values.
+fix set orientation on load for undefined values.
+add flavor text to explore cards.
+Added Description only for Ability type.
+Added Creep Spawn as an avatar option for Explore Cards.
+Save / load creep spawn count.
+
+0.3.2
+Keywords on back of card are now displayed in alphabetical order.
+Changed the html title.
+added meta description.
+added meta keywords.
+redid button icons.
+added action as a modifier.
+added move as a modifier.
+fixed poison icon cutoff.
+Add Heart Modifier.
+Add Shield Modifer.
+Update potion icons.
+
+0.3.1
+Fixed - ability sort doesn't work for loot cards.
+Keywords with X modifiers now work. Missile, Potion, Compel, Reach, Lance, Spray, Range, Magic, Sweep, Cross, Throw, Burst, Pull, Push, Wave, Heal, and Aura.
+Modifed keyword icon stlying so that they align better - fire, poison, ice, bane, hex, dangerous, augment, knockdown, slow.
+Increased default Ability definition width.
+Made STR ARM WILL DEX hopefully easier to read.
+Added css animations.
+Styled the form to look more uniform across browsers.
+
+0.3.0
+Keyword Editor dialog.
+Ability to hide keyword definitions.
+Ability to provide custom keywords with descriptions.
+Boo Booty icon for Keyword Editor.
+Validation check to make sure a name is provided for Keyword Editor.
+Set character limits for keyword Editor Dialog inputs.
+Ordered sort of keywords is now case insensitive.
+Save / load custom keywords.
+Fixed - rename broken icons.
+
+0.2.9
+Added the requested Ninja All-Star Background.
+Added an additional 21 backgrounds.
+Added a FAQ section.
+Restyled the top links.
+Drag and drop on abilities to change order.
+
+0.2.8
+Refactor how save works to only save what's needed.
+Stubbed out comment blocks.
+local avatars are now saved as part of the json file so that they can be passed along with the file.
+load image flip flag.
+save load new image controls correctly.
+In a range and dice modifier zero (0) should be replaced with a space &nbsp;.
+
+0.2.7
+Use icons provided by Goblin-king.
+Update Ice icon.
+Remove left padding for abilities for loot treasure wonder and explore cards.
+css styling for links.
+Add help for stats block.
+Add help for ability block.
+Code cleanup on Form.js.
+Fixed - stats that have an empty value are getting re-displayed on card type change.
+
+0.2.6
+Emptying the STR ARM WILL or DEX stat now removes the stat from display entirely.
+Fix Dex stat showing up on the pet card.
+Removed extra flavor text div.
+Changed Keyword Font / Size.
+Increased dice icon sizes in abilities.
+Increased ability name font size.
+Increased ability definiton font size.
+Get stats parser working with regular expression.
+fix stats to work with numbers greater than 9.
+cleaned up stat class.
+Ability cost of zero display nothing but the icon.
+Changed Ability cost min to 0.
+Built out more image controls allowing for local / remote / and default image selection.
+Fixed sizing issue when no abilities were present for loot, treasure, and wonder cards.
+
+0.2.5
+Started Explore Card Template.
+Resize affinity in item stat.
+
+0.2.4
+Moved Affinity check to use regular rexpression.
+Add Amethyst Affinity.
+
+0.2.3
+Rough Sapphire and Ruby layouts for Treasure and Loot cards.
+Rough wonder card layout.
+save /load item stats.
+save / load orientation.
+Title / sub title set max character limit.
+Keyword List set max character limit.
+
+0.2.2
+Rough emerald, and citrine loot and treasure cards.
+Increased the font size for STR WILL DEX ARM.
+
+0.2.1
+process affinity in item stat.
+add orientation selector.
+add ability div to card.
+add keyword.
+stubbed out creating wonder cards.
+wire orientation selector.
+smaller base silhoutte image for treasure and loot.
+Added special as an ability type.
+
+0.2.0
+re-worked regular expressions.
+fixed keywords - specifically Bane Aura had a trailing space..
+simplified how keyword store was initilaizing.
+Card Scale is improved.
+character load now removes previously added abilites.
+fixed - Weird bug with loading the royal warden template.
+fixed issue with firefox keeping form data persistant across page reloads.
+
+0.1.9
+Fixed keywords and Ability definiton being vulnerable to xss attack.
+Resolve Stat in Ability definition and Keyword.
+Place dice into keyword description.
+Overhauled how keywords, dice , and stats are being found.
+Set initial size for flavorText form element.
+
+0.1.8
+Updated the fonts to be more accurate using Adalon Bold and Adalon Italic.
+Fixed margin offset issue - seems to have corrected firefox as well.
+Fixed mob being picked up as a keyword before immobile.
+Fixed a formatting issue with ability description overflowing the card.
+
+0.1.7
+fixed bug - switching card types removes user selected image.
+changed card gradients for hero and monster.
+added rough card back for treause and loot.
+cleanup how dom nodes are linked in Form.js
+gui controls to delete abilities.
+css change how the form is displayed.
+Place dice into ability definition.
+
+0.1.6 and prior:
+Keywords work - initial version.
+Keyword icons in ability definition.
+Added Favicon.
+Wizard started.
+Update keyword definitions to forgotten king standard.
+Rename saphire to sapphire.
+Add jquery ui min.
+Ability Name no longer uppercased.
+Fixed save bug that was duplicating abilities.
+Fixed how stats were storing initial value.
+Save Flavor Text and monster bit.
+Change Flavor Text to a textarea.
+Place Colon between ability name and description.
+Place icons next to keyword name for back of cards - fire, ice, bane, hex, poison, Knockdown, slow, dangerous, augment.
+Place affinity into keyword definitions - Stealth Aura, Grabby Hands, Soporific Cloud, Fire Aura, Bramble Growth.
+build out card back with keyword support.
+save / load flavor text / and monster bit.
+
+
+
+
+/*BUGS*/
+load character is breaking for timeout
+Sometimes version numbers in keyword editor gets wonky
+character image can overflow ruby and saphire cards - needs css changes
+Internet Explorer keeps form data persistent across single page reloads, but not double page reloads...
+Adelon Font is broken in IE 11 probably because I'm loading it as woff2 format
+Print in general is totally broken in chrome - font is breaking and chrome doesn't render text shadow.
+
+
+
+/*GENERAL ROADMAP*/
+Drag and drop keyword modifiers
+Displayimmune icons/ keywords
+pointer for drag and drop operations
+Better image controls either offset or drag n drop
+Highlight other keywords in keyword definitions.
+Add help for ability definitions with basic examples
+get clear / reset buttonworking
+Better looking card backgrounds
+
+
+
+/*HERO CARD ROADMAP*/
+fill out template examples
+
+
+
+/*MONSTER CARD ROADMAP*/
+fill out template examples
+
+
+
+/*PET ROADMAP*/
+fill out template examples
+
+
+
+/*LOOT CARD ROADMAP*/
+fix card back
+fill out template examples
+
+
+
+/*TREASURE CARD ROADMAP*/
+fix card back
+support for monster specific treasure cards
+fill out template examples
+
+
+
+/*WONDER CARD ROADMAP*/
+fix card back
+
+
+
+/*EXPLORE CARD ROADMAP*/
+Fill out more card examoples
+
+
+
+/*TIMEOUT CARD ROADMAP*/
+wizard
+
+
+
+/*ARCADE CARD ROADMAP*/
+Build it!
+
+
+
+/*COMMAND CARD ROADMAP*/
+Card Back
+
+
+
+/*WISHLIST*/
+Comment code javadoc style
+optimize for mobile
+make the stat gui interface simpler
+add about dialog
+write usage guide
+translation support
+add download the code button
+
+
+
+/*UNDER DEVELOPMENT*/
+output save as image option - started but buggy waiting for updated plugin 
+/*totally stalled how the pugin works is by converting the div to a svg and then to a canvas and then outputs as an image*/
+

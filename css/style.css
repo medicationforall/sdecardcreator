@@ -1,0 +1,94 @@
+@font-face {
+  font-family: 'Adelon';
+  font-style: normal;
+  src: url(font/AdelonBold.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'AdelonItalic';
+  font-style: normal;
+  src: url(font/AdelonItalic.woff2) format('woff2');
+}
+
+body{
+font-family:arial;
+padding:0px;
+margin:0px;
+margin-left:5px;
+}
+
+a{
+color:blue;
+text-decoration:none;
+}
+
+a:hover{
+text-decoration:underline;
+}
+
+.pageHeader h1{
+display:inline-block;
+margin-bottom: 5px;
+margin-top:5px;
+vertical-align:middle;
+}
+
+.pageHeader a{
+background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%);
+padding:3px;
+border-radius:2px;
+display:inline-block;
+margin: 0px 5px;
+border:1px solid #000;
+/*font-weight:bold;*/
+color:#000;
+}
+
+.pageHeader a:hover{
+border:1px solid #ccc;
+}
+
+.pageFooter{
+margin-top:10px;
+font-size:11pt;
+padding:10px;
+}
+
+
+.left, .right{
+display:inline-block;
+vertical-align:top;
+}
+
+
+.hero{
+display:block;
+}
+
+span.hero{
+display:inline;
+}
+
+
+
+@media print {
+
+/*.card{
+transform: scale(0.5,0.5);
+}*/
+
+/*@page {
+margin: 0cm;
+}*/
+
+body{
+margin:0;
+}
+.pageHeader{
+display:none;
+}
+
+.pageFooter{
+display:none;
+}
+}   

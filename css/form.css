@@ -1,0 +1,107 @@
+/*FORM*/
+.form{
+display:inline-block;
+vertical-align:top;
+/*min-width:397px;*/
+}
+
+.form div{
+	padding:3px;
+}
+
+.form h2{
+margin-top:4px;
+margin-bottom:0px;
+font-size:18px;
+}
+
+.form h3{
+margin-bottom:2px;
+margin-top:5px;
+}
+
+input, select, textarea{
+border:1px solid #bbb;
+}
+
+input:focus, select:focus, textarea:focus{
+outline:solid  2px orange;
+
+}
+
+
+.fail{
+border:3px solid red;
+}
+
+.form ul{
+margin:0px;
+padding-left:30px;
+}
+
+.form .abilities .ui-state-highlight{
+height:130px;
+}
+
+.form .ability {
+border:1px solid #999;
+border-radius:5px;
+max-width:300px;
+margin-bottom:2px;
+background:white;
+cursor:move;
+}
+
+.form .ability .closeAbility{
+display:block;
+float:right;
+text-decoration:none;
+cursor:pointer;
+}
+
+
+.form .ability textarea{
+vertical-align:top;
+width:290px;
+height:30px;
+}
+
+.form .helpBlock{
+display:none;
+}
+
+.form .helpBlock .helpUnit{
+display:inline-block;
+vertical-align:top;
+}
+
+.form input.number{
+width:33px;
+}
+
+.form .cardScale .number{
+width:40px;
+}
+
+.form .displayInline{
+display:inline-block;
+}
+
+ul.ui-autocomplete{
+background:white;
+overflow-y:auto;
+overflow-x:hidden;
+max-height:210px;
+width:210px;
+}
+
+.form .flavorText textarea{
+width:308px;
+min-height:100px;
+}
+
+@media print {
+	.form{
+		display:none;
+	}
+}

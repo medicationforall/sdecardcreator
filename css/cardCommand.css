@@ -1,0 +1,31 @@
+
+.card.command{
+width:585px;
+}
+
+.card.command .item .contentBorder{
+width:544px;
+height:867px;
+background:url('image/command/border.png') no-repeat center center;
+}
+
+.card.command .item .content{
+height:752px;
+margin:46px 42px;
+background: white url('image/command/border.png') no-repeat -22px -22px;
+}
+
+
+.card.command .title{
+font-size:60px;
+padding: 17px;
+}
+
+.card.command .ability .name{
+margin-left:0px;
+font-size: 30px;
+}
+
+.card.command .ability{
+padding-top:0px;
+}

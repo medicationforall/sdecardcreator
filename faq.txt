@@ -1,0 +1,35 @@
+
+Q: Why the .json file when I save?
+A: The SDE Card Creator is not storing your card for you. When you close the browser it's gone for good. 
+It is up to you to save it for yourself in case you ever want to change it.
+
+
+Q: Couldn't it be png or pdf?
+A: Maybe if one of the javascript libraries that I'm looking at gets further along.
+
+
+Q: How do I get an image then?
+A: For now take a screenshot.
+
+
+Q: Any chance you'll be adding the necessary artwork to make an Arcade card?
+A: I'm hoping to.
+
+
+Q: Could you add in some help for creating abilities?
+A: Maybe, for now look at some actual Super Dungeon Explore cards and see the format they use. 
+
+
+Q: How do I print the card?
+A: Still in development. Chrome, Internet Explorer (Edge, and Firefox all do print the card differently. 
+For Now Firefox, and maybe Internet Explorer does the best at it with the least glitches.
+
+
+
+
+
+
+
+
+
+

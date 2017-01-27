@@ -1,0 +1,932 @@
+/*CARD*/
+
+.cardContainer{
+	display:inline-block;
+	vertical-align:top;
+	transition: width 0.3s ease-out;
+}
+
+.card{
+border-radius:10px;
+	width:659px;
+	height:900px;
+	padding-top:0.1px;
+	transition: width 0.5s, transform 0.3s ease-out;
+}
+
+.card .front, .card .back{
+	margin:20px;
+	margin-top;
+}
+
+
+.card .front, .card .back{
+height:854px;
+	background-size: 100% 854px;
+}
+
+
+.card span.keyword.fire, 
+.card span.keyword.knockdown, 
+.card span.keyword.poison, 
+.card span.keyword.ice, 
+.card span.keyword.slow, 
+.card span.keyword.dangerous, 
+.card span.keyword.augment,
+.card span.keyword.bane,
+.card span.keyword.hex,
+.card span.keyword.line,
+.card span.keyword.area,
+.card span.keyword.scatter{
+	height:30px;
+	width:30px;
+	position:relative;
+	/*bottom:15px;*/
+	display:inline-block;
+	/*padding-top:15px;*/
+	vertical-align:top;
+}
+
+.card span.keyword.fire{
+	background:url('image/status/fireT.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+	padding-top:4px;
+	vertical-align:middle;
+}
+
+.card span.keyword.knockdown{
+	background:url('image/status/knockdownT.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+}
+
+.card span.keyword.poison{
+	background:url('image/status/poisonT.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+	height:35px;
+	bottom:5px;
+}
+
+.card span.keyword.ice{
+	background:url('image/status/iceT.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+}
+
+.card span.keyword.slow{
+	background:url('image/status/slowT.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+}
+
+
+.card span.keyword.dangerous{
+	background:url('image/status/dangerousSmall.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+	vertical-align:middle;
+}
+
+
+.card span.keyword.augment{
+	background:url('image/status/augmentSmall.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+	vertical-align:middle;
+}
+
+.card span.keyword.bane{
+	background:url('image/status/baneT.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+	padding-top: 3px;
+	vertical-align:middle;
+}
+
+.card span.keyword.hex{
+	background:url('image/status/hexT.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+}
+
+.card span.keyword.line{
+	background:url('image/trap/line.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 20px 60px;
+	padding-top:30px;
+	bottom:20px;
+	width:20px;
+}
+
+.card span.keyword.area{
+	background:url('image/trap/area.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 40px;
+	width:40px;
+	height:40px
+}
+
+.card span.keyword.scatter{
+	background:url('image/trap/scatter.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 40px;
+	width:40px;
+	height:40px}
+
+/*HEADER*/
+.card .header{
+	color:white;
+	font-weight:bold;
+	text-transform: uppercase;
+	padding:30px;
+	padding-left:45px;
+	text-shadow:   -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	font-family:"Adelon";
+}
+
+.card .title{
+	font-size:30px;
+}
+
+.card .subTitle{
+	font-size:15px;
+}
+
+.card .moveactions{
+	float:right;
+	background:url('image/move_action.png') no-repeat center;
+	width:150px;
+	height:80px;
+	background-size:150px 80px;
+	margin-top:-10px;
+}
+
+.card span.actions, .card span.move{
+	display:inline-block;
+	font-size:34px;
+	min-width:62px;
+	text-align:center;
+	vertical-align:top;
+}
+
+.card span.move{
+	margin-left:5px;
+	margin-top:10px;
+	min-width:70px;
+}
+
+.card .actions{
+	margin-top:20px;
+}
+
+/*CONTENT*/
+.card .back .content
+{
+	background:#fff;
+	height:713px;
+}
+
+.card.loot .back .content, .card.treasure .back .content, .card.wonder .back .content, .card.command .back .content, .card.arcade .back .content{
+	background:transparent;
+	height:auto;
+}
+
+.card.loot .back{
+	margin:0px;
+	height:100%;
+	background: #000 url('image/back/loot.png') no-repeat center center;
+	background-size:100% 100%;
+	border-radius: 10px;
+}
+
+.card.treasure .back, .card.wonder .back{
+	margin:0px;
+	height:100%;
+	background: #000 url('image/back/treasure.png') no-repeat 0px 5px;
+	background-size:100% 100%;
+	border-radius: 10px;
+}
+
+.card.hero .back .content, .card.pet .back .content{
+	background:white url('image/border-back-gold.png') no-repeat 0px -113px;
+	background-size: 100% 854px;
+}
+
+.card.monster .back .content{
+	background:white url('image/border-back-silver.png') no-repeat 0px -113px;
+	background-size: 100% 854px;
+}
+
+/*IMAGE*/
+.card .model .background{
+	position: relative;
+	background:#c0c0c0;
+	margin:29px;
+	margin-top:7px;
+	margin-bottom:0px;
+	min-height:350px;
+}
+
+.card .character{
+cursor:move;
+}
+
+.card .model .character{
+	position: relative;
+	float:left;
+	z-index:1;
+	margin-left:40px;
+	margin-top:10px;
+	max-height:350px;
+	max-width:395px;
+}
+
+
+/*STATS*/
+.card .stats{
+	position: relative;
+	width:140px;
+	float:right;
+	margin-right:40px;
+	margin-top:20px;
+	z-index:2;
+}
+
+.card .stats .stat.STR{
+	background:url('image/stats/str-banner.png') no-repeat;
+	background-size:140px;
+}
+
+.card .stats .stat.ARM{
+	background:url('image/stats/arm-banner.png') no-repeat;
+	background-size:140px;
+}
+
+.card .stats .stat.WILL{
+	background:url('image/stats/will-banner.png') no-repeat;
+	background-size:140px;
+}
+
+.card .stats .stat.DEX{
+	background:url('image/stats/dex-banner.png') no-repeat;
+	background-size:140px;
+}
+
+.card .stats .stat{
+	height:70px;
+}
+
+.card .stats .stat div{
+	display:inline-block;
+	text-align:center;
+	color:white;
+	font-size:20px;
+	font-weight:bold;
+	text-shadow:   -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	font-family:'Adelon';
+}
+
+.card .stats .stat .offense{
+	width:30px;
+	height:30px;
+	position:relative;
+	left:10px;
+	top:5px;
+	float:left;
+	
+}
+
+.card .stats .stat .offense.melee{
+	background:url('image/dice/melee.png');
+	background-size:30px 30px;
+}
+
+.card .stats .stat .offense.magic{
+	background:url('image/dice/magic.png');
+	background-size:30px 30px;
+}
+
+.card .stats .stat .offense.missile{
+	background:url('image/dice/missile.png');
+	background-size:30px 30px;
+}
+
+
+.card .stats .stat .defense{
+	width:21px;
+	height:30px;	
+	background:url('image/dice/defense.png') no-repeat;
+	background-size: auto 30px;
+	float:right;
+	position:relative;
+	right:10px;
+	top:5px;
+}
+
+.card .stats .stat .diceList{
+	position:relative;
+	left:10px;
+	width:120px;
+}
+
+.card .stats .stat .dice{
+	width:40px;
+	height:40px;
+	font-size:34px;
+	background:url('image/dice/green-dice.png');
+	background-size:40px 40px;
+}
+
+.card .stats .stat .dice.star{
+	background:url('image/dice/white-star.png');
+	background-size:40px 40px;
+}
+
+.card .stats .stat .dice.blue{
+	background:url('image/dice/blue-dice.png');
+	background-size:40px 40px;
+}
+
+.card .stats .stat .dice.red{
+	background:url('image/dice/red-dice.png');
+	background-size:40px 40px;
+}
+
+.card .stats .stat .dice.green{
+	background:url('image/dice/green-dice.png');
+	background-size:40px 40px;
+}
+
+.card .stats .stat .dice.purple{
+	background:url('image/dice/purple-dice.png');
+	background-size:40px 40px;
+}
+
+.card .stats .stat .dice.orange{
+	background:url('image/dice/orange-dice.png');
+	background-size:40px 40px;
+}
+
+.card span.dice, 
+.card span.offense, 
+.card span.actionMod, 
+.card span.moveMod, 
+.card span.heartMod, 
+.card span.shieldMod{
+	width:40px;
+	height:37px;
+	display:inline-block;
+	text-align:center;
+	color:white;
+	font-size:27px;
+	font-weight:bold;
+	text-shadow:   -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	font-family:'Adelon';
+	padding-top:3px;
+}
+
+.card span.dice.blue{
+	background:url('image/dice/blue-dice.png') no-repeat;
+	background-size:40px 40px;
+}
+
+.card span.dice.red{
+	background:url('image/dice/red-dice.png') no-repeat;
+	background-size:40px 40px;
+}
+
+.card span.dice.green{
+	background:url('image/dice/green-dice.png') no-repeat;
+	background-size:40px 40px;
+}
+
+.card span.dice.orange{
+	background:url('image/dice/orange-dice.png') no-repeat;
+	background-size:40px 40px;
+}
+
+.card span.dice.purple{
+	background:url('image/dice/purple-dice.png') no-repeat;
+	background-size:40px 40px;
+}
+
+.card span.dice.star{
+	background:url('image/dice/white-star.png') no-repeat center top;
+	background-size:35px 35px; 
+}
+
+.card span.offense.melee{
+	background:url('image/dice/melee.png') no-repeat;
+	background-size:40px 40px;
+	padding-top: 10px;
+	height: 30px;
+}
+
+.card span.offense.magic{
+	background:url('image/dice/magic.png') no-repeat;
+	background-size:40px 40px;
+	padding-top: 10px;
+	height: 30px;
+}
+
+.card span.offense.missile{
+	background:url('image/dice/missile.png') no-repeat;
+	background-size:40px 40px;
+	padding-top: 10px;
+	height: 30px;
+}
+
+.card span.offense.range{
+	background:url('image/dice/range.png') no-repeat;
+	background-size:30px 30px;
+	height:27px;
+	width:30px;
+}
+
+.card span.actionMod{
+	background:url('image/buttons/actionButton.png') no-repeat 0px 3px;
+	background-size:40px 30px;
+}
+
+.card span.moveMod{
+	background:url('image/buttons/moveButton.png') no-repeat 0px 3px;
+	background-size:40px 30px;
+}
+
+.card span.heartMod{
+	background:url('image/heart.png') no-repeat 0px 3px;
+	background-size:40px 30px;
+	height: 30px;
+}
+
+.card span.shieldMod{
+	background:url('image/dice/defense.png') no-repeat 0px 3px;
+	background-size:30px 30px;
+	width:30px;
+	height:30px;
+}
+
+.card span.stat{
+	text-shadow:2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px  1px 0 #000, 1px  1px 0 #000;
+	color:#fff;
+	font-family:'Adelon';
+	font-size:26px;
+	font-weight:bold;
+	text-transform: uppercase;
+}
+
+
+
+
+/*KEYWORDS SECTION*/
+.card .front .keywordsSection{
+	background:#fff;
+	height:22px;
+	margin:28px;
+	margin-bottom:27px;
+}
+
+.card .affinity{
+	margin-top:-20px;
+	margin-left:-5px;
+}
+
+.card .back .keywordsSection .affinity{
+	margin:0px;
+}
+
+.card .keywordsList{
+	display: inline-block;
+	vertical-align: top;
+	font-weight:bold;
+	text-transform: uppercase;
+	font-family:'Adelon';
+	font-size: 19px;
+}
+
+/*WOUNDS POTIONS SKULLS*/
+.card .keywordsSection .subStats{
+	display: inline-block;
+	position:relative;
+	vertical-align: top;
+	font-weight:bold;
+	padding-top:3px;
+	float:right;
+	z-index:2;
+
+	font-size:34px;
+	font-weight:bold;
+	color:white;
+}
+
+.card.hero .keywordsSection .subStats{
+	background:url('image/heart-potion2.png') no-repeat 0px 10px;
+	width:120px;
+	height:80px;
+	margin-top:-40px;
+	padding-top:20px;
+}
+
+.card.monster .keywordsSection .subStats{
+	background:url('image/heart-skull.png') no-repeat;
+	width:120px;
+	height:80px;
+	margin-top:-40px;
+	background-size:105px;
+	padding-top:20px;
+}
+
+.card .keywordsSection .subStats span{
+	position:relative;
+	display:inline-block;
+	width:40px;
+	text-align:center;
+	text-shadow:   -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	font-family:'Adelon';
+}
+
+.card.monster .keywordsSection .subStats .wounds, .card.hero .keywordsSection .subStats .wounds{
+	left: 18px;
+	top: 3px;
+}
+
+.card.monster .keywordsSection .subStats .skulls, .card.hero .keywordsSection .subStats .potions{
+	top: 27px;
+	left: 5px;
+}
+
+
+/*AFFINITY*/
+/*CITRINE*/
+.card .affinity.citrine{
+	display:inline-block;
+	background: url('image/affinity/citrine.png') no-repeat;
+	width:42px;
+	height:60px;
+}
+
+
+.card .back .affinity.citrine, .card .item .affinity.citrine{
+	width:25px;
+	height:35px;
+	background-size:auto 35px;
+}
+
+.card .affinity.citrine.emerald{
+	display:inline-block;
+	background: url('image/affinity/citrine-emerald.png') no-repeat;
+	width:42px;
+	height:60px;
+}
+
+.card .affinity.citrine.ruby{
+	display:inline-block;
+	background: url('image/affinity/citrine-ruby.png') no-repeat;
+	width:42px;
+	height:60px;
+}
+
+.card .affinity.citrine.sapphire{
+	display:inline-block;
+	background: url('image/affinity/citrine-sapphire.png') no-repeat;
+	width:42px;
+	height:60px;
+}
+
+.card .affinity.citrine.amethyst{
+	display:inline-block;
+	background: url('image/affinity/citrine-amethyst.png') no-repeat;
+	width:42px;
+	height:60px;
+}
+
+.card .affinity.all{
+	display:inline-block;
+	background: url('image/affinity/rainbow.png') no-repeat;
+	width:42px;
+	height:60px;
+}
+
+/*EMERALD*/
+.card .affinity.emerald{
+	display:inline-block;
+	background: url('image/affinity/emerald.png') no-repeat;
+	width:42px;
+	height:60px;
+}
+
+.card .back .affinity.emerald, .card .item .affinity.emerald{
+	width:25px;
+	height:35px;
+	background-size:auto 35px;
+}
+
+.card .affinity.emerald.ruby{
+	display:inline-block;
+	background: url('image/affinity/emerald-ruby.png') no-repeat;
+	width:42px;
+	height:60px;
+}
+
+.card .affinity.emerald.sapphire{
+	display:inline-block;
+	background: url('image/affinity/emerald-sapphire.png') no-repeat;
+	width:42px;
+	height:60px;
+}
+
+.card .affinity.emerald.amethyst{
+	display:inline-block;
+	background: url('image/affinity/emerald-amethyst.png') no-repeat;
+	width:42px;
+	height:60px;
+}
+
+
+/*RUBY*/
+.card .affinity.ruby{
+	display:inline-block;
+	background: url('image/affinity/ruby.png') no-repeat;
+	width:42px;
+	height:60px;
+}
+
+.card .back .affinity.ruby, .card .item .affinity.ruby{
+	width:25px;
+	height:35px;
+	background-size:auto 35px;
+}
+
+.card .affinity.ruby.sapphire{
+	display:inline-block;
+	background: url('image/affinity/ruby-sapphire.png') no-repeat;
+	width:42px;
+	height:60px;
+}
+
+.card .affinity.ruby.amethyst{
+	display:inline-block;
+	background: url('image/affinity/ruby-amethyst.png') no-repeat;
+	width:42px;
+	height:60px;
+}
+
+
+/*SAPPHIRE*/
+.card .affinity.sapphire{
+	display:inline-block;
+	background: url('image/affinity/sapphire.png') no-repeat;
+	width:42px;
+	height:60px;
+}
+
+
+.card .back .affinity.sapphire, .card .item .affinity.sapphire{
+	width:25px;
+	height:35px;
+	background-size:auto 35px;
+}
+
+.card .affinity.sapphire.amethyst{
+	display:inline-block;
+	background: url('image/affinity/amethyst-sapphire.png') no-repeat;
+	width:42px;
+	height:60px;
+}
+
+/*Amethyst*/
+.card .affinity.amethyst{
+	display:inline-block;
+	background: url('image/affinity/amethyst.png') no-repeat;
+	width:42px;
+	height:60px;
+}
+
+.card .back .affinity.amethyst, .card .item .affinity.amethyst{
+	width:25px;
+	height:35px;
+	background-size:auto 35px;
+}
+
+
+/*CARD COLORS*/
+.card.hero, .card.loot{
+	background:blue;
+	background: radial-gradient(ellipse at center,  rgb(148,198,236) 23%,rgb(15,78,129) 79%,rgb(0,0,0) 100%);
+}
+
+.card.hero .front, .card.pet .front{
+	background-image:url('image/border-gold.png');
+} 
+
+.card.hero .back, .card.pet .back{
+	background-image:url('image/border-back-gold.png');
+} 
+
+.card.monster.red, .card.treasure, .card.wonder{
+	background:red;
+	background: radial-gradient(ellipse at center,  rgb(212,49,38) 23%,rgb(84,16,10) 79%,rgb(0,0,0) 100%);
+}
+
+.card.monster.green{
+	/*background: radial-gradient(ellipse at center, rgba(180,221,180,1) 0%,rgba(131,199,131,1) 17%,rgba(82,177,82,1) 33%,rgba(0,138,0,1) 67%,rgba(0,87,0,1) 83%,rgba(0,36,0,1) 100%);*/
+	background: radial-gradient(ellipse at center, #5bc6a4 1%,#429078 42%,#255246 93%);
+}
+
+.card.monster.purple , .card.arcade, .card.command{
+	background: radial-gradient(ellipse at center, rgba(200,94,199,1) 3%,rgba(99,43,98,1) 100%);
+}
+
+.card.monster.yellow{
+	background: radial-gradient(ellipse at center, rgba(241,231,103,1) 0%,rgba(254,182,69,1) 100%);
+}
+
+
+.card.monster .front{
+	background-image:url('image/border-silver.png');
+}  
+
+.card.monster .back{
+	background-image:url('image/border-back-silver.png');
+} 
+
+.card.pet{
+	background:orange;
+	background: radial-gradient(ellipse at center,  rgb(221,131,63) 23%,rgb(95,49,11) 79%,rgb(0,0,0) 100%);
+	background: radial-gradient(ellipse at center, rgba(255,102,0,1) 14%,rgba(153,17,0,1) 76%);
+}
+
+
+/*ABILITIES*/
+.card .abilities{
+	height:280px;
+	background-size: 100% 854px;
+}
+
+.card.hero .abilities, .card.pet .abilities{
+	background:white url('image/border-gold.png') no-repeat 0px -550px;
+	background-size: 100% 854px;
+}  
+
+.card.monster .abilities{
+	background:white url('image/border-silver.png') no-repeat 0px -550px;
+	background-size: 100% 854px;
+} 
+
+.card .ability{
+	padding-top:11px;
+	padding-left:40px;
+	max-width: 550px;
+} 
+
+.card .ability .cost{
+	color:white;
+	font-weight:bold;
+	text-shadow:   -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	font-family:'Adelon';
+	font-size:32px;
+	text-align:center;
+
+	display:inline-block;
+	vartical-align:top;
+	width:45px;
+	height:37px;
+}
+
+.card .ability .cost.attack{
+	background: url("image/buttons/attackButton.png") no-repeat;
+	background-size:45px 37px;
+}
+
+.card .ability .cost.support{
+	background: url("image/buttons/abilityButton.png") no-repeat;
+	background-size:45px 37px;
+}
+
+.card .ability .cost.emergencyPotion{
+	background: url("image/potion/emergencyPotion3.png") no-repeat;
+	background-size:auto 47px;
+	height:35px;
+	width: 38px;
+	padding-top:10px;
+}
+
+.card .ability .cost.special, .card .ability .cost.definitionOnly, .card .ability .cost.nameOnly{
+	display:none;
+}
+
+.card .ability .cost.supportPotion{
+	background: url("image/potion/supportPotion2.png") no-repeat;
+	background-size:auto 47px;
+	height:35px;
+	width: 38px;
+	padding-top:10px;
+}
+
+.card .ability .cost.offensePotion{
+	background: url("image/potion/offensivePotion3.png") no-repeat;
+	background-size:auto 47px;
+	height:35px;
+	width: 38px;
+	padding-top:10px;
+}
+
+.card .ability .name{
+	margin-left:10px;
+	/*text-transform: uppercase;*/
+}
+
+.card .ability .name, .card .ability .colon{
+	font-weight:bold;
+	font-size:20px;
+}
+
+.card .ability .definition{
+	margin-left:6px;
+	font-size: 20px;
+}
+
+
+/*MONSTER BIT*/
+.card .bit{
+	float:right;
+	margin-top:170px;
+	margin-right:-115px;
+	width:100px;
+	height:100px;
+}
+
+.card .bit.eight{
+	background:url('image/modes/8.png') no-repeat 3px;
+	background-size:90px;
+}
+
+.card .bit.sixteen{
+	background:url('image/modes/16.png') no-repeat 3px;
+	background-size:90px;
+}
+
+.card .bit.special{
+	background:url('image/modes/special.png') no-repeat;
+	background-size:100px;
+}
+
+.card .bit.start{
+	background:url('image/modes/start.png') no-repeat 3px;
+	background-size:90px;
+}
+
+.card .bit.super{
+	background:url('image/modes/super.png') no-repeat;
+	background-size:100px 100px;
+}
+
+.card .back .keywords{
+	margin-left:50px;
+	margin-right:50px;
+	padding-top:20px;
+	font-size:22px;
+}
+
+.card .back .keyword{
+	padding-bottom:25px;
+}
+
+.card .back .keyword span.keyword{
+	padding:0px;
+	background-position:0px 0px;
+	background-size: auto 30px;
+	position:static;
+}
+
+.card .back .keyword .name{
+	font-weight:bold;
+}
+
+.card .back .keyword .description{
+	margin-left:10px;
+}
+
+.card .back .flavor{
+	margin-left:30px;
+	margin-right:30px;
+	padding-top:8px;
+}
+
+.card .flavorText{
+	display:block;
+	padding:10px 20px;
+	text-align:center;
+	font-size:21px;
+	font-family:'AdelonItalic';
+}
+
+.card .flavorBorder{
+	height:10px;
+	background:url('image/flavor.png') repeat-x 0px 0px;
+	background-size:10px;
+	margin-left:20px;
+	margin-right:20px;
+}

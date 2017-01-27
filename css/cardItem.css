@@ -1,0 +1,211 @@
+
+.card .item .contentBorder{
+text-align:center;
+}
+
+.card .item .content{
+padding:10px;
+}
+
+.card .item .character{
+max-height:350px;
+max-width:395px;
+}
+
+.card .item .title{
+text-transform: uppercase;
+font-family:"Adelon";
+}
+
+.card .item .ability{
+padding-left:0px;
+}
+
+
+/*.card .item .sapphire, .card .item .ruby{
+height:400px;
+}*/
+
+.card .item .sapphire, .card .item .ruby{
+display:inline-block;
+}
+
+.card .item .emerald, .card .item .citrine{
+height:854px;
+display:inline-block;
+vertical-align:top;
+}
+
+
+.card .item .sapphire .content, .card .item .ruby .content{
+margin: 26px 41px;
+height: 466px;
+}
+
+.card .item .contentBorder.sapphire, .card .item .contentBorder.ruby{
+height:533px;
+}
+
+.card .item .contentBorder.emerald, .card .item .contentBorder.citrine{
+width:394px;
+}
+
+
+.card .item .emerald .content, .card .item .citrine .content{
+margin:23px;
+height:780px;
+}
+
+.card .item .placeHolder.sapphire, .card .item .placeHolder.ruby{
+height:322px;
+min-width: 622px;
+}
+
+.card .item .placeHolder.emerald, .card .item .placeHolder.citrine{
+width:225px;
+}
+
+
+
+/*RUBY*/
+.card .item .placeHolder.ruby{
+background:url('image/itemSlot/loot/ruby.png') no-repeat center center;
+}
+
+.card.treasure .item .placeHolder.ruby{
+background:url('image/itemSlot/treasure/ruby.png') no-repeat center center;
+}
+
+.card.loot .item .contentBorder.ruby{
+width: 620px;
+background:url('image/itemSlot/loot/ruby-border.png') no-repeat center center;
+}
+
+.card.loot .item .ruby .content{
+background:#fff url('image/itemSlot/loot/ruby-border.png') no-repeat -24px -28px;
+}
+
+.card.treasure .item .contentBorder.ruby{
+width: 620px;
+background:url('image/itemSlot/treasure/ruby-border.png') no-repeat center center;
+}
+
+.card.treasure .item .ruby .content{
+background:#fff url('image/itemSlot/treasure/ruby-border.png') no-repeat -24px -28px;
+}
+
+
+/*SAPPHIRE*/
+.card .item .placeHolder.sapphire{
+background:url('image/itemSlot/loot/sapphire.png') no-repeat center center;
+}
+
+.card.treasure .item .placeHolder.sapphire{
+background:url('image/itemSlot/treasure/sapphire.png') no-repeat center center;
+}
+
+.card.loot .item .contentBorder.sapphire{
+width: 620px;
+background:url('image/itemSlot/loot/sapphire-border.png') no-repeat center center;
+}
+
+.card.loot .item .sapphire .content{
+background:#fff url('image/itemSlot/loot/sapphire-border.png') no-repeat -24px -28px;
+}
+
+.card.treasure .item .contentBorder.sapphire{
+width: 620px;
+background:url('image/itemSlot/treasure/sapphire-border.png') no-repeat center center;
+}
+
+.card.treasure .item .sapphire .content{
+background:#fff url('image/itemSlot/treasure/sapphire-border.png') no-repeat -24px -28px;
+}
+
+
+/*CITRINE*/
+.card.loot .item .citrine .content{
+background:#fff url('image/itemSlot/loot/citrine-border.png') no-repeat -23px -19px;
+}
+
+.card.treasure .item .citrine .content{
+background:#fff url('image/itemSlot/treasure/citrine-border.png') no-repeat -23px -19px;
+}
+
+.card.loot .item .placeHolder.citrine{
+background:url('image/itemSlot/loot/citrine.png') no-repeat center center;
+}
+
+.card.loot .item .contentBorder.citrine{
+background:url('image/itemSlot/loot/citrine-border.png') no-repeat center center;
+}
+
+.card.treasure .item .placeHolder.citrine{
+background:url('image/itemSlot/treasure/citrine.png') no-repeat center center;
+}
+
+.card.treasure .item .contentBorder.citrine{
+background:url('image/itemSlot/treasure/citrine-border.png') no-repeat center center;
+}
+
+
+/*EMERALD*/
+.card.loot .item .emerald .content{
+background:#fff url('image/itemSlot/loot/emerald-border.png') no-repeat -23px -19px;
+}
+
+.card.treasure .item .emerald .content{
+background:#fff url('image/itemSlot/treasure/emerald-border.png') no-repeat -23px -19px;
+}
+
+.card.loot .item .placeHolder.emerald{
+background:url('image/itemSlot/loot/emerald.png') no-repeat center center;
+}
+
+.card.loot .item .contentBorder.emerald{
+background:url('image/itemSlot/loot/emerald-border.png') no-repeat center center;
+}
+
+.card.treasure .item .placeHolder.emerald{
+background:url('image/itemSlot/treasure/emerald.png') no-repeat center center;
+}
+
+.card.treasure .item .contentBorder.emerald{
+background:url('image/itemSlot/treasure/emerald-border.png') no-repeat center center;
+}
+
+/*Wonder*/
+.card.wonder .item .contentBorder{
+width: 620px;
+height: 842px;
+background:url('image/itemSlot/wonder/border.png') no-repeat center center;
+} 
+
+.card.wonder .item .content{
+height: 774px;
+margin: 26px 41px;
+background:#fff url('image/itemSlot/wonder/border.png') no-repeat -25px -27px;
+}
+
+
+.card .item .abilities{
+height:auto;
+}
+
+
+.card .item .keywordsList{
+display:none;
+}
+
+.card .item .keywords{
+margin:8px;
+}
+
+.card .item .keywords span.keyword{
+vertical-align:middle;
+}
+
+.card .item .keywords .name{
+font-weight:bold;
+}
+

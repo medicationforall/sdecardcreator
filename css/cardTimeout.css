@@ -1,0 +1,71 @@
+
+.card.timeout{
+width:585px;
+
+}
+
+.card.timeout .item .contentBorder, .card.timeout .back .contentBorder{
+width:544px;
+height:867px;
+background:url('image/command/border.png') no-repeat center center;
+}
+
+.card.timeout .back .contentBorder{
+display:inline-block;
+}
+
+
+
+.card.timeout .item .content, .card.timeout .back .content{
+height:752px;
+margin:46px 42px;
+background: white url('image/command/border.png') no-repeat -22px -22px;
+padding: 10px;
+}
+
+.card.timeout .back .contentBorder {
+    text-align: center;
+}
+
+.card.timeout .back .title {
+    text-transform: uppercase;
+    font-family: "Adelon";
+	font-size: 30px;
+}
+
+.card.timeout .back .abilities {
+    height: auto;
+}
+
+.card.timeout .back .ability {
+    padding-left: 0px;
+}
+
+.card.timeout .back .character {
+    max-height: 350px;
+    max-width: 395px;
+}
+
+
+.card.timeout.red{
+	background:red;
+	background: radial-gradient(ellipse at center,  rgb(212,49,38) 23%,rgb(84,16,10) 79%,rgb(0,0,0) 100%);
+}
+
+.card.timeout.green{
+	/*background: radial-gradient(ellipse at center, rgba(180,221,180,1) 0%,rgba(131,199,131,1) 17%,rgba(82,177,82,1) 33%,rgba(0,138,0,1) 67%,rgba(0,87,0,1) 83%,rgba(0,36,0,1) 100%);*/
+	background: radial-gradient(ellipse at center, #5bc6a4 1%,#429078 42%,#255246 93%);
+}
+
+.card.timeout.purple{
+	background: radial-gradient(ellipse at center, rgba(200,94,199,1) 3%,rgba(99,43,98,1) 100%);
+}
+
+.card.timeout.yellow{
+	background: radial-gradient(ellipse at center, rgba(241,231,103,1) 0%,rgba(254,182,69,1) 100%);
+}
+
+
+
+
+

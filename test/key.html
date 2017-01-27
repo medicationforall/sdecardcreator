@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<link href="../script/lib/jquery-ui.min.css" rel="stylesheet" />
+	<link href="../css/style.css" rel="stylesheet" />
+	<link href="../css/form.css" rel="stylesheet" />
+	<link href="../css/card.css" rel="stylesheet" />
+	<link href="../css/cardModel.css" rel="stylesheet" />
+	<link href="../css/keywordSettings.css" rel="stylesheet" />
+
+	<script src="../script/lib/jquery-1.11.2.min.js"></script>
+	<script src="../script/lib/jquery-ui.min.js"></script>
+
+	<script src="../script/KeywordStore.js"></script>
+	<script src="../script/KeywordSettings.js"></script>
+	<script src="../script/Stat.js"></script>
+	<script src="../script/Ability.js"></script>
+	<script src="../script/Form.js"></script>
+	<script src="../script/Wizard.js"></script>
+	<script src="../script/sdeCreate.js"></script>
+	<script src="script/key.js"></script>
+</head>
+
+<body>
+<div class="page">
+	<div class="pageHeader">
+		<h1>SDE Card Creator keytest</h1>
+	</div>
+
+	<div class="form">
+	<form>
+
+		<div class="hero monster pet treasure wonder loot keyword">
+			<h2>Keyword <a href="" class="keywordSettings" title="keyword Editor"></a></h2>
+
+			<div class="">
+				Keywords
+				<input name="keywordsList" required maxlength="80" />
+			</div>
+			<a href="" class="addTest">add test</a>
+		</div>
+
+	</form>
+	</div>
+
+	<div class="cardContainer">
+		<div class="card hero">
+			<div class="front">
+				<div class="keywords" style="position:relative;top:497px">
+					<span class="keywordsList"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="cardContainer">
+		<div class="card hero">
+			<div class="back">
+				<div class="header">
+					<div class="hero monster pet"><span class="title">title</span></div>
+					<div class="hero monster pet"><span class="subTitle">subTitle</span></div>
+				</div>
+
+				<div class="content">
+					<div class="monster pet hero keywords">
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<div class="keyword settings" title="Keyword Editor">
+	<div class="keywordList">
+		<ul></ul>
+	</div>
+	<div class="keywordForm">
+		<div>Name <input name="kName" maxlength="50" /></div>
+		<div>Display on Card Back<input type="checkbox" name="kDisplayBack" checked="checked" /></div>
+		<div>Version <select name="eVersion"><option class="iniatial">1.0</option></select> <a href="" class="addErrata" title="Add New Errata Version">+</a></div>
+		<div>Description<br /><textarea name="kDescription" maxlength="1000"></textarea></div>
+		<div class="buttons"><a href="" class="kSave">Update</a></div>
+	</div>
+</div>
+
+
+</body>
+</html>

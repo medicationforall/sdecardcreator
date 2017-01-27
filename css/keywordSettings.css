@@ -1,0 +1,69 @@
+a.keywordSettings{
+display:inline-block;
+vertical-align:middle;
+width:35px;
+height:25px;
+background: url('image/boo-booty.png') no-repeat;
+background-size: 35px 25px;
+border:1px solid transparent;
+border-radius:2px;
+}
+
+a.keywordSettings:hover{
+border:1px solid #aaa;
+}
+
+
+
+.keyword.settings{
+display:none;
+}
+
+.keywordSettingsDialog {
+    background: white;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+}
+
+.keywordSettingsDialog .keywordList, .keywordSettingsDialog .keywordForm {
+display:inline-block;
+vertical-align:top;
+}
+
+.keywordSettingsDialog .keywordList{
+width:160px;
+border-right:1px solid #000;
+height:350px;
+overflow:auto;
+}
+
+.keywordSettingsDialog .keywordList ul{
+margin:0px;
+list-style:none;
+padding-left:0px;
+}
+
+.keywordSettingsDialog .keywordList ul a{
+display:block;
+}
+
+.keywordSettingsDialog .keywordList ul a.selected{
+background:#c0c0c0;
+}
+
+.keywordSettingsDialog .keywordForm textarea{
+width:292px;
+height:160px;
+}
+
+.keywordSettingsDialog .buttons{
+text-align:center;
+padding-top:20px;
+
+}
+
+.keywordSettingsDialog .kSave{
+background:lightgreen;
+padding:5px;
+}
+
+
