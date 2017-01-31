@@ -6,18 +6,22 @@
 	<meta charset="UTF-8">
 	<title>SDE Card Creator</title>
 	<meta name="description" content="Create Custom Cards for Super Dungeon Explore!">
-	<meta name="keywords" content="SDE Card Creator, 
-Super Dungeon Explore Card Creator, 
-SDE Card, Super Dungeon Explore Card, 
-SDE Custom Cards, 
-Super Dungeon Explore Custom Cards, 
-SDE Card Template, 
+	<meta name="keywords" content="SDE Card Creator,
+Super Dungeon Explore Card Creator,
+SDE Card, Super Dungeon Explore Card,
+SDE Custom Cards,
+Super Dungeon Explore Custom Cards,
+SDE Card Template,
 Super Dungeon Explore Card Template">
 	<meta name="author" content="James Adams">
 
 
 	<!--<link href='https://fonts.googleapis.com/css?family=PT+Serif:400italic,700&subset=latin-ext' rel='stylesheet' type='text/css'>-->
-	<link href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet" />
+  <!--<link href="script/lib/jquery-ui.min.css" rel="stylesheet" />-->
+  <link href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet" />
+	<link href="mjs/css/hamburgerMenu.css" rel="stylesheet" />
+	<link href="mjs/css/dialog.css" rel="stylesheet" />
+
 	<link href="css/style.css" rel="stylesheet" />
 	<link href="css/form.css" rel="stylesheet" />
 	<link href="css/card.css" rel="stylesheet" />
@@ -30,48 +34,80 @@ Super Dungeon Explore Card Template">
 	<link href="css/wizard.css" rel="stylesheet" />
 	<link href="css/keywordSettings.css" rel="stylesheet" />
 
-	<!-- These dependencies are not to be committed to the git repository-> 
-	<!--<script src="script/lib/jquery-1.12.3.min.js"></script>
+	<!--<script src="script/lib/jquery-3.1.1.min.js"></script>
 	<script src="script/lib/jquery-ui.min.js"></script>
 	<script src="script/lib/Blob.js"></script>
 	<script src="script/lib/canvas-toBlob.js"></script>
 	<script src="script/lib/FileSaver.min.js"></script>
 	<script src="script/lib/html2canvas.js"></script>-->
-	<script type="text/javascript" src="//code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  	<script type="text/javascript" src="//code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js" integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2014-11-29/FileSaver.min.js"></script>
 
-	<script src="script/KeywordStore.js"></script>
-	<script src="script/KeywordSettings.js"></script>
+
+	<script src="mjs/script/InfoDialog.js"></script>
+	<script src="mjs/script/hamburgerMenu.js"></script>
+	<script src="mjs/script/Core.js"></script>
+	<script src="mjs/script/CoreTemplate.js"></script>
+
+	<script src="script/keyword/KeywordStore.js"></script>
+	<script src="script/keyword/KeywordSettings.js"></script>
 	<script src="script/Stat.js"></script>
 	<script src="script/Ability.js"></script>
 	<script src="script/sdeCreate.js"></script>
-	<script src="script/Wizard.js"></script>
-	<script src="script/sdeCreatePage.js"></script>
+	<script src="script/form/Form.js"></script>
+	<script src="script/form/CardControl.js"></script>
+	<script src="script/form/HeaderControl.js"></script>
+	<script src="script/form/ImageControl.js"></script>
+	<script src="script/form/ItemStatsControl.js"></script>
+	<script src="script/form/StatsControl.js"></script>
+	<script src="script/form/KeywordControl.js"></script>
+	<script src="script/form/AbilityControl.js"></script>
+	<script src="script/form/BitControl.js"></script>
+	<script src="script/form/FlavorTextControl.js"></script>
+	<script src="script/card/Card.js"></script>
+	<script src="script/wizard/Wizard.js"></script>
+	<script src="script/main.js"></script>
 
 	<style>
 	</style>
 </head>
 
 <body>
+
+
+
 <div class="page">
 
-	<div class="wizard" title="Wizard">
-		<div class="text">I'm a Helpful wizard! <br />Click the next button.</div>
-		<div class="content"></div>
-		<div class="note"></div>
-		<div class="buttons"><a href="" class="previous">Previous</a> <a href="" class="next">Next</a></div>
-	</div>
-
-	<div class="pageHeader">
+	<div class="pageHeader header">
 		<h1>SDE Card Creator</h1>
-		<a href="templates" target="_blank">Templates</a>
-		<a href="faq.txt" target="_blank" title="Frequently Asked Questions">F.A.Q.</a>
+
 		<!--<a href="" class="openWizard">Helpful Wizard!</a>-->
 		<a href="" class="saveAsImage">Save</a>
+		
 		<a href="" class="save" title="Save JSON Card File">Save</a>
 		Load - <input type="file" class="importFile" title="Load JSON Card File"  />
 		<a href="" class="resetForm" title="reset Form">Reset</a>
+		
+		<a href="" class="addCard">Add Card</a>
+
+		<a class="hamburger" href="">Menu</a>
+	</div>
+
+	<div class="hamburger menu">
+		<a href="http://medicationforall.com">Medication For All</a>
+		<a href="https://github.com/medicationforall" >Github</a>
+		<hr />
+
+		<a href="templates" target="_blank">Templates</a>
+
+		<hr />
+
+		<a href="html/help.html" class="infoButton">Help</a>
+		<a href="html/faq.html" class="infoButton" title="Frequently Asked Questions">F.A.Q.</a>
+		<a href="html/todo.html" class="infoButton">Todo</a>
+		<a href="html/changes.html" class="infoButton">Changes</a>
+		<a href="html/about.html" class="infoButton" title="">About</a>
 	</div>
 
 
@@ -84,413 +120,9 @@ Super Dungeon Explore Card Template">
 		</ol>
 	</div>
 
-
-	<div class="form" >
-	<form autocomplete="off">
-		<div class="cardOverall">
-
-			<b>Card Type</b>
-			<select name="cardType">
-				<option value="hero">Hero</option>
-				<option value="monster">Monster</option>
-				<option value="pet">Pet</option>
-				<option disabled>──────────</option>
-				<option value="loot">Loot</option>
-				<option value="treasure">Treasure</option>
-				<option value="wonder">Wonder</option>
-				<option disabled>──────────</option>
-				<option value="explore">Explore</option>
-				<option value="timeout">Timeout</option>
-				<option disabled>─Experimental─</option>
-				<option value="arcade">Arcade</option>
-				<option value="command">Command</option>
-			</select>
-
-			<div class="cardScale">
-				Card Scale <input class="number" name="cardScale" value="1.0" type="number" step="0.1" min="0.1" />
-			</div>
-
-			<div class="monster timeout">
-				Region Color
-				<select name="region">
-					<option value="red">Red</option>
-					<option value="green">Green</option>
-					<option value="purple">Purple</option>
-					<option value="yellow">Yellow</option>
-				</select>
-			</div>
-
-			<div class="treasure loot">
-				Orientation
-				<select name="orientation">
-					<option value="ruby">Top</option>
-					<option value="emerald">Right</option>
-					<option value="sapphire">Bottom</option>
-					<option value="citrine">Left</option>
-				</select>
-			</div>
-		</div>
-
-
-		<div class="header">
-			<h2>Header</h2>
-			<div class="hero monster pet treasure wonder loot explore command arcade timeout">*Title <input name="title" required maxlength="30" /></div>
-			<div class="hero monster pet arcade">Sub-Title <input name="subTitle" maxlength="40" /></div>
-
-			<div class="hero monster pet">
-				Move <input class="number" type="number" name="move" value="6" min="-9" max="99" />
-				Actions <input class="number" type="number" name="actions" value="3" min="-9" max="99"  />
-			</div>
-		</div>
-
-
-		<div class="hero monster pet treasure wonder loot explore character command timeout">
-			<h2>Image</h2>
-			<div class="hero monster pet">Background
-				<select name="background">
-					<option value="pic1685577_md.jpg">Fae Wood</option>
-					<option value="character-background.png">Nether</option>
-					<option value="forgotten-king.png">Forgotten King</option>
-					<option value="roxors-cavern.png">Roxor's Cavern</option>
-					<option value="nas.png">Ninja All-Stars</option>
-
-					<option disabled>──────────</option>
-
-					<option value="arctic.jpg">Arctic</option>
-					<option value="castle_room.jpg">Castle Room</option>
-					<option value="city_street.jpg">City Street</option>
-					<option value="desert.jpg">Desert</option>
-					<option value="dragons_hoard.jpg">Dragon Hoard</option>
-					<option value="dungeon.jpg">Dungeon</option>
-					<option value="fantasy_tower.jpg">Fantasy Tower</option>
-					<option value="forrest_stream.jpg">Forrest Stream</option>
-					<option value="icy_throne.jpg">Icy Throne</option>
-					<option value="kings_throne.jpg">King's Throne</option>
-
-					<option value="kitchen.jpg">Kitchen</option>
-					<option value="lonely_tower.jpg">Lonely Tower</option>
-					<option value="market.jpg">Market</option>
-					<option value="meadow.jpg">Meadow</option>
-					<option value="minotaurs_throne_room.jpg">Minotaur's Throne Room</option>
-					<option value="f8ebe365c206a57065d4970fb91b5d78.jpg">Pirates Cove</option>
-					<option value="prison_tower.jpg">Prison Tower</option>
-					<option value="queens_throne_room.jpg">Queen's Throne Room</option>
-					<option value="ruins.jpg">Ruins</option>
-					<option value="swamp.jpg">Swamp</option>
-
-					<option value="temple.jpg">Temple</option>
-					<option value="tundra.jpg">Tundra</option>
-					<option value="valley.jpg">Valley</option>
-				</select>
-
-				<input title="flip" type="checkbox" name="backgroundFlip" />
-			</div>
-
-			<div>
-				Avatar 
-				<div class="hero monster pet loot treasure wonder explore command timeout"><input type="radio" name="imageSource" value="default" checked="checked">Default</div>
-				<div class="explore"><input type="radio" name="imageSource" value="creep" />Creep Spawn <input name="creepSpawn" class="number" type="number" min="0" max="99" value="3" /></div>
-				<div><input type="radio" name="imageSource" value="remote">Remote <input name="rCharacter" placeholder="http://" /></div>
-				<div><input type="radio" name="imageSource" value="local">Local <input type="file" name="character" /></div>
-			</div>
-		</div>
-
-		<div class="loot treasure explore stats">
-			<h2>Stats <a href="" class="helpButton" title="Stats Help">?</a></h2>
-			<div class="helpBlock">
-				<div class="helpUnit">
-				<h3>Dice Types</h3>
-				<ul>
-					<li>Star: 1st</li>
-					<li>Blue: 1b</li>
-					<li>Red: 1r</li>
-					<li>Green: 1g</li>
-					<li>Orange: 1o</li>
-					<li>Purple: 1p</li>
-				</ul>
-				</div>
-
-				<div class="helpUnit">
-				<h3>Modifiers</h3>
-				<ul>
-					<li>Melee: 1sw</li>
-					<li>Missile: 1mi</li>
-					<li>Magic: 1ma</li>
-					<li>Range: 1rg</li>
-					<li>Action: 1ac</li>
-					<li>Move: 1mo</li>
-					<li>Shield: 0sh</li>
-					<li>heart: 1he</li>
-				</ul>
-				</div>
-
-				<div>
-				<div class="helpUnit">
-				<h3>Stats</h3>
-				<ul>
-					<li>Strength: STR</li>
-					<li>Armor: ARM</li>
-					<li>Willpower: WILL</li>
-					<li>Dexterity: DEX</li>
-				</ul>
-				</div>
-
-				<div class="helpUnit">
-				<h3>Affinity</h3>
-				<ul>
-					<li>Amethyst</li>
-					<li>Citrine</li>
-					<li>Emerald</li>
-					<li>Sapphire</li>
-				</ul>
-				</div>
-				</div>
-
-			</div>
-			<div><input name="itemStats" value="+1st" /></div>
-		</div>
-
-		<div class="hero monster pet stats">
-			<h2>Stats <a href="" class="helpButton" title="Stats Help">?</a></h2>
-
-			<div class="helpBlock">
-				<div class="helpUnit">
-				<h3>Dice Types</h3>
-				<ul>
-					<li>Star: 1st</li>
-					<li>Blue: 1b</li>
-					<li>Red: 1r</li>
-					<li>Green: 1g</li>
-					<li>Orange: 1o</li>
-					<li>Purple: 1p</li>
-				</ul>
-				</div>
-
-				<div class="helpUnit">
-				<h3>Modifiers</h3>
-				<ul>
-					<li>Melee: 1sw</li>
-					<li>Missile: 1mi</li>
-					<li>Magic: 1ma</li>
-					<li>Shield: sh</li>
-					
-				</ul>
-				</div>
-			</div>
-
-			<div class="hero monster pet">STR <input name="STR" value="1sw 3b" /></div>
-			<div class="hero monster pet">ARM <input name="ARM" value="2b 1r sh" /></div>
-			<div class="hero monster">WILL <input name="WILL" value="3b" /></div>
-			<div class="hero monster">DEX <input name="DEX" value="3b" /></div>
-			<div class="hero monster displayInline">Wounds <input class="number" type="number" name="wounds" value="5" min="-9" max="99" /></div>
-			<div class="monster displayInline">Skull Points <input class="number" type="number" name="skulls" value="1" min="-9" max="99" /></div>
-			<div class="hero displayInline">Potions <input class="number" type="number" name="potions" value="1" min="-9" max="99" /></div>
-		</div>
-
-
-		<div class="hero monster pet treasure wonder loot arcade keyword">
-			<h2>Keyword  <a href="" class="keywordSettings" title="keyword Editor"></a></h2>
-
-			<div class="hero monster arcade">
-				Affinity
-				<select name="affinity">
-					<option value="citrine">Citrine</option>
-					<option value="citrine amethyst">Citrine Amethyst</option>
-					<option value="citrine emerald">Citrine Emerald</option>
-					<option value="citrine ruby">Citrine Ruby</option>
-					<option value="citrine sapphire">Citrine Sapphire</option>
-					<option disabled>──────────</option>
-					<option value="emerald">Emerald</option>
-					<option value="emerald amethyst">Emerald Amethyst</option>
-					<option value="emerald ruby">Emerald Ruby</option>
-					<option value="emerald sapphire">Emerald Sapphire</option>
-					<option disabled>──────────</option>
-					<option value="ruby">Ruby</option>
-					<option value="ruby amethyst">Ruby Amethyst</option>
-					<option value="ruby sapphire">Ruby Sapphire</option>
-					<option disabled>──────────</option>
-					<option value="sapphire">Sapphire</option>
-					<option value="sapphire amethyst">Sapphire Amethyst</option>
-					<option disabled>──────────</option>
-					<option value="amethyst">Amethyst</option>
-					<option disabled>──────────</option>
-					<option value="none">None</option>
-					<option value="all">All</option>
-				</select>
-			</div>
-
-			<div>Keywords <input name="keywordsList" required maxlength="80" /></div>
-		</div>
-
-
-		<div class="hero monster pet loot treasure explore wonder command timeout abilitySection">
-			<h2>Ability <a href="" class="helpButton" title="Stats Help">?</a></h2>
-			<div class="helpBlock">
-				<div class="helpUnit">
-				<h3>Dice Types</h3>
-				<ul>
-					<li>Star: 1st</li>
-					<li>Blue: 1b</li>
-					<li>Red: 1r</li>
-					<li>Green: 1g</li>
-					<li>Orange: 1o</li>
-					<li>Purple: 1p</li>
-				</ul>
-				</div>
-
-				<div class="helpUnit">
-				<h3>Modifiers</h3>
-				<ul>
-					<li>Melee: 1sw</li>
-					<li>Missile: 1mi</li>
-					<li>Magic: 1ma</li>
-					<li>Range: 1rg</li>
-					<li>Action: 1ac</li>
-					<li>Move: 1mo</li>
-					<li>Shield: 0sh</li>
-					<li>heart: 1he</li>
-				</ul>
-				</div>
-
-				<h3>Stats</h3>
-				<ul>
-					<li>Strength: STR</li>
-					<li>Armor: ARM</li>
-					<li>Willpower: WILL</li>
-					<li>Dexterity: DEX</li>
-				</ul>
-			</div>
-			<div class="abilities"></div>
-			<a href="" class="addAbility">Add Ability +</a>
-		</div>
-
-
-		<div class="monster bit">
-			<h2>monster-bit</h2>
-			<select name="bit">
-				<option value="eight">8 bit</option>
-				<option value="sixteen">16 bit</option>
-				<option value="start">Start</option>
-				<option value="special">Special</option>
-				<option value="super">Super</option>
-			</select>
-		</div>
-
-
-		<div class="hero monster loot treasure wonder explore flavorText">
-			<h2>Flavor Text</h2>
-			<textarea name="flavorText" /></textarea>
-		</div>
-	</form>
+	<div class="pageContent">
 	</div>
 
-	<div class="cardContainer">
-		<div class="card hero">
-
-			<div class="front">
-				<div class="model hero monster pet arcade">
-					<div class="header">
-						<div class="moveactions" >
-							<span class="move">6</span>
-							<span class="actions">3</span>
-						</div>
-						<div><span class="title">title</span></div>
-						<div><span class="subTitle">subTitle</span></div>
-					</div>
-
-
-					<div class="stats">
-					</div>
-
-					<img class="character" src="" />
-					<div class="background"></div>
-
-					<div class="keywordsSection">
-						<span class="hero monster arcade affinity citrine"></span>
-						<span class="keywordsList"></span>
-
-						<div class="subStats">
-							<span class="hero monster wounds">5</span>
-							<span class="monster skulls">1</span>
-							<span class="hero potions">1</span>
-						</div>
-					</div>
-
-					<div class="abilities">
-						<div class="monster bit eight"></div>
-					</div>
-				</div>
-
-				<div class="item treasure wonder loot explore command timeout">
-					<div class="contentBorder ruby">
-						<div class="content">
-							<div>
-								<div class="explore creepNum"><span class="creepSpawn">3</span></div>
-								<img class="character" src="" />	
-							</div>
-							<div><span class="title">title</span></div>
-							<span class="item treasure loot explore itemStats"></span>
-							<div class="item treasure loot explore wonder command timeout abilities"></div>
-							<span class="keywordsList"></span>
-							<div class="treasure loot wonder keywords"></div>
-							<span class="item treasure wonder loot explore flavorText"></span>
-						</div>
-					</div>
-
-					<div class="treasure loot placeHolder ruby">
-
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="cardContainer">
-		<div class="card hero">
-			<div class="back">
-				<div class="hero monster pet header">
-					<div class="hero monster pet"><span class="title">title</span></div>
-					<div class="hero monster pet"><span class="subTitle">subTitle</span></div>
-				</div>
-
-				<div class="contentBorder ruby">
-					<div class="content">
-						<div class="timeout">
-							<div class="explore creepNum"><span class="creepSpawn">3</span></div>
-							<img class="character" src="" />	
-						</div>
-						<div><span class="timeout title">title</span></div>
-						<div class="timeout abilities"></div>
-						<div class="monster pet hero keywords"></div>
-
-						<div class="monster pet hero flavor">
-						<div class="flavorBorder"></div>
-						<span class=" flavorText"></span>
-						<div class="flavorBorder"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="pageFooter">
-		Version 0.3.7 beta software written by James Adams <a href="todo.txt" target="_blank">Todo List</a><br /> - This website is completely unofficial and in no way endorsed by Ninja Division Publishing&trade; LLC. Super Dungeon Explore&reg; and its respective contents are trademarks and/or copyrights of Ninja Division Publishing&trade; LLC. No challenge to their status intended. All Rights Reserved to their respective owners.
-
-	</div>
-
-	<div class="keyword settings" title="Keyword Editor">
-		<div class="keywordList">
-			<ul></ul>
-		</div>
-		<div class="keywordForm">
-			<div>Name <input name="kName" maxlength="50" /></div>
-			<div>Display Full Description on Card<input type="checkbox" name="kDisplayBack" checked="checked" /></div>
-			<div>Version <select name="eVersion"><option class="iniatial">1.0</option></select> <a href="" class="addErrata" title="Add New Errata Version">+</a></div>
-			<div>Description<br /><textarea name="kDescription" maxlength="1000"></textarea></div>
-			<div class="buttons"><a href="" class="kSave">Update</a></div>
-		</div>
-	</div>
 </div>
 </body>
 </html>

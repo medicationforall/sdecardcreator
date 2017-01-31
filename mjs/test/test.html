@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Core Test</title>
+  <script src="../script/lib/jquery-1.12.3.min.js"></script>
+  <script src="../script/Core.js"></script>
+  <script src="Test.js"></script>
+  <script src="Test2.js"></script>
+  <script>
+    $(document).ready(function(){
+      console.log('core test');
+
+      var core = new Test2();
+      core.load();
+      core.setup();
+    });
+  </script>
+</head>
+<body>
+
+</body>
+</html>

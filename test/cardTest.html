@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Card Test</title>
+
+
+	<link href="../css/card.css" rel="stylesheet" />
+	<link href="../css/cardModel.css" rel="stylesheet" />
+	<link href="../css/cardItem.css" rel="stylesheet" />
+	<link href="../css/cardExplore.css" rel="stylesheet" />
+	<link href="../css/cardCommand.css" rel="stylesheet" />
+	<link href="../css/cardTimeout.css" rel="stylesheet" />
+	<link href="../css/cardArcade.css" rel="stylesheet" />
+
+	<script src="../script/lib/jquery-1.12.3.min.js"></script>
+	<script src="../script/lib/jquery-ui.min.js"></script>
+	
+	<script src="../mjs/script/Core.js"></script>
+	<script src="../mjs/script/CoreTemplate.js"></script>
+	
+	<script src="../script/card/Card.js"></script>
+
+<script>
+$(document).ready(function(){
+console.log('card test ready');
+
+var card = new Card();
+var list = card.load();
+//set card template path
+
+$.when.apply($,list).done(function(){
+	console.log('card is loaded');
+	card.setup();
+	card.register();
+});
+
+});
+</script>
+
+</head>
+
+<body>
+<div class="pageContent">
+
+</div>
+
+</body>
+</html>

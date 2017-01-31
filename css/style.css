@@ -14,7 +14,7 @@ body{
 font-family:arial;
 padding:0px;
 margin:0px;
-margin-left:5px;
+/*margin-left:5px;*/
 }
 
 a{
@@ -24,6 +24,13 @@ text-decoration:none;
 
 a:hover{
 text-decoration:underline;
+}
+
+/*pageHeader*/
+.pageHeader{
+  background:#333;
+  color:#fff;
+  padding-left:5px;
 }
 
 .pageHeader h1{
@@ -48,12 +55,14 @@ color:#000;
 border:1px solid #ccc;
 }
 
-.pageFooter{
-margin-top:10px;
-font-size:11pt;
-padding:10px;
+.pageHeader .hamburger{
+	float:right;
+	margin-top:15px;
 }
 
+.pageContent{
+  padding-top:5px;
+}
 
 .left, .right{
 display:inline-block;
@@ -88,7 +97,7 @@ margin:0;
 display:none;
 }
 
-.pageFooter{
+/*.pageFooter{
 display:none;
+}*/
 }
-}   

@@ -1,5 +1,5 @@
 /**
- *   SDE Card Creator source file sdeCreate,
+ *   SDE Card Creator source file main,
  *   Copyright (C) 2015  James M Adams
  *
  *   This program is free software: you can redistribute it and/or modify
@@ -16,39 +16,48 @@
  *   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-
+'use strict';
 $(document).ready(function(){
 //objects
 
-	keywordStore = new KeywordStore();
-	form = new sdeCreate();
-	wizard = new Wizard();
+	var form = new sdeCreate();
+	form.init();
+	
+	var list = form.load();
+
+	$.when.apply($,list).done(function(){
+		form.setup();
+		form.register();
+	});
 
 	//remove noscript block
 	$('.noScript').remove();
 
+	$.when(Wizard.prototype._resolveTemplate()).done(function(){
+			var wizard = new Wizard();
 
-//Wizard
-	$('.wizard').hide();
-//$('.wizard').dialog({dialogClass: "wizardDialog", width: 500});
+			//Wizard
+			$('.wizard').hide();
+			//$('.wizard').dialog({dialogClass: "wizardDialog", width: 500});
 
-	$('a.openWizard').click(function(event){
-		event.preventDefault();
-		$('.wizard').dialog({dialogClass: "wizardDialog", width: 500});
+			$('a.openWizard').click(function(event){
+				event.preventDefault();
+				$('.wizard').dialog({dialogClass: "wizardDialog", width: 500});
+			});
+
+			$('.wizard a.previous').click(function(event){
+				event.preventDefault();
+				wizard.previousStep();
+			});
+
+			$('.wizard a.next').click(function(event){
+				event.preventDefault();
+				wizard.nextStep();
+			});
 	});
 
-	$('.wizard a.previous').click(function(event){
-		event.preventDefault();
-		wizard.previousStep();	
-	});
 
-	$('.wizard a.next').click(function(event){
-		event.preventDefault();
-		wizard.nextStep();	
-	});
-
-
-//Save
+	//Save
 	$('a.save').click(function(event){
 		event.preventDefault();
 
@@ -57,23 +66,23 @@ $(document).ready(function(){
 			saveAsFile(JSON.stringify(data),$('.form input[name="title"]').val()+'.json',"text/plain;charset=utf-8");
 		}else{
 			$('input[name="title"]').addClass('fail');
-		}	
+		}
 	});
 
 
-//import
+	//import
 	$('.importFile').change(function(event){
 		event.preventDefault();
-		
+
 		if (window.File && window.FileReader && window.FileList && window.Blob) {
 			//do your stuff!
-			
+
 			var file = $('.importFile')[0].files[0];
 			var reader = new FileReader();
-			
+
 			reader.onload = function(e) {
 				var text = reader.result;
-				
+
 				var data = jQuery.parseJSON(text);
 				//console.log(data);
 				form.setData(data);
@@ -84,7 +93,7 @@ $(document).ready(function(){
 		}
 	});
 
-//clear
+	//clear
 	$('.resetForm').remove();
 	$('.resetForm').click(function(event){
 		event.preventDefault();
@@ -92,20 +101,18 @@ $(document).ready(function(){
 	});
 
 
-//not working
+	//not working
 	$('.saveAsImage').remove();
 	//http://jsfiddle.net/6FZkk/1/
 	$('.saveAsImage').click(function(event){
 		event.preventDefault();
 		html2canvas($(".card"), {
 			onrendered: function(canvas) {
-
 				canvas.toBlob(function(blob) {
-                   			 saveAs(blob, "Dashboard.png"); 
-                		});
+					saveAs(blob, "Dashboard.png");
+				});
 			}
 		});
-		
 	});
 });
 
@@ -119,5 +126,3 @@ function saveAsFile(t,f,m) {
         window.open("data:"+m+"," + encodeURIComponent(t), '_blank','');
     }
 }
-
-

@@ -1,0 +1,90 @@
+/*Dialog*/
+.dialog{
+display:inline-block;
+border:1px solid #000;
+position:absolute;
+top:150px;
+left:200px;
+background:#fff;
+border-radius:3px;
+box-shadow:5px 5px 5px rgba(0,0,0,0.3);
+font-family:arial;
+z-index:3;
+}
+
+.dialog .content{
+min-height:100px;
+min-width:400px;
+max-width:410px;
+max-height:500px;
+overflow:auto;
+padding:10px;
+}
+
+.dialog a{
+background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%);
+padding: 3px;
+border-radius: 2px;
+display: inline-block;
+margin: 0px 5px;
+border: 1px solid #AB9D9D;
+color: #000;
+text-decoration:none;
+}
+
+.dialog a.closeButton{
+margin-right:4px;
+margin-top:-4px;
+font-size:12pt;
+text-shadow:none;
+float: right;
+text-decoration: none;
+}
+
+.dialog a.addEntryButton{
+margin:0px;
+padding:1px;
+}
+
+.dialog .handle{
+cursor:move;
+min-height:24px;
+text-align:center;
+background:#5151A0;
+padding-top:4px;
+color:white;
+text-shadow:1px 1px 1px #000;
+font-size:15pt;
+border-bottom:1px solid #c0c0c0;
+border-top-left-radius:3px;
+}
+
+.dialog .handle .title{
+font-weight:bold;
+}
+
+.dialog .content .inlineEdit a{
+padding:1px;
+margin: 0px 2px;
+}
+
+.dialog .buttons{
+text-align:center;
+}
+
+.dialog .applyButton, .dialog .saveButton {
+background: linear-gradient(to bottom, #cdeb8e 0%,#a5c956 100%);
+}
+
+.dialog .editControls{
+display:inline;
+}
+
+.dialog.help, .dialog.about, .dialog.changes{
+
+}
+
+.dialog .closeButton{
+float:right;
+text-decoration:none;
+}
