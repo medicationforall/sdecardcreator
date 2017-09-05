@@ -15,6 +15,10 @@
  *   You should have received a copy of the GNU Lesser General Public License
  *   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+
+/**
+ *
+ */
 $(document).ready(function(){
 //objects
 
@@ -24,78 +28,78 @@ $(document).ready(function(){
   var list = form.load();
 
   $.when.apply($,list).done(function(){
-  form.setup();
-  form.register();
+    form.setup();
+    form.register();
   });
 
   //remove noscript block
   $('.noScript').remove();
 
   $.when(Wizard.prototype._resolveTemplate()).done(function(){
-  var wizard = new Wizard();
+    var wizard = new Wizard();
 
-  //Wizard
-  $('.wizard').hide();
-  //$('.wizard').dialog({dialogClass: "wizardDialog", width: 500});
+    //Wizard
+    $('.wizard').hide();
+    //$('.wizard').dialog({dialogClass: "wizardDialog", width: 500});
 
-  $('a.openWizard').click(function(event){
-  event.preventDefault();
-  $('.wizard').dialog({dialogClass: "wizardDialog", width: 500});
-  });
+    $('a.openWizard').click(function(event){
+      event.preventDefault();
+      $('.wizard').dialog({dialogClass: "wizardDialog", width: 500});
+    });
 
-  $('.wizard a.previous').click(function(event){
-  event.preventDefault();
-  wizard.previousStep();
-  });
+    $('.wizard a.previous').click(function(event){
+      event.preventDefault();
+      wizard.previousStep();
+    });
 
-  $('.wizard a.next').click(function(event){
-  event.preventDefault();
-  wizard.nextStep();
-  });
+    $('.wizard a.next').click(function(event){
+      event.preventDefault();
+      wizard.nextStep();
+    });
   });
 
 
   //Save
   $('a.save').click(function(event){
-  event.preventDefault();
+    event.preventDefault();
 
-  if($('input[name="title"]')[0].checkValidity()){
-  var data = form.gatherData();
-  saveAsFile(JSON.stringify(data),$('.form input[name="title"]').val()+'.json',"text/plain;charset=utf-8");
-  }else{
-  $('input[name="title"]').addClass('fail');
-  }
+    if($('input[name="title"]')[0].checkValidity()){
+      var data = form.gatherData();
+      saveAsFile(JSON.stringify(data),$('.form input[name="title"]').val()+'.json',"text/plain;charset=utf-8");
+    }else{
+      $('input[name="title"]').addClass('fail');
+    }
   });
 
 
   //import
   $('.importFile').change(function(event){
-  event.preventDefault();
+    event.preventDefault();
 
-  if (window.File && window.FileReader && window.FileList && window.Blob) {
-  //do your stuff!
+    if (window.File && window.FileReader && window.FileList && window.Blob) {
+      //do your stuff!
 
-  var file = $('.importFile')[0].files[0];
-  var reader = new FileReader();
+      var file = $('.importFile')[0].files[0];
+      var reader = new FileReader();
 
-  reader.onload = function(e) {
-  var text = reader.result;
+      reader.onload = function(e) {
+        var text = reader.result;
 
-  var data = jQuery.parseJSON(text);
-  //console.log(data);
-  form.setData(data);
-};
-  reader.readAsText(file);
-  } else {
-  alert('The File APIs are not fully supported by your browser.');
-  }
+        var data = jQuery.parseJSON(text);
+        //console.log(data);
+        form.setData(data);
+      };
+      reader.readAsText(file);
+    } else {
+      alert('The File APIs are not fully supported by your browser.');
+    }
   });
 
   //clear
   $('.resetForm').remove();
   $('.resetForm').click(function(event){
-  event.preventDefault();
-  $('.form form').trigger('reset');
+    event.preventDefault();
+    $('.form form').trigger('reset');
   });
 
 
@@ -104,13 +108,13 @@ $(document).ready(function(){
   //http://jsfiddle.net/6FZkk/1/
   $('.saveAsImage').click(function(event){
   event.preventDefault();
-  html2canvas($(".card"), {
-  onrendered: function(canvas) {
-  canvas.toBlob(function(blob) {
-  saveAs(blob, "Dashboard.png");
-  });
-  }
-  });
+    html2canvas($(".card"), {
+      onrendered: function(canvas) {
+        canvas.toBlob(function(blob) {
+          saveAs(blob, "Dashboard.png");
+        });
+      }
+    });
   });
 });
 

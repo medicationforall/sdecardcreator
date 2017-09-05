@@ -21,33 +21,33 @@ function Form(){
    * Create the child node form controls.
    */
   this.init=function(){
-  this.add(new CardControl());
-  this.add(new HeaderControl());
-  this.add(new ImageControl());
-  this.add(new ItemStatsControl());
-  this.add(new StatsControl());
-  this.add(new KeywordControl());
-  this.add(new AbilityControl());
-  this.add(new BitControl());
-  this.add(new FlavorTextControl());
+    this.add(new CardControl());
+    this.add(new HeaderControl());
+    this.add(new ImageControl());
+    this.add(new ItemStatsControl());
+    this.add(new StatsControl());
+    this.add(new KeywordControl());
+    this.add(new AbilityControl());
+    this.add(new BitControl());
+    this.add(new FlavorTextControl());
 
-  this.each('init');
+    this.each('init');
   };
 
   /**
    * Add the html template to the page.
    */
   this.setup=function(template){
-  this.node = $(Form.template).appendTo('.pageContent');
-  this.each('setup');
+    this.node = $(Form.template).appendTo('.pageContent');
+    this.each('setup');
   };
 
   /**
    * Register lifecycle.
    */
   this.register=function(){
-  this.setupListeners();
-  this.each('register');
+    this.setupListeners();
+    this.each('register');
   };
 
 
@@ -56,8 +56,8 @@ function Form(){
    *@todo try moving this logic into the CSS code.
    */
   this.setDisplay=function(node,type){
-  node.find('.hero, .monster, .pet, .treasure, .loot, .wonder, .explore, .arcade, .command, .timeout').css('display','none');
-  node.find('.'+type).css('display','');
+    node.find('.hero, .monster, .pet, .treasure, .loot, .wonder, .explore, .arcade, .command, .timeout').css('display','none');
+    node.find('.'+type).css('display','');
   };
 
 
@@ -65,14 +65,14 @@ function Form(){
    * Mark card stats for display if the input for it is empty.
    */
   this.checkStatsForDisplay = function(){
-  var card= this.closest(Card).node;
-  var front = this.closest(Card).node.find('.card .front');
+    var card= this.closest(Card).node;
+    var front = this.closest(Card).node.find('.card .front');
 
-  this.node.find('.stats input').each($.proxy(function(front){
-  if($(this).val()===''){
-  card.find('.stat.'+$(this).attr('name')).css('display','none');
-  }
-  },undefined,front));
+    this.node.find('.stats input').each($.proxy(function(front){
+      if($(this).val()===''){
+        card.find('.stat.'+$(this).attr('name')).css('display','none');
+      }
+    },undefined,front));
   };
 
 
@@ -81,9 +81,9 @@ function Form(){
    *@todo Move to ability Control.
    */
   this.initializeAbility = function(){
-  console.log('initialize ability');
-  $('.addAbility').trigger('click');
-  $('.form .ability textarea[name="definition"]').val('+1r -2b 3g 4o 5p 1st 0mi 1ma 2sw 3rg augment fire STR WILL DEX ARM 1ac 2mo 0sh +1he').trigger('input');
+    console.log('initialize ability');
+    $('.addAbility').trigger('click');
+    $('.form .ability textarea[name="definition"]').val('+1r -2b 3g 4o 5p 1st 0mi 1ma 2sw 3rg augment fire STR WILL DEX ARM 1ac 2mo 0sh +1he').trigger('input');
   };
 
 
@@ -92,10 +92,10 @@ function Form(){
    *@todo move to ItemStatsControl.
    */
   this.parseItemStat = function(text){
-  text = this.findDice(text);
-  text = this.findAffinity(text);
-  text = this.findKeywords(text);
-  return this.findStats(text);
+    text = this.findDice(text);
+    text = this.findAffinity(text);
+    text = this.findKeywords(text);
+    return this.findStats(text);
   };
 
 
@@ -103,16 +103,16 @@ function Form(){
    *
    */
   this.setupListeners = function(event){
-  console.log('form setup listeners');
-  $('.form').on('checkKeywords',function(event){
-  this.checkKeywords();
-  }.bind(this));
+    console.log('form setup listeners');
+    $('.form').on('checkKeywords',function(event){
+      this.checkKeywords();
+    }.bind(this));
 
-  //$('.form').on('resolved-keywords',function(event){
-  this.initializeAbility();
-  //}.bind(this));
+    //$('.form').on('resolved-keywords',function(event){
+    this.initializeAbility();
+    //}.bind(this));
 
-  $('.form').on('reset',this.reset);
+    $('.form').on('reset',this.reset);
   };
 
 
@@ -120,10 +120,10 @@ function Form(){
    * Links a form stat input to a card span
    */
   this.linkToTemplateStat = function(name,stat){
-  //console.log('linkToTemplateStat')
-  $("input[name='"+name+"']").on('input',function(event){
-  stat.setValue($(this).val());
-  });
+    //console.log('linkToTemplateStat')
+    $("input[name='"+name+"']").on('input',function(event){
+    stat.setValue($(this).val());
+    });
   };
 
 
@@ -131,13 +131,13 @@ function Form(){
    *As the input changes it modifies the template linked span
    */
   this.linkToTemplate = function(name,tag,parser,checker){
-  //resolve tag
-  if(tag === undefined){
-  tag = 'input';
-  }
-  var input = tag+'[name="'+name+'"]';
-  var output = 'span.'+name;
-  this.link(input,output,parser,checker);
+    //resolve tag
+    if(tag === undefined){
+      tag = 'input';
+    }
+    var input = tag+'[name="'+name+'"]';
+    var output = 'span.'+name;
+    this.link(input,output,parser,checker);
   };
 
 
@@ -146,32 +146,32 @@ function Form(){
    */
   this.link = function(inputSelector,outputSelector,parser,checker){
 
-  this.node.find(inputSelector).on('input', $.proxy(function(form,event){
-  var output = form.closest(Card).node.find(outputSelector);
+    this.node.find(inputSelector).on('input', $.proxy(function(form,event){
+      var output = form.closest(Card).node.find(outputSelector);
 
-  //store the reset value if it's not defined
-  if(output.data('reset')===undefined){
-  output.data('reset',output.first().text());
-  }
+      //store the reset value if it's not defined
+      if(output.data('reset')===undefined){
+      output.data('reset',output.first().text());
+      }
 
-  //if the input is not empty
-  if($(this).val() !== ''){
-  if(parser===undefined){
-  output.text($(this).val());
-  } else{
-  //parses out html without placing the string into the domNode
-  var text = $("<div/>").html($(this).val()).text();
-  output.html($.proxy(parser,form)(text));
-  }
-  } else{ //reset back to the default value
-  output.text(output.data('reset'));
-  }
+      //if the input is not empty
+      if($(this).val() !== ''){
+        if(parser===undefined){
+          output.text($(this).val());
+        } else{
+          //parses out html without placing the string into the domNode
+          var text = $("<div/>").html($(this).val()).text();
+          output.html($.proxy(parser,form)(text));
+        }
+      } else{ //reset back to the default value
+        output.text(output.data('reset'));
+      }
 
-  //run the check if one is provided
-  if(checker){
-  $.proxy(checker,form)();
-  }
-  },undefined,this));
+      //run the check if one is provided
+      if(checker){
+        $.proxy(checker,form)();
+      }
+    },undefined,this));
   };
 
 
@@ -179,62 +179,63 @@ function Form(){
    *Passthrough method that calls findKeywords on the keyword store.
    */
   this.findKeywords =  function(text){
-  text = this.closest(KeywordStore).findKeywords(text);
-  text = this.closest(KeywordStore).findNKeywords(text);
-  return text;
+    text = this.closest(KeywordStore).findKeywords(text);
+    text = this.closest(KeywordStore).findNKeywords(text);
+    return text;
   };
+
 
   /**
    *@todo Move to keywordsStore
    */
   this.findDice = function(text){
-  return this.closest(KeywordStore).findDice(text);
+    return this.closest(KeywordStore).findDice(text);
   };
 
   /**
    *@todo figure out where this method should go.
    */
   this.findAffinity = function(text){
-  return this.closest(KeywordStore).findAffinity(text);
+    return this.closest(KeywordStore).findAffinity(text);
   };
 
   /**
    *@todo figure out where this should go.
    */
   this.findStats = function(text){
-  return this.closest(KeywordStore).findStats(text);
+    return this.closest(KeywordStore).findStats(text);
   };
 
   /**
    * @todo move to ability control
    */
   this.linkAbilityType = function(formNode, cardNode){
-  $(formNode).find('select[name="costType"]').change(function(event){
-  var parent = $(this).parent().parent();
+    $(formNode).find('select[name="costType"]').change(function(event){
+      var parent = $(this).parent().parent();
 
-  //reset
-  $(cardNode).find('.name, .colon, .definition').css('display','');
-  $(parent).find('input[name="name"],input[name="cost"], textarea[name="definition"]').parent().css('display','');
-  $(cardNode).find('.cost').removeClass('attack support emergencyPotion supportPotion offensePotion special definitionOnly nameOnly');
+      //reset
+      $(cardNode).find('.name, .colon, .definition').css('display','');
+      $(parent).find('input[name="name"],input[name="cost"], textarea[name="definition"]').parent().css('display','');
+      $(cardNode).find('.cost').removeClass('attack support emergencyPotion supportPotion offensePotion special definitionOnly nameOnly');
 
-  $(cardNode).find('.cost').addClass($(this).val());
+      $(cardNode).find('.cost').addClass($(this).val());
 
-  //card ability display
-  if($(this).val()==='definitionOnly'){
-  $(cardNode).find('.name, .colon').css('display','none');
-  }else if($(this).val()==='nameOnly'){
-  $(cardNode).find('.colon, .definition').css('display','none');
-  }
+      //card ability display
+      if($(this).val()==='definitionOnly'){
+        $(cardNode).find('.name, .colon').css('display','none');
+      }else if($(this).val()==='nameOnly'){
+        $(cardNode).find('.colon, .definition').css('display','none');
+      }
 
-  //for ability display
-  if($(this).val()==='special'){
-  $(parent).find('input[name="cost"]').parent().css('display','none');
-  } else if($(this).val()==='definitionOnly'){
-  $(parent).find('input[name="name"],input[name="cost"]').parent().css('display','none');
-  } else if($(this).val()==='nameOnly'){
-  $(parent).find('input[name="cost"],textarea[name="definition"]').parent().css('display','none');
-  }
-  });
+      //for ability display
+      if($(this).val()==='special'){
+        $(parent).find('input[name="cost"]').parent().css('display','none');
+      } else if($(this).val()==='definitionOnly'){
+        $(parent).find('input[name="name"],input[name="cost"]').parent().css('display','none');
+      } else if($(this).val()==='nameOnly'){
+        $(parent).find('input[name="cost"],textarea[name="definition"]').parent().css('display','none');
+      }
+    });
   };
 
 
@@ -243,8 +244,8 @@ function Form(){
    *@tdo Move to keywordStore
    */
   this.checkKeywords = function(){
-  var card = this.closest(Card);
-  this.closest(KeywordStore).checkKeywords(card.find('.front'));
+    var card = this.closest(Card);
+    this.closest(KeywordStore).checkKeywords(card.find('.front'));
   };
 }
 

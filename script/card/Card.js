@@ -28,9 +28,9 @@ function Card(){
    *Setup lifecycle.
    */
   this.setup=function(template){
-  this.node=$(Card.template).appendTo('.pageContent');
-  this.setupDefaultAvatar();
-  this.setupDefaultBit();
+    this.node=$(Card.template).appendTo('.pageContent');
+    this.setupDefaultAvatar();
+    this.setupDefaultBit();
   };
 
 
@@ -38,8 +38,8 @@ function Card(){
    *Register lifecycle
    */
   this.register=function(){
-  //setup draggable
-  this.node.find('.card .front .character').draggable({containment:'parent'});
+    //setup draggable
+    this.node.find('.card .front .character').draggable({containment:'parent'});
   };
 
 
@@ -47,17 +47,17 @@ function Card(){
    * Creates the default avatar hashmap object.
    */
   this.setupDefaultAvatar=function(){
-  var map ={};
-  map.hero = 'image/barbsilo.png';
-  map.monster = 'image/dragonsilo.png';
-  map.pet = 'image/bunnysilo.png';
-  map.loot = 'image/armor.png';
-  map.treasure = 'image/weapon.png';
-  map.wonder = 'image/wonder.png';
-  map.explore = 'image/trap.png';
-  map.timeout = 'image/gorosilo.png';
-  map.command = 'image/koboldgoupsilo.png';
-  this.defaultMap = map;
+    var map ={};
+    map.hero = 'image/barbsilo.png';
+    map.monster = 'image/dragonsilo.png';
+    map.pet = 'image/bunnysilo.png';
+    map.loot = 'image/armor.png';
+    map.treasure = 'image/weapon.png';
+    map.wonder = 'image/wonder.png';
+    map.explore = 'image/trap.png';
+    map.timeout = 'image/gorosilo.png';
+    map.command = 'image/koboldgoupsilo.png';
+    this.defaultMap = map;
   };
 
 
@@ -65,12 +65,12 @@ function Card(){
    *
    */
   this.setupDefaultBit=function(){
-  this.bit=[];
-  this.bit.push('eight');
-  this.bit.push('sixteen');
-  this.bit.push('start');
-  this.bit.push('special');
-  this.bit.push('super');
+    this.bit=[];
+    this.bit.push('eight');
+    this.bit.push('sixteen');
+    this.bit.push('start');
+    this.bit.push('special');
+    this.bit.push('super');
   };
 
 
@@ -79,9 +79,9 @@ function Card(){
    *@param scale float
    */
   this.setScale=function(scale){
-  var cards = this.node.find('.card');
-  cards.css({'transform':'scale('+scale+','+scale+')','transform-origin':'top left'});
-  this.node.css({'width':(cards.width()*parseFloat(scale)), 'height':(cards.height()*parseFloat(scale))});
+    var cards = this.node.find('.card');
+    cards.css({'transform':'scale('+scale+','+scale+')','transform-origin':'top left'});
+    this.node.css({'width':(cards.width()*parseFloat(scale)), 'height':(cards.height()*parseFloat(scale))});
   };
 
 
@@ -90,10 +90,10 @@ function Card(){
    *@param v string relative or absolute path
    */
   this.setBackground=function(v){
-  this.node.find('.background').css({
-  'background':'url('+v+') no-repeat',
-  'background-size':'100% 100%'
-  });
+    this.node.find('.background').css({
+    'background':'url('+v+') no-repeat',
+    'background-size':'100% 100%'
+    });
   };
 
 
@@ -103,11 +103,11 @@ function Card(){
    *@todo should enforce boolean type for v
    */
   this.setFlipped=function(v){
-  if(v){
-  this.node.find('.background').css('transform','scaleX(-1)');
-  }else{
-  this.node.find('.background').css('transform','');
-  }
+    if(v){
+      this.node.find('.background').css('transform','scaleX(-1)');
+    }else{
+      this.node.find('.background').css('transform','');
+    }
   };
 
 
@@ -117,7 +117,7 @@ function Card(){
    *@todo should lowercase value and should throw exception if value is not in hashmap.
    */
   this.setDefaultAvatar=function(v){
-  this.setAvatar(this.defaultMap[v]);
+    this.setAvatar(this.defaultMap[v]);
   };
 
 
@@ -126,8 +126,8 @@ function Card(){
    *@param v string absolute, relative path, or raw image data.
    */
   this.setAvatar=function(v){
-  var character = this.node.find('.card .character');
-  character.attr('src', v);
+    var character = this.node.find('.card .character');
+    character.attr('src', v);
   };
 
 
@@ -136,20 +136,20 @@ function Card(){
    *@param value string affinity ruby, saphire, emerald, citrine
    *@todo should lowercase value and throw exception is not a valid value.
    */
-   this.setOrientation=function(value){
-   var card = this.node;
+  this.setOrientation=function(value){
+    var card = this.node;
 
-   //console.log("Change orientation",$(this).val());
+    //console.log("Change orientation",$(this).val());
 
-   //sort out the appropriate class name for the divs
-   card.find('.card .item .contentBorder, .card .item .placeHolder').removeClass('ruby sapphire citrine emerald').addClass(value);
+    //sort out the appropriate class name for the divs
+    card.find('.card .item .contentBorder, .card .item .placeHolder').removeClass('ruby sapphire citrine emerald').addClass(value);
 
-   //re-order the divs if necessary
-   if(value === 'ruby' || value === 'citrine'){
-   card.find('.card .item .placeHolder').before(card.find('.card .item .contentBorder'));
-   }else if(value === 'sapphire' || value === 'emerald'){
-   card.find('.card .item .contentBorder').before(card.find('.card .item .placeHolder'));
-   }
+    //re-order the divs if necessary
+    if(value === 'ruby' || value === 'citrine'){
+      card.find('.card .item .placeHolder').before(card.find('.card .item .contentBorder'));
+    }else if(value === 'sapphire' || value === 'emerald'){
+      card.find('.card .item .contentBorder').before(card.find('.card .item .placeHolder'));
+    }
   };
 
 
@@ -160,8 +160,8 @@ function Card(){
    *@todo verify that type is valid
    */
   this.setType=function(type){
-  //console.log('set card type',type);
-  this.node.find('.card').removeClass('hero monster pet treasure loot wonder explore arcade command timeout').addClass(type).css('display','');
+    //console.log('set card type',type);
+    this.node.find('.card').removeClass('hero monster pet treasure loot wonder explore arcade command timeout').addClass(type).css('display','');
   };
 
 
@@ -169,7 +169,7 @@ function Card(){
    *@todo yagni
    */
   this.setSelected=function(v){
-  this.selected=v;
+    this.selected=v;
   };
 
 
@@ -177,7 +177,7 @@ function Card(){
    *@todo yagni
    */
   this.getSelected=function(){
-  return this.selected;
+    return this.selected;
   };
 
 
@@ -185,8 +185,8 @@ function Card(){
    *
    */
   this.setAffinity=function(v){
-  this.node.find('.affinity').removeClass('ruby citrine emerald sapphire amethyst all');
-  this.node.find('.affinity').addClass(v);
+    this.node.find('.affinity').removeClass('ruby citrine emerald sapphire amethyst all');
+    this.node.find('.affinity').addClass(v);
   };
 
 
@@ -194,12 +194,12 @@ function Card(){
    *
    */
   this.setBit=function(v){
-  var bit = this.node.find('.bit');
+    var bit = this.node.find('.bit');
 
-  for(var i=0,option;(option=this.bit[i]);i++){
-  bit.removeClass(option);
-  }
-  bit.addClass(v);
+    for(var i=0,option;(option=this.bit[i]);i++){
+      bit.removeClass(option);
+    }
+    bit.addClass(v);
   };
 }
 

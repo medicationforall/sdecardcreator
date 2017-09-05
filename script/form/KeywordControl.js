@@ -21,7 +21,7 @@ function KeywordControl(){
    *
    */
   this.init=function(){
-  this.add(new KeywordSettings(this.closest(KeywordStore)));
+    this.add(new KeywordSettings(this.closest(KeywordStore)));
   };
 
 
@@ -29,8 +29,8 @@ function KeywordControl(){
    *
    */
   this.setup=function(){
-  this.node = $(KeywordControl.template).appendTo(this.parent.node);
-  this.each('setup');
+    this.node = $(KeywordControl.template).appendTo(this.parent.node);
+    this.each('setup');
   };
 
 
@@ -38,10 +38,10 @@ function KeywordControl(){
    *
    */
   this.register=function(){
-  this.setupKeywords();
-  this.setupKeywordSettings();
-  //this.setupKeywordDefinitionCheck();
-  this.each('register');
+    this.setupKeywords();
+    this.setupKeywordSettings();
+    //this.setupKeywordDefinitionCheck();
+    this.each('register');
   };
 
 
@@ -49,13 +49,13 @@ function KeywordControl(){
    *
    */
   this.setupKeywords=function(){
-  var form = this.closest(Form);
-  this.node.find("select[name=affinity]").change($.proxy(function(control,event){
-  var card = control.closest(Card);
-  card.setAffinity($(this).val());
-  },undefined,this));
+    var form = this.closest(Form);
+    this.node.find("select[name=affinity]").change($.proxy(function(control,event){
+      var card = control.closest(Card);
+      card.setAffinity($(this).val());
+    },undefined,this));
 
-  form.linkToTemplate("keywordsList",'input',form.findKeywords,form.checkKeywords);
+    form.linkToTemplate("keywordsList",'input',form.findKeywords,form.checkKeywords);
   };
 
 
@@ -63,24 +63,24 @@ function KeywordControl(){
    *@todo asynchronous timing issues.
    */
   this.setupKeywordSettings=function(){
-  $('.form .keywordSettings').click(function(event){
-  event.preventDefault();
-  console.log('show Settings');
-  this.showSettings();
-  }.bind(this));
+    $('.form .keywordSettings').click(function(event){
+      event.preventDefault();
+      console.log('show Settings');
+      this.showSettings();
+    }.bind(this));
   };
 
   /**
    *
    */
   this.showSettings=function(){
-  var keywordSettings = this.find(KeywordSettings);
-  //set the controls state
-  keywordSettings.setupList();
-  keywordSettings.reset();
+    var keywordSettings = this.find(KeywordSettings);
+    //set the controls state
+    keywordSettings.setupList();
+    keywordSettings.reset();
 
-  //display the dialog @todo convert this a standard dialog.
-  $('.keyword.settings').dialog({dialogClass: "keywordSettingsDialog", width: 500});
+    //display the dialog @todo convert this a standard dialog.
+    $('.keyword.settings').dialog({dialogClass: "keywordSettingsDialog", width: 500});
   };
 
 
@@ -88,9 +88,9 @@ function KeywordControl(){
    *@todo I don't know what this is used for if anything.
    */
   /*this.setupKeywordDefinitionCheck=function(){
-  $('.form input[name="keywordDefinitionCheck"]').change(function(event){
-  $('.form').trigger('checkKeywords');
-  });
+    $('.form input[name="keywordDefinitionCheck"]').change(function(event){
+      $('.form').trigger('checkKeywords');
+    });
   }*/
 }
 

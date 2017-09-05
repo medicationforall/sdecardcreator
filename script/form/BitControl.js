@@ -22,7 +22,7 @@ function BitControl(){
    *
    */
   this.setup=function(){
-  this.node = $(BitControl.template).appendTo(this.parent.node);
+    this.node = $(BitControl.template).appendTo(this.parent.node);
   };
 
 
@@ -30,7 +30,7 @@ function BitControl(){
    *
    */
   this.register=function(){
-  this.setupBit();
+    this.setupBit();
   };
 
 
@@ -38,10 +38,10 @@ function BitControl(){
    *
    */
   this.setupBit=function(){
-  this.node.find('select[name=bit]').change($.proxy(function(control,event){
-  var card = control.closest(Card);
-  card.setBit($(this).val());
-  },undefined,this));
+    this.node.find('select[name=bit]').change($.proxy(function(control,event){
+      var card = control.closest(Card);
+      card.setBit($(this).val());
+    },undefined,this));
   };
 }
 

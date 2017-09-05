@@ -22,7 +22,7 @@ function FlavorTextControl(){
    *
    */
   this.setup=function(){
-  this.node = $(FlavorTextControl.template).appendTo(this.parent.node);
+    this.node = $(FlavorTextControl.template).appendTo(this.parent.node);
   };
 
 
@@ -30,7 +30,7 @@ function FlavorTextControl(){
    *
    */
   this.register=function(){
-  this.setupFlavorText();
+    this.setupFlavorText();
   };
 
 
@@ -38,9 +38,9 @@ function FlavorTextControl(){
    *
    */
   this.setupFlavorText=function(){
-  var form = this.closest(Form);
-  var card = this.closest(Card);
-  form.link(this.node.find('textarea[name="flavorText"]'),card.node.find('span.flavorText'));
+    var form = this.closest(Form);
+    var card = this.closest(Card);
+    form.link(this.node.find('textarea[name="flavorText"]'),card.node.find('span.flavorText'));
   };
 }
 

@@ -22,7 +22,7 @@ function HeaderControl(){
    *
    */
   this.setup=function(){
-  this.node = $(HeaderControl.template).appendTo(this.parent.node);
+    this.node = $(HeaderControl.template).appendTo(this.parent.node);
   };
 
 
@@ -30,7 +30,7 @@ function HeaderControl(){
    *
    */
   this.register=function(){
-  this.setupHeader();
+    this.setupHeader();
   };
 
 
@@ -38,11 +38,11 @@ function HeaderControl(){
    *
    */
   this.setupHeader = function(){
-  var form = this.closest(Form);
-  form.linkToTemplate("title");
-  form.linkToTemplate("subTitle");
-  form.linkToTemplate("actions");
-  form.linkToTemplate("move");
+    var form = this.closest(Form);
+    form.linkToTemplate("title");
+    form.linkToTemplate("subTitle");
+    form.linkToTemplate("actions");
+    form.linkToTemplate("move");
   };
 }
 

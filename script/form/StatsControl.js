@@ -22,7 +22,7 @@ function StatsControl(){
    *
    */
   this.setup=function(){
-  this.node = $(StatsControl.template).appendTo(this.parent.node);
+    this.node = $(StatsControl.template).appendTo(this.parent.node);
   };
 
 
@@ -30,7 +30,7 @@ function StatsControl(){
    *
    */
   this.register=function(){
-  this.setupStats();
+    this.setupStats();
   };
 
 
@@ -38,20 +38,20 @@ function StatsControl(){
    *@todo stats should core components
    */
   this.setupStats=function(){
-  var form = this.closest(Form);
-  var strStat = new Stat("STR", 'hero monster pet', '3b 1sw');
-  var armStat = new Stat("ARM", 'hero monster pet', '2b 1r sh');
-  var willStat = new Stat("WILL", 'hero monster', '3b');
-  var dexStat = new Stat("DEX", 'hero monster', '3b');
+    var form = this.closest(Form);
+    var strStat = new Stat("STR", 'hero monster pet', '3b 1sw');
+    var armStat = new Stat("ARM", 'hero monster pet', '2b 1r sh');
+    var willStat = new Stat("WILL", 'hero monster', '3b');
+    var dexStat = new Stat("DEX", 'hero monster', '3b');
 
-  form.linkToTemplateStat("STR",strStat);
-  form.linkToTemplateStat("ARM",armStat);
-  form.linkToTemplateStat("WILL",willStat);
-  form.linkToTemplateStat("DEX",dexStat);
+    form.linkToTemplateStat("STR",strStat);
+    form.linkToTemplateStat("ARM",armStat);
+    form.linkToTemplateStat("WILL",willStat);
+    form.linkToTemplateStat("DEX",dexStat);
 
-  form.linkToTemplate("wounds");
-  form.linkToTemplate("skulls");
-  form.linkToTemplate("potions");
+    form.linkToTemplate("wounds");
+    form.linkToTemplate("skulls");
+    form.linkToTemplate("potions");
   };
 }
 

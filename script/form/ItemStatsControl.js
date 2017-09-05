@@ -22,23 +22,23 @@ function ItemStatsControl(){
    *
    */
   this.setup=function(){
-  this.node = $(ItemStatsControl.template).appendTo(this.parent.node);
+    this.node = $(ItemStatsControl.template).appendTo(this.parent.node);
   };
 
   /**
    *
    */
   this.register=function(){
-  this.setupItemStat();
+    this.setupItemStat();
   };
 
   /**
    *
    */
   this.setupItemStat=function(){
-  var form = this.closest(Form);
-  form.linkToTemplate('itemStats','input',form.parseItemStat);
-  this.node.find('input[name=itemStats]').trigger('input');
+    var form = this.closest(Form);
+    form.linkToTemplate('itemStats','input',form.parseItemStat);
+    this.node.find('input[name=itemStats]').trigger('input');
   };
 }
 
