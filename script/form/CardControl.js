@@ -16,95 +16,94 @@
  *   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-'use strict';
 function CardControl(){
 
-	/**
-	 * Puts HTML template into the page.
-	 */
-	this.setup=function(){
-		this.node = $(CardControl.template).appendTo(this.parent.node);
-		this.each('setup');
-	}
+  /**
+   * Puts HTML template into the page.
+   */
+  this.setup=function(){
+    this.node = $(CardControl.template).appendTo(this.parent.node);
+    this.each('setup');
+  };
 
-	
-	/**
-	 * Registers click handlers.
-	 */
-	this.register=function(){
-		this.setupCardScale();
-		this.setupCardType();
 
-		//monster
-		this.setupRegionColor();
+  /**
+   * Registers click handlers.
+   */
+  this.register=function(){
+    this.setupCardScale();
+    this.setupCardType();
 
-		//loot treasure
-		this.setupOrientation();
-	}
+    //monster
+    this.setupRegionColor();
 
-	
-	/**
-	 * On CardScale change updates the card.
-	 */
-	this.setupCardScale=function(){
-		this.node.find('input[name=cardScale]').on('input',$.proxy(function(control,event){
-			control.closest(Card).setScale($(this).val());
-		},undefined,this));
-	}
+    //loot treasure
+    this.setupOrientation();
+  };
 
-	
-	/**
-	 * When cardType changes updates the form and the card.
-	 */
-	this.setupCardType=function(){
-		this.node.find("select[name=cardType]").change($.proxy(function(control,event){
-			var form = control.closest(Form);
-			var card = form.closest(Card)
-			var imc = form.closest(ImageControl);
-			var type = $(this).val();
 
-			//modify displayed elements
-			form.setDisplay(form.node,type);
-			form.setDisplay(card.node.find('.card'),type);
+  /**
+   * On CardScale change updates the card.
+   */
+  this.setupCardScale=function(){
+    this.node.find('input[name=cardScale]').on('input',$.proxy(function(control,event){
+      control.closest(Card).setScale($(this).val());
+    },undefined,this));
+  };
 
-			//modify card color
-			card.setType(type);
 
-			//set the default avatar
-			imc.setProfileDefaultAvatar($(this).val());
-			form.checkStatsForDisplay();
-		},undefined,this));
+  /**
+   * When cardType changes updates the form and the card.
+   */
+  this.setupCardType=function(){
+    this.node.find("select[name=cardType]").change($.proxy(function(control,event){
+      var form = control.closest(Form);
+      var card = form.closest(Card);
+      var imc = form.closest(ImageControl);
+      var type = $(this).val();
 
-		//trigger the card type change to initialize the card.
-		this.node.find("select[name=cardType]").trigger('change');
-	}
+      //modify displayed elements
+      form.setDisplay(form.node,type);
+      form.setDisplay(card.node.find('.card'),type);
 
-	
-	/**
-	 * When the region color changes sets it for the card.
-	 */
-	this.setupRegionColor=function(){
-		this.node.find("select[name=region]").change($.proxy(function(control,event){
-			var card = control.closest(Card).node.find('.card');
-			$(this).find('option').each(function() {
-				card.removeClass($(this).val());
-			});
+      //modify card color
+      card.setType(type);
 
-			card.addClass($(this).val());
-		},undefined,this));
+      //set the default avatar
+      imc.setProfileDefaultAvatar($(this).val());
+      form.checkStatsForDisplay();
+    },undefined,this));
 
-		//trigger the region color change to initialize the card.
-		this.node.find("select[name=region]").trigger('change');
-	}
+    //trigger the card type change to initialize the card.
+    this.node.find("select[name=cardType]").trigger('change');
+  };
 
-	/**
-	 * When the Item orientation changes sets it for the card.
-	 */
-	this.setupOrientation=function(){
-		this.node.find('select[name="orientation"]').change($.proxy(function(control,event){
-			control.closest(Card).setOrientation($(this).val());
-		},undefined, this));
-	}
+
+  /**
+   * When the region color changes sets it for the card.
+   */
+  this.setupRegionColor=function(){
+    this.node.find("select[name=region]").change($.proxy(function(control,event){
+      var card = control.closest(Card).node.find('.card');
+      $(this).find('option').each(function() {
+        card.removeClass($(this).val());
+      });
+
+      card.addClass($(this).val());
+    },undefined,this));
+
+    //trigger the region color change to initialize the card.
+    this.node.find("select[name=region]").trigger('change');
+  };
+
+  /**
+   * When the Item orientation changes sets it for the card.
+   */
+  this.setupOrientation=function(){
+    this.node.find('select[name="orientation"]').change($.proxy(function(control,event){
+      control.closest(Card).setOrientation($(this).val());
+    },undefined, this));
+  };
 }
 
 CardControl.prototype=new CoreTemplate('html/form/CardControl.html');

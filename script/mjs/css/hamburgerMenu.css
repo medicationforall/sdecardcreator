@@ -22,8 +22,12 @@ display:none;
 color:#fff;
 }
 
+.menu{
+transition:background-color 0.5s ease, color 0.5s ease;
+}
+
 .hamburger.menu a{
-color:#fff;
+color:inherit;
 display:block;
 margin-bottom:8px;
 font-family:arial;
@@ -32,6 +36,7 @@ text-decoration:none;
 
 .hamburger.menu a:hover{
 text-decoration:underline;
+text-decoration-skip: ink;
 }
 
 .hamburger.menu h3{

@@ -16,33 +16,32 @@
  *   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-'use strict';
 function FlavorTextControl(){
 
-	/**
-	 *
-	 */
-	this.setup=function(){
-		this.node = $(FlavorTextControl.template).appendTo(this.parent.node);
-	}
+  /**
+   *
+   */
+  this.setup=function(){
+  this.node = $(FlavorTextControl.template).appendTo(this.parent.node);
+  };
 
 
-	/**
-	 *
-	 */
-	this.register=function(){
-		this.setupFlavorText();
-	}
+  /**
+   *
+   */
+  this.register=function(){
+  this.setupFlavorText();
+  };
 
 
-	/**
-	 *
-	 */
-	this.setupFlavorText=function(){
-		var form = this.closest(Form);
-		var card = this.closest(Card);
-		form.link(this.node.find('textarea[name="flavorText"]'),card.node.find('span.flavorText'));
-	}
+  /**
+   *
+   */
+  this.setupFlavorText=function(){
+  var form = this.closest(Form);
+  var card = this.closest(Card);
+  form.link(this.node.find('textarea[name="flavorText"]'),card.node.find('span.flavorText'));
+  };
 }
 
 FlavorTextControl.prototype = new CoreTemplate('html/form/FlavorTextControl.html');

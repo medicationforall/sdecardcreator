@@ -1,5 +1,5 @@
 /**
- *   Mjs source file hamburgerMenu,
+ *   Mjs source file Core,
  *   Copyright (C) 2016  James M Adams
  *
  *   This program is free software: you can redistribute it and/or modify
@@ -15,29 +15,33 @@
  *   You should have received a copy of the GNU Lesser General Public License
  *   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-'use strict';
-$(document).ready(function(){
 
-	//console.log('hamburger menu ready');
+function CoreTemplate(html){
+	this.html=html;
+	this.node=undefined;
+	this.children=[];
+}
 
-	//menu click
-	$('.header .hamburger').click(function(event){
-		event.preventDefault();
-		//console.log('clicked hamburger');
+CoreTemplate.prototype = new Core();
+CoreTemplate.prototype.constructor = CoreTemplate;
 
-		if($('body').hasClass('menuOpen')){
-			$('body').removeClass('menuOpen');
-		}else{
-			$('body').addClass('menuOpen');
+
+/**
+ * Load lifecycle that loads an html template and adds it to the list of deferreds.
+ *@override
+ */
+CoreTemplate.prototype.load=function(){
+	var list =[];
+
+	if(this.html){
+		var deferred;
+		if(this.constructor.template===undefined){
+			deferred = $.get(this.html,$.proxy(function(data){
+				//console.log('loaded template',this.html,this.class);
+				this.constructor.template=data;
+			},this));
+			list.push(deferred);
 		}
-	});
-
-	//about click
-	$('.hamburger.menu .infoButton').click(function(event){
-		event.preventDefault();
-
-		console.log('clicked infoButton',$(this).attr('href'));
-		var href = $(this).attr('href');
-		var aboutDialog = new InfoDialog(href);
-	});
-});
+	}
+	return list.concat(this.each('load'));
+};

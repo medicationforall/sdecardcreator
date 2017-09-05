@@ -6,21 +6,15 @@
 	<meta charset="UTF-8">
 	<title>SDE Card Creator</title>
 	<meta name="description" content="Create Custom Cards for Super Dungeon Explore!">
-	<meta name="keywords" content="SDE Card Creator,
-Super Dungeon Explore Card Creator,
-SDE Card, Super Dungeon Explore Card,
-SDE Custom Cards,
-Super Dungeon Explore Custom Cards,
-SDE Card Template,
-Super Dungeon Explore Card Template">
+	<meta name="keywords" content="SDE Card Creator, Super Dungeon Explore Card Creator, SDE Card, Super Dungeon Explore Card, SDE Custom Cards, Super Dungeon Explore Custom Cards, SDE Card Template, Super Dungeon Explore Card Template">
 	<meta name="author" content="James Adams">
 
 
 	<!--<link href='https://fonts.googleapis.com/css?family=PT+Serif:400italic,700&subset=latin-ext' rel='stylesheet' type='text/css'>-->
   <!--<link href="script/lib/jquery-ui.min.css" rel="stylesheet" />-->
   <link href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet" />
-	<link href="mjs/css/hamburgerMenu.css" rel="stylesheet" />
-	<link href="mjs/css/dialog.css" rel="stylesheet" />
+	<link href="script/mjs/css/hamburgerMenu.css" rel="stylesheet" />
+	<link href="script/mjs/css/dialog.css" rel="stylesheet" />
 
 	<link href="css/style.css" rel="stylesheet" />
 	<link href="css/form.css" rel="stylesheet" />
@@ -34,21 +28,20 @@ Super Dungeon Explore Card Template">
 	<link href="css/wizard.css" rel="stylesheet" />
 	<link href="css/keywordSettings.css" rel="stylesheet" />
 
-	<!--<script src="script/lib/jquery-3.1.1.min.js"></script>
-	<script src="script/lib/jquery-ui.min.js"></script>
+	<!--
 	<script src="script/lib/Blob.js"></script>
 	<script src="script/lib/canvas-toBlob.js"></script>
 	<script src="script/lib/FileSaver.min.js"></script>
 	<script src="script/lib/html2canvas.js"></script>-->
-  	<script type="text/javascript" src="//code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js" integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw=" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2014-11-29/FileSaver.min.js"></script>
+	<script src="//code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f" crossorigin="anonymous"></script>
+	<script src="//code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha384-Dziy8F2VlJQLMShA6FHWNul/veM9bCkRUaLqr199K94ntO5QUrLJBEbYegdSkkqX" crossorigin="anonymous"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.3/FileSaver.min.js" integrity="sha384-VgWGwiEJnh9P379lbU8DxPcfRuFkfLl0uPuL9tolOHtm2tx8Qy8d/KtvovfM0Udh" crossorigin="anonymous"></script>
 
-
-	<script src="mjs/script/InfoDialog.js"></script>
-	<script src="mjs/script/hamburgerMenu.js"></script>
-	<script src="mjs/script/Core.js"></script>
-	<script src="mjs/script/CoreTemplate.js"></script>
+	<script src="script/mjs/script/InfoDialog.js"></script>
+	<script src="script/mjs/script/hamburgerMenu.js"></script>
+	<script src="script/mjs/script/Core.js"></script>
+	<script src="script/mjs/script/CoreTemplate.js"></script>
+	<script src="script/mjs/script/mixin/HasOpenMenuButtons.js"></script>
 
 	<script src="script/keyword/KeywordStore.js"></script>
 	<script src="script/keyword/KeywordSettings.js"></script>
@@ -82,42 +75,49 @@ Super Dungeon Explore Card Template">
 	<div class="pageHeader header">
 		<h1>SDE Card Creator</h1>
 
+		<a href="" class="openMenuButton" data-menu="save" title="Save Menu">Save</a>
+		<a href="" class="openMenuButton" data-menu="load" title="Load Menu">Load</a>
+		<a href="" class="shareButton" title="Create url link to this chart">Share</a>
+
 		<!--<a href="" class="openWizard">Helpful Wizard!</a>-->
 		<a href="" class="saveAsImage">Save</a>
-		
+
 		<a href="" class="save" title="Save JSON Card File">Save</a>
 		Load - <input type="file" class="importFile" title="Load JSON Card File"  />
 		<a href="" class="resetForm" title="reset Form">Reset</a>
-		
+
 		<a href="" class="addCard">Add Card</a>
 
 		<a class="hamburger" href="">Menu</a>
 	</div>
 
 	<div class="hamburger menu">
-		<a href="http://medicationforall.com">Medication For All</a>
-		<a href="https://github.com/medicationforall" >Github</a>
-		<hr />
+		<div class="save subMenu">
+		</div>
 
-		<a href="templates" target="_blank">Templates</a>
+		<div class="load subMenu">
+		</div>
 
-		<hr />
+		<div class="help subMenu">
+			<a href="http://medicationforall.com">Medication For All</a>
+			<a href="https://github.com/medicationforall" >Github</a>
+			<hr />
 
-		<a href="html/help.html" class="infoButton">Help</a>
-		<a href="html/faq.html" class="infoButton" title="Frequently Asked Questions">F.A.Q.</a>
-		<a href="html/todo.html" class="infoButton">Todo</a>
-		<a href="html/changes.html" class="infoButton">Changes</a>
-		<a href="html/about.html" class="infoButton" title="">About</a>
+			<a href="templates" target="_blank">Templates</a>
+
+			<hr />
+
+			<a href="html/help.html" class="infoButton">Help</a>
+			<a href="html/faq.html" class="infoButton" title="Frequently Asked Questions">F.A.Q.</a>
+			<a href="html/todo.html" class="infoButton">Todo</a>
+			<a href="html/changes.html" class="infoButton">Changes</a>
+			<a href="html/about.html" class="infoButton" title="">About</a>
+		</div>
 	</div>
 
 
 	<div class="noScript">
 		This page requires javascript to work correctly.
-		<ol>
-		<li>Save / Load SDE Card Templates</li>
-		<li>Render Form Changes dynamically</li>
-		<li>Switch Card Templates for Heroes / Monsters / Pets</li>
-		</ol>
 	</div>
 
 	<div class="pageContent">

@@ -55,9 +55,23 @@ color:#000;
 border:1px solid #ccc;
 }
 
-.pageHeader .hamburger{
-	float:right;
-	margin-top:15px;
+.hamburger.menu{
+  padding:0;
+  height:100%;
+  min-width: 250px;
+  z-index:3;
+}
+
+a.hamburger {
+    float: none;
+    margin-right: 10px;
+}
+
+body.menuOpen .hamburger.menu {
+    display: block;
+    position: absolute;
+    right: 0;
+    z-index: 1;
 }
 
 .pageContent{

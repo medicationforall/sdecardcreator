@@ -16,34 +16,33 @@
  *   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-'use strict';
 function BitControl(){
 
-	/**
-	 *
-	 */
-	this.setup=function(){
-		this.node = $(BitControl.template).appendTo(this.parent.node);
-	}
-
-	
-	/**
-	 *
-	 */
-	this.register=function(){
-		this.setupBit();
-	}
+  /**
+   *
+   */
+  this.setup=function(){
+  this.node = $(BitControl.template).appendTo(this.parent.node);
+  };
 
 
-	/**
-	 *
-	 */
-	this.setupBit=function(){
-		this.node.find('select[name=bit]').change($.proxy(function(control,event){
-			var card = control.closest(Card);
-			card.setBit($(this).val());
-		},undefined,this));
-	}
+  /**
+   *
+   */
+  this.register=function(){
+  this.setupBit();
+  };
+
+
+  /**
+   *
+   */
+  this.setupBit=function(){
+  this.node.find('select[name=bit]').change($.proxy(function(control,event){
+  var card = control.closest(Card);
+  card.setBit($(this).val());
+  },undefined,this));
+  };
 }
 
 BitControl.prototype = new CoreTemplate('html/form/BitControl.html');

@@ -1,5 +1,5 @@
 /**
- *   Mjs source file Core,
+ *   Mjs source file hamburgerMenu,
  *   Copyright (C) 2016  James M Adams
  *
  *   This program is free software: you can redistribute it and/or modify
@@ -16,33 +16,28 @@
  *   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-'use strict';
-function CoreTemplate(html){
-	this.html=html;
-	this.node;
-	this.children=[];
-}
+$(document).ready(function(){
 
-CoreTemplate.prototype = new Core();
-CoreTemplate.prototype.constructor = CoreTemplate;
+  //menu click
+  $('.header .hamburger').click(function(event){
+    event.preventDefault();
 
+    //toggle menu display
+    if($('body').hasClass('menuOpen') && $('.hamburger.menu .subMenu.general').hasClass('focus')){
+      $('body').removeClass('menuOpen');
+    }else{
+      $('body').addClass('menuOpen');
+    }
 
-/**
- * Load lifecycle that loads an html template and adds it to the list of deferreds.
- *@override
- */
-CoreTemplate.prototype.load=function(){
-	var list =[];
+    //set menu focus
+    $('.hamburger.menu .subMenu').removeClass('focus');
+    $('.hamburger.menu .subMenu.general').addClass('focus');
+  });
 
-	if(this.html){
-		var deferred;
-		if(this.constructor.template===undefined){
-			deferred = $.get(this.html,$.proxy(function(data){
-				//console.log('loaded template',this.html,this.class);
-				this.constructor.template=data;
-			},this));
-			list.push(deferred);
-		}
-	}
-	return list.concat(this.each('load'));
-}
+  //open infodialog button.
+  $('.openInfoDialog').click(function(event){
+    event.preventDefault();
+    var url = $(this).data('url');
+    var changeDialog = new InfoDialog(url);
+  });
+});

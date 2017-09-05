@@ -16,44 +16,43 @@
  *   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-'use strict';
 function StatsControl(){
 
-	/**
-	 *
-	 */
-	this.setup=function(){
-		this.node = $(StatsControl.template).appendTo(this.parent.node);
-	}
+  /**
+   *
+   */
+  this.setup=function(){
+  this.node = $(StatsControl.template).appendTo(this.parent.node);
+  };
 
-	
-	/**
-	 *
-	 */
-	this.register=function(){
-		this.setupStats();
-	}
 
-	
-	/**
-	 *@todo stats should core components
-	 */
-	this.setupStats=function(){
-		var form = this.closest(Form);
-		var strStat = new Stat("STR", 'hero monster pet', '3b 1sw');
-		var armStat = new Stat("ARM", 'hero monster pet', '2b 1r sh');
-		var willStat = new Stat("WILL", 'hero monster', '3b');
-		var dexStat = new Stat("DEX", 'hero monster', '3b');
+  /**
+   *
+   */
+  this.register=function(){
+  this.setupStats();
+  };
 
-		form.linkToTemplateStat("STR",strStat);
-		form.linkToTemplateStat("ARM",armStat);
-		form.linkToTemplateStat("WILL",willStat);
-		form.linkToTemplateStat("DEX",dexStat);
 
-		form.linkToTemplate("wounds");
-		form.linkToTemplate("skulls");
-		form.linkToTemplate("potions");
-	}
+  /**
+   *@todo stats should core components
+   */
+  this.setupStats=function(){
+  var form = this.closest(Form);
+  var strStat = new Stat("STR", 'hero monster pet', '3b 1sw');
+  var armStat = new Stat("ARM", 'hero monster pet', '2b 1r sh');
+  var willStat = new Stat("WILL", 'hero monster', '3b');
+  var dexStat = new Stat("DEX", 'hero monster', '3b');
+
+  form.linkToTemplateStat("STR",strStat);
+  form.linkToTemplateStat("ARM",armStat);
+  form.linkToTemplateStat("WILL",willStat);
+  form.linkToTemplateStat("DEX",dexStat);
+
+  form.linkToTemplate("wounds");
+  form.linkToTemplate("skulls");
+  form.linkToTemplate("potions");
+  };
 }
 
 StatsControl.prototype = new CoreTemplate('html/form/StatsControl.html');

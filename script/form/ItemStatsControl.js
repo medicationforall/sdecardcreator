@@ -15,32 +15,31 @@
  *   You should have received a copy of the GNU Lesser General Public License
  *   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
- 
-'use strict';
+
 function ItemStatsControl(){
 
-	/**
-	 *
-	 */
-	this.setup=function(){
-		this.node = $(ItemStatsControl.template).appendTo(this.parent.node);
-	}
+  /**
+   *
+   */
+  this.setup=function(){
+  this.node = $(ItemStatsControl.template).appendTo(this.parent.node);
+  };
 
-	/**
-	 *
-	 */
-	this.register=function(){
-		this.setupItemStat();
-	}
+  /**
+   *
+   */
+  this.register=function(){
+  this.setupItemStat();
+  };
 
-	/**
-	 *
-	 */
-	this.setupItemStat=function(){
-		var form = this.closest(Form);
-		form.linkToTemplate('itemStats','input',form.parseItemStat);
-		this.node.find('input[name=itemStats]').trigger('input');
-	}
+  /**
+   *
+   */
+  this.setupItemStat=function(){
+  var form = this.closest(Form);
+  form.linkToTemplate('itemStats','input',form.parseItemStat);
+  this.node.find('input[name=itemStats]').trigger('input');
+  };
 }
 
 ItemStatsControl.prototype = new CoreTemplate('html/form/ItemStatsControl.html');
