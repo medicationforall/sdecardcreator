@@ -30,33 +30,33 @@ function Core(){
  * init prior to load
  *@todo May not be needed
  */
-Core.prototype.init=function(){
+/*Core.prototype.init=function(){
 	//console.log('call load for '+ this.constructor.name);
 	return this.each('init');
-};
+};*/
 
 /**
  * Load lifecycle.
  *@see CoreTemplate
  */
-Core.prototype.load=function(){
+/*Core.prototype.load=function(){
 	//console.log('call load for '+ this.constructor.name);
 	return this.each('load');
-};
+};*/
 
 /**
  * Places the nodes content into the html page.
  */
-Core.prototype.setup=function(){
+/*Core.prototype.setup=function(){
 	this.each('setup');
-};
+};*/
 
 /**
  * Register user interation events after all setup lifecycle.
  */
-Core.prototype.register=function(){
+/*Core.prototype.register=function(){
 	this.each('register');
-};
+};*/
 
 
 //METHODS

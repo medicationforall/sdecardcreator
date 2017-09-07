@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+	<meta charset="UTF-8">
+	<title>SDE Card Creator</title>
+	<meta name="description" content="Create Custom Cards for Super Dungeon Explore!">
+	<meta name="keywords" content="SDE Card Creator, Super Dungeon Explore Card Creator, SDE Card, Super Dungeon Explore Card, SDE Custom Cards, Super Dungeon Explore Custom Cards, SDE Card Template, Super Dungeon Explore Card Template">
+	<meta name="author" content="James Adams">
+
+
+	<!--<link href='https://fonts.googleapis.com/css?family=PT+Serif:400italic,700&subset=latin-ext' rel='stylesheet' type='text/css'>-->
+  <!--<link href="script/lib/jquery-ui.min.css" rel="stylesheet" />-->
+	<link href="//cdn.jsdelivr.net/animatecss/3.5.1/animate.min.css" type="text/css" rel="stylesheet">
+  <link href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet" />
+	<link href="script/mjs/css/hamburgerMenu.css" rel="stylesheet" />
+	<link href="script/mjs/css/dialog.css" rel="stylesheet" />
+
+	<link href="css/style.css" rel="stylesheet" />
+	<link href="css/form.css" rel="stylesheet" />
+	<link href="css/card.css" rel="stylesheet" />
+	<link href="css/cardModel.css" rel="stylesheet" />
+	<link href="css/cardItem.css" rel="stylesheet" />
+	<link href="css/cardExplore.css" rel="stylesheet" />
+	<link href="css/cardCommand.css" rel="stylesheet" />
+	<link href="css/cardTimeout.css" rel="stylesheet" />
+	<link href="css/cardArcade.css" rel="stylesheet" />
+	<link href="css/wizard.css" rel="stylesheet" />
+	<link href="css/keywordSettings.css" rel="stylesheet" />
+
+	<!--
+	<script src="script/lib/Blob.js"></script>
+	<script src="script/lib/canvas-toBlob.js"></script>
+	<script src="script/lib/FileSaver.min.js"></script>
+	<script src="script/lib/html2canvas.js"></script>-->
+	<script src="//code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f" crossorigin="anonymous"></script>
+	<script src="//code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha384-Dziy8F2VlJQLMShA6FHWNul/veM9bCkRUaLqr199K94ntO5QUrLJBEbYegdSkkqX" crossorigin="anonymous"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.3/FileSaver.min.js" integrity="sha384-VgWGwiEJnh9P379lbU8DxPcfRuFkfLl0uPuL9tolOHtm2tx8Qy8d/KtvovfM0Udh" crossorigin="anonymous"></script>
+
+	<script src="script/mjs/script/InfoDialog.js"></script>
+	<script src="script/mjs/script/hamburgerMenu.js"></script>
+	<script src="script/mjs/script/Core.js"></script>
+	<script src="script/mjs/script/CoreTemplate.js"></script>
+	<script src="script/mjs/script/mixin/HasOpenMenuButtons.js"></script>
+
+	<script src="script/menuBar/mixin/HasLoadMenu.js"></script>
+	<script src="script/menuBar/mixin/HasSaveMenu.js"></script>
+	<script src="script/menuBar/MainMenu.js"></script>
+
+
+	<script src="script/sdeCreate/keyword/KeywordStore.js"></script>
+	<script src="script/sdeCreate/keyword/KeywordSettings.js"></script>
+	<script src="script/sdeCreate/Stat.js"></script>
+	<script src="script/sdeCreate/Ability.js"></script>
+	<script src="script/sdeCreate/form/Form.js"></script>
+	<script src="script/sdeCreate/form/CardControl.js"></script>
+	<script src="script/sdeCreate/form/HeaderControl.js"></script>
+	<script src="script/sdeCreate/form/ImageControl.js"></script>
+	<script src="script/sdeCreate/form/ItemStatsControl.js"></script>
+	<script src="script/sdeCreate/form/StatsControl.js"></script>
+	<script src="script/sdeCreate/form/KeywordControl.js"></script>
+	<script src="script/sdeCreate/form/AbilityControl.js"></script>
+	<script src="script/sdeCreate/form/BitControl.js"></script>
+	<script src="script/sdeCreate/form/FlavorTextControl.js"></script>
+	<script src="script/sdeCreate/card/Card.js"></script>
+	<script src="script/wizard/Wizard.js"></script>
+	<script src="script/sdeCreate/SdeCreate.js"></script>
+
+	<script src="script/main.js"></script>
+
+	<style>
+	</style>
+</head>
+
+<body>
+
+
+
+<div class="page">
+
+	<div class="pageHeader header menuBar">
+		<h1>SDE Card Creator</h1>
+
+		<a href="" class="openMenuButton" data-menu="save" title="Save Menu">Save</a>
+		<a href="" class="openMenuButton" data-menu="load" title="Load Menu">Load</a>
+		<a href="" class="shareButton" title="Create url link to this chart">Share</a>
+
+		<a href="" class="addCard">Add Card</a>
+
+		<a href="" class="openMenuButton" data-menu="help" title="Help Menu">Help</a>
+	</div>
+
+	<div class="hamburger menu">
+		<div class="save subMenu">
+			<a href="" class="closeMenuButton">&gt;&gt;</a>
+			Save
+			<!--<a href="" class="openWizard">Helpful Wizard!</a>-->
+			<a href="" class="saveAsImage">Save Image</a>
+
+			<a href="" class="save" title="Save JSON Card File">Save JSON</a>
+		</div>
+
+		<div class="load subMenu">
+			<a href="" class="closeMenuButton">&gt;&gt;</a>
+			Load
+			<input type="file" class="importFile" title="Load JSON Card File"  />
+			<a href="" class="resetForm" title="reset Form">Reset</a>
+
+			<hr />
+			<a href="templates" target="_blank">Templates</a>
+
+		</div>
+
+		<div class="help subMenu">
+			<a href="" class="closeMenuButton">&gt;&gt;</a>
+			<a href="http://medicationforall.com">Medication For All</a>
+			<a href="https://github.com/medicationforall" >Github</a>
+			<hr />
+
+			<a href="html/help.html" class="infoButton">Help</a>
+			<a href="html/faq.html" class="infoButton" title="Frequently Asked Questions">F.A.Q.</a>
+			<a href="html/todo.html" class="infoButton">Todo</a>
+			<a href="html/changes.html" class="infoButton">Changes</a>
+			<a href="html/about.html" class="infoButton" title="">About</a>
+		</div>
+	</div>
+
+
+	<div class="noScript">
+		This page requires javascript to work correctly.
+	</div>
+
+	<div class="pageContent">
+	</div>
+
+</div>
+</body>
+</html>

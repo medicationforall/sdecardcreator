@@ -39,15 +39,51 @@ $(document).ready(function(){
   //Initialize mainMenu
   var promises = [];
   promises.push($.getJSON('https://sde.medicationforall.com/keywordlist.php?json=true'));
+  promises.push($.get('html/form/Form.html'));
+
 
   //resolve the templates
-  $.when.apply($, promises).done(function(keywords){
-      console.log('ready to run app',keywords);
+  $.when.apply($, promises).done(function(keywords,form){
+      console.log('ready to run app',keywords,form[0]);
+
       var mainMenu = new MainMenu();
-      var keywordStore = new KeywordStore(keywords);
-      var editorPain = new EditorPane();
-      var sdeCreate = new CardContainer();
+      var sdeCreate = new SdeCreate(keywords);
   });
+
+
+  //form.init();
+
+  //var list = form.load();
+
+  //$.when.apply($,list).done(function(){
+    //form.setup();
+    //form.register();
+  //});
+
+
+  /*$.when(Wizard.prototype._resolveTemplate()).done(function(){
+    var wizard = new Wizard();
+
+    //Wizard
+    //$('.wizard').hide();
+    //$('.wizard').dialog({dialogClass: "wizardDialog", width: 500});
+
+    $('a.openWizard').click(function(event){
+      event.preventDefault();
+      $('.wizard').dialog({dialogClass: "wizardDialog", width: 500});
+    });
+
+    $('.wizard a.previous').click(function(event){
+      event.preventDefault();
+      wizard.previousStep();
+    });
+
+    $('.wizard a.next').click(function(event){
+      event.preventDefault();
+      wizard.nextStep();
+    });
+  });*/
+
 
   //remove noscript block
   $('.noScript').remove();

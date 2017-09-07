@@ -1,0 +1,6 @@
+.cardContainer{
+  display:inline-block;
+  background:purple;
+  height:100%;
+  width: calc(100% - 205px);
+}

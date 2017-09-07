@@ -10,11 +10,10 @@
   src: url(font/AdelonItalic.woff2) format('woff2');
 }
 
-body{
-font-family:arial;
-padding:0px;
-margin:0px;
-/*margin-left:5px;*/
+html,body{
+	height:100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 a{
@@ -24,6 +23,19 @@ text-decoration:none;
 
 a:hover{
 text-decoration:underline;
+}
+
+body{
+font-family:arial;
+padding:0px;
+margin:0px;
+background:#c0c0c0;
+}
+
+.page{
+  height:inherit;
+  background:#333;
+  margin-bottom:-5px;
 }
 
 /*pageHeader*/
@@ -70,12 +82,44 @@ a.hamburger {
 body.menuOpen .hamburger.menu {
     display: block;
     position: absolute;
+    top:0px;
     right: 0;
-    z-index: 1;
+    z-index: 3;
+}
+
+.menu .subMenu{
+  display:none;
+  padding:5px;
+}
+
+.menu .subMenu .closeMenuButton{
+  float:right;
+  font-weight: bold;
+}
+
+.menu .subMenu.focus{
+  display:block;
+}
+
+.menu .subMenu .importFile{
+  width:203px;
+}
+
+.menu .subMenu .loadRawTextArea{
+  width: calc(100% - 10px);
+  height:100px;
+}
+
+.hamburger.menu .themeBlock a{
+  display:inline;
+}
+
+.hamburger.menu .fontFamilySelector{
+  width:80px;
 }
 
 .pageContent{
-  padding-top:5px;
+  height:calc(100% - 50px);
 }
 
 .left, .right{

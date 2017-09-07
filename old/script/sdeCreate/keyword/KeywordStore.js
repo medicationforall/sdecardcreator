@@ -15,7 +15,7 @@
  *   You should have received a copy of the GNU Lesser General Public License
  *   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-function KeywordStore(keywords){
+function KeywordStore(){
 
   //DATA
   this.data=undefined;
@@ -33,7 +33,6 @@ function KeywordStore(keywords){
   this._constuctor = function(){
     //this._getData();
     this.customKeywords = {};
-    this._setup(keywords);
   };
 
 
@@ -41,13 +40,13 @@ function KeywordStore(keywords){
   /**
    *
    */
-  /*this.load=function(){
+  this.load=function(){
     return $.getJSON('https://sde.medicationforall.com/keywordlist.php?json=true',function(data){
       this._setup(data);
       this.setupKeywordsForm();
       $('.form').trigger('resolved-keywords');
     }.bind(this));
-  };*/
+  };
 
 
   /**

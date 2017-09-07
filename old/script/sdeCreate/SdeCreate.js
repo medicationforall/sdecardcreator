@@ -1,5 +1,5 @@
 /**
- *   SDE Card Creator source file sdeCreate,
+ *   SDE Card Creator source file SdeCreate,
  *   Copyright (C) 2015  James M Adams
  *
  *   This program is free software: you can redistribute it and/or modify
@@ -19,7 +19,8 @@
 /**
  *
  */
-function sdeCreate(){
+function SdeCreate(){
+  console.log('instantiate SDECreate');
 
   //constructor
   /**
@@ -259,5 +260,5 @@ function sdeCreate(){
   };
 }
 
-sdeCreate.prototype = new Core();
-sdeCreate.prototype.constructor = sdeCreate;
+SdeCreate.prototype = new Core();
+SdeCreate.prototype.constructor = SdeCreate;

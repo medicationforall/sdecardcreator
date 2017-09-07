@@ -9,9 +9,7 @@
 	<meta name="keywords" content="SDE Card Creator, Super Dungeon Explore Card Creator, SDE Card, Super Dungeon Explore Card, SDE Custom Cards, Super Dungeon Explore Custom Cards, SDE Card Template, Super Dungeon Explore Card Template">
 	<meta name="author" content="James Adams">
 
-
-	<!--<link href='https://fonts.googleapis.com/css?family=PT+Serif:400italic,700&subset=latin-ext' rel='stylesheet' type='text/css'>-->
-  <!--<link href="script/lib/jquery-ui.min.css" rel="stylesheet" />-->
+	<link href="//cdn.jsdelivr.net/animatecss/3.5.1/animate.min.css" type="text/css" rel="stylesheet">
   <link href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet" />
 	<link href="script/mjs/css/hamburgerMenu.css" rel="stylesheet" />
 	<link href="script/mjs/css/dialog.css" rel="stylesheet" />
@@ -25,14 +23,12 @@
 	<link href="css/cardCommand.css" rel="stylesheet" />
 	<link href="css/cardTimeout.css" rel="stylesheet" />
 	<link href="css/cardArcade.css" rel="stylesheet" />
-	<link href="css/wizard.css" rel="stylesheet" />
 	<link href="css/keywordSettings.css" rel="stylesheet" />
 
-	<!--
-	<script src="script/lib/Blob.js"></script>
-	<script src="script/lib/canvas-toBlob.js"></script>
-	<script src="script/lib/FileSaver.min.js"></script>
-	<script src="script/lib/html2canvas.js"></script>-->
+	<link href="css/editorPane.css" rel="stylesheet" />
+	<link href="css/cardContainer.css" rel="stylesheet" />
+
+  <!--Remote Dependencies -->
 	<script src="//code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f" crossorigin="anonymous"></script>
 	<script src="//code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha384-Dziy8F2VlJQLMShA6FHWNul/veM9bCkRUaLqr199K94ntO5QUrLJBEbYegdSkkqX" crossorigin="anonymous"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.3/FileSaver.min.js" integrity="sha384-VgWGwiEJnh9P379lbU8DxPcfRuFkfLl0uPuL9tolOHtm2tx8Qy8d/KtvovfM0Udh" crossorigin="anonymous"></script>
@@ -40,26 +36,18 @@
 	<script src="script/mjs/script/InfoDialog.js"></script>
 	<script src="script/mjs/script/hamburgerMenu.js"></script>
 	<script src="script/mjs/script/Core.js"></script>
-	<script src="script/mjs/script/CoreTemplate.js"></script>
 	<script src="script/mjs/script/mixin/HasOpenMenuButtons.js"></script>
 
+	<script src="script/menuBar/mixin/HasLoadMenu.js"></script>
+	<script src="script/menuBar/mixin/HasSaveMenu.js"></script>
+	<script src="script/menuBar/MainMenu.js"></script>
+
 	<script src="script/keyword/KeywordStore.js"></script>
-	<script src="script/keyword/KeywordSettings.js"></script>
-	<script src="script/Stat.js"></script>
-	<script src="script/Ability.js"></script>
-	<script src="script/sdeCreate.js"></script>
-	<script src="script/form/Form.js"></script>
-	<script src="script/form/CardControl.js"></script>
-	<script src="script/form/HeaderControl.js"></script>
-	<script src="script/form/ImageControl.js"></script>
-	<script src="script/form/ItemStatsControl.js"></script>
-	<script src="script/form/StatsControl.js"></script>
-	<script src="script/form/KeywordControl.js"></script>
-	<script src="script/form/AbilityControl.js"></script>
-	<script src="script/form/BitControl.js"></script>
-	<script src="script/form/FlavorTextControl.js"></script>
-	<script src="script/card/Card.js"></script>
-	<script src="script/wizard/Wizard.js"></script>
+
+	<script src="script/editorPane/EditorPane.js"></script>
+
+	<script src="script/cardContainer/CardContainer.js"></script>
+
 	<script src="script/main.js"></script>
 
 	<style>
@@ -67,62 +55,56 @@
 </head>
 
 <body>
-
-
-
-<div class="page">
-
-	<div class="pageHeader header">
+	<div class="page">
+		<!-- header -->
+		<div class="pageHeader header menuBar">
 		<h1>SDE Card Creator</h1>
-
-		<a href="" class="openMenuButton" data-menu="save" title="Save Menu">Save</a>
-		<a href="" class="openMenuButton" data-menu="load" title="Load Menu">Load</a>
-		<a href="" class="shareButton" title="Create url link to this chart">Share</a>
-
-		<!--<a href="" class="openWizard">Helpful Wizard!</a>-->
-		<a href="" class="saveAsImage">Save</a>
-
-		<a href="" class="save" title="Save JSON Card File">Save</a>
-		Load - <input type="file" class="importFile" title="Load JSON Card File"  />
-		<a href="" class="resetForm" title="reset Form">Reset</a>
-
-		<a href="" class="addCard">Add Card</a>
-
-		<a class="hamburger" href="">Menu</a>
-	</div>
-
-	<div class="hamburger menu">
-		<div class="save subMenu">
+			<a href="" class="openMenuButton" data-menu="save" title="Save Menu">Save</a>
+			<a href="" class="openMenuButton" data-menu="load" title="Load Menu">Load</a>
+			<a href="" class="shareButton" title="Create url link to this chart">Share</a>
+			<a href="" class="addCard">Add Card</a>
+			<a href="" class="openMenuButton" data-menu="help" title="Help Menu">Help</a>
 		</div>
 
-		<div class="load subMenu">
+		<!-- Expanded Menu -->
+		<div class="hamburger menu">
+			<!-- Save Menu -->
+			<div class="save subMenu">
+				<a href="" class="closeMenuButton">&gt;&gt;</a>
+				Save
+				<a href="" class="saveAsImage">Save Image</a>
+				<a href="" class="save" title="Save JSON Card File">Save JSON</a>
+			</div>
+			
+			<!-- Load Menu -->
+			<div class="load subMenu">
+				<a href="" class="closeMenuButton">&gt;&gt;</a>
+				Load
+				<input type="file" class="importFile" title="Load JSON Card File"  />
+				<a href="" class="resetForm" title="reset Form">Reset</a><hr />
+				<a href="templates" target="_blank">Templates</a>
+			</div>
+
+			<!-- Help Menu -->
+			<div class="help subMenu">
+				<a href="" class="closeMenuButton">&gt;&gt;</a>
+				<a href="http://medicationforall.com">Medication For All</a>
+				<a href="https://github.com/medicationforall" >Github</a><hr />
+				<a href="html/help.html" class="infoButton">Help</a>
+				<a href="html/faq.html" class="infoButton" title="Frequently Asked Questions">F.A.Q.</a>
+				<a href="html/todo.html" class="infoButton">Todo</a>
+				<a href="html/changes.html" class="infoButton">Changes</a>
+				<a href="html/about.html" class="infoButton" title="">About</a>
+			</div>
 		</div>
 
-		<div class="help subMenu">
-			<a href="http://medicationforall.com">Medication For All</a>
-			<a href="https://github.com/medicationforall" >Github</a>
-			<hr />
+		<div class="pageContent">
+			<div class="noScript">This page requires javascript to work correctly.</div>
 
-			<a href="templates" target="_blank">Templates</a>
-
-			<hr />
-
-			<a href="html/help.html" class="infoButton">Help</a>
-			<a href="html/faq.html" class="infoButton" title="Frequently Asked Questions">F.A.Q.</a>
-			<a href="html/todo.html" class="infoButton">Todo</a>
-			<a href="html/changes.html" class="infoButton">Changes</a>
-			<a href="html/about.html" class="infoButton" title="">About</a>
+			<div class="editorPane"></div>
+			<div class="cardContainer">
+			</div>
 		</div>
 	</div>
-
-
-	<div class="noScript">
-		This page requires javascript to work correctly.
-	</div>
-
-	<div class="pageContent">
-	</div>
-
-</div>
 </body>
 </html>
