@@ -42,11 +42,11 @@ $(document).ready(function(){
 
   //resolve the templates
   $.when.apply($, promises).done(function(keywords){
-      console.log('ready to run app',keywords);
       var mainMenu = new MainMenu();
       var keywordStore = new KeywordStore(keywords);
       var editorPain = new EditorPane();
       var sdeCreate = new CardContainer();
+      new Card();
   });
 
   //remove noscript block

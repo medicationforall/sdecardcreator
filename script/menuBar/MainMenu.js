@@ -6,7 +6,6 @@ function MainMenu(){
   };
 
   this._setup=function(){
-    console.log('setup Main Menu');
     this.node = $('.menuBar');
     //HasGatherData.call(this);
     //HasLoadData.call(this);
