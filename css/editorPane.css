@@ -3,4 +3,13 @@
   background:orange;
   height:100%;
   width:290px;
+  overflow: auto;
+}
+
+.editorPane .controlContent.hide{
+  display:none;
+}
+
+.editorPane a{
+  color:#000;
 }

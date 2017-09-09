@@ -1,7 +1,9 @@
 function FlavorTextControl(){
   this.template='<div class="hero monster loot treasure wonder explore flavorText">'+
-    '<h2>Flavor Text</h2>'+
+    '<h2><a class="toggleDisplay" href="">Flavor Text</a></h2>'+
+    '<div class="controlContent hide">'+
     '<textarea name="flavorText" /></textarea>'+
+    '</div>'+
   '</div>';
 
   this.node=undefined;
@@ -11,6 +13,8 @@ function FlavorTextControl(){
     var form = $('.editForm').data('node');
     this.node=$(this.template).appendTo(form.node);
     this.node.data('node',this);
+
+    HasToggleDisplay.call(this);
   };
 
   this._constructor();

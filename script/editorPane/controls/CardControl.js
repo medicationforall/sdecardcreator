@@ -1,7 +1,8 @@
 function CardControl(){
   this.template='<div class="cardOverall">'+
-  	'<b>Card Type</b>'+
-  	'<select name="cardType">'+
+  '<h2><a class="toggleDisplay" href="">Card</a></h2>'+
+  '<div class="controlContent hide">'+
+  	'Type <select name="cardType">'+
   		'<option value="hero">Hero</option>'+
   		'<option value="monster">Monster</option>'+
   		'<option value="pet">Pet</option>'+
@@ -18,11 +19,11 @@ function CardControl(){
   	'</select>'+
 
   	'<div class="cardScale">'+
-  		'Card Scale <input class="number" name="cardScale" value="1.0" type="number" step="0.1" min="0.1" />'+
+  		'Scale <input class="number" name="cardScale" value="1.0" type="number" step="0.1" min="0.1" />'+
   	'</div>'+
 
   	'<div class="monster timeout">'+
-  		'Region Color'+
+  		'Color '+
   		'<select name="region">'+
   			'<option value="red">Red</option>'+
   			'<option value="green">Green</option>'+
@@ -32,7 +33,7 @@ function CardControl(){
   	'</div>'+
 
   	'<div class="treasure loot">'+
-  		'Orientation'+
+  		'Orientation '+
   		'<select name="orientation">'+
   			'<option value="ruby">Top</option>'+
   			'<option value="emerald">Right</option>'+
@@ -40,6 +41,7 @@ function CardControl(){
   			'<option value="citrine">Left</option>'+
   		'</select>'+
   	'</div>'+
+    '</div>'+
   '</div>';
 
   this.node=undefined;
@@ -49,6 +51,8 @@ function CardControl(){
     var form = $('.editForm').data('node');
     this.node=$(this.template).appendTo(form.node);
     this.node.data('node',this);
+
+    HasToggleDisplay.call(this);
   };
 
   this._constructor();

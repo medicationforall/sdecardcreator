@@ -1,6 +1,7 @@
 function ImageControl(){
   this.template='<div class="hero monster pet treasure wonder loot explore character command timeout">'+
-    '<h2>Image</h2>'+
+    '<h2><a class="toggleDisplay" href="">Image</a></h2>'+
+    '<div class="controlContent hide">'+
     '<div class="hero monster pet">Background'+
       '<select name="background">'+
         '<option value="pic1685577_md.jpg">Fae Wood</option>'+
@@ -48,6 +49,7 @@ function ImageControl(){
       '<div><input type="radio" name="imageSource" value="remote">Remote <input name="rCharacter" placeholder="http://" /></div>'+
       '<div><input type="radio" name="imageSource" value="local">Local <input type="file" name="character" /></div>'+
     '</div>'+
+  '</div>'+
   '</div>';
 
   this.node=undefined;
@@ -57,6 +59,8 @@ function ImageControl(){
     var form = $('.editForm').data('node');
     this.node=$(this.template).appendTo(form.node);
     this.node.data('node',this);
+
+    HasToggleDisplay.call(this);
   };
 
   this._constructor();

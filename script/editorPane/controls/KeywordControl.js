@@ -1,7 +1,7 @@
 function KeywordControl(){
   this.template='<div class="hero monster pet treasure wonder loot arcade keyword">'+
-  	'<h2>Keyword  <a href="" class="keywordSettings" title="keyword Editor"></a></h2>'+
-
+  	'<h2><a class="toggleDisplay" href="">Keyword</a>  <a href="" class="keywordSettings" title="keyword Editor"></a></h2>'+
+    '<div class="controlContent hide">'+
   	'<div class="hero monster arcade">'+
   		'Affinity'+
   		'<select name="affinity">'+
@@ -31,6 +31,7 @@ function KeywordControl(){
   	'</div>'+
 
   	'<div>Keywords <input name="keywordsList" required maxlength="80" /></div>'+
+    '</div>'+
   '</div>';
 
   this.node=undefined;
@@ -40,6 +41,8 @@ function KeywordControl(){
     var form = $('.editForm').data('node');
     this.node=$(this.template).appendTo(form.node);
     this.node.data('node',this);
+
+    HasToggleDisplay.call(this);
   };
 
   this._constructor();

@@ -1,6 +1,7 @@
 function AbilityControl(){
   this.template='<div class="hero monster pet loot treasure explore wonder command timeout abilitySection">'+
-  	'<h2>Ability <a href="" class="helpButton" title="Stats Help">?</a></h2>'+
+  	'<h2><a class="toggleDisplay" href="">Ability</a> <a href="" class="helpButton" title="Stats Help">?</a></h2>'+
+    '<div class="controlContent hide">'+
   	'<div class="helpBlock">'+
   		'<div class="helpUnit">'+
   		'<h3>Dice Types</h3>'+
@@ -38,6 +39,7 @@ function AbilityControl(){
   	'</div>'+
   	'<div class="abilities"></div>'+
   	'<a href="" class="addAbility">Add Ability +</a>'+
+    '</div>'+
   '</div>';
 
   this.node=undefined;
@@ -47,6 +49,8 @@ function AbilityControl(){
     var form = $('.editForm').data('node');
     this.node=$(this.template).appendTo(form.node);
     this.node.data('node',this);
+
+    HasToggleDisplay.call(this);
   };
 
   this._constructor();
