@@ -7,6 +7,7 @@ function EditForm(){
     this.node=$(this.template).appendTo(editorPane.node);
     this.node.data('node',this);
 
+    HasSetTypeDisplay.call(this);
     this._setup();
   };
 
@@ -18,6 +19,7 @@ function EditForm(){
     new KeywordControl();
     new AbilityControl();
     new FlavorTextControl();
+    this.setDisplay(this.node,'hero');
   };
 
   this._construct();

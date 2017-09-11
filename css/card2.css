@@ -1,17 +1,24 @@
-/*CARD*/
-
 .cardGroup{
 	display:inline-block;
 	vertical-align:top;
 	transition: width 0.3s ease-out;
+  height:920px;
+}
+
+.cardDiv{
+  display:inline-block;
+  margin:10px;
 }
 
 .card{
-border-radius:10px;
+  display:inline-block;
+  vertical-align:top;
+  border-radius:10px;
 	width:659px;
 	height:900px;
 	padding-top:0.1px;
 	transition: width 0.5s, transform 0.3s ease-out;
+    background:red;
 }
 
 .card .front, .card .back{
@@ -21,11 +28,12 @@ border-radius:10px;
 
 
 .card .front, .card .back{
-height:854px;
+  height:854px;
 	background-size: 100% 854px;
 }
 
 
+/*Keyword*/
 .card span.keyword.fire,
 .card span.keyword.knockdown,
 .card span.keyword.poison,
@@ -133,7 +141,9 @@ height:854px;
 	color:rgba(0, 0, 0, 0.0);
 	background-size: 40px;
 	width:40px;
-	height:40px}
+	height:40px
+}
+
 
 /*HEADER*/
 .card .header{
@@ -181,6 +191,7 @@ height:854px;
 	margin-top:20px;
 }
 
+
 /*CONTENT*/
 .card .back .content
 {
@@ -218,6 +229,7 @@ height:854px;
 	background:white url('image/border-back-silver.png') no-repeat 0px -113px;
 	background-size: 100% 854px;
 }
+
 
 /*IMAGE*/
 .card .model .background{
@@ -478,8 +490,6 @@ cursor:move;
 }
 
 
-
-
 /*KEYWORDS SECTION*/
 .card .front .keywordsSection{
 	background:#fff;
@@ -505,6 +515,7 @@ cursor:move;
 	font-family:'Adelon';
 	font-size: 19px;
 }
+
 
 /*WOUNDS POTIONS SKULLS*/
 .card .keywordsSection .subStats{
@@ -847,7 +858,6 @@ cursor:move;
 	margin-left:6px;
 	font-size: 20px;
 }
-
 
 /*MONSTER BIT*/
 .card .bit{

@@ -1,5 +1,6 @@
 .editorPane{
   display:inline-block;
+  vertical-align:top;
   background:orange;
   height:100%;
   width:290px;

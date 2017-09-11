@@ -12,14 +12,19 @@ function HeaderControl(){
   '</div>'+
   '</div>';
 
+  this.parent=undefined;
   this.node=undefined;
 
   this._constructor=function(){
-    var form = $('.editForm').data('node');
-    this.node=$(this.template).appendTo(form.node);
+    this.parent = $('.editForm').data('node');
+    this.node=$(this.template).appendTo(this.parent.node);
     this.node.data('node',this);
 
     HasToggleDisplay.call(this);
+    HasTitleControl.call(this);
+    HasSubTitleControl.call(this);
+    HasMoveControl.call(this);
+    HasActionsControl.call(this);
   };
 
   this._constructor();

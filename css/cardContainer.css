@@ -3,4 +3,10 @@
   background:purple;
   height:100%;
   width: calc(100% - 295px);
+  overflow:auto;
+  transition: width 0.5s, transform 0.3s ease-out;
+}
+
+.cardContainer .cardGroup.selected .card{
+  box-shadow: 0 0 3pt 2pt #06ff00;
 }

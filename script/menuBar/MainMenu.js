@@ -13,7 +13,7 @@ function MainMenu(){
     //HasAddMenu.call(this);
     HasSaveMenu.call(this);
     HasLoadMenu.call(this);
-    //HassRollButton.call(this);
+    HasAddCardButton.call(this);
     //HasListNameInput.call(this);
     //HasCustomizeMenu.call(this);
 

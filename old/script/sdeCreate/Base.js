@@ -79,7 +79,7 @@ Base.prototype._resolveTemplate=function(classObject,name){
  * @private
  */
 Base.prototype._createNode=function(template){
-  this.node = $(template.trim()).appendTo('.cardContainer');
+  this.node = $(template.trim()).appendTo('.cardGroup');
   $.data(this.node[0],'coreNode',this);
 
   if(this.animate===true){
