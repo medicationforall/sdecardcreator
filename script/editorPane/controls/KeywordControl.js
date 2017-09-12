@@ -1,7 +1,8 @@
 function KeywordControl(){
   this.template='<div class="hero monster pet treasure wonder loot arcade keyword">'+
-  	'<h2><a class="toggleDisplay" href="">Keyword</a>  <a href="" class="keywordSettings" title="keyword Editor"></a></h2>'+
+  	'<h2><a class="toggleDisplay" href="">Keyword</a></h2>'+
     '<div class="controlContent hide">'+
+    '<a href="" class="keywordSettings" title="keyword Editor"></a>'+
   	'<div class="hero monster arcade">'+
   		'Affinity'+
   		'<select name="affinity">'+

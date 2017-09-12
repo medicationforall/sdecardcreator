@@ -14,3 +14,7 @@
 .editorPane a{
   color:#000;
 }
+
+.editorPane .toggleDisplay{
+  display:block;
+}

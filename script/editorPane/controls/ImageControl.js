@@ -5,11 +5,40 @@ function ImageControl(){
     '<div class="hero monster pet">Background'+
       '<select name="background">'+
         '<option value="pic1685577_md.jpg">Fae Wood</option>'+
-        '<option value="character-background.png">Nether</option>'+
-        '<option value="forgotten-king.png">Forgotten King</option>'+
+        '<option value="arcadian_dunes_1.png">Arcadian Dunes 1</option>'+
+        '<option value="arcadian_dunes_2.png">Arcadian Dunes 2</option>'+
+        '<option value="arcadian_dunes_3.png">Arcadian Dunes 3</option>'+
+        '<option value="clockwork_cove_1.png">Clockwork Cove 1</option>'+
+        '<option value="clockwork_cove_2.png">Clockwork Cove 2</option>'+
+        '<option value="clockwork_cove_3.png">Clockwork Cove 3</option>'+
+        '<option value="crystalia_castle_1.png">Crystalia Castle 1</option>'+
+        '<option value="crystalia_castle_2.png">Crystalia Castle 2</option>'+
+        '<option value="crystalia_castle_3.png">Crystalia Castle 3</option>'+
+        '<option value="crystalia_castle_4.png">Crystalia Castle 4</option>'+
+        '<option value="forgotten-king.png">Forgotten King 1</option>'+
+        '<option value="character-background.png">Forgotten King 2</option>'+
+        '<option value="frostbyte_1.png">Frostbyte Peaks 1</option>'+
+        '<option value="frostbyte_2.png">Frostbyte Peaks 2</option>'+
+        '<option value="frostbyte_3.png">Frostbyte Peaks 3</option>'+
+        '<option value="frostbyte_4.png">Frostbyte Peaks 4</option>'+
+        '<option value="glauerdoom_moor_1.png">Glauerdoom Moor 1</option>'+
+        '<option value="glauerdoom_moor_2.png">Glauerdoom Moor 2</option>'+
+        '<option value="glauerdoom_moor_3.png">Glauerdoom Moor 3</option>'+
+        '<option value="midnightTower_1.png">Midnight Tower 1</option>'+
+        '<option value="midnightTower_2.png">Midnight Tower 2</option>'+
+        '<option value="midnightTower_3.png">Midnight Tower 3</option>'+
         '<option value="roxors-cavern.png">Roxor\'s Cavern</option>'+
-        '<option value="nas.png">Ninja All-Stars</option>'+
+        '<option value="von-drakk.png">Von Drakk 1</option>'+
+        '<option value="vulcanis_forge_1.png">Vulcanis Forge 1</option>'+
+        '<option value="vulcanis_forge_2.png">Vulcanis Forge 2</option>'+
+        '<option value="vulcanis_forge_3.png">Vulcanis Forge 3</option>'+
 
+        '<option disabled>---NAS----</option>'+
+        '<option value="nas.png">Ninja All-Stars</option>'+
+        '<option value="nas_2.png">Ninja All-Stars 2</option>'+
+
+        '<option disabled>----------</option>'+
+        '<option value="stone_tile.png">Stone Tile</option>'+
         '<option disabled>----------</option>'+
 
         '<option value="arctic.jpg">Arctic</option>'+
@@ -61,6 +90,7 @@ function ImageControl(){
     this.node.data('node',this);
 
     HasToggleDisplay.call(this);
+    HasBackgroundControl.call(this);
   };
 
   this._constructor();

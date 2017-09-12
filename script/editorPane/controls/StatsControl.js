@@ -1,7 +1,8 @@
 function StatsControl(){
   this.template='<div class="hero monster pet stats">'+
-    '<h2><a class="toggleDisplay" href="">Stats</a> <a href="" class="helpButton" title="Stats Help">?</a></h2>'+
+    '<h2><a class="toggleDisplay" href="">Stats</a></h2>'+
     '<div class="controlContent hide">'+
+    '<a href="" class="helpButton" title="Stats Help">?</a>'+
     '<div class="helpBlock">'+
       '<div class="helpUnit">'+
       '<h3>Dice Types</h3>'+
@@ -45,6 +46,7 @@ function StatsControl(){
     this.node.data('node',this);
 
     HasToggleDisplay.call(this);
+    HasHelpButton.call(this);
   };
 
   this._constructor();

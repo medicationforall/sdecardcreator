@@ -19,7 +19,7 @@ function Card(){
   					'</div>'+
 
   					'<img class="character" src="" />'+
-  					'<div class="background"></div>'+
+  					'<div class="background" style="background:url(\'image/background/pic1685577_md.jpg\') no-repeat;background-size:100% 100%"></div>'+
 
   					'<div class="keywordsSection">'+
   						'<span class="hero monster arcade affinity citrine"></span>'+
@@ -105,6 +105,29 @@ function Card(){
     HasCardTypeControls.call(this);
     HasCardHeader.call(this);
     this.setCardType('hero');
+  };
+
+
+  /**
+   *
+   */
+  this.setBackground=function(background){
+    this.data.background=background;
+    this.node.find('.background').css({'background':'url('+background+') no-repeat','background-size':'100% 100%'});
+  };
+
+
+  /**
+   *
+   */
+  this.setBackgroundFlip=function(backgroundFlip){
+    this.data.backgroundFlip = backgroundFlip;
+
+    if(backgroundFlip){
+      this.node.find('.background').css('transform','scaleX(-1)');
+    }else{
+      this.node.find('.background').css('transform','');
+    }
   };
 
 
