@@ -105,7 +105,27 @@ function Card(){
     HasCardTypeControls.call(this);
     HasCardHeader.call(this);
     HasCardImage.call(this);
+    HasStats.call(this);
     this.setCardType('hero');
+  };
+
+
+  /**
+   *
+   */
+  this.setFlavorText=function(flavorText){
+    this.data.flavorText = flavorText;
+    this.node.find('.flavorText').text(flavorText);
+  };
+
+
+  /**
+   *
+   */
+  this.setAffinity=function(affinity){
+    this.data.affinity = affinity;
+    this.node.find('.affinity').removeClass('ruby citrine emerald sapphire amethyst all');
+    this.node.find('.affinity').addClass(affinity);
   };
 
 

@@ -15,6 +15,7 @@ function FlavorTextControl(){
     this.node.data('node',this);
 
     HasToggleDisplay.call(this);
+    HasFlavorTextControl.call(this);
   };
 
   this._constructor();

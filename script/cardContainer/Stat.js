@@ -36,14 +36,17 @@ function Stat(name, permissions, value){
   '</div>'+
   '</div>';
 
-  //@todo card doesn't exist yet so I have a timing issue
-  this.node=$(this.template).appendTo(".card .stats");
-
+  this.parent=undefined;
+  this.node=undefined;
 
   /**
    *
    */
   this._constructor=function(){
+    this.parent=$('.cardGroup.selected').data('node');
+    this.node=$(this.template).appendTo(this.parent.node.find('.stats'));
+    this.node.data('node',this);
+
     if(permissions === undefined){
       this.permissions="";
     }else{
