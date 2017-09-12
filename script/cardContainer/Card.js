@@ -104,30 +104,8 @@ function Card(){
     HasSetTypeDisplay.call(this);
     HasCardTypeControls.call(this);
     HasCardHeader.call(this);
+    HasCardImage.call(this);
     this.setCardType('hero');
-  };
-
-
-  /**
-   *
-   */
-  this.setBackground=function(background){
-    this.data.background=background;
-    this.node.find('.background').css({'background':'url('+background+') no-repeat','background-size':'100% 100%'});
-  };
-
-
-  /**
-   *
-   */
-  this.setBackgroundFlip=function(backgroundFlip){
-    this.data.backgroundFlip = backgroundFlip;
-
-    if(backgroundFlip){
-      this.node.find('.background').css('transform','scaleX(-1)');
-    }else{
-      this.node.find('.background').css('transform','');
-    }
   };
 
 

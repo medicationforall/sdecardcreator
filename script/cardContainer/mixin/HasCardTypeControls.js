@@ -5,9 +5,13 @@ function HasCardTypeControls(){
    */
   this.setCardType=function(type){
     console.log('card set type',type);
-    this.data.type="type";
+    this.data.type=type;
     this.setDisplay(this.node.find('.card'),type);
     this.setType(type);
+
+    if(this.data.imageSource === undefined || this.data.imageSource === 'default'){
+      this.setDefaultAvatar(type);
+    }
   };
 
   /**

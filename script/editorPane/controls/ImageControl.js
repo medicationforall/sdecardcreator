@@ -73,8 +73,12 @@ function ImageControl(){
 
     '<div>'+
       'Avatar'+
-      '<div class="hero monster pet loot treasure wonder explore command timeout"><input type="radio" name="imageSource" value="default" checked="checked">Default</div>'+
-      '<div class="explore"><input type="radio" name="imageSource" value="creep" />Creep Spawn <input name="creepSpawn" class="number" type="number" min="0" max="99" value="3" /></div>'+
+      '<div class="hero monster pet loot treasure wonder explore command timeout">'+
+      '<input type="radio" name="imageSource" value="default" checked="checked">Default'+
+      '</div>'+
+      '<div class="explore">'+
+      '<input type="radio" name="imageSource" value="creep" />Creep Spawn <input name="creepSpawn" class="number" type="number" min="0" max="99" value="3" />'+
+      '</div>'+
       '<div><input type="radio" name="imageSource" value="remote">Remote <input name="rCharacter" placeholder="http://" /></div>'+
       '<div><input type="radio" name="imageSource" value="local">Local <input type="file" name="character" /></div>'+
     '</div>'+
@@ -91,6 +95,7 @@ function ImageControl(){
 
     HasToggleDisplay.call(this);
     HasBackgroundControl.call(this);
+    HasImageSourceControl.call(this);
   };
 
   this._constructor();
