@@ -22,13 +22,14 @@ function HasSaveMenu(){
   this.saveMenu.find('.saveAsImage').click(function(event){
     event.preventDefault();
     console.log('save image');
-    /*html2canvas($(".card"), {
-      onrendered: function(canvas) {
-        canvas.toBlob(function(blob) {
-          saveAs(blob, "Dashboard.png");
-        });
-      }
-    });*/
+    var selectedCard = $('.cardGroup.selected');
+    selectedCard.find('.card').css('box-shadow','none');
+    var title = selectedCard.data('node').data.title;
+    domtoimage.toBlob(selectedCard[0])
+    .then(function (blob) {
+        window.saveAs(blob, title+'.png');
+        selectedCard.find('.card').css('box-shadow','');
+    });
   });
 
 

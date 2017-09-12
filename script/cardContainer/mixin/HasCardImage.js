@@ -12,6 +12,8 @@ function HasCardImage(){
     'arcade':'image/koboldgoupsilo.png'
   };
 
+  this.node.find('.card .front .character').draggable({containment:'parent'});
+
   /**
    *
    */
