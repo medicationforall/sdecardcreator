@@ -25,6 +25,15 @@ a:hover{
 text-decoration:underline;
 }
 
+svg{
+  vertical-align: middle;
+  fill:currentColor;
+}
+
+.inactive svg{
+  opacity:0.4;
+}
+
 body{
 font-family:arial;
 padding:0px;

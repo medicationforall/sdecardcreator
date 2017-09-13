@@ -21,7 +21,7 @@ border-radius:10px;
 
 
 .card .front, .card .back{
-height:854px;
+  height:854px;
 	background-size: 100% 854px;
 }
 

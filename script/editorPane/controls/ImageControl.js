@@ -24,7 +24,7 @@ function ImageControl(){
   this.template='<div class="hero monster pet treasure wonder loot explore character command timeout">'+
     '<h2><a class="toggleDisplay" href="">Image</a></h2>'+
     '<div class="controlContent hide">'+
-    '<div class="hero monster pet">Background'+
+    '<div class="hero monster pet">Background '+
       '<select name="background">'+
         '<option value="pic1685577_md.jpg">Fae Wood</option>'+
         '<option value="arcadian_dunes_1.png">Arcadian Dunes 1</option>'+
@@ -89,8 +89,9 @@ function ImageControl(){
         '<option value="tundra.jpg">Tundra</option>'+
         '<option value="valley.jpg">Valley</option>'+
       '</select>'+
-
-      '<input title="flip" type="checkbox" name="backgroundFlip" />'+
+      '<a class="backgroundFlip inactive" href="" title="Mirror Background">'+
+      '<svg data-reactroot="" class="Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="height: 32px; width: 32px;"><path d="M0 0h512v512H0z" fill="#ffffff" opacity="0"></path><g class="" transform="translate(0,0)" style="touch-action: none;"><path fill="#000000" d="M387.02 278.627v67.883L477.53 256l-90.51-90.51v67.883H124.98V165.49L34.47 256l90.51 90.51v-67.883h262.04z"></path></g><!-- react-empty: 6 --></svg>'+
+      '</a>'+
     '</div>'+
 
     '<div>'+

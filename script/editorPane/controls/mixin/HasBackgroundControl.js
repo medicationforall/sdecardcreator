@@ -1,6 +1,6 @@
 function HasBackgroundControl(){
   this.backgroundControl = this.node.find('select[name="background"]');
-  this.backroundFlipControl = this.node.find('input[name="backgroundFlip"]');
+  this.backroundFlipControl = this.node.find('.backgroundFlip');
 
   /**
    *
@@ -14,9 +14,15 @@ function HasBackgroundControl(){
   /**
    *
    */
-  this.backroundFlipControl.on('change',$.proxy(function(coreNode,event){
-    console.log('background flip',$(this).is(':checked'));
-    coreNode.setBackgroundFlip($(this).is(':checked'));
+  this.backroundFlipControl.on('click',$.proxy(function(coreNode,event){
+    event.preventDefault();
+    if($(this).hasClass('inactive')){
+      $(this).removeClass('inactive').addClass('active');
+      coreNode.setBackgroundFlip(true);
+    }else{
+      $(this).removeClass('active').addClass('inactive');
+      coreNode.setBackgroundFlip(false);
+    }
   },null,this));
 
 
