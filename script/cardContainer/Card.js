@@ -129,5 +129,21 @@ function Card(){
   };
 
 
+  /**
+   *
+   */
+  this.setKeywords=function(keywords){
+      console.log('set keywords for card',keywords);
+  };
+
+
+  /**
+   * Collect the json data for the card.
+   */
+  this.gatherData=function(){
+    return this.data;
+  };
+
+
   this._constructor();
 }

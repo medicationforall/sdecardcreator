@@ -16,7 +16,7 @@
  *   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 function KeywordStore(keywords){
-
+  Core.call(this);
   //DATA
   this.data=undefined;
   this.ordered=undefined;
@@ -41,13 +41,13 @@ function KeywordStore(keywords){
   /**
    *
    */
-  /*this.load=function(){
-    return $.getJSON('https://sde.medicationforall.com/keywordlist.php?json=true',function(data){
-      this._setup(data);
-      this.setupKeywordsForm();
-      $('.form').trigger('resolved-keywords');
-    }.bind(this));
-  };*/
+  /*  this.load=function(){
+      return $.getJSON('https://sde.medicationforall.com/keywordlist.php?json=true',function(data){
+        this._setup(data);
+        this.setupKeywordsForm();
+        $('.form').trigger('resolved-keywords');
+      }.bind(this));
+    };*/
 
 
   /**
@@ -172,8 +172,8 @@ function KeywordStore(keywords){
     var lKey = key.toLowerCase();
     var keyClass = this.resolveKeyClass(key);
 
-    //check to see if the keyword is already added, and if the diaply flag does not equal false
-    if( data.displayBack !== false && data.displayBack !== 'false'  && $('.card .keywords .'+keyClass).length ===0){
+    //check to see if the keyword is already added, and if the display flag does not equal false
+    if( data.displayBack !== false && data.displayBack !== 'false'  && $('.cardGroup.selected .card .keywords .'+keyClass).length ===0){
       //console.log(key,data);
 
       var description = data.description;
@@ -205,9 +205,9 @@ function KeywordStore(keywords){
       '<span class="description">('+parsedDescription+')</span>'+
       '</div>';
 
-      $(".card .back .keywords").append(backTemplate);
+      $(".cardGroup.selected .card .back .keywords").append(backTemplate);
 
-      $(".card .item .keywords").append(itemTemplate);
+      $(".cardGroup.selected .card .item .keywords").append(itemTemplate);
     }
   };
 
@@ -366,7 +366,7 @@ function KeywordStore(keywords){
   this.checkKeywords=function(node){
     var keysFound = [];
     //clear keywords
-    $('.card .keywords').empty();
+    $('.cardGroup.selected .card .keywords').empty();
 
     $(node).find('.keyword').each(function(index, element){
       keysFound.push($(element).data('key'));
@@ -427,9 +427,9 @@ function KeywordStore(keywords){
     this.customKeywords = customKeywords;
 
     for(var key in customKeywords){
-    if(customKeywords.hasOwnProperty(key)){
-    this.data[key]= customKeywords[key];
-    }
+      if(customKeywords.hasOwnProperty(key)){
+        this.data[key]= customKeywords[key];
+      }
     }
 
     this._setup(this.data);

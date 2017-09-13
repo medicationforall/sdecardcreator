@@ -47,6 +47,9 @@ $(document).ready(function(){
       var editorPain = new EditorPane();
       var sdeCreate = new CardContainer();
       new Card();
+      keywordStore.setupKeywordsForm();
+
+      $('.page').data('keywordStore',keywordStore);
   });
 
   //remove noscript block
