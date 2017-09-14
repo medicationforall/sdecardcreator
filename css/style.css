@@ -145,6 +145,10 @@ span.hero{
 display:inline;
 }
 
+.header a.shareButton{
+display:none;
+}
+
 
 
 @media print {

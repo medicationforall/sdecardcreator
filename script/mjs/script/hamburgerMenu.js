@@ -37,6 +37,7 @@ $(document).ready(function(){
   //open infodialog button.
   $('.openInfoDialog').click(function(event){
     event.preventDefault();
+    console.log('open infor dialog');
     var url = $(this).data('url');
     var changeDialog = new InfoDialog(url);
   });

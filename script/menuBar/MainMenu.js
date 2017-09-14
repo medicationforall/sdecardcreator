@@ -46,13 +46,13 @@ function MainMenu(){
     //HasListNameInput.call(this);
     //HasCustomizeMenu.call(this);
 
-    /*$.getJSON('config.json',$.proxy(function(data){
+    $.getJSON('config.json',$.proxy(function(data){
       if(data.enableShare){
         this.node.find('.shareButton').css('display','inline-block');
         this.servlet=data.servlet;
         HasShare.call(this);
       }
-    },this));*/
+    },this));
 
     //set coreNode
     $.data(this.node[0],'coreNode',this);
