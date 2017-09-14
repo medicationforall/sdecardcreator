@@ -153,6 +153,11 @@ function Card(){
     return this.data;
   };
 
+  this.addAbility=function(ability){
+    console.log('card add ability');
+    ability.getCardNode().appendTo(this.node.find('.abilities'));
+  };
+
 
   this._constructor();
 }

@@ -301,6 +301,7 @@ function KeywordStore(keywords){
     for(var i=0,item;(item=parts[i]);i++){
       if(i==0){
         item = item.toLowerCase();
+        item = item.replace('\'','');
 
         if($.isNumeric(item[0])){
           item="key-"+item;

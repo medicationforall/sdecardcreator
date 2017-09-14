@@ -75,6 +75,8 @@ function AbilityControl(){
   this.setup=function(){
     HasToggleDisplay.call(this);
     HasHelpButton.call(this);
+
+    HasAddAbilityControl.call(this);
   };
 
   this._constructor();
