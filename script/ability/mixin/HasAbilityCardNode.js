@@ -26,7 +26,7 @@ function HasAbilityCardNode(){
       return this.cardNode;
     };
 
-    this.getCardAbilitynodes=function(){
+    this.getCardAbilityNodes=function(){
       return $('.cardGroup.selected .ability[data-ability="'+this.cardNode.data('ability')+'"]');
     };
 }

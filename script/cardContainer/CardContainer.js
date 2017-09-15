@@ -24,7 +24,7 @@ function CardContainer(){
 
 
   /**
-   *
+   * Construct the Card Container.
    */
   this._construct=function(){
     this.node = $('.cardContainer');
@@ -32,10 +32,11 @@ function CardContainer(){
 
     HasCardSelect.call(this);
   };
-  
+
 
   /**
    * Collect the json data for all of the child cards.
+   * @return {object}
    */
   this.gatherData=function(){
     console.log('call gather data for the cardContainer');
@@ -53,6 +54,8 @@ function CardContainer(){
 
 
   /**
+   * Load Data.
+   * @param {object} data - JSON data.
    * @todo will need a flag to indicate if already existing cards should be cleared.
    */
   this.loadData=function(data){

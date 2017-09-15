@@ -34,7 +34,7 @@ function Ability(){
    */
   this.closeAbility=function(){
     console.log('closeAbility');
-    this.getCardAbilitynodes.remove();
+    this.getCardAbilityNodes().remove();
     this.formNode.remove();
     this._checkKeywords();
   };
@@ -46,7 +46,7 @@ function Ability(){
    */
   this.setName=function(name){
     this.data.name=name;
-    this.getCardAbilitynodes.find('.name').text(name);
+    this.getCardAbilityNodes().find('.name').text(name);
   };
 
 
@@ -112,7 +112,7 @@ function Ability(){
   this.setCost=function(cost){
     cost = $("<div>").text(cost).html();
     this.data.cost=cost;
-    this.getCardAbilitynodes.find('.cost').html(this.parseAbilityCost(cost));
+    this.getCardAbilityNodes().find('.cost').html(this.parseAbilityCost(cost));
   };
 
 
@@ -136,7 +136,7 @@ function Ability(){
     definition = $("<div>").text(definition).html();
 
     this.data.definition=definition;
-    this.getCardAbilitynodes.find('.definition').html(this.parseAbility(definition));
+    this.getCardAbilityNodes().find('.definition').html(this.parseAbility(definition));
 
     this._checkKeywords();
   };

@@ -18,6 +18,10 @@
 
 /**
  * Stat Diplayed on a card.
+ * @param {string} name - Stat name.
+ * @param {string} permissions - class view permissions.
+ * @param {string} value - Stat value.
+ * @class
  */
 function Stat(name, permissions, value){
   this.template='<div class="'+permissions+' stat '+name+'">'+
@@ -39,19 +43,21 @@ function Stat(name, permissions, value){
   this.value="";
 
   /**
-   *
+   * Creates the card stat.
    */
   this._constructor=function(){
     this.parent=$('.cardGroup.selected').data('node');
     this.node=$(this.template).appendTo(this.parent.node.find('.stats'));
     this.node.data('node',this);
 
+    //set permissions to this scope.
     if(permissions === undefined){
       this.permissions="";
     }else{
       this.permissions = permissions;
     }
 
+    //set value to this scope.
     if(value === undefined){
       this.value="";
     }else{
@@ -64,7 +70,7 @@ function Stat(name, permissions, value){
 
 
   /**
-   *
+   * @param {string} value
    */
   this.setValue = function(value){
     // empty hide logic
@@ -86,7 +92,11 @@ function Stat(name, permissions, value){
 
 
   /**
-   *
+   * Handle the parsed value.
+   * @param {array} match - The set of matches.
+   * @param {string} number - Parsed number.
+   * @param {string} type - Parsed type.
+   * @param {string} shield - Parsed shield.
    */
   this.parseValue = function(match,number,type,shield){
     //console.log('parsing stat',arguments);
