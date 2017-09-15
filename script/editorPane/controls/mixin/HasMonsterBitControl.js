@@ -1,5 +1,5 @@
 /**
- *   SDE Card Creator source file EditForm,
+ *   SDE Card Creator source file HasMonsterBitControl,
  *   Copyright (C) 2017  James M Adams
  *
  *   This program is free software: you can redistribute it and/or modify
@@ -17,41 +17,28 @@
  */
 
 /**
- * Edit Form.
- * @class
+ * Monster Bit Control.
+ * @mixin
  */
-function EditForm(){
-  this.template='<div class="editForm form"></div>';
-  this.node=undefined;
+function HasMonsterBitControl(){
+  this.monsterBit = this.node.find('select[name="bit"]');
 
 
   /**
    *
    */
-  this._construct=function(){
-    var editorPane = $('.editorPane').data('node');
-    this.node=$(this.template).appendTo(editorPane.node);
-    this.node.data('node',this);
+  this.monsterBit.on('change',$.proxy(function(coreNode,event){
+    event.preventDefault();
 
-    HasSetTypeDisplay.call(this);
-    this._setup();
-  };
+    coreNode.setBit($(this).val());
+  },null,this));
 
 
   /**
    *
    */
-  this._setup=function(){
-    new CardControl();
-    new HeaderControl();
-    new ImageControl();
-    new StatsControl();
-    new KeywordControl();
-    new AbilityControl();
-    new BitControl();
-    new FlavorTextControl();
-    this.setDisplay(this.node,'hero');
+  this.setBit=function(bit){
+    var cardNode = $('.cardGroup.selected').data('node');
+    cardNode.setBit(bit);
   };
-
-  this._construct();
 }

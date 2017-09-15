@@ -151,5 +151,14 @@ function Card(){
   };
 
 
+  /**
+   *
+   */
+  this.setBit=function(bit){
+    this.data.bit = bit;
+    this.node.find('.bit').removeClass('eight sixteen start special super').addClass(bit);
+  };
+
+
   this._constructor();
 }
