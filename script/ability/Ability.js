@@ -105,8 +105,10 @@ function Ability(){
     console.log('closeAbility');
     var cardNode = $('.cardGroup.selected').data('node');
     var keywordStore = $('.page').data('keywordStore');
+
     $('.cardGroup.selected .ability[data-ability="'+this.cardNode.data('ability')+'"]').remove();
     this.formNode.remove();
+
     keywordStore.checkKeywords(cardNode.node.find('.front'));
   };
 
@@ -124,26 +126,48 @@ function Ability(){
   /**
    * Set Cost Type
    * @param {string} costType - Ability Cost Type.
-   * @todo break this method up.
    */
   this.setCostType=function(costType){
     var cardNode = $('.cardGroup.selected');
     this.data.costType=costType;
-    //reset
+
+    this._resetCostType(cardNode);
+    cardNode.find('.cost').addClass(costType);
+    this._cardAbilityDisplay(cardNode,costType);
+    this._formAbilityDisplay(costType);
+  };
+
+
+  /**
+   * Reset.
+   * @param {object} cardNode - Selected card reference.
+   */
+  this._resetCostType=function(cardNode){
     cardNode.find('.name, .colon, .definition').css('display','');
     this.formNode.find('input[name="name"],input[name="cost"], textarea[name="definition"]').parent().css('display','');
     cardNode.find('.cost').removeClass('attack support emergencyPotion supportPotion offensePotion special definitionOnly nameOnly');
+  };
 
-    cardNode.find('.cost').addClass(costType);
 
-    //card ability display
+  /**
+   * Card ability display.
+   * @param {object} cardNode - Selected card reference.
+   * @param {string} costType - Ability Cost Type.
+   */
+  this._cardAbilityDisplay=function(cardNode,costType){
     if(costType==='definitionOnly'){
       cardNode.find('.name, .colon').css('display','none');
     }else if(costType==='nameOnly'){
       cardNode.find('.colon, .definition').css('display','none');
     }
+  };
 
-    //for ability display
+
+  /**
+   * Form ability display.
+   * @param {string} costType - Ability Cost Type.
+   */
+  this._formAbilityDisplay=function(costType){
     if(costType==='special'){
       this.formNode.find('input[name="cost"]').parent().css('display','none');
     } else if(costType==='definitionOnly'){
@@ -157,9 +181,9 @@ function Ability(){
   /**
    * Set Cost.
    * @param {string} cost - Ability Cost in action points.
-   * @todo before adding to data and dom should parse out html.
    */
   this.setCost=function(cost){
+    cost = $("<div>").text(cost).html();
     this.data.cost=cost;
     $('.cardGroup.selected .ability[data-ability="'+this.cardNode.data('ability')+'"] .cost').html(this.parseAbilityCost(cost));
   };
@@ -180,11 +204,12 @@ function Ability(){
   /**
    * Set Definition.
    * @param {string} definition - Ability definition.
-   * @todo before adding to data and dom should parse out html.
    */
   this.setDefinition=function(definition){
+    definition = $("<div>").text(definition).html();
     var cardNode = $('.cardGroup.selected').data('node');
     var keywordStore = $('.page').data('keywordStore');
+
     this.data.definition=definition;
     $('.cardGroup.selected .ability[data-ability="'+this.cardNode.data('ability')+'"] .definition').html(this.parseAbility(definition));
     keywordStore.checkKeywords(cardNode.node.find('.front'));
