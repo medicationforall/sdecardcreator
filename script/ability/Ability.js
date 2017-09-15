@@ -167,6 +167,15 @@ function Ability(){
   };
 
 
+  /**
+   * Collect the json data representation of the object.
+   * @return {object} data
+   */
+  this.gatherData=function(){
+    return this.data;
+  };
+
+
   //main
   this._constructor();
 }
