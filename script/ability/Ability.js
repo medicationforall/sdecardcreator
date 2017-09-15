@@ -20,81 +20,12 @@
  * Ability linked between the editForm and a Card.
  */
 function Ability(){
-  this.formNode=undefined;
-  this.cardNode=undefined;
+  HasAbilityCardNode.call(this);
+  HasAbilityFormNode.call(this);
   this.data={};
-
 
   this._constructor=function(){
     Ability.counter++;
-  };
-
-
-  /**
-   * @return {string} HTML form template.
-   */
-  this.getFormTemplate=function(){
-    var template = '<div data-ability="'+Ability.counter+'" class="ability">'+
-    '<a href="" class="closeAbility" title="Close">X</a>'+
-    '<div class="displayInline">Type <select name="costType">'+
-    '<option value="attack">Attack</option>'+
-    '<option value="support">Support</option>'+
-    '<option value="offensePotion">Offense Potion</option>'+
-    '<option value="supportPotion">Support Potion</option>'+
-    '<option value="emergencyPotion">Emergency Potion</option>'+
-    '<option value="special">Special</option>'+
-    '<option disabled>──────────</option>'+
-    '<option value="definitionOnly">Definition</option>'+
-    '<option value="nameOnly">Name</option>'+
-    '</select></div>'+
-    '<div class="displayInline">Cost <input class="number" name="cost" type="number" value="1" min="0" max="99" /></div>'+
-    '<div>Name <input name="name" value="Ability '+Ability.counter+'" /></div>'+
-    '<div>Definition <textarea name="definition" ></textarea></div>'+
-    '</div>';
-
-    return template;
-  };
-
-
-  /**
-   * Get Form Node.
-   * @return {object} Form resolved to a jQuery selector.
-   */
-  this.getFormNode=function(){
-    if(this.formNode===undefined){
-      this.formNode = $(this.getFormTemplate());
-      this.formNode.data('node',this);
-
-      this._setupFormNode();
-    }
-    return this.formNode;
-  };
-
-
-  /**
-   * Registers the form logic for the formNode.
-   */
-  this._setupFormNode=function(){
-    this.formNode.find('.closeAbility').on('click',$.proxy(function(coreNode,event){
-      event.preventDefault();
-      coreNode.closeAbility();
-    },null,this));
-
-    this.formNode.find('select[name="costType"]').on('change',$.proxy(function(coreNode,event){
-      coreNode.setCostType($(this).val());
-    },null,this));
-
-    this.formNode.find('input[name="cost"]').on('input',$.proxy(function(coreNode,event){
-      coreNode.setCost($(this).val());
-    },null,this));
-
-    this.formNode.find('input[name="name"]').on('input',$.proxy(function(coreNode,event){
-      coreNode.setName($(this).val());
-    },null,this));
-
-    this.formNode.find('textarea[name="definition"]').on('input',$.proxy(function(coreNode,event){
-      coreNode.setDefinition($(this).val());
-    },null,this));
   };
 
 
@@ -103,13 +34,9 @@ function Ability(){
    */
   this.closeAbility=function(){
     console.log('closeAbility');
-    var cardNode = $('.cardGroup.selected').data('node');
-    var keywordStore = $('.page').data('keywordStore');
-
-    $('.cardGroup.selected .ability[data-ability="'+this.cardNode.data('ability')+'"]').remove();
+    this.getCardAbilitynodes.remove();
     this.formNode.remove();
-
-    keywordStore.checkKeywords(cardNode.node.find('.front'));
+    this._checkKeywords();
   };
 
 
@@ -119,7 +46,7 @@ function Ability(){
    */
   this.setName=function(name){
     this.data.name=name;
-    $('.cardGroup.selected .ability[data-ability="'+this.cardNode.data('ability')+'"] .name').text(name);
+    this.getCardAbilitynodes.find('.name').text(name);
   };
 
 
@@ -185,7 +112,7 @@ function Ability(){
   this.setCost=function(cost){
     cost = $("<div>").text(cost).html();
     this.data.cost=cost;
-    $('.cardGroup.selected .ability[data-ability="'+this.cardNode.data('ability')+'"] .cost').html(this.parseAbilityCost(cost));
+    this.getCardAbilitynodes.find('.cost').html(this.parseAbilityCost(cost));
   };
 
 
@@ -207,12 +134,11 @@ function Ability(){
    */
   this.setDefinition=function(definition){
     definition = $("<div>").text(definition).html();
-    var cardNode = $('.cardGroup.selected').data('node');
-    var keywordStore = $('.page').data('keywordStore');
 
     this.data.definition=definition;
-    $('.cardGroup.selected .ability[data-ability="'+this.cardNode.data('ability')+'"] .definition').html(this.parseAbility(definition));
-    keywordStore.checkKeywords(cardNode.node.find('.front'));
+    this.getCardAbilitynodes.find('.definition').html(this.parseAbility(definition));
+
+    this._checkKeywords();
   };
 
 
@@ -232,28 +158,12 @@ function Ability(){
 
 
   /**
-   * Get Card Template.
-   * @return {string} Card HTML template.
+   * Force a keyword update on the selected card.
    */
-  this.getCardTemplate=function(){
-    var template = '<div data-ability="'+Ability.counter+'" class="ability">'+
-    '<div class="cost attack">1</div>'+'<span class="name">Ability '+Ability.counter+'</span>'+'<span class="colon">:</span>'+'<span class="definition"></span>'+
-    '</div>';
-
-    return template;
-  };
-
-
-  /**
-   * Get Card node.
-   * @return {object} Card resolved to a jQuery selector.
-   */
-  this.getCardNode=function(){
-    if(this.cardNode===undefined){
-      this.cardNode = $(this.getCardTemplate());
-      this.cardNode.data('node',this);
-    }
-    return this.cardNode;
+  this._checkKeywords=function(){
+    var cardNode = $('.cardGroup.selected').data('node');
+    var keywordStore = $('.page').data('keywordStore');
+    keywordStore.checkKeywords(cardNode.node.find('.front'));
   };
 
 
