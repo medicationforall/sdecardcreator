@@ -18,6 +18,7 @@
 
 /**
  * Ability Control.
+ * @class
  */
 function AbilityControl(){
   BaseControl.call(this);

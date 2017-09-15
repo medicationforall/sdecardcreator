@@ -18,6 +18,7 @@
 
 /**
  * Keyword Control.
+ * @class
  */
 function KeywordControl(){
   BaseControl.call(this);

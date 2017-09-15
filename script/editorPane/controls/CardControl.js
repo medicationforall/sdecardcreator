@@ -18,6 +18,7 @@
 
 /**
  * Card Control.
+ * @class
  */
 function CardControl(){
   BaseControl.call(this);

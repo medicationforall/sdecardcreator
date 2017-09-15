@@ -18,6 +18,7 @@
 
 /**
  * Editor Pane.
+ * @class
  * @todo this component can probably go away.
  */
 function EditorPane(){

@@ -18,6 +18,7 @@
 
 /**
  * Flavor Text Control.
+ * @class
  */
 function FlavorTextControl(){
   BaseControl.call(this);

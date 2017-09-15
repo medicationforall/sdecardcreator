@@ -18,6 +18,7 @@
 
 /**
  * Stats Control.
+ * @class
  */
 function StatsControl(){
   BaseControl.call(this);

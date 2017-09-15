@@ -18,23 +18,24 @@
 
 /**
  * Add Card Control.
+ * @mixin
  */
 function HasAddCardButton(){
   this.addCardbutton = this.node.find('.addCard');
 
 
-/**
- *
- */
+  /**
+   *
+   */
   this.addCardbutton.click($.proxy(function(event){
     event.preventDefault();
     this.addCard();
   },this));
 
 
-/**
- *
- */
+  /**
+   *
+   */
   this.addCard=function(){
     console.log('add card');
 

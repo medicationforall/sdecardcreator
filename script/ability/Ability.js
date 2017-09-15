@@ -17,22 +17,21 @@
  */
 
 /**
- *
+ * Ability linked between the editForm and a Card.
  */
 function Ability(){
   this.formNode=undefined;
   this.cardNode=undefined;
   this.data={};
 
-  //CONSTRUCTOR
+
   this._constructor=function(){
     Ability.counter++;
   };
 
 
-  //methods
   /**
-   *
+   * @return {string} HTML form template.
    */
   this.getFormTemplate=function(){
     var template = '<div data-ability="'+Ability.counter+'" class="ability">'+
@@ -56,6 +55,11 @@ function Ability(){
     return template;
   };
 
+
+  /**
+   * Get Form Node.
+   * @return {object} Form resolved to a jQuery selector.
+   */
   this.getFormNode=function(){
     if(this.formNode===undefined){
       this.formNode = $(this.getFormTemplate());
@@ -66,6 +70,10 @@ function Ability(){
     return this.formNode;
   };
 
+
+  /**
+   * Registers the form logic for the formNode.
+   */
   this._setupFormNode=function(){
     this.formNode.find('.closeAbility').on('click',$.proxy(function(coreNode,event){
       event.preventDefault();
@@ -89,6 +97,10 @@ function Ability(){
     },null,this));
   };
 
+
+  /**
+   * Close/Delete an ability.
+   */
   this.closeAbility=function(){
     console.log('closeAbility');
     var cardNode = $('.cardGroup.selected').data('node');
@@ -98,11 +110,22 @@ function Ability(){
     keywordStore.checkKeywords(cardNode.node.find('.front'));
   };
 
+
+  /**
+   * Set Name.
+   * @param {string} name - Ability Name.
+   */
   this.setName=function(name){
     this.data.name=name;
     $('.cardGroup.selected .ability[data-ability="'+this.cardNode.data('ability')+'"] .name').text(name);
   };
 
+
+  /**
+   * Set Cost Type
+   * @param {string} costType - Ability Cost Type.
+   * @todo break this method up.
+   */
   this.setCostType=function(costType){
     var cardNode = $('.cardGroup.selected');
     this.data.costType=costType;
@@ -130,11 +153,35 @@ function Ability(){
     }
   };
 
+
+  /**
+   * Set Cost.
+   * @param {string} cost - Ability Cost in action points.
+   * @todo before adding to data and dom should parse out html.
+   */
   this.setCost=function(cost){
     this.data.cost=cost;
     $('.cardGroup.selected .ability[data-ability="'+this.cardNode.data('ability')+'"] .cost').html(this.parseAbilityCost(cost));
   };
 
+
+  /**
+   * Parse Ability Cost, if it's zero return an empty space.
+   * @return {string}
+   */
+  this.parseAbilityCost=function(cost){
+    if(cost==="0"){
+      cost = '&nbsp;';
+    }
+    return cost;
+  };
+
+
+  /**
+   * Set Definition.
+   * @param {string} definition - Ability definition.
+   * @todo before adding to data and dom should parse out html.
+   */
   this.setDefinition=function(definition){
     var cardNode = $('.cardGroup.selected').data('node');
     var keywordStore = $('.page').data('keywordStore');
@@ -143,30 +190,25 @@ function Ability(){
     keywordStore.checkKeywords(cardNode.node.find('.front'));
   };
 
-  /**
-   *
-   */
-  this.parseAbilityCost=function(text){
-    if(text==="0"){
-      text = '&nbsp;';
-    }
-    return text;
-  };
 
   /**
-   *
+   * Parses a string for keywords, dice, affinity, and stats.
+   * @param {string} text - string to be parsed.
    */
   this.parseAbility=function(text){
     var keywordStore = $('.page').data('keywordStore');
     var kText = keywordStore.findKeywords(text);
     var dText = keywordStore.findDice(kText);
+    var aText = keywordStore.findAffinity(dText);
+    var sText = keywordStore.findStats(aText);
 
-    return keywordStore.findStats(dText);
+    return sText;
   };
 
 
   /**
-   *
+   * Get Card Template.
+   * @return {string} Card HTML template.
    */
   this.getCardTemplate=function(){
     var template = '<div data-ability="'+Ability.counter+'" class="ability">'+
@@ -176,7 +218,12 @@ function Ability(){
     return template;
   };
 
-  this.getCardNode=function(node){
+
+  /**
+   * Get Card node.
+   * @return {object} Card resolved to a jQuery selector.
+   */
+  this.getCardNode=function(){
     if(this.cardNode===undefined){
       this.cardNode = $(this.getCardTemplate());
       this.cardNode.data('node',this);

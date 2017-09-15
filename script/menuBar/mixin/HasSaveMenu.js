@@ -18,6 +18,7 @@
 
 /**
  * Save Menu Controls.
+ * @mixin
  */
 function HasSaveMenu(){
   this.saveMenu = $('.save.subMenu');

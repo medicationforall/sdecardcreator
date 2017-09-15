@@ -1,3 +1,24 @@
+/**
+ *   SDE Card Creator source file Card,
+ *   Copyright (C) 2015  James M Adams
+ *
+ *   This program is free software: you can redistribute it and/or modify
+ *   it under the terms of the GNU Lesser General Public License as published by
+ *   the Free Software Foundation, either version 3 of the License, or
+ *   any later version.
+ *
+ *   This program is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU Lesser General Public License for more details.
+ *
+ *   You should have received a copy of the GNU Lesser General Public License
+ *   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+/**
+ * An SDE Card.
+ */
 function Card(){
   this.data={};
   this.template='<div class="cardGroup selected">'+
@@ -93,9 +114,9 @@ function Card(){
 
   this.node=undefined;
 
-/**
- *
- */
+  /**
+   *
+   */
   this._constructor=function(){
     var cardContainer = $('.cardContainer').data('node');
     this.node=$(this.template).appendTo(cardContainer.node);
@@ -106,43 +127,10 @@ function Card(){
     HasCardHeader.call(this);
     HasCardImage.call(this);
     HasStats.call(this);
+    HasFlavorText.call(this);
+    HasAffinity.call(this);
+
     this.setCardType('hero');
-  };
-
-
-  /**
-   *
-   */
-  this.setFlavorText=function(flavorText){
-    this.data.flavorText = flavorText;
-    this.node.find('.flavorText').text(flavorText);
-  };
-
-
-  /**
-   *
-   */
-  this.setAffinity=function(affinity){
-    this.data.affinity = affinity;
-    this.node.find('.affinity').removeClass('ruby citrine emerald sapphire amethyst all');
-    this.node.find('.affinity').addClass(affinity);
-  };
-
-
-  /**
-   *
-   */
-  this.setKeywords=function(keywords){
-      console.log('set keywords for card',keywords);
-      this.data.keywords=keywords;
-      var keywordStore = $('.page').data('keywordStore');
-
-      //set parsed text
-      var kText = keywordStore.findKeywords(keywords);
-      this.node.find('.keywordsList').html(kText);
-
-      //place keywords on back of card.
-      keywordStore.checkKeywords(this.node.find('.front'));
   };
 
 
@@ -153,6 +141,10 @@ function Card(){
     return this.data;
   };
 
+
+  /**
+   *
+   */
   this.addAbility=function(ability){
     console.log('card add ability');
     ability.getCardNode().appendTo(this.node.find('.abilities'));

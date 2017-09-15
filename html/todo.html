@@ -4,69 +4,80 @@ Todo
 <a href="" class="closeButton">X</a>
 </div>
 <div class="content">
-<pre>
-/*GOALS*/
-Load Card without form off of JSON
-Move Form Based Actions into Form Class.
-Make Card changes into small method calls from Form class.
-Modularize form into smaller components
-Make abilities into an html template
+  <ul>
+    <b>GOALS</b>
+    <li>Card viewer independent of edit form</li>
+    <li>Move Form Based Actions into Form Class.</li>
+    <li>Make Card changes into small method calls from Form class.</li>
+    <li>Modularize form into smaller components</li>
+    <li>Make abilities into an html template</li>
+  </ul>
 
-CSS
-animate.css
+  <ul>
+    <b>CSS</b>
+    <li>animate.css</li>
+  </ul>
 
+  <ul>
+    <b>BUGS</b>
+    <li>Something is setting width and height on the character image. In turn that cause problems when it's not reset back on image change.</li>
+    <li>load character is breaking for timeout</li>
+    <li>Sometimes version numbers in keyword editor gets wonky</li>
+    <li>character image can overflow ruby and saphire cards - needs css changes</li>
+    <li>Internet Explorer keeps form data persistent across single page reloads, but not double page reloads...</li>
+    <li>Adelon Font is broken in IE 11 probably because I'm loading it as woff2 format.</li>
+    <li>Print in general is totally broken in chrome - font is breaking and chrome doesn't render text shadow.</li>
+  </ul>
 
-/*BUGS*/
-Something is setting width and height on the character image. In turn that cause problems when it's not reset back on image change.
-load character is breaking for timeout
-Sometimes version numbers in keyword editor gets wonky
-character image can overflow ruby and saphire cards - needs css changes
-Internet Explorer keeps form data persistent across single page reloads, but not double page reloads...
-Adelon Font is broken in IE 11 probably because I'm loading it as woff2 format
-Print in general is totally broken in chrome - font is breaking and chrome doesn't render text shadow.
+  <ul>
+    <b>GENERAL ROADMAP</b>
+    <li>Drag and drop keyword modifiers.</li>
+    <li>Displayimmune icons/ keywords.</li>
+    <li>pointer for drag and drop operations.</li>
+    <li>Better image controls either offset or drag n drop.</li>
+    <li>Highlight other keywords in keyword definitions.</li>
+    <li>Add help for ability definitions with basic examples.</li>
+    <li>get clear / reset buttonworking.</li>
+    <li>Better looking card backgrounds.</li>
+  </ul>
 
-/*GENERAL ROADMAP*/
-Drag and drop keyword modifiers
-Displayimmune icons/ keywords
-pointer for drag and drop operations
-Better image controls either offset or drag n drop
-Highlight other keywords in keyword definitions.
-Add help for ability definitions with basic examples
-get clear / reset buttonworking
-Better looking card backgrounds
+  <ul>
+    <b>Card ROADMAP</b>
+    <li>fix card back for Loot, Treasure, Wonder, Command</li>
+  </ul>
 
-/*Card ROADMAP*/
-fix card back for Loot, Treasure, Wonder, Command
+  <ul>
+    <b>JSON CARD ROADMAP</b>
+    <li>fill out template examples for Hero, Monster, Pet, Loot, Treasure, Explore.</li>
+  </ul>
 
+  <ul>
+    <b>TREASURE CARD ROADMAP</b>
+    <li>support for monster specific treasure cards.</li>
+  </ul>
 
-/* JSON CARD ROADMAP*/
-fill out template examples for Hero, Monster, Pet, Loot, Treasure, Explore
+  <ul>
+    <b>TIMEOUT CARD ROADMAP</b>
+    <li>Wizard.</li>
+  </ul>
 
+  <ul>
+    <b>ARCADE CARD ROADMAP</b>
+    <li>Build it!</li>
+  </ul>
 
-/*TREASURE CARD ROADMAP*/
-support for monster specific treasure cards
+  <ul>
+    <b>WISHLIST</b>
+    <li>Comment code javadoc style.</li>
+    <li>optimize for mobile.</li>
+    <li>make the stat gui interface simpler.</li>
+    <li>write usage guide.</li>
+    <li>translation support.</li>
+  </ul>
 
-
-
-/*TIMEOUT CARD ROADMAP*/
-wizard
-
-
-/*ARCADE CARD ROADMAP*/
-Build it!
-
-
-/*WISHLIST*/
-Comment code javadoc style
-optimize for mobile
-make the stat gui interface simpler
-write usage guide
-translation support
-
-
-/*UNDER DEVELOPMENT*/
-output save as image option - started but buggy waiting for updated plugin
-/*totally stalled how the pugin works is by converting the div to a svg and then to a canvas and then outputs as an image*/
-</pre>
+  <ul>
+    <b>UNDER DEVELOPMENT</b>
+    <li>output save as image option - started but buggy waiting for updated plugin.</li>
+  </ul>
 </div>
 </div>

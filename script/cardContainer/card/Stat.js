@@ -17,12 +17,9 @@
  */
 
 /**
- *
+ * Stat Diplayed on a card.
  */
 function Stat(name, permissions, value){
-
-  //DATA
-  //make this an html template
   this.template='<div class="'+permissions+' stat '+name+'">'+
   '<div class="offense">0</div>'+
   '<div class="defense"></div>'+
@@ -38,6 +35,8 @@ function Stat(name, permissions, value){
 
   this.parent=undefined;
   this.node=undefined;
+  this.permissions=undefined;
+  this.value="";
 
   /**
    *

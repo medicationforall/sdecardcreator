@@ -18,6 +18,7 @@
 
 /**
  * Base for all top level form controls.
+ * @mixin
  */
 function BaseControl(){
   this.parent=undefined;

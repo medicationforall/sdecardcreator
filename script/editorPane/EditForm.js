@@ -18,6 +18,7 @@
 
 /**
  * Edit Form.
+ * @class
  */
 function EditForm(){
   this.template='<div class="editForm form"></div>';

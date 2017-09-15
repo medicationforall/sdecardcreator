@@ -18,6 +18,7 @@
 
 /**
  * Header Control.
+ * @class
  */
 function HeaderControl(){
   BaseControl.call(this);

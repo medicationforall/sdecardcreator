@@ -18,6 +18,7 @@
 
 /**
  * Image Control.
+ * @class
  */
 function ImageControl(){
   BaseControl.call(this);

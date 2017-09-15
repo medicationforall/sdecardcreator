@@ -18,6 +18,7 @@
 
 /**
  * Main Menu Controls.
+ * @class
  */
 function MainMenu(){
   this.node=undefined;
