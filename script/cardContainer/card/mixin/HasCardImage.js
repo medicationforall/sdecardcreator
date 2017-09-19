@@ -1,4 +1,27 @@
+/**
+ *   SDE Card Creator source file HasCardImage,
+ *   Copyright (C) 2017  James M Adams
+ *
+ *   This program is free software: you can redistribute it and/or modify
+ *   it under the terms of the GNU Lesser General Public License as published by
+ *   the Free Software Foundation, either version 3 of the License, or
+ *   any later version.
+ *
+ *   This program is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU Lesser General Public License for more details.
+ *
+ *   You should have received a copy of the GNU Lesser General Public License
+ *   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+/**
+ * Card Image mixin.
+ * @mixin
+ */
 function HasCardImage(){
+  //map of what default string goes to what image path.
   this.defaultAvatarMap={
     'hero':'image/barbsilo.png',
     'monster':'image/dragonsilo.png',
@@ -12,10 +35,13 @@ function HasCardImage(){
     'arcade':'image/koboldgoupsilo.png'
   };
 
+  //set image draggable.
   this.node.find('.card .front .character').draggable({containment:'parent'});
 
+
   /**
-   *
+   * Set Background Image.
+   * @param {string} background
    */
   this.setBackground=function(background){
     this.data.background=background;
@@ -24,7 +50,8 @@ function HasCardImage(){
 
 
   /**
-   *
+   * Set Background Flip flag.
+   * @param {boolean} backgroundFlip - true, mirror the background horizontally, false remove the transform.
    */
   this.setBackgroundFlip=function(backgroundFlip){
     this.data.backgroundFlip = backgroundFlip;
@@ -38,7 +65,9 @@ function HasCardImage(){
 
 
   /**
-   *
+   * Set Image Source
+   * @param {string} source - source defined key, default,local,remote, or creep.
+   * @param {string} data - Needed to fully describe the source. can be a file path or file data, or a creep number.
    */
   this.setImageSource=function(source,data){
     this.data.imageSource=source;
@@ -63,22 +92,26 @@ function HasCardImage(){
 
 
   /**
-   *Sets the default avatar based on the defaultAvatar hashmap.
-   *@param v string Card type
-   *@todo should lowercase value and should throw exception if value is not in hashmap.
+   * Sets the default avatar based on the defaultAvatar hashmap.
+   * @param {string} v - Card type.
    */
   this.setDefaultAvatar=function(v){
-    this.setAvatar(this.defaultAvatarMap[v]);
+    var value = this.defaultAvatarMap[v];
+
+    if(value){
+      this.setAvatar(value);
+    } else{
+      throw 'Default Avatar Map not found for:'+v;
+    }
   };
 
 
   /**
    *Sets the avatar image src attribute.
-   *@param v string absolute, relative path, or raw image data.
+   *@param {string} v absolute, relative path, or raw image data.
    */
   this.setAvatar=function(v){
     var character = this.node.find('.card .character');
     character.attr('src', v);
   };
-
 }

@@ -18,6 +18,7 @@
 
 /**
  * Ability linked between the editForm and a Card.
+ * @class
  */
 function Ability(){
   HasAbilityCardNode.call(this);

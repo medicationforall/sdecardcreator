@@ -115,7 +115,7 @@ function Card(){
   this.node=undefined;
 
   /**
-   *
+   * Construct the Card Instance.
    */
   this._constructor=function(){
     var cardContainer = $('.cardContainer').data('node');
