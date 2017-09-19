@@ -21,6 +21,13 @@
  * @mixin
  */
 function HasToggleDisplay(){
+  //place the arrow
+  this.arrowTemplate = '<svg class="displayArrow" style="transform: rotate(-45deg);" height="10" viewBox="0 0 24 24" width="10" xmlns="http://www.w3.org/2000/svg">'+
+    '<path d="M2 22h20V2z"/>'+
+    '<path d="M0 0h24v24H0z" fill="none"/>'+
+    '</svg>';
+
+  this.arrowNode = $(this.arrowTemplate).prependTo(this.node.find('.toggleDisplay'));
 
 
   /**
@@ -40,8 +47,11 @@ function HasToggleDisplay(){
 
     if(content.hasClass('hide')){
       content.removeClass('hide').animateCss('flipInX');
+      this.arrowNode.css({"transform":"rotate(45deg)", "transform-origin": "top right"});
+
     }else{
       content.addClass('hide');
+      this.arrowNode.css({"transform":"rotate(-45deg)", "transform-origin": "center"});
     }
   };
 }

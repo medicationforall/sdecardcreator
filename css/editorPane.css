@@ -18,3 +18,8 @@
 .editorPane .toggleDisplay{
   display:block;
 }
+
+.editorPane .displayArrow{
+  margin-right:3px;
+  transition: transform 0.3s ease-out;
+}
