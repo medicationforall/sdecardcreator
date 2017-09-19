@@ -21,7 +21,34 @@
  * @mixin
  */
 function HasKeywordListControl(){
+  this.keywordSettings = this.node.find('.keywordSettings');
   this.keywordList = this.node.find('input[name="keywordsList"]');
+  this.keyDialog=undefined;
+
+
+  this.keywordSettings.click(function(event){
+    event.preventDefault();
+    console.log('show Settings');
+    this.showSettings();
+  }.bind(this));
+
+
+  /**
+   *
+   */
+  this.showSettings=function(){
+    if(this.keyDialog===undefined){
+      var keywordStore = $('.page').data('keywordStore');
+      this.keyDialog = new KeywordSettings(keywordStore);
+    }
+
+    //set the controls state
+    this.keyDialog.setupList();
+    this.keyDialog.reset();
+
+    //display the dialog @todo convert this a standard dialog.
+    this.keyDialog.node.dialog({dialogClass: "keywordSettingsDialog", width: 500});
+  };
 
 
   /**

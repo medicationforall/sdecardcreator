@@ -127,6 +127,7 @@ function Card(){
     HasCardHeader.call(this);
     HasCardImage.call(this);
     HasStats.call(this);
+    HasKeywords.call(this);
     HasFlavorText.call(this);
     HasAffinity.call(this);
 
