@@ -1,0 +1,23 @@
+{
+	"cardType": "wonder",
+	"title": "Booty Grinder",
+	"keywordsList": "Boo Booty",
+	"imageSource": "default",
+	"remoteAvatar": "",
+	"flavorText": "Crunch, crunch, crunch. Booty Grinders live to devour your gear.",
+	"abilities": [],
+	"customKeywords": {
+		"Boo Booty": {
+			"description": "Boo Booty cannot by spawned, instead they enter play when their treasure card is drawn.",
+			"version": "2",
+			"hasErrata": true,
+			"errata": [{
+					"version": 3,
+					"description": "Replace the opened treasure chest model with a boo booty model and Booty Grinder game card."
+				}
+			],
+			"displayBack": true,
+			"selectedVersion": "3"
+		}
+	}
+}

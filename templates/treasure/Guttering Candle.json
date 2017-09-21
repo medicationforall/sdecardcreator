@@ -1,0 +1,27 @@
+{
+	"cardType": "treasure",
+	"orientation": "sapphire",
+	"title": "Guttering Candle",
+	"keywordsList": "",
+	"imageSource": "default",
+	"remoteAvatar": "",
+	"itemStats": "+1r Will",
+	"flavorText": "Behind You",
+	"abilities": [{
+			"costType": "support",
+			"cost": "1",
+			"name": "Flicker",
+			"definition": "Augment, Teleport"
+		}
+	],
+	"customKeywords": {
+		"Augment": {
+			"description": "Abilities with Augment may only target or affect friendly models that are hit, including the user.",
+			"version": "1",
+			"hasErrata": false,
+			"errata": [],
+			"displayBack": false,
+			"selectedVersion": "1"
+		}
+	}
+}

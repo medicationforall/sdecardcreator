@@ -1,0 +1,17 @@
+{
+	"cardType": "explore",
+	"title": "Pathing Error",
+	"imageSource": "creep",
+	"remoteAvatar": "",
+	"creepSpawn": "1",
+	"itemStats": "",
+	"flavorText": "Is it supposed to work like this?",
+	"abilities": [{
+			"costType": "description",
+			"cost": "1",
+			"name": "Ability 1",
+			"definition": "All models may move through walls. Line of sight is blocked as normal."
+		}
+	],
+	"customKeywords": {}
+}

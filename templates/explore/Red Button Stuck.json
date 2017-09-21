@@ -1,0 +1,17 @@
+{
+	"cardType": "explore",
+	"title": "Red Button Stuck",
+	"imageSource": "creep",
+	"remoteAvatar": "",
+	"creepSpawn": "2",
+	"itemStats": "",
+	"flavorText": "Oh no, not during the boss Fight!",
+	"abilities": [{
+			"costType": "description",
+			"cost": "1",
+			"name": "Ability 1",
+			"definition": "Models may not use unique offensive actions."
+		}
+	],
+	"customKeywords": {}
+}

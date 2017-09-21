@@ -67,4 +67,34 @@ function HasStats(){
     this.data.skulls = skulls;
     this.node.find('.skulls').text(skulls);
   };
+
+  this.loadCardStats=function(data){
+    if(data.str !== undefined){
+      this.setStat('str',data.str);
+    }
+
+    if(data.arm !== undefined){
+      this.setStat('arm',data.arm);
+    }
+
+    if(data.dex !== undefined){
+      this.setStat('dex',data.dex);
+    }
+
+    if(data.will !== undefined){
+      this.setStat('will',data.will);
+    }
+
+    if(data.wounds !== undefined){
+      this.setWounds(data.wounds);
+    }
+
+    if(data.potions !== undefined){
+      this.setPotions(data.potions);
+    }
+
+    if(data.skulls !== undefined){
+      this.setSkulls(data.skulls);
+    }
+  };
 }

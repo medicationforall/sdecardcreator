@@ -1,0 +1,17 @@
+{
+	"cardType": "explore",
+	"title": "Traveling Merchant",
+	"imageSource": "creep",
+	"remoteAvatar": "",
+	"creepSpawn": "1",
+	"itemStats": "",
+	"flavorText": "What would you like to buy.",
+	"abilities": [{
+			"costType": "description",
+			"cost": "1",
+			"name": "Ability 1",
+			"definition": "The Heroes may discard up to three pieces of loot, then draw the same number of loot cards."
+		}
+	],
+	"customKeywords": {}
+}

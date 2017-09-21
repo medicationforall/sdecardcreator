@@ -94,4 +94,25 @@ function HasCardTypeControls(){
       card.find('.card .item .contentBorder').before(card.find('.card .item .placeHolder'));
     }
   };
+
+  /**
+   *
+   */
+  this.loadCardType=function(data){
+    if(data.type !== undefined){
+      this.setCardType(data.type);
+    }
+
+    if(data.scale !== undefined){
+      this.setCardScale(data.scale);
+    }
+
+    if(data.region !== undefined){
+      this.setRegion(data.region);
+    }
+
+    if(data.orientation !== undefined){
+      this.setOrientation(data.orientation);
+    }
+  };
 }

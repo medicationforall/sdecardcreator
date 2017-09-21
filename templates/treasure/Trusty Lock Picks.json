@@ -1,0 +1,12 @@
+{
+	"cardType": "treasure",
+	"orientation": "sapphire",
+	"title": "Trusty Lock Picks",
+	"keywordsList": "Thief, ",
+	"imageSource": "default",
+	"remoteAvatar": "",
+	"itemStats": "+1g DEX",
+	"flavorText": "Nothing is safe.",
+	"abilities": [],
+	"customKeywords": {}
+}

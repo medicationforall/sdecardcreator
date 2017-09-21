@@ -1,0 +1,24 @@
+{
+	"cardType": "timeout",
+	"title": "test timeout",
+	"imageSource": "remote",
+	"remoteAvatar": "http://handcannononline.com/wp-content/uploads/2014/03/Twilight-Knight.png",
+	"abilities": [{
+			"costType": "attack",
+			"cost": "1",
+			"name": "Ability 1",
+			"definition": ""
+		}, {
+			"costType": "attack",
+			"cost": "1",
+			"name": "Ability 3",
+			"definition": ""
+		}, {
+			"costType": "attack",
+			"cost": "1",
+			"name": "Ability 2",
+			"definition": ""
+		}
+	],
+	"customKeywords": {}
+}

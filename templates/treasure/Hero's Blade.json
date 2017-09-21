@@ -1,0 +1,49 @@
+{
+	"cardType": "treasure",
+	"orientation": "citrine",
+	"title": "Hero's Blade",
+	"keywordsList": "",
+	"imageSource": "default",
+	"remoteAvatar": "",
+	"itemStats": "+1r +1ac",
+	"flavorText": "I am not left-handed.",
+	"abilities": [{
+			"costType": "attack",
+			"cost": "2",
+			"name": "Spin Attack",
+			"definition": "0sw, Wave 1, Push 2"
+		}
+	],
+	"customKeywords": {
+		"Push X": {
+			"description": "A model targeted by Push may be moved a number of squares up to the value of X away from the attacker. A model moved by Push must end its move farther away from the attacker than it began.",
+			"version": "1",
+			"hasErrata": true,
+			"errata": [{
+					"version": 1,
+					"description": "A model targeted by Push may be moved a number of squares up\r\nto the value of X away from the attacker. A model moved by Push\r\nmust, after each square moved, be further away from the attacker\r\nthan it began."
+				}, {
+					"version": 2,
+					"description": "A model targeted by Push may be moved a number of squares up to the value of X away from the model using Push. Each square moved must increase the distance between the two models. If the target model cannot be moved further away, such as from contact with a wall, the model immediately stops."
+				}
+			],
+			"displayBack": false,
+			"selectedVersion": "2"
+		},
+		"Wave X": {
+			"description": "A Wave effect is centered on the user's square and hits the user and every model within X squares of the user. Waves replace the ranged effect of an ability but do not replace any other aspect of the ability.",
+			"version": "1",
+			"hasErrata": true,
+			"errata": [{
+					"version": 1,
+					"description": "A Wave effect is centered\r\non the user’s square and\r\nhits the user and every\r\nmodel within X squares of\r\nthe user. Waves replace the\r\ndistance portion (X) of a\r\ndistance effect, but do not\r\nreplace any other aspect of\r\nthe ability."
+				}, {
+					"version": 2,
+					"description": "A Wave effect is centered on the user’s base and every square within X squares of the user."
+				}
+			],
+			"displayBack": false,
+			"selectedVersion": "2"
+		}
+	}
+}

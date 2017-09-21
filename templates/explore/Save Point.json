@@ -1,0 +1,17 @@
+{
+	"cardType": "explore",
+	"title": "Save Point",
+	"imageSource": "creep",
+	"remoteAvatar": "",
+	"creepSpawn": "0",
+	"itemStats": "",
+	"flavorText": "An excellent campsite.",
+	"abilities": [{
+			"costType": "description",
+			"cost": "1",
+			"name": "Ability 1",
+			"definition": "After the spawning point is destroyed Heroes may remove all Status effects."
+		}
+	],
+	"customKeywords": {}
+}

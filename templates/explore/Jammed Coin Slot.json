@@ -1,0 +1,17 @@
+{
+	"cardType": "explore",
+	"title": "Jammed Coin Slot",
+	"imageSource": "creep",
+	"remoteAvatar": "",
+	"creepSpawn": "1",
+	"itemStats": "",
+	"flavorText": "Please don't die.",
+	"abilities": [{
+			"costType": "description",
+			"cost": "1",
+			"name": "Ability 1",
+			"definition": "While any Hero is in this tile Princess Coins may not be used. "
+		}
+	],
+	"customKeywords": {}
+}

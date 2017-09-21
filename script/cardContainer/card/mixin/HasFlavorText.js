@@ -31,4 +31,14 @@ function HasFlavorText(){
     this.data.flavorText = flavorText;
     this.node.find('.flavorText').text(flavorText);
   };
+
+
+  /**
+   *
+   */
+  this.loadCardFlavorText=function(data){
+    if(data.flavorText !== undefined){
+      this.setFlavorText(data.flavorText);
+    }
+  };
 }

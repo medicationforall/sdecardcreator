@@ -1,0 +1,17 @@
+{
+	"cardType": "explore",
+	"title": "Armory",
+	"imageSource": "creep",
+	"remoteAvatar": "",
+	"creepSpawn": "3",
+	"itemStats": "",
+	"flavorText": "This is good stuff.",
+	"abilities": [{
+			"costType": "description",
+			"cost": "1",
+			"name": "Ability 1",
+			"definition": "After the spawning point is destroyed, you may draw one loot card per Hero."
+		}
+	],
+	"customKeywords": {}
+}

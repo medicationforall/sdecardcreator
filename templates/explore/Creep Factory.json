@@ -1,0 +1,11 @@
+{
+	"cardType": "explore",
+	"title": "Creep Factory",
+	"imageSource": "creep",
+	"remoteAvatar": "",
+	"creepSpawn": "6",
+	"itemStats": "",
+	"flavorText": "Look at all of them. Uh-oh I think they saw us... Run!",
+	"abilities": [],
+	"customKeywords": {}
+}

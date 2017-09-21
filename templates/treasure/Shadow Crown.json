@@ -1,0 +1,27 @@
+{
+	"cardType": "treasure",
+	"orientation": "ruby",
+	"title": "Shadow Crown",
+	"keywordsList": "",
+	"imageSource": "default",
+	"remoteAvatar": "",
+	"itemStats": "+1r DEX +1ac",
+	"flavorText": "Swift and silent as a shadow.",
+	"abilities": [{
+			"costType": "support",
+			"cost": "2",
+			"name": "Shadow",
+			"definition": "augment, Place Hero adjacent to any other Hero on the dungeon map."
+		}
+	],
+	"customKeywords": {
+		"Augment": {
+			"description": "Abilities with Augment may only target or affect friendly models that are hit, including the user.",
+			"version": "1",
+			"hasErrata": false,
+			"errata": [],
+			"displayBack": false,
+			"selectedVersion": "1"
+		}
+	}
+}

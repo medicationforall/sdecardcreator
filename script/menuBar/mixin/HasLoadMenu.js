@@ -48,6 +48,22 @@ function HasLoadMenu(){
       console.warn('The File APIs are not fully supported by your browser.');
     }
   });
+  
+
+  /**
+   * Load template button.
+   */
+  this.loadMenu.find('.loadTemplateButton').click($.proxy(function(menu,event){
+    event.preventDefault();
+    var file = $(this).data('file');
+
+    //clear lists check
+    menu.clearAll();
+
+    $.getJSON('template/'+file,$.proxy(function(data){
+      this.loadData(data);
+    },menu));
+  },null,this));
 
 
   /**

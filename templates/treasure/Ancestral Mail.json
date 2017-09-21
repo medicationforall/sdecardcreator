@@ -1,0 +1,12 @@
+{
+	"cardType": "treasure",
+	"orientation": "emerald",
+	"title": "Ancestral Mail",
+	"keywordsList": "",
+	"imageSource": "default",
+	"remoteAvatar": "",
+	"itemStats": "+1g ARM",
+	"flavorText": "This Mail has served my family for generations.",
+	"abilities": [],
+	"customKeywords": {}
+}

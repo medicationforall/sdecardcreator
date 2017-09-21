@@ -1,0 +1,12 @@
+{
+	"cardType": "treasure",
+	"orientation": "ruby",
+	"title": "pegasus Wings",
+	"keywordsList": "fly",
+	"imageSource": "default",
+	"remoteAvatar": "",
+	"itemStats": "+1r DEX +2mo",
+	"flavorText": "",
+	"abilities": [],
+	"customKeywords": {}
+}

@@ -1,0 +1,17 @@
+{
+	"cardType": "explore",
+	"title": "Treasure Vault",
+	"imageSource": "creep",
+	"remoteAvatar": "",
+	"creepSpawn": "3",
+	"itemStats": "",
+	"flavorText": "Jackpot!",
+	"abilities": [{
+			"costType": "description",
+			"cost": "1",
+			"name": "Ability 1",
+			"definition": "After the mini-boss is spawned and destroyed, Instead of drawing a single treasure card, the party may draw one per Hero."
+		}
+	],
+	"customKeywords": {}
+}

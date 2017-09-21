@@ -1,0 +1,12 @@
+{
+	"cardType": "treasure",
+	"orientation": "citrine",
+	"title": "Nether Sword",
+	"keywordsList": "Poison",
+	"imageSource": "default",
+	"remoteAvatar": "",
+	"itemStats": "+1g DEX",
+	"flavorText": "Forged in the deepest pits, the merest stratch can prove fatal.",
+	"abilities": [],
+	"customKeywords": {}
+}

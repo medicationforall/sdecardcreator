@@ -1,0 +1,17 @@
+{
+	"cardType": "explore",
+	"title": "Turbo Button",
+	"imageSource": "creep",
+	"remoteAvatar": "",
+	"creepSpawn": "1",
+	"itemStats": "",
+	"flavorText": "",
+	"abilities": [{
+			"costType": "description",
+			"cost": "1",
+			"name": "Ability 1",
+			"definition": "While in this tile a Hero gains +1ac and +1mo"
+		}
+	],
+	"customKeywords": {}
+}

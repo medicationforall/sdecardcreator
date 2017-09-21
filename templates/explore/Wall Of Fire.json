@@ -1,0 +1,17 @@
+{
+	"cardType": "explore",
+	"title": "Wall Of Fire",
+	"imageSource": "default",
+	"remoteAvatar": "",
+	"creepSpawn": "3",
+	"itemStats": "2st 0sh line",
+	"flavorText": "Anyone Bring Marshmallows?",
+	"abilities": [{
+			"costType": "attack",
+			"cost": "0",
+			"name": "I'm Burning",
+			"definition": "STR 3st, Fire"
+		}
+	],
+	"customKeywords": {}
+}

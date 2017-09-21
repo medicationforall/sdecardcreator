@@ -19,6 +19,7 @@
 /**
  * Ability linked between the editForm and a Card.
  * @class
+ * @todo should support ability reordering.
  */
 function Ability(){
   HasAbilityCardNode.call(this);
@@ -35,6 +36,8 @@ function Ability(){
    */
   this.closeAbility=function(){
     console.log('closeAbility');
+    var cardNode = $('.cardGroup.selected').data('node');
+    cardNode.removeAbility(this);
     this.getCardAbilityNodes().remove();
     this.formNode.remove();
     this._checkKeywords();

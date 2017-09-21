@@ -83,4 +83,25 @@ function HasCardHeader(){
       this.node.find('.actions').text('3');
     }
   };
+
+  /**
+   *
+   */
+  this.loadCardHeader=function(data){
+    if(data.title !== undefined){
+      this.setTitle(data.title);
+    }
+
+    if(data.subTitle !== undefined){
+      this.setSubTitle(data.subTitle);
+    }
+
+    if(data.move !== undefined){
+      this.setMove(data.move);
+    }
+
+    if(data.actions !== undefined){
+      this.setActions(data.actions);
+    }
+  };
 }

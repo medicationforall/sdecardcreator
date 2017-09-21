@@ -1,0 +1,17 @@
+{
+	"cardType": "explore",
+	"title": "Locked Doors",
+	"imageSource": "creep",
+	"remoteAvatar": "",
+	"creepSpawn": "2",
+	"itemStats": "",
+	"flavorText": "No Escape!",
+	"abilities": [{
+			"costType": "description",
+			"cost": "1",
+			"name": "Ability 1",
+			"definition": "Models that enter this tile may not leave it until the party spends one dungeon key to unlock the doors or the spawning point is destroyed."
+		}
+	],
+	"customKeywords": {}
+}

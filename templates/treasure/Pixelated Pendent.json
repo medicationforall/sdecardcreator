@@ -1,0 +1,54 @@
+{
+	"cardType": "treasure",
+	"orientation": "sapphire",
+	"title": "Pixelated Pendent",
+	"keywordsList": "",
+	"imageSource": "default",
+	"remoteAvatar": "",
+	"itemStats": "+1g STR",
+	"flavorText": "Does this dress make me look blocky?",
+	"abilities": [{
+			"costType": "attack",
+			"cost": "2",
+			"name": "Pixel Crush",
+			"definition": "0sw, Cross 4, Push 2"
+		}
+	],
+	"customKeywords": {
+		"Augment": {
+			"description": "Abilities with Augment may only target or affect friendly models that are hit, including the user.",
+			"version": "1",
+			"hasErrata": false,
+			"errata": [],
+			"displayBack": false,
+			"selectedVersion": "1"
+		},
+		"Cross X": {
+			"description": "A Cross effect is centered on the user’s square and hits the user\r\nand every model within X squares of the user, but does not affect\r\nany diagonal squares. Crosses replace the distance portion (X) of a\r\ndistance effect, but do not replace any other aspect of the ability.",
+			"version": "1",
+			"hasErrata": true,
+			"errata": [{
+					"version": 2,
+					"description": "A Cross effect is centered on the user’s base and every square within X squares of the user, but does not affect any diagonal squares."
+				}
+			],
+			"displayBack": false,
+			"selectedVersion": "2"
+		},
+		"Push X": {
+			"description": "A model targeted by Push may be moved a number of squares up to the value of X away from the attacker. A model moved by Push must end its move farther away from the attacker than it began.",
+			"version": "1",
+			"hasErrata": true,
+			"errata": [{
+					"version": 1,
+					"description": "A model targeted by Push may be moved a number of squares up\r\nto the value of X away from the attacker. A model moved by Push\r\nmust, after each square moved, be further away from the attacker\r\nthan it began."
+				}, {
+					"version": 2,
+					"description": "A model targeted by Push may be moved a number of squares up to the value of X away from the model using Push. Each square moved must increase the distance between the two models. If the target model cannot be moved further away, such as from contact with a wall, the model immediately stops."
+				}
+			],
+			"displayBack": false,
+			"selectedVersion": "2"
+		}
+	}
+}

@@ -114,4 +114,32 @@ function HasCardImage(){
     var character = this.node.find('.card .character');
     character.attr('src', v);
   };
+
+  this.loadCardImage=function(data){
+    if(data.background !== undefined){
+      this.setBackground(data.background);
+    }
+
+    if(data.backgroundFlip !== undefined){
+      this.setBackgroundFlip(data.backgroundFlip);
+    }
+
+    if(data.setImageSource !== undefined){
+      if(data.imageSource==='default'){
+        this.setImageSource(data.imageSource);
+      } else if(data.imageSource==='local' && data.avatarData !==undefined){
+        this.setImageSource(data.imageSource,data.avatarData);
+      } else if(data.imageSource==='remote' && data.remoteAvatar !==undefined){
+        this.setImageSource(data.imageSource,data.remoteAvatar);
+      } else if(data.imageSource==='creep' && data.creep !==undefined){
+        this.setImageSource(data.imageSource,data.creep);
+      } else{
+        throw 'Couldn\'t resolve image source for loadCardImage.'+
+        ' imageSource '+data.imageSource+
+        ' avatarData '+data.avatarData+
+        ' remoteAvatar '+data.remoteAvatar+
+        ' creep '+data.creep;
+      }
+    }
+  };
 }

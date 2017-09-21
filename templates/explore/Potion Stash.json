@@ -1,0 +1,17 @@
+{
+	"cardType": "explore",
+	"title": "Potion Stash",
+	"imageSource": "creep",
+	"remoteAvatar": "",
+	"creepSpawn": "3",
+	"itemStats": "",
+	"flavorText": "So delicious!",
+	"abilities": [{
+			"costType": "description",
+			"cost": "1",
+			"name": "Ability 1",
+			"definition": "Place four potion tokens in the corner squares adjacent to the spawning point. Heroes may use the Scavenge basic action to add them to their card."
+		}
+	],
+	"customKeywords": {}
+}

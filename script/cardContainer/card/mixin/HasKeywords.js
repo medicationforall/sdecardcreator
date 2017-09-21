@@ -21,7 +21,7 @@
  * @mixin
  */
 function HasKeywords(){
-  
+
 
   /**
    * Set Keywords
@@ -40,5 +40,11 @@ function HasKeywords(){
 
       //place keywords on back of card.
       keywordStore.checkKeywords(this.node.find('.front'));
+  };
+
+  this.loadCardKeywords=function(data){
+    if(data.keywords !== undefined){
+      this.setKeywords(data.keywords);
+    }
   };
 }

@@ -1,0 +1,12 @@
+{
+	"cardType": "treasure",
+	"orientation": "ruby",
+	"title": "Burning Eye",
+	"keywordsList": "Fire",
+	"imageSource": "default",
+	"remoteAvatar": "",
+	"itemStats": "+1r STR",
+	"flavorText": "My eyes! The Burn",
+	"abilities": [],
+	"customKeywords": {}
+}

@@ -1,0 +1,34 @@
+{
+	"cardType": "treasure",
+	"orientation": "citrine",
+	"title": "Sceptre of The Archmage",
+	"keywordsList": "",
+	"imageSource": "default",
+	"remoteAvatar": "",
+	"itemStats": "+1g WILL",
+	"flavorText": "Don't underestimate me.",
+	"abilities": [{
+			"costType": "attack",
+			"cost": "2",
+			"name": "Force Of Will",
+			"definition": "6ma, Burst 1"
+		}
+	],
+	"customKeywords": {
+		"Burst X": {
+			"description": "A Burst effect occurs as part of a ranged attack or ability. When a target is hit by a ranged effect with Burst X,the effect hits the target and every model within X squares of the target.",
+			"version": "1",
+			"hasErrata": true,
+			"errata": [{
+					"version": 1,
+					"description": "Determine a Burst effect’s target as normal using the model’s\r\ninherent distance ability ( Magic X, Range X, Missile X) or the\r\none listed in the area effect action. After the target has been\r\nselected it and every model within X squares of the target and\r\nin the target’s line of sight are hit by the effect.\r\nIf a large model is targeted by a Burst effect choose one square\r\noccupied by its base as the square targeted and determine who\r\nis hit from it as normal."
+				}, {
+					"version": 2,
+					"description": "Determine a Burst effect’s target as normal using the action’s Range. After the target has been selected, it and every model within X squares of the target are affected. Squares that the target cannot draw line of sight to are not affected. If a large based model is targeted by a Burst area effect choose one square occupied by its base as the square targeted and determine the area effect as normal."
+				}
+			],
+			"displayBack": false,
+			"selectedVersion": "2"
+		}
+	}
+}

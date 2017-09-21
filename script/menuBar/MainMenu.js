@@ -38,7 +38,7 @@ function MainMenu(){
   this._setup=function(){
     this.node = $('.menuBar');
     //HasGatherData.call(this);
-    //HasLoadData.call(this);
+    HasLoadData.call(this);
     HasOpenMenuButtons.call(this);
     //HasAddMenu.call(this);
     HasSaveMenu.call(this);
@@ -57,6 +57,20 @@ function MainMenu(){
 
     //set coreNode
     $.data(this.node[0],'coreNode',this);
+  };
+
+
+  /**
+   * Called prior to loading a user defined chart.
+   */
+  this.clearAll=function(){
+    if($('.hamburger select[name="clearList"]').val()==="all"){
+      $('.list, .rollContainer').remove();
+    } else if($('.hamburger select[name="clearList"]').val()==="lists"){
+      $('.list').remove();
+    } else if($('.hamburger select[name="clearList"]').val()==="rolls"){
+      $('.rollContainer').remove();
+    }
   };
 
   this._constructor();

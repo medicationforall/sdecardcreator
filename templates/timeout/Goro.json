@@ -1,0 +1,29 @@
+{
+	"cardType": "timeout",
+	"title": "Goro",
+	"imageSource": "default",
+	"remoteAvatar": "",
+	"abilities": [{
+			"costType": "nameOnly",
+			"cost": "1",
+			"name": "Boss Spawn",
+			"definition": ""
+		}, {
+			"costType": "special",
+			"cost": "1",
+			"name": "Wind Spirit",
+			"definition": "All elite and minion monsters gain the ability fly"
+		}, {
+			"costType": "nameOnly",
+			"cost": "1",
+			"name": "Timeout",
+			"definition": ""
+		}, {
+			"costType": "special",
+			"cost": "1",
+			"name": "Giri Swarm",
+			"definition": "Spawn Six Giri within 2 squares of Goro"
+		}
+	],
+	"customKeywords": {}
+}

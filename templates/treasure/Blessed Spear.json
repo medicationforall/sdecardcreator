@@ -1,0 +1,12 @@
+{
+	"cardType": "treasure",
+	"orientation": "emerald",
+	"title": "Blessed Spear",
+	"keywordsList": "",
+	"imageSource": "default",
+	"remoteAvatar": "",
+	"itemStats": "+1g STR",
+	"flavorText": "Goddess grant me strength.",
+	"abilities": [],
+	"customKeywords": {}
+}

@@ -1,0 +1,12 @@
+{
+	"cardType": "treasure",
+	"orientation": "sapphire",
+	"title": "Lucky Striped Pants",
+	"keywordsList": "luck",
+	"imageSource": "default",
+	"remoteAvatar": "",
+	"itemStats": "+1r ARM",
+	"flavorText": "Lucky !",
+	"abilities": [],
+	"customKeywords": {}
+}

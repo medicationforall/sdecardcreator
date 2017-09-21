@@ -139,7 +139,33 @@ function Card(){
    * Collect the json data for the card.
    */
   this.gatherData=function(){
-    return this.data;
+    //clone the data
+    var data = Object.assign({},this.data);
+
+    data.abilities = [];
+
+    for(var i=0,ability;(ability=this.abilities[i]);i++){
+      data.abilities.push(ability.gatherData());
+    }
+    return data;
+  };
+
+
+  /**
+   *
+   */
+  this.loadData=function(data){
+    this.loadCardType(data);
+    this.loadCardHeader(data);
+    this.loadCardImage(data);
+    this.loadCardStats(data);
+    this.loadCardKeywords(data);
+    this.loadCardAffinity(data);
+    this.loadCardFlavorText(data);
+
+    if(data.bit !== undefined){
+      this.setBit(data.bit);
+    }
   };
 
 
@@ -148,7 +174,20 @@ function Card(){
    */
   this.addAbility=function(ability){
     console.log('card add ability');
+    this.abilities.push(ability);
     ability.getCardNode().appendTo(this.node.find('.abilities'));
+  };
+
+
+  /**
+   *
+   */
+  this.removeAbility=function(ability){
+    console.warn('implement removeAbility');
+  };
+
+  this.reOrderAbility=function(ability){
+    console.warn('implement reOrderAbility');
   };
 
 

@@ -1,0 +1,17 @@
+{
+	"cardType": "explore",
+	"title": "Choking Cloud",
+	"imageSource": "default",
+	"remoteAvatar": "",
+	"creepSpawn": "3",
+	"itemStats": "2st 0sh area",
+	"flavorText": "",
+	"abilities": [{
+			"costType": "support",
+			"cost": "0",
+			"name": "Choke",
+			"definition": "For the remainder of this activation and during their entire next activation, models affected by Choke may not drink potions."
+		}
+	],
+	"customKeywords": {}
+}

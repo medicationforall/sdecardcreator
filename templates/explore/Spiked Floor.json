@@ -1,0 +1,17 @@
+{
+	"cardType": "explore",
+	"title": "Spiked Floor",
+	"imageSource": "default",
+	"remoteAvatar": "",
+	"creepSpawn": "3",
+	"itemStats": "1st 0sh scatter",
+	"flavorText": "That's gotta hurt.",
+	"abilities": [{
+			"costType": "attack",
+			"cost": "0",
+			"name": "My Foot",
+			"definition": "STR 3st slow"
+		}
+	],
+	"customKeywords": {}
+}

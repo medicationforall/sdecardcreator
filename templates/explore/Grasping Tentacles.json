@@ -1,0 +1,17 @@
+{
+	"cardType": "explore",
+	"title": "Grasping Tentacles",
+	"imageSource": "default",
+	"remoteAvatar": "",
+	"creepSpawn": "3",
+	"itemStats": "2st 0sh scatter",
+	"flavorText": "Oh, not again...",
+	"abilities": [{
+			"costType": "description",
+			"cost": "1",
+			"name": "Ability 1",
+			"definition": "Graping Tentacle squares and all adjacent squares are difficult terrain."
+		}
+	],
+	"customKeywords": {}
+}

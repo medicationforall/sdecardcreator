@@ -1,0 +1,39 @@
+{
+	"cardType": "treasure",
+	"orientation": "ruby",
+	"title": "Ruby Crystal Shard",
+	"keywordsList": "",
+	"imageSource": "default",
+	"remoteAvatar": "",
+	"itemStats": "+1r Will Ruby +1g WILL",
+	"flavorText": "",
+	"abilities": [{
+			"costType": "support",
+			"cost": "1",
+			"name": "Princess Power",
+			"definition": "Augment, Aura 1, +1r WiLL"
+		}
+	],
+	"customKeywords": {
+		"Augment": {
+			"description": "Abilities with Augment may only target or affect friendly models that are hit, including the user.",
+			"version": "1",
+			"hasErrata": false,
+			"errata": [],
+			"displayBack": false,
+			"selectedVersion": "1"
+		},
+		"Aura X": {
+			"description": "An Aura effect follows the same rules as Wave X with one important difference -- Auras remain in play, centered on and moving with the user, until the beginning of their next activation.",
+			"version": "1",
+			"hasErrata": true,
+			"errata": [{
+					"version": 2,
+					"description": "An Aura effect is centered on the user’s base and every square within X squares of the user. Auras remain in play, centered on and moving with the user, until their next upkeep."
+				}
+			],
+			"displayBack": false,
+			"selectedVersion": "2"
+		}
+	}
+}

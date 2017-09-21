@@ -1,0 +1,12 @@
+{
+	"cardType": "loot",
+	"orientation": "citrine",
+	"title": "Dwarven Axe",
+	"keywordsList": "",
+	"imageSource": "default",
+	"remoteAvatar": "",
+	"itemStats": "+1st STR",
+	"flavorText": "Forged by dwarves and just as reliable.",
+	"abilities": [],
+	"customKeywords": {}
+}

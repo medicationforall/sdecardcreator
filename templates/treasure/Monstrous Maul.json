@@ -1,0 +1,31 @@
+{
+	"cardType": "treasure",
+	"orientation": "citrine",
+	"title": "Monstrous Maul",
+	"keywordsList": "",
+	"imageSource": "default",
+	"remoteAvatar": "",
+	"itemStats": "+1g Arm",
+	"flavorText": "No blade will harm me. No armor will stop me.",
+	"abilities": [{
+			"costType": "attack",
+			"cost": "2",
+			"name": "Crunch",
+			"definition": "2sw, +1r STR, Bane"
+		}
+	],
+	"customKeywords": {
+		"Bane": {
+			"description": "A model suffering Bane discards the highest result rolled anytime it makes an offense roll.",
+			"version": "1.5",
+			"hasErrata": true,
+			"errata": [{
+					"version": 2,
+					"description": "A model suffering Bane discards the highest result rolled anytime it makes a defense roll. (Arcade: A monster suffering Bane Reduces its ARM by 1st.)"
+				}
+			],
+			"displayBack": false,
+			"selectedVersion": "2"
+		}
+	}
+}

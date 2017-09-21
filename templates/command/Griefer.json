@@ -1,0 +1,24 @@
+{
+	"cardType": "command",
+	"title": "Griefer",
+	"imageSource": "default",
+	"remoteAvatar": "",
+	"abilities": [{
+			"costType": "special",
+			"cost": "1",
+			"name": "Bully",
+			"definition": "All Commands target Hero with the least wrath."
+		}, {
+			"costType": "nameOnly",
+			"cost": "1",
+			"name": "Move x1",
+			"definition": ""
+		}, {
+			"costType": "nameOnly",
+			"cost": "1",
+			"name": "Fight x1",
+			"definition": ""
+		}
+	],
+	"customKeywords": {}
+}

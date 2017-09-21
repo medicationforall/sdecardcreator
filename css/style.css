@@ -30,7 +30,7 @@ svg{
   fill:currentColor;
 }
 
-.inactive svg{
+.inactive svg, svg.inactive{
   opacity:0.4;
 }
 
