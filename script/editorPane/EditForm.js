@@ -43,7 +43,7 @@ function EditForm(){
    */
   this._setup=function(){
     new CardControl();
-    new HeaderControl();
+    new HeaderControl('active');
     new ImageControl();
     new StatsControl();
     new KeywordControl();

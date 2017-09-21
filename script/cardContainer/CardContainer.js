@@ -40,13 +40,12 @@ function CardContainer(){
    */
   this.gatherData=function(){
     console.log('call gather data for the cardContainer');
-    var data = {};
-    data.cards=[];
+    var data = [];
     var cards = this.node.find('.cardGroup');
 
     for(var i=0,card;(card=cards[i]);i++){
       var cardNode = $(card).data('node');
-      data.cards.push(cardNode.gatherData());
+      data.push(cardNode.gatherData());
     }
 
     return data;
@@ -60,6 +59,32 @@ function CardContainer(){
    */
   this.loadData=function(data){
     console.log('card container load data');
+
+    //should we clear?
+    this.deleteCards();
+
+    for(var i=0,cardData;(cardData=data.cards[i]);i++){
+      this.addCard(true,cardData);
+    }
+  };
+
+
+  this.deleteCards=function(){
+    $('.cardGroup').remove();
+  };
+
+
+
+  /**
+   *
+   */
+  this.addCard=function(animate,data){
+    this.deselectCards();
+
+    var card = new Card(animate);
+    if(data){
+      card.loadData(data);
+    }
   };
 
   this._construct();

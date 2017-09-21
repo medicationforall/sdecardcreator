@@ -25,13 +25,13 @@ function HasSaveMenu(){
 
 
   /**
-   * Save
+   * Save Json
    */
-  this.saveMenu.find('a.save').click($.proxy(function(coreNode,event){
+  this.saveMenu.find('.saveAsJson').click($.proxy(function(coreNode,event){
     event.preventDefault();
 
     if($('input[name="title"]')[0].checkValidity()){
-      var data = $('.cardContainer').data('node').gatherData();
+      var data = coreNode.gatherData();
       coreNode.saveAsFile(JSON.stringify(data),$('.form input[name="title"]').val()+'.json',"text/plain;charset=utf-8");
     }else{
       $('input[name="title"]').addClass('fail');
@@ -40,6 +40,18 @@ function HasSaveMenu(){
 
 
   /**
+   *
+   */
+  this.gatherData=function(){
+    var data = {};
+    data.versionSpec = "2.0";
+    data.cards = $('.cardContainer').data('node').gatherData();
+    return data;
+  };
+
+
+  /**
+   * Save png image.
    * @todo should do a check to make sure the image has a title. Or default out the output name if the title is missing.
    */
   this.saveMenu.find('.saveAsImage').click(function(event){

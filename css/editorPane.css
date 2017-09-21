@@ -23,3 +23,13 @@
   margin-right:3px;
   transition: transform 0.3s ease-out;
 }
+
+.editorPane .displayArrow.inactive{
+  transform:rotate(-45deg);
+  transform-origin: center;
+}
+
+.editorPane .displayArrow.active{
+  transform:rotate(45deg);
+  transform-origin: top right;
+}

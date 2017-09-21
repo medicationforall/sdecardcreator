@@ -27,7 +27,7 @@ function HasLoadMenu(){
   /**
    * import
    */
-  this.loadMenu.find('.importFile').change(function(event){
+  this.loadMenu.find('.importFile').change($.proxy(function(event){
     event.preventDefault();
 
     if (window.File && window.FileReader && window.FileList && window.Blob) {
@@ -36,19 +36,50 @@ function HasLoadMenu(){
       var file = $('.importFile')[0].files[0];
       var reader = new FileReader();
 
-      reader.onload = function(e) {
+      reader.onload = $.proxy(function(e) {
         var text = reader.result;
 
         var data = jQuery.parseJSON(text);
-        //console.log(data);
-        form.setData(data);
-      };
+        console.log(data);
+        this.loadData(data);
+        //form.setData(data);
+      },this);
       reader.readAsText(file);
     } else {
       console.warn('The File APIs are not fully supported by your browser.');
     }
-  });
-  
+  },this));
+
+
+  /**
+   *
+   */
+  this.loadData=function(data){
+    if(data.versionSpec && data.versionSpec === '2.0'){
+      this.loadDataVersion2(data);
+    } else {
+      this.loadDataVersion1(data);
+    }
+  };
+
+
+  /**
+   *
+   */
+  this.loadDataVersion1=function(data){
+    console.log('load version 1 data');
+  };
+
+
+  /**
+   *
+   */
+  this.loadDataVersion2=function(data){
+    console.log('load version 2 data');
+    var cardContainer = $('.cardContainer').data('node');
+    cardContainer.loadData(data);
+  };
+
 
   /**
    * Load template button.

@@ -104,7 +104,7 @@ function HasCardTypeControls(){
     }
 
     if(data.scale !== undefined){
-      this.setCardScale(data.scale);
+      this.setScale(data.scale);
     }
 
     if(data.region !== undefined){

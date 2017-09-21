@@ -19,7 +19,7 @@
 /**
  * An SDE Card.
  */
-function Card(){
+function Card(animate){
   this.data={};
   this.template='<div class="cardGroup selected">'+
   	'<div class="cardDiv">'+
@@ -113,6 +113,7 @@ function Card(){
   '</div>';
 
   this.node=undefined;
+  this.abilities = [];
 
   /**
    * Construct the Card Instance.
@@ -132,6 +133,10 @@ function Card(){
     HasAffinity.call(this);
 
     this.setCardType('hero');
+
+    if(animate===true){
+      this.node.animateCss('zoomInLeft');
+    }
   };
 
 
@@ -142,10 +147,11 @@ function Card(){
     //clone the data
     var data = Object.assign({},this.data);
 
-    data.abilities = [];
-
-    for(var i=0,ability;(ability=this.abilities[i]);i++){
-      data.abilities.push(ability.gatherData());
+    if(this.abilities && this.abilities.length > 0){
+      data.abilities = [];
+      for(var i=0,ability;(ability=this.abilities[i]);i++){
+        data.abilities.push(ability.gatherData());
+      }
     }
     return data;
   };

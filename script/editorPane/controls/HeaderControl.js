@@ -20,11 +20,11 @@
  * Header Control.
  * @class
  */
-function HeaderControl(){
+function HeaderControl(activeClass){
   BaseControl.call(this);
   this.template='<div class="header">'+
   	'<h2><a class="toggleDisplay" href="">Header</a></h2>'+
-    '<div class="controlContent hide">'+
+    '<div class="controlContent">'+
   	'<div class="hero monster pet treasure wonder loot explore command arcade timeout">*Title <input name="title" required maxlength="30" /></div>'+
   	'<div class="hero monster pet arcade">Sub-Title <input name="subTitle" maxlength="40" /></div>'+
 
@@ -44,6 +44,10 @@ function HeaderControl(){
     HasSubTitleControl.call(this);
     HasMoveControl.call(this);
     HasActionsControl.call(this);
+
+    if(activeClass){
+      this.node.find('.displayArrow').removeClass('active inactive').addClass(activeClass);
+    }
   };
 
   this._constructor();
