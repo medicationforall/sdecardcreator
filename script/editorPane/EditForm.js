@@ -42,14 +42,14 @@ function EditForm(){
    *
    */
   this._setup=function(){
-    new CardControl();
-    new HeaderControl('active');
-    new ImageControl();
-    new StatsControl();
-    new KeywordControl();
-    new AbilityControl();
-    new BitControl();
-    new FlavorTextControl();
+    this.cardControl = new CardControl();
+    this.headerControl = new HeaderControl('active');
+    this.imageControl = new ImageControl();
+    this.statsControl = new StatsControl();
+    this.keywordControl = new KeywordControl();
+    this.abilityControl = new AbilityControl();
+    this.bitControl = new BitControl();
+    this.flavorTextControl = new FlavorTextControl();
     this.setDisplay(this.node,'hero');
   };
 

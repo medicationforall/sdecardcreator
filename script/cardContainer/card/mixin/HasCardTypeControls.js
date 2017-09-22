@@ -29,7 +29,7 @@ function HasCardTypeControls(){
    */
   this.setCardType=function(type){
     console.log('card set type',type);
-    this.data.type=type;
+    this.data.cardType=type;
     this.setDisplay(this.node.find('.card'),type);
     this.setType(type);
 
@@ -95,12 +95,13 @@ function HasCardTypeControls(){
     }
   };
 
+
   /**
    *
    */
   this.loadCardType=function(data){
-    if(data.type !== undefined){
-      this.setCardType(data.type);
+    if(data.cardType !== undefined){
+      this.setCardType(data.cardType);
     }
 
     if(data.scale !== undefined){

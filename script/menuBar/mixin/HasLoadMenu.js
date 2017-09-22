@@ -68,6 +68,8 @@ function HasLoadMenu(){
    */
   this.loadDataVersion1=function(data){
     console.log('load version 1 data');
+    var cardContainer = $('.cardContainer').data('node');
+    cardContainer.loadCard(data);
   };
 
 

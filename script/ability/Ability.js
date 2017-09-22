@@ -76,7 +76,7 @@ function Ability(){
   this._resetCostType=function(cardNode){
     cardNode.find('.name, .colon, .definition').css('display','');
     this.formNode.find('input[name="name"],input[name="cost"], textarea[name="definition"]').parent().css('display','');
-    cardNode.find('.cost').removeClass('attack support emergencyPotion supportPotion offensePotion special definitionOnly nameOnly');
+    cardNode.find('.cost').removeClass('attack support emergencyPotion supportPotion offensePotion special definitionOnly description nameOnly');
   };
 
 
@@ -86,7 +86,7 @@ function Ability(){
    * @param {string} costType - Ability Cost Type.
    */
   this._cardAbilityDisplay=function(cardNode,costType){
-    if(costType==='definitionOnly'){
+    if(costType==='definitionOnly' || costType==='description'){
       cardNode.find('.name, .colon').css('display','none');
     }else if(costType==='nameOnly'){
       cardNode.find('.colon, .definition').css('display','none');
@@ -101,7 +101,7 @@ function Ability(){
   this._formAbilityDisplay=function(costType){
     if(costType==='special'){
       this.formNode.find('input[name="cost"]').parent().css('display','none');
-    } else if(costType==='definitionOnly'){
+    } else if(costType==='definitionOnly' || costType==='description'){
       this.formNode.find('input[name="name"],input[name="cost"]').parent().css('display','none');
     } else if(costType==='nameOnly'){
       this.formNode.find('input[name="cost"],textarea[name="definition"]').parent().css('display','none');
@@ -177,6 +177,28 @@ function Ability(){
    */
   this.gatherData=function(){
     return this.data;
+  };
+
+
+  /**
+   *
+   */
+  this.loadData=function(data){
+    if(data.name !== undefined){
+      this.setName(data.name);
+    }
+
+    if(data.costType !== undefined){
+      this.setCostType(data.costType);
+    }
+
+    if(data.cost !== undefined){
+      this.setCost(data.cost);
+    }
+
+    if(data.definition !== undefined){
+      this.setDefinition(data.definition);
+    }
   };
 
 

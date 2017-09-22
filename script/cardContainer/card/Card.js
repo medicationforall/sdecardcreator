@@ -113,7 +113,6 @@ function Card(animate){
   '</div>';
 
   this.node=undefined;
-  this.abilities = [];
 
   /**
    * Construct the Card Instance.
@@ -129,8 +128,9 @@ function Card(animate){
     HasCardImage.call(this);
     HasStats.call(this);
     HasKeywords.call(this);
-    HasFlavorText.call(this);
     HasAffinity.call(this);
+    HasAbilities.call(this);
+    HasFlavorText.call(this);
 
     this.setCardType('hero');
 
@@ -167,33 +167,12 @@ function Card(animate){
     this.loadCardStats(data);
     this.loadCardKeywords(data);
     this.loadCardAffinity(data);
+    this.loadAbilities(data);
     this.loadCardFlavorText(data);
 
     if(data.bit !== undefined){
       this.setBit(data.bit);
     }
-  };
-
-
-  /**
-   *
-   */
-  this.addAbility=function(ability){
-    console.log('card add ability');
-    this.abilities.push(ability);
-    ability.getCardNode().appendTo(this.node.find('.abilities'));
-  };
-
-
-  /**
-   *
-   */
-  this.removeAbility=function(ability){
-    console.warn('implement removeAbility');
-  };
-
-  this.reOrderAbility=function(ability){
-    console.warn('implement reOrderAbility');
   };
 
 

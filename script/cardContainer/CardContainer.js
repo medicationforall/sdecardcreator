@@ -69,6 +69,19 @@ function CardContainer(){
   };
 
 
+  /**
+   *
+   */
+  this.loadCard=function(data){
+    this.deleteCards();
+
+    this.addCard(true,data);
+  };
+
+
+  /**
+   *
+   */
   this.deleteCards=function(){
     $('.cardGroup').remove();
   };

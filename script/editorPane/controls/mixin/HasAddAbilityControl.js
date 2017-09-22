@@ -44,4 +44,12 @@ function HasAddAbilityControl(){
     var formAbility = ability.getFormNode(this.node.find('.abilities')).appendTo(this.node.find('.abilities'));
     cardNode.addAbility(ability);
   };
+
+
+  /**
+   *
+   */
+  this.addAbilityFromCard=function(ability){
+    var formAbility = ability.getFormNode(this.node.find('.abilities')).appendTo(this.node.find('.abilities'));
+  };
 }

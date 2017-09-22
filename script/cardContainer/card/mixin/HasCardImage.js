@@ -76,7 +76,7 @@ function HasCardImage(){
     this.node.find('.item .creepSpawn').css('display','');
 
     if(source==='default'){
-      this.setDefaultAvatar(this.data.type);
+      this.setDefaultAvatar(this.data.cardType);
     }else if(source==='local'){
       this.data.avatarData=data;
       this.setAvatar(data);
@@ -124,15 +124,15 @@ function HasCardImage(){
       this.setBackgroundFlip(data.backgroundFlip);
     }
 
-    if(data.setImageSource !== undefined){
+    if(data.imageSource !== undefined){
       if(data.imageSource==='default'){
         this.setImageSource(data.imageSource);
       } else if(data.imageSource==='local' && data.avatarData !==undefined){
         this.setImageSource(data.imageSource,data.avatarData);
       } else if(data.imageSource==='remote' && data.remoteAvatar !==undefined){
         this.setImageSource(data.imageSource,data.remoteAvatar);
-      } else if(data.imageSource==='creep' && data.creep !==undefined){
-        this.setImageSource(data.imageSource,data.creep);
+      } else if(data.imageSource==='creep' && data.creepSpawn !==undefined){
+        this.setImageSource(data.imageSource,data.creepSpawn);
       } else{
         throw 'Couldn\'t resolve image source for loadCardImage.'+
         ' imageSource '+data.imageSource+

@@ -823,7 +823,7 @@ cursor:move;
 	padding-top:10px;
 }
 
-.card .ability .cost.special, .card .ability .cost.definitionOnly, .card .ability .cost.nameOnly{
+.card .ability .cost.special, .card .ability .cost.definitionOnly, .card .ability .cost.description, .card .ability .cost.nameOnly{
 	display:none;
 }
 
