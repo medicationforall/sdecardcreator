@@ -22,7 +22,7 @@
  */
 function HasCardHeader(){
   /**
-   * Set Card Title.
+   * Set card Title.
    * @param {string} title
    */
   this.setTitle=function(title){
@@ -38,7 +38,7 @@ function HasCardHeader(){
 
 
   /**
-   * Set Card SubTitle.
+   * Set card SubTitle.
    * @param {string} subTitle
    */
   this.setSubTitle=function(subTitle){
@@ -54,7 +54,7 @@ function HasCardHeader(){
 
 
   /**
-   * Set Card Move.
+   * Set card Move.
    * @param {string} move
    */
   this.setMove=function(move){
@@ -70,7 +70,7 @@ function HasCardHeader(){
 
 
   /**
-   * Set Card Actions.
+   * Set card Actions.
    * @param {string} actions
    */
   this.setActions=function(actions){
@@ -84,8 +84,10 @@ function HasCardHeader(){
     }
   };
 
+
   /**
-   *
+   * Load card header information from card data.
+   * @param {object} data - Card Data.
    */
   this.loadCardHeader=function(data){
     if(data.title !== undefined){

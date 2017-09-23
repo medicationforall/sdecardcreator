@@ -25,7 +25,7 @@ function HasScaleControl(){
 
 
   /**
-   *
+   * Scale text input.
    */
   this.scaleControl.on('input',$.proxy(function(coreNode,event){
     console.log('change card scale',$(this).val());
@@ -34,7 +34,8 @@ function HasScaleControl(){
 
 
   /**
-   *
+   * Set card scale.
+   * @param {string} scale - Card scale.
    */
   this.setScale=function(scale){
     var cardNode = $('.cardGroup.selected').data('node');

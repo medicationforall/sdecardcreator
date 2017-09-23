@@ -24,18 +24,19 @@ function HasTitleControl(){
   this.titleControl = this.node.find('input[name="title"]');
 
 
-/**
- *
- */
+  /**
+   * Title text input.
+   */
   this.titleControl.on('input',$.proxy(function(coreNode,event){
     console.log('change title',$(this).val());
     coreNode.setCardTitle($(this).val());
   },null,this));
 
 
-/**
- *
- */
+  /**
+   * Set card title.
+   * @param {string} title - Card title.
+   */
   this.setCardTitle=function(title){
     var cardNode = $('.cardGroup.selected').data('node');
     cardNode.setTitle(title);

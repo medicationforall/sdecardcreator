@@ -25,7 +25,7 @@ function BaseControl(){
   this.node=undefined;
 
   /**
-   *
+   * Creates the controls domNode.
    */
   this._constructor=function(){
     this.parent = $('.editForm').data('node');

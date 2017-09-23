@@ -28,7 +28,7 @@ function HasImageSourceControl(){
 
 
   /**
-   *
+   * Image source radio selection.
    */
   this.imageSourceControl.on('change',$.proxy(function(coreNode,event){
     console.log('changed image source',$(this).val());
@@ -37,7 +37,7 @@ function HasImageSourceControl(){
 
 
   /**
-   *
+   * Remote avatar text input.
    */
   this.remoteAvatar.on('input',$.proxy(function(coreNode,event){
     coreNode.node.find('input[name="imageSource"][value="remote"]').prop("checked", true).trigger('change');
@@ -45,7 +45,7 @@ function HasImageSourceControl(){
 
 
   /**
-   *
+   * Creep text input.
    */
   this.creepSpawn.on('input',$.proxy(function(coreNode,event){
     coreNode.node.find('input[name="imageSource"][value="creep"]').prop("checked", true).trigger('change');
@@ -53,7 +53,7 @@ function HasImageSourceControl(){
 
 
   /**
-   *
+   * Local avatar file section.
    */
   this.localAvatar.on('change',$.proxy(function(coreNode,event){
     coreNode.node.find('input[name="imageSource"][value="local"]').prop("checked", true).trigger('change');
@@ -61,7 +61,8 @@ function HasImageSourceControl(){
 
 
   /**
-   *
+   * Set card imageSource.
+   * @param {string} imageSource - Card imageSource.
    */
   this.setImageSource=function(source){
     var cardNode = $('.cardGroup.selected').data('node');
@@ -78,7 +79,7 @@ function HasImageSourceControl(){
 
 
   /**
-   *
+   * Read image data from a URL.
    */
   this.readURL = function(input){
     if (input.files && input.files[0]) {

@@ -24,7 +24,7 @@ function HasCardTypeControls(){
 
 
   /**
-   * Set Card Type.
+   * Set card type.
    * @param {string} type
    */
   this.setCardType=function(type){
@@ -65,8 +65,8 @@ function HasCardTypeControls(){
 
 
   /**
-   * Set Region
-   * @param {string} region
+   * Set region.
+   * @param {string} region - valid values: red, green, purple, yellow.
    */
   this.setRegion=function(region){
     this.data.region=region;
@@ -77,7 +77,7 @@ function HasCardTypeControls(){
 
   /**
    *Sets the card orientation specifically used for loot and treasure cards.
-   *@param {string} orientation affinity ruby, saphire, emerald, citrine
+   *@param {string} orientation - valid values: ruby, saphire, emerald, citrine
    *@todo should lowercase value and throw exception if not a valid value.
    */
   this.setOrientation=function(orientation){
@@ -97,7 +97,8 @@ function HasCardTypeControls(){
 
 
   /**
-   *
+   * Load card type information from card data.
+   * @param {object} data - Card Data.
    */
   this.loadCardType=function(data){
     if(data.cardType !== undefined){

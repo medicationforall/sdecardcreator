@@ -18,6 +18,7 @@
 
 /**
  * An SDE Card.
+ * @class
  */
 function Card(animate){
   this.data={};
@@ -131,6 +132,7 @@ function Card(animate){
     HasAffinity.call(this);
     HasAbilities.call(this);
     HasFlavorText.call(this);
+    HasBit.call(this);
 
     this.setCardType('hero');
 
@@ -158,7 +160,8 @@ function Card(animate){
 
 
   /**
-   *
+   * Load card data into this card.
+   * @param {object} data - Card data.
    */
   this.loadData=function(data){
     this.loadCardType(data);
@@ -169,19 +172,17 @@ function Card(animate){
     this.loadCardAffinity(data);
     this.loadAbilities(data);
     this.loadCardFlavorText(data);
-
-    if(data.bit !== undefined){
-      this.setBit(data.bit);
-    }
+    this.loadCardBit(data);
   };
 
-
-  /**
-   *
-   */
-  this.setBit=function(bit){
-    this.data.bit = bit;
-    this.node.find('.bit').removeClass('eight sixteen start special super').addClass(bit);
+  this.initFirstCard=function(){
+    console.log('init first card');
+    var data = {"name":"Ability 1","costType":"attack","cost":1,"definition":"+1r -2b 3g 4o 5p 1st 0mi 1ma 2sw 3rg augment fire STR WILL DEX ARM 1ac 2mo 0sh +1he"};
+    var abilityNode = new Ability();
+    var editForm = $('.editForm').data('node');
+    editForm.abilityControl.addAbilityFromCard(abilityNode);
+    this.addAbility(abilityNode);
+    abilityNode.loadData(data);
   };
 
 

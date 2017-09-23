@@ -64,7 +64,7 @@ function KeywordControl(){
 
 
   /**
-   * Setup Keyword Control.
+   * Setup keyword control.
    */
   this.setup=function(){
     HasToggleDisplay.call(this);

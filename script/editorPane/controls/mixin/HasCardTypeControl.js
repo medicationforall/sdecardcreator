@@ -25,7 +25,7 @@ function HasCardTypeControl(){
 
 
   /**
-   *
+   * Card type selection.
    */
   this.cardTypeControl.on('change',$.proxy(function(coreNode,event){
     console.log('change card type',$(this).val());
@@ -34,11 +34,12 @@ function HasCardTypeControl(){
 
 
   /**
-   *
+   * Set card cardType.
+   * @param {string} cardType - Card cardType.
    */
-  this.setCardType=function(type){
+  this.setCardType=function(cardType){
     var cardNode = $('.cardGroup.selected').data('node');
-    this.parent.setDisplay(this.parent.node,type);
-    cardNode.setCardType(type);
+    this.parent.setDisplay(this.parent.node,cardType);
+    cardNode.setCardType(cardType);
   };
 }

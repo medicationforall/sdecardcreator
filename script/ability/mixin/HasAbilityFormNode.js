@@ -24,6 +24,7 @@ function HasAbilityFormNode(){
     this.formNode=undefined;
 
     /**
+     * Get the ability form template.
      * @return {string} HTML form template.
      */
     this.getFormTemplate=function(){
@@ -50,7 +51,7 @@ function HasAbilityFormNode(){
 
 
     /**
-     * Get Form Node.
+     * Get form node.
      * @return {object} Form resolved to a jQuery selector.
      */
     this.getFormNode=function(){

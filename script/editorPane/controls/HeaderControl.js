@@ -36,7 +36,7 @@ function HeaderControl(activeClass){
   '</div>';
 
   /**
-   * Setup Header Control.
+   * Setup header control.
    */
   this.setup=function(){
     HasToggleDisplay.call(this);

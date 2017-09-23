@@ -28,7 +28,7 @@ function HasStats(){
 
 
   /**
-   * Set Stat
+   * Set stat.
    * @param {string} stat - Stat name.
    * @param {string} value - Stat Value.
    */
@@ -50,7 +50,7 @@ function HasStats(){
 
 
   /**
-   * Set Potions.
+   * Set potions.
    * @param {string} potions
    */
   this.setPotions=function(potions){
@@ -60,7 +60,7 @@ function HasStats(){
 
 
   /**
-   * Set Skulls.
+   * Set skulls.
    * @param {string} skulls
    */
   this.setSkulls=function(skulls){
@@ -68,6 +68,11 @@ function HasStats(){
     this.node.find('.skulls').text(skulls);
   };
 
+
+  /**
+   * Load card stat information from card data.
+   * @param {object} data - Card Data.
+   */
   this.loadCardStats=function(data){
     if(data.str !== undefined){
       this.setStat('str',data.str);

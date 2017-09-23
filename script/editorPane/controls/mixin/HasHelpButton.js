@@ -25,7 +25,7 @@ function HasHelpButton(){
 
 
   /**
-   *
+   * Help icon click.
    */
   this.helpButton.on('click',$.proxy(function(coreNode,event){
     event.preventDefault();
@@ -35,7 +35,7 @@ function HasHelpButton(){
 
 
   /**
-   *
+   * Toggle help control.
    */
   this.toggleHelp=function(){
     this.node.find('.helpBlock').toggle();

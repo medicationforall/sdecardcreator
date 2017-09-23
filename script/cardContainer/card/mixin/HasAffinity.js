@@ -31,6 +31,11 @@ function HasAffinity(){
     this.node.find('.affinity').addClass(affinity);
   };
 
+
+  /**
+   * Load affinity from card data.
+   * @param {object} data - Card Data.
+   */
   this.loadCardAffinity=function(data){
     if(data.affinity !== undefined){
       this.setAffinity(data.affinity);

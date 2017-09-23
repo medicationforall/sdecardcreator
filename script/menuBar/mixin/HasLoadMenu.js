@@ -90,9 +90,6 @@ function HasLoadMenu(){
     event.preventDefault();
     var file = $(this).data('file');
 
-    //clear lists check
-    menu.clearAll();
-
     $.getJSON('template/'+file,$.proxy(function(data){
       this.loadData(data);
     },menu));

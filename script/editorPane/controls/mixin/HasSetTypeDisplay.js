@@ -23,7 +23,9 @@
 function HasSetTypeDisplay(){
 
   /**
-   *
+   * Set what controls are displayed.
+   * @param {object} node - A domNode.
+   * @param {string} type - Card type.
    */
   this.setDisplay=function(node,type){
     node.find('.hero, .monster, .pet, .treasure, .loot, .wonder, .explore, .arcade, .command, .timeout').css('display','none');

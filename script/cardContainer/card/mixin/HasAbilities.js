@@ -25,7 +25,37 @@ function HasAbilities(){
 
 
   /**
-   *
+   * Add an ability to the card.
+   * @param {Ability} ability - Ability instance.
+   */
+  this.addAbility=function(ability){
+    console.log('card add ability');
+    this.abilities.push(ability);
+    ability.getCardNode().appendTo(this.node.find('.abilities'));
+  };
+
+
+  /**
+   * Remove an ability from the card.
+   * @param {Ability} ability - Ability instance.
+   */
+  this.removeAbility=function(ability){
+    console.warn('implement removeAbility');
+  };
+
+
+  /**
+   * Re-order an ability on the card.
+   * @param {Ability} ability - Ability instance.
+   */
+  this.reOrderAbility=function(ability){
+    console.warn('implement reOrderAbility');
+  };
+
+
+  /**
+   * Load abilities from card data.
+   * @param {object} data - Card Data.
    */
   this.loadAbilities=function(data){
     if(data.abilities && data.abilities.length > 0){
@@ -38,31 +68,4 @@ function HasAbilities(){
       }
     }
   };
-
-
-  /**
-   *
-   */
-  this.addAbility=function(ability){
-    console.log('card add ability');
-    this.abilities.push(ability);
-    ability.getCardNode().appendTo(this.node.find('.abilities'));
-  };
-
-
-  /**
-   *
-   */
-  this.removeAbility=function(ability){
-    console.warn('implement removeAbility');
-  };
-
-
-  /**
-   *
-   */
-  this.reOrderAbility=function(ability){
-    console.warn('implement reOrderAbility');
-  };
-
 }

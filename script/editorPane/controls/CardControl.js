@@ -69,7 +69,7 @@ function CardControl(){
 
 
   /**
-   * Setup Card Control.
+   * Setup card control.
    */
   this.setup=function(){
     HasToggleDisplay.call(this);

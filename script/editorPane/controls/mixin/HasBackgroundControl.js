@@ -26,7 +26,7 @@ function HasBackgroundControl(){
 
 
   /**
-   *
+   * Background selection.
    */
   this.backgroundControl.on('change',$.proxy(function(coreNode,event){
     console.log('change background',$(this).val());
@@ -35,7 +35,7 @@ function HasBackgroundControl(){
 
 
   /**
-   *
+   * Background flip icon click.
    */
   this.backroundFlipControl.on('click',$.proxy(function(coreNode,event){
     event.preventDefault();
@@ -50,7 +50,8 @@ function HasBackgroundControl(){
 
 
   /**
-   *
+   * Set card background.
+   * @param {string} background - Card background.
    */
   this.setBackground=function(background){
     var cardNode = $('.cardGroup.selected').data('node');
@@ -59,7 +60,8 @@ function HasBackgroundControl(){
 
 
   /**
-   *
+   * Set card backgroundFlip.
+   * @param {string} backgroundFlip - Card backgroundFlip.
    */
   this.setBackgroundFlip=function(backgroundFlip){
     var cardNode = $('.cardGroup.selected').data('node');

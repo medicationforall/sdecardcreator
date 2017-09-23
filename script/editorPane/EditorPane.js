@@ -26,7 +26,7 @@ function EditorPane(){
 
 
   /**
-   *
+   * Register the editorPane domNode.
    */
   this._construct=function(){
     this.node = $('.editorPane');
@@ -37,7 +37,7 @@ function EditorPane(){
 
 
   /**
-   *
+   * Creates an EditFormNode.
    */
   this._setup=function(){
     new EditForm();

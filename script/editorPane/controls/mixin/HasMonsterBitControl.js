@@ -25,7 +25,7 @@ function HasMonsterBitControl(){
 
 
   /**
-   *
+   * Monster bit selection.
    */
   this.monsterBit.on('change',$.proxy(function(coreNode,event){
     event.preventDefault();
@@ -35,7 +35,8 @@ function HasMonsterBitControl(){
 
 
   /**
-   *
+   * Set card bit.
+   * @param {string} bit - Card bit.
    */
   this.setBit=function(bit){
     var cardNode = $('.cardGroup.selected').data('node');

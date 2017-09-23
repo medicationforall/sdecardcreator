@@ -71,7 +71,7 @@ function AbilityControl(){
 
 
   /**
-   * Setup Ability Control
+   * Setup ability control
    */
   this.setup=function(){
     HasToggleDisplay.call(this);

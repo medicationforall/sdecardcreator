@@ -25,7 +25,7 @@ function HasMoveControl(){
 
 
   /**
-   *
+   * Move text input.
    */
   this.MoveControl.on('input',$.proxy(function(coreNode,event){
     console.log('change Move',$(this).val());
@@ -34,7 +34,8 @@ function HasMoveControl(){
 
 
   /**
-   *
+   * Set card move.
+   * @param {string} move - Card move.
    */
   this.setCardMove=function(move){
     var cardNode = $('.cardGroup.selected').data('node');

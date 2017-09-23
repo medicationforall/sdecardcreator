@@ -1,5 +1,5 @@
 /**
- *   SDE Card Creator source file HasFlavorText,
+ *   SDE Card Creator source file HasBit,
  *   Copyright (C) 2017  James M Adams
  *
  *   This program is free software: you can redistribute it and/or modify
@@ -17,29 +17,27 @@
  */
 
 /**
- * Flavor Text Card mixin.
+ * Bit Card mixin.
  * @mixin
  */
-function HasFlavorText(){
-
-
+function HasBit(){
   /**
-   * Set flavor text.
-   * @param {string} flavorText
+   * Set bit on the card.
+   * @param {string} bit - Card bit.
    */
-  this.setFlavorText=function(flavorText){
-    this.data.flavorText = flavorText;
-    this.node.find('.flavorText').text(flavorText);
+  this.setBit=function(bit){
+    this.data.bit = bit;
+    this.node.find('.bit').removeClass('eight sixteen start special super').addClass(bit);
   };
 
 
   /**
-   * Load flavor text from card data.
+   * Load bit from card data.
    * @param {object} data - Card Data.
    */
-  this.loadCardFlavorText=function(data){
-    if(data.flavorText !== undefined){
-      this.setFlavorText(data.flavorText);
+  this.loadCardBit=function(data){
+    if(data.bit !== undefined){
+      this.setBit(data.bit);
     }
   };
 }

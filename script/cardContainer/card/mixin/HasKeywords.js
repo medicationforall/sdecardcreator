@@ -24,7 +24,7 @@ function HasKeywords(){
 
 
   /**
-   * Set Keywords
+   * Set keywords.
    * @param {string} keywords
    */
   this.setKeywords=function(keywords){
@@ -42,6 +42,11 @@ function HasKeywords(){
       keywordStore.checkKeywords(this.node.find('.front'));
   };
 
+
+  /**
+   * Load keywords from card data.
+   * @param {object} data - Card data.
+   */
   this.loadCardKeywords=function(data){
     if(data.keywords !== undefined){
       this.setKeywords(data.keywords);

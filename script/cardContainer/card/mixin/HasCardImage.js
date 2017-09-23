@@ -40,7 +40,7 @@ function HasCardImage(){
 
 
   /**
-   * Set Background Image.
+   * Set background image.
    * @param {string} background
    */
   this.setBackground=function(background){
@@ -50,7 +50,7 @@ function HasCardImage(){
 
 
   /**
-   * Set Background Flip flag.
+   * Set background flip flag.
    * @param {boolean} backgroundFlip - true, mirror the background horizontally, false remove the transform.
    */
   this.setBackgroundFlip=function(backgroundFlip){
@@ -65,7 +65,7 @@ function HasCardImage(){
 
 
   /**
-   * Set Image Source
+   * Set image source.
    * @param {string} source - source defined key, default,local,remote, or creep.
    * @param {string} data - Needed to fully describe the source. can be a file path or file data, or a creep number.
    */
@@ -115,6 +115,11 @@ function HasCardImage(){
     character.attr('src', v);
   };
 
+
+  /**
+   * Load image information from card data.
+   * @param {object} data - Card Data.
+   */
   this.loadCardImage=function(data){
     if(data.background !== undefined){
       this.setBackground(data.background);

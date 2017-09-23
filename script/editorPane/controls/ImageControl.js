@@ -111,7 +111,7 @@ function ImageControl(){
 
 
   /**
-   * Setup Image Control.
+   * Setup image control.
    */
   this.setup=function(){
     HasToggleDisplay.call(this);

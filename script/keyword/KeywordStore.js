@@ -33,7 +33,7 @@ function KeywordStore(keywords){
 
   //CONSTRUCTOR
   /**
-   *@todo use load to make sure keywords are loaded.
+   * Initializes the store.
    */
   this._constuctor = function(){
     //this._getData();
@@ -41,22 +41,9 @@ function KeywordStore(keywords){
     this._setup(keywords);
   };
 
-
-  //METHODS
   /**
-   *
-   */
-  /*  this.load=function(){
-      return $.getJSON('https://sde.medicationforall.com/keywordlist.php?json=true',function(data){
-        this._setup(data);
-        this.setupKeywordsForm();
-        $('.form').trigger('resolved-keywords');
-      }.bind(this));
-    };*/
-
-
-  /**
-   *
+   * Setup the store.
+   * @param {object} data - Keyword data.
    */
   this._setup=function(data){
     this.data = data;
@@ -87,7 +74,7 @@ function KeywordStore(keywords){
 
 
   /**
-   *
+   * Setup regular expressions.
    */
   this.setupRegularExpression=function(){
     var reText = '';
@@ -133,7 +120,7 @@ function KeywordStore(keywords){
 
 
   /**
-   *
+   * Find keywords that can contain other keywords.
    */
   this.findNKeywords=function(text){
     text = text.replace(this.reN,function(match,key,number){

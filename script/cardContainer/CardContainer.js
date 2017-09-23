@@ -70,7 +70,8 @@ function CardContainer(){
 
 
   /**
-   *
+   * Load a card into the cardContainer
+   * @param {object} data - Card data. 
    */
   this.loadCard=function(data){
     this.deleteCards();

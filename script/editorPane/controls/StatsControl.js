@@ -65,7 +65,7 @@ function StatsControl(){
 
 
   /**
-   * Setup Stats Control.
+   * Setup stats control.
    */
   this.setup=function(){
     HasToggleDisplay.call(this);

@@ -25,7 +25,7 @@ function MainMenu(){
 
 
   /**
-   *
+   * Main menu constructor.
    */
   this._constructor = function(){
     this._setup();
@@ -33,7 +33,7 @@ function MainMenu(){
 
 
   /**
-   *
+   * Create the main menu.
    */
   this._setup=function(){
     this.node = $('.menuBar');
@@ -59,19 +59,6 @@ function MainMenu(){
     $.data(this.node[0],'coreNode',this);
   };
 
-
-  /**
-   * Called prior to loading a user defined chart.
-   */
-  this.clearAll=function(){
-    if($('.hamburger select[name="clearList"]').val()==="all"){
-      $('.list, .rollContainer').remove();
-    } else if($('.hamburger select[name="clearList"]').val()==="lists"){
-      $('.list').remove();
-    } else if($('.hamburger select[name="clearList"]').val()==="rolls"){
-      $('.rollContainer').remove();
-    }
-  };
 
   this._constructor();
 }

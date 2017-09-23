@@ -25,7 +25,7 @@ function HasAffinityControl(){
 
 
   /**
-   *
+   * Affinity selection.
    */
   this.affinityControl.on('change',$.proxy(function(coreNode,event){
     coreNode.setAffinity($(this).val());
@@ -33,7 +33,8 @@ function HasAffinityControl(){
 
 
   /**
-   *
+   * Set card affinity.
+   * @param {string} affinity - Card affinity.
    */
   this.setAffinity=function(affinity){
     var cardNode = $('.cardGroup.selected').data('node');

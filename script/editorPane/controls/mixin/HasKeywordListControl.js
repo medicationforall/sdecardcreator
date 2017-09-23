@@ -26,6 +26,9 @@ function HasKeywordListControl(){
   this.keyDialog=undefined;
 
 
+  /**
+   * Keyword settings click.
+   */
   this.keywordSettings.click(function(event){
     event.preventDefault();
     console.log('show Settings');
@@ -34,7 +37,7 @@ function HasKeywordListControl(){
 
 
   /**
-   *
+   * Opens the settings dialog.
    */
   this.showSettings=function(){
     if(this.keyDialog===undefined){
@@ -52,7 +55,7 @@ function HasKeywordListControl(){
 
 
   /**
-   *
+   * Keyord text input.
    */
   this.keywordList.on('input',$.proxy(function(coreNode,event){
     coreNode.setKeywords($(this).val());
@@ -60,7 +63,8 @@ function HasKeywordListControl(){
 
 
   /**
-   *
+   * Set card keywords.
+   * @param {string} keywords - Card keywords.
    */
   this.setKeywords=function(keywords){
     console.log('attempting to set keywords');

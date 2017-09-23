@@ -38,7 +38,7 @@ function BitControl(){
 
 
   /**
-   * Setup Flavor Text Control.
+   * Setup flavor text Control.
    */
   this.setup=function(){
     console.log('bit control');

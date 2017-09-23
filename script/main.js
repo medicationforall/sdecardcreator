@@ -31,7 +31,7 @@ $.fn.extend({
 
 
 /**
- *
+ * Application main method.
  */
 $(document).ready(function(){
 //objects
@@ -46,10 +46,11 @@ $(document).ready(function(){
       var keywordStore = new KeywordStore(keywords);
       var editorPain = new EditorPane();
       var sdeCreate = new CardContainer();
-      new Card();
       keywordStore.setupKeywordsForm();
-
       $('.page').data('keywordStore',keywordStore);
+
+      var card = new Card(false);
+      card.initFirstCard();
   });
 
   //remove noscript block

@@ -30,7 +30,7 @@ function FlavorTextControl(){
   '</div>';
 
   /**
-   * Setup Flavor Text Control.
+   * Setup flavor text control.
    */
   this.setup=function(){
     HasToggleDisplay.call(this);

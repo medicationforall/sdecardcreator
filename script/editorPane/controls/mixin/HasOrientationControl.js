@@ -25,7 +25,7 @@ function HasOrientationControl(){
 
 
   /**
-   *
+   * Orientation selection.
    */
   this.orientationControl.on('change',$.proxy(function(coreNode,event){
     console.log('change orientation',$(this).val());
@@ -34,7 +34,8 @@ function HasOrientationControl(){
 
 
   /**
-   *
+   * Set card orientation.
+   * @param {string} orientation - Card orientation.
    */
   this.setOrientation=function(orientation){
     var cardNode = $('.cardGroup.selected').data('node');

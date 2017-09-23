@@ -25,7 +25,7 @@ function HasRegionControl(){
 
 
   /**
-   *
+   * Region selection.
    */
   this.regionControl.on('change',$.proxy(function(coreNode,event){
     console.log('change region',$(this).val());
@@ -34,7 +34,8 @@ function HasRegionControl(){
 
 
   /**
-   *
+   * Set card region.
+   * @param {string} region - Card region.
    */
   this.setRegion=function(region){
     var cardNode = $('.cardGroup.selected').data('node');

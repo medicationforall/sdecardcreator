@@ -26,7 +26,7 @@ function EditForm(){
 
 
   /**
-   *
+   * Creates the editForm domNode.
    */
   this._construct=function(){
     var editorPane = $('.editorPane').data('node');
@@ -39,7 +39,7 @@ function EditForm(){
 
 
   /**
-   *
+   * Sets up the edit form input controls.
    */
   this._setup=function(){
     this.cardControl = new CardControl();

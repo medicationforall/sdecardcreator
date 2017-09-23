@@ -181,7 +181,8 @@ function Ability(){
 
 
   /**
-   *
+   * Load Abilities from card data.
+   * @param {object} data - Card data.
    */
   this.loadData=function(data){
     if(data.name !== undefined){

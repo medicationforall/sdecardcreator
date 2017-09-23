@@ -24,7 +24,7 @@ function HasCardSelect(){
 
 
   /**
-   * Card Selection event.
+   * Card selection event.
    */
   this.node.on('click','.card',$.proxy(function(coreNode,event){
     var card = $(this).closest('.cardGroup').data('node');
@@ -33,7 +33,7 @@ function HasCardSelect(){
 
 
   /**
-   * Select Card marks a card as selected.
+   * Select card, marks a card as selected.
    * @param {object} sCard - the card to select.
    */
   this.selectCard=function(sCard){
@@ -49,7 +49,7 @@ function HasCardSelect(){
 
 
   /**
-   *
+   * Deselects any selected cards.
    */
   this.deselectCards=function(){
     //deselect existing cards

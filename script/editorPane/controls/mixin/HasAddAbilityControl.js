@@ -25,7 +25,7 @@ function HasAddAbilityControl(){
 
 
   /**
-   *
+   * Add ability link click.
    */
   this.addAbilityControl.on('click',$.proxy(function(coreNode,event){
     event.preventDefault();
@@ -34,7 +34,7 @@ function HasAddAbilityControl(){
 
 
   /**
-   *
+   * Add an ability to the selected card, and adds the abilities formNode.
    */
   this.addAbility=function(){
     console.log('add ability');
@@ -47,7 +47,7 @@ function HasAddAbilityControl(){
 
 
   /**
-   *
+   * Register an ability formNode from a loaded card ability.
    */
   this.addAbilityFromCard=function(ability){
     var formAbility = ability.getFormNode(this.node.find('.abilities')).appendTo(this.node.find('.abilities'));

@@ -31,7 +31,7 @@ function HasToggleDisplay(){
 
 
   /**
-   *
+   * Toggle display header click.
    */
   this.node.on('click','.toggleDisplay',$.proxy(function(event){
     event.preventDefault();
@@ -40,7 +40,7 @@ function HasToggleDisplay(){
 
 
   /**
-   *
+   * Toggle display action.
    */
   this.toggleDisplay=function(){
     var content = this.node.find('.controlContent');

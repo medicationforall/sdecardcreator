@@ -32,7 +32,7 @@ function HasStatsControl(){
 
 
   /**
-   *
+   * Str text input.
    */
   this.strControl.on('input',$.proxy(function(coreNode,event){
     coreNode.setStat('str',$(this).val());
@@ -40,7 +40,7 @@ function HasStatsControl(){
 
 
   /**
-   *
+   * Arm text input.
    */
   this.armControl.on('input',$.proxy(function(coreNode,event){
     coreNode.setStat('arm',$(this).val());
@@ -48,7 +48,7 @@ function HasStatsControl(){
 
 
   /**
-   *
+   * Will text input.
    */
   this.willControl.on('input',$.proxy(function(coreNode,event){
     coreNode.setStat('will',$(this).val());
@@ -56,7 +56,7 @@ function HasStatsControl(){
 
 
   /**
-   *
+   * Dex text input.
    */
   this.dexControl.on('input',$.proxy(function(coreNode,event){
     coreNode.setStat('dex',$(this).val());
@@ -64,7 +64,7 @@ function HasStatsControl(){
 
 
   /**
-   *
+   * Wounds text input.
    */
   this.woundsControl.on('input',$.proxy(function(coreNode,event){
     coreNode.setWounds($(this).val());
@@ -72,7 +72,7 @@ function HasStatsControl(){
 
 
   /**
-   *
+   * Potions text input.
    */
   this.potionsControl.on('input',$.proxy(function(coreNode,event){
     coreNode.setPotions($(this).val());
@@ -80,7 +80,7 @@ function HasStatsControl(){
 
 
   /**
-   *
+   * Skulls text input.
    */
   this.skullsControl.on('input',$.proxy(function(coreNode,event){
     coreNode.setSkulls($(this).val());
@@ -88,7 +88,9 @@ function HasStatsControl(){
 
 
   /**
-   *
+   * Set card stat.
+   * @param {string} stat - Card stat name. Valid valus: str, will, dex, arm.
+   * @param {string} value - Card value.
    */
   this.setStat=function(stat,value){
     var cardNode = $('.cardGroup.selected').data('node');
@@ -97,7 +99,8 @@ function HasStatsControl(){
 
 
   /**
-   *
+   * Set card wounds.
+   * @param {string} wounds - Card wounds.
    */
   this.setWounds=function(wounds){
     var cardNode = $('.cardGroup.selected').data('node');
@@ -106,7 +109,8 @@ function HasStatsControl(){
 
 
   /**
-   *
+   * Set card potions.
+   * @param {string} potions - Card potions.
    */
   this.setPotions=function(potions){
     var cardNode = $('.cardGroup.selected').data('node');
@@ -115,7 +119,8 @@ function HasStatsControl(){
 
 
   /**
-   *
+   * Set card skulls.
+   * @param {string} skulls - Card skulls.
    */
   this.setSkulls=function(skulls){
     var cardNode = $('.cardGroup.selected').data('node');

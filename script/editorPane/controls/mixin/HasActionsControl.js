@@ -25,7 +25,7 @@ function HasActionsControl(){
 
 
   /**
-   *
+   * Actions text input.
    */
   this.ActionsControl.on('input',$.proxy(function(coreNode,event){
     console.log('change Actions',$(this).val());
@@ -34,7 +34,8 @@ function HasActionsControl(){
 
 
   /**
-   *
+   * Set card actions.
+   * @param {string} actions - Card actions.
    */
   this.setCardActions=function(actions){
     var cardNode = $('.cardGroup.selected').data('node');

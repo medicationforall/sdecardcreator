@@ -70,6 +70,7 @@ function Stat(name, permissions, value){
 
 
   /**
+   * Set the Stat value.
    * @param {string} value
    */
   this.setValue = function(value){
