@@ -20,7 +20,7 @@
  * An SDE Card.
  * @class
  */
-function Card(animate){
+function Card(animate,appendAfter){
   this.data={};
   this.template='<div class="cardGroup selected">'+
   	'<div class="cardDiv">'+
@@ -67,7 +67,7 @@ function Card(animate){
   								'<img class="character" src="" />'+
   							'</div>'+
   							'<div><span class="title">title</span></div>'+
-  							'<span class="item treasure loot explore itemStats"></span>'+
+  							'<span class="item treasure loot explore itemStats"><span class="dice star">+1</span></span>'+
   							'<div class="item treasure loot explore wonder command timeout abilities"></div>'+
   							'<span class="keywordsList"></span>'+
   							'<div class="treasure loot wonder keywords"></div>'+
@@ -120,13 +120,18 @@ function Card(animate){
    */
   this._constructor=function(){
     var cardContainer = $('.cardContainer').data('node');
-    this.node=$(this.template).appendTo(cardContainer.node);
+    if(appendAfter){
+      this.node=$(this.template).insertAfter(appendAfter);
+    }else{
+      this.node=$(this.template).appendTo(cardContainer.node);
+    }
     this.node.data('node',this);
 
     HasSetTypeDisplay.call(this);
     HasCardTypeControls.call(this);
     HasCardHeader.call(this);
     HasCardImage.call(this);
+    HasItemStats.call(this);
     HasStats.call(this);
     HasKeywords.call(this);
     HasAffinity.call(this);
@@ -167,6 +172,7 @@ function Card(animate){
     this.loadCardType(data);
     this.loadCardHeader(data);
     this.loadCardImage(data);
+    this.loadCardItemStats(data);
     this.loadCardStats(data);
     this.loadCardKeywords(data);
     this.loadCardAffinity(data);

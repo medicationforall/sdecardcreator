@@ -86,6 +86,10 @@
 	<script src="script/editorPane/controls/mixin/HasBackgroundControl.js"></script>
 	<script src="script/editorPane/controls/ImageControl.js"></script>
 
+	<!-- Item Stats Control -->
+	<script src="script/editorPane/controls/mixin/HasItemStatsControl.js"></script>
+	<script src="script/editorPane/controls/ItemStatsControl.js"></script>
+
 	<!--Stats Control -->
 	<script src="script/editorPane/controls/mixin/HasStatsControl.js"></script>
 	<script src="script/editorPane/controls/StatsControl.js"></script>
@@ -99,6 +103,7 @@
 	<script src="script/editorPane/controls/mixin/HasAddAbilityControl.js"></script>
 	<script src="script/editorPane/controls/AbilityControl.js"></script>
 
+	<!-- Monster Bit Control -->
 	<script src="script/editorPane/controls/mixin/HasMonsterBitControl.js"></script>
 	<script src="script/editorPane/controls/BitControl.js"></script>
 
@@ -108,13 +113,18 @@
 	<script src="script/editorPane/EditForm.js"></script>
 	<script src="script/editorPane/EditorPane.js"></script>
 
+	<script src="script/editorPane/controls/mixin/HasCardModifierControl.js"></script>
+	<script src="script/editorPane/controls/CardModifierControl.js"></script>
+
+
 	<script src="script/cardContainer/card/mixin/HasCardSelect.js"></script>
 	<script src="script/cardContainer/card/mixin/HasCardTypeControls.js"></script>
 	<script src="script/cardContainer/card/mixin/HasCardHeader.js"></script>
 	<script src="script/cardContainer/card/mixin/HasCardImage.js"></script>
+	<script src="script/cardContainer/card/mixin/HasItemStats.js"></script>
 	<script src="script/cardContainer/card/mixin/HasStats.js"></script>
 	<script src="script/cardContainer/card/mixin/HasFlavorText.js"></script>
-		<script src="script/cardContainer/card/mixin/HasBit.js"></script>
+	<script src="script/cardContainer/card/mixin/HasBit.js"></script>
 	<script src="script/cardContainer/card/mixin/HasAffinity.js"></script>
 	<script src="script/cardContainer/card/mixin/HasAbilities.js"></script>
 	<script src="script/cardContainer/card/mixin/HasKeywords.js"></script>
@@ -169,7 +179,14 @@
 				<br /><br />
 				<hr />
 				<h3>Template</h3>
+				<a href="template/command/Griefer.json" class="loadTemplateButton" data-file="command/Griefer.json">Griefer</a>
 				<a href="template/explore/Armory.json" class="loadTemplateButton" data-file="explore/Armory.json">Armory</a>
+				<a href="template/heroes/Dragon_Blade.json" class="loadTemplateButton" data-file="heroes/Dragon_Blade.json">Dragon Blade</a>
+				<a href="template/loot/Diamond_Plate.json" class="loadTemplateButton" data-file="loot/Diamond_Plate.json">Diamond Plate</a>
+				<a href="template/timeout/Goro.json" class="loadTemplateButton" data-file="timeout/Goro.json">Goro</a>
+				<a href="template/treasure/Ancestral_Mail.json" class="loadTemplateButton" data-file="treasure/Ancestral_Mail.json">Ancestral Mail</a>
+				<a href="template/wonder/Admiral_Fuzzybottom.json" class="loadTemplateButton" data-file="wonder/Admiral_Fuzzybottom.json">Admiral Fuzzybottom</a>
+
 			</div>
 
 			<!-- Help Menu -->

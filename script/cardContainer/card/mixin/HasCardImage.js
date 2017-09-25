@@ -45,7 +45,7 @@ function HasCardImage(){
    */
   this.setBackground=function(background){
     this.data.background=background;
-    this.node.find('.background').css({'background':'url('+background+') no-repeat','background-size':'100% 100%'});
+    this.node.find('.background').css({'background':'url(image/background/'+background+') no-repeat','background-size':'100% 100%'});
   };
 
 

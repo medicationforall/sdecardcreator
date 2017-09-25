@@ -31,7 +31,7 @@ function HasKeywords(){
       keywords = $("<div>").text(keywords).html();
 
       console.log('set keywords for card',keywords);
-      this.data.keywords=keywords;
+      this.data.keywordsList=keywords;
       var keywordStore = $('.page').data('keywordStore');
 
       //set parsed text
@@ -48,8 +48,8 @@ function HasKeywords(){
    * @param {object} data - Card data.
    */
   this.loadCardKeywords=function(data){
-    if(data.keywords !== undefined){
-      this.setKeywords(data.keywords);
+    if(data.keywordsList !== undefined){
+      this.setKeywords(data.keywordsList);
     }
   };
 }

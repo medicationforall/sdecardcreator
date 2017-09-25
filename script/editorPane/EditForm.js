@@ -45,11 +45,14 @@ function EditForm(){
     this.cardControl = new CardControl();
     this.headerControl = new HeaderControl('active');
     this.imageControl = new ImageControl();
+    this.itemStatsControl = new ItemStatsControl();
     this.statsControl = new StatsControl();
     this.keywordControl = new KeywordControl();
     this.abilityControl = new AbilityControl();
     this.bitControl = new BitControl();
     this.flavorTextControl = new FlavorTextControl();
+    this.cardModifierControl = new CardModifierControl();
+
     this.setDisplay(this.node,'hero');
   };
 

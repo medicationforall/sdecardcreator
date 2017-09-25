@@ -21,10 +21,10 @@
  * @mixin
  */
 function HasStats(){
-  this.strStat = new Stat("STR", 'hero monster pet', '3b 1sw');
-  this.armStat = new Stat("ARM", 'hero monster pet', '2b 1r sh');
-  this.willStat = new Stat("WILL", 'hero monster', '3b');
-  this.dexStat = new Stat("DEX", 'hero monster', '3b');
+  this.strStat = new Stat(this,"STR", 'hero monster pet', '3b 1sw');
+  this.armStat = new Stat(this, "ARM", 'hero monster pet', '2b 1r sh');
+  this.willStat = new Stat(this, "WILL", 'hero monster', '3b');
+  this.dexStat = new Stat(this, "DEX", 'hero monster', '3b');
 
 
   /**

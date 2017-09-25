@@ -60,4 +60,67 @@ function HasCardSelect(){
       }
     }
   };
+
+  /**
+   *
+   */
+  this.deleteSelectedCard=function(){
+    var selected = $('.cardGroup.selected');
+    var sibling = this.getSibling(selected);
+
+    if(sibling){
+      var card = sibling.data('node');
+      this.selectCard(card);
+    }
+    selected.remove();
+  };
+
+
+  /**
+   *
+   */
+  this.duplicateSelectedCard=function(){
+    var selected = $('.cardGroup.selected');
+    var selectedData = selected.data('node').gatherData();
+    var newCard = new Card(true, selected);
+    newCard.loadData(selectedData);
+    this.selectCard(newCard);
+  };
+
+
+  /**
+   *
+   */
+  this.moveSelectedCardUp=function(){
+    var selected = $('.cardGroup.selected');
+    if(selected.prev().length > 0){
+      var sibling = selected.prev();
+      $(sibling).before(selected);
+    }
+  };
+
+
+  /**
+   *
+   */
+  this.moveSelectedCardDown=function(){
+    var selected = $('.cardGroup.selected');
+    if(selected.next().length > 0){
+      var sibling = selected.next();
+      $(sibling).after(selected);
+    }
+  };
+
+
+  /**
+   *
+   */
+  this.getSibling=function(selected){
+    if(selected.prev().length > 0){
+      return selected.prev();
+    } else if(selected.next().length > 0){
+      return selected.next();
+    }
+    return undefined;
+  };
 }

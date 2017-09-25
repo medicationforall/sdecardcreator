@@ -23,7 +23,7 @@
  * @param {string} value - Stat value.
  * @class
  */
-function Stat(name, permissions, value){
+function Stat(parent, name, permissions, value){
   this.template='<div class="'+permissions+' stat '+name+'">'+
   '<div class="offense">0</div>'+
   '<div class="defense"></div>'+
@@ -46,7 +46,7 @@ function Stat(name, permissions, value){
    * Creates the card stat.
    */
   this._constructor=function(){
-    this.parent=$('.cardGroup.selected').data('node');
+    this.parent=parent;
     this.node=$(this.template).appendTo(this.parent.node.find('.stats'));
     this.node.data('node',this);
 
