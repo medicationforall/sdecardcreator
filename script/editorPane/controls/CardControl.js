@@ -79,5 +79,9 @@ function CardControl(){
     HasOrientationControl.call(this);
   };
 
+  this.sync=function(data){
+    this.syncCardType(data);
+  };
+
   this._constructor();
 }

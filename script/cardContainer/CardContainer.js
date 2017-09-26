@@ -71,7 +71,7 @@ function CardContainer(){
 
   /**
    * Load a card into the cardContainer
-   * @param {object} data - Card data. 
+   * @param {object} data - Card data.
    */
   this.loadCard=function(data){
     this.deleteCards();
@@ -99,6 +99,8 @@ function CardContainer(){
     if(data){
       card.loadData(data);
     }
+
+    this.syncForm(card);
   };
 
   this._construct();

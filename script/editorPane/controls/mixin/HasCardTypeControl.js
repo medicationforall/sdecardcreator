@@ -42,4 +42,11 @@ function HasCardTypeControl(){
     this.parent.setDisplay(this.parent.node,cardType);
     cardNode.setCardType(cardType);
   };
+
+  this.syncCardType=function(data){
+    if(data.cardType){
+      this.cardTypeControl.val(data.cardType);
+      this.parent.setDisplay(this.parent.node,data.cardType);
+    }
+  };
 }

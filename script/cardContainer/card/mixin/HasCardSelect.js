@@ -45,6 +45,17 @@ function HasCardSelect(){
       }
     }
     sCard.node.addClass('selected');
+
+    this.syncForm(sCard);
+  };
+
+  /**
+   * Card is selected, sync the form.
+   * @param {object} card - Selected card.
+   */
+  this.syncForm=function(card){
+    var editForm = $('.editForm').data('node');
+    editForm.sync(card.data,card.abilities);
   };
 
 
