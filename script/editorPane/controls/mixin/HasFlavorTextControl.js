@@ -40,4 +40,14 @@ function HasFlavorTextControl(){
     var cardNode = $('.cardGroup.selected').data('node');
     cardNode.setFlavorText(flavorText);
   };
+
+
+  /**
+   * Sync flavor text from selected card.
+   */
+  this.syncFlavorText=function(data){
+    if(data.flavorText!==undefined){
+      this.flavorTextControl.val(data.flavorText);
+    }
+  };
 }

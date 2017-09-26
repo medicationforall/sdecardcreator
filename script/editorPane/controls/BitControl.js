@@ -46,5 +46,13 @@ function BitControl(){
     HasMonsterBitControl.call(this);
   };
 
+
+  /**
+   * Sync bit from selected card.
+   */
+  this.sync=function(data){
+    this.syncBit(data);
+  };
+
   this._constructor();
 }

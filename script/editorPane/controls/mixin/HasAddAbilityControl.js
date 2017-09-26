@@ -52,4 +52,19 @@ function HasAddAbilityControl(){
   this.addAbilityFromCard=function(ability){
     var formAbility = ability.getFormNode(this.node.find('.abilities')).appendTo(this.node.find('.abilities'));
   };
+
+
+  /**
+   * Sync abilities from selected card.
+   */
+  this.syncAbilities=function(abilities){
+    //remove existing ability nodes.
+    this.node.find('.abilities .ability').detach();
+
+    if(abilities!==undefined && data.abilities.length>0){
+      for(var i=0,ability;(ability = abilities[0]);i++){
+        this.addAbilityFromCard(ability);
+      }
+    }
+  };
 }

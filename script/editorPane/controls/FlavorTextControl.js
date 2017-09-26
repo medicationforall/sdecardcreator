@@ -36,6 +36,14 @@ function FlavorTextControl(){
     HasToggleDisplay.call(this);
     HasFlavorTextControl.call(this);
   };
+  
+
+  /**
+   * Sync flavor text from selected card.
+   */
+  this.sync=function(data){
+    this.syncFlavorText(data);
+  };
 
   this._constructor();
 }

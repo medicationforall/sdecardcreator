@@ -56,9 +56,20 @@ function EditForm(){
     this.setDisplay(this.node,'hero');
   };
 
+  /**
+   * Sync editform from selected card.
+   */
   this.sync=function(data,abilities){
     console.log('sync selected card with form');
     this.cardControl.sync(data);
+    this.headerControl.sync(data);
+    this.imageControl.sync(data);
+    this.itemStatsControl.sync(data);
+    this.statsControl.sync(data);
+    this.keywordControl.sync(data);
+    this.abilityControl.sync(abilities);
+    this.bitControl.sync(data);
+    this.flavorTextControl.sync(data);
   };
 
   this._construct();

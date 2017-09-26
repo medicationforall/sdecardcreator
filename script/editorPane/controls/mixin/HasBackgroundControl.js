@@ -67,4 +67,18 @@ function HasBackgroundControl(){
     var cardNode = $('.cardGroup.selected').data('node');
     cardNode.setBackgroundFlip(backgroundFlip);
   };
+
+  this.syncBackground=function(data){
+    if(data.background!==undefined){
+      this.backgroundControl.val(data.background);
+    }
+
+    if(data.backgroundFlip!==undefined){
+      if(data.backgroundFlip===true){
+        this.backroundFlipControl.removeClass('inactive').addClass('active');
+      }else{
+        this.backroundFlipControl.removeClass('active').addClass('inactive');
+      }
+    }
+  };
 }

@@ -41,4 +41,14 @@ function HasMoveControl(){
     var cardNode = $('.cardGroup.selected').data('node');
     cardNode.setMove(move);
   };
+
+
+  /**
+   * Sync move from selected card.
+   */
+  this.syncMove=function(data){
+    if(data.move!==undefined){
+      this.MoveControl.val(data.move);
+    }
+  };
 }

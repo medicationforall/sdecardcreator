@@ -41,4 +41,13 @@ function HasRegionControl(){
     var cardNode = $('.cardGroup.selected').data('node');
     cardNode.setRegion(region);
   };
+
+  /**
+   * Sync region from selected card.
+   */
+  this.syncRegion=function(data){
+    if(data.region!==undefined){
+      this.regionControl.val(data.region);
+    }
+  };
 }

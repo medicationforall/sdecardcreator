@@ -80,5 +80,13 @@ function AbilityControl(){
     HasAddAbilityControl.call(this);
   };
 
+
+  /**
+   * Sync abilities from selected card.
+   */
+  this.sync=function(abilities){
+    this.syncAbilities(abilities);
+  };
+
   this._constructor();
 }

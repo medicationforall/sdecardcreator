@@ -91,4 +91,22 @@ function HasImageSourceControl(){
       reader.readAsDataURL(input.files[0]);
     }
   };
+
+
+  /**
+   * Sync imageSource, removeAvatar, and creepSpawn from selected card.
+   */
+  this.syncImageSource=function(data){
+    if(data.imageSource!==undefined){
+      this.imageSourceControl.val(data.imageSource);
+    }
+
+    if(data.remoteAvatar!==undefined){
+      this.remoteAvatar.val(data.remoteAvatar);
+    }
+
+    if(data.creepSpawn!==undefined){
+      this.creepSpawn.val(data.creepSpawn);
+    }
+  };
 }

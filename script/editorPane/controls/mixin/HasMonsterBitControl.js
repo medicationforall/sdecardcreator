@@ -21,7 +21,7 @@
  * @mixin
  */
 function HasMonsterBitControl(){
-  this.monsterBit = this.node.find('select[name="bit"]');
+  this.keywordList = this.node.find('select[name="bit"]');
 
 
   /**
@@ -41,5 +41,15 @@ function HasMonsterBitControl(){
   this.setBit=function(bit){
     var cardNode = $('.cardGroup.selected').data('node');
     cardNode.setBit(bit);
+  };
+
+
+  /**
+   * Sync bit from selected card.
+   */
+  this.syncBit=function(data){
+    if(data.bit!==undefined){
+      this.keywordList.val(data.bit);
+    }
   };
 }

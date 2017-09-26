@@ -41,4 +41,13 @@ function HasTitleControl(){
     var cardNode = $('.cardGroup.selected').data('node');
     cardNode.setTitle(title);
   };
+
+  /**
+   * Sync title from selected card.
+   */
+  this.syncTitle=function(data){
+    if(data.title!==undefined){
+      this.titleControl.val(data.title);
+    }
+  };
 }

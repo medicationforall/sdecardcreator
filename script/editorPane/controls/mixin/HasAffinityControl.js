@@ -40,4 +40,14 @@ function HasAffinityControl(){
     var cardNode = $('.cardGroup.selected').data('node');
     cardNode.setAffinity(affinity);
   };
+
+
+  /**
+   * Sync affinity from selected card.
+   */
+  this.syncAffinity=function(data){
+    if(data.affinity!==undefined){
+      this.affinityControl.val(data.affinity);
+    }
+  };
 }

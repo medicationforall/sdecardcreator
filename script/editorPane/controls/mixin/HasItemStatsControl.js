@@ -40,4 +40,14 @@ function HasItemStatsControl(){
     var cardNode = $('.cardGroup.selected').data('node');
     cardNode.setItemStats(value);
   };
+
+
+  /**
+   * Sync item stats from selected card.
+   */
+  this.syncItemStats=function(data){
+    if(data.itemStats !== undefined){
+      this.itemStatsControl.val(data.itemStats);
+    }
+  };
 }

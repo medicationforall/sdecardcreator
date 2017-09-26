@@ -72,5 +72,13 @@ function KeywordControl(){
     HasKeywordListControl.call(this);
   };
 
+  /**
+   * Sync keywords, and affinity from selected card.
+   */
+  this.sync=function(data){
+    this.syncAffinity(data);
+    this.syncKeywords(data);
+  };
+
   this._constructor();
 }

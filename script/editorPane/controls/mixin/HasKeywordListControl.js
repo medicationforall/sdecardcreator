@@ -71,4 +71,14 @@ function HasKeywordListControl(){
     var cardNode = $('.cardGroup.selected').data('node');
     cardNode.setKeywords(keywords);
   };
+
+
+  /**
+   * Sync keywords from selected card.
+   */
+  this.syncKeywords=function(data){
+    if(data.keywordsList!==undefined){
+      this.keywordList.val(data.keywordsList);
+    }
+  };
 }

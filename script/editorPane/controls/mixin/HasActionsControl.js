@@ -41,4 +41,14 @@ function HasActionsControl(){
     var cardNode = $('.cardGroup.selected').data('node');
     cardNode.setActions(actions);
   };
+
+
+  /**
+   * Sync actions from selected card.
+   */
+  this.syncActions=function(data){
+    if(data.actions!==undefined){
+      this.ActionsControl.val(data.actions);
+    }
+  };
 }

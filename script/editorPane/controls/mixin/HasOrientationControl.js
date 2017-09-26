@@ -41,4 +41,13 @@ function HasOrientationControl(){
     var cardNode = $('.cardGroup.selected').data('node');
     cardNode.setOrientation(orientation);
   };
+
+  /**
+   * Sync orientation from selected card.
+   */
+  this.syncOrientation=function(data){
+    if(data.orientation!==undefined){
+      this.orientationControl.val(data.orientation);
+    }
+  };
 }

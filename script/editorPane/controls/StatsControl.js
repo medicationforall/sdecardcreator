@@ -73,5 +73,13 @@ function StatsControl(){
     HasStatsControl.call(this);
   };
 
+
+  /**
+   * Sync stats from selected card.
+   */
+  this.sync=function(data){
+    this.syncStats(data);
+  };
+
   this._constructor();
 }

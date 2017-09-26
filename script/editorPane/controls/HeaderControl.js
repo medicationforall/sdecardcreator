@@ -50,5 +50,15 @@ function HeaderControl(activeClass){
     }
   };
 
+  /**
+   * Sync title, subTitle, move, and actions from selected card.
+   */
+  this.sync=function(data){
+    this.syncTitle(data);
+    this.syncSubTitle(data);
+    this.syncMove(data);
+    this.syncActions(data);
+  };
+
   this._constructor();
 }

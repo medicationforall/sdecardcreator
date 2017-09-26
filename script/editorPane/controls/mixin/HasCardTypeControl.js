@@ -43,8 +43,11 @@ function HasCardTypeControl(){
     cardNode.setCardType(cardType);
   };
 
+  /**
+   * Sync card type from selected card.
+   */
   this.syncCardType=function(data){
-    if(data.cardType){
+    if(data.cardType!==undefined){
       this.cardTypeControl.val(data.cardType);
       this.parent.setDisplay(this.parent.node,data.cardType);
     }

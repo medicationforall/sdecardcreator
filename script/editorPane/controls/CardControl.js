@@ -79,8 +79,14 @@ function CardControl(){
     HasOrientationControl.call(this);
   };
 
+  /**
+   * Sync card type, scale, region, and orientation from selected card. 
+   */
   this.sync=function(data){
     this.syncCardType(data);
+    this.syncScale(data);
+    this.syncRegion(data);
+    this.syncOrientation(data);
   };
 
   this._constructor();

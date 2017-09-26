@@ -126,4 +126,39 @@ function HasStatsControl(){
     var cardNode = $('.cardGroup.selected').data('node');
     cardNode.setSkulls(skulls);
   };
+
+  /**
+   * Sync stats from selected card.
+   */
+  this.syncStats=function(data){
+    console.log('implement sync stats');
+
+    if(data.str!==undefined){
+      this.strControl.val(data.str);
+    }
+
+    if(data.dex!==undefined){
+      this.dexControl.val(data.dex);
+    }
+
+    if(data.arm!==undefined){
+      this.armControl.val(data.arm);
+    }
+
+    if(data.will!==undefined){
+      this.willControl.val(data.will);
+    }
+
+    if(data.wounds!==undefined){
+      this.woundsControl.val(data.wounds);
+    }
+
+    if(data.potions!==undefined){
+      this.potionsControl.val(data.potions);
+    }
+
+    if(data.skulls!==undefined){
+      this.skullsControl.val(data.skulls);
+    }
+  };
 }

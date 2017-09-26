@@ -41,4 +41,13 @@ function HasScaleControl(){
     var cardNode = $('.cardGroup.selected').data('node');
     cardNode.setScale(scale);
   };
+
+  /**
+   * Sync scale from selected card.
+   */
+  this.syncScale=function(data){
+    if(data.scale!==undefined){
+      this.scaleControl.val(data.scale);
+    }
+  };
 }

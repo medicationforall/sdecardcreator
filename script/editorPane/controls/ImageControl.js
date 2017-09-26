@@ -119,5 +119,14 @@ function ImageControl(){
     HasImageSourceControl.call(this);
   };
 
+
+  /**
+   * Sync background and image source from selected card.
+   */
+  this.sync=function(data){
+    this.syncBackground(data);
+    this.syncImageSource(data);
+  };
+
   this._constructor();
 }

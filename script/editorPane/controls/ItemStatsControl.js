@@ -88,5 +88,12 @@ function ItemStatsControl(){
     HasItemStatsControl.call(this);
   };
 
+  /**
+   * Sync stats from selected card.
+   */
+  this.sync=function(data){
+    this.syncItemStats(data);
+  };
+
   this._constructor();
 }
