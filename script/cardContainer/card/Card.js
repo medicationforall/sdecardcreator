@@ -182,11 +182,15 @@ function Card(animate,appendAfter){
   };
 
   this.initFirstCard=function(){
-    console.log('init first card');
+    //hero
     var data = {"name":"Ability 1","costType":"attack","cost":1,"definition":"+1r -2b 3g 4o 5p 1st 0mi 1ma 2sw 3rg augment fire STR WILL DEX ARM 1ac 2mo 0sh +1he"};
+
+    //griefer
+    //data = {"cardType": "command","title": "Griefer","imageSource": "default","remoteAvatar": "","abilities": [{"costType": "special","cost": "1","name": "Bully","definition": "All Commands target Hero with the least wrath."}, {"costType": "nameOnly","cost": "1","name": "Move x1","definition": ""}, {"costType": "nameOnly","cost": "1","name": "Fight x1","definition": ""}],"customKeywords": {}};
+
     var abilityNode = new Ability();
     var editForm = $('.editForm').data('node');
-    editForm.abilityControl.addAbilityFromCard(abilityNode);
+    editForm.abilityControl.addAbilityFromCard(abilityNode,data);
     this.addAbility(abilityNode);
     abilityNode.loadData(data);
   };

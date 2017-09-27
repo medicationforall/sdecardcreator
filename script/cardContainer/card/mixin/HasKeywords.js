@@ -30,7 +30,6 @@ function HasKeywords(){
   this.setKeywords=function(keywords){
       keywords = $("<div>").text(keywords).html();
 
-      console.log('set keywords for card',keywords);
       this.data.keywordsList=keywords;
       var keywordStore = $('.page').data('keywordStore');
 

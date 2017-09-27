@@ -28,7 +28,6 @@ function HasMoveControl(){
    * Move text input.
    */
   this.MoveControl.on('input',$.proxy(function(coreNode,event){
-    console.log('change Move',$(this).val());
     coreNode.setCardMove($(this).val());
   },null,this));
 

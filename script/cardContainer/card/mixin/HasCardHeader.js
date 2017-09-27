@@ -26,7 +26,6 @@ function HasCardHeader(){
    * @param {string} title
    */
   this.setTitle=function(title){
-    console.log('card set title',title);
     if(title !== undefined && title !==''){
       this.data.title = title;
       this.node.find('.title').text(title);
@@ -42,7 +41,6 @@ function HasCardHeader(){
    * @param {string} subTitle
    */
   this.setSubTitle=function(subTitle){
-    console.log('card set subTitle',subTitle);
     if(subTitle !== undefined && subTitle !==''){
       this.data.subTitle = subTitle;
       this.node.find('.subTitle').text(subTitle);
@@ -58,7 +56,6 @@ function HasCardHeader(){
    * @param {string} move
    */
   this.setMove=function(move){
-    console.log('card set move',move);
     if(move !== undefined && move !==''){
       this.data.move = move;
       this.node.find('.move').text(move);
@@ -74,7 +71,6 @@ function HasCardHeader(){
    * @param {string} actions
    */
   this.setActions=function(actions){
-    console.log('card set actions',actions);
     if(actions !== undefined && actions !==''){
       this.data.actions = actions;
       this.node.find('.actions').text(actions);

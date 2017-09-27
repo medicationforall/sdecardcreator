@@ -28,7 +28,6 @@ function HasOrientationControl(){
    * Orientation selection.
    */
   this.orientationControl.on('change',$.proxy(function(coreNode,event){
-    console.log('change orientation',$(this).val());
     coreNode.setOrientation($(this).val());
   },null,this));
 

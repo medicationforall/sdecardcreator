@@ -28,7 +28,6 @@ function HasCardTypeControls(){
    * @param {string} type
    */
   this.setCardType=function(type){
-    console.log('card set type',type);
     this.data.cardType=type;
     this.setDisplay(this.node.find('.card'),type);
     this.setType(type);
@@ -42,11 +41,9 @@ function HasCardTypeControls(){
   /**
    *Sets the card type.
    *@param {string} type Has to be a valid card type.
-   *@todo the types can be built from a util or mixin.
-   *@todo verify that type is valid
+   *@todo verify that type is valid.
    */
   this.setType=function(type){
-    //console.log('set card type',type);
     this.node.find('.card').removeClass('hero monster pet treasure loot wonder explore arcade command timeout').addClass(type).css('display','');
   };
 

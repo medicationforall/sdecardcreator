@@ -48,7 +48,6 @@ function KeywordSettings(store){
    *
    */
   this.setup=function(){
-    console.log('setting dialog setup');
     this.node = $(this.template).insertAfter('.pageContent');
     this.node.data('node',this);
   };

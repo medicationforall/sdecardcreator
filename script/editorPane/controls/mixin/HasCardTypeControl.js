@@ -28,7 +28,6 @@ function HasCardTypeControl(){
    * Card type selection.
    */
   this.cardTypeControl.on('change',$.proxy(function(coreNode,event){
-    console.log('change card type',$(this).val());
     coreNode.setCardType($(this).val());
   },null,this));
 

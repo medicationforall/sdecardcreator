@@ -39,7 +39,6 @@ function CardContainer(){
    * @return {object}
    */
   this.gatherData=function(){
-    console.log('call gather data for the cardContainer');
     var data = [];
     var cards = this.node.find('.cardGroup');
 
@@ -58,7 +57,6 @@ function CardContainer(){
    * @todo will need a flag to indicate if already existing cards should be cleared.
    */
   this.loadData=function(data){
-    console.log('card container load data');
 
     //should we clear?
     this.deleteCards();

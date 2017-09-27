@@ -29,7 +29,6 @@ function HasBackgroundControl(){
    * Background selection.
    */
   this.backgroundControl.on('change',$.proxy(function(coreNode,event){
-    console.log('change background',$(this).val());
     coreNode.setBackground($(this).val());
   },null,this));
 

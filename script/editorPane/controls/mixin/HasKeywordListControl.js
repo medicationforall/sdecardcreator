@@ -31,7 +31,6 @@ function HasKeywordListControl(){
    */
   this.keywordSettings.click(function(event){
     event.preventDefault();
-    console.log('show Settings');
     this.showSettings();
   }.bind(this));
 
@@ -67,7 +66,6 @@ function HasKeywordListControl(){
    * @param {string} keywords - Card keywords.
    */
   this.setKeywords=function(keywords){
-    console.log('attempting to set keywords');
     var cardNode = $('.cardGroup.selected').data('node');
     cardNode.setKeywords(keywords);
   };

@@ -100,7 +100,6 @@ function Stat(parent, name, permissions, value){
    * @param {string} shield - Parsed shield.
    */
   this.parseValue = function(match,number,type,shield){
-    //console.log('parsing stat',arguments);
     if(number !== undefined && type !== undefined){
       if(type==='b'){
         $(this.node).find('.blue').css("display","").text(number);

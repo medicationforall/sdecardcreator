@@ -37,7 +37,6 @@ function HasAddCardButton(){
    *
    */
   this.addCard=function(){
-    console.log('add card');
     var cardContainer = $('.cardContainer').data('node');
     cardContainer.addCard(true);
   };

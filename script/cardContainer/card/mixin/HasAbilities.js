@@ -29,7 +29,6 @@ function HasAbilities(){
    * @param {Ability} ability - Ability instance.
    */
   this.addAbility=function(ability){
-    console.log('card add ability');
     this.abilities.push(ability);
     ability.getCardNode().appendTo(this.node.find('.abilities'));
   };
@@ -62,7 +61,7 @@ function HasAbilities(){
       for(var i=0,ability;(ability=data.abilities[i]);i++){
         var abilityNode = new Ability();
         var editForm = $('.editForm').data('node');
-        editForm.abilityControl.addAbilityFromCard(abilityNode);
+        editForm.abilityControl.addAbilityFromCard(abilityNode,ability);
         this.addAbility(abilityNode);
         abilityNode.loadData(ability);
       }

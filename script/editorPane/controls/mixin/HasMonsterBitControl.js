@@ -21,7 +21,7 @@
  * @mixin
  */
 function HasMonsterBitControl(){
-  this.keywordList = this.node.find('select[name="bit"]');
+  this.monsterBit = this.node.find('select[name="bit"]');
 
 
   /**
@@ -49,7 +49,7 @@ function HasMonsterBitControl(){
    */
   this.syncBit=function(data){
     if(data.bit!==undefined){
-      this.keywordList.val(data.bit);
+      this.monsterBit.val(data.bit);
     }
   };
 }

@@ -41,7 +41,6 @@ function BitControl(){
    * Setup flavor text Control.
    */
   this.setup=function(){
-    console.log('bit control');
     HasToggleDisplay.call(this);
     HasMonsterBitControl.call(this);
   };

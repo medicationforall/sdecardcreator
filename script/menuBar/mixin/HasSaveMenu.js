@@ -56,7 +56,6 @@ function HasSaveMenu(){
    */
   this.saveMenu.find('.saveAsImage').click(function(event){
     event.preventDefault();
-    console.log('save image');
     var selectedCard = $('.cardGroup.selected');
     selectedCard.find('.card').css('box-shadow','none');
     var title = selectedCard.data('node').data.title;

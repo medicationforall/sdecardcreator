@@ -28,7 +28,6 @@ function HasRegionControl(){
    * Region selection.
    */
   this.regionControl.on('change',$.proxy(function(coreNode,event){
-    console.log('change region',$(this).val());
     coreNode.setRegion($(this).val());
   },null,this));
 

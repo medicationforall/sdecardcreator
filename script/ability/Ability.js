@@ -35,7 +35,6 @@ function Ability(){
    * Close/Delete an ability.
    */
   this.closeAbility=function(){
-    console.log('closeAbility');
     var cardNode = $('.cardGroup.selected').data('node');
     cardNode.removeAbility(this);
     this.getCardAbilityNodes().remove();
@@ -59,24 +58,22 @@ function Ability(){
    * @param {string} costType - Ability Cost Type.
    */
   this.setCostType=function(costType){
-    var cardNode = $('.cardGroup.selected');
     this.data.costType=costType;
 
-    this._resetCostType(cardNode);
-    cardNode.find('.cost').addClass(costType);
-    this._cardAbilityDisplay(cardNode,costType);
+    this._resetCostType();
+    this.getCardAbilityNodes().find('.cost').addClass(costType);
+    this._cardAbilityDisplay(costType);
     this._formAbilityDisplay(costType);
   };
 
 
   /**
    * Reset.
-   * @param {object} cardNode - Selected card reference.
    */
-  this._resetCostType=function(cardNode){
-    cardNode.find('.name, .colon, .definition').css('display','');
+  this._resetCostType=function(){
+    this.getCardAbilityNodes().find('.name, .colon, .definition').css('display','');
     this.formNode.find('input[name="name"],input[name="cost"], textarea[name="definition"]').parent().css('display','');
-    cardNode.find('.cost').removeClass('attack support emergencyPotion supportPotion offensePotion special definitionOnly description nameOnly');
+    this.getCardAbilityNodes().find('.cost').removeClass('attack support emergencyPotion supportPotion offensePotion special definitionOnly description nameOnly');
   };
 
 
@@ -85,11 +82,11 @@ function Ability(){
    * @param {object} cardNode - Selected card reference.
    * @param {string} costType - Ability Cost Type.
    */
-  this._cardAbilityDisplay=function(cardNode,costType){
+  this._cardAbilityDisplay=function(costType){
     if(costType==='definitionOnly' || costType==='description'){
-      cardNode.find('.name, .colon').css('display','none');
+      this.getCardAbilityNodes().find('.name, .colon').css('display','none');
     }else if(costType==='nameOnly'){
-      cardNode.find('.colon, .definition').css('display','none');
+      this.getCardAbilityNodes().find('.colon, .definition').css('display','none');
     }
   };
 

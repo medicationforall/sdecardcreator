@@ -28,7 +28,6 @@ function HasScaleControl(){
    * Scale text input.
    */
   this.scaleControl.on('input',$.proxy(function(coreNode,event){
-    console.log('change card scale',$(this).val());
     coreNode.setScale($(this).val());
   },null,this));
 

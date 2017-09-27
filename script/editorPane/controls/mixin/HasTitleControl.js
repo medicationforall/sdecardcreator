@@ -28,7 +28,6 @@ function HasTitleControl(){
    * Title text input.
    */
   this.titleControl.on('input',$.proxy(function(coreNode,event){
-    console.log('change title',$(this).val());
     coreNode.setCardTitle($(this).val());
   },null,this));
 

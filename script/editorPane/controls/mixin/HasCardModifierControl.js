@@ -38,7 +38,6 @@ function HasCardModifierControl(){
    * Modify card action.
    */
   this.modifyCard=function(action){
-    console.log('modify card',action);
     var cardContainer = $('.cardContainer').data('node');
 
     if(action==='delete'){

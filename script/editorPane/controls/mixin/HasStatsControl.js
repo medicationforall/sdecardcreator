@@ -131,8 +131,6 @@ function HasStatsControl(){
    * Sync stats from selected card.
    */
   this.syncStats=function(data){
-    console.log('implement sync stats');
-
     if(data.str!==undefined){
       this.strControl.val(data.str);
     }

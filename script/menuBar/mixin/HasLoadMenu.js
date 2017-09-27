@@ -40,7 +40,6 @@ function HasLoadMenu(){
         var text = reader.result;
 
         var data = jQuery.parseJSON(text);
-        console.log(data);
         this.loadData(data);
         //form.setData(data);
       },this);
@@ -67,7 +66,6 @@ function HasLoadMenu(){
    *
    */
   this.loadDataVersion1=function(data){
-    console.log('load version 1 data');
     var cardContainer = $('.cardContainer').data('node');
     cardContainer.loadCard(data);
   };
@@ -77,7 +75,6 @@ function HasLoadMenu(){
    *
    */
   this.loadDataVersion2=function(data){
-    console.log('load version 2 data');
     var cardContainer = $('.cardContainer').data('node');
     cardContainer.loadData(data);
   };

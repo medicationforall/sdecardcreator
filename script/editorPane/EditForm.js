@@ -60,7 +60,6 @@ function EditForm(){
    * Sync editform from selected card.
    */
   this.sync=function(data,abilities){
-    console.log('sync selected card with form');
     this.cardControl.sync(data);
     this.headerControl.sync(data);
     this.imageControl.sync(data);

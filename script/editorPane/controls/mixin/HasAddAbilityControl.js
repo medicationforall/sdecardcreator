@@ -37,11 +37,9 @@ function HasAddAbilityControl(){
    * Add an ability to the selected card, and adds the abilities formNode.
    */
   this.addAbility=function(){
-    console.log('add ability');
     var cardNode = $('.cardGroup.selected').data('node');
-
     var ability = new Ability();
-    var formAbility = ability.getFormNode(this.node.find('.abilities')).appendTo(this.node.find('.abilities'));
+    var formAbility = ability.getFormNode().appendTo(this.node.find('.abilities'));
     cardNode.addAbility(ability);
   };
 
@@ -49,8 +47,9 @@ function HasAddAbilityControl(){
   /**
    * Register an ability formNode from a loaded card ability.
    */
-  this.addAbilityFromCard=function(ability){
-    var formAbility = ability.getFormNode(this.node.find('.abilities')).appendTo(this.node.find('.abilities'));
+  this.addAbilityFromCard=function(ability,data){
+    var formAbility = ability.getFormNode().appendTo(this.node.find('.abilities'));
+    ability.syncForm(data);
   };
 
 
@@ -61,9 +60,10 @@ function HasAddAbilityControl(){
     //remove existing ability nodes.
     this.node.find('.abilities .ability').detach();
 
-    if(abilities!==undefined && data.abilities.length>0){
-      for(var i=0,ability;(ability = abilities[0]);i++){
-        this.addAbilityFromCard(ability);
+    if(abilities!==undefined && abilities.length>0){
+      for(var i=0,ability;(ability = abilities[i]);i++){
+        console.log('syncAbilities add ability from card');
+        this.addAbilityFromCard(ability,ability.data);
       }
     }
   };

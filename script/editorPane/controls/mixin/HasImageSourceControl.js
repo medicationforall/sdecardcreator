@@ -31,7 +31,6 @@ function HasImageSourceControl(){
    * Image source radio selection.
    */
   this.imageSourceControl.on('change',$.proxy(function(coreNode,event){
-    console.log('changed image source',$(this).val());
     coreNode.setImageSource($(this).val());
   },null,this));
 

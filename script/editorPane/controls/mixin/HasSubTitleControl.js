@@ -28,7 +28,6 @@ function HasSubTitleControl(){
    * SubTitle text input.
    */
   this.subTitleControl.on('input',$.proxy(function(coreNode,event){
-    console.log('change subTitle',$(this).val());
     coreNode.setCardSubTitle($(this).val());
   },null,this));
 
