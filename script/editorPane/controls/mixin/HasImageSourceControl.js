@@ -96,8 +96,9 @@ function HasImageSourceControl(){
    * Sync imageSource, removeAvatar, and creepSpawn from selected card.
    */
   this.syncImageSource=function(data){
+    console.log('syncImageSource',data);
     if(data.imageSource!==undefined){
-      this.imageSourceControl.val(data.imageSource);
+      this.imageSourceControl.filter('[value="'+data.imageSource+'"]').prop('checked', true);
     }
 
     if(data.remoteAvatar!==undefined){

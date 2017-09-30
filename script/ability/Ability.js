@@ -187,6 +187,10 @@ function Ability(){
     }
 
     if(data.costType !== undefined){
+      if(data.costType==='description'){
+        data.costType='definitionOnly';
+      }
+      
       this.setCostType(data.costType);
     }
 
