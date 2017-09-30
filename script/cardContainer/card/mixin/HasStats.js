@@ -21,10 +21,10 @@
  * @mixin
  */
 function HasStats(){
-  this.strStat = new Stat(this,"STR", 'hero monster pet', '3b 1sw');
-  this.armStat = new Stat(this, "ARM", 'hero monster pet', '2b 1r sh');
-  this.willStat = new Stat(this, "WILL", 'hero monster', '3b');
-  this.dexStat = new Stat(this, "DEX", 'hero monster', '3b');
+  this.STRStat = new Stat(this,"STR", 'hero monster pet', '3b 1sw');
+  this.ARMStat = new Stat(this, "ARM", 'hero monster pet', '2b 1r sh');
+  this.WILLStat = new Stat(this, "WILL", 'hero monster', '3b');
+  this.DEXStat = new Stat(this, "DEX", 'hero monster', '3b');
 
 
   /**
@@ -74,20 +74,20 @@ function HasStats(){
    * @param {object} data - Card Data.
    */
   this.loadCardStats=function(data){
-    if(data.str !== undefined){
-      this.setStat('str',data.str);
+    if(data.STR !== undefined){
+      this.setStat('STR',data.STR);
     }
 
-    if(data.arm !== undefined){
-      this.setStat('arm',data.arm);
+    if(data.ARM !== undefined){
+      this.setStat('ARM',data.ARM);
     }
 
-    if(data.dex !== undefined){
-      this.setStat('dex',data.dex);
+    if(data.DEX !== undefined){
+      this.setStat('DEX',data.DEX);
     }
 
-    if(data.will !== undefined){
-      this.setStat('will',data.will);
+    if(data.WILL !== undefined){
+      this.setStat('WILL',data.WILL);
     }
 
     if(data.wounds !== undefined){

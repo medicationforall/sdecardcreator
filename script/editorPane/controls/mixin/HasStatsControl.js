@@ -35,7 +35,7 @@ function HasStatsControl(){
    * Str text input.
    */
   this.strControl.on('input',$.proxy(function(coreNode,event){
-    coreNode.setStat('str',$(this).val());
+    coreNode.setStat('STR',$(this).val());
   },null,this));
 
 
@@ -43,7 +43,7 @@ function HasStatsControl(){
    * Arm text input.
    */
   this.armControl.on('input',$.proxy(function(coreNode,event){
-    coreNode.setStat('arm',$(this).val());
+    coreNode.setStat('ARM',$(this).val());
   },null,this));
 
 
@@ -51,7 +51,7 @@ function HasStatsControl(){
    * Will text input.
    */
   this.willControl.on('input',$.proxy(function(coreNode,event){
-    coreNode.setStat('will',$(this).val());
+    coreNode.setStat('WILL',$(this).val());
   },null,this));
 
 
@@ -59,7 +59,7 @@ function HasStatsControl(){
    * Dex text input.
    */
   this.dexControl.on('input',$.proxy(function(coreNode,event){
-    coreNode.setStat('dex',$(this).val());
+    coreNode.setStat('DEX',$(this).val());
   },null,this));
 
 
@@ -131,19 +131,20 @@ function HasStatsControl(){
    * Sync stats from selected card.
    */
   this.syncStats=function(data){
-    if(data.str!==undefined){
+    console.log('syncStats',data);
+    if(data.STR!==undefined){
       this.strControl.val(data.str);
     }
 
-    if(data.dex!==undefined){
+    if(data.DEX!==undefined){
       this.dexControl.val(data.dex);
     }
 
-    if(data.arm!==undefined){
+    if(data.ARM!==undefined){
       this.armControl.val(data.arm);
     }
 
-    if(data.will!==undefined){
+    if(data.WILL!==undefined){
       this.willControl.val(data.will);
     }
 

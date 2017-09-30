@@ -1,9 +1,54 @@
 <!DOCTYPE html>
 <html>
+<!--
+
+                                                      ``
+                     -.                             -+/`
+                    /d/                            -oy/
+                    oN+                          `/ddy-
+                    :dN:                        -ydyo/`
+                     +md:                     .+ohmms`
+                      +dNo.                 `+dyydsy.
+                       -hddy-`             ./yoNddy.
+                        `ymddh/`          :dNh+myy`
+                         `-omNmy:.      `/hyNmdss
+                           `+ddmym+`    :Ndoyds+`
+                             .hdyyds:` -syyNmh+`
+                              `sdNddmo.ydNdNdo.
+                                hNmmdmddsNmhd+`
+                            ..  :ymmdmMNNhMMMd:```:.
+                           -yh- :NMMMMMMMMMMMMNmmmmo
+                          .yMMMMNNMMMMMMMMMMMMNNMMNy.
+              .+/.        :NMMMMmhmMMMMMMMMMMddNMMMh.
+ ::::/+//////+yo/syo-`    :NMMMMMmsmMMMMMMMNhhNMMMMs`       `-+os+.        .--`
+ -::://+++++oo+yhooosyo-  `omNMMMNyhMMMMMMMmydMMMd+/     `:sys//shhyo/+/+++/--/:
+ `+s-.``   `.-o-/o+dNdhdh/..:dMMMMMMMMMMMMMMMMMMMNsyh-`-odyooshh:--/+++/////os:.
+ ``oh:.. .:/-:ossyso++shhhymNMMMMMMMMMMMMMMMMMNNMMMMNydNmmmdsyy/++::-`  ` `/y-`
+ ` .smo`/:::oy/.`         :NMMMNNMMMMMMMMMMMmssyhhNMN+/:-....-:+sy/-//-.`:sd/`.`
+   ..oNs/:+h/`            :mMMydhoMMMMMMMMMMs/mNNhsMm:           .+y+:::-dd:`
+  `..-/mmoh-              :dMNyNdmMMMMMMMMMMMhhdd/dMy.             .sy/oNh/-`` `
+ .:/--sdNm+               -hNMddNMMMMMMMMMNMMMNy-oNNo`              `sdNh/--:-``
+ --:/y+:-.                `+NMM-:dNs:::----yMd/`sNMd:                -oydh/://:.
+ .:+s:                     :dMMh -h/      `os.:dMMm/                    `-so:/-.
+ --/+`                     -hMMM. -:       ./hMMMd:                       -yo:-/
+`+:+/                      `oNMMo        `/hNMMMy.                         +o///
+ /yy/`                      /mMMh`      -hMMMMm+                           +yso:
+ ::-`                       `hMMm.    `oNMMMMy.                            /hds-
+                             /mMN/   -dMMMMm+`                                ./
+                             `sNNs  -dMMMNh:                                   .
+                              .dNm--hMMMNs.
+                               .hNdhMMMM/`
+                                `oNMMMN/
+ .                               `:dNMy`                                      `/
+                                   .od:                                      `-.
+                                     :.
+Medication For All
+-->
 
 <head>
 	<meta charset="UTF-8">
 	<title>SDE Card Creator</title>
+
 	<link rel="icon" type="image/png" href="image/favicon.png" />
 	<meta name="description" content="Create Custom Cards for Super Dungeon Explore!">
 	<meta name="keywords" content="SDE Card Creator, Super Dungeon Explore Card Creator, SDE Card, Super Dungeon Explore Card, SDE Custom Cards, Super Dungeon Explore Custom Cards, SDE Card Template, Super Dungeon Explore Card Template">
@@ -24,6 +69,7 @@
 	<link href="css/cardTimeout.css" rel="stylesheet" />
 	<link href="css/cardArcade.css" rel="stylesheet" />
 	<link href="css/keywordSettings.css" rel="stylesheet" />
+	<link href="css/loadSubMenu.css" rel="stylesheet" />
 
 	<link href="css/editorPane.css" rel="stylesheet" />
 	<link href="css/cardContainer.css" rel="stylesheet" />
@@ -181,7 +227,20 @@
 				<h3>Template</h3>
 				<a href="template/command/Griefer.json" class="loadTemplateButton" data-file="command/Griefer.json">Griefer</a>
 				<a href="template/explore/Armory.json" class="loadTemplateButton" data-file="explore/Armory.json">Armory</a>
-				<a href="template/heroes/Dragon_Blade.json" class="loadTemplateButton" data-file="heroes/Dragon_Blade.json">Dragon Blade</a>
+				<ul class="templateGroup inactive">
+					<a href="" class="templateGroupHeader">
+						<svg class="displayArrow" height="10" viewbox="0 0 24 24" width="10" xmlns="http://www.w3.org/2000/svg">
+							<path d="M2 22h20V2z"></path><path d="M0 0h24v24H0z" fill="none">
+							</path>
+						</svg>
+						<b>Heroes</b>
+					</a>
+					<li><a href="template/heroes/Dragon_Blade.json" class="loadTemplateButton" data-file="heroes/Dragon_Blade.json">Dragon Blade</a></li>
+					<li><a href="template/heroes/Ninja_Cola.json" class="loadTemplateButton" data-file="heroes/Ninja_Cola.json">Ninja Cola</a></li>
+					<li><a href="template/heroes/Royal_Warden.json" class="loadTemplateButton" data-file="heroes/Royal_Warden.json">Royal Warden</a></li>
+					<li><a href="template/heroes/Twilight_Knight.json" class="loadTemplateButton" data-file="heroes/Twilight_Knight.json">Twilight Knight</a></li>
+					<li><a href="template/heroes/Wandering_Minstrel.json" class="loadTemplateButton" data-file="heroes/Wandering_Minstrel.json">Wandering Minstrel</a></li>
+				</ul>
 				<a href="template/loot/Diamond_Plate.json" class="loadTemplateButton" data-file="loot/Diamond_Plate.json">Diamond Plate</a>
 				<a href="template/timeout/Goro.json" class="loadTemplateButton" data-file="timeout/Goro.json">Goro</a>
 				<a href="template/treasure/Ancestral_Mail.json" class="loadTemplateButton" data-file="treasure/Ancestral_Mail.json">Ancestral Mail</a>

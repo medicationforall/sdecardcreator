@@ -100,4 +100,18 @@ function HasLoadMenu(){
     event.preventDefault();
     $('.form form').trigger('reset');
   });
+
+
+  /**
+   * Toggle template group header.
+   */
+  this.loadMenu.on('click','.templateGroupHeader',$.proxy(function(coreNode,event){
+    event.preventDefault();
+    var parent = $(this).parent();
+    if(parent.hasClass('inactive')){
+      parent.removeClass('inactive').addClass('active');
+    } else {
+      parent.removeClass('active').addClass('inactive');
+    }
+  },null,this));
 }

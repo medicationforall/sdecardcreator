@@ -1,0 +1,23 @@
+.load.subMenu .templateGroup{
+  padding:0px;
+  list-style: none;
+}
+
+.load.subMenu .templateGroup.inactive li{
+  display:none;
+}
+
+.load.subMenu .templateGroup .displayArrow{
+  margin-right:3px;
+  transition: transform 0.3s ease-out;
+}
+
+.load.subMenu .templateGroup.inactive .displayArrow{
+  transform:rotate(-45deg);
+  transform-origin: center;
+}
+
+.load.subMenu .templateGroup.active .displayArrow{
+  transform:rotate(45deg);
+  transform-origin: top right;
+}
