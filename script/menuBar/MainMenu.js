@@ -38,7 +38,6 @@ function MainMenu(){
   this._setup=function(){
     this.node = $('.menuBar');
     //HasGatherData.call(this);
-    HasLoadData.call(this);
     HasOpenMenuButtons.call(this);
     //HasAddMenu.call(this);
     HasSaveMenu.call(this);
