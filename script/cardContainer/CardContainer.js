@@ -58,8 +58,13 @@ function CardContainer(){
    */
   this.loadData=function(data){
 
+    console.log('card container load card.');
     //should we clear?
-    this.deleteCards();
+    var appendLoad = $('input[name="loadAppend"]');
+
+    if(appendLoad.is(':checked') === false){
+      this.deleteCards();
+    }
 
     for(var i=0,cardData;(cardData=data.cards[i]);i++){
       this.addCard(true,cardData);
@@ -72,7 +77,12 @@ function CardContainer(){
    * @param {object} data - Card data.
    */
   this.loadCard=function(data){
-    this.deleteCards();
+
+    var appendLoad = $('input[name="loadAppend"]');
+
+    if(appendLoad.is(':checked') === false){
+      this.deleteCards();
+    }
 
     this.addCard(true,data);
   };
