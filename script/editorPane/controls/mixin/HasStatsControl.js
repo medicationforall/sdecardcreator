@@ -133,19 +133,19 @@ function HasStatsControl(){
   this.syncStats=function(data){
     console.log('syncStats',data);
     if(data.STR!==undefined){
-      this.strControl.val(data.str);
+      this.strControl.val(data.STR);
     }
 
     if(data.DEX!==undefined){
-      this.dexControl.val(data.dex);
+      this.dexControl.val(data.DEX);
     }
 
     if(data.ARM!==undefined){
-      this.armControl.val(data.arm);
+      this.armControl.val(data.ARM);
     }
 
     if(data.WILL!==undefined){
-      this.willControl.val(data.will);
+      this.willControl.val(data.WILL);
     }
 
     if(data.wounds!==undefined){

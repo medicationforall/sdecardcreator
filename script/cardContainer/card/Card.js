@@ -21,7 +21,27 @@
  * @class
  */
 function Card(animate,appendAfter){
-  this.data={};
+  this.data={
+    "cardType": "hero",
+    "title": "title",
+    "subTitle": "subTitle",
+    "move": "6",
+    "actions": "3",
+    "potions": "1",
+    "wounds": "5",
+    "keywordsList": "",
+    "background": "pic1685577_md.jpg",
+    "backgroundFlip": false,
+    "imageSource": "default",
+    "STR": "1sw 3b",
+    "ARM": "2b 1r sh",
+    "WILL": "3b",
+    "DEX": "3b",
+    "flavorText": "",
+    "abilities": [],
+    "affinity": "citrine"
+  };
+  
   this.template='<div class="cardGroup selected">'+
   	'<div class="cardDiv">'+
   		'<div class="card hero red">'+
