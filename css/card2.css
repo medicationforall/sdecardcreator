@@ -939,3 +939,23 @@ cursor:move;
 	margin-left:20px;
 	margin-right:20px;
 }
+
+.card .author{
+	color: #fff;
+	text-align: center;
+	position: relative;
+	top: 29px;
+	font-family: 'arial';
+}
+
+.card.command .author, .card.timeout .author, .card.explore .author{
+	top: -10px;
+}
+
+.card.loot .author, .card.treasure .author{
+	top: 0px;
+}
+
+.card.wonder .author{
+	top: 15px;
+}

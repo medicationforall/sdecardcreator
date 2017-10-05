@@ -62,6 +62,16 @@ function HasCardTypeControls(){
 
 
   /**
+   * Set the cards author.
+   * @param {string} author - Card author.
+   */
+  this.setAuthor=function(author){
+    this.data.author=author;
+    this.node.find('.author').text(author);
+  };
+
+
+  /**
    * Set region.
    * @param {string} region - valid values: red, green, purple, yellow.
    */
@@ -104,6 +114,10 @@ function HasCardTypeControls(){
 
     if(data.scale !== undefined){
       this.setScale(data.scale);
+    }
+
+    if(data.author !== undefined){
+      this.setAuthor(data.author);
     }
 
     if(data.region !== undefined){

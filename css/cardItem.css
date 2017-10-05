@@ -8,7 +8,7 @@ padding:10px;
 }
 
 .card .item .character{
-max-height:350px;
+max-height:200px;
 max-width:395px;
 }
 
@@ -179,7 +179,7 @@ background:url('image/itemSlot/treasure/emerald-border.png') no-repeat center ce
 width: 620px;
 height: 842px;
 background:url('image/itemSlot/wonder/border.png') no-repeat center center;
-} 
+}
 
 .card.wonder .item .content{
 height: 774px;
@@ -208,4 +208,3 @@ vertical-align:middle;
 .card .item .keywords .name{
 font-weight:bold;
 }
-

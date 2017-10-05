@@ -24,6 +24,7 @@ function Card(animate,appendAfter){
   this.data={
     "cardType": "hero",
     "title": "title",
+    "author":"",
     "subTitle": "subTitle",
     "move": "6",
     "actions": "3",
@@ -41,7 +42,7 @@ function Card(animate,appendAfter){
     "abilities": [],
     "affinity": "citrine"
   };
-  
+
   this.template='<div class="cardGroup selected">'+
   	'<div class="cardDiv">'+
   		'<div class="card hero red">'+
@@ -94,11 +95,9 @@ function Card(animate,appendAfter){
   							'<span class="item treasure wonder loot explore flavorText"></span>'+
   						'</div>'+
   					'</div>'+
-
-  					'<div class="treasure loot placeHolder ruby">'+
-
-  					'</div>'+
+  					'<div class="treasure loot placeHolder ruby"></div>'+
   				'</div>'+
+          '<div class="author"></div>'+
   			'</div>'+
   		'</div>'+
   	'</div>'+
@@ -127,6 +126,7 @@ function Card(animate,appendAfter){
   						'<div class="flavorBorder"></div>'+
   						'</div>'+
   					'</div>'+
+            '<div class="author hero monster pet timeout"></div>'+
   				'</div>'+
   			'</div>'+
   		'</div>'+

@@ -22,6 +22,7 @@
  */
 function HasCardTypeControl(){
   this.cardTypeControl = this.node.find('select[name="cardType"]');
+  this.authorControl = this.node.find('input[name="author"]');
 
 
   /**
@@ -29,6 +30,15 @@ function HasCardTypeControl(){
    */
   this.cardTypeControl.on('change',$.proxy(function(coreNode,event){
     coreNode.setCardType($(this).val());
+  },null,this));
+
+
+  /**
+   * Author text input.
+   */
+  this.authorControl.on('input',$.proxy(function(coreNode,event){
+    console.log('author input');
+    coreNode.setAuthor($(this).val());
   },null,this));
 
 
@@ -42,6 +52,17 @@ function HasCardTypeControl(){
     cardNode.setCardType(cardType);
   };
 
+
+  /**
+   * Set card author.
+   * @param {string} author - Card author.
+   */
+  this.setAuthor=function(author){
+    var cardNode = $('.cardGroup.selected').data('node');
+    cardNode.setAuthor(author);
+  };
+
+
   /**
    * Sync card type from selected card.
    */
@@ -49,6 +70,16 @@ function HasCardTypeControl(){
     if(data.cardType!==undefined){
       this.cardTypeControl.val(data.cardType);
       this.parent.setDisplay(this.parent.node,data.cardType);
+    }
+  };
+
+
+  /**
+   * Sync author from selected card.
+   */
+  this.syncAuthor=function(data){
+    if(data.author!==undefined){
+        this.authorControl.val(data.author);
     }
   };
 }

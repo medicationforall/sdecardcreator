@@ -45,6 +45,10 @@ function CardControl(){
   		'Scale <input class="number" name="cardScale" value="1.0" type="number" step="0.1" min="0.1" />'+
   	'</div>'+
 
+    '<div class="author">'+
+      'Author <input class="text" name="author" />'+
+    '</div>'+
+
   	'<div class="monster timeout">'+
   		'Color '+
   		'<select name="region">'+
@@ -80,11 +84,12 @@ function CardControl(){
   };
 
   /**
-   * Sync card type, scale, region, and orientation from selected card. 
+   * Sync card type, scale, region, and orientation from selected card.
    */
   this.sync=function(data){
     this.syncCardType(data);
     this.syncScale(data);
+    this.syncAuthor(data);
     this.syncRegion(data);
     this.syncOrientation(data);
   };
