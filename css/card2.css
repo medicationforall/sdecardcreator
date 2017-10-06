@@ -17,7 +17,8 @@
 	height:900px;
 	padding-top:0.1px;
 	transition: width 0.5s, transform 0.3s ease-out;
-    background:red;
+  background:red;
+	position:relative;
 }
 
 .card .front, .card .back{
@@ -958,4 +959,47 @@ cursor:move;
 
 .card.wonder .author{
 	top: 15px;
+}
+
+.card .slot.ruby{
+	background:url('image/heroSlot/hero_ruby.png');
+	width: 45px;
+	height: 43px;
+	display: inline-block;
+	position: absolute;
+	top: 14px;
+	left: 311px;
+}
+
+.card .slot.emerald{
+	background:url('image/heroSlot/hero_emerald.png');
+	width: 43px;
+	height: 45px;
+	display: inline-block;
+	position: absolute;
+	top: 427px;
+	right: 12px;
+	z-index: 2;
+}
+
+.card .slot.saphire{
+	background:url('image/heroSlot/hero_saphire.png');
+	width: 45px;
+	height: 43px;
+	display: inline-block;
+	position: absolute;
+	top: 839px;
+	left: 311px;
+	z-index: 2;
+}
+
+.card .slot.citrine{
+	background:url('image/heroSlot/hero_citrine.png');
+	width: 42px;
+	height: 46px;
+	display: inline-block;
+	position: absolute;
+	top: 427px;
+	right: 603px;
+	z-index: 2;
 }

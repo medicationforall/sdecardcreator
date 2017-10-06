@@ -48,6 +48,10 @@ function Card(animate,appendAfter){
   		'<div class="card hero red">'+
 
   			'<div class="front">'+
+        '<div class="slot ruby hero"></div>'+
+        '<div class="slot emerald hero"></div>'+
+        '<div class="slot saphire hero"></div>'+
+        '<div class="slot citrine hero"></div>'+
   				'<div class="model hero monster pet arcade">'+
   					'<div class="header">'+
   						'<div class="moveactions" >'+
