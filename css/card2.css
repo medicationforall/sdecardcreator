@@ -1011,3 +1011,14 @@ cursor:move;
 	right: 603px;
 	z-index: 2;
 }
+
+
+.arcadeMachineLogo{
+	background:url('image/arcade/Arcade-Mode.png');
+	width: 79px;
+  height: 104px;
+  background-size: 100%;
+  position: absolute;
+  bottom: 20px;
+  right: 14px;
+}

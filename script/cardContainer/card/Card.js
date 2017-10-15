@@ -81,6 +81,7 @@ function Card(animate,appendAfter){
 
   					'<div class="abilities">'+
   						'<div class="monster bit eight"></div>'+
+              '<div class="arcadeSolo arcadeGang arcadeMachineLogo"></div>'+
   					'</div>'+
   				'</div>'+
 
@@ -101,6 +102,7 @@ function Card(animate,appendAfter){
   					'</div>'+
   					'<div class="treasure loot placeHolder ruby"></div>'+
   				'</div>'+
+
           '<div class="author"></div>'+
   			'</div>'+
   		'</div>'+
