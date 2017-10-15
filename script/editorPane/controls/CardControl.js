@@ -36,9 +36,12 @@ function CardControl(){
       '<option value="explore">Explore</option>'+
   		'<option disabled>----------</option>'+
   		'<option value="timeout">Timeout</option>'+
+      '<option disabled>----------</option>'+
+      '<option value="command">Command</option>'+
+      '<option disabled>----------</option>'+
   		'<option disabled>-Experimental-</option>'+
-  		'<option value="arcade">Arcade</option>'+
-  		'<option value="command">Command</option>'+
+  		'<option value="arcadeSolo">Arcade Solo</option>'+
+      '<option value="arcadeGang">Arcade Gang</option>'+
   	'</select>'+
 
   	'<div class="cardScale">'+

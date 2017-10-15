@@ -32,7 +32,8 @@ function HasCardImage(){
     'explore':'image/trap.png',
     'timeout':'image/gorosilo.png',
     'command':'image/koboldgoupsilo.png',
-    'arcade':'image/koboldgoupsilo.png'
+    'arcadeSolo':'image/koboldgoupsilo.png',
+    'arcadeGang':'image/koboldgoupsilo.png'
   };
 
   //set image draggable.

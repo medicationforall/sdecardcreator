@@ -52,7 +52,7 @@ function Card(animate,appendAfter){
         '<div class="slot emerald hero"></div>'+
         '<div class="slot saphire hero"></div>'+
         '<div class="slot citrine hero"></div>'+
-  				'<div class="model hero monster pet arcade">'+
+  				'<div class="model hero monster pet arcadeSolo">'+
   					'<div class="header">'+
   						'<div class="moveactions" >'+
   							'<span class="move">6</span>'+
@@ -69,7 +69,7 @@ function Card(animate,appendAfter){
   					'<div class="background" style="background:url(\'image/background/pic1685577_md.jpg\') no-repeat;background-size:100% 100%"></div>'+
 
   					'<div class="keywordsSection">'+
-  						'<span class="hero monster arcade affinity citrine"></span>'+
+  						'<span class="hero monster arcadeSolo affinity citrine"></span>'+
   						'<span class="keywordsList"></span>'+
 
   						'<div class="subStats">'+

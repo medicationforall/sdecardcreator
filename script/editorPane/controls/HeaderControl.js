@@ -25,8 +25,8 @@ function HeaderControl(activeClass){
   this.template='<div class="header">'+
   	'<h2><a class="toggleDisplay" href="">Header</a></h2>'+
     '<div class="controlContent">'+
-  	'<div class="hero monster pet treasure wonder loot explore command arcade timeout">*Title <input name="title" required maxlength="30" /></div>'+
-  	'<div class="hero monster pet arcade">Sub-Title <input name="subTitle" maxlength="40" /></div>'+
+  	'<div class="hero monster pet treasure wonder loot explore command arcadeSolo timeout">*Title <input name="title" required maxlength="30" /></div>'+
+  	'<div class="hero monster pet arcadeSolo">Sub-Title <input name="subTitle" maxlength="40" /></div>'+
 
   	'<div class="hero monster pet">'+
   		'Move <input class="number" type="number" name="move" value="6" min="-9" max="99" />'+
