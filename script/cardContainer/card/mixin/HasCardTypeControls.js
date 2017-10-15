@@ -44,7 +44,7 @@ function HasCardTypeControls(){
    *@todo verify that type is valid.
    */
   this.setType=function(type){
-    this.node.find('.card').removeClass('hero monster pet treasure loot wonder explore arcade command timeout').addClass(type).css('display','');
+    this.node.find('.card').removeClass('hero monster pet treasure loot wonder explore arcadeSolo arcadeGang command timeout').addClass(type).css('display','');
   };
 
 

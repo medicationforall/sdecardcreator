@@ -109,9 +109,9 @@ function Card(animate,appendAfter){
   	'<div class="cardDiv">'+
   		'<div class="card hero red">'+
   			'<div class="back">'+
-  				'<div class="hero monster pet header">'+
-  					'<div class="hero monster pet"><span class="title">title</span></div>'+
-  					'<div class="hero monster pet"><span class="subTitle">subTitle</span></div>'+
+  				'<div class="hero monster pet arcadeSolo header">'+
+  					'<div class=""><span class="title">title</span></div>'+
+  					'<div class=""><span class="subTitle">subTitle</span></div>'+
   				'</div>'+
 
   				'<div class="contentBorder ruby">'+
@@ -122,15 +122,15 @@ function Card(animate,appendAfter){
   						'</div>'+
   						'<div><span class="timeout title">title</span></div>'+
   						'<div class="timeout abilities"></div>'+
-  						'<div class="monster pet hero keywords"></div>'+
+  						'<div class="monster pet hero arcadeSolo keywords"></div>'+
 
-  						'<div class="monster pet hero flavor">'+
+  						'<div class="monster pet hero arcadeSolo flavor">'+
   						'<div class="flavorBorder"></div>'+
   						'<span class=" flavorText"></span>'+
   						'<div class="flavorBorder"></div>'+
   						'</div>'+
   					'</div>'+
-            '<div class="author hero monster pet timeout"></div>'+
+            '<div class="author hero monster arcadeSolo pet timeout"></div>'+
   				'</div>'+
   			'</div>'+
   		'</div>'+

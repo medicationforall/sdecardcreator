@@ -199,7 +199,7 @@
 	height:713px;
 }
 
-.card.loot .back .content, .card.treasure .back .content, .card.wonder .back .content, .card.command .back .content, .card.arcade .back .content{
+.card.loot .back .content, .card.treasure .back .content, .card.wonder .back .content, .card.command .back .content{
 	background:transparent;
 	height:auto;
 }
@@ -225,7 +225,7 @@
 	background-size: 100% 854px;
 }
 
-.card.monster .back .content{
+.card.monster .back .content, .card.arcadeSolo .back .content{
 	background:white url('image/border-back-silver.png') no-repeat 0px -113px;
 	background-size: 100% 854px;
 }
@@ -746,7 +746,7 @@ cursor:move;
 	background: radial-gradient(ellipse at center, #5bc6a4 1%,#429078 42%,#255246 93%);
 }
 
-.card.monster.purple , .card.arcade, .card.command{
+.card.monster.purple , .card.arcadeSolo, .card.arcadeGang, .card.command{
 	background: radial-gradient(ellipse at center, rgba(200,94,199,1) 3%,rgba(99,43,98,1) 100%);
 }
 
@@ -760,6 +760,14 @@ cursor:move;
 }
 
 .card.monster .back{
+	background-image:url('image/border-back-silver.png');
+}
+
+.card.arcadeSolo .front{
+	background-image:url('image/border-silver.png');
+}
+
+.card.arcadeSolo .back{
 	background-image:url('image/border-back-silver.png');
 }
 
@@ -781,7 +789,7 @@ cursor:move;
 	background-size: 100% 854px;
 }
 
-.card.monster .abilities{
+.card.monster .abilities, .card.arcadeSolo .abilities{
 	background:white url('image/border-silver.png') no-repeat 0px -550px;
 	background-size: 100% 854px;
 }
