@@ -22,7 +22,7 @@
  */
 function AbilityControl(){
   BaseControl.call(this);
-  this.template='<div class="hero monster pet loot treasure explore wonder command timeout abilitySection">'+
+  this.template='<div class="hero monster pet loot treasure explore wonder command timeout arcadeSolo abilitySection">'+
   	'<h2><a class="toggleDisplay" href="">Ability</a></h2>'+
     '<div class="controlContent hide">'+
     '<a href="" class="helpButton" title="Ability Help">'+

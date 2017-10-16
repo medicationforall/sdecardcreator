@@ -22,7 +22,7 @@
  */
 function StatsControl(){
   BaseControl.call(this);
-  this.template='<div class="hero monster pet stats">'+
+  this.template='<div class="hero monster pet arcadeSolo stats">'+
     '<h2><a class="toggleDisplay" href="">Stats</a></h2>'+
     '<div class="controlContent hide">'+
     '<a href="" class="helpButton" title="Stats Help">'+
@@ -53,11 +53,12 @@ function StatsControl(){
       '</div>'+
     '</div>'+
 
-    '<div class="hero monster pet">STR <input name="STR" value="1sw 3b" /></div>'+
-    '<div class="hero monster pet">ARM <input name="ARM" value="2b 1r sh" /></div>'+
+    '<div class="hero monster pet arcadeSolo">STR <input name="STR" value="1sw 3b" /></div>'+
+    '<div class="hero monster pet arcadeSolo">ARM <input name="ARM" value="2b 1r sh" /></div>'+
+    '<div class="arcadeSolo">RNG <input name="RNG" value="6rg"/></div>'+
     '<div class="hero monster">WILL <input name="WILL" value="3b" /></div>'+
     '<div class="hero monster">DEX <input name="DEX" value="3b" /></div>'+
-    '<div class="hero monster displayInline">Wounds <input class="number" type="number" name="wounds" value="5" min="-9" max="99" /></div>'+
+    '<div class="hero monster arcadeSolo displayInline">Wounds <input class="number" type="number" name="wounds" value="5" min="-9" max="99" /></div>'+
     '<div class="monster displayInline">Skull Points <input class="number" type="number" name="skulls" value="1" min="-9" max="99" /></div>'+
     '<div class="hero displayInline">Potions <input class="number" type="number" name="potions" value="1" min="-9" max="99" /></div>'+
   '</div>'+

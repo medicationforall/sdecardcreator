@@ -22,10 +22,10 @@
  */
 function ImageControl(){
   BaseControl.call(this);
-  this.template='<div class="hero monster pet treasure wonder loot explore character command timeout">'+
+  this.template='<div class="hero monster pet treasure wonder loot explore character command timeout arcadeSolo">'+
     '<h2><a class="toggleDisplay" href="">Image</a></h2>'+
     '<div class="controlContent hide">'+
-    '<div class="hero monster pet">Background '+
+    '<div class="hero monster pet arcadeSolo">Background '+
       '<select name="background">'+
         '<option value="pic1685577_md.jpg">Fae Wood</option>'+
         '<option value="arcadian_dunes_1.png">Arcadian Dunes 1</option>'+
@@ -97,7 +97,7 @@ function ImageControl(){
 
     '<div>'+
       'Avatar'+
-      '<div class="hero monster pet loot treasure wonder explore command timeout">'+
+      '<div class="hero monster pet loot treasure wonder explore command timeout arcadeSolo">'+
       '<input type="radio" name="imageSource" value="default" checked="checked">Default'+
       '</div>'+
       '<div class="explore">'+

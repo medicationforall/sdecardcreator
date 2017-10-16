@@ -28,7 +28,7 @@ function HeaderControl(activeClass){
   	'<div class="hero monster pet treasure wonder loot explore command arcadeSolo timeout">*Title <input name="title" required maxlength="30" /></div>'+
   	'<div class="hero monster pet arcadeSolo">Sub-Title <input name="subTitle" maxlength="40" /></div>'+
 
-  	'<div class="hero monster pet">'+
+  	'<div class="hero monster pet arcadeSolo">'+
   		'Move <input class="number" type="number" name="move" value="6" min="-9" max="99" />'+
   		'Actions <input class="number" type="number" name="actions" value="3" min="-9" max="99"  />'+
   	'</div>'+

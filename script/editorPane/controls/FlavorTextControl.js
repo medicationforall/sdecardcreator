@@ -22,7 +22,7 @@
  */
 function FlavorTextControl(){
   BaseControl.call(this);
-  this.template='<div class="hero monster loot treasure wonder explore flavorText">'+
+  this.template='<div class="hero monster loot treasure wonder explore arcadeSolo flavorText">'+
     '<h2><a class="toggleDisplay" href="">Flavor Text</a></h2>'+
     '<div class="controlContent hide">'+
     '<textarea name="flavorText" /></textarea>'+
@@ -36,7 +36,7 @@ function FlavorTextControl(){
     HasToggleDisplay.call(this);
     HasFlavorTextControl.call(this);
   };
-  
+
 
   /**
    * Sync flavor text from selected card.
