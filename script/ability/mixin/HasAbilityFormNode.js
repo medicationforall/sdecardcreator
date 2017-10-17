@@ -37,6 +37,11 @@ function HasAbilityFormNode(){
     '<option value="supportPotion">Support Potion</option>'+
     '<option value="emergencyPotion">Emergency Potion</option>'+
     '<option value="special">Special</option>'+
+    '<option class="arcade" disabled>───Arcade───</option>'+
+    '<option class="arcade" value="attack signature">Signature Attack</option>'+
+    '<option class="arcade" value="support signature">Signature Support</option>'+
+    '<option class="arcade" value="attack overcharge">Overcharge Attack</option>'+
+    '<option class="arcade" value="support overcharge">Overcharge Support</option>'+
     '<option disabled>──────────</option>'+
     '<option value="definitionOnly">Definition</option>'+
     '<option value="nameOnly">Name</option>'+

@@ -73,7 +73,7 @@ function Ability(){
   this._resetCostType=function(){
     this.getCardAbilityNodes().find('.name, .colon, .definition').css('display','');
     this.formNode.find('input[name="name"],input[name="cost"], textarea[name="definition"]').parent().css('display','');
-    this.getCardAbilityNodes().find('.cost').removeClass('attack support emergencyPotion supportPotion offensePotion special definitionOnly description nameOnly');
+    this.getCardAbilityNodes().find('.cost').removeClass('attack support signature emergencyPotion supportPotion offensePotion special definitionOnly description nameOnly');
   };
 
 
@@ -190,7 +190,7 @@ function Ability(){
       if(data.costType==='description'){
         data.costType='definitionOnly';
       }
-      
+
       this.setCostType(data.costType);
     }
 

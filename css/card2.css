@@ -819,9 +819,19 @@ cursor:move;
 	background-size:45px 37px;
 }
 
+.card .ability .cost.attack.signature{
+	background: url("image/buttons/signature_action_cropped.png") no-repeat top center,url("image/buttons/attackButton.png") no-repeat;
+	background-size:27px 33px, 45px 37px;
+}
+
 .card .ability .cost.support{
 	background: url("image/buttons/abilityButton.png") no-repeat;
 	background-size:45px 37px;
+}
+
+.card .ability .cost.support.signature{
+	background: url("image/buttons/signature_action_cropped.png") no-repeat top center,url("image/buttons/abilityButton.png") no-repeat;
+	background-size:27px 33px, 45px 37px;
 }
 
 .card .ability .cost.emergencyPotion{
