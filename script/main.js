@@ -38,7 +38,7 @@ $(document).ready(function(){
 
   //Initialize mainMenu
   var promises = [];
-  promises.push($.getJSON('https://sde.medicationforall.com/keywordlist.php?json=true'));
+  promises.push($.getJSON('./json/sde_keywords.json'));
 
   //resolve the templates
   $.when.apply($, promises).done(function(keywords){
