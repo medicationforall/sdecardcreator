@@ -163,7 +163,7 @@
     "errata": []
   },
   "Blessed Strike": {
-    "description": "A model with Blessed Strike gains +1W to all offense rolls it makes for each spent Princess Coin on its card.",
+    "description": "A model with Blessed Strike gains +1st to all offense rolls it makes for each spent Princess Coin on its card.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
@@ -237,7 +237,7 @@
     "errata": []
   },
   "Brutality Aura": {
-    "description": "All models, friendly or enemy, within 2 squares gain +1W STR.",
+    "description": "All models, friendly or enemy, within 2 squares gain +1st STR.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
@@ -1286,7 +1286,7 @@
         "sourceDescription": "kickstarter update 57"
       },
       {
-        "description": "A model with Pile-On gains +1w STR if its target is suffering knockdown.",
+        "description": "A model with Pile-On gains +1st STR if its target is suffering knockdown.",
         "version": 1.5,
         "source": "https://www.kickstarter.com/projects/1257458293/super-dungeon-explore-forgotten-king/posts/998856",
         "sourceDescription": "Kickstarter update 61"
@@ -2021,7 +2021,7 @@
     "errata": []
   },
   "Trophies": {
-    "description": "A model with Trophies gains +1W ARM for each Ghostflame in play. Once per turn, if there are four or more Ghostflames adjacent to a model with Trophies, the model may immediately equip one Relic Item.",
+    "description": "A model with Trophies gains +1st ARM for each Ghostflame in play. Once per turn, if there are four or more Ghostflames adjacent to a model with Trophies, the model may immediately equip one Relic Item.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
