@@ -163,7 +163,7 @@
     "errata": []
   },
   "Blessed Strike": {
-    "description": "A model with Blessed Strike gains +1st to all offense rolls it makes for each spent Princess Coin on its card.",
+    "description": "A model with Blessed Strike gains +1W to all offense rolls it makes for each spent Princess Coin on its card.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
@@ -237,7 +237,7 @@
     "errata": []
   },
   "Brutality Aura": {
-    "description": "All models, friendly or enemy, within 2 squares gain +1st STR.",
+    "description": "All models, friendly or enemy, within 2 squares gain +1W STR.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
@@ -386,12 +386,7 @@
     ]
   },
   "Crystal Heart": {
-    "description": "When a model with Crystal Heart enters play, place one crystal token on it's card. The model gains the abilities of the corresponding crystal until it is destroyed\n
-					Amethyst - Dark Radiance: All offense rolls and defense rolls made against a model with Dark Radiance reduce the result by 1.\n
-					Citrine - Predator: When an enemy model moves out of a square that is adjacent to a model with Predator, the model with Predator may immediately make a Melee Attack against that model.\n
-					Emerald - Charge: When a model with Charge uses a Lance, the model may be placed in any unoccupied square that was affected by the Lance for free.\n
-					Ruby - Fire, Fueled by Fire: A model with Fueled by Fire adds 1R to all offensive rolls for each model suffering fire.\n
-					Sapphire - Defender: Models without Defender that are adjacent to a friendly model with Defender cannot be targeted by offensive actions.",
+    "description": "When a model with Crystal Heart enters play, place one crystal token on it's card. The model gains the abilities of the corresponding crystal until it is destroyed.  Amethyst - Dark Radiance: All offense rolls and defense rolls made against a model with Dark Radiance reduce the result by 1.  Citrine - Predator: When an enemy model moves out of a square that is adjacent to a model with Predator, the model with Predator may immediately make a Melee Attack against that model.  Emerald - Charge: When a model with Charge uses a Lance, the model may be placed in any unoccupied square that was affected by the Lance for free.  Ruby - Fire, Fueled by Fire: A model with Fueled by Fire adds 1R to all offensive rolls for each model suffering fire.  Sapphire - Defender: Models without Defender that are adjacent to a friendly model with Defender cannot be targeted by offensive actions.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
