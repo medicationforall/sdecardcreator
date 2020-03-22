@@ -27,25 +27,25 @@
   },
   "All-Seeing": {
     "description": "This Pet’s Master gains Hookshot on its basic Magic attack if it has one, so long as it begins its activation within 2 squares of this Pet.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
   "Ambush": {
     "description": "When this model spawns or enters play using a Princess Coin, it may be placed on any open square in the dungeon.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
   "Angry Walrus": {
     "description": "At the end of the Consul's power-up phase, the Consul rolls 1B. If no stars are rolled, nothing happens.  If any stars are rolled, the Consul may move the model with Angry Walrus up to one square for each star rolled and then make a basic melee offensive action against any other member of the party in range.  Arcade: the Hero's controller rolls and must move towards and attack the closest other friendly model if stars are rolled.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
   "Animate Soul": {
     "description": "Place a crystal token on target Hero. When the Hero is destroyed, if the model that placed the crystal is not in play, remove the crystal token to spawn the model that placed the crystal adjacent to the Hero. The model spawned in this way suffers three wounds after being placed.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -89,7 +89,7 @@
   },
   "Autosave": {
     "description": "One Use Only. When this model or a friendly model within 2 squares would be destroyed, immediately roll 1G. Remove one wound token for each star rolled. If no stars are rolled, the model is destroyed as normal.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -158,13 +158,13 @@
   },
   "Black Ice": {
     "description": "Enemy models that end an activation within 2 squares of this model are moved two squares directly away from the model with Black Ice.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
   "Blessed Strike": {
     "description": "A model with Blessed Strike gains +1W to all offense rolls it makes for each spent Princess Coin on its card.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -189,13 +189,13 @@
   },
   "Bob-omb!": {
     "description": "If another Hero activates after this Hero, during the same turn, that Hero gains +1R to the first offense roll it makes that activation.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
   "Bone Collector": {
     "description": "A model with Bone Collector may use Hearts it rolls during successful offensive actions on Pets as well as Heroes.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -220,7 +220,7 @@
   },
   "Bound": {
     "description": "When a monster with Bound is destroyed, a SUPER on the same tile may instead choose to suffer one wound and prevent the monster from being destroyed.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -232,25 +232,25 @@
   },
   "Brutal Strike": {
     "description": "When this model wins an offense roll, add three stars to its total.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
   "Brutality Aura": {
     "description": "All models, friendly or enemy, within 2 squares gain +1W STR.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
   "Bulldozer": {
     "description": "A model with Bulldozer may move through enemy models, and treats difficult terrain and structure squares as open squares. All non-blessing tile effects in those squares are ignored.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
   "Bully": {
     "description": "A monster with Bully always targets the Hero with the least wrath with its commands.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -294,7 +294,7 @@
   },
   "Challenge": {
     "description": "When a boss with Challenge spawns, the Party must choose one Hero as their Champion. No model except the Champion may deal damage to the boss, though the boss may suffer other effects (such as Push or status effects) caused by other models. The boss gains +1R to all offensive actions it takes that target the Champion. If the Champion is destroyed, the Party must select another Hero to become the Champion.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -344,7 +344,7 @@
   },
   "Cold Fury": {
     "description": "After any Waystone Creep suffers damage during the Hero turn, a model with Cold Fury may immediately take the Stinging Wind action.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -362,13 +362,13 @@
   },
   "Corpse Stench": {
     "description": "When a model with Corpse Stench suffers damage, all adjacent enemy models suffer Slow.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
   "Counterstrike": {
     "description": "When a model with Counterstrike suffers a wound, it may immediately make a single Melee Attack targeting the model which inflicted the wound, so long as the model is within range.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -387,7 +387,7 @@
   },
   "Crystal Heart": {
     "description": "When a model with Crystal Heart enters play, place one crystal token on it's card. The model gains the abilities of the corresponding crystal until it is destroyed.  Amethyst - Dark Radiance: All offense rolls and defense rolls made against a model with Dark Radiance reduce the result by 1.  Citrine - Predator: When an enemy model moves out of a square that is adjacent to a model with Predator, the model with Predator may immediately make a Melee Attack against that model.  Emerald - Charge: When a model with Charge uses a Lance, the model may be placed in any unoccupied square that was affected by the Lance for free.  Ruby - Fire, Fueled by Fire: A model with Fueled by Fire adds 1R to all offensive rolls for each model suffering fire.  Sapphire - Defender: Models without Defender that are adjacent to a friendly model with Defender cannot be targeted by offensive actions.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -399,7 +399,7 @@
   },
   "Dance Party": {
     "description": "If another Hero activates after the equipped hero during the same turn, that hero gains:  +2 Movement Points  +1 Action Point  +1R DEX  +1R WILL  during that activation.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -411,7 +411,7 @@
   },
   "Dark Defender": {
     "description": "The dungeon boss may not be targeted with offensive actions while a model with Dark Defender is in play.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -423,31 +423,31 @@
   },
   "Dark Reflection": {
     "description": "Boss sightings always affect the tile this Hero is on, in addition to any tiles listed by the Mighty Monster Chart.  Arcade: During Consul Power-Up, look at the top card of the challenge deck. If it has a Trap effect, resolve it immediately, then discard it with no further effect.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
   "Deadly Defense": {
     "description": "This model may score critical successes on defense rolls. If it does, the attacker suffers a wound.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
   "Death Lord": {
     "description": "All Undead models within four squares of a model with Death Lord gain +1B to all offense rolls.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
   "Defender": {
     "description": "Models without Defender that are adjacent to a friendly model with Defender cannot be targeted by offensive actions.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
   "Despair": {
     "description": "Enemy models within two squares of a model with Despair reduce the result of all defense rolls by 1 star.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -472,7 +472,7 @@
   },
   "Divine Guidance": {
     "description": "When a challenge card with a Trap effect is drawn, this model may discard this treasure to prevent the Trap effect from happening.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -496,13 +496,13 @@
   },
   "Dread": {
     "description": "A model with Dread gains +1st to all offense rolls if it is currently benefitting from Stealth.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
   "Elemental Affinity": {
     "description": "For each model with Elemental Affinity choose one element from the Elemental Affinity card at the beginning of the game. That model gains the chosen element's abilities. If the model is a spawning point, all models spawned from that point gain the chosen elements abilities. Paired spawning points must choose the same element.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -514,13 +514,13 @@
   },
   "Extra Sparkly": {
     "description": "When a model with Extra Sparkly ends its activation, it may gain two wrath.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
   "Favors of the Goddess": {
     "description": "Princess Coins on this model's card grant it +1R to defensive rolls instead of +1st",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -552,7 +552,7 @@
   },
   "Fertilizer": {
     "description": "This model immediately shapeshifts back into its original form if a friendly model in an adjacent square takes the Interact action and discards two loot from the Backpack.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -577,7 +577,7 @@
   },
   "Fixable": {
     "description": "When a model successfully use the Bandage basic action on a model with Fixable, remove two wound tokens instead of one.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -596,13 +596,13 @@
   },
   "Flaming": {
     "description": "When a model with Flaming ends its activation, all adjacent enemies suffer Fire.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
   "Flammable": {
     "description": "When a model with Flammable is targeted by an action that causes Fire, the Flammable model suffers Fire even if it wins the defense roll.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -634,13 +634,13 @@
   },
   "Forge Master": {
     "description": "This dungeon boss may equip up to two Relic Items per slot.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
   "Fortify": {
     "description": "A model with Fortify gains +1B ARM for each enemy adjacent to them, to a maximum of +3B ARM.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -652,7 +652,7 @@
   },
   "Frenzy": {
     "description": "A Model with Frenzy gains +1R on offensive rolls against any model that is suffering one or more wounds.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -664,19 +664,19 @@
   },
   "Fueled by Fire": {
     "description": "A model with Fueled by Fire adds 1R to all offensive rolls for each model suffering Fire.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
   "Fungal Fury": {
     "description": "Enemy models that end a Push within three squares and LoS of one or more models with Fungal Fury suffer one wound.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
   "Fury": {
     "description": "A model with Fury gains 1B to all offense rolls for each wound it is currently suffering.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -688,13 +688,13 @@
   },
   "Ghost Charge": {
     "description": "When this treasure is equipped place 4R on it. Whenever this model makes a roll, it may remove any number of dice from this treasure and add them to the roll. Once the dice have been used they are removed from this card permanently.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
   "Ghostmancer": {
     "description": "Whenever a model with Ghostmancer inflicts a wound, place a Ghost model adjacent to the wounded model.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -738,13 +738,13 @@
   },
   "Grave Spawn": {
     "description": "This Pet may not be brought into play with the Summon Pet action. Instead, if this Pet was selected by a Hero, the Hero may suffer one damage to spawn one Pet Ghost adjacent to any other Hero before that Hero is destroyed.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
   "Grave Visions": {
     "description": "When this model is destroyed, place three red dice on this treasure. This model may discard 1R from the Crimson Watcher when it makes any roll to add 1R to the roll.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -756,7 +756,7 @@
   },
   "Guardian": {
     "description": "Adjacent Heroes double their Defense bonuses from Princess Coins.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -774,7 +774,7 @@
   },
   "Have a Heart": {
     "description": "A model with Have a Heart benefits from hearts it rolls on failed actions, as well as successful actions.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -806,13 +806,13 @@
   },
   "Heart Attack": {
     "description": "When making an offense roll, a model with Heart Attack counts any hearts rolled as two hearts.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
   "Heroic Mob": {
     "description": "Friendly models within two squares and Line of Sight gain Mob.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -831,7 +831,7 @@
   },
   "Hidden": {
     "description": "Models Spawned from a spawning point with Hidden may be placed anywhere on the tile, instead of only within 2 squares.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -894,19 +894,19 @@
   },
   "Hunger": {
     "description": "When a model with Hunger rolls a Heart, no other model may benefir from its effect unless the model with Hunger is not suffering any wounds.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
   "Hunter": {
     "description": "A model with Hunter may reroll a single die when making offensive actions which target spider, gnoll, or orc models.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
   "I Know Nothing": {
     "description": "A model with this ability may not use the Open Chest action.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -918,7 +918,7 @@
   },
   "Illusionary Double": {
     "description": "When a model with Illusionary Double suffers a wound, place one crystal token on its card. It may never have more than one crystal token. When the model is affected by an action that requires a defense roll, it may remove one crystal token to automatically win the roll.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -949,19 +949,19 @@
   },
   "Impale": {
     "description": "When a model with Impale achieves a critical success, spawn a Nether Imp within three squares of it.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
   "Improved Critical": {
     "description": "This model's Critical hits inflict an additional wound.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
   "Insight": {
     "description": "When a model with Insight is targeted by an offensive action, it may force the attacker to reroll one die of its choice from the offense roll, before making a defense roll.  Arcade: A monster targeting a model with Insight reduces its STR by 1.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -993,13 +993,13 @@
   },
   "Kindling": {
     "description": "A model adjacent to a model with Kindling cannot remove Fire status effect tokens at the end of its activation.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
   "Kitty Claws": {
     "description": "Beatrix immediately makes one Melee Attack against any model that moves into a square adjacent to Beatrix During it’s activation.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -1055,7 +1055,7 @@
   },
   "Leadership": {
     "description": "If another Hero activates after this Hero, during the same turn, that Hero gains +1 action during the activation. This bonus action may only be used on support actions.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -1117,13 +1117,13 @@
   },
   "Mamma Knows": {
     "description": "Mother Noctua gains +1G STR while targeting this model with offensive actions.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
   "Mamma's Mad": {
     "description": "After a model with Mamma's Mad is destroyed, all friendly dungeon bosses in play immediately take the first unique action listed on their card.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -1142,19 +1142,19 @@
   },
   "Mastery": {
     "description": "Once per activation, this model may use a unique action listed on the card of an adjacent friendly model.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
   "Meager": {
     "description": "Heroes do not benefit from rolls of hearts or potions when attacking a model with Meager.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
   "Mighty": {
     "description": "A model with Mighty double the bonuses granted by the chart.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -1192,31 +1192,31 @@
   },
   "My Pet": {
     "description": "A model with My Pet may not be targeted with offensive actions while Daemonus is in play.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
   "Never-Lost": {
     "description": "Boss Sightings do not affect friendly Heroes within three squares and Line o Sight of this model. (Arcade: after drawing a Challenge Card but before resolving its effects, this Pet’s Master may discard a potion to discard the Challenge Card and draw a new one.)",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
   "New Skull": {
     "description": "When a model with New Skull achieves a critical hit during an offensive action, spawn a Ghostflame adjacent to any Spawning Point if there are fewer than six Ghostflames in play.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
   "Nip the Heels": {
     "description": "Other friendly monsters within three squares and LoS gain Ravage.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
   "Numerous": {
     "description": "A Hero may bring a Pet with Numerous into play even if a Pet of the same name is already in play. All Pets with the same name and Numerous activate consecutively.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -1228,13 +1228,13 @@
   },
   "On The Move": {
     "description": "If this model began its activation completely blocking a doorway, it may not end its activation completely blocking a doorway.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
   "Oracle": {
     "description": "When this model wins an offense roll, if it rolled no potions or hearts, it may choose to count as having rolled one potion or one heart.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -1246,25 +1246,25 @@
   },
   "Pack Strength": {
     "description": "When another friendly monster within three squares and LoS Heals one or more wounds, a model with Pack Strength may Heal 1.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
   "Pain is Scary": {
     "description": "This Pet's master gains Brutal Strike on its basic Missile Attack if it has one, and if it began its activation within two squares of this Pet.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
   "Parry": {
     "description": "After a model with Parry suffers damage due to a critical success, it may immediately make a basic melee attack against the model that caused the critical, if able.  Arcade: After a model with Parry suffers damage, it may discard one wrath token.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
   "Past Life": {
     "description": "All monsters within 2 squares of a model with Past Life gain +1st STR.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -1332,7 +1332,7 @@
   },
   "POP": {
     "description": "When a model with POP is destroyed, all adjacent enemies suffer one damage, and all friendly Creeps in Line of Sight may immediately move four squares.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -1351,7 +1351,7 @@
   },
   "Potion Stash X": {
     "description": "A monster with Potion Stash may gain potion tokens when rolled, in the same manner as Heroes, up to the number indicated by X. The monster may spend potion tokens on abilities indicated on its card.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -1388,7 +1388,7 @@
   },
   "Proficient": {
     "description": "Models with Proficient may take the basic Interact or Open Chest action without spending action points, once per turn.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -1432,7 +1432,7 @@
   },
   "Rabid": {
     "description": "When this model activates roll 1R and consult the following:  No stars: this model moves as close as it can to, and attacks, the closest friendly model. In the case two models are equally close, this model’s controller chooses.  One star: this model may activate normally.  Two or more stars: this model may activate normally and gains +1R STR.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -1464,7 +1464,7 @@
   },
   "Ravage": {
     "description": "When a model with Ravage inflicts damage on a single target with an offensive action, it may choose to suffer one damage to inflict an additional damage to the target.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -1489,7 +1489,7 @@
   },
   "Refuge": {
     "description": "Models with Refuge may not suffer wounds while Waystone Creeps are in play (they may still suffer other effects such as Push and Status Effects).",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -1508,13 +1508,13 @@
   },
   "Resolve": {
     "description": "Models with Resolve are immune to Control Effects.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
   "Resolve Aura": {
     "description": "Monsters with Sapphire Affinity that are within two squares of a model with Resolve Aura are immune to control effects.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -1526,7 +1526,7 @@
   },
   "Resurrection": {
     "description": "When the party spends a Princess Coin, draw two Loot.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -1544,13 +1544,13 @@
   },
   "Run Down": {
     "description": "Once per activation, a model with Run Down may move onto the same square as an enemy model. The enemy model suffers Compel 2 and one wound.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
   "Saboteur": {
     "description": "Models with Saboteur may achieve Critical Successes against Spawning Points.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -1568,7 +1568,7 @@
   },
   "Secluded": {
     "description": "When this Pet is summoned using the Summon Pet action, it may be placed on any open space in the dungeon.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -1580,7 +1580,7 @@
   },
   "Selfless": {
     "description": "Once per turn, when an adjacent friendly model suffers a wound, this model may suffer it, instead.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -1592,7 +1592,7 @@
   },
   "Shallow Grave": {
     "description": "Ghosts may be spawned from Fresh Grave Tile Effects instead of Rattlebones.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -1604,13 +1604,13 @@
   },
   "Share a Sip!": {
     "description": "If another hero activates after this hero during the same turn, that hero gains +3 Movement Points during that activation.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
   "Shatter": {
     "description": "A model with Shatter gains +1B STR if its target is suffering Ice.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -1622,7 +1622,7 @@
   },
   "Sidekick": {
     "description": "While this Pet’s Master is within 8 squares, this Pet may use the basic Interact action to target tokens as if it were a Hero. When a token would be placed on this Pet’s card due to an Interact, place it on this Pet’s Master’s card instead.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -1641,13 +1641,13 @@
   },
   "Skittish": {
     "description": "When a monster with Skittish receives a Move commands, it moves away from the closest Hero as far as it is able.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
   "Slayer": {
     "description": "A model with Slayer may reroll a single die when making offensive actions which target dragon, kobold, or drake models.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -1698,7 +1698,7 @@
   },
   "Smokebomb": {
     "description": "When the dungeon boss spawns, spawn all monsters with Smokebomb that were previously destroyed this game, before resolving the Boss Fight card; these monsters may spawn on any open square in the dungeon.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -1736,13 +1736,13 @@
   },
   "Soul Echo": {
     "description": "The first time this Hero succeeds with an offensive action against a SUPER monster, it must discard this treasure and add one Princess Coin to the backpack.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
   "Spawn Kill": {
     "description": "When an enemy model spawns within range, this model may immediately make a melee attack against it.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -1754,7 +1754,7 @@
   },
   "Splinters": {
     "description": "When a model with Splinters achieves a Critical Success, it suffers one damage.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -1779,7 +1779,7 @@
   },
   "Spooky Spooky!": {
     "description": "At the end of this model’s activation, it may cause target adjacent Hero to Push: 3.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -1798,7 +1798,7 @@
   },
   "Squirelly": {
     "description": "A model with Squirelly may reroll one of their dice when making a defense roll.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -1823,7 +1823,7 @@
   },
   "Steal": {
     "description": "When a model with Steal inflicts a wound, it may discard one random card from the party’s backpack.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -1854,7 +1854,7 @@
   },
   "Strike": {
     "description": "This Pet’s Master gains Pounce on its basic Melee attack if it has one and it began its activation within 2 squares of this Pet.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -1866,7 +1866,7 @@
   },
   "Student": {
     "description": "Once per game, a model with Student may use a single unique action listed on the card of any other Hero in the dungeon.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -1891,7 +1891,7 @@
   },
   "Super Annoying": {
     "description": "Heroes that begin their activation adjacent to this model gain 1 additional Movement during the activation.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -1929,7 +1929,7 @@
   },
   "Tag Team": {
     "description": "This Pet may activate immediately before its Master instead of immediately after it. After this Pet’s Master misses with a basic attack, this Pet may make a basic attack against the same target, if able.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -1961,7 +1961,7 @@
   },
   "The Journey": {
     "description": "Dungeon bosses whose entire base is on the same tile as one or more models with The Journey gain one of the following, depending on which tile this model is on:  First Tile: Massive Damage  Second Tile: +2R DEX  Third Tile: +2R WILL",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -1979,7 +1979,7 @@
   },
   "Toss Me": {
     "description": "If this model is targeted by an action with Throw, after resolving the results of the action, destroy this model. Volatile is triggered by Toss Me.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -1998,31 +1998,31 @@
   },
   "Toxic Blood": {
     "description": "A model that inflicts a wound against a model with Toxic Blood suffers Poison.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
   "Treeform": {
     "description": "At the start of this model’s activation it may choose to forego all actions and movement to Heal 2. If it does, until the start of its next activation, it gains +1R ARM and all friendly models within Aura 2 gain +1R STR.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
   "Tribute To Myself": {
     "description": "When this model wins a defensive roll, it may heal itself using hearts as if it were an offensive roll.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
   "Troopa Shield": {
     "description": "When a friendly model within 2 squares and Line of Sight is targeted with an attack, this model may suffer one damage. If it does, the friendly model gains 1G ARM for the duration of the attack.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
   "Trophies": {
     "description": "A model with Trophies gains +1W ARM for each Ghostflame in play. Once per turn, if there are four or more Ghostflames adjacent to a model with Trophies, the model may immediately equip one Relic Item.",
-    "version": 1?,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
