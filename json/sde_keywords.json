@@ -890,7 +890,7 @@
     "errata": [
       {
         "description": "A model suffering Hex discards the highest result rolled anytime it makes an offense roll.<br>
-		=(Arcade: A monster suffering Hex reduces its STR by 1st)",
+		(Arcade: A monster suffering Hex reduces its STR by 1st)",
         "version": 2,
         "source": "\r\n",
         "sourceDescription": "Forgotten King Updated keyword."
