@@ -575,7 +575,9 @@ cursor:move;
 	display:inline-block;
 	background: url('image/affinity/citrine.png') no-repeat;
 	width:42px;
-	height:70px;
+	height:60px;
+	position: relative;
+    top: 10px;
 }
 
 
@@ -589,35 +591,45 @@ cursor:move;
 	display:inline-block;
 	background: url('image/affinity/citrine-emerald.png') no-repeat;
 	width:42px;
-	height:70px;
+	height:60px;
+	position: relative;
+    top: 10px;
 }
 
 .card .affinity.citrine.ruby{
 	display:inline-block;
 	background: url('image/affinity/citrine-ruby.png') no-repeat;
 	width:42px;
-	height:70px;
+	height:60px;
+	position: relative;
+    top: 10px;
 }
 
 .card .affinity.citrine.sapphire{
 	display:inline-block;
 	background: url('image/affinity/citrine-sapphire.png') no-repeat;
 	width:42px;
-	height:70px;
+	height:60px;
+	position: relative;
+    top: 10px;
 }
 
 .card .affinity.citrine.amethyst{
 	display:inline-block;
 	background: url('image/affinity/citrine-amethyst.png') no-repeat;
 	width:42px;
-	height:70px;
+	height:60px;
+	position: relative;
+    top: 10px;
 }
 
 .card .affinity.all{
 	display:inline-block;
 	background: url('image/affinity/rainbow.png') no-repeat;
 	width:42px;
-	height:70px;
+	height:60px;
+	position: relative;
+    top: 10px;
 }
 
 /*EMERALD*/
@@ -625,7 +637,9 @@ cursor:move;
 	display:inline-block;
 	background: url('image/affinity/emerald.png') no-repeat;
 	width:42px;
-	height:70px;
+	height:60px;
+	position: relative;
+    top: 10px;
 }
 
 .card .back .affinity.emerald, .card .item .affinity.emerald{
@@ -638,7 +652,9 @@ cursor:move;
 	display:inline-block;
 	background: url('image/affinity/emerald-ruby.png') no-repeat;
 	width:42px;
-	height:70px;
+	height:60px;
+	position: relative;
+    top: 10px;
 }
 
 .card .affinity.emerald.sapphire{
@@ -652,7 +668,9 @@ cursor:move;
 	display:inline-block;
 	background: url('image/affinity/emerald-amethyst.png') no-repeat;
 	width:42px;
-	height:70px;
+	height:60px;
+	position: relative;
+    top: 10px;
 }
 
 
@@ -661,7 +679,9 @@ cursor:move;
 	display:inline-block;
 	background: url('image/affinity/ruby.png') no-repeat;
 	width:42px;
-	height:70px;
+	height:60px;
+	position: relative;
+    top: 10px;
 }
 
 .card .back .affinity.ruby, .card .item .affinity.ruby{
@@ -674,14 +694,18 @@ cursor:move;
 	display:inline-block;
 	background: url('image/affinity/ruby-sapphire.png') no-repeat;
 	width:42px;
-	height:70px;
+	height:60px;
+	position: relative;
+    top: 10px;
 }
 
 .card .affinity.ruby.amethyst{
 	display:inline-block;
 	background: url('image/affinity/ruby-amethyst.png') no-repeat;
 	width:42px;
-	height:70px;
+	height:60px;
+	position: relative;
+    top: 10px;
 }
 
 
@@ -690,7 +714,9 @@ cursor:move;
 	display:inline-block;
 	background: url('image/affinity/sapphire.png') no-repeat;
 	width:42px;
-	height:70px;
+	height:60px;
+	position: relative;
+    top: 10px;
 }
 
 
@@ -704,7 +730,9 @@ cursor:move;
 	display:inline-block;
 	background: url('image/affinity/amethyst-sapphire.png') no-repeat;
 	width:42px;
-	height:70px;
+	height:60px;
+	position: relative;
+    top: 10px;
 }
 
 /*Amethyst*/
@@ -712,7 +740,9 @@ cursor:move;
 	display:inline-block;
 	background: url('image/affinity/amethyst.png') no-repeat;
 	width:42px;
-	height:70px;
+	height:60px;
+	position: relative;
+    top: 10px;
 }
 
 .card .back .affinity.amethyst, .card .item .affinity.amethyst{
