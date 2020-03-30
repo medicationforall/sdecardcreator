@@ -277,7 +277,7 @@ function KeywordStore(keywords){
     var re = /\b(Sapphire|Emerald|Citrine|Ruby|Amethyst)\b/gi;
 
     description = description.replace(re,function(match){
-    return '<span class="affinity '+match.toLowerCase()+'" title="'+match+'"></span>';
+    return '<div class="affinity '+match.toLowerCase()+'" title="'+match+'"></div>';
     });
     return description;
   };
