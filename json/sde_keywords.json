@@ -410,22 +410,13 @@
     ]
   },
   "Crystal Heart": {
-    "description": "When a model with Crystal Heart enters play, place one crystal token on it's card. The model gains the abilities of the corresponding crystal until it is destroyed:<br>
-	Amethyst - Dark Radiance: All offense rolls and defense rolls made against a model with Dark Radiance reduce the result by 1.<br>
-	Citrine - Predator: When an enemy model moves out of a square that is adjacent to a model with Predator, the model with Predator may immediately make a Melee Attack against that model.<br>
-	Emerald - Charge: When a model with Charge uses a Lance, the model may be placed in any unoccupied square that was affected by the Lance for free.<br>
-	Ruby - Fire, Fueled by Fire: A model with Fueled by Fire adds 1R to all offensive rolls for each model suffering fire.<br>
-	Sapphire - Defender: Models without Defender that are adjacent to a friendly model with Defender cannot be targeted by offensive actions.",
+    "description": "When a model with Crystal Heart enters play, place one crystal token on it's card. The model gains the abilities of the corresponding crystal until it is destroyed:<br>Amethyst - Dark Radiance: All offense rolls and defense rolls made against a model with Dark Radiance reduce the result by 1.<br>Citrine - Predator: When an enemy model moves out of a square that is adjacent to a model with Predator, the model with Predator may immediately make a Melee Attack against that model.<br>Emerald - Charge: When a model with Charge uses a Lance, the model may be placed in any unoccupied square that was affected by the Lance for free.<br>Ruby - Fire, Fueled by Fire: A model with Fueled by Fire adds 1R to all offensive rolls for each model suffering fire.<br>Sapphire - Defender: Models without Defender that are adjacent to a friendly model with Defender cannot be targeted by offensive actions.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
   "Crystal Shaping": {
-    "description": "At the start of this model's activation it may discard one equipment card from the backpack in order to gain one of the following until the start of its next activation, depending on the equpment's slot:<br>
-	Citrine: +1ac<br>
-	Emerald:  +2mv<br>
-	Ruby:  +1r WILL<br>
-	Sapphire: +1r ARM.",
+    "description": "At the start of this model's activation it may discard one equipment card from the backpack in order to gain one of the following until the start of its next activation, depending on the equpment's slot:<br>Citrine: +1ac<br>Emerald:  +2mv<br>Ruby:  +1r WILL<br>Sapphire: +1r ARM.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
@@ -461,8 +452,7 @@
     "errata": []
   },
   "Dark Reflection": {
-    "description": "Boss sightings always affect the tile this Hero is on, in addition to any tiles listed by the Mighty Monster Chart.<br>
-	(Arcade: During Consul Power-Up, look at the top card of the challenge deck. If it has a Trap effect, resolve it immediately, then discard it with no further effect.)",
+    "description": "Boss sightings always affect the tile this Hero is on, in addition to any tiles listed by the Mighty Monster Chart.<br>(Arcade: During Consul Power-Up, look at the top card of the challenge deck. If it has a Trap effect, resolve it immediately, then discard it with no further effect.)",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
@@ -503,8 +493,7 @@
     "hasErrata": "true",
     "errata": [
       {
-        "description": "Each square of difficult terrain a model enters costs two movement points. If a model does not have enough movement points to move into a square with difficult terrain, it may not do so.<br>
-		If any part of a large based model enters a square of difficult terrain, the move costs two movement points. Do not count squares a large model already occupies.",
+        "description": "Each square of difficult terrain a model enters costs two movement points. If a model does not have enough movement points to move into a square with difficult terrain, it may not do so.<br>If any part of a large based model enters a square of difficult terrain, the move costs two movement points. Do not count squares a large model already occupies.",
         "version": 2,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
@@ -710,8 +699,7 @@
     "errata": []
   },
   "Free Coin": {
-    "description": "when a Hero with Free Coin suffers a wound that removes it from play, it is immediately returned to play as though a Princess Coin was spent.<br>
-	(No Princesss Coin is used to activate Free Coin and no Princess CCoin is placed on its card.)",
+    "description": "when a Hero with Free Coin suffers a wound that removes it from play, it is immediately returned to play as though a Princess Coin was spent.<br>(No Princesss Coin is used to activate Free Coin and no Princess CCoin is placed on its card.)",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
@@ -815,8 +803,7 @@
     "errata": []
   },
   "Gross": {
-    "description": "When Pudge is destroyed, before removing the model resolve the following offensive action:<br>
-	0ac: sw, Wave 1, +1r STR",
+    "description": "When Pudge is destroyed, before removing the model resolve the following offensive action:<br>0ac: sw, Wave 1, +1r STR",
     "version": 2,
     "hasErrata": "false",
     "errata": []
@@ -889,8 +876,7 @@
     "hasErrata": "true",
     "errata": [
       {
-        "description": "A model suffering Hex discards the highest result rolled anytime it makes an offense roll.<br>
-		(Arcade: A monster suffering Hex reduces its STR by 1st)",
+        "description": "A model suffering Hex discards the highest result rolled anytime it makes an offense roll.<br>(Arcade: A monster suffering Hex reduces its STR by 1st)",
         "version": 2,
         "source": "\r\n",
         "sourceDescription": "Forgotten King Updated keyword."
@@ -1028,8 +1014,7 @@
     "errata": []
   },
   "Insight": {
-    "description": "When a model with Insight is targeted by an offensive action, it may force the attacker to reroll one die of its choice from the offense roll, before making a defense roll.<br>
-	(Arcade: A monster targeting a model with Insight reduces its STR by 1.)",
+    "description": "When a model with Insight is targeted by an offensive action, it may force the attacker to reroll one die of its choice from the offense roll, before making a defense roll.<br>(Arcade: A monster targeting a model with Insight reduces its STR by 1.)",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
@@ -1096,8 +1081,7 @@
         "sourceDescription": "kickstarter update 56"
       },
       {
-        "description": "A model suffering Knockdown may not move or perform any other action until it spends 1 action point or all of its movement points to remove the Knockdown token.<br>
-		(Arcade: A monster suffering Knockdown may not perform commands until the next Move command. Instead of moving it must remove the Knockdown token.)",
+        "description": "A model suffering Knockdown may not move or perform any other action until it spends 1 action point or all of its movement points to remove the Knockdown token.<br>(Arcade: A monster suffering Knockdown may not perform commands until the next Move command. Instead of moving it must remove the Knockdown token.)",
         "version": 2,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
@@ -1297,8 +1281,7 @@
     "errata": []
   },
   "Never-Lost": {
-    "description": "Boss Sightings do not affect friendly Heroes within three squares and Line o Sight of this model.<br>
-	(Arcade: after drawing a Challenge Card but before resolving its effects, this Pet’s Master may discard a potion to discard the Challenge Card and draw a new one.)",
+    "description": "Boss Sightings do not affect friendly Heroes within three squares and Line o Sight of this model.<br>(Arcade: after drawing a Challenge Card but before resolving its effects, this Pet’s Master may discard a potion to discard the Challenge Card and draw a new one.)",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
@@ -1364,8 +1347,7 @@
     "errata": []
   },
   "Parry": {
-    "description": "After a model with Parry suffers damage due to a critical success, it may immediately make a basic melee attack against the model that caused the critical, if able.<br>
-	(Arcade: After a model with Parry suffers damage, it may discard one wrath token.)",
+    "description": "After a model with Parry suffers damage due to a critical success, it may immediately make a basic melee attack against the model that caused the critical, if able.<br>(Arcade: After a model with Parry suffers damage, it may discard one wrath token.)",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
@@ -1632,8 +1614,7 @@
     ]
   },
   "Refuge": {
-    "description": "Models with Refuge may not suffer wounds while Waystone Creeps are in play.<br>
-	(They may still suffer other effects such as Push and Status Effects.)",
+    "description": "Models with Refuge may not suffer wounds while Waystone Creeps are in play.<br>(They may still suffer other effects such as Push and Status Effects.)",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
@@ -2123,8 +2104,7 @@
     ]
   },
   "Territorial": {
-    "description": "A model with Territorial gains +1st to offense rolls while on the first tile, +2st while on the second, +3st while on the third, and +4st while on the fourth.<br>
-	(Area: A model with Territorial gains +2st to offensive rolls while on the same tile as a friendly spawning point.)",
+    "description": "A model with Territorial gains +1st to offense rolls while on the first tile, +2st while on the second, +3st while on the third, and +4st while on the fourth.<br>(Area: A model with Territorial gains +2st to offensive rolls while on the same tile as a friendly spawning point.)",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
@@ -2136,10 +2116,7 @@
     "errata": []
   },
   "The Journey": {
-    "description": "Dungeon bosses whose entire base is on the same tile as one or more models with The Journey gain one of the following, depending on which tile this model is on:<br>
-	First Tile: Massive Damage<br>
-	Second Tile: +2R DEX<br>
-	Third Tile: +2R WILL",
+    "description": "Dungeon bosses whose entire base is on the same tile as one or more models with The Journey gain one of the following, depending on which tile this model is on:<br>First Tile: Massive Damage<br>Second Tile: +2R DEX<br>Third Tile: +2R WILL",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
