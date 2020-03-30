@@ -1194,7 +1194,7 @@
     "errata": []
   },
   "Mark": {
-    "description": "Place a crystal token on the target.  Friendly models attacking the target gain +1b to their offense rolls.  Only one friendly Mark token may be in pay at one time and it may not be removed until the targt is destroyed or Mark is used again.",
+    "description": "Place a crystal token on the target.  Friendly models attacking the target gain +1b to their offense rolls.  Only one friendly Mark token may be in play at one time and it may not be removed until the target is destroyed or Mark is used again.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
@@ -2258,7 +2258,7 @@
     "errata": []
   },
   "Yip's Wrath": {
-    "description": "During its activation, a model with Yip's Wrath may make the following offensive action a single time for free:  ac: 4mi, knockdown",
+    "description": "During its activation, a model with Yip's Wrath may make the following offensive action a single time for free:  0ac: 4mi, knockdown",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
