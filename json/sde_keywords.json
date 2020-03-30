@@ -49,6 +49,18 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Another Round": {
+    "description": "During upkeep roll 1b.  For every start rolled Deodric gains one potion.",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Arc": {
+    "description": "after resolving an action with Arc, choose another model within two squares of the last model targeted and which has not already been targeted.  Resolve the action again, rolling one less dice of the player's choice against the new target.  Continue choosing new targets in this manner until Arc fails to inflict a wound, no dice remain, or there is no new target in range.",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Area": {
     "description": "When an area is drawn place the appropriate template anywhere within the tile.\r\n\r\nTrap templates may not be placed across walls, structures, or chasms. They may be placed in the same square as a friendly or enemy models.",
     "version": 2,
@@ -67,6 +79,12 @@
         "sourceDescription": "Forgotten King"
       }
     ]
+  },
+  "Artillery": {
+    "description": "An action with Artillery may target any square within range, even if no model occupies the square.",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
   },
   "Augment": {
     "description": "Abilities with Augment may only target or affect friendly models that are hit, including the user.",
@@ -158,6 +176,12 @@
   },
   "Black Ice": {
     "description": "Enemy models that end an activation within 2 squares of this model are moved two squares directly away from the model with Black Ice.",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Bleed": {
+    "description": "when making an offensive roll, a model with Bleed counts any Heart rolled as both one star and one heart.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
@@ -391,6 +415,12 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Crystal Heart": {
+    "description": "At the start of this model's activation it may discard one equipment card from the backpack in order to gain one of the following until the start of its next activation, depending on the equpment's slot:  Citrine: +1ac,  Emerald:  +2mv,  Ruby:  +1r WILL, Sapphire: +1r ARM.",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Cursed": {
     "description": "Anytime this model makes a defense roll discard the highest result rolled.",
     "version": 2,
@@ -441,6 +471,12 @@
   },
   "Defender": {
     "description": "Models without Defender that are adjacent to a friendly model with Defender cannot be targeted by offensive actions.",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Defenseless": {
+    "description": "When a model with Defenseless is wounded, a friendly adjacent model may choose to be wounded instead.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
@@ -502,6 +538,12 @@
   },
   "Elemental Affinity": {
     "description": "For each model with Elemental Affinity choose one element from the Elemental Affinity card at the beginning of the game. That model gains the chosen element's abilities. If the model is a spawning point, all models spawned from that point gain the chosen elements abilities. Paired spawning points must choose the same element.",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Experimental Calculations": {
+    "description": "Nikolai Ten draws two treasure cards.  Choose one card and shuffle the other back into the deck.  Nikolai Ten gains the effects listed on the chosen card until the beginning of the next activation, then discards the card.  Only Nikolai Ten may use Experimental Calculations.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
@@ -638,6 +680,12 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Formless": {
+    "description": "At the beginning of this model's activation it may increase one attribute by +1b.  This bonus lasts until it is activated again.",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Fortify": {
     "description": "A model with Fortify gains +1B ARM for each enemy adjacent to them, to a maximum of +3B ARM.",
     "version": 1.0,
@@ -647,6 +695,12 @@
   "Fragile": {
     "description": "A model or effect with Fragile places a Fragile counter on any model it damages. A model suffering fragile discards the highest result rolled anytime it makes a roll using its ARM attribute.",
     "version": 1,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Free Coin": {
+    "description": "when a Hero with Free Coin suffers a wound that removes it from play, it is immediately returned to play as though a Princess Coin was spent.  (No Princesss Coin is used to activate Free Coin and no Princess CCoin is placed on its card.)",
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -991,6 +1045,12 @@
       }
     ]
   },
+  "Keep The Sake Flowing": {
+    "description": "A model with Keep The Sake Flowing may drink two potions per turn (both Hero and Consul), so long as the potions are different.  During the party's power-up, if the model has no potion tokens, it suffers one wound.",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Kindling": {
     "description": "A model adjacent to a model with Kindling cannot remove Fire status effect tokens at the end of its activation.",
     "version": 1.0,
@@ -1077,6 +1137,12 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Liver of Steel": {
+    "description": "This Hero may not take potion actions.",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Luck": {
     "description": "A model with Luck may gain a Potion instead of a Heart when rolled on the dice and vice versa. In addition when opening a treasure chest they may draw two cards from the treasure deck and equip one, discarding the other. ",
     "version": 1,
@@ -1127,6 +1193,12 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Mark": {
+    "description": "Place a crystal token on the target.  Friendly models attacking the target gain +1b to their offense rolls.  Only one friendly Mark token may be in pay at one time and it may not be removed until the targt is destroyed or Mark is used again.",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Massive Damage": {
     "description": "When an attack with Massive Damage inflicts a wound it instead inflicts two wounds.",
     "version": 1,
@@ -1154,6 +1226,12 @@
   },
   "Mighty": {
     "description": "A model with Mighty double the bonuses granted by the chart.",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Military Acumen": {
+    "description": "When a model with Military Acumen is in the dungeon, a friendly Hero may remove Princess Coins from its card to gain +1ac for each coin removed from the game until the end of its activation.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
@@ -1190,6 +1268,12 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Moon's Blessing": {
+    "description": "A Hero with Moon's Blessing gains bonuses from the mighty monster chart as if it were an 8-Bit monster.",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "My Pet": {
     "description": "A model with My Pet may not be targeted with offensive actions while Daemonus is in play.",
     "version": 1.0,
@@ -1204,6 +1288,12 @@
   },
   "New Skull": {
     "description": "When a model with New Skull achieves a critical hit during an offensive action, spawn a Ghostflame adjacent to any Spawning Point if there are fewer than six Ghostflames in play.",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Nice List": {
+    "description": "At the beginning of the game, shuffle all Hero cards except Kringle and draw one card.  The Hero drawn gains +1b on offensive rolls for the entire game.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
@@ -1386,8 +1476,26 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Prismatic Armory": {
+    "description": "A Hero with Prismatic Armory may equip up to two pieces of equipment to each slot, instead of one.",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Privateer": {
+    "description": "If a Hero with Privateer destroys one or more enemies during its activation, the party draws one additional loot during power-up.",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Proficient": {
     "description": "Models with Proficient may take the basic Interact or Open Chest action without spending action points, once per turn.",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Protector": {
+    "description": "Enemy monsters that have LoS to this Hero may not target other Heroes which are adjacent to this Hero with offensive actions.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
@@ -1430,8 +1538,20 @@
       }
     ]
   },
+  "Quick Strike": {
+    "description": "After a model with Quick Strike destroys an enemy, its controller rolls 1g.  On a roll of Heart+Potion, the model may immediately make a basic offensive action without spending an action point.",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Rabid": {
     "description": "When this model activates roll 1R and consult the following:  No stars: this model moves as close as it can to, and attacks, the closest friendly model. In the case two models are equally close, this model’s controller chooses.  One star: this model may activate normally.  Two or more stars: this model may activate normally and gains +1R STR.",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Rage Musk": {
+    "description": "If this potion is used, the Consul roll 1r instead of 1b for Anngry Walrus during the following Consul Turn.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
@@ -1471,6 +1591,12 @@
   "Reach X": {
     "description": "This ability allows the model to target an enemy with a melee attack up to X squares away. A model may use any of its abilities or special actions using Reach X, unless specified otherwise.",
     "version": 1,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Read The Wind": {
+    "description": "A model with Read The Wind may roll 1g when the party clears all activation tokens.  Keep this die on the Hero's card and discard it next time activation tokens are cleared.  After dice are rolled by any Hero for any reason, this model may discard the die to add it to the roll.",
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -1526,6 +1652,12 @@
   },
   "Resurrection": {
     "description": "When the party spends a Princess Coin, draw two Loot.",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Retreat": {
+    "description": "After completing an action with Retreat, using the rules for Push, the model's player moves the model with Retreat five squares away from its target or the square which the target occupied.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
@@ -1796,8 +1928,8 @@
       }
     ]
   },
-  "Squirelly": {
-    "description": "A model with Squirelly may reroll one of their dice when making a defense roll.",
+  "Squirrely": {
+    "description": "When a model with Squirrely makes a defense roll, it may choose one of its dice and reroll it.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
@@ -1849,6 +1981,18 @@
   "Stealth Aura": {
     "description": "Monsters with Ruby Affinity that are within 2 squares of Salt Pillar gain Stealth.",
     "version": 2,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Stingy": {
+    "description": "A model with Stingy may not share its potions with friendly Heroes.",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Stocked": {
+    "description": "A model with Stocked begins the game with its maximum number of potions.",
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -1959,8 +2103,20 @@
       }
     ]
   },
+  "Territorial": {
+    "description": "A model with Territorial gains +1st to offense rolls while on the first tile, +2st while on the second, +3st while on the third, and +4st while on the fourth. (Area: A model with Territorial gains +2st to offensive rolls while on the same tile as a friendly spawning point.)",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "The First Stone": {
+    "description": "A model with The First Stone gains +1b to all offensive rolls for each wound it is suffering, to a maximum of +3b.",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "The Journey": {
-    "description": "Dungeon bosses whose entire base is on the same tile as one or more models with The Journey gain one of the following, depending on which tile this model is on:  First Tile: Massive Damage  Second Tile: +2R DEX  Third Tile: +2R WILL",
+    "description": "Dungeon bosses whose entire base is on the same tile as one or more models with The Journey gain one of the following, depending on which tile this model is on:  First Tile: Massive Damage  Second Tile: +2R DEX  Third Tile: +2R WILL.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
@@ -2083,9 +2239,33 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Wind of Blades": {
+    "description": "A model with Wind of Blades may spend all of its movement points to make a single Missile Attack basic offensive action.",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Wisdom": {
+    "description": "A model with Wisdom gains +1ac that may only be used to take support actions.",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Wonder": {
     "description": "Place pet model and game card in the Backpack. One Hero may become the pet's master during Power-Up.",
     "version": 2,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Yip's Wrath": {
+    "description": "During its activation, a model with Yip's Wrath may make the following offensive action a single time for free:  ac: 4mi, knockdown",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "You're Alone": {
+    "description": "A model with You're Alone gains +2b to offensive actions that are targeting a model that has no other models friendly to it within two squares.",
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   }
