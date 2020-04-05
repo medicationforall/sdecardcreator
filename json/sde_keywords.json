@@ -970,6 +970,12 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Illumination": {
+    "description": "Models that target an enemy model within 3 squares of a friendly model with Illumination may reroll a single dice.",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Illusionary Double": {
     "description": "When a model with Illusionary Double suffers a wound, place one crystal token on its card. It may never have more than one crystal token. When the model is affected by an action that requires a defense roll, it may remove one crystal token to automatically win the roll.",
     "version": 1.0,
