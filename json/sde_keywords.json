@@ -12,6 +12,12 @@
       }
     ]
   },
+  "Active Spawn": {
+    "description": "Spawning points with Active Spawn may activate during the Consul Turn in the same manner as 16-Bit Monsters.  When destroyed they grant loot as normal for spawning points.",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Alchemy": {
     "description": "Turn any hearts rolled into potions.",
     "version": 1.5,
@@ -970,6 +976,12 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Illumination": {
+    "description": "Models that target an enemy model within 3 squares of a friendly model with Illumination may reroll a single dice.",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Illusionary Double": {
     "description": "When a model with Illusionary Double suffers a wound, place one crystal token on its card. It may never have more than one crystal token. When the model is affected by an action that requires a defense roll, it may remove one crystal token to automatically win the roll.",
     "version": 1.0,
@@ -1047,6 +1059,12 @@
   },
   "Keep The Sake Flowing": {
     "description": "A model with Keep The Sake Flowing may drink two potions per turn (both Hero and Consul), so long as the potions are different.  During the party's power-up, if the model has no potion tokens, it suffers one wound.",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Killamari": {
+    "description": "When a model with Killamari is destroyed by another model, place a tentacles token on the model that destroyed it, for the remainder of the game.  When calculating wrath, count this token as one wrath.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
@@ -1686,6 +1704,18 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Salty 1": {
+    "description": "A model with Salty gains +1st for each tentacles token on the target.",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Salty 2": {
+    "description": "A model with Salty gains +1R for each tentacles token on the target.",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Savage": {
     "description": "All minions within 1 square of a model with Savage gain +1st STR",
     "version": 2,
@@ -1846,6 +1876,12 @@
         "sourceDescription": "Forgotten King Updated keyword."
       }
     ]
+  },
+  "Solo Spawn": {
+    "description": "This solo is also a spawning point with the spawning pool listed below.  It follows commands as if it were a solo, and spawns as if it were a spawning point.  When this solo receives the move command, it moves directly away from the closest Hero.",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
   },
   "Soporific": {
     "description": "When this model is destroyed inflicts the attacking model with the status effect Slow.",
@@ -2184,6 +2220,12 @@
   },
   "Turtle": {
     "description": "When activated replace this model with a Shell,The Shell is considered the same model as the one it replaced for all purposes. The model gains +1 ARM and Immune: Status Effects. A Shell may not move, attack, or use special actions.\r\n\r\nWhen a model with Turtle is require to make a defense roll it may immediately activate Turtle for free before making the roll.\r\n\r\nIf Turtle is active at the beginning of this model's activation replace the Shell with its original model. The model may then act normally during its turn which may include reactivating Turtle.",
+    "version": 1,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Uncanny Awareness": {
+    "description": "Models with Uncanny Awareness ignore Stealth.",
     "version": 1,
     "hasErrata": "false",
     "errata": []
