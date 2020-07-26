@@ -493,6 +493,18 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Dibs [A]": {
+    "description": "When a Hero on this tile discards a loot card due to the Yoink!, place a crystal token on this model.  This model gains +1st STR for each crystal token on it.",
+    "version": 1,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Dibs [C]": {
+    "description": "When a Hero on this tile discards a loot card due to the Yoink! ability, a model with Dibs may choose to equip the discarded loot as if it were a Hero.  Equipped loot is discarded when this model is destroyed.",
+    "version": 1,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Difficult Terrain": {
     "description": "Each square of difficult terrain a model enters costs two points of speed. If a model does not have enough speed remaining to move into a square with difficult terrain it may not do so. ",
     "version": 1,
@@ -1021,6 +1033,18 @@
   },
   "Improved Critical": {
     "description": "This model's Critical hits inflict an additional wound.",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Infested [A]": {
+    "description": "When a Spawning Point model with Infested is destroyed, spawn up to four Dirty Rats from it before removing it.  These Dirty Rats form a Rat King Elite Gang.",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Infested [C]": {
+    "description": "When a model with Infested is destroyed, spawn up to 4 Skull Points worth of monsters with the Vermin ability within 3 squares of it before removing it.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
@@ -1704,13 +1728,13 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Salty 1": {
+  "Salty [A]": {
     "description": "A model with Salty gains +1st for each tentacles token on the target.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
-  "Salty 2": {
+  "Salty [C]": {
     "description": "A model with Salty gains +1R for each tentacles token on the target.",
     "version": 1.0,
     "hasErrata": "false",
@@ -1749,6 +1773,12 @@
   "Sentinel": {
     "description": "Models that are adjacent to a Sentinel structure add +1st to all defense rolls.",
     "version": 2,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Shake Down": {
+    "description": "Enemy Heroes with the Immobile status effect that are on the same tile as a model with Shake Down count as rolling zero stars for the purpose of the Yoink ability whenever they fail a defense roll.",
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -2230,6 +2260,12 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Vermin": {
+    "description": "This model may be spawned by the Infested ability.",
+    "version": 1,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Virulent": {
     "description": "Adds +1b dice to any offense roll they make if their target is suffering Poison",
     "version": 1.5,
@@ -2302,6 +2338,18 @@
   "Yip's Wrath": {
     "description": "During its activation, a model with Yip's Wrath may make the following offensive action a single time for free:  0ac: 4mi, knockdown",
     "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Yoink! [A]": {
+    "description": "When a monster with Yoink! attacks a Hero and the Hero rolls stars for defense, the Hero must discard one equipped loot card at random, if able.",
+    "version": 1,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Yoink! [C]": {
+    "description": "When a model with Yoink! achieves a critical success, its target must discard one equipped loot card at random, if able.",
+    "version": 1,
     "hasErrata": "false",
     "errata": []
   },
