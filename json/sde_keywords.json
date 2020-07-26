@@ -493,13 +493,13 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Dibs [A]": {
+  "Dibs (A)": {
     "description": "When a Hero on this tile discards a loot card due to the Yoink!, place a crystal token on this model.  This model gains +1st STR for each crystal token on it.",
     "version": 1,
     "hasErrata": "false",
     "errata": []
   },
-  "Dibs [C]": {
+  "Dibs (C)": {
     "description": "When a Hero on this tile discards a loot card due to the Yoink! ability, a model with Dibs may choose to equip the discarded loot as if it were a Hero.  Equipped loot is discarded when this model is destroyed.",
     "version": 1,
     "hasErrata": "false",
@@ -1037,13 +1037,13 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Infested [A]": {
+  "Infested (A)": {
     "description": "When a Spawning Point model with Infested is destroyed, spawn up to four Dirty Rats from it before removing it.  These Dirty Rats form a Rat King Elite Gang.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
-  "Infested [C]": {
+  "Infested (C)": {
     "description": "When a model with Infested is destroyed, spawn up to 4 Skull Points worth of monsters with the Vermin ability within 3 squares of it before removing it.",
     "version": 1.0,
     "hasErrata": "false",
@@ -1728,13 +1728,13 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Salty [A]": {
+  "Salty (A)": {
     "description": "A model with Salty gains +1st for each tentacles token on the target.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
-  "Salty [C]": {
+  "Salty (C)": {
     "description": "A model with Salty gains +1R for each tentacles token on the target.",
     "version": 1.0,
     "hasErrata": "false",
@@ -2341,13 +2341,13 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Yoink! [A]": {
+  "Yoink! (A)": {
     "description": "When a monster with Yoink! attacks a Hero and the Hero rolls stars for defense, the Hero must discard one equipped loot card at random, if able.",
     "version": 1,
     "hasErrata": "false",
     "errata": []
   },
-  "Yoink! [C]": {
+  "Yoink! (C)": {
     "description": "When a model with Yoink! achieves a critical success, its target must discard one equipped loot card at random, if able.",
     "version": 1,
     "hasErrata": "false",
