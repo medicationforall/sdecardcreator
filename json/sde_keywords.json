@@ -62,7 +62,7 @@
     "errata": []
   },
   "Arc": {
-    "description": "after resolving an action with Arc, choose another model within two squares of the last model targeted and which has not already been targeted.  Resolve the action again, rolling one less dice of the player's choice against the new target.  Continue choosing new targets in this manner until Arc fails to inflict a wound, no dice remain, or there is no new target in range.",
+    "description": "After resolving an action with Arc, choose another model within two squares of the last model targeted and which has not already been targeted.  Resolve the action again, rolling one less dice of the player's choice against the new target.  Continue choosing new targets in this manner until Arc fails to inflict a wound, no dice remain, or there is no new target in range.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
@@ -123,13 +123,13 @@
     "hasErrata": "true",
     "errata": [
       {
-        "description": "If a model with Backlash exceeds an offense roll with their defense roll the attacker takes one wound",
+        "description": "If a model with Backlash exceeds an offense roll with their defense roll the attacker takes one wound.",
         "version": 1.5,
         "source": "https://www.kickstarter.com/projects/1257458293/super-dungeon-explore-forgotten-king/posts/998856",
         "sourceDescription": "Kickstarter update 61"
       },
       {
-        "description": "When a model with Backlash is targeted by an offensive action and wins the defense roll, the model making the Offense roll suffers one wound. A model may not draw a loot card for destroying a model due to Backlash. ",
+        "description": "When a model with Backlash is targeted by an offensive action and wins the defense roll, the model making the Offense roll suffers one wound. A model may not draw a loot card for destroying a model due to Backlash.",
         "version": 2,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
@@ -137,7 +137,7 @@
     ]
   },
   "Backstabber": {
-    "description": "whenever the Model suffers a wound can place it on a friendly model adjacent instead.",
+    "description": "Whenever the Model suffers a wound can place it on a friendly model adjacent instead.",
     "version": 1.5,
     "hasErrata": "true",
     "errata": [
@@ -175,7 +175,7 @@
     "errata": []
   },
   "Bind": {
-    "description": "A model or effect with bind places a bind counter on any model it damages. A model suffering bind may not use any of its Special Actions",
+    "description": "A model or effect with bind places a bind counter on any model it damages. A model suffering bind may not use any of its Special Actions.",
     "version": 1,
     "hasErrata": "false",
     "errata": []
@@ -187,7 +187,7 @@
     "errata": []
   },
   "Bleed": {
-    "description": "when making an offensive roll, a model with Bleed counts any Heart rolled as both one star and one heart.",
+    "description": "When making an offensive roll, a model with Bleed counts any Heart rolled as both one star and one heart.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
@@ -452,7 +452,7 @@
     "errata": []
   },
   "Dark Radiance": {
-    "description": "All offense rolls and defense rolls made against a model with Dark Radiance reduce the result by 1st .",
+    "description": "All offense rolls and defense rolls made against a model with Dark Radiance reduce the result by 1st.",
     "version": 2,
     "hasErrata": "false",
     "errata": []
@@ -488,7 +488,7 @@
     "errata": []
   },
   "Despair": {
-    "description": "Enemy models within two squares of a model with Despair reduce the result of all defense rolls by 1 star.",
+    "description": "Enemy models within two squares of a model with Despair reduce the result of all defense rolls by 1st.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
@@ -506,7 +506,7 @@
     "errata": []
   },
   "Difficult Terrain": {
-    "description": "Each square of difficult terrain a model enters costs two points of speed. If a model does not have enough speed remaining to move into a square with difficult terrain it may not do so. ",
+    "description": "Each square of difficult terrain a model enters costs two points of speed. If a model does not have enough speed remaining to move into a square with difficult terrain it may not do so.",
     "version": 1,
     "hasErrata": "true",
     "errata": [
@@ -579,7 +579,7 @@
     "errata": []
   },
   "Favors of the Goddess": {
-    "description": "Princess Coins on this model's card grant it +1R to defensive rolls instead of +1st",
+    "description": "Princess Coins on this model's card grant it +1R to defensive rolls instead of +1st.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
@@ -630,7 +630,7 @@
     ]
   },
   "Fire Aura": {
-    "description": "Monsters with Citrine affinity that are within 2 squares of Lava Whirl gain Fire. ",
+    "description": "Monsters with Citrine affinity that are within 2 squares of Lava Whirl gain Fire.",
     "version": 2,
     "hasErrata": "false",
     "errata": []
@@ -680,7 +680,7 @@
     ]
   },
   "Forced Shift": {
-    "description": "Instead of being destroyed as normal it instead automatically Shapeshifts into its X Form ",
+    "description": "Instead of being destroyed as normal it instead automatically Shapeshifts into its X Form.",
     "version": 1.5,
     "hasErrata": "true",
     "errata": [
@@ -717,7 +717,7 @@
     "errata": []
   },
   "Free Coin": {
-    "description": "when a Hero with Free Coin suffers a wound that removes it from play, it is immediately returned to play as though a Princess Coin was spent.<br>(No Princesss Coin is used to activate Free Coin and no Princess CCoin is placed on its card.)",
+    "description": "When a Hero with Free Coin suffers a wound that removes it from play, it is immediately returned to play as though a Princess Coin was spent.<br>(No Princesss Coin is used to activate Free Coin and no Princess CCoin is placed on its card.)",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
@@ -801,7 +801,7 @@
     "hasErrata": "true",
     "errata": [
       {
-        "description": "Monsters with Sapphire affinity that are within 2 squares of Grabby House gain Grabby. ",
+        "description": "Monsters with Sapphire affinity that are within 2 squares of Grabby House gain Grabby.",
         "version": 2,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
@@ -821,7 +821,7 @@
     "errata": []
   },
   "Gross": {
-    "description": "When Pudge is destroyed, before removing the model resolve the following offensive action:<br>0ac: sw, Wave 1, +1r STR",
+    "description": "When Pudge is destroyed, before removing the model resolve the following offensive action:<br>0ac: sw, Wave 1, +1r STR.",
     "version": 2,
     "hasErrata": "false",
     "errata": []
@@ -856,7 +856,7 @@
     "hasErrata": "true",
     "errata": [
       {
-        "description": "A model affected by Heal may remove a number of wound tokens or a number of status effect tokens equal to the value of X",
+        "description": "A model affected by Heal may remove a number of wound tokens or a number of status effect tokens equal to the value of X.",
         "version": 2,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
@@ -946,7 +946,7 @@
     ]
   },
   "Host": {
-    "description": "When a model with HOST is spawned you may immediately place an additional model with Host in an empty, adjacent square. You may activate two models with Host for every skull value. Each model must fully complete its activation before the second is activated. ",
+    "description": "When a model with HOST is spawned you may immediately place an additional model with Host in an empty, adjacent square. You may activate two models with Host for every skull value. Each model must fully complete its activation before the second is activated.",
     "version": 1,
     "hasErrata": "false",
     "errata": []
@@ -1061,7 +1061,7 @@
     "hasErrata": "true",
     "errata": [
       {
-        "description": "If a Hero is on the same dungeon tile as a model with Insignificant it may be activated in addition to any other monsters that are activated during the Consul Turn. A model may not draw a loot card for destroying a model with Insignificant",
+        "description": "If a Hero is on the same dungeon tile as a model with Insignificant it may be activated in addition to any other monsters that are activated during the Consul Turn. A model may not draw a loot card for destroying a model with Insignificant.",
         "version": 2,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
@@ -1186,7 +1186,7 @@
     "errata": []
   },
   "Luck": {
-    "description": "A model with Luck may gain a Potion instead of a Heart when rolled on the dice and vice versa. In addition when opening a treasure chest they may draw two cards from the treasure deck and equip one, discarding the other. ",
+    "description": "A model with Luck may gain a Potion instead of a Heart when rolled on the dice and vice versa. In addition when opening a treasure chest they may draw two cards from the treasure deck and equip one, discarding the other.",
     "version": 1,
     "hasErrata": "true",
     "errata": [
@@ -1216,7 +1216,7 @@
     "hasErrata": "true",
     "errata": [
       {
-        "description": "A model with Magic X may target a model up to X squares\r\naway. If a model is making an attack using Magic X they must use their\r\nWILL attribute when making their attack roll, unless specified otherwise. ",
+        "description": "A model with Magic X may target a model up to X squares\r\naway. If a model is making an attack using Magic X they must use their\r\nWILL attribute when making their attack roll, unless specified otherwise.",
         "version": 1,
         "source": "http://sodapopminiatures.com/media/downloads/super-dungeon-explore-rulebook-1_5-web.pdf",
         "sourceDescription": "SDEv1-5_RuleBook_web.pdf"
@@ -1407,7 +1407,7 @@
     "errata": []
   },
   "Pile-On": {
-    "description": "+1r ATT if target is suffering Knockdown",
+    "description": "+1r ATT if target is suffering Knockdown.",
     "version": 1.5,
     "hasErrata": "true",
     "errata": [
@@ -1424,7 +1424,7 @@
         "sourceDescription": "Kickstarter update 61"
       },
       {
-        "description": "A model with Pile-On gains +1b STR if its target is suffering Knockdown",
+        "description": "A model with Pile-On gains +1b STR if its target is suffering Knockdown.",
         "version": 2,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
@@ -1457,7 +1457,7 @@
     ]
   },
   "Poison Aura": {
-    "description": "Monsters with Citrine affinity that are within 2 squares of Old-Growth Hollow gain Poison",
+    "description": "Monsters with Citrine affinity that are within 2 squares of Old-Growth Hollow gain Poison.",
     "version": 2,
     "hasErrata": "false",
     "errata": []
@@ -1513,7 +1513,7 @@
     "errata": []
   },
   "Primal Aura": {
-    "description": "Monsters with Sapphire Affinity that are within 2 squares of Tribal Stone gain +1st ARM",
+    "description": "Monsters with Sapphire Affinity that are within 2 squares of Tribal Stone gain +1st ARM.",
     "version": 2,
     "hasErrata": "false",
     "errata": []
@@ -1643,7 +1643,7 @@
     "errata": []
   },
   "Regenerate": {
-    "description": "roll 1b dice for every wound token on the models card and remove one token for each star rolled.",
+    "description": "Roll 1b dice for every wound token on the models card and remove one token for each star rolled.",
     "version": 1.5,
     "hasErrata": "true",
     "errata": [
@@ -1711,7 +1711,7 @@
     "errata": []
   },
   "Rock Aura": {
-    "description": "Monsters with Sapphire affinity that are within 2 squares of Rock Pile are Immune: Status Effects",
+    "description": "Monsters with Sapphire affinity that are within 2 squares of Rock Pile are Immune: Status Effects.",
     "version": 2,
     "hasErrata": "false",
     "errata": []
@@ -1741,7 +1741,7 @@
     "errata": []
   },
   "Savage": {
-    "description": "All minions within 1 square of a model with Savage gain +1st STR",
+    "description": "All minions within 1 square of a model with Savage gain +1st STR.",
     "version": 2,
     "hasErrata": "false",
     "errata": []
@@ -1895,12 +1895,12 @@
     "errata": []
   },
   "Smooches": {
-    "description": "This model may Shapeshift back to is original form if a friendly model moves into an adjacent square and spends 1 Action Point to give it a kiss. ",
+    "description": "This model may Shapeshift back to is original form if a friendly model moves into an adjacent square and spends 1 Action Point to give it a kiss.",
     "version": 1,
     "hasErrata": "true",
     "errata": [
       {
-        "description": "This model immediately shapeshifts back to its original form if a friendly model moves into an adjacent square and spends 1 Action to give it a kiss. ",
+        "description": "This model immediately shapeshifts back to its original form if a friendly model moves into an adjacent square and spends 1 Action to give it a kiss.",
         "version": 2,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
@@ -2062,6 +2062,12 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Strength of Virtue": {
+    "description": "When a model with Strength of Virtue would gain a status effect, it may roll 1b.  If any st are rolled, it does not gain the status effect.",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Strike": {
     "description": "This Pet’s Master gains Pounce on its basic Melee attack if it has one and it began its activation within 2 squares of this Pet.",
     "version": 1.0,
@@ -2087,12 +2093,12 @@
     "errata": []
   },
   "Sturdy": {
-    "description": "A model with sturdy may only be damaged by melee attacks. Wounds caused by Backlash do not advance the Power Gauge.",
+    "description": "A model with Sturdy may only be damaged by melee attacks. Wounds caused by Backlash do not advance the Power Gauge.",
     "version": 1,
     "hasErrata": "true",
     "errata": [
       {
-        "description": "A model with sturdy may only be damaged by melee attacks.",
+        "description": "A model with Sturdy may only be damaged by melee attacks.",
         "version": 1,
         "source": "",
         "sourceDescription": ""
@@ -2149,7 +2155,7 @@
     "hasErrata": "true",
     "errata": [
       {
-        "description": "During his activation Starfire may make the following offensive action a single time for free: Attack Melee, Sweep 2, Knockdown",
+        "description": "During his activation Starfire may make the following offensive action a single time for free: Attack Melee, Sweep 2, Knockdown.",
         "version": 2,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
@@ -2182,7 +2188,7 @@
     "errata": []
   },
   "The Journey": {
-    "description": "Dungeon bosses whose entire base is on the same tile as one or more models with The Journey gain one of the following, depending on which tile this model is on:<br>First Tile: Massive Damage<br>Second Tile: +2R DEX<br>Third Tile: +2R WILL",
+    "description": "Dungeon bosses whose entire base is on the same tile as one or more models with The Journey gain one of the following, depending on which tile this model is on:<br>First Tile: Massive Damage<br>Second Tile: +2R DEX<br>Third Tile: +2R WILL.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
@@ -2267,7 +2273,7 @@
     "errata": []
   },
   "Virulent": {
-    "description": "Adds +1b dice to any offense roll they make if their target is suffering Poison",
+    "description": "Adds +1b dice to any offense roll they make if their target is suffering Poison.",
     "version": 1.5,
     "hasErrata": "true",
     "errata": [
@@ -2336,7 +2342,7 @@
     "errata": []
   },
   "Yip's Wrath": {
-    "description": "During its activation, a model with Yip's Wrath may make the following offensive action a single time for free:  0ac: 4mi, knockdown",
+    "description": "During its activation, a model with Yip's Wrath may make the following offensive action a single time for free:  0ac: 4mi, knockdown.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
