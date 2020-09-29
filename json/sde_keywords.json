@@ -2063,7 +2063,7 @@
     "errata": []
   },
   "Strength of Virtue": {
-    "description": "When a model with Strength of Virtue would gain a status effect, it may roll 1b.  If any st are rolled, it does not gain the status effect.",
+    "description": "When a model with Strength of Virtue would gain a status effect, it may roll 1b.  If any 0st are rolled, it does not gain the status effect.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
