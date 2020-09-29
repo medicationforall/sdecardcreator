@@ -2062,6 +2062,12 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Strength of Virtue": {
+    "description": "When a model with Strength of Virtue would gain a status effect, it may roll 1b.  If any st are rolled, it does not gain the status effect.",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Strike": {
     "description": "This Pet’s Master gains Pounce on its basic Melee attack if it has one and it began its activation within 2 squares of this Pet.",
     "version": 1.0,
