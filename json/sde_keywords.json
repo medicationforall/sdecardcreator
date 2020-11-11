@@ -18,7 +18,7 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Afflict X": {
+  "Afflict": {
     "description": "A model with Afflict X causes its target to suffer the listed status effect(s) when it achieves a critical success.",
     "version": 1.0,
     "hasErrata": "false",
@@ -536,13 +536,13 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Do It For Me?-A": {
+  "Do It For Me-A": {
     "description": "When a Hero within six squares of a model with Do It For Me? activates, the Hero must roll its WILL.  On a roll of 0 stars, the Hero must take its first three moves to move as close to the closest other Hero as possible and then use its first action to target that Hero with a basic attack action.  The rest of the activation is taken normally.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
-  "Do It For Me?-C": {
+  "Do It For Me-C": {
     "description": "When a Hero within four squares of a model with Do It For Me? activates, the Hero must roll its WILL.  On a roll of 0 stars, the Consul controls the Hero's first action and first three moves of the activation.  The remainder of the activation is taken normally.",
     "version": 1.0,
     "hasErrata": "false",
@@ -1801,7 +1801,7 @@
     "errata": []
   },
   "Sense Weakness-C": {
-    "description": "A model with Sense Weakness gains +1G to offensive actions targeting a moel with one or more status effects.",
+    "description": "A model with Sense Weakness gains +1G to offensive actions targeting a model with one or more status effects.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
@@ -1999,7 +1999,7 @@
     "errata": []
   },
   "Spiteful Whispers-A": {
-    "description": "A model with a Spiteful Cherub on its card sufers -1st WILL to all WILL rolls.  The Hero must also roll 1G at the end of every Consul turn and apply one of the below status effects, depending on the roll:<br>0st: BANE<br>1st: HEX<br>2st: ICE<br>3st: POISON<br>4st: IMMOBILE",
+    "description": "A model with a Spiteful Cherub on its card sufers -1st WILL to all WILL rolls.  The Hero must also roll 1G at the end of every Consul turn and apply one of the below status effects, depending on the roll:<br>0st: Bane<br>1st: Hex<br>2st: Ice<br>3st: Poison<br>4st: Immobile",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
@@ -2049,7 +2049,7 @@
     ]
   },
   "Spread The Love-A": {
-    "description": "After a monster with Spread The Love performs a Fight command that dealt one or more wounds, roll 1G for each Hero that suffered at least one wound and apply one of the following status effects depending on the roll:<br>0ST: BANE<br>1ST: HEX<br>2ST: ICE<br>3ST: POISON<br>4ST: IMMOBILE",
+    "description": "After a monster with Spread The Love performs a Fight command that dealt one or more wounds, roll 1G for each Hero that suffered at least one wound and apply one of the following status effects depending on the roll:<br>0ST: Bane<br>1ST: Hex<br>2ST: Ice<br>3ST: Poison<br>4ST: Immobile",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
