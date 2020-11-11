@@ -537,13 +537,13 @@
     "errata": []
   },
   "Do It For Me-A": {
-    "description": "When a Hero within six squares of a model with Do It For Me? activates, the Hero must roll its WILL.  On a roll of 0 stars, the Hero must take its first three moves to move as close to the closest other Hero as possible and then use its first action to target that Hero with a basic attack action.  The rest of the activation is taken normally.",
+    "description": "When a Hero within six squares of a model with Do It For Me activates, the Hero must roll its WILL.  On a roll of 0 stars, the Hero must take its first three moves to move as close to the closest other Hero as possible and then use its first action to target that Hero with a basic attack action.  The rest of the activation is taken normally.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
   "Do It For Me-C": {
-    "description": "When a Hero within four squares of a model with Do It For Me? activates, the Hero must roll its WILL.  On a roll of 0 stars, the Consul controls the Hero's first action and first three moves of the activation.  The remainder of the activation is taken normally.",
+    "description": "When a Hero within four squares of a model with Do It For Me activates, the Hero must roll its WILL.  On a roll of 0 stars, the Consul controls the Hero's first action and first three moves of the activation.  The remainder of the activation is taken normally.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
