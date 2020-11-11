@@ -18,6 +18,12 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Afflict": {
+    "description": "A model with Afflict X causes its target to suffer the listed status effect(s) when it achieves a critical success.",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Alchemy": {
     "description": "Turn any hearts rolled into potions.",
     "version": 1.5,
@@ -526,6 +532,18 @@
   },
   "Divine Guidance": {
     "description": "When a challenge card with a Trap effect is drawn, this model may discard this treasure to prevent the Trap effect from happening.",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Do It For Me-A": {
+    "description": "When a Hero within six squares of a model with Do It For Me activates, the Hero must roll its WILL.  On a roll of 0 stars, the Hero must take its first three moves to move as close to the closest other Hero as possible and then use its first action to target that Hero with a basic attack action.  The rest of the activation is taken normally.",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Do It For Me-C": {
+    "description": "When a Hero within four squares of a model with Do It For Me activates, the Hero must roll its WILL.  On a roll of 0 stars, the Consul controls the Hero's first action and first three moves of the activation.  The remainder of the activation is taken normally.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
@@ -1322,6 +1340,12 @@
     "hasErrata": "false",
     "errata": []
   },
+  "My Pretties": {
+    "description": "At the end of each Consul turn, spawn a Spiteful Cherub adjacent to this model.",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Never-Lost": {
     "description": "Boss Sightings do not affect friendly Heroes within three squares and Line o Sight of this model.<br>(Arcade: after drawing a Challenge Card but before resolving its effects, this Pet’s Master may discard a potion to discard the Challenge Card and draw a new one.)",
     "version": 1.0,
@@ -1770,6 +1794,18 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Sense Weakness-A": {
+    "description": "A model with Sense Weakness gains +2st while targeting a Hero with one or more status effects with an offensive action.  While selecting the target of a Command, a model with Sense Weakness counts status effect tokens as Wrath tokens.",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Sense Weakness-C": {
+    "description": "A model with Sense Weakness gains +1G to offensive actions targeting a model with one or more status effects.",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Sentinel": {
     "description": "Models that are adjacent to a Sentinel structure add +1st to all defense rolls.",
     "version": 2,
@@ -1784,6 +1820,12 @@
   },
   "Shallow Grave": {
     "description": "Ghosts may be spawned from Fresh Grave Tile Effects instead of Rattlebones.",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Shame": {
+    "description": "After a model with Shame is destroyed, the model that destroyed it suffers Compel 6.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
@@ -1950,6 +1992,18 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Spiteful Whispers-C": {
+    "description": "Heroes suffer -1ST WILL for each model with Spiteful Whispers adjacent to them.",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Spiteful Whispers-A": {
+    "description": "A model with a Spiteful Cherub on its card sufers -1st WILL to all WILL rolls.  The Hero must also roll 1G at the end of every Consul turn and apply one of the below status effects, depending on the roll:<br>0st: Bane<br>1st: Hex<br>2st: Ice<br>3st: Poison<br>4st: Immobile",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Splinters": {
     "description": "When a model with Splinters achieves a Critical Success, it suffers one damage.",
     "version": 1.0,
@@ -1993,6 +2047,18 @@
         "sourceDescription": "SDEv1-5_RuleBook_web.pdf"
       }
     ]
+  },
+  "Spread The Love-A": {
+    "description": "After a monster with Spread The Love performs a Fight command that dealt one or more wounds, roll 1G for each Hero that suffered at least one wound and apply one of the following status effects depending on the roll:<br>0ST: Bane<br>1ST: Hex<br>2ST: Ice<br>3ST: Poison<br>4ST: Immobile",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Spread The Love-C": {
+    "description": "When a model with Spread The Love makes a successful offensive action, it may choose and apply one status effect on the target for each potion rolled.  These status effects are applied after fully resolving the action.",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
   },
   "Squirrely": {
     "description": "When a model with Squirrely makes a defense roll, it may choose one of its dice and reroll it.",
