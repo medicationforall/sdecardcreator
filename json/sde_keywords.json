@@ -475,6 +475,18 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Death Curse-A": {
+    "description": "When one or more models in this gang ends a move adjacent to a Hero, the party must select one model in the gang with Death Curse.  The selected model is destroyed and the party rolls 1G.  Apply one of the below status effects to the adjacent Hero depending on the roll:<br>0st:  Bane<br>1st:  Hex<br>2st: Ice<br>3st: Poison<br>4st:  Immobile",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Death Curse-C": {
+    "description": "When a model with Death Curse is destroyed, roll 1G and place the corresponding status effect token on the square the model had occupied.  If a Hero enters the square with the status effect token, remove the token and the Hero gains the status effect at the end of the current activation:<br>0st:  Bane<br>1st:  Hex<br>2st: Ice<br>3st: Poison<br>4st:  Immobile",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Death Lord": {
     "description": "All Undead models within four squares of a model with Death Lord gain +1B to all offense rolls.",
     "version": 1.0,
