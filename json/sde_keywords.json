@@ -396,6 +396,12 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Convergence With The Goddess": {
+    "description": "If the party contains one or more Heroes with Convergence With The Goddess, during the Hero Power-Up phase, the party may discard four loot from the backpack to select a Princess Coin that was not used for this game and spend it to permanently place it on any one Hero's card, this Princess Coin grants the Hero +1st to defense rolls.",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Corpse Stench": {
     "description": "When a model with Corpse Stench suffers damage, all adjacent enemy models suffer Slow.",
     "version": 1.0,
