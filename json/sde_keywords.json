@@ -1418,6 +1418,12 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Overly Prepared": {
+    "description": "At the start of the game draw six treasure cards (any Boo Booties or non-treasures drawn are shuffled back into the deck and a new card is drawn).  Place these cards in a place the party may easily reach them.  Whenever a member of the party is affected by Equip Gadget, they may chooose and equip one of these treasures.  At the beginning of that Hero's next activation, they msut place the treasure equipped in this way in the discard pile.",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Pacify": {
     "description": "A model or effect with Pacify places a Pacify counter on any model it damages. A model suffering Pacify may not use any special Attacks.",
     "version": 1,
@@ -2365,6 +2371,18 @@
   "Uncanny Awareness": {
     "description": "Models with Uncanny Awareness ignore Stealth.",
     "version": 1,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Unstable Design": {
+    "description": "When a model with Unstable Design suffers a critical, it immediately takes its Vent Steam action.  If the model with Unstable Design would be destroyed by the critical, it takes Vent Steam before being removed.",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Vent Steam": {
+    "description": "dangerous, 0Sw, +1B STR, Wave 1.",
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
