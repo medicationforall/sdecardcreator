@@ -758,6 +758,18 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Freed In Death-A": {
+    "description": "When a model with Freed In Death is destroyed, the closest minion model is also destroyed.",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Freed In Death-C": {
+    "description": "When a model with Freed In Death is destroyed, the party may choose one monster in range.  The model with Freed In Death makes a melee attack against the chosen monster before being removed.",
+    "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Frenzy": {
     "description": "A Model with Frenzy gains +1R on offensive rolls against any model that is suffering one or more wounds.",
     "version": 1.0,
