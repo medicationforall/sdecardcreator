@@ -442,7 +442,7 @@
   "Cursed": {
     "description": "[Equipment with Cursed] must be immediately equipped when drawn and cannote be discarded.",
     "version": 1.0,
-    "hasErrata": "false",
+    "hasErrata": "true",
     "errata": [
       {
         "description": "Equipment with Cursed must be equipped during Power-Up if any Hero has an available slot, and cannot be removed or discarded unless the model is destroyed.",
