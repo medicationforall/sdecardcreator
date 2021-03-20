@@ -1327,7 +1327,7 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Mend X": {
+  "Mend": {
     "description": "A model using Mend targets the monster within range suffering the most wounds.  Remove status effect tokens and then remove would tokens until a number of tokens equal to X has been reomved or the monster has no wound tokens on it.",
     "version": 1.6,
     "hasErrata": "false",
