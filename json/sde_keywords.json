@@ -1080,7 +1080,7 @@
       }
     ]
   },
-  "Immune:": {
+  "Immune": {
     "description": "A model with immune ignores and imediately removes all counter or affects of the abilty listed as X.",
     "version": 1.0,
     "hasErrata": "false",
@@ -1491,7 +1491,7 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Pet:": {
+  "Pet": {
     "description": "A model with Pet X is the master of the pet listed as X. A model with Pet X may never be a different pet’s master. The listed pet begins the game within two squares of its master.",
     "version": 1.6,
     "hasErrata": "false",
@@ -1909,7 +1909,7 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Shapeshift:": {
+  "Shapeshift": {
     "description": "Shapeshift basic action to transform into the X whenever it chooses.",
     "version": 1.0,
     "hasErrata": "false",
@@ -2466,7 +2466,7 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Vulnerable:": {
+  "Vulnerable": {
     "description": "If a model with vulnerable X is targeted by the ability listed as X, it immediately takes one wound in addition to any other effects of the ability.",
     "version": 1.0,
     "hasErrata": "true",
