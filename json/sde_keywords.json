@@ -272,6 +272,12 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Bruiser": {
+    "description": "+1st STR if a model with Bruiser is in the gang.",
+    "version": 1.6,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Brutality Aura": {
     "description": "All models, friendly or enemy, within 2 squares gain +1st STR.",
     "version": 2.0,
@@ -575,7 +581,7 @@
   },
   "Dodge": {
     "description": "A model with Dodge may use their Dex when making defense rolls unless they are suffering from Knockdown, Immobile, Slow.",
-    "version": 1.6,
+    "version": 1.5,
     "hasErrata": "false",
     "errata": []
   },
@@ -1321,6 +1327,12 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Mend X": {
+    "description": "A model using Mend targets the monster within range suffering the most wounds.  Remove status effect tokens and then remove would tokens until a number of tokens equal to X has been reomved or the monster has no wound tokens on it.",
+    "version": 1.6,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Mighty": {
     "description": "A model with Mighty double the bonuses granted by the chart.",
     "version": 2.0,
@@ -1665,6 +1677,12 @@
       }
     ]
   },
+  "Quick Hatch": {
+    "description": "After Egg Clutch performs a Spawn command, all monsters it just spawned immediately perform a Move command.",
+    "version": 1.6,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Quick Strike": {
     "description": "After a model with Quick Strike destroys an enemy, its controller rolls 1g.  On a roll of Heart+Potion, the model may immediately make a basic offensive action without spending an action point.",
     "version": 2.0,
@@ -1717,7 +1735,7 @@
   },
   "Reach X": {
     "description": "This ability allows the model to target an enemy with a melee attack up to X squares away. A model may use any of its abilities or special actions using Reach X, unless specified otherwise.",
-    "version": 1.6,
+    "version": 1.5,
     "hasErrata": "false",
     "errata": []
   },
@@ -2256,6 +2274,12 @@
         "sourceDescription": "Forgotten King Updated keyword."
       }
     ]
+  },
+  "Surge": {
+    "description": "If a model with Surge is not in range of a Hero move it an additional 5 squares towards the Hero with the most wrath.",
+    "version": 1.6,
+    "hasErrata": "false",
+    "errata": []
   },
   "Sweep X": {
     "description": "A Sweep effect hits every model within X squares of a single side of the users square, along a straight line.",
