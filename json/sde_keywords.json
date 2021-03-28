@@ -1037,6 +1037,18 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Hunter's Mark-A": {
+    "description": "Place a crystal token on the closest enemy model.  Friendly models attacking the model with the crystal token gain +1st STR.  Only one friendly Mark token may be in play at one time and it my not be removed until the target is destroyed or Mark is used again.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Hunter's Mark-C": {
+    "description": "Place a crystal token on the target.  Friendly models attacking the target gain +1b to their offense rolls.  Only one friendly Mark token may be in play at one time and it may not be removed until the target is destroyed or Mark is used again.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "I Know Nothing": {
     "description": "A model with this ability may not use the Open Chest action.",
     "version": 2.0,
@@ -1461,6 +1473,18 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Pack Hunter": {
+    "description": "When a model with Pack Hunter wounds an enemy model, one model with Pack Hunter which is on the same tile as the wounded model may move up to two squares towards the wounded models.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Pack Mentality": {
+    "description": "Monsters within two squares of a model with Pack Mentality may move two squares after a model on the same tile finishes moving due to Pack Hunter.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Pack Strength": {
     "description": "When another friendly monster within three squares and LoS Heals one or more wounds, a model with Pack Strength may Heal 1.",
     "version": 2.0,
@@ -1852,6 +1876,12 @@
   "Scatter": {
     "description": "When a scatter is drawn place four single square templates anywhere within the tile.\r\n\r\nTrap templates may not be placed across walls, structures, or chasms. They may be placed in the same square as a friendly or enemy models.",
     "version": 1.6,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Scent": {
+    "description": "Models with Scent ignore Stealth.",
+    "version": 2.0,
     "hasErrata": "false",
     "errata": []
   },
