@@ -155,6 +155,12 @@
       }
     ]
   },
+  "Back Strike": {
+    "description": "+1ST STR if the gang's target did not activate during the previous Hero Turn.",
+    "version": 1.6,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Bane": {
     "description": "A model suffering Bane discards the highest result rolled anytime it makes an offense roll.",
     "version": 1.5,
@@ -1760,6 +1766,12 @@
   "Reach": {
     "description": "This ability allows the model to target an enemy with a melee attack up to X squares away. A model may use any of its abilities or special actions using Reach X, unless specified otherwise.",
     "version": 1.5,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Reach-A": {
+    "description": "+2ST RNG if a model with Reach is in the gang.",
+    "version": 1.6,
     "hasErrata": "false",
     "errata": []
   },
