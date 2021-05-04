@@ -240,8 +240,7 @@
         "version": 2.0,
 		"hasErrata": "false",
 		"errata": []
-    ]
-  },
+   },
   "Bob-omb": {
     "description": "If another Hero activates after this Hero, during the same turn, that Hero gains +1R to the first offense roll it makes that activation.",
     "version": 1.0,
