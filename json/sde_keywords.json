@@ -216,7 +216,7 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Blood Drinker": {
+  "Blood Drinker-C": {
     "description": "When a model with Blood Dinker rolls a heart they gain one heart in exactly the same manor as a Hero.",
     "version": 1.0,
     "hasErrata": "true",
@@ -226,9 +226,21 @@
         "version": 1.6,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
+      },
+	  {
+        "description": "When a model with Blood Drinker inflicts at a wound, remove one wound or one status effect token from its card for every heart rolled.",
+        "version": 2.0,
+        "source": "",
+        "sourceDescription": "2.0 Updated keyword."
       }
     ]
   },
+  "Blood Drinker-A": {
+    "description": "When a model with Blood Drinker inflicts at least one wound during a Fight command, remove one wound token from its card.",
+        "version": 2.0,
+		"hasErrata": "false",
+		"errata": []
+   },
   "Bob-omb": {
     "description": "If another Hero activates after this Hero, during the same turn, that Hero gains +1R to the first offense roll it makes that activation.",
     "version": 1.0,
@@ -515,8 +527,15 @@
   "Death Lord": {
     "description": "All Undead models within four squares of a model with Death Lord gain +1B to all offense rolls.",
     "version": 2.0,
-    "hasErrata": "false",
-    "errata": []
+    "hasErrata": "true",
+    "errata": [
+		{
+			"description": "While a model with Death Lord is in play, all Undead monsters without the Death Lord ability gain +1G to all rolls.",
+			"version": 2.0,
+			"source": "",
+			"sourceDescription": "Updated in 2.0: Cursed Jarl."
+		}
+	]
   },
   "Defender": {
     "description": "Models without Defender that are adjacent to a friendly model with Defender cannot be targeted by offensive actions.",
@@ -553,12 +572,12 @@
     "version": 1.0,
     "hasErrata": "true",
     "errata": [
-      {
-        "description": "Each square of difficult terrain a model enters costs two movement points. If a model does not have enough movement points to move into a square with difficult terrain, it may not do so.<br>If any part of a large based model enters a square of difficult terrain, the move costs two movement points. Do not count squares a large model already occupies.",
-        "version": 1.6,
-        "source": "",
-        "sourceDescription": "Forgotten King Updated keyword."
-      }
+		{
+			"description": "Each square of difficult terrain a model enters costs two movement points. If a model does not have enough movement points to move into a square with difficult terrain, it may not do so.<br>If any part of a large based model enters a square of difficult terrain, the move costs two movement points. Do not count squares a large model already occupies.",
+			"version": 1.6,
+			"source": "",
+			"sourceDescription": "Forgotten King Updated keyword."
+		}
     ]
   },
   "Distance Effects": {
@@ -813,7 +832,13 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Fury": {
+  "Fury-A": {
+    "description": "A model with Fury gains 1ST for each wound it is currently suffering.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Fury-C": {
     "description": "A model with Fury gains 1B to all offense rolls for each wound it is currently suffering.",
     "version": 2.0,
     "hasErrata": "false",
@@ -822,8 +847,15 @@
   "Ghost": {
     "description": "A model with Ghost ignores walls for the purposes of line of sight and movement.",
     "version": 1.6,
-    "hasErrata": "false",
-    "errata": []
+    "hasErrata": "true",
+    "errata": [
+		{
+				"description": "A model with Ghost ignores walls and structures for the purposes of line of sight and movement.",
+				"version": 2.0,
+				"source": "",
+				"sourceDescription": "2.0 Updated keyword: Black Hand."
+		}
+	]
   },
   "Ghost Charge": {
     "description": "When this treasure is equipped place 4R on it. Whenever this model makes a roll, it may remove any number of dice from this treasure and add them to the roll. Once the dice have been used they are removed from this card permanently.",
@@ -854,12 +886,12 @@
     "version": 1.6,
     "hasErrata": "true",
     "errata": [
-      {
-        "description": "A model that is adjacent to an enemy model with Grabby may not move.",
-        "version": 1.61,
-        "source": "",
-        "sourceDescription": "Forgotten King Updated keyword."
-      }
+		  {
+				"description": "A model that is adjacent to an enemy model with Grabby may not move.",
+				"version": 1.61,
+				"source": "",
+				"sourceDescription": "Forgotten King Updated keyword."
+		  }
     ]
   },
   "Grabby Hands": {
