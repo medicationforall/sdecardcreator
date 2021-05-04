@@ -847,7 +847,7 @@
   "Ghost": {
     "description": "A model with Ghost ignores walls for the purposes of line of sight and movement.",
     "version": 1.6,
-    "hasErrata": "false",
+    "hasErrata": "true",
     "errata": [
 		{
 				"description": "A model with Ghost ignores walls and structures for the purposes of line of sight and movement.",
