@@ -494,6 +494,18 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Dark Legion Spawn": {
+    "description": "This elite is also a spawning point, and it may not be placed on the first tile during setup.  After placing it during setup, spawn five Undead Legionaires bonded to it.  When this elite receives the spawn command, roll 1B 1R and spawn one Necromutant Solo for each star rolled.  When this elite receives the reinforce command, spawn Undead Legionaires until it has five bonded Undead Legionaires.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Dark Nexus": {
+    "description": "This spawning point may not begin on the first or the second tile.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Dark Radiance": {
     "description": "All offense rolls and defense rolls made against a model with Dark Radiance reduce the result by 1st.",
     "version": 1.6,
