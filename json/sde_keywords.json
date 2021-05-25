@@ -199,7 +199,7 @@
     "errata": []
   },
   "Black Parade": {
-    "description": "When a model with Black Parade enters play, the Consul spawns two Curse Ravens adjacent to the spawning point icon in the third tileand two adjacent to the spawning point icon in th esecond tile (four Curse Ravens total).",
+    "description": "When a model with Black Parade enters play, the Consul spawns two Curse Ravens adjacent to the spawning point icon in the third tile and two adjacent to the spawning point icon in th esecond tile (four Curse Ravens total).",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
@@ -558,7 +558,7 @@
   "Death Lord-A": {
     "description": "All other Undead models in play gain +2ST STR.",
     "version": 2.0,
-    "hasErrata": "true",
+    "hasErrata": "false",
     "errata": []
   },
   "Defender": {
