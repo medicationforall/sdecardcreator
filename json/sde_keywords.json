@@ -198,6 +198,12 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Black Parade": {
+    "description": "When a model with Black Parade enters play, the Consul spawns two Curse Ravens adjacent to the spawning point icon in the third tileand two adjacent to the spawning point icon in th esecond tile (four Curse Ravens total).",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Bleed": {
     "description": "When making an offensive roll, a model with Bleed counts any Heart rolled as both one star and one heart.",
     "version": 2.0,
@@ -536,7 +542,7 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Death Lord": {
+  "Death Lord-C": {
     "description": "All Undead models within four squares of a model with Death Lord gain +1B to all offense rolls.",
     "version": 2.0,
     "hasErrata": "true",
@@ -548,6 +554,12 @@
 			"sourceDescription": "Updated in 2.0: Cursed Jarl."
 		}
 	]
+  },
+  "Death Lord-A": {
+    "description": "All other Undead models in play gain +2ST STR.",
+    "version": 2.0,
+    "hasErrata": "true",
+    "errata": []
   },
   "Defender": {
     "description": "Models without Defender that are adjacent to a friendly model with Defender cannot be targeted by offensive actions.",
@@ -1543,6 +1555,12 @@
   },
   "Pain is Scary": {
     "description": "This Pet's master gains Brutal Strike on its basic Missile Attack if it has one, and if it began its activation within two squares of this Pet.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Parade of Death": {
+    "description": "A model with Parade of Death may not use the basic Dash action.  A model with Parade of Death may use its movement to leave the dungeon by moving off of a dungeon exit.  If it leaves the dungeon in this way, it is destroyed and the Party must immediately discard one Princess Coin (the Party may lose the game in this way if it has no Princess Coins).",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
