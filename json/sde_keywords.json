@@ -1629,7 +1629,7 @@
   "Pile-On-A": {
     "description": "A model with Pile-On gains +1st STR if its target is suffering knockdown.",
     "version": 2.0,
-    "hasErrata": "true",
+    "hasErrata": "false",
     "errata": []
   },
   "Pirate Hoard": {
