@@ -49,6 +49,12 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Ambush Predator": {
+    "description": "After an enemy model enters a square adjacent to a model with Ambush Predator, the model with Ambush Predator may make a basic attack action against it.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Angry Walrus": {
     "description": "At the end of the Consul's power-up phase, the Consul rolls 1B. If no stars are rolled, nothing happens.  If any stars are rolled, the Consul may move the model with Angry Walrus up to one square for each star rolled and then make a basic melee offensive action against any other member of the party in range.  Arcade: the Hero's controller rolls and must move towards and attack the closest other friendly model if stars are rolled.",
     "version": 1.6,
@@ -367,6 +373,18 @@
   "Champion": {
     "description": "Models that are adjacent to a Champion structure add +1st to all offense rolls.",
     "version": 1.6,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Charge-C": {
+    "description": "When a model with Charge uses a Lance area effect, after resolving all other effects of the Lance, the model may be placed in any unoccupied square that was affected by the Lance for free.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Charge-A": {
+    "description": "When a model with Charge uses a Lance area effect, after resolving all other effects of the Lance, place the model in an unoccupied square that was affaced by the Lance, and which is as close as possible to the Hero with the most wrath.",
+    "version": 2.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -1589,7 +1607,7 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Pile-On": {
+  "Pile-On-C": {
     "description": "+1r ATT if target is suffering Knockdown.",
     "version": 1.0,
     "hasErrata": "true",
@@ -1601,18 +1619,18 @@
         "sourceDescription": "kickstarter update 57"
       },
       {
-        "description": "A model with Pile-On gains +1st STR if its target is suffering knockdown.",
-        "version": 1.61,
-        "source": "https://www.kickstarter.com/projects/1257458293/super-dungeon-explore-forgotten-king/posts/998856",
-        "sourceDescription": "Kickstarter update 61"
-      },
-      {
         "description": "A model with Pile-On gains +1b STR if its target is suffering Knockdown.",
         "version": 1.62,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       }
     ]
+  },
+  "Pile-On-A": {
+    "description": "A model with Pile-On gains +1st STR if its target is suffering knockdown.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
   },
   "Pirate Hoard": {
     "description": "This model may equip Loot and Treasure cards. When spawned, draw one Treasure card and equip it on this model. When defeated, Heroes gain all Loot and Treasure cards this model has equipped.",
@@ -2463,6 +2481,12 @@
   "Throw": {
     "description": "When using an action with Throw, choose one friendly adjacent model. Push that model a number of squares up to the value of X, as described in the rules for Push. If the model moves to a square that is adjacent to another model it immediately stops moving. Every model it stops adjacent to, friendly or enemy, suffers an offense roll of 1b per square the model moved.",
     "version": 1.6,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Throw Me a Fish": {
+    "description": "When another Hero begins its activation on the same tile as a model with Throw Me a Fish, the Hero may discard one loot from the backpack.  If it does, the model with Throw Me a Fish may immediately take one basic offensive action.",
+    "version": 2.0,
     "hasErrata": "false",
     "errata": []
   },
