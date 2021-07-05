@@ -2292,6 +2292,12 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Steady": {
+    "description": "A model with Steady may not be Pushed, Pulled, or Compelled by enemy models.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Stealth": {
     "description": "When a model with stealth is targeted by a ranged affect they may immediately make a Dex roll. Subtract the number of stars rolled from the attacker's range. if the roll causes the attacker to be out of range the attack is considered to have failed.",
     "version": 1,
