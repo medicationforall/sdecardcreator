@@ -795,7 +795,7 @@
       }
     ]
   },
-  "For The Crown!": {
+  "For The Crown": {
     "description": "When a model with For The Crown is destroyed it makes two basic 0mi attacks before being removed from play.",
     "version": 2.0,
     "hasErrata": "false",
