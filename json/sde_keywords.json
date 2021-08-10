@@ -795,6 +795,12 @@
       }
     ]
   },
+  "For The Crown!": {
+    "description": "When a model with For The Crown is destroyed it makes two basic 0mi attacks before being removed from play.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Forced Shift": {
     "description": "Instead of being destroyed as normal it instead automatically Shapeshifts into its X Form.",
     "version": 1.6,
@@ -1282,6 +1288,12 @@
         "sourceDescription": "Forgotten King Updated keyword."
       }
     ]
+  },
+  "Knocked To My Senses": {
+    "description": "When a model with Knocked To My Senses suffers a wound, it rolls 1R.  If it rolls no stars, it Shapeshifts to its original form.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
   },
   "Lance": {
     "description": "A Lance effect draws a straight line directly away from the user's square along a distance of X. Every model along this line is hit. Lance effects may not be used along diagonals.",
@@ -2641,6 +2653,12 @@
   "Weak": {
     "description": "A model or effect with Weak places a Weak counter on any model it damages. A model suffering Weak discards the highest result rolled anytime it makes a roll using its ATT attribute.",
     "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Werecursed": {
+    "description": "When the Consul reaches a purple space on the Mighty Monster Chart, a model with Werecursed will Shapeshift into the listed model.",
+    "version": 2.0,
     "hasErrata": "false",
     "errata": []
   },
