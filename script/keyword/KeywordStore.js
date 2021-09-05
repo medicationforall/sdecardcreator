@@ -219,7 +219,7 @@ function KeywordStore(keywords){
    *
    */
   this.findStats=function(text){
-    var re = /\b(STR|WILL|DEX|ARM)\b/gi;
+    var re = /\b(STR|WILL|DEX|ARM);
     text = text.replace(re,'<span class="stat $1">$1</span>');
     return text;
   };
@@ -229,7 +229,7 @@ function KeywordStore(keywords){
    */
   this.findDice=function(text){
     //regular expression - https://regex101.com/#javascript
-    var re = /(([+-]?[0-9]+)(RG|[RBGOP]|ST|SW|MI|MA|AC|MO|HE|SH))\b/gi;
+    var re = /(([+-]?[0-9]+)(RG|[RBGOP]|ST|SW|MI|MA|AC|MO|HE|SH));
 
     text = text.replace(re,function(match,p1,p2,p3,p4){
       var c="";
@@ -274,7 +274,7 @@ function KeywordStore(keywords){
    *
    */
   this.findAffinity=function(description){
-    var re = /\b(SAPPHIRE|EMERALD|CITRINE|RUBY|AMETHYST)\b/gi;
+    var re = /\b(SAPPHIRE|EMERALD|CITRINE|RUBY|AMETHYST);
 
     description = description.replace(re,function(match){
     return '<div class="affinity '+match+'" title="'+match+'"></div>';
