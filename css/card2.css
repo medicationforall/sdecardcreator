@@ -119,6 +119,12 @@
 	background-size: 30px;
 }
 
+.card span.keyword.immobile{
+	background:url('image/status/immobile.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+}
+
 .card span.keyword.line{
 	background:url('image/trap/line.png') no-repeat 0px;
 	color:rgba(0, 0, 0, 0.0);
