@@ -229,39 +229,39 @@ function KeywordStore(keywords){
    */
   this.findDice=function(text){
     //regular expression - https://regex101.com/#javascript
-    var re = /(([+-]?[0-9]+)(rg|[rbgop]|st|sw|mi|ma|ac|mo|he|sh))\b/gi;
+    var re = /(([+-]?[0-9]+)(RG|[RBGOP]|ST|SW|MI|MA|AC|MO|HE|SH))\b/gi;
 
     text = text.replace(re,function(match,p1,p2,p3,p4){
       var c="";
-      var v = p3.toLowerCase();
+      //var v = p3.toLowerCase();
 
-      if(v==='r'){
+      if(p3==='R'){
         c+="dice red";
-      }else if(v==='b'){
+      }else if(p3==='B'){
         c+="dice blue";
-      }else if(v==='g'){
+      }else if(p3==='G'){
         c+="dice green";
-      }else if(v==='o'){
+      }else if(p3==='O'){
         c+="dice orange";
-      }else if(v==='p'){
+      }else if(p3==='P'){
         c+="dice purple";
-      }else if(v==='st'){
+      }else if(p3==='ST'){
         c+="dice star";
-      }else if(v==='ma'){
+      }else if(p3==='MA'){
         c+="offense magic";
-      }else if(v==='mi'){
+      }else if(p3==='MI'){
         c+="offense missile";
-      }else if(v==='sw'){
+      }else if(p3==='SW'){
         c+="offense melee";
-      }else if(v==='rg'){
+      }else if(p3==='RG'){
         c+="offense range";
-      }else if(v==='ac'){
+      }else if(p3==='AC'){
         c+="actionMod";
-      }else if(v==='mo'){
-        c+="moveMod";
-      }else if(v==='he'){
+      }else if(p3==='MO'){
+        c+="mop3eMod";
+      }else if(p3==='HE'){
         c+="heartMod";
-      }else if(v==='sh'){
+      }else if(p3==='SH'){
         c+="shieldMod";
       }
       return '<span class="'+c+'">'+(p2==='0'?'&nbsp;':p2)+'</span>';
@@ -274,10 +274,10 @@ function KeywordStore(keywords){
    *
    */
   this.findAffinity=function(description){
-    var re = /\b(Sapphire|Emerald|Citrine|Ruby|Amethyst)\b/gi;
+    var re = /\b(SAPPHIRE|EMERALD|CITRINE|RUBY|AMETHYST)\b/gi;
 
     description = description.replace(re,function(match){
-    return '<div class="affinity '+match.toLowerCase()+'" title="'+match+'"></div>';
+    return '<div class="affinity '+match+'" title="'+match+'"></div>';
     });
     return description;
   };
