@@ -258,7 +258,7 @@ function KeywordStore(keywords){
       }else if(p3==='AC'){
         c+="actionMod";
       }else if(p3==='MO'){
-        c+="mop3eMod";
+        c+="moveMod";
       }else if(p3==='HE'){
         c+="heartMod";
       }else if(p3==='SH'){
