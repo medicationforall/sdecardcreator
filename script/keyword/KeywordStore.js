@@ -219,7 +219,7 @@ function KeywordStore(keywords){
    *
    */
   this.findStats=function(text){
-    var re = /\b(str|will|dex|arm)\b/gi;
+    var re = /\b(STR|WILL|DEX|ARM)\b/gi;
     text = text.replace(re,'<span class="stat $1">$1</span>');
     return text;
   };

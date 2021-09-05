@@ -83,7 +83,7 @@ function Form(){
   this.initializeAbility = function(){
     console.log('initialize ability');
     $('.addAbility').trigger('click');
-    $('.form .ability textarea[name="definition"]').val('+1r -2b 3g 4o 5p 1st 0mi 1ma 2sw 3rg augment fire STR WILL DEX ARM 1ac 2mo 0sh +1he').trigger('input');
+    $('.form .ability textarea[name="definition"]').val('+1R -2B 3G 4O 5P 1ST 0MI 1MA 2SW 3RG AUGMENT FIRE STR WILL DEX ARM 1AC 2MO 0SH +1HE').trigger('input');
   };
 
 
