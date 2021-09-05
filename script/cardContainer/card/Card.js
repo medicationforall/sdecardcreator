@@ -34,13 +34,13 @@ function Card(animate,appendAfter){
     "background": "pic1685577_md.jpg",
     "backgroundFlip": false,
     "imageSource": "default",
-    "STR": "1sw 3b",
-    "ARM": "2b 1r sh",
-    "WILL": "3b",
-    "DEX": "3b",
+    "STR": "1SW 3B",
+    "ARM": "2B 1R SH",
+    "WILL": "3B",
+    "DEX": "3B",
     "flavorText": "",
     "abilities": [],
-    "affinity": "citrine"
+    "affinity": "CITRINE"
   };
 
   this.template='<div class="cardGroup selected">'+
