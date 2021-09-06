@@ -577,9 +577,9 @@ cursor:move;
 
 /*AFFINITY*/
 /*CITRINE*/
-.card .affinity.citrine{
+.card .affinity.CITRINE{
 	display:inline-block;
-	background: url('image/affinity/citrine.png') no-repeat;
+	background: url('image/affinity/CITRINE.png') no-repeat;
 	width:42px;
 	height:60px;
 	position: relative;
@@ -587,42 +587,42 @@ cursor:move;
 }
 
 
-.card .back .affinity.citrine, .card .item .affinity.citrine{
+.card .back .affinity.CITRINE, .card .item .affinity.CITRINE{
 	background-size:auto 35px;
 	width:25px;
 	height:35px;
 }
 
-.card .affinity.citrine.emerald{
+.card .affinity.CITRINE.EMERALD{
 	display:inline-block;
-	background: url('image/affinity/citrine-emerald.png') no-repeat;
+	background: url('image/affinity/CITRINE-EMERALD.png') no-repeat;
 	width:42px;
 	height:60px;
 	position: relative;
     top: 10px;
 }
 
-.card .affinity.citrine.ruby{
+.card .affinity.CITRINE.RUBY{
 	display:inline-block;
-	background: url('image/affinity/citrine-ruby.png') no-repeat;
+	background: url('image/affinity/CITRINE-RUBY.png') no-repeat;
 	width:42px;
 	height:60px;
 	position: relative;
     top: 10px;
 }
 
-.card .affinity.citrine.sapphire{
+.card .affinity.CITRINE.SAPPHIRE{
 	display:inline-block;
-	background: url('image/affinity/citrine-sapphire.png') no-repeat;
+	background: url('image/affinity/CITRINE-SAPPHIRE.png') no-repeat;
 	width:42px;
 	height:60px;
 	position: relative;
     top: 10px;
 }
 
-.card .affinity.citrine.amethyst{
+.card .affinity.CITRINE.AMETHYST{
 	display:inline-block;
-	background: url('image/affinity/citrine-amethyst.png') no-repeat;
+	background: url('image/affinity/CITRINE-AMETHYST.png') no-repeat;
 	width:42px;
 	height:60px;
 	position: relative;
@@ -639,40 +639,40 @@ cursor:move;
 }
 
 /*EMERALD*/
-.card .affinity.emerald{
+.card .affinity.EMERALD{
 	display:inline-block;
-	background: url('image/affinity/emerald.png') no-repeat;
+	background: url('image/affinity/EMERALD.png') no-repeat;
 	width:42px;
 	height:60px;
 	position: relative;
     top: 10px;
 }
 
-.card .back .affinity.emerald, .card .item .affinity.emerald{
+.card .back .affinity.EMERALD, .card .item .affinity.EMERALD{
 	background-size:auto 35px;
 	width:25px;
 	height:35px;
 }
 
-.card .affinity.emerald.ruby{
+.card .affinity.EMERALD.RUBY{
 	display:inline-block;
-	background: url('image/affinity/emerald-ruby.png') no-repeat;
+	background: url('image/affinity/EMERALD-RUBY.png') no-repeat;
 	width:42px;
 	height:60px;
 	position: relative;
     top: 10px;
 }
 
-.card .affinity.emerald.sapphire{
+.card .affinity.EMERALD.SAPPHIRE{
 	display:inline-block;
-	background: url('image/affinity/emerald-sapphire.png') no-repeat;
+	background: url('image/affinity/EMERALD-SAPPHIRE.png') no-repeat;
 	width:42px;
 	height:70px;
 }
 
-.card .affinity.emerald.amethyst{
+.card .affinity.EMERALD.AMETHYST{
 	display:inline-block;
-	background: url('image/affinity/emerald-amethyst.png') no-repeat;
+	background: url('image/affinity/EMERALD-AMETHYST.png') no-repeat;
 	width:42px;
 	height:60px;
 	position: relative;
@@ -681,33 +681,33 @@ cursor:move;
 
 
 /*RUBY*/
-.card .affinity.ruby{
+.card .affinity.RUBY{
 	display:inline-block;
-	background: url('image/affinity/ruby.png') no-repeat;
+	background: url('image/affinity/RUBY.png') no-repeat;
 	width:42px;
 	height:60px;
 	position: relative;
     top: 10px;
 }
 
-.card .back .affinity.ruby, .card .item .affinity.ruby{
+.card .back .affinity.RUBY, .card .item .affinity.RUBY{
 	background-size:auto 35px;
 	width:25px;
 	height:35px;
 }
 
-.card .affinity.ruby.sapphire{
+.card .affinity.RUBY.SAPPHIRE{
 	display:inline-block;
-	background: url('image/affinity/ruby-sapphire.png') no-repeat;
+	background: url('image/affinity/RUBY-SAPPHIRE.png') no-repeat;
 	width:42px;
 	height:60px;
 	position: relative;
     top: 10px;
 }
 
-.card .affinity.ruby.amethyst{
+.card .affinity.RUBY.AMETHYST{
 	display:inline-block;
-	background: url('image/affinity/ruby-amethyst.png') no-repeat;
+	background: url('image/affinity/RUBY-AMETHYST.png') no-repeat;
 	width:42px;
 	height:60px;
 	position: relative;
@@ -716,9 +716,9 @@ cursor:move;
 
 
 /*SAPPHIRE*/
-.card .affinity.sapphire{
+.card .affinity.SAPPHIRE{
 	display:inline-block;
-	background: url('image/affinity/sapphire.png') no-repeat;
+	background: url('image/affinity/SAPPHIRE.png') no-repeat;
 	width:42px;
 	height:60px;
 	position: relative;
@@ -726,15 +726,15 @@ cursor:move;
 }
 
 
-.card .back .affinity.sapphire, .card .item .affinity.sapphire{
+.card .back .affinity.SAPPHIRE, .card .item .affinity.SAPPHIRE{
 	background-size:auto 35px;
 	width:25px;
 	height:35px;
 }
 
-.card .affinity.sapphire.amethyst{
+.card .affinity.SAPPHIRE.AMETHYST{
 	display:inline-block;
-	background: url('image/affinity/amethyst-sapphire.png') no-repeat;
+	background: url('image/affinity/AMETHYST-SAPPHIRE.png') no-repeat;
 	width:42px;
 	height:60px;
 	position: relative;
@@ -742,16 +742,16 @@ cursor:move;
 }
 
 /*Amethyst*/
-.card .affinity.amethyst{
+.card .affinity.AMETHYST{
 	display:inline-block;
-	background: url('image/affinity/amethyst.png') no-repeat;
+	background: url('image/affinity/AMETHYST.png') no-repeat;
 	width:42px;
 	height:60px;
 	position: relative;
     top: 10px;
 }
 
-.card .back .affinity.amethyst, .card .item .affinity.amethyst{
+.card .back .affinity.AMETHYST, .card .item .affinity.AMETHYST{
 	background-size:auto 35px;
 	width:25px;
 	height:35px;
@@ -1015,8 +1015,8 @@ cursor:move;
 	top: 15px;
 }
 
-.card .slot.ruby{
-	background:url('image/heroSlot/hero_ruby.png');
+.card .slot.RUBY{
+	background:url('image/heroSlot/hero_RUBY.png');
 	width: 45px;
 	height: 43px;
 	display: inline-block;
@@ -1025,8 +1025,8 @@ cursor:move;
 	left: 311px;
 }
 
-.card .slot.emerald{
-	background:url('image/heroSlot/hero_emerald.png');
+.card .slot.EMERALD{
+	background:url('image/heroSlot/hero_EMERALD.png');
 	width: 43px;
 	height: 45px;
 	display: inline-block;
@@ -1047,8 +1047,8 @@ cursor:move;
 	z-index: 2;
 }
 
-.card .slot.citrine{
-	background:url('image/heroSlot/hero_citrine.png');
+.card .slot.CITRINE{
+	background:url('image/heroSlot/hero_CITRINE.png');
 	width: 42px;
 	height: 46px;
 	display: inline-block;
