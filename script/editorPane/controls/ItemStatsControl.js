@@ -67,11 +67,11 @@ function ItemStatsControl(){
       '<div class="helpUnit">'+
       '<h3>Affinity</h3>'+
       '<ul>'+
-        '<li>amethyst</li>'+
-        '<li>citrine</li>'+
-        '<li>emerald</li>'+
-        '<li>ruby</li>'+
-        '<li>sapphire</li>'+
+        '<li>Amethyst</li>'+
+        '<li>Citrine</li>'+
+        '<li>Emerald</li>'+
+        '<li>Ruby</li>'+
+        '<li>Sapphire</li>'+
       '</ul>'+
       '</div>'+
       '</div>'+
