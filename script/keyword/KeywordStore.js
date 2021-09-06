@@ -274,7 +274,7 @@ function KeywordStore(keywords){
    *
    */
   this.findAffinity=function(description){
-    var re = /\b(Sapphire|Emerald|Citrine|Ruby|Amethyst)\b/g;
+    var re = /\b(sapphire|emerald|citrine|ruby|amethyst)\b/g;
 
     description = description.replace(re,function(match){
     return '<div class="affinity '+match+'" title="'+match+'"></div>';
