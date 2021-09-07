@@ -209,7 +209,7 @@ function Card(animate,appendAfter){
 
   this.initFirstCard=function(){
     //hero
-    var data = {"name":"Ability 1","costType":"attack","cost":1,"definition":"+1R -2B 3G 4O 5P 1ST 0MI 1MA 2SW 3RG AUGMENT FIRE STR WILL DEX ARM 1AC 2MO 0SH +1HE"};
+    var data = {"name":"Ability 1","costType":"attack","cost":1,"definition":"+1R -2B 3G 4O 5P 1ST 0MI 1MA 2SW 3RG AUGMENT STR WILL DEX ARM 1AC 2MO 0SH +1HE ALLAFFINITY AMETHYST AMETHYSTCITRINE CITRINE CITRINEEMERALD EMERALD EMERALDRUBY RUBY RUBYSAPPHIRE SAPPHIRE SAPPHIRECITRINE BANE FIRE KNOCKDOWN ICE IMMOBILE POISON SLOW ALL IMMUNEBANE IMMUNEFIRE IMMUNEKNOCKDOWN IMMUNEICE IMMUNEIMMOBILE IMMUNEPOISON IMMUNESLOW IMMUNEALL"};
 
     //griefer
     //data = {"cardType": "command","title": "Griefer","imageSource": "default","remoteAvatar": "","abilities": [{"costType": "special","cost": "1","name": "Bully","definition": "All Commands target Hero with the least wrath."}, {"costType": "nameOnly","cost": "1","name": "Move x1","definition": ""}, {"costType": "nameOnly","cost": "1","name": "Fight x1","definition": ""}],"customKeywords": {}};

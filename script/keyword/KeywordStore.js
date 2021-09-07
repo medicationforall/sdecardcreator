@@ -62,7 +62,7 @@ function KeywordStore(keywords){
     }
 
     this.ordered = rawOrder.sort(function (a, b) {
-      return a.toLowerCase().localeCompare(b.toLowerCase());
+      return a.localeCompare(b);
     });
 
     this.byLength = raw.sort(function(a, b){
@@ -110,12 +110,30 @@ function KeywordStore(keywords){
    *search function that returns a modified version of the text passed into with the keywords highlighted.
    */
   this.findKeywords=function(text){
-    text = text.replace(this.re,function(match){
-      var key = this.lookup[match.toLowerCase()];
-      var keyClass = this.resolveKeyClass(key);
-      return '<span class="keyword '+keyClass+'" data-key="'+key+'">'+key+'</span>';
+	var secondaryRe = /\b(ALL|IMMUNEBANE|IMMUNEFIRE|IMMUNEKNOCKDOWN|IMMUNEICE|IMMUNEIMMOBILE|IMMUNEPOISON|IMMUNESLOW|IMMUNEALL)\b/g;
+    
+    text = text.replace(secondaryRe,function(match){
+		var result = '<span class="keyword '+match+'" data-key="'+match+'">'+match+'</span>';
+		
+		return result;
     }.bind(this));
-    return text;
+	
+	//console.log(this.re);
+	//console.log(secondaryRe);
+	
+	//var combinedRegex = this.re + "|" + secondaryRe;
+	
+	//console.log(combinedRegex);
+	
+	text = text.replace(this.re,function(match){
+		var key = this.lookup[match.toLowerCase()];
+		var keyClass = this.resolveKeyClass(key);
+		return '<span class="keyword '+keyClass.toUpperCase()+'" data-key="'+key+'">'+key+'</span>';
+    }.bind(this));
+	
+	console.log(text);
+	
+	return text;
   };
 
 
@@ -138,7 +156,7 @@ function KeywordStore(keywords){
    *
    */
   this.resolveNKey=function(key){
-    key = this.ucFirstAllWords(key)+' X';
+    //key = this.ucFirstAllWords(key)+' X';
     return key;
   };
 
@@ -146,61 +164,64 @@ function KeywordStore(keywords){
   /**
    *http://stackoverflow.com/a/8330107
    */
-  this.ucFirstAllWords=function(str){
-    str = str.toLowerCase();
-    var pieces = str.split(" ");
-    for ( var i = 0; i < pieces.length; i++ ) {
-      var j = pieces[i].charAt(0).toUpperCase();
-      pieces[i] = j + pieces[i].substr(1);
-    }
-    return pieces.join(" ");
-  };
+  //this.ucFirstAllWords=function(str){
+    //str = str.toLowerCase();
+    //var pieces = str.split(" ");
+    //for ( var i = 0; i < pieces.length; i++ ) {
+    //  var j = pieces[i].charAt(0).toUpperCase();
+    //  pieces[i] = j + pieces[i].substr(1);
+    //}
+    //return pieces.join(" ");
+	//return str;
+  //};
 
 
   /**
    *
    */
   this.addKeyword=function(key,data){
-    var lKey = key.toLowerCase();
-    var keyClass = this.resolveKeyClass(key);
+	if(data != undefined){
+		//var lKey = key.toLowerCase();
+		var keyClass = this.resolveKeyClass(key);
 
-    //check to see if the keyword is already added, and if the display flag does not equal false
-    if( data.displayBack !== false && data.displayBack !== 'false'  && $('.cardGroup.selected .card .keywords .'+keyClass).length ===0){
-      //console.log(key,data);
+		//check to see if the keyword is already added, and if the display flag does not equal false
+		if( data.displayBack !== false && data.displayBack !== 'false'  && $('.cardGroup.selected .card .keywords .'+keyClass).length ===0){
+		  //console.log(key,data);
 
-      var description = data.description;
+		  var description = data.description;
 
-      if(data.selectedVersion !== undefined){
-        if(data.selectedVersion !== data.version ){
-          for(var i=0,e;(e=data.errata[i]);i++){
-            if(data.selectedVersion === e.version.toString()){
-              description=e.description;
-              break;
-            }
-          }
-        }
-      }else if(data.hasErrata === "true" || data.hasErrata === true){
-        description = data.errata[data.errata.length-1].description;
-      }
+		  if(data.selectedVersion !== undefined){
+			if(data.selectedVersion !== data.version ){
+			  for(var i=0,e;(e=data.errata[i]);i++){
+				if(data.selectedVersion === e.version.toString()){
+				  description=e.description;
+				  break;
+				}
+			  }
+			}
+		  }else if(data.hasErrata === "true" || data.hasErrata === true){
+			description = data.errata[data.errata.length-1].description;
+		  }
 
-      var parsedDescription = this.parseDescription(description);
+		  var parsedDescription = this.parseDescription(description);
 
-      var backTemplate = '<div class="keyword '+keyClass+'" data-key="'+key+'">'+
-      '<span class="keyword '+keyClass+'"></span>'+
-      '<span class="name">'+key+'</span>:'+
-      '<span class="description">'+parsedDescription+'</span>'+
-      '</div>';
+		  var backTemplate = '<div class="keyword '+keyClass+'" data-key="'+key+'">'+
+		  '<span class="keyword '+keyClass+'"></span>'+
+		  '<span class="name">'+key+'</span>:'+
+		  '<span class="description">'+parsedDescription+'</span>'+
+		  '</div>';
 
-      var itemTemplate = '<div class="keyword '+keyClass+'" data-key="'+key+'">'+
-      '<span class="keyword '+keyClass+'"></span>'+
-      '<span class="name">'+key+'</span> '+
-      '<span class="description">('+parsedDescription+')</span>'+
-      '</div>';
+		  var itemTemplate = '<div class="keyword '+keyClass+'" data-key="'+key+'">'+
+		  '<span class="keyword '+keyClass+'"></span>'+
+		  '<span class="name">'+key+'</span> '+
+		  '<span class="description">('+parsedDescription+')</span>'+
+		  '</div>';
 
-      $(".cardGroup.selected .card .back .keywords").append(backTemplate);
+		  $(".cardGroup.selected .card .back .keywords").append(backTemplate);
 
-      $(".cardGroup.selected .card .item .keywords").append(itemTemplate);
-    }
+		  $(".cardGroup.selected .card .item .keywords").append(itemTemplate);
+		}
+	}
   };
 
 
@@ -274,7 +295,7 @@ function KeywordStore(keywords){
    *
    */
   this.findAffinity=function(description){
-    var re = /\b(SAPPHIRE|EMERALD|CITRINE|RUBY|AMETHYST)\b/g;
+    var re = /\b(ALLAFFINITY|AMETHYST|AMETHYSTCITRINE|AMETHYSTEMERALD|AMETHYSTRUBY|AMETHYSTSAPPHIRE|CITRINE|CITRINEAMETHYST|CITRINEEMERALD|CITRINERUBY|CITRINESAPPHIRE|EMERALD|EMERALDAMETHYST|EMERALDCITRINE|EMERALDRUBY|EMERALDSAPPHIRE|RUBY|RUBYAMETHYST|RUBYCITRINE|RUBYEMERALD|RUBYSAPPHIRE|SAPPHIRE|SAPPHIREAMETHYST|SAPPHIRECITRINE|SAPPHIREEMERALD|SAPPHIRERUBY)\b/g;
 
     description = description.replace(re,function(match){
     return '<div class="affinity '+match+'" title="'+match+'"></div>';
@@ -292,7 +313,7 @@ function KeywordStore(keywords){
 
     for(var i=0,item;(item=parts[i]);i++){
       if(i==0){
-        item = item.toLowerCase();
+        //item = item.toLowerCase();
         item = item.replace('\'','');
 
         if($.isNumeric(item[0])){
@@ -365,9 +386,9 @@ function KeywordStore(keywords){
       keysFound.push($(element).data('key'));
     });
 
-    //sort keysfound - should be case insensitive
+    //sort keysfound - should be case sensitive
     keysFound = keysFound.sort(function(a,b){
-      return a.toLowerCase().localeCompare(b.toLowerCase());
+      return a.localeCompare(b);
     });
 
     //loop through keysfound
