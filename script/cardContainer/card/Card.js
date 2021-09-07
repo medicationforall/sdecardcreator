@@ -34,13 +34,13 @@ function Card(animate,appendAfter){
     "background": "pic1685577_md.jpg",
     "backgroundFlip": false,
     "imageSource": "default",
-    "STR": "1sw 3b",
-    "ARM": "2b 1r sh",
-    "WILL": "3b",
-    "DEX": "3b",
+    "STR": "1SW 3B",
+    "ARM": "2B 1R SH",
+    "WILL": "3B",
+    "DEX": "3B",
     "flavorText": "",
     "abilities": [],
-    "affinity": "citrine"
+    "affinity": "CITRINE"
   };
 
   this.template='<div class="cardGroup selected">'+
@@ -209,7 +209,7 @@ function Card(animate,appendAfter){
 
   this.initFirstCard=function(){
     //hero
-    var data = {"name":"Ability 1","costType":"attack","cost":1,"definition":"+1r -2b 3g 4o 5p 1st 0mi 1ma 2sw 3rg augment fire STR WILL DEX ARM 1ac 2mo 0sh +1he"};
+    var data = {"name":"Ability 1","costType":"attack","cost":1,"definition":"+1R -2B 3G 4O 5P 1ST 0MI 1MA 2SW 3RG AUGMENT STR WILL DEX ARM 1AC 2MO 0SH +1HE ALLAFFINITY AMETHYST AMETHYSTCITRINE CITRINE CITRINEEMERALD EMERALD EMERALDRUBY RUBY RUBYSAPPHIRE SAPPHIRE SAPPHIRECITRINE BANE FIRE KNOCKDOWN ICE IMMOBILE POISON SLOW ALL IMMUNEBANE IMMUNEFIRE IMMUNEKNOCKDOWN IMMUNEICE IMMUNEIMMOBILE IMMUNEPOISON IMMUNESLOW IMMUNEALL"};
 
     //griefer
     //data = {"cardType": "command","title": "Griefer","imageSource": "default","remoteAvatar": "","abilities": [{"costType": "special","cost": "1","name": "Bully","definition": "All Commands target Hero with the least wrath."}, {"costType": "nameOnly","cost": "1","name": "Move x1","definition": ""}, {"costType": "nameOnly","cost": "1","name": "Fight x1","definition": ""}],"customKeywords": {}};

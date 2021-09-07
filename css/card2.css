@@ -34,15 +34,27 @@
 
 
 /*Keyword*/
-.card span.keyword.fire,
-.card span.keyword.knockdown,
-.card span.keyword.poison,
-.card span.keyword.ice,
-.card span.keyword.slow,
-.card span.keyword.dangerous,
-.card span.keyword.augment,
-.card span.keyword.bane,
-.card span.keyword.hex,
+.card span.keyword.ALL,
+.card span.keyword.BANE,
+.card span.keyword.FIRE,
+.card span.keyword.HEX,
+.card span.keyword.ICE,
+.card span.keyword.IMMOBILE,
+.card span.keyword.KNOCKDOWN,
+.card span.keyword.POISON,
+.card span.keyword.SLOW,
+.card span.keyword.DANGEROUS,
+.card span.keyword.IMMUNEALL,
+.card span.keyword.IMMUNEBANE,
+.card span.keyword.IMMUNEFIRE,
+.card span.keyword.IMMUNEHEX,
+.card span.keyword.IMMUNEICE,
+.card span.keyword.IMMUNEIMMOBILE,
+.card span.keyword.IMMUNEKNOCKDOWN,
+.card span.keyword.IMMUNEPOISON,
+.card span.keyword.IMMUNESLOW,
+.card span.keyword.IMMUNEDANGEROUS,
+.card span.keyword.AUGMENT,
 .card span.keyword.line,
 .card span.keyword.area,
 .card span.keyword.scatter{
@@ -55,57 +67,23 @@
 	vertical-align:top;
 }
 
-.card span.keyword.fire{
-	background:url('image/status/fireT.png') no-repeat 0px;
+.card span.keyword.ALL{
+	background:url('image/status/all.png') no-repeat 0px;
 	color:rgba(0, 0, 0, 0.0);
 	background-size: 30px;
 	padding-top:4px;
 	vertical-align:middle;
 }
 
-.card span.keyword.knockdown{
-	background:url('image/status/knockdownT.png') no-repeat 0px;
+.card span.keyword.IMMUNEALL{
+	background:url('image/status/allI.png') no-repeat 0px;
 	color:rgba(0, 0, 0, 0.0);
 	background-size: 30px;
-}
-
-.card span.keyword.poison{
-	background:url('image/status/poisonT.png') no-repeat 0px;
-	color:rgba(0, 0, 0, 0.0);
-	background-size: 30px;
-	height:35px;
-	bottom:5px;
-}
-
-.card span.keyword.ice{
-	background:url('image/status/iceT.png') no-repeat 0px;
-	color:rgba(0, 0, 0, 0.0);
-	background-size: 30px;
-}
-
-.card span.keyword.slow{
-	background:url('image/status/slowT.png') no-repeat 0px;
-	color:rgba(0, 0, 0, 0.0);
-	background-size: 30px;
-}
-
-
-.card span.keyword.dangerous{
-	background:url('image/status/dangerousSmall.png') no-repeat 0px;
-	color:rgba(0, 0, 0, 0.0);
-	background-size: 30px;
+	padding-top:4px;
 	vertical-align:middle;
 }
 
-
-.card span.keyword.augment{
-	background:url('image/status/augmentSmall.png') no-repeat 0px;
-	color:rgba(0, 0, 0, 0.0);
-	background-size: 30px;
-	vertical-align:middle;
-}
-
-.card span.keyword.bane{
+.card span.keyword.BANE{
 	background:url('image/status/baneT.png') no-repeat 0px;
 	color:rgba(0, 0, 0, 0.0);
 	background-size: 30px;
@@ -113,10 +91,139 @@
 	vertical-align:middle;
 }
 
-.card span.keyword.hex{
+.card span.keyword.IMMUNEBANE{
+	background:url('image/status/baneI.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+	padding-top: 3px;
+	vertical-align:middle;
+}
+
+.card span.keyword.FIRE{
+	background:url('image/status/fireT.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+	padding-top:4px;
+	vertical-align:middle;
+}
+
+.card span.keyword.IMMUNEFIRE{
+	background:url('image/status/fireI.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+	padding-top:4px;
+	vertical-align:middle;
+}
+
+.card span.keyword.HEX{
 	background:url('image/status/hexT.png') no-repeat 0px;
 	color:rgba(0, 0, 0, 0.0);
 	background-size: 30px;
+	padding-top: 3px;
+	vertical-align:middle;
+}
+
+.card span.keyword.IMMUNEHEX{
+	background:url('image/status/hexI.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+	padding-top: 3px;
+	vertical-align:middle;
+}
+
+.card span.keyword.KNOCKDOWN{
+	background:url('image/status/knockdownT.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+}
+
+.card span.keyword.IMMUNEKNOCKDOWN{
+	background:url('image/status/knockdownI.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+}
+
+.card span.keyword.POISON{
+	background:url('image/status/poisonT.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+	height:35px;
+	bottom:5px;
+}
+
+.card span.keyword.IMMUNEPOISON{
+	background:url('image/status/poisonI.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+	height:35px;
+	bottom:5px;
+}
+
+.card span.keyword.ICE{
+	background:url('image/status/iceT.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+}
+
+.card span.keyword.IMMUNEICE{
+	background:url('image/status/iceI.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+}
+
+.card span.keyword.IMMOBILE{
+	background:url('image/status/immobile.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+	width:40px;
+	height:40px
+	vertical-align: middle;
+}
+
+.card span.keyword.IMMUNEIMMOBILE{
+	background:url('image/status/immobileI.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+	width:40px;
+	height:40px
+	vertical-align: middle;
+}
+
+.card span.keyword.SLOW{
+	background:url('image/status/slowT.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+}
+
+
+.card span.keyword.IMMUNESLOW{
+	background:url('image/status/slowI.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+}
+
+
+.card span.keyword.DANGEROUS{
+	background:url('image/status/dangerousSmall.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+	vertical-align:middle;
+}
+
+
+.card span.keyword.IMMUNEDANGEROUS{
+	background:url('image/status/dangerousSmallI.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+	vertical-align:middle;
+}
+
+
+.card span.keyword.AUGMENT{
+	background:url('image/status/augmentSmall.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+	vertical-align:middle;
 }
 
 .card span.keyword.line{
@@ -571,9 +678,9 @@ cursor:move;
 
 /*AFFINITY*/
 /*CITRINE*/
-.card .affinity.citrine{
+.card .affinity.CITRINE{
 	display:inline-block;
-	background: url('image/affinity/citrine.png') no-repeat;
+	background: url('image/affinity/CITRINE.png') no-repeat;
 	width:42px;
 	height:60px;
 	position: relative;
@@ -581,49 +688,49 @@ cursor:move;
 }
 
 
-.card .back .affinity.citrine, .card .item .affinity.citrine{
+.card .back .affinity.CITRINE, .card .item .affinity.CITRINE{
 	background-size:auto 35px;
 	width:25px;
 	height:35px;
 }
 
-.card .affinity.citrine.emerald{
+.card .affinity.CITRINE.EMERALD, .CITRINEEMERALD, .EMERALDCITRINE{
 	display:inline-block;
-	background: url('image/affinity/citrine-emerald.png') no-repeat;
+	background: url('image/affinity/CITRINE-EMERALD.png') no-repeat;
 	width:42px;
 	height:60px;
 	position: relative;
     top: 10px;
 }
 
-.card .affinity.citrine.ruby{
+.card .affinity.CITRINE.RUBY, .CITRINERUBY, .RUBYCITRINE{
 	display:inline-block;
-	background: url('image/affinity/citrine-ruby.png') no-repeat;
+	background: url('image/affinity/CITRINE-RUBY.png') no-repeat;
 	width:42px;
 	height:60px;
 	position: relative;
     top: 10px;
 }
 
-.card .affinity.citrine.sapphire{
+.card .affinity.CITRINE.SAPPHIRE, .CITRINESAPPHIRE, .SAPPHIRECITRINE{
 	display:inline-block;
-	background: url('image/affinity/citrine-sapphire.png') no-repeat;
+	background: url('image/affinity/CITRINE-SAPPHIRE.png') no-repeat;
 	width:42px;
 	height:60px;
 	position: relative;
     top: 10px;
 }
 
-.card .affinity.citrine.amethyst{
+.card .affinity.CITRINE.AMETHYST, .AMETHYSTCITRINE, .CITRINEAMETHYST{
 	display:inline-block;
-	background: url('image/affinity/citrine-amethyst.png') no-repeat;
+	background: url('image/affinity/CITRINE-AMETHYST.png') no-repeat;
 	width:42px;
 	height:60px;
 	position: relative;
     top: 10px;
 }
 
-.card .affinity.all{
+.card .affinity.all, .ALLAFFINITY{
 	display:inline-block;
 	background: url('image/affinity/rainbow.png') no-repeat;
 	width:42px;
@@ -633,40 +740,40 @@ cursor:move;
 }
 
 /*EMERALD*/
-.card .affinity.emerald{
+.card .affinity.EMERALD{
 	display:inline-block;
-	background: url('image/affinity/emerald.png') no-repeat;
+	background: url('image/affinity/EMERALD.png') no-repeat;
 	width:42px;
 	height:60px;
 	position: relative;
     top: 10px;
 }
 
-.card .back .affinity.emerald, .card .item .affinity.emerald{
+.card .back .affinity.EMERALD, .card .item .affinity.EMERALD{
 	background-size:auto 35px;
 	width:25px;
 	height:35px;
 }
 
-.card .affinity.emerald.ruby{
+.card .affinity.EMERALD.RUBY, .EMERALDRUBY, .RUBYEMERALD{
 	display:inline-block;
-	background: url('image/affinity/emerald-ruby.png') no-repeat;
+	background: url('image/affinity/EMERALD-RUBY.png') no-repeat;
 	width:42px;
 	height:60px;
 	position: relative;
     top: 10px;
 }
 
-.card .affinity.emerald.sapphire{
+.card .affinity.EMERALD.SAPPHIRE, .EMERALDSAPPHIRE, .SAPPHIREEMERALD{
 	display:inline-block;
-	background: url('image/affinity/emerald-sapphire.png') no-repeat;
+	background: url('image/affinity/EMERALD-SAPPHIRE.png') no-repeat;
 	width:42px;
 	height:70px;
 }
 
-.card .affinity.emerald.amethyst{
+.card .affinity.EMERALD.AMETHYST, .AMETHYSTEMERALD, .EMERALDAMETHYST{
 	display:inline-block;
-	background: url('image/affinity/emerald-amethyst.png') no-repeat;
+	background: url('image/affinity/EMERALD-AMETHYST.png') no-repeat;
 	width:42px;
 	height:60px;
 	position: relative;
@@ -675,33 +782,33 @@ cursor:move;
 
 
 /*RUBY*/
-.card .affinity.ruby{
+.card .affinity.RUBY{
 	display:inline-block;
-	background: url('image/affinity/ruby.png') no-repeat;
+	background: url('image/affinity/RUBY.png') no-repeat;
 	width:42px;
 	height:60px;
 	position: relative;
     top: 10px;
 }
 
-.card .back .affinity.ruby, .card .item .affinity.ruby{
+.card .back .affinity.RUBY, .card .item .affinity.RUBY{
 	background-size:auto 35px;
 	width:25px;
 	height:35px;
 }
 
-.card .affinity.ruby.sapphire{
+.card .affinity.RUBY.SAPPHIRE, .RUBYSAPPHIRE, .SAPPHIRERUBY{
 	display:inline-block;
-	background: url('image/affinity/ruby-sapphire.png') no-repeat;
+	background: url('image/affinity/RUBY-SAPPHIRE.png') no-repeat;
 	width:42px;
 	height:60px;
 	position: relative;
     top: 10px;
 }
 
-.card .affinity.ruby.amethyst{
+.card .affinity.RUBY.AMETHYST{
 	display:inline-block;
-	background: url('image/affinity/ruby-amethyst.png') no-repeat;
+	background: url('image/affinity/RUBY-AMETHYST.png') no-repeat;
 	width:42px;
 	height:60px;
 	position: relative;
@@ -710,9 +817,9 @@ cursor:move;
 
 
 /*SAPPHIRE*/
-.card .affinity.sapphire{
+.card .affinity.SAPPHIRE{
 	display:inline-block;
-	background: url('image/affinity/sapphire.png') no-repeat;
+	background: url('image/affinity/SAPPHIRE.png') no-repeat;
 	width:42px;
 	height:60px;
 	position: relative;
@@ -720,15 +827,15 @@ cursor:move;
 }
 
 
-.card .back .affinity.sapphire, .card .item .affinity.sapphire{
+.card .back .affinity.SAPPHIRE, .card .item .affinity.SAPPHIRE{
 	background-size:auto 35px;
 	width:25px;
 	height:35px;
 }
 
-.card .affinity.sapphire.amethyst{
+.card .affinity.SAPPHIRE.AMETHYST, .AMETHYSTSAPPHIRE, .SAPPHIREAMETHYST{
 	display:inline-block;
-	background: url('image/affinity/amethyst-sapphire.png') no-repeat;
+	background: url('image/affinity/AMETHYST-SAPPHIRE.png') no-repeat;
 	width:42px;
 	height:60px;
 	position: relative;
@@ -736,16 +843,16 @@ cursor:move;
 }
 
 /*Amethyst*/
-.card .affinity.amethyst{
+.card .affinity.AMETHYST{
 	display:inline-block;
-	background: url('image/affinity/amethyst.png') no-repeat;
+	background: url('image/affinity/AMETHYST.png') no-repeat;
 	width:42px;
 	height:60px;
 	position: relative;
     top: 10px;
 }
 
-.card .back .affinity.amethyst, .card .item .affinity.amethyst{
+.card .back .affinity.AMETHYST, .card .item .affinity.AMETHYST{
 	background-size:auto 35px;
 	width:25px;
 	height:35px;
@@ -1009,8 +1116,8 @@ cursor:move;
 	top: 15px;
 }
 
-.card .slot.ruby{
-	background:url('image/heroSlot/hero_ruby.png');
+.card .slot.RUBY{
+	background:url('image/heroSlot/hero_RUBY.png');
 	width: 45px;
 	height: 43px;
 	display: inline-block;
@@ -1019,8 +1126,8 @@ cursor:move;
 	left: 311px;
 }
 
-.card .slot.emerald{
-	background:url('image/heroSlot/hero_emerald.png');
+.card .slot.EMERALD{
+	background:url('image/heroSlot/hero_EMERALD.png');
 	width: 43px;
 	height: 45px;
 	display: inline-block;
@@ -1041,8 +1148,8 @@ cursor:move;
 	z-index: 2;
 }
 
-.card .slot.citrine{
-	background:url('image/heroSlot/hero_citrine.png');
+.card .slot.CITRINE{
+	background:url('image/heroSlot/hero_CITRINE.png');
 	width: 42px;
 	height: 46px;
 	display: inline-block;
