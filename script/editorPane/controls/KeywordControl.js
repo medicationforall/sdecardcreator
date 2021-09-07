@@ -33,25 +33,25 @@ function KeywordControl(){
   	'<div class="hero monster arcadeSolo">'+
   		'Affinity '+
   		'<select name="affinity">'+
-  			'<option value="citrine">Citrine</option>'+
-  			'<option value="citrine amethyst">Citrine Amethyst</option>'+
-  			'<option value="citrine emerald">Citrine Emerald</option>'+
-  			'<option value="citrine ruby">Citrine Ruby</option>'+
-  			'<option value="citrine sapphire">Citrine Sapphire</option>'+
+  			'<option value="CITRINE">Citrine</option>'+
+  			'<option value="CITRINE AMETHYST">Citrine Amethyst</option>'+
+  			'<option value="CITRINE EMERALD">Citrine Emerald</option>'+
+  			'<option value="CITRINE RUBY">Citrine Ruby</option>'+
+  			'<option value="CITRINE SAPPHIRE">Citrine Sapphire</option>'+
   			'<option disabled>----------</option>'+
-  			'<option value="emerald">Emerald</option>'+
-  			'<option value="emerald amethyst">Emerald Amethyst</option>'+
-  			'<option value="emerald ruby">Emerald Ruby</option>'+
-  			'<option value="emerald sapphire">Emerald Sapphire</option>'+
+  			'<option value="EMERALD">Emerald</option>'+
+  			'<option value="EMERALD AMETHYST">Emerald Amethyst</option>'+
+  			'<option value="EMERALD RUBY">Emerald Ruby</option>'+
+  			'<option value="EMERALD SAPPHIRE">Emerald Sapphire</option>'+
   			'<option disabled>----------</option>'+
-  			'<option value="ruby">Ruby</option>'+
-  			'<option value="ruby amethyst">Ruby Amethyst</option>'+
-  			'<option value="ruby sapphire">Ruby Sapphire</option>'+
+  			'<option value="RUBY">Ruby</option>'+
+  			'<option value="RUBY AMETHYST">Ruby Amethyst</option>'+
+  			'<option value="RUBY SAPPHIRE">Ruby Sapphire</option>'+
   			'<option disabled>----------</option>'+
-  			'<option value="sapphire">Sapphire</option>'+
-  			'<option value="sapphire amethyst">Sapphire Amethyst</option>'+
+  			'<option value="SAPPHIRE">Sapphire</option>'+
+  			'<option value="SAPPHIRE AMETHYST">Sapphire Amethyst</option>'+
   			'<option disabled>----------</option>'+
-  			'<option value="amethyst">Amethyst</option>'+
+  			'<option value="AMETHYST">Amethyst</option>'+
   			'<option disabled>----------</option>'+
   			'<option value="none">None</option>'+
   			'<option value="all">All</option>'+

@@ -49,6 +49,12 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Ambush Predator": {
+    "description": "After an enemy model enters a square adjacent to a model with Ambush Predator, the model with Ambush Predator may make a basic attack action against it.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Angry Walrus": {
     "description": "At the end of the Consul's power-up phase, the Consul rolls 1B. If no stars are rolled, nothing happens.  If any stars are rolled, the Consul may move the model with Angry Walrus up to one square for each star rolled and then make a basic melee offensive action against any other member of the party in range.  Arcade: the Hero's controller rolls and must move towards and attack the closest other friendly model if stars are rolled.",
     "version": 1.6,
@@ -104,7 +110,7 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Aura X": {
+  "Aura": {
     "description": "An Aura effect follows the same rules as Wave X with one important difference -- Auras remain in play, centered on and moving with the user, until the beginning of their next activation.",
     "version": 1,
     "hasErrata": "true",
@@ -155,6 +161,12 @@
       }
     ]
   },
+  "Back Strike": {
+    "description": "+1ST STR if the gang's target did not activate during the previous Hero Turn.",
+    "version": 1.6,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Bane": {
     "description": "A model suffering Bane discards the highest result rolled anytime it makes an offense roll.",
     "version": 1.5,
@@ -192,6 +204,12 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Black Parade": {
+    "description": "When a model with Black Parade enters play, the Consul spawns two Curse Ravens adjacent to the spawning point icon in the third tile and two adjacent to the spawning point icon in th esecond tile (four Curse Ravens total).",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Bleed": {
     "description": "When making an offensive roll, a model with Bleed counts any Heart rolled as both one star and one heart.",
     "version": 2.0,
@@ -210,7 +228,7 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Blood Drinker": {
+  "Blood Drinker-C": {
     "description": "When a model with Blood Dinker rolls a heart they gain one heart in exactly the same manor as a Hero.",
     "version": 1.0,
     "hasErrata": "true",
@@ -220,9 +238,21 @@
         "version": 1.6,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
+      },
+	  {
+        "description": "When a model with Blood Drinker inflicts at a wound, remove one wound or one status effect token from its card for every heart rolled.",
+        "version": 2.0,
+        "source": "",
+        "sourceDescription": "2.0 Updated keyword."
       }
     ]
   },
+  "Blood Drinker-A": {
+    "description": "When a model with Blood Drinker inflicts at least one wound during a Fight command, remove one wound token from its card.",
+        "version": 2.0,
+		"hasErrata": "false",
+		"errata": []
+   },
   "Bob-omb": {
     "description": "If another Hero activates after this Hero, during the same turn, that Hero gains +1R to the first offense roll it makes that activation.",
     "version": 1.0,
@@ -272,6 +302,12 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Bruiser": {
+    "description": "+1st STR if a model with Bruiser is in the gang.",
+    "version": 1.6,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Brutality Aura": {
     "description": "All models, friendly or enemy, within 2 squares gain +1st STR.",
     "version": 2.0,
@@ -309,7 +345,7 @@
       }
     ]
   },
-  "Burst X": {
+  "Burst": {
     "description": "A Burst effect occurs as part of a ranged attack or ability. When a target is hit by a ranged effect with Burst X,the effect hits the target and every model within X squares of the target.",
     "version": 1.0,
     "hasErrata": "true",
@@ -337,6 +373,18 @@
   "Champion": {
     "description": "Models that are adjacent to a Champion structure add +1st to all offense rolls.",
     "version": 1.6,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Charge-C": {
+    "description": "When a model with Charge uses a Lance area effect, after resolving all other effects of the Lance, the model may be placed in any unoccupied square that was affected by the Lance for free.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Charge-A": {
+    "description": "When a model with Charge uses a Lance area effect, after resolving all other effects of the Lance, place the model in an unoccupied square that was affaced by the Lance, and which is as close as possible to the Hero with the most wrath.",
+    "version": 2.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -384,7 +432,7 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Compel X": {
+  "Compel": {
     "description": "A model targeted by Compel may be moved a number of squares up to the value of X in any direction.",
     "version": 1.6,
     "hasErrata": "false",
@@ -414,7 +462,7 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Cross X": {
+  "Cross": {
     "description": "A Cross effect is centered on the user’s square and hits the user\r\nand every model within X squares of the user, but does not affect\r\nany diagonal squares. Crosses replace the distance portion (X) of a\r\ndistance effect, but do not replace any other aspect of the ability.",
     "version": 1.0,
     "hasErrata": "true",
@@ -470,6 +518,18 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Dark Legion Spawn": {
+    "description": "This elite is also a spawning point, and it may not be placed on the first tile during setup.  After placing it during setup, spawn five Undead Legionaires bonded to it.  When this elite receives the spawn command, roll 1B 1R and spawn one Necromutant Solo for each star rolled.  When this elite receives the reinforce command, spawn Undead Legionaires until it has five bonded Undead Legionaires.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Dark Nexus": {
+    "description": "This spawning point may not begin on the first or the second tile.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Dark Radiance": {
     "description": "All offense rolls and defense rolls made against a model with Dark Radiance reduce the result by 1st.",
     "version": 1.6,
@@ -500,8 +560,21 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Death Lord": {
+  "Death Lord-C": {
     "description": "All Undead models within four squares of a model with Death Lord gain +1B to all offense rolls.",
+    "version": 2.0,
+    "hasErrata": "true",
+    "errata": [
+		{
+			"description": "While a model with Death Lord is in play, all Undead monsters without the Death Lord ability gain +1G to all rolls.",
+			"version": 2.0,
+			"source": "",
+			"sourceDescription": "Updated in 2.0: Cursed Jarl."
+		}
+	]
+  },
+  "Death Lord-A": {
+    "description": "All other Undead models in play gain +2ST STR.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
@@ -541,12 +614,12 @@
     "version": 1.0,
     "hasErrata": "true",
     "errata": [
-      {
-        "description": "Each square of difficult terrain a model enters costs two movement points. If a model does not have enough movement points to move into a square with difficult terrain, it may not do so.<br>If any part of a large based model enters a square of difficult terrain, the move costs two movement points. Do not count squares a large model already occupies.",
-        "version": 1.6,
-        "source": "",
-        "sourceDescription": "Forgotten King Updated keyword."
-      }
+		{
+			"description": "Each square of difficult terrain a model enters costs two movement points. If a model does not have enough movement points to move into a square with difficult terrain, it may not do so.<br>If any part of a large based model enters a square of difficult terrain, the move costs two movement points. Do not count squares a large model already occupies.",
+			"version": 1.6,
+			"source": "",
+			"sourceDescription": "Forgotten King Updated keyword."
+		}
     ]
   },
   "Distance Effects": {
@@ -575,7 +648,7 @@
   },
   "Dodge": {
     "description": "A model with Dodge may use their Dex when making defense rolls unless they are suffering from Knockdown, Immobile, Slow.",
-    "version": 1.6,
+    "version": 1.5,
     "hasErrata": "false",
     "errata": []
   },
@@ -722,6 +795,12 @@
       }
     ]
   },
+  "For The Crown": {
+    "description": "When a model with For The Crown is destroyed it makes two basic 0mi attacks before being removed from play.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Forced Shift": {
     "description": "Instead of being destroyed as normal it instead automatically Shapeshifts into its X Form.",
     "version": 1.6,
@@ -801,7 +880,13 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Fury": {
+  "Fury-A": {
+    "description": "A model with Fury gains 1ST for each wound it is currently suffering.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Fury-C": {
     "description": "A model with Fury gains 1B to all offense rolls for each wound it is currently suffering.",
     "version": 2.0,
     "hasErrata": "false",
@@ -810,8 +895,15 @@
   "Ghost": {
     "description": "A model with Ghost ignores walls for the purposes of line of sight and movement.",
     "version": 1.6,
-    "hasErrata": "false",
-    "errata": []
+    "hasErrata": "true",
+    "errata": [
+		{
+				"description": "A model with Ghost ignores walls and structures for the purposes of line of sight and movement.",
+				"version": 2.0,
+				"source": "",
+				"sourceDescription": "2.0 Updated keyword: Black Hand."
+		}
+	]
   },
   "Ghost Charge": {
     "description": "When this treasure is equipped place 4R on it. Whenever this model makes a roll, it may remove any number of dice from this treasure and add them to the roll. Once the dice have been used they are removed from this card permanently.",
@@ -842,12 +934,12 @@
     "version": 1.6,
     "hasErrata": "true",
     "errata": [
-      {
-        "description": "A model that is adjacent to an enemy model with Grabby may not move.",
-        "version": 1.61,
-        "source": "",
-        "sourceDescription": "Forgotten King Updated keyword."
-      }
+		  {
+				"description": "A model that is adjacent to an enemy model with Grabby may not move.",
+				"version": 1.61,
+				"source": "",
+				"sourceDescription": "Forgotten King Updated keyword."
+		  }
     ]
   },
   "Grabby Hands": {
@@ -905,7 +997,7 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Heal X": {
+  "Heal": {
     "description": "A model affected by Heal may remove a number of wound counters or a number of status effect counters equal to the value of X.",
     "version": 1.0,
     "hasErrata": "true",
@@ -1031,6 +1123,18 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Hunter's Mark-A": {
+    "description": "Place a crystal token on the closest enemy model.  Friendly models attacking the model with the crystal token gain +1st STR.  Only one friendly Mark token may be in play at one time and it my not be removed until the target is destroyed or Mark is used again.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Hunter's Mark-C": {
+    "description": "Place a crystal token on the target.  Friendly models attacking the target gain +1b to their offense rolls.  Only one friendly Mark token may be in play at one time and it may not be removed until the target is destroyed or Mark is used again.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "I Know Nothing": {
     "description": "A model with this ability may not use the Open Chest action.",
     "version": 2.0,
@@ -1074,7 +1178,7 @@
       }
     ]
   },
-  "Immune: X": {
+  "Immune": {
     "description": "A model with immune ignores and imediately removes all counter or affects of the abilty listed as X.",
     "version": 1.0,
     "hasErrata": "false",
@@ -1185,7 +1289,13 @@
       }
     ]
   },
-  "Lance X": {
+  "Knocked To My Senses": {
+    "description": "When a model with Knocked To My Senses suffers a wound, it rolls 1R.  If it rolls no stars, it Shapeshifts to its original form.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Lance": {
     "description": "A Lance effect draws a straight line directly away from the user's square along a distance of X. Every model along this line is hit. Lance effects may not be used along diagonals.",
     "version": 1.0,
     "hasErrata": "true",
@@ -1265,7 +1375,7 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Magic X": {
+  "Magic": {
     "description": "This ability allows a the model to attack an enemy up to X squares away. In addition a model making a Magic attack must use their WILL attribute when attacking. A model may use any of its ability or special actions using Magic X, unless specified otherwise.",
     "version": 1.0,
     "hasErrata": "true",
@@ -1321,6 +1431,12 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Mend": {
+    "description": "A model using Mend targets the monster within range suffering the most wounds.  Remove status effect tokens and then remove would tokens until a number of tokens equal to X has been reomved or the monster has no wound tokens on it.",
+    "version": 1.6,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Mighty": {
     "description": "A model with Mighty double the bonuses granted by the chart.",
     "version": 2.0,
@@ -1333,7 +1449,7 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Missile X": {
+  "Missile": {
     "description": "This ability allows the model to attack an enemy up to X squares away, as long as the model is not adjacent to an enemy model. In addition, a model making a Missile attack must use their DEX attribute when attacking. A model may use any of its abilities or special actions using missile X, unless specified otherwise.",
     "version": 1.0,
     "hasErrata": "true",
@@ -1449,6 +1565,18 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Pack Hunter": {
+    "description": "When a model with Pack Hunter wounds an enemy model, one model with Pack Hunter which is on the same tile as the wounded model may move up to two squares towards the wounded models.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Pack Mentality": {
+    "description": "Monsters within two squares of a model with Pack Mentality may move two squares after a model on the same tile finishes moving due to Pack Hunter.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Pack Strength": {
     "description": "When another friendly monster within three squares and LoS Heals one or more wounds, a model with Pack Strength may Heal 1.",
     "version": 2.0,
@@ -1457,6 +1585,12 @@
   },
   "Pain is Scary": {
     "description": "This Pet's master gains Brutal Strike on its basic Missile Attack if it has one, and if it began its activation within two squares of this Pet.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Parade of Death": {
+    "description": "A model with Parade of Death may not use the basic Dash action.  A model with Parade of Death may use its movement to leave the dungeon by moving off of a dungeon exit.  If it leaves the dungeon in this way, it is destroyed and the Party must immediately discard one Princess Coin (the Party may lose the game in this way if it has no Princess Coins).",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
@@ -1479,13 +1613,13 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Pet: X": {
+  "Pet": {
     "description": "A model with Pet X is the master of the pet listed as X. A model with Pet X may never be a different pet’s master. The listed pet begins the game within two squares of its master.",
     "version": 1.6,
     "hasErrata": "false",
     "errata": []
   },
-  "Pile-On": {
+  "Pile-On-C": {
     "description": "+1r ATT if target is suffering Knockdown.",
     "version": 1.0,
     "hasErrata": "true",
@@ -1497,18 +1631,18 @@
         "sourceDescription": "kickstarter update 57"
       },
       {
-        "description": "A model with Pile-On gains +1st STR if its target is suffering knockdown.",
-        "version": 1.61,
-        "source": "https://www.kickstarter.com/projects/1257458293/super-dungeon-explore-forgotten-king/posts/998856",
-        "sourceDescription": "Kickstarter update 61"
-      },
-      {
         "description": "A model with Pile-On gains +1b STR if its target is suffering Knockdown.",
         "version": 1.62,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       }
     ]
+  },
+  "Pile-On-A": {
+    "description": "A model with Pile-On gains +1st STR if its target is suffering knockdown.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
   },
   "Pirate Hoard": {
     "description": "This model may equip Loot and Treasure cards. When spawned, draw one Treasure card and equip it on this model. When defeated, Heroes gain all Loot and Treasure cards this model has equipped.",
@@ -1560,13 +1694,13 @@
       }
     ]
   },
-  "Potion Stash X": {
+  "Potion Stash": {
     "description": "A monster with Potion Stash may gain potion tokens when rolled, in the same manner as Heroes, up to the number indicated by X. The monster may spend potion tokens on abilities indicated on its card.",
     "version": 1.6,
     "hasErrata": "false",
     "errata": []
   },
-  "Potion X": {
+  "Potion": {
     "description": "When a model with Potion X enters play place a number of bonus potion counters on their card equal to X. The model may spend these counters in the same manner as normal potion counters, but once they have been spend they can not be regained by dice rolls.",
     "version": 1.0,
     "hasErrata": "false",
@@ -1627,7 +1761,7 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Pull X": {
+  "Pull": {
     "description": "A model targeted by Pull may be moved a number of squares up to the value of X toward the attacker. A model moved by pull must end its move closer to the attacker than it began.",
     "version": 1.0,
     "hasErrata": "true",
@@ -1646,7 +1780,7 @@
       }
     ]
   },
-  "Push X": {
+  "Push": {
     "description": "A model targeted by Push may be moved a number of squares up to the value of X away from the attacker. A model moved by Push must end its move farther away from the attacker than it began.",
     "version": 1.0,
     "hasErrata": "true",
@@ -1664,6 +1798,12 @@
         "sourceDescription": "Forgotten King"
       }
     ]
+  },
+  "Quick Hatch": {
+    "description": "After Egg Clutch performs a Spawn command, all monsters it just spawned immediately perform a Move command.",
+    "version": 1.6,
+    "hasErrata": "false",
+    "errata": []
   },
   "Quick Strike": {
     "description": "After a model with Quick Strike destroys an enemy, its controller rolls 1g.  On a roll of Heart+Potion, the model may immediately make a basic offensive action without spending an action point.",
@@ -1696,7 +1836,7 @@
       }
     ]
   },
-  "Range X": {
+  "Range": {
     "description": "This ability allows the model to attack an enemy up to X squares away.",
     "version": 1.0,
     "hasErrata": "true",
@@ -1715,8 +1855,14 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Reach X": {
+  "Reach": {
     "description": "This ability allows the model to target an enemy with a melee attack up to X squares away. A model may use any of its abilities or special actions using Reach X, unless specified otherwise.",
+    "version": 1.5,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Reach-A": {
+    "description": "+2ST RNG if a model with Reach is in the gang.",
     "version": 1.6,
     "hasErrata": "false",
     "errata": []
@@ -1837,6 +1983,12 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Scent": {
+    "description": "Models with Scent ignore Stealth.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Secluded": {
     "description": "When this Pet is summoned using the Summon Pet action, it may be placed on any open space in the dungeon.",
     "version": 2.0,
@@ -1891,7 +2043,7 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Shapeshift: X": {
+  "Shapeshift": {
     "description": "Shapeshift basic action to transform into the X whenever it chooses.",
     "version": 1.0,
     "hasErrata": "false",
@@ -2096,7 +2248,7 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Spray X": {
+  "Spray": {
     "description": "A spray effect hits multiple models in a \"V\" pattern up to X squares away.",
     "version": 1.0,
     "hasErrata": "true",
@@ -2149,6 +2301,12 @@
   "Steal": {
     "description": "When a model with Steal inflicts a wound, it may discard one random card from the party’s backpack.",
     "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Steady": {
+    "description": "A model with Steady may not be Pushed, Pulled, or Compelled by enemy models.",
+    "version": 2.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -2257,7 +2415,13 @@
       }
     ]
   },
-  "Sweep X": {
+  "Surge": {
+    "description": "If a model with Surge is not in range of a Hero move it an additional 5 squares towards the Hero with the most wrath.",
+    "version": 1.6,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Sweep": {
     "description": "A Sweep effect hits every model within X squares of a single side of the users square, along a straight line.",
     "version": 1.0,
     "hasErrata": "true",
@@ -2332,9 +2496,15 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Throw X": {
+  "Throw": {
     "description": "When using an action with Throw, choose one friendly adjacent model. Push that model a number of squares up to the value of X, as described in the rules for Push. If the model moves to a square that is adjacent to another model it immediately stops moving. Every model it stops adjacent to, friendly or enemy, suffers an offense roll of 1b per square the model moved.",
     "version": 1.6,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Throw Me a Fish": {
+    "description": "When another Hero begins its activation on the same tile as a model with Throw Me a Fish, the Hero may discard one loot from the backpack.  If it does, the model with Throw Me a Fish may immediately take one basic offensive action.",
+    "version": 2.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -2442,7 +2612,7 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Vulnerable: X": {
+  "Vulnerable": {
     "description": "If a model with vulnerable X is targeted by the ability listed as X, it immediately takes one wound in addition to any other effects of the ability.",
     "version": 1.0,
     "hasErrata": "true",
@@ -2461,7 +2631,7 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Wave X": {
+  "Wave": {
     "description": "A Wave effect is centered on the user's square and hits the user and every model within X squares of the user. Waves replace the ranged effect of an ability but do not replace any other aspect of the ability.",
     "version": 1.0,
     "hasErrata": "true",
@@ -2483,6 +2653,12 @@
   "Weak": {
     "description": "A model or effect with Weak places a Weak counter on any model it damages. A model suffering Weak discards the highest result rolled anytime it makes a roll using its ATT attribute.",
     "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Werecursed": {
+    "description": "When the Consul reaches a purple space on the Mighty Monster Chart, a model with Werecursed will Shapeshift into the listed model.",
+    "version": 2.0,
     "hasErrata": "false",
     "errata": []
   },
