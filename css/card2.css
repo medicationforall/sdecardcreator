@@ -646,6 +646,14 @@ cursor:move;
 	padding-top:20px;
 }
 
+.card.pet .keywordsSection .subStats{
+	background:url('image/heart-can.png') no-repeat 0px 10px;
+	width:120px;
+	height:80px;
+	margin-top:-40px;
+	padding-top:20px;
+}
+
 .card.monster .keywordsSection .subStats{
 	background:url('image/heart-skull.png') no-repeat;
 	width:120px;
@@ -672,6 +680,16 @@ cursor:move;
 .card.monster .keywordsSection .subStats .skulls, .card.hero .keywordsSection .subStats .potions{
 	top: 27px;
 	left: 5px;
+}
+
+.card.pet .keywordsSection .subStats .cost{
+	top: 27px;
+	left: 20px;
+}
+
+.card.pet .keywordsSection .subStats .wounds{
+	left: 15px;
+	top: 3px;
 }
 
 
