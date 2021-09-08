@@ -131,7 +131,7 @@ function KeywordStore(keywords){
 		return '<span class="keyword '+keyClass.toUpperCase()+'" data-key="'+key+'">'+key+'</span>';
     }.bind(this));
 	
-	console.log(text);
+	//console.log(text);
 	
 	return text;
   };

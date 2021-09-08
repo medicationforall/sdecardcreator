@@ -60,6 +60,16 @@ function HasStats(){
 
 
   /**
+   * Set cost.
+   * @param {string} cost
+   */
+  this.setCost=function(cost){
+    this.data.cost = cost;
+    this.node.find('.cost').text(cost);
+  };
+
+
+  /**
    * Set skulls.
    * @param {string} skulls
    */
@@ -96,6 +106,10 @@ function HasStats(){
 
     if(data.potions !== undefined){
       this.setPotions(data.potions);
+    }
+
+    if(data.cost !== cost){
+      this.setCost(data.cost);
     }
 
     if(data.skulls !== undefined){

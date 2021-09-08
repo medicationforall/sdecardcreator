@@ -28,8 +28,9 @@ function Card(animate,appendAfter){
     "subTitle": "subTitle",
     "move": "6",
     "actions": "3",
-    "potions": "1",
     "wounds": "5",
+    "potions": "1",
+    "cost": "1",
     "keywordsList": "",
     "background": "pic1685577_md.jpg",
     "backgroundFlip": false,
@@ -73,9 +74,10 @@ function Card(animate,appendAfter){
   						'<span class="keywordsList"></span>'+
 
   						'<div class="subStats">'+
-  							'<span class="hero monster wounds">5</span>'+
+  							'<span class="hero pet monster wounds">5</span>'+
   							'<span class="hero potions">1</span>'+
-                '<span class="monster skulls">1</span>'+
+							'<span class="pet cost">1</span>'+
+							'<span class="monster skulls">1</span>'+
   						'</div>'+
   					'</div>'+
 

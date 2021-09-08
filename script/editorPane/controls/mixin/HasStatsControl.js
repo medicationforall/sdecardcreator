@@ -21,14 +21,15 @@
  * @mixin
  */
 function HasStatsControl(){
-  this.strControl = this.node.find('input[name="STR"]');
-  this.armControl = this.node.find('input[name="ARM"]');
-  this.willControl = this.node.find('input[name="WILL"]');
-  this.dexControl = this.node.find('input[name="DEX"]');
+	this.strControl = this.node.find('input[name="STR"]');
+	this.armControl = this.node.find('input[name="ARM"]');
+	this.willControl = this.node.find('input[name="WILL"]');
+	this.dexControl = this.node.find('input[name="DEX"]');
 
-  this.woundsControl = this.node.find('input[name="wounds"]');
-  this.skullsControl = this.node.find('input[name="skulls"]');
-  this.potionsControl = this.node.find('input[name="potions"]');
+	this.woundsControl = this.node.find('input[name="wounds"]');
+	this.skullsControl = this.node.find('input[name="skulls"]');
+	this.potionsControl = this.node.find('input[name="potions"]');
+	this.costControl = this.node.find('input[name="cost"]');
 
 
   /**
@@ -80,6 +81,14 @@ function HasStatsControl(){
 
 
   /**
+   * Pet Cost text input.
+   */
+  this.costControl.on('input',$.proxy(function(coreNode,event){
+    coreNode.setCost($(this).val());
+  },null,this));
+
+
+  /**
    * Skulls text input.
    */
   this.skullsControl.on('input',$.proxy(function(coreNode,event){
@@ -109,14 +118,13 @@ function HasStatsControl(){
 
 
   /**
-   * Set card potions.
-   * @param {string} potions - Card potions.
+   * Set card cost.
+   * @param {string} cost - Card cost.
    */
-  this.setPotions=function(potions){
+  this.setCost=function(cost){
     var cardNode = $('.cardGroup.selected').data('node');
-    cardNode.setPotions(potions);
+    cardNode.setCost(cost);
   };
-
 
   /**
    * Set card skulls.
@@ -154,6 +162,10 @@ function HasStatsControl(){
 
     if(data.potions!==undefined){
       this.potionsControl.val(data.potions);
+    }
+
+    if(data.cost !== cost){
+      this.setCost(data.cost);
     }
 
     if(data.skulls!==undefined){
