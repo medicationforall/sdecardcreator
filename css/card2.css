@@ -23,7 +23,6 @@
 
 .card .front, .card .back{
 	margin:20px;
-	margin-top;
 }
 
 
@@ -176,7 +175,7 @@
 	color:rgba(0, 0, 0, 0.0);
 	background-size: 30px;
 	width:40px;
-	height:40px
+	height:40px;
 	vertical-align: middle;
 }
 
@@ -185,7 +184,7 @@
 	color:rgba(0, 0, 0, 0.0);
 	background-size: 30px;
 	width:40px;
-	height:40px
+	height:40px;
 	vertical-align: middle;
 }
 
