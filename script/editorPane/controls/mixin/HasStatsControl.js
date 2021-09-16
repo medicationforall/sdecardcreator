@@ -164,7 +164,7 @@ function HasStatsControl(){
       this.potionsControl.val(data.potions);
     }
 
-    if(data.cost !== cost){
+    if(data.cost !== undefined){
       this.setCost(data.cost);
     }
 

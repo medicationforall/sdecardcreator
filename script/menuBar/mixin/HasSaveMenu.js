@@ -29,8 +29,10 @@ function HasSaveMenu(){
    */
   this.saveMenu.find('.saveAsJson').click($.proxy(function(coreNode,event){
     event.preventDefault();
+	
+	var temp = $('input[name="title"]')[0];
 
-    if($('input[name="title"]')[0].checkValidity()){
+    if(temp.checkValidity()){
       var data = coreNode.gatherData();
       coreNode.saveAsFile(JSON.stringify(data),$('.form input[name="title"]').val()+'.json',"text/plain;charset=utf-8");
     }else{
