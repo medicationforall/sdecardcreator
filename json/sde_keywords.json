@@ -1,11 +1,11 @@
 {
   "9 Lives": {
-    "description": "When a model with 9 Lives takes their last wound, immediately roll +1r . Remove one wound for every star rolled. If no stars are rolled the model is destroyed.",
+    "description": "When a model with 9 Lives takes their last wound, immediately roll +1R . Remove one wound for every star rolled. If no stars are rolled the model is destroyed.",
     "version": 1,
     "hasErrata": "true",
     "errata": [
       {
-        "description": "One Use Only. When a model with 9 lives is destroyed, immediately roll 1r. Remove one wound token for each star rolled If no stars are rolled the model is destroyed as normal.",
+        "description": "One Use Only. When a model with 9 lives is destroyed, immediately roll 1R. Remove one wound token for each star rolled If no stars are rolled the model is destroyed as normal.",
         "version": 1.6,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
@@ -68,7 +68,7 @@
     "errata": []
   },
   "Another Round": {
-    "description": "During upkeep roll 1b.  For every start rolled Deodric gains one potion.",
+    "description": "During upkeep roll 1B.  For every start rolled Deodric gains one potion.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
@@ -80,18 +80,18 @@
     "errata": []
   },
   "Area": {
-    "description": "When an area is drawn place the appropriate template anywhere within the tile.\r\n\r\nTrap templates may not be placed across walls, structures, or chasms. They may be placed in the same square as a friendly or enemy models.",
+    "description": "When an area is drawn place the appropriate template anywhere within the tile.<br><br>Trap templates may not be placed across walls, structures, or chasms. They may be placed in the same square as a friendly or enemy models.",
     "version": 1.6,
     "hasErrata": "false",
     "errata": []
   },
   "Area Effects": {
-    "description": "Some abilities can hit multiple models all at the same time.\r\nThese are called, area effects. Area effects have a special set of\r\nrules to govern how they function:\r\n* First determine which models are in the squares that will be\r\naffected by the area effect. This will vary depending on the\r\ntype of area effect being used.\r\n• Burst X requires that you select a single model, in line of sight\r\nto the model using the effect, as the action’s target. The area\r\neffect is centered on that target.\r\n• Cross X, Wave X, and Aura X are centered on the user. In this\r\ncase the user is considered the target but it is not affected by\r\nits own area effect unless the effect states otherwise (such as\r\nin the case of Augment).\r\n•Lance X, Spray X, and Sweep X require that you choose one\r\nsquare that is adjacent (but not diagonal) to the model using\r\nthe effect. Then determine the remaining squares affected\r\nfrom the initial square chosen, using the area effect’s rules\r\nand diagrams as a guide. Unlike other effects the initial square\r\nchosen may be empty.\r\n• If the area effect is part of an attack, make a single attack roll\r\nand apply it to every model affected. Each model affected\r\nmakes their own defense roll, comparing their result to the\r\nattack roll separately.\r\n• All models affects by an area effect are considered to be hit\r\nsimultaneously.\r\n• Friendly models, including the user, are not affected by area\r\neffects unless the area effect specifies otherwise (such as in\r\nthe case of Augment).\r\n• Area effects do not affect squares that the user cannot draw\r\nline of sight to unless the area effect specifies otherwise.\r\n• Some area effects cover a different area if the model using\r\nthem is on a large base. When this is the case, use the example\r\ndiagram as a guide.\r\n• If a model is affected by two area effects simultaneously the\r\neffects are cumaltive as long as the abilities are different --\r\neven if their effects are the same.\r\n• Some area effects replace the distance portion of a model’s\r\nspecial ability ie Magic X, Missile X, or Range X. In this case\r\nignore the ‘X’ portion of the ability that allows them to target\r\ndistant models and replace it with the area effect. The model\r\nmay still use the attribute specified by that ability when\r\nmaking an attack roll.",
+    "description": "Some abilities can hit multiple models all at the same time.<br>These are called, area effects. Area effects have a special set of<br>rules to govern how they function:<br>* First determine which models are in the squares that will be<br>affected by the area effect. This will vary depending on the<br>type of area effect being used.<br>• Burst X requires that you select a single model, in line of sight<br>to the model using the effect, as the action’s target. The area<br>effect is centered on that target.<br>• Cross X, Wave X, and Aura X are centered on the user. In this<br>case the user is considered the target but it is not affected by<br>its own area effect unless the effect states otherwise (such as<br>in the case of AUGMENT).<br>•Lance X, Spray X, and Sweep X require that you choose one<br>square that is adjacent (but not diagonal) to the model using<br>the effect. Then determine the remaining squares affected<br>from the initial square chosen, using the area effect’s rules<br>and diagrams as a guide. Unlike other effects the initial square<br>chosen may be empty.<br>• If the area effect is part of an attack, make a single attack roll<br>and apply it to every model affected. Each model affected<br>makes their own defense roll, comparing their result to the<br>attack roll separately.<br>• All models affects by an area effect are considered to be hit<br>simultaneously.<br>• Friendly models, including the user, are not affected by area<br>effects unless the area effect specifies otherwise (such as in<br>the case of AUGMENT).<br>• Area effects do not affect squares that the user cannot draw<br>line of sight to unless the area effect specifies otherwise.<br>• Some area effects cover a different area if the model using<br>them is on a large base. When this is the case, use the example<br>diagram as a guide.<br>• If a model is affected by two area effects simultaneously the<br>effects are cumaltive as long as the abilities are different --<br>even if their effects are the same.<br>• Some area effects replace the distance portion of a model’s<br>special ability ie Magic X, Missile X, or Range X. In this case<br>ignore the ‘X’ portion of the ability that allows them to target<br>distant models and replace it with the area effect. The model<br>may still use the attribute specified by that ability when<br>making an attack roll.",
     "version": 1,
     "hasErrata": "true",
     "errata": [
       {
-        "description": "Some actions can hit multiple models all at the same time. These actions are called area effects. To use an area effect, first determine which models are in squares that will be affected. Squares that the user cannot draw line of sight to are not affected. All models that are within the area are considered to be affected simultaneously.\r\n\r\nWith the exception of Burst X, area effects replace the range of an action. If the area effect action requires an offense roll the model using the action makes a single roll. Every model within the area is allowed to make a defense roll. Friendly models, including the user, are not affected by area effects unless they are Augment or Dangerous actions. If a model is affected by two area effects simultaneously the effects are cumulative as long as the actions’ names are different, even if their effects are the same.",
+        "description": "Some actions can hit multiple models all at the same time. These actions are called area effects. To use an area effect, first determine which models are in squares that will be affected. Squares that the user cannot draw line of sight to are not affected. All models that are within the area are considered to be affected simultaneously.<br><br>With the exception of Burst X, area effects replace the range of an action. If the area effect action requires an offense roll the model using the action makes a single roll. Every model within the area is allowed to make a defense roll. Friendly models, including the user, are not affected by area effects unless they are AUGMENT or Dangerous actions. If a model is affected by two area effects simultaneously the effects are cumulative as long as the actions’ names are different, even if their effects are the same.",
         "version": 2,
         "source": "",
         "sourceDescription": "Forgotten King"
@@ -104,8 +104,8 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Augment": {
-    "description": "Abilities with Augment may only target or affect friendly models that are hit, including the user.",
+  "AUGMENT": {
+    "description": "Abilities with AUGMENT may only target or affect friendly models that are hit, including the user.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
@@ -173,7 +173,7 @@
     "hasErrata": "true",
     "errata": [
       {
-        "description": "A model suffering Bane discards the highest result rolled anytime it makes a defense roll. (Arcade: A monster suffering Bane Reduces its ARM by 1st.)",
+        "description": "A model suffering Bane discards the highest result rolled anytime it makes a defense roll. (Arcade: A monster suffering Bane Reduces its ARM by 0ST.)",
         "version": 1.6,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword"
@@ -181,7 +181,7 @@
     ]
   },
   "Bane Aura": {
-    "description": "Monsters with Ruby affinity that are within 2 squares of Shallow Grave gain Bane.",
+    "description": "Monsters with RUBY affinity that are within 2 squares of Shallow Grave gain Bane.",
     "version": 1.6,
     "hasErrata": "false",
     "errata": []
@@ -217,7 +217,7 @@
     "errata": []
   },
   "Blessed Strike": {
-    "description": "A model with Blessed Strike gains +1st to all offense rolls it makes for each spent Princess Coin on its card.",
+    "description": "A model with Blessed Strike gains +1ST to all offense rolls it makes for each spent Princess Coin on its card.",
     "version": 1.6,
     "hasErrata": "false",
     "errata": []
@@ -291,7 +291,7 @@
     "errata": []
   },
   "Bramble Growth": {
-    "description": "Heroes that do not have Emerald affinity count squares within 2 squares of Bramble Knight as difficult terrain.",
+    "description": "Heroes that do not have EMERALD affinity count squares within 2 squares of Bramble Knight as difficult terrain.",
     "version": 2,
     "hasErrata": "false",
     "errata": []
@@ -303,13 +303,13 @@
     "errata": []
   },
   "Bruiser": {
-    "description": "+1st STR if a model with Bruiser is in the gang.",
+    "description": "+0ST STR if a model with Bruiser is in the gang.",
     "version": 1.6,
     "hasErrata": "false",
     "errata": []
   },
   "Brutality Aura": {
-    "description": "All models, friendly or enemy, within 2 squares gain +1st STR.",
+    "description": "All models, friendly or enemy, within 2 squares gain +1ST STR.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
@@ -351,7 +351,7 @@
     "hasErrata": "true",
     "errata": [
       {
-        "description": "Determine a Burst effect’s target as normal using the model’s\r\ninherent distance ability ( Magic X, Range X, Missile X) or the\r\none listed in the area effect action. After the target has been\r\nselected it and every model within X squares of the target and\r\nin the target’s line of sight are hit by the effect.\r\nIf a large model is targeted by a Burst effect choose one square\r\noccupied by its base as the square targeted and determine who\r\nis hit from it as normal.",
+        "description": "Determine a Burst effect’s target as normal using the model’s<br>inherent distance ability ( Magic X, Range X, Missile X) or the<br>one listed in the area effect action. After the target has been<br>selected it and every model within X squares of the target and<br>in the target’s line of sight are hit by the effect.<br>If a large model is targeted by a Burst effect choose one square<br>occupied by its base as the square targeted and determine who<br>is hit from it as normal.",
         "version": 1.01,
         "source": "http://sodapopminiatures.com/media/downloads/super-dungeon-explore-rulebook-1_5-web.pdf",
         "sourceDescription": "SDEv1-5_RuleBook_web.pdf"
@@ -371,7 +371,7 @@
     "errata": []
   },
   "Champion": {
-    "description": "Models that are adjacent to a Champion structure add +1st to all offense rolls.",
+    "description": "Models that are adjacent to a Champion structure add +1ST to all offense rolls.",
     "version": 1.6,
     "hasErrata": "false",
     "errata": []
@@ -400,7 +400,7 @@
     "hasErrata": "true",
     "errata": [
       {
-        "description": "A model or effect with Choke places a Choke counter\r\non any model it damages. A model suffering Choke\r\nmay not drink potions.",
+        "description": "A model or effect with Choke places a Choke counter<br>on any model it damages. A model suffering Choke<br>may not drink potions.",
         "version": 1,
         "source": "http://sodapopminiatures.com/media/downloads/super-dungeon-explore-rulebook-1_5-web.pdf",
         "sourceDescription": "SDEv1-5_RuleBook_web.pdf"
@@ -408,12 +408,12 @@
     ]
   },
   "Cola": {
-    "description": "Once per activation roll 1b. For every star rolled place a potion counter on Candy’s card.",
+    "description": "Once per activation roll 1B. For every star rolled place a potion counter on Candy’s card.",
     "version": 1,
     "hasErrata": "true",
     "errata": [
       {
-        "description": "During upkeep roll 1b. For every star rolled Candy gains one potion.",
+        "description": "During upkeep roll 1B. For every star rolled Candy gains one potion.",
         "version": 2,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
@@ -445,7 +445,7 @@
     "errata": []
   },
   "Convergence With The Goddess": {
-    "description": "If the party contains one or more Heroes with Convergence With The Goddess, during the Hero Power-Up phase, the party may discard four loot from the backpack to select a Princess Coin that was not used for this game and spend it to permanently place it on any one Hero's card, this Princess Coin grants the Hero +1st to defense rolls.",
+    "description": "If the party contains one or more Heroes with Convergence With The Goddess, during the Hero Power-Up phase, the party may discard four loot from the backpack to select a Princess Coin that was not used for this game and spend it to permanently place it on any one Hero's card, this Princess Coin grants the Hero +1ST to defense rolls.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
@@ -463,7 +463,7 @@
     "errata": []
   },
   "Cross": {
-    "description": "A Cross effect is centered on the user’s square and hits the user\r\nand every model within X squares of the user, but does not affect\r\nany diagonal squares. Crosses replace the distance portion (X) of a\r\ndistance effect, but do not replace any other aspect of the ability.",
+    "description": "A Cross effect is centered on the user’s square and hits the user<br>and every model within X squares of the user, but does not affect<br>any diagonal squares. Crosses replace the distance portion (X) of a<br>distance effect, but do not replace any other aspect of the ability.",
     "version": 1.0,
     "hasErrata": "true",
     "errata": [
@@ -476,13 +476,13 @@
     ]
   },
   "Crystal Heart": {
-    "description": "When a model with Crystal Heart enters play, place one crystal token on it's card. The model gains the abilities of the corresponding crystal until it is destroyed:<br>Amethyst - Dark Radiance: All offense rolls and defense rolls made against a model with Dark Radiance reduce the result by 1.<br>Citrine - Predator: When an enemy model moves out of a square that is adjacent to a model with Predator, the model with Predator may immediately make a Melee Attack against that model.<br>Emerald - Charge: When a model with Charge uses a Lance, the model may be placed in any unoccupied square that was affected by the Lance for free.<br>Ruby - Fire, Fueled by Fire: A model with Fueled by Fire adds 1R to all offensive rolls for each model suffering fire.<br>Sapphire - Defender: Models without Defender that are adjacent to a friendly model with Defender cannot be targeted by offensive actions.",
+    "description": "When a model with Crystal Heart enters play, place one crystal token on it's card. The model gains the abilities of the corresponding crystal until it is destroyed:<br>AMETHYST - Dark Radiance: All offense rolls and defense rolls made against a model with Dark Radiance reduce the result by 1.<br>CITRINE - Predator: When an enemy model moves out of a square that is adjacent to a model with Predator, the model with Predator may immediately make a Melee Attack against that model.<br>EMERALD - Charge: When a model with Charge uses a Lance, the model may be placed in any unoccupied square that was affected by the Lance for free.<br>RUBY - Fire, Fueled by Fire: A model with Fueled by Fire adds 1R to all offensive rolls for each model suffering fire.<br>SAPPHIRE - Defender: Models without Defender that are adjacent to a friendly model with Defender cannot be targeted by offensive actions.",
     "version": 1.6,
     "hasErrata": "false",
     "errata": []
   },
   "Crystal Shaping": {
-    "description": "At the start of this model's activation it may discard one equipment card from the backpack in order to gain one of the following until the start of its next activation, depending on the equpment's slot:<br>Citrine: +1ac<br>Emerald:  +2mv<br>Ruby:  +1r WILL<br>Sapphire: +1r ARM.",
+    "description": "At the start of this model's activation it may discard one equipment card from the backpack in order to gain one of the following until the start of its next activation, depending on the equpment's slot:<br>CITRINE: +1AC<br>EMERALD:  +2mv<br>RUBY:  +1R WILL<br>SAPPHIRE: +1R ARM.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
@@ -531,7 +531,7 @@
     "errata": []
   },
   "Dark Radiance": {
-    "description": "All offense rolls and defense rolls made against a model with Dark Radiance reduce the result by 1st.",
+    "description": "All offense rolls and defense rolls made against a model with Dark Radiance reduce the result by 0ST.",
     "version": 1.6,
     "hasErrata": "false",
     "errata": []
@@ -549,13 +549,13 @@
     "errata": []
   },
   "Death Curse-A": {
-    "description": "When one or more models in this gang ends a move adjacent to a Hero, the party must select one model in the gang with Death Curse.  The selected model is destroyed and the party rolls 1G.  Apply one of the below status effects to the adjacent Hero depending on the roll:<br>0st:  Bane<br>1st:  Hex<br>2st: Ice<br>3st: Poison<br>4st:  Immobile",
+    "description": "When one or more models in this gang ends a move adjacent to a Hero, the party must select one model in the gang with Death Curse.  The selected model is destroyed and the party rolls 1G.  Apply one of the below status effects to the adjacent Hero depending on the roll:<br>0ST:  Bane<br>0ST:  Hex<br>2ST: Ice<br>3ST: Poison<br>4ST:  Immobile",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
   },
   "Death Curse-C": {
-    "description": "When a model with Death Curse is destroyed, roll 1G and place the corresponding status effect token on the square the model had occupied.  If a Hero enters the square with the status effect token, remove the token and the Hero gains the status effect at the end of the current activation:<br>0st:  Bane<br>1st:  Hex<br>2st: Ice<br>3st: Poison<br>4st:  Immobile",
+    "description": "When a model with Death Curse is destroyed, roll 1G and place the corresponding status effect token on the square the model had occupied.  If a Hero enters the square with the status effect token, remove the token and the Hero gains the status effect at the end of the current activation:<br>0ST:  Bane<br>0ST:  Hex<br>2ST: Ice<br>3ST: Poison<br>4ST:  Immobile",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
@@ -592,13 +592,13 @@
     "errata": []
   },
   "Despair": {
-    "description": "Enemy models within two squares of a model with Despair reduce the result of all defense rolls by 1st.",
+    "description": "Enemy models within two squares of a model with Despair reduce the result of all defense rolls by 0ST.",
     "version": 1.6,
     "hasErrata": "false",
     "errata": []
   },
   "Dibs-A": {
-    "description": "When a Hero on this tile discards a loot card due to Yoink!, place a crystal token on this model.  This model gains +1st STR for each crystal token on it.",
+    "description": "When a Hero on this tile discards a loot card due to Yoink!, place a crystal token on this model.  This model gains +1ST STR for each crystal token on it.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
@@ -623,7 +623,7 @@
     ]
   },
   "Distance Effects": {
-    "description": "The abilities Magic X, Missile X, and Range X are called distance\r\neffects. A model with a distance effect may target another\r\nmodel up to X squares away with any of its actions. If a distance\r\neffect is part of an attack it will specify an attribute you must\r\nuse when making your attack roll.\r\nA model with a distance effect listed in its special abilities may\r\nuse the listed distance effect in combination with any actions it\r\nmakes, unless specified otherwise. For example: If a model has\r\na distance effect listed on their card (e.g. Missile) and an action\r\nlisted on their card uses a different distance effect (e.g. Magic),\r\nthen “Magic” (i.e. WILL) would be used for that action instead\r\nof “Missile” (i.e. DEX).",
+    "description": "The abilities Magic X, Missile X, and Range X are called distance<br>effects. A model with a distance effect may target another<br>model up to X squares away with any of its actions. If a distance<br>effect is part of an attack it will specify an attribute you must<br>use when making your attack roll.<br>A model with a distance effect listed in its special abilities may<br>use the listed distance effect in combination with any actions it<br>makes, unless specified otherwise. For example: If a model has<br>a distance effect listed on their card (e.g. Missile) and an action<br>listed on their card uses a different distance effect (e.g. Magic),<br>then “Magic” (i.e. WILL) would be used for that action instead<br>of “Missile” (i.e. DEX).",
     "version": 1,
     "hasErrata": "false",
     "errata": []
@@ -647,13 +647,13 @@
     "errata": []
   },
   "Dodge": {
-    "description": "A model with Dodge may use their Dex when making defense rolls unless they are suffering from Knockdown, Immobile, Slow.",
+    "description": "A model with Dodge may use their DEX when making defense rolls unless they are suffering from Knockdown, Immobile, Slow.",
     "version": 1.5,
     "hasErrata": "false",
     "errata": []
   },
   "Dragon Blessing": {
-    "description": "Dragons, Drakes, and Kobolds within 2 squares of Claw Shrine gain +1st STR",
+    "description": "Dragons, Drakes, and Kobolds within 2 squares of Claw Shrine gain +1ST STR",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
@@ -665,7 +665,7 @@
     "errata": []
   },
   "Dread": {
-    "description": "A model with Dread gains +1st to all offense rolls if it is currently benefitting from Stealth.",
+    "description": "A model with Dread gains +1ST to all offense rolls if it is currently benefitting from Stealth.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
@@ -695,7 +695,7 @@
     "errata": []
   },
   "Favors of the Goddess": {
-    "description": "Princess Coins on this model's card grant it +1R to defensive rolls instead of +1st.",
+    "description": "Princess Coins on this model's card grant it +1R to defensive rolls instead of +1ST.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
@@ -746,7 +746,7 @@
     ]
   },
   "Fire Aura": {
-    "description": "Monsters with Citrine affinity that are within 2 squares of Lava Whirl gain Fire.",
+    "description": "Monsters with CITRINE affinity that are within 2 squares of Lava Whirl gain Fire.",
     "version": 1.6,
     "hasErrata": "false",
     "errata": []
@@ -821,7 +821,7 @@
     "errata": []
   },
   "Formless": {
-    "description": "At the beginning of this model's activation it may increase one attribute by +1b.  This bonus lasts until it is activated again.",
+    "description": "At the beginning of this model's activation it may increase one attribute by +1B.  This bonus lasts until it is activated again.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
@@ -839,7 +839,7 @@
     "errata": []
   },
   "Free Coin": {
-    "description": "When a Hero with Free Coin suffers a wound that removes it from play, it is immediately returned to play as though a Princess Coin was spent.<br>(No Princesss Coin is used to activate Free Coin and no Princess CCoin is placed on its card.)",
+    "description": "When a Hero with Free Coin suffers a wound that removes it from play, it is immediately returned to play as though a Princess Coin was spent.<br>(No Princesss Coin is used to activate Free Coin and no Princess Coin is placed on its card.)",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
@@ -918,7 +918,7 @@
     "errata": []
   },
   "Gloom Aura": {
-    "description": "While within 2 squares of Pumpkin Patch, Heroes that do not have Ruby affinity discard the highest rolled when making offense rolls.",
+    "description": "While within 2 squares of Pumpkin Patch, Heroes that do not have RUBY affinity discard the highest rolled when making offense rolls.",
     "version": 1.6,
     "hasErrata": "false",
     "errata": []
@@ -943,12 +943,12 @@
     ]
   },
   "Grabby Hands": {
-    "description": "Grants every monster with Sapphire affinity within 2 squares the Grabby ability.",
+    "description": "Grants every monster with SAPPHIRE affinity within 2 squares the Grabby ability.",
     "version": 1.6,
     "hasErrata": "true",
     "errata": [
       {
-        "description": "Monsters with Sapphire affinity that are within 2 squares of Grabby House gain Grabby.",
+        "description": "Monsters with SAPPHIRE affinity that are within 2 squares of Grabby House gain Grabby.",
         "version": 1.61,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
@@ -968,7 +968,7 @@
     "errata": []
   },
   "Gross": {
-    "description": "When Pudge is destroyed, before removing the model resolve the following offensive action:<br>0ac: sw, Wave 1, +1r STR.",
+    "description": "When Pudge is destroyed, before removing the model resolve the following offensive action:<br>0AC: SW, Wave 1, +1R STR.",
     "version": 1.6,
     "hasErrata": "false",
     "errata": []
@@ -1041,9 +1041,9 @@
     "hasErrata": "true",
     "errata": [
       {
-        "description": "A model suffering Hex discards the highest result rolled anytime it makes an offense roll.<br>(Arcade: A monster suffering Hex reduces its STR by 1st)",
+        "description": "A model suffering Hex discards the highest result rolled anytime it makes an offense roll.<br>(Arcade: A monster suffering Hex reduces its STR by 0ST)",
         "version": 1.61,
-        "source": "\r\n",
+        "source": "<br>",
         "sourceDescription": "Forgotten King Updated keyword."
       }
     ]
@@ -1079,7 +1079,7 @@
     "hasErrata": "true",
     "errata": [
       {
-        "description": "Hookshot may be used in combination with any distance\r\neffect. Hookshot allows the user to target a model it does not have line\r\nof sight to.\r\n",
+        "description": "Hookshot may be used in combination with any distance<br>effect. Hookshot allows the user to target a model it does not have line<br>of sight to.<br>",
         "version": 1.1,
         "source": "http://sodapopminiatures.com/media/downloads/super-dungeon-explore-rulebook-1_5-web.pdf",
         "sourceDescription": "SDEv1-5_RuleBook_web.pdf"
@@ -1087,7 +1087,7 @@
       {
         "description": "Actions with Hookshot do not require line of sight to target a model. Range must still be counted around walls and structures.",
         "version": 1.6,
-        "source": "\r\n",
+        "source": "<br>",
         "sourceDescription": "Forgotten King Updated keyword."
       }
     ]
@@ -1099,12 +1099,12 @@
     "errata": []
   },
   "Hubris": {
-    "description": "Basic Melee Attack action against a Hero that is equipped with one or more pieces of equipment, and grants +1b STR per piece of equipment on the Hero.",
+    "description": "Basic Melee Attack action against a Hero that is equipped with one or more pieces of equipment, and grants +1B STR per piece of equipment on the Hero.",
     "version": 1.0,
     "hasErrata": "true",
     "errata": [
       {
-        "description": "When making a Melee Attack, a model with Hubris gains +1b STR for every equipment card equipped on their target.",
+        "description": "When making a Melee Attack, a model with Hubris gains +1B STR for every equipment card equipped on their target.",
         "version": 1.6,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
@@ -1124,13 +1124,13 @@
     "errata": []
   },
   "Hunter's Mark-A": {
-    "description": "Place a crystal token on the closest enemy model.  Friendly models attacking the model with the crystal token gain +1st STR.  Only one friendly Mark token may be in play at one time and it my not be removed until the target is destroyed or Mark is used again.",
+    "description": "Place a crystal token on the closest enemy model.  Friendly models attacking the model with the crystal token gain +1ST STR.  Only one friendly Mark token may be in play at one time and it my not be removed until the target is destroyed or Mark is used again.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
   },
   "Hunter's Mark-C": {
-    "description": "Place a crystal token on the target.  Friendly models attacking the target gain +1b to their offense rolls.  Only one friendly Mark token may be in play at one time and it may not be removed until the target is destroyed or Mark is used again.",
+    "description": "Place a crystal token on the target.  Friendly models attacking the target gain +1B to their offense rolls.  Only one friendly Mark token may be in play at one time and it may not be removed until the target is destroyed or Mark is used again.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
@@ -1165,7 +1165,7 @@
     "hasErrata": "true",
     "errata": [
       {
-        "description": "A model or ability with Immobile places an Immobile\r\ncounter on any model it damages. A model suffering\r\nImmobile may not move during its turn. If a model\r\nsuffering from Immobile takes damage from any\r\nsource (even one that normally causes Immobile), it\r\ngains Immune: Immobile until the beginning of it’s\r\nnext activation.",
+        "description": "A model or ability with Immobile places an Immobile<br>counter on any model it damages. A model suffering<br>Immobile may not move during its turn. If a model<br>suffering from Immobile takes damage from any<br>source (even one that normally causes Immobile), it<br>gains Immune: Immobile until the beginning of it’s<br>next activation.",
         "version": 1.1,
         "source": "http://sodapopminiatures.com/media/downloads/super-dungeon-explore-rulebook-1_5-web.pdf",
         "sourceDescription": "SDEv1-5_RuleBook_web.pdf"
@@ -1301,7 +1301,7 @@
     "hasErrata": "true",
     "errata": [
       {
-        "description": "A Lance effect draws a straight line directly away from the user’s\r\nsquare along a distance of X. Every model along this line is hit. Lance\r\neffects may not be used along diagonals and replace the distance\r\nportion (X) of a distance effect, but do not replace any other aspect\r\nof the ability.",
+        "description": "A Lance effect draws a straight line directly away from the user’s<br>square along a distance of X. Every model along this line is hit. Lance<br>effects may not be used along diagonals and replace the distance<br>portion (X) of a distance effect, but do not replace any other aspect<br>of the ability.",
         "version": 1.1,
         "source": "http://sodapopminiatures.com/media/downloads/super-dungeon-explore-rulebook-1_5-web.pdf",
         "sourceDescription": "SDEv1-5_RuleBook_web.pdf"
@@ -1327,13 +1327,13 @@
     "errata": []
   },
   "Line": {
-    "description": "When a line is drawn place the appropriate template anywhere within the tile.\r\n\r\nTrap templates may not be placed across walls, structures, or chasms. They may be placed in the same square as a friendly or enemy models.",
+    "description": "When a line is drawn place the appropriate template anywhere within the tile.<br><br>Trap templates may not be placed across walls, structures, or chasms. They may be placed in the same square as a friendly or enemy models.",
     "version": 1.6,
     "hasErrata": "false",
     "errata": []
   },
   "Line of Sight": {
-    "description": "Models require line of sight to target a model with their actions\r\nand abilities. Models are considered to have line of sight to any\r\nsquares they are adjacent to. A model has Line of Sight when it can\r\ndraw a straight line from any point of its square to any point on\r\nthe intended targets square. This line cannot contact walls. (This\r\nincludes where walls meet squares on a corner. See line of sight\r\ndiagram below). Models and counters do not block line of sight.",
+    "description": "Models require line of sight to target a model with their actions<br>and abilities. Models are considered to have line of sight to any<br>squares they are adjacent to. A model has Line of Sight when it can<br>draw a straight line from any point of its square to any point on<br>the intended targets square. This line cannot contact walls. (This<br>includes where walls meet squares on a corner. See line of sight<br>diagram below). Models and counters do not block line of sight.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
@@ -1370,7 +1370,7 @@
     ]
   },
   "Lycanthropy": {
-    "description": "Wounded models that are not removed from play gain +1 red att and suffer Vulnerable Magic.",
+    "description": "Wounded models that are not removed from play gain +1R and suffer Vulnerable Magic.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
@@ -1381,7 +1381,7 @@
     "hasErrata": "true",
     "errata": [
       {
-        "description": "A model with Magic X may target a model up to X squares\r\naway. If a model is making an attack using Magic X they must use their\r\nWILL attribute when making their attack roll, unless specified otherwise.",
+        "description": "A model with Magic X may target a model up to X squares<br>away. If a model is making an attack using Magic X they must use their<br>WILL attribute when making their attack roll, unless specified otherwise.",
         "version": 1.1,
         "source": "http://sodapopminiatures.com/media/downloads/super-dungeon-explore-rulebook-1_5-web.pdf",
         "sourceDescription": "SDEv1-5_RuleBook_web.pdf"
@@ -1401,7 +1401,7 @@
     "errata": []
   },
   "Mark": {
-    "description": "Place a crystal token on the target.  Friendly models attacking the target gain +1b to their offense rolls.  Only one friendly Mark token may be in play at one time and it may not be removed until the target is destroyed or Mark is used again.",
+    "description": "Place a crystal token on the target.  Friendly models attacking the target gain +1B to their offense rolls.  Only one friendly Mark token may be in play at one time and it may not be removed until the target is destroyed or Mark is used again.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
@@ -1444,7 +1444,7 @@
     "errata": []
   },
   "Military Acumen": {
-    "description": "When a model with Military Acumen is in the dungeon, a friendly Hero may remove Princess Coins from its card to gain +1ac for each coin removed from the game until the end of its activation.",
+    "description": "When a model with Military Acumen is in the dungeon, a friendly Hero may remove Princess Coins from its card to gain +1AC for each coin removed from the game until the end of its activation.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
@@ -1455,7 +1455,7 @@
     "hasErrata": "true",
     "errata": [
       {
-        "description": "A model with Missile X may target a model up to X squares\r\naway. If a model is making an attack using Missile X they must use their\r\nDEX attribute when making their attack roll, unless specified otherwise.",
+        "description": "A model with Missile X may target a model up to X squares<br>away. If a model is making an attack using Missile X they must use their<br>DEX attribute when making their attack roll, unless specified otherwise.",
         "version": 1.1,
         "source": "http://sodapopminiatures.com/media/downloads/super-dungeon-explore-rulebook-1_5-web.pdf",
         "sourceDescription": "SDEv1-5_RuleBook_web.pdf"
@@ -1463,12 +1463,12 @@
     ]
   },
   "Mob": {
-    "description": "Add +1b ATT to this model's melee attacks for every other model with Mob in melee with the target, up to +3b ATT.",
+    "description": "Add +1B ATT to this model's melee attacks for every other model with Mob in melee with the target, up to +3B ATT.",
     "version": 1.0,
     "hasErrata": "true",
     "errata": [
       {
-        "description": "When making a Melee offensive action, a model with Mob adds +1b STR to their offense roll for every additional model with Mob that is in range of their target, up to +3b STR.",
+        "description": "When making a Melee offensive action, a model with Mob adds +1B STR to their offense roll for every additional model with Mob that is in range of their target, up to +3B STR.",
         "version": 1.6,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
@@ -1476,7 +1476,7 @@
     ]
   },
   "Mob Mentality": {
-    "description": "Monsters with Citrine affinity that are within 2 squares of Kobold Warrens gain Mob.",
+    "description": "Monsters with CITRINE affinity that are within 2 squares of Kobold Warrens gain Mob.",
     "version": 1.6,
     "hasErrata": "false",
     "errata": []
@@ -1512,7 +1512,7 @@
     "errata": []
   },
   "Nice List": {
-    "description": "At the beginning of the game, shuffle all Hero cards except Kringle and draw one card.  The Hero drawn gains +1b on offensive rolls for the entire game.",
+    "description": "At the beginning of the game, shuffle all Hero cards except Kringle and draw one card.  The Hero drawn gains +1B on offensive rolls for the entire game.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
@@ -1536,7 +1536,7 @@
     "errata": []
   },
   "Offensive Potion": {
-    "description": "Offensive Potions are indicated by a (Green Potion icon).\n\nAn Offensive Potion provides a model with a single use special action (Blue Action Icon) or special attack (Red Action Icon). These effects follow all normal rules for resolving special actions and attacks, including being able to target enemies and requiring attack and defense rolls (is the potion provides a special attack). They require no action points to use and are instead used by spending a potion token in the same manner as a normal potion, but may only be used during a models activation.",
+    "description": "Offensive Potions are indicated by a (Green Potion icon).<br><br>An Offensive Potion provides a model with a single use special action (Blue Action Icon) or special attack (Red Action Icon). These effects follow all normal rules for resolving special actions and attacks, including being able to target enemies and requiring attack and defense rolls (is the potion provides a special attack). They require no action points to use and are instead used by spending a potion token in the same manner as a normal potion, but may only be used during a models activation.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
@@ -1602,7 +1602,7 @@
     "errata": []
   },
   "Past Life": {
-    "description": "All monsters within 2 squares of a model with Past Life gain +1st STR.",
+    "description": "All monsters within 2 squares of a model with Past Life gain +1ST STR.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
@@ -1620,18 +1620,18 @@
     "errata": []
   },
   "Pile-On-C": {
-    "description": "+1r ATT if target is suffering Knockdown.",
+    "description": "+1R ATT if target is suffering Knockdown.",
     "version": 1.0,
     "hasErrata": "true",
     "errata": [
       {
-        "description": "+1b STR if target is suffering Knockdown.",
+        "description": "+1B STR if target is suffering Knockdown.",
         "version": 1.6,
         "source": "https://www.kickstarter.com/projects/1257458293/super-dungeon-explore-forgotten-king/posts/976490",
         "sourceDescription": "kickstarter update 57"
       },
       {
-        "description": "A model with Pile-On gains +1b STR if its target is suffering Knockdown.",
+        "description": "A model with Pile-On gains +1B STR if its target is suffering Knockdown.",
         "version": 1.62,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
@@ -1639,7 +1639,7 @@
     ]
   },
   "Pile-On-A": {
-    "description": "A model with Pile-On gains +1st STR if its target is suffering knockdown.",
+    "description": "A model with Pile-On gains +1ST STR if its target is suffering knockdown.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
@@ -1670,7 +1670,7 @@
     ]
   },
   "Poison Aura": {
-    "description": "Monsters with Citrine affinity that are within 2 squares of Old-Growth Hollow gain Poison.",
+    "description": "Monsters with CITRINE affinity that are within 2 squares of Old-Growth Hollow gain Poison.",
     "version": 1.6,
     "hasErrata": "false",
     "errata": []
@@ -1726,7 +1726,7 @@
     "errata": []
   },
   "Primal Aura": {
-    "description": "Monsters with Sapphire Affinity that are within 2 squares of Tribal Stone gain +1st ARM.",
+    "description": "Monsters with SAPPHIRE Affinity that are within 2 squares of Tribal Stone gain +1ST ARM.",
     "version": 1.6,
     "hasErrata": "false",
     "errata": []
@@ -1767,7 +1767,7 @@
     "hasErrata": "true",
     "errata": [
       {
-        "description": "A model targeted by Pull may be moved a number of squares up\r\nto the value of X towards the attacker. A model moved by Pull\r\nmust, after each square moved, be closer to the attacker than it\r\nbegan. Once the two models are adjacent, the target model may\r\nthen be moved the remainder of X squares so to be still adjacent\r\nto the attacker.",
+        "description": "A model targeted by Pull may be moved a number of squares up<br>to the value of X towards the attacker. A model moved by Pull<br>must, after each square moved, be closer to the attacker than it<br>began. Once the two models are adjacent, the target model may<br>then be moved the remainder of X squares so to be still adjacent<br>to the attacker.",
         "version": 1.1,
         "source": "http://sodapopminiatures.com/media/downloads/super-dungeon-explore-rulebook-1_5-web.pdf",
         "sourceDescription": "SDEv1-5_RuleBook_web.pdf"
@@ -1786,7 +1786,7 @@
     "hasErrata": "true",
     "errata": [
       {
-        "description": "A model targeted by Push may be moved a number of squares up\r\nto the value of X away from the attacker. A model moved by Push\r\nmust, after each square moved, be further away from the attacker\r\nthan it began.",
+        "description": "A model targeted by Push may be moved a number of squares up<br>to the value of X away from the attacker. A model moved by Push<br>must, after each square moved, be further away from the attacker<br>than it began.",
         "version": 1.1,
         "source": "http://sodapopminiatures.com/media/downloads/super-dungeon-explore-rulebook-1_5-web.pdf",
         "sourceDescription": "SDEv1-5_RuleBook_web.pdf"
@@ -1806,7 +1806,7 @@
     "errata": []
   },
   "Quick Strike": {
-    "description": "After a model with Quick Strike destroys an enemy, its controller rolls 1g.  On a roll of Heart+Potion, the model may immediately make a basic offensive action without spending an action point.",
+    "description": "After a model with Quick Strike destroys an enemy, its controller rolls 1G.  On a roll of Heart+Potion, the model may immediately make a basic offensive action without spending an action point.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
@@ -1818,7 +1818,7 @@
     "errata": []
   },
   "Rage Musk": {
-    "description": "If this potion is used, the Consul roll 1r instead of 1b for Angry Walrus during the following Consul Turn.",
+    "description": "If this potion is used, the Consul roll 1R instead of 1B for Angry Walrus during the following Consul Turn.",
     "version": 1.6,
     "hasErrata": "false",
     "errata": []
@@ -1842,7 +1842,7 @@
     "hasErrata": "true",
     "errata": [
       {
-        "description": "A model with Range X may target a model up to X squares\r\naway. If a model is making an attack using Range X they must use their\r\nATT attribute when making their attack roll, unless specified otherwise.",
+        "description": "A model with Range X may target a model up to X squares<br>away. If a model is making an attack using Range X they must use their<br>ATT attribute when making their attack roll, unless specified otherwise.",
         "version": 1.1,
         "source": "http://sodapopminiatures.com/media/downloads/super-dungeon-explore-rulebook-1_5-web.pdf",
         "sourceDescription": "SDEv1-5_RuleBook_web.pdf"
@@ -1868,18 +1868,18 @@
     "errata": []
   },
   "Read The Wind": {
-    "description": "A model with Read The Wind may roll 1g when the party clears all activation tokens.  Keep this die on the Hero's card and discard it next time activation tokens are cleared.  After dice are rolled by any Hero for any reason, this model may discard the die to add it to the roll.",
+    "description": "A model with Read The Wind may roll 1G when the party clears all activation tokens.  Keep this die on the Hero's card and discard it next time activation tokens are cleared.  After dice are rolled by any Hero for any reason, this model may discard the die to add it to the roll.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
   "Regenerate": {
-    "description": "Roll 1b dice for every wound token on the models card and remove one token for each star rolled.",
+    "description": "Roll 1B dice for every wound token on the models card and remove one token for each star rolled.",
     "version": 1.0,
     "hasErrata": "true",
     "errata": [
       {
-        "description": "Roll 1b for every wound token on the model using Regenerate. Remove one token for every star rolled.",
+        "description": "Roll 1B for every wound token on the model using Regenerate. Remove one token for every star rolled.",
         "version": 1.6,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
@@ -1912,13 +1912,13 @@
     "errata": []
   },
   "Resolve Aura": {
-    "description": "Monsters with Sapphire Affinity that are within two squares of a model with Resolve Aura are immune to control effects.",
+    "description": "Monsters with SAPPHIRE Affinity that are within two squares of a model with Resolve Aura are immune to control effects.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
   },
   "Resurrect": {
-    "description": "Choose a model that has been destroyed. Roll 1b dice for every heart on its stat card. Remove one wound counter for every star rolled. After the roll, If the target model has more hearts than wound counters, return it to play adjacent to the start marker. The model retains any equipment and potions that it had when it was destroyed.",
+    "description": "Choose a model that has been destroyed. Roll 1B dice for every heart on its stat card. Remove one wound counter for every star rolled. After the roll, If the target model has more hearts than wound counters, return it to play adjacent to the start marker. The model retains any equipment and potions that it had when it was destroyed.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
@@ -1942,7 +1942,7 @@
     "errata": []
   },
   "Rock Aura": {
-    "description": "Monsters with Sapphire affinity that are within 2 squares of Rock Pile are Immune: Status Effects.",
+    "description": "Monsters with SAPPHIRE affinity that are within 2 squares of Rock Pile are Immune: Status Effects.",
     "version": 1.6,
     "hasErrata": "false",
     "errata": []
@@ -1960,7 +1960,7 @@
     "errata": []
   },
   "Salty-A": {
-    "description": "A model with Salty gains +1st for each tentacles token on the target.",
+    "description": "A model with Salty gains +1ST for each tentacles token on the target.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
@@ -1972,13 +1972,13 @@
     "errata": []
   },
   "Savage": {
-    "description": "All minions within 1 square of a model with Savage gain +1st STR.",
+    "description": "All minions within 1 square of a model with Savage gain +1ST STR.",
     "version": 1.6,
     "hasErrata": "false",
     "errata": []
   },
   "Scatter": {
-    "description": "When a scatter is drawn place four single square templates anywhere within the tile.\r\n\r\nTrap templates may not be placed across walls, structures, or chasms. They may be placed in the same square as a friendly or enemy models.",
+    "description": "When a scatter is drawn place four single square templates anywhere within the tile.<br><br>Trap templates may not be placed across walls, structures, or chasms. They may be placed in the same square as a friendly or enemy models.",
     "version": 1.6,
     "hasErrata": "false",
     "errata": []
@@ -1996,7 +1996,7 @@
     "errata": []
   },
   "Secret Passage": {
-    "description": "When a model enters a Secret Passage square immediately place it in any other unoccupied Secret Passage square in the dungeon.\r\n\r\nA large model must be able to be placed in the new location or Secret Passage has no effect.",
+    "description": "When a model enters a Secret Passage square immediately place it in any other unoccupied Secret Passage square in the dungeon.<br><br>A large model must be able to be placed in the new location or Secret Passage has no effect.",
     "version": 1.6,
     "hasErrata": "false",
     "errata": []
@@ -2008,7 +2008,7 @@
     "errata": []
   },
   "Sense Weakness-A": {
-    "description": "A model with Sense Weakness gains +2st while targeting a Hero with one or more status effects with an offensive action.  While selecting the target of a Command, a model with Sense Weakness counts status effect tokens as Wrath tokens.",
+    "description": "A model with Sense Weakness gains +2ST while targeting a Hero with one or more status effects with an offensive action.  While selecting the target of a Command, a model with Sense Weakness counts status effect tokens as Wrath tokens.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
@@ -2020,7 +2020,7 @@
     "errata": []
   },
   "Sentinel": {
-    "description": "Models that are adjacent to a Sentinel structure add +1st to all defense rolls.",
+    "description": "Models that are adjacent to a Sentinel structure add +1ST to all defense rolls.",
     "version": 1.6,
     "hasErrata": "false",
     "errata": []
@@ -2182,7 +2182,7 @@
     ]
   },
   "Soporific Cloud": {
-    "description": "When a Hero that does not have Emerald affinity moves within 2 squares of Fungal Growth they suffer Slow.",
+    "description": "When a Hero that does not have EMERALD affinity moves within 2 squares of Fungal Growth they suffer Slow.",
     "version": 1.6,
     "hasErrata": "false",
     "errata": []
@@ -2212,7 +2212,7 @@
     "errata": []
   },
   "Spiteful Whispers-A": {
-    "description": "A model with a Spiteful Cherub on its card sufers -1st WILL to all WILL rolls.  The Hero must also roll 1G at the end of every Consul turn and apply one of the below status effects, depending on the roll:<br>0st: Bane<br>1st: Hex<br>2st: Ice<br>3st: Poison<br>4st: Immobile",
+    "description": "A model with a Spiteful Cherub on its card sufers -1ST WILL to all WILL rolls.  The Hero must also roll 1G at the end of every Consul turn and apply one of the below status effects, depending on the roll:<br>0ST: Bane<br>1ST: Hex<br>2ST: Ice<br>3ST: Poison<br>4ST: Immobile",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
@@ -2254,7 +2254,7 @@
     "hasErrata": "true",
     "errata": [
       {
-        "description": "A Spray effect hits multiple models in a \"V\" pattern up to X\r\nsquares away. Spray effects may not be used along diagonals\r\nand distance portion (X) of a distance effect, but do not replace\r\nany other aspect of the ability.",
+        "description": "A Spray effect hits multiple models in a \"V\" pattern up to X<br>squares away. Spray effects may not be used along diagonals<br>and distance portion (X) of a distance effect, but do not replace<br>any other aspect of the ability.",
         "version": 1.1,
         "source": "http://sodapopminiatures.com/media/downloads/super-dungeon-explore-rulebook-1_5-web.pdf",
         "sourceDescription": "SDEv1-5_RuleBook_web.pdf"
@@ -2280,12 +2280,12 @@
     "errata": []
   },
   "Static Charge": {
-    "description": "Static Charge grants +1b dice to both STR and ARM for every wound token on card.",
+    "description": "Static Charge grants +1B dice to both STR and ARM for every wound token on card.",
     "version": 1.0,
     "hasErrata": "true",
     "errata": [
       {
-        "description": "A model with Static Charge gains +1b STR and +1b ARM for every wound they are currently suffering.",
+        "description": "A model with Static Charge gains +1B STR and +1B ARM for every wound they are currently suffering.",
         "version": 1.6,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
@@ -2293,7 +2293,7 @@
     ]
   },
   "Status Effects": {
-    "description": "Some attacks or abilities in the game will cause the models hit to\r\nsuffer status effects if they successfully deal damage to a model.\r\nWhen a model suffers a status effect, place the appropriate\r\ncounter on their card. A model with a status effect counter suffers\r\nits effects at all times until the counter is removed.\r\nSometimes a special action will cause a status effect. Since\r\nspecial actions do not typically deal damage, instead any model\r\nhit by the special action suffers the status effect listed. Note that,\r\nunlike a special attack, a special action must specifically say that\r\nit causes a status effect.\r\nWhen a model gains a heart, they may choose to remove a status\r\neffect counter from their card instead of removing a wound counter.\r\nTypically, a model may only have one status effect counter of\r\neach type on their card at once, but may have multiple status\r\neffect counters.",
+    "description": "Some attacks or abilities in the game will cause the models hit to<br>suffer status effects if they successfully deal damage to a model.<br>When a model suffers a status effect, place the appropriate<br>counter on their card. A model with a status effect counter suffers<br>its effects at all times until the counter is removed.<br>Sometimes a special action will cause a status effect. Since<br>special actions do not typically deal damage, instead any model<br>hit by the special action suffers the status effect listed. Note that,<br>unlike a special attack, a special action must specifically say that<br>it causes a status effect.<br>When a model gains a heart, they may choose to remove a status<br>effect counter from their card instead of removing a wound counter.<br>Typically, a model may only have one status effect counter of<br>each type on their card at once, but may have multiple status<br>effect counters.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
@@ -2311,7 +2311,7 @@
     "errata": []
   },
   "Stealth": {
-    "description": "When a model with stealth is targeted by a ranged affect they may immediately make a Dex roll. Subtract the number of stars rolled from the attacker's range. if the roll causes the attacker to be out of range the attack is considered to have failed.",
+    "description": "When a model with stealth is targeted by a ranged affect they may immediately make a DEX roll. Subtract the number of stars rolled from the attacker's range. if the roll causes the attacker to be out of range the attack is considered to have failed.",
     "version": 1,
     "hasErrata": "true",
     "errata": [
@@ -2330,7 +2330,7 @@
     ]
   },
   "Stealth Aura": {
-    "description": "Monsters with Ruby Affinity that are within 2 squares of Salt Pillar gain Stealth.",
+    "description": "Monsters with RUBY Affinity that are within 2 squares of Salt Pillar gain Stealth.",
     "version": 1.6,
     "hasErrata": "false",
     "errata": []
@@ -2348,7 +2348,7 @@
     "errata": []
   },
   "Strength of Virtue": {
-    "description": "When a model with Strength of Virtue would gain a status effect, it may roll 1b.  If any 0st are rolled, it does not gain the status effect.",
+    "description": "When a model with Strength of Virtue would gain a status effect, it may roll 1B.  If any 0ST are rolled, it does not gain the status effect.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
@@ -2427,7 +2427,7 @@
     "hasErrata": "true",
     "errata": [
       {
-        "description": "A Sweep effect hits every model within X squares of a single\r\nside of the user’s square, along a straight line. Sweep effects\r\nmay not be used along diagonals and replace the distance\r\nportion (X) of a distance effect, but do not replace any other\r\naspect of the ability.",
+        "description": "A Sweep effect hits every model within X squares of a single<br>side of the user’s square, along a straight line. Sweep effects<br>may not be used along diagonals and replace the distance<br>portion (X) of a distance effect, but do not replace any other<br>aspect of the ability.",
         "version": 1.1,
         "source": "http://sodapopminiatures.com/media/downloads/super-dungeon-explore-rulebook-1_5-web.pdf",
         "sourceDescription": "SDEv1-5_RuleBook_web.pdf"
@@ -2473,13 +2473,13 @@
     ]
   },
   "Territorial": {
-    "description": "A model with Territorial gains +1st to offense rolls while on the first tile, +2st while on the second, +3st while on the third, and +4st while on the fourth.<br>(Area: A model with Territorial gains +2st to offensive rolls while on the same tile as a friendly spawning point.)",
+    "description": "A model with Territorial gains +1ST to offense rolls while on the first tile, +2ST while on the second, +3ST while on the third, and +4ST while on the fourth.<br>(Area: A model with Territorial gains +2ST to offensive rolls while on the same tile as a friendly spawning point.)",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
   },
   "The First Stone": {
-    "description": "A model with The First Stone gains +1b to all offensive rolls for each wound it is suffering, to a maximum of +3b.",
+    "description": "A model with The First Stone gains +1B to all offensive rolls for each wound it is suffering, to a maximum of +3B.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
@@ -2497,7 +2497,7 @@
     "errata": []
   },
   "Throw": {
-    "description": "When using an action with Throw, choose one friendly adjacent model. Push that model a number of squares up to the value of X, as described in the rules for Push. If the model moves to a square that is adjacent to another model it immediately stops moving. Every model it stops adjacent to, friendly or enemy, suffers an offense roll of 1b per square the model moved.",
+    "description": "When using an action with Throw, choose one friendly adjacent model. Push that model a number of squares up to the value of X, as described in the rules for Push. If the model moves to a square that is adjacent to another model it immediately stops moving. Every model it stops adjacent to, friendly or enemy, suffers an offense roll of 1B per square the model moved.",
     "version": 1.6,
     "hasErrata": "false",
     "errata": []
@@ -2552,13 +2552,13 @@
     "errata": []
   },
   "Trophies": {
-    "description": "A model with Trophies gains +1st ARM for each Ghostflame in play. Once per turn, if there are four or more Ghostflames adjacent to a model with Trophies, the model may immediately equip one Relic Item.",
+    "description": "A model with Trophies gains +1ST ARM for each Ghostflame in play. Once per turn, if there are four or more Ghostflames adjacent to a model with Trophies, the model may immediately equip one Relic Item.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
   },
   "Turtle": {
-    "description": "When activated replace this model with a Shell, The Shell is considered the same model as the one it replaced for all purposes. The model gains +1 ARM and Immune: Status Effects. A Shell may not move, attack, or use special actions.\r\n\r\nWhen a model with Turtle is require to make a defense roll it may immediately activate Turtle for free before making the roll.\r\n\r\nIf Turtle is active at the beginning of this model's activation replace the Shell with its original model. The model may then act normally during its turn which may include reactivating Turtle.",
+    "description": "When activated replace this model with a Shell, The Shell is considered the same model as the one it replaced for all purposes. The model gains +1 ARM and Immune: Status Effects. A Shell may not move, attack, or use special actions.<br><br>When a model with Turtle is require to make a defense roll it may immediately activate Turtle for free before making the roll.<br><br>If Turtle is active at the beginning of this model's activation replace the Shell with its original model. The model may then act normally during its turn which may include reactivating Turtle.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
@@ -2582,7 +2582,7 @@
     "errata": []
   },
   "Vent Steam": {
-    "description": "Dangerous, 0Sw, +1B STR, Wave 1.",
+    "description": "Dangerous, 1SW, +1B STR, Wave 1.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
@@ -2594,12 +2594,12 @@
     "errata": []
   },
   "Virulent": {
-    "description": "Adds +1b dice to any offense roll they make if their target is suffering Poison.",
+    "description": "Adds +1B dice to any offense roll they make if their target is suffering Poison.",
     "version": 1.0,
     "hasErrata": "true",
     "errata": [
       {
-        "description": "Add +1b to this models offense rolls if its target is suffering from Poison.",
+        "description": "Add +1B to this models offense rolls if its target is suffering from Poison.",
         "version": 1.6,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
@@ -2607,7 +2607,7 @@
     ]
   },
   "Volatile": {
-    "description": "When a model with Volatile is destroyed, before removing the model, resolve the following action: 0sw, Wave 1, +2R STR.",
+    "description": "When a model with Volatile is destroyed, before removing the model, resolve the following action: 0SW, Wave 1, +2R STR.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
@@ -2618,7 +2618,7 @@
     "hasErrata": "true",
     "errata": [
       {
-        "description": "Status Effect. If a model with Vulnerable X is targeted\r\nby the ability listed as X, it must discard the highest result rolled of any\r\ndefense roll it makes against that ability.",
+        "description": "Status Effect. If a model with Vulnerable X is targeted<br>by the ability listed as X, it must discard the highest result rolled of any<br>defense roll it makes against that ability.",
         "version": 1.1,
         "source": "http://sodapopminiatures.com/media/downloads/super-dungeon-explore-rulebook-1_5-web.pdf",
         "sourceDescription": "SDEv1-5_RuleBook_web.pdf"
@@ -2637,7 +2637,7 @@
     "hasErrata": "true",
     "errata": [
       {
-        "description": "A Wave effect is centered\r\non the user’s square and\r\nhits the user and every\r\nmodel within X squares of\r\nthe user. Waves replace the\r\ndistance portion (X) of a\r\ndistance effect, but do not\r\nreplace any other aspect of\r\nthe ability.",
+        "description": "A Wave effect is centered<br>on the user’s square and<br>hits the user and every<br>model within X squares of<br>the user. Waves replace the<br>distance portion (X) of a<br>distance effect, but do not<br>replace any other aspect of<br>the ability.",
         "version": 1.1,
         "source": "http://sodapopminiatures.com/media/downloads/super-dungeon-explore-rulebook-1_5-web.pdf",
         "sourceDescription": "SDEv1-5_RuleBook_web.pdf"
@@ -2669,7 +2669,7 @@
     "errata": []
   },
   "Wisdom": {
-    "description": "A model with Wisdom gains +1ac that may only be used to take support actions.",
+    "description": "A model with Wisdom gains +1AC that may only be used to take support actions.",
     "version": 1.6,
     "hasErrata": "false",
     "errata": []
@@ -2681,7 +2681,7 @@
     "errata": []
   },
   "Yip's Wrath": {
-    "description": "During its activation, a model with Yip's Wrath may make the following offensive action a single time for free:  0ac: 4mi, knockdown.",
+    "description": "During its activation, a model with Yip's Wrath may make the following offensive action a single time for free:  0AC: 4mi, knockdown.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
@@ -2699,7 +2699,7 @@
     "errata": []
   },
   "You're Alone": {
-    "description": "A model with You're Alone gains +2b to offensive actions that are targeting a model that has no other models friendly to it within two squares.",
+    "description": "A model with You're Alone gains +2B to offensive actions that are targeting a model that has no other models friendly to it within two squares.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
