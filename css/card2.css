@@ -682,7 +682,7 @@ cursor:move;
 	left: 5px;
 }
 
-.card.pet .keywordsSection .subStats .cost{
+.card.pet .keywordsSection .subStats .petCost{
 	top: 27px;
 	left: 20px;
 }
@@ -711,7 +711,7 @@ cursor:move;
 	height:35px;
 }
 
-.card .affinity.CITRINE.EMERALD, .CITRINEEMERALD, .EMERALDCITRINE{
+.card .affinity.CITRINEEMERALD, .card .affinity.EMERALDCITRINE{
 	display:inline-block;
 	background: url('image/affinity/citrine-emerald.png') no-repeat;
 	width:42px;
@@ -720,7 +720,7 @@ cursor:move;
     top: 10px;
 }
 
-.card .affinity.CITRINE.RUBY, .CITRINERUBY, .RUBYCITRINE{
+.card .affinity.CITRINERUBY, .card .affinity.RUBYCITRINE{
 	display:inline-block;
 	background: url('image/affinity/citrine-ruby.png') no-repeat;
 	width:42px;
@@ -729,7 +729,7 @@ cursor:move;
     top: 10px;
 }
 
-.card .affinity.CITRINE.SAPPHIRE, .CITRINESAPPHIRE, .SAPPHIRECITRINE{
+.card .affinity.CITRINESAPPHIRE, .card .affinity.SAPPHIRECITRINE{
 	display:inline-block;
 	background: url('image/affinity/citrine-sapphire.png') no-repeat;
 	width:42px;
@@ -738,7 +738,7 @@ cursor:move;
     top: 10px;
 }
 
-.card .affinity.CITRINE.AMETHYST, .AMETHYSTCITRINE, .CITRINEAMETHYST{
+.card .affinity.AMETHYSTCITRINE, .card .affinity.CITRINEAMETHYST{
 	display:inline-block;
 	background: url('image/affinity/citrine-amethyst.png') no-repeat;
 	width:42px;
@@ -747,7 +747,7 @@ cursor:move;
     top: 10px;
 }
 
-.card .affinity.all, .ALLAFFINITY{
+.card .affinity.ALL, .card .affinity.ALLAFFINITY{
 	display:inline-block;
 	background: url('image/affinity/rainbow.png') no-repeat;
 	width:42px;
@@ -772,7 +772,7 @@ cursor:move;
 	height:35px;
 }
 
-.card .affinity.EMERALD.RUBY, .EMERALDRUBY, .RUBYEMERALD{
+.card .affinity.EMERALDRUBY, .card .affinity.RUBYEMERALD{
 	display:inline-block;
 	background: url('image/affinity/emerald-ruby.png') no-repeat;
 	width:42px;
@@ -781,14 +781,14 @@ cursor:move;
     top: 10px;
 }
 
-.card .affinity.EMERALD.SAPPHIRE, .EMERALDSAPPHIRE, .SAPPHIREEMERALD{
+.card .affinity.EMERALDSAPPHIRE, .card .affinity.SAPPHIREEMERALD{
 	display:inline-block;
 	background: url('image/affinity/emerald-sapphire.png') no-repeat;
 	width:42px;
 	height:70px;
 }
 
-.card .affinity.EMERALD.AMETHYST, .AMETHYSTEMERALD, .EMERALDAMETHYST{
+.card .affinity.AMETHYSTEMERALD, .card .affinity.EMERALDAMETHYST{
 	display:inline-block;
 	background: url('image/affinity/emerald-amethyst.png') no-repeat;
 	width:42px;
@@ -814,7 +814,7 @@ cursor:move;
 	height:35px;
 }
 
-.card .affinity.RUBY.SAPPHIRE, .RUBYSAPPHIRE, .SAPPHIRERUBY{
+.card .affinity.RUBYSAPPHIRE, .card .affinity.SAPPHIRERUBY{
 	display:inline-block;
 	background: url('image/affinity/ruby-sapphire.png') no-repeat;
 	width:42px;
@@ -850,7 +850,7 @@ cursor:move;
 	height:35px;
 }
 
-.card .affinity.SAPPHIRE.AMETHYST, .AMETHYSTSAPPHIRE, .SAPPHIREAMETHYST{
+.card .affinity.AMETHYSTSAPPHIRE, .card .affinity.SAPPHIREAMETHYST{
 	display:inline-block;
 	background: url('image/affinity/amethyst-sapphire.png') no-repeat;
 	width:42px;
