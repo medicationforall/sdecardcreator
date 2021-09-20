@@ -21,10 +21,10 @@
  * @mixin
  */
 function HasStats(){
-  this.STRStat = new Stat(this,"STR", 'hero monster pet', '3b 1sw');
-  this.ARMStat = new Stat(this, "ARM", 'hero monster pet', '2b 1r sh');
-  this.WILLStat = new Stat(this, "WILL", 'hero monster', '3b');
-  this.DEXStat = new Stat(this, "DEX", 'hero monster', '3b');
+  this.STRStat = new Stat(this,"STR", 'hero monster pet', '3B 1SW');
+  this.ARMStat = new Stat(this, "ARM", 'hero monster pet', '2B 1R SH');
+  this.WILLStat = new Stat(this, "WILL", 'hero monster', '3B');
+  this.DEXStat = new Stat(this, "DEX", 'hero monster', '3B');
 
 
   /**
@@ -60,12 +60,12 @@ function HasStats(){
 
 
   /**
-   * Set cost.
-   * @param {string} cost
+   * Set petCost.
+   * @param {string} petCost
    */
-  this.setCost=function(cost){
-    this.data.cost = cost;
-    this.node.find('.cost').text(cost);
+  this.setPetCost=function(petCost){
+    this.data.petCost = petCost;
+    this.node.find('.petCost').text(petCost);
   };
 
 
@@ -108,8 +108,8 @@ function HasStats(){
       this.setPotions(data.potions);
     }
 
-    if(data.cost !== undefined){
-      this.setCost(data.cost);
+    if(data.petCost !== undefined){
+      this.setPetCost(data.petCost);
     }
 
     if(data.skulls !== undefined){

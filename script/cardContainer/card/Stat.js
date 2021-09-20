@@ -87,7 +87,7 @@ function Stat(parent, name, permissions, value){
     this.node.find('.diceList').find('div').css("display","none");
 
     //set the value
-    var re = /\b(\d+)(sw|ma|mi|st|b|r|g|o|p|)\b|\b(sh)\b/g;
+    var re = /\b(\d+)(SW|MA|MI|ST|B|R|G|O|P|)\b|\b(SH)\b/g;
     value.replace(re,$.proxy(this.parseValue,this));
   };
 
@@ -101,23 +101,23 @@ function Stat(parent, name, permissions, value){
    */
   this.parseValue = function(match,number,type,shield){
     if(number !== undefined && type !== undefined){
-      if(type==='b'){
+      if(type==='B'){
         $(this.node).find('.blue').css("display","").text(number);
-      }else if(type==='r'){
+      }else if(type==='R'){
         $(this.node).find('.red').css("display","").text(number);
-      }else if(type==='g'){
+      }else if(type==='G'){
         $(this.node).find('.green').css("display","").text(number);
-      }else if(type==='p'){
+      }else if(type==='P'){
         $(this.node).find('.purple').css("display","").text(number);
-      }else if(type==='o'){
+      }else if(type==='O'){
         $(this.node).find('.orange').css("display","").text(number);
-      }else if(type==='st'){
+      }else if(type==='ST'){
         $(this.node).find('.star').css("display","").text(number);
-      }else if(type==='sw'){
+      }else if(type==='SW'){
         $(this.node).find('.offense').addClass('melee').css("visibility","").text(number);
-      }else if(type==='mi'){
+      }else if(type==='MI'){
         $(this.node).find('.offense').addClass('missile').css("visibility","").text(number);
-      }else if(type==='ma'){
+      }else if(type==='MA'){
         $(this.node).find('.offense').addClass('magic').css("visibility","").text(number);
       }
     } else if(shield !==undefined){

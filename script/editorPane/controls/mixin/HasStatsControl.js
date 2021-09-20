@@ -29,7 +29,7 @@ function HasStatsControl(){
 	this.woundsControl = this.node.find('input[name="wounds"]');
 	this.skullsControl = this.node.find('input[name="skulls"]');
 	this.potionsControl = this.node.find('input[name="potions"]');
-	this.costControl = this.node.find('input[name="cost"]');
+	this.petCostControl = this.node.find('input[name="petCost"]');
 
 
   /**
@@ -83,8 +83,8 @@ function HasStatsControl(){
   /**
    * Pet Cost text input.
    */
-  this.costControl.on('input',$.proxy(function(coreNode,event){
-    coreNode.setCost($(this).val());
+  this.petCostControl.on('input',$.proxy(function(coreNode,event){
+    coreNode.setPetCost($(this).val());
   },null,this));
 
 
@@ -118,12 +118,12 @@ function HasStatsControl(){
 
 
   /**
-   * Set card cost.
-   * @param {string} cost - Card cost.
+   * Set card petCost.
+   * @param {string} petCost - Card petCost.
    */
-  this.setCost=function(cost){
+  this.setPetCost=function(petCost){
     var cardNode = $('.cardGroup.selected').data('node');
-    cardNode.setCost(cost);
+    cardNode.setPetCost(petCost);
   };
 
   /**
@@ -164,8 +164,8 @@ function HasStatsControl(){
       this.potionsControl.val(data.potions);
     }
 
-    if(data.cost !== undefined){
-      this.setCost(data.cost);
+    if(data.petCost !== undefined){
+      this.setPetCost(data.petCost);
     }
 
     if(data.skulls!==undefined){

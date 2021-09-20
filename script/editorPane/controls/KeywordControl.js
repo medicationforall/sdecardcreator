@@ -34,27 +34,27 @@ function KeywordControl(){
   		'Affinity '+
   		'<select name="affinity">'+
   			'<option value="CITRINE">Citrine</option>'+
-  			'<option value="CITRINE AMETHYST">Citrine Amethyst</option>'+
-  			'<option value="CITRINE EMERALD">Citrine Emerald</option>'+
-  			'<option value="CITRINE RUBY">Citrine Ruby</option>'+
-  			'<option value="CITRINE SAPPHIRE">Citrine Sapphire</option>'+
+  			'<option value="CITRINEAMETHYST">Citrine Amethyst</option>'+
+  			'<option value="CITRINEEMERALD">Citrine Emerald</option>'+
+  			'<option value="CITRINERUBY">Citrine Ruby</option>'+
+  			'<option value="CITRINESAPPHIRE">Citrine Sapphire</option>'+
   			'<option disabled>----------</option>'+
   			'<option value="EMERALD">Emerald</option>'+
-  			'<option value="EMERALD AMETHYST">Emerald Amethyst</option>'+
-  			'<option value="EMERALD RUBY">Emerald Ruby</option>'+
-  			'<option value="EMERALD SAPPHIRE">Emerald Sapphire</option>'+
+  			'<option value="EMERALDAMETHYST">Emerald Amethyst</option>'+
+  			'<option value="EMERALDRUBY">Emerald Ruby</option>'+
+  			'<option value="EMERALDSAPPHIRE">Emerald Sapphire</option>'+
   			'<option disabled>----------</option>'+
   			'<option value="RUBY">Ruby</option>'+
-  			'<option value="RUBY AMETHYST">Ruby Amethyst</option>'+
-  			'<option value="RUBY SAPPHIRE">Ruby Sapphire</option>'+
+  			'<option value="RUBYAMETHYST">Ruby Amethyst</option>'+
+  			'<option value="RUBYSAPPHIRE">Ruby Sapphire</option>'+
   			'<option disabled>----------</option>'+
   			'<option value="SAPPHIRE">Sapphire</option>'+
-  			'<option value="SAPPHIRE AMETHYST">Sapphire Amethyst</option>'+
+  			'<option value="SAPPHIREAMETHYST">Sapphire Amethyst</option>'+
   			'<option disabled>----------</option>'+
   			'<option value="AMETHYST">Amethyst</option>'+
   			'<option disabled>----------</option>'+
   			'<option value="none">None</option>'+
-  			'<option value="all">All</option>'+
+  			'<option value="ALLAFFINITY">All</option>'+
   		'</select>'+
   	'</div>'+
 

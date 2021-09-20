@@ -30,7 +30,7 @@ function Card(animate,appendAfter){
     "actions": "3",
     "wounds": "5",
     "potions": "1",
-    "cost": "1",
+    "petCost": "1",
     "keywordsList": "",
     "background": "pic1685577_md.jpg",
     "backgroundFlip": false,
@@ -49,10 +49,10 @@ function Card(animate,appendAfter){
   		'<div class="card hero red">'+
 
   			'<div class="front">'+
-        '<div class="slot ruby hero"></div>'+
-        '<div class="slot emerald hero"></div>'+
-        '<div class="slot saphire hero"></div>'+
-        '<div class="slot citrine hero"></div>'+
+        '<div class="slot RUBY hero"></div>'+
+        '<div class="slot EMERALD hero"></div>'+
+        '<div class="slot SAPPHIRE hero"></div>'+
+        '<div class="slot CITRINE hero"></div>'+
   				'<div class="model hero monster pet arcadeSolo">'+
   					'<div class="header">'+
   						'<div class="moveactions" >'+
@@ -70,13 +70,13 @@ function Card(animate,appendAfter){
   					'<div class="background" style="background:url(\'image/background/pic1685577_md.jpg\') no-repeat;background-size:100% 100%"></div>'+
 
   					'<div class="keywordsSection">'+
-  						'<span class="hero monster arcadeSolo affinity citrine"></span>'+
+  						'<span class="clown hero monster arcadeSolo affinity CITRINE"></span>'+
   						'<span class="keywordsList"></span>'+
 
   						'<div class="subStats">'+
   							'<span class="hero pet monster wounds">5</span>'+
   							'<span class="hero potions">1</span>'+
-							'<span class="pet cost">1</span>'+
+							'<span class="pet petCost">1</span>'+
 							'<span class="monster skulls">1</span>'+
   						'</div>'+
   					'</div>'+

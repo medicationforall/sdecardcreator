@@ -33,35 +33,35 @@ function StatsControl(){
       '<div class="helpUnit">'+
       '<h3>Dice Types</h3>'+
       '<ul>'+
-        '<li>Star: 1st</li>'+
-        '<li>Blue: 1b</li>'+
-        '<li>Red: 1r</li>'+
-        '<li>Green: 1g</li>'+
-        '<li>Purple: 1p</li>'+
-        '<li>Orange: 1o</li>'+
+        '<li>Star: 1ST</li>'+
+        '<li>Blue: 1B</li>'+
+        '<li>Red: 1R</li>'+
+        '<li>Green: 1G</li>'+
+        '<li>Purple: 1P</li>'+
+        '<li>Orange: 1O</li>'+
       '</ul>'+
       '</div>'+
 
       '<div class="helpUnit">'+
       '<h3>Modifiers</h3>'+
       '<ul>'+
-        '<li>Melee: 1sw</li>'+
-        '<li>Missile: 1mi</li>'+
-        '<li>Magic: 1ma</li>'+
-        '<li>Shield: sh</li>'+
+        '<li>Melee: 1SW</li>'+
+        '<li>Missile: 1MI</li>'+
+        '<li>Magic: 1MA</li>'+
+        '<li>Shield: SH</li>'+
       '</ul>'+
       '</div>'+
     '</div>'+
 
-    '<div class="hero monster pet arcadeSolo">STR <input name="STR" value="1sw 3b" /></div>'+
-    '<div class="hero monster pet arcadeSolo">ARM <input name="ARM" value="2b 1r sh" /></div>'+
-    '<div class="arcadeSolo">RNG <input name="RNG" value="6rg"/></div>'+
-    '<div class="hero monster">WILL <input name="WILL" value="3b" /></div>'+
-    '<div class="hero monster">DEX <input name="DEX" value="3b" /></div>'+
+    '<div class="hero monster pet arcadeSolo">STR <input name="STR" value="1SW 3B" /></div>'+
+    '<div class="hero monster pet arcadeSolo">ARM <input name="ARM" value="2B 1R SH" /></div>'+
+    '<div class="arcadeSolo">RNG <input name="RNG" value="6RG"/></div>'+
+    '<div class="hero monster">WILL <input name="WILL" value="3B" /></div>'+
+    '<div class="hero monster">DEX <input name="DEX" value="3B" /></div>'+
     '<div class="hero pet monster arcadeSolo displayInline">Wounds <input class="number" type="number" name="wounds" value="5" min="-9" max="99" /></div>'+
     '<div class="monster displayInline">Skull Points <input class="number" type="number" name="skulls" value="1" min="-9" max="99" /></div>'+
     '<div class="hero displayInline">Potions <input class="number" type="number" name="potions" value="1" min="-9" max="99" /></div>'+
-    '<div class="pet displayInline">Cost <input class="number" type="number" name="cost" value="1" min="-9" max="99" /></div>'+
+    '<div class="pet displayInline">Pet Cost <input class="number" type="number" name="petCost" value="1" min="-9" max="99" /></div>'+
   '</div>'+
   '</div>';
 
