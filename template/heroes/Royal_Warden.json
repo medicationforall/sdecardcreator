@@ -11,33 +11,33 @@
 	"backgroundFlip": true,
 	"imageSource": "default",
 	"remoteAvatar": "",
-	"STR": "1sw 3b",
-	"ARM": "3b sh",
-	"WILL": "1b 1r",
-	"DEX": "2b",
+	"STR": "1SW 3B",
+	"ARM": "3B SH",
+	"WILL": "1B 1R",
+	"DEX": "2B",
 	"flavorText": "The world of Crystalia is vast and wild. Its citizens are spread throughout many realms, each with their own living conditions and cultures. It is the duty of the Royal Wardens to maintain the King's peace along the roads, trails, and wilderness that bind the kingdom together. These rugged and hardy individuals travel the realms fighting brigands, tracking down fugitives, and collecting the Kings taxes. Hailed as both Hero and Villain, there are few servants of the kingdom as iconic as the doughty warden.",
 	"abilities": [{
 			"costType": "attack",
 			"cost": "1",
 			"name": "Crossbow",
-			"definition": "6mi, +1b DEX"
+			"definition": "6MI, +1B DEX"
 		}, {
 			"costType": "attack",
 			"cost": "2",
 			"name": "Arrest Warrant",
-			"definition": "6mi, +1r DEX, Pull 6"
+			"definition": "6MI, +1R DEX, Pull 6"
 		}, {
 			"costType": "attack",
 			"cost": "2",
 			"name": "Tax Collector",
-			"definition": "1sw, +1r STR, Even if this action does not destroy a model draw one loot."
+			"definition": "1SW, +1R STR, Even if this action does not destroy a model draw one loot."
 		}, {
 			"costType": "supportPotion",
 			"cost": "1",
 			"name": "Bound By Law",
-			"definition": "6rg, STR vs STR, Immobile"
+			"definition": "6RG, STR vs STR, IMMOBILE"
 		}
 	],
 	"customKeywords": {},
-	"affinity": "citrine sapphire"
+	"affinity": "CITRINESAPPHIRE"
 }
