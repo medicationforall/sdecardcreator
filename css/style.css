@@ -153,22 +153,22 @@ display:none;
 
 @media print {
 
-/*.card{
-transform: scale(0.5,0.5);
-}*/
+	/*.card{
+	transform: scale(0.5,0.5);
+	}*/
 
-/*@page {
-margin: 0cm;
-}*/
+	/*@page {
+	margin: 0cm;
+	}*/
 
-body{
-margin:0;
-}
-.pageHeader{
-display:none;
-}
+	body{
+	margin:0;
+	}
+	.pageHeader{
+	display:none;
+	}
 
-/*.pageFooter{
-display:none;
-}*/
+	/*.pageFooter{
+	display:none;
+	}*/
 }

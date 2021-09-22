@@ -58,7 +58,7 @@ function KeywordControl(){
   		'</select>'+
   	'</div>'+
 
-  	'<div>Keywords <input name="keywordsList" required maxlength="80" /></div>'+
+  	'<div>Keywords <input name="keywordsList" required /></div>'+
     '</div>'+
   '</div>';
 

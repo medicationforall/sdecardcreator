@@ -614,12 +614,17 @@ cursor:move;
 }
 
 .card .keywordsList{
-	display: inline-block;
 	vertical-align: top;
 	font-weight:bold;
 	text-transform: uppercase;
 	font-family:'Adelon';
 	font-size: 19px;
+}
+
+.keywordsList .keyword{
+	display:inline-block;
+	position:relative;
+	vertical-align: top;
 }
 
 
@@ -1133,7 +1138,7 @@ cursor:move;
 	top: 15px;
 }
 
-.card .slot.RUBY{
+.card .slot.ruby{
 	background:url('image/heroSlot/hero_ruby.png');
 	width: 45px;
 	height: 43px;
@@ -1143,7 +1148,7 @@ cursor:move;
 	left: 311px;
 }
 
-.card .slot.EMERALD{
+.card .slot.emerald{
 	background:url('image/heroSlot/hero_emerald.png');
 	width: 43px;
 	height: 45px;
@@ -1154,8 +1159,8 @@ cursor:move;
 	z-index: 2;
 }
 
-.card .slot.saphire{
-	background:url('image/heroSlot/hero_saphire.png');
+.card .slot.sapphire{
+	background:url('image/heroSlot/hero_sapphire.png');
 	width: 45px;
 	height: 43px;
 	display: inline-block;
@@ -1165,8 +1170,8 @@ cursor:move;
 	z-index: 2;
 }
 
-.card .slot.CITRINE{
-	background:url('image/heroSlot/hero_CITRINE.png');
+.card .slot.citrine{
+	background:url('image/heroSlot/hero_citrine.png');
 	width: 42px;
 	height: 46px;
 	display: inline-block;
