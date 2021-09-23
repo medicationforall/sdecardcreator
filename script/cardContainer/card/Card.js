@@ -148,11 +148,15 @@ function Card(animate,appendAfter){
    */
   this._constructor=function(){
     var cardContainer = $('.cardContainer').data('node');
-    if(appendAfter){
-      this.node=$(this.template).insertAfter(appendAfter);
-    }else{
-      this.node=$(this.template).appendTo(cardContainer.node);
-    }
+    if(appendAfter != null){
+		if(appendAfter != undefined){
+			this.node=$(this.template).insertAfter(appendAfter);
+		}else{
+			this.node=$(this.template).appendTo(cardContainer.node);
+		}
+	}else{
+		this.node=$(this.template).appendTo(cardContainer.node);
+	}
     this.node.data('node',this);
 
     HasSetTypeDisplay.call(this);

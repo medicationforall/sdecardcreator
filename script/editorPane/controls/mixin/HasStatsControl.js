@@ -122,8 +122,8 @@ function HasStatsControl(){
    * @param {string} petCost - Card petCost.
    */
   this.setPetCost=function(petCost){
-    var coreNode = $('.cardGroup.selected').data('node');
-    coreNode.setPetCost(petCost);
+    var cardNode = $('.cardGroup.selected').data('node');
+    cardNode.setPetCost(petCost);
   };
 
   /**
