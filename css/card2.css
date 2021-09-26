@@ -828,7 +828,7 @@ cursor:move;
     top: 10px;
 }
 
-.card .affinity.RUBY.AMETHYST{
+.card .affinity.RUBYAMETHYST, .card .affinity.AMETHYSTRUBY{
 	display:inline-block;
 	background: url('image/affinity/ruby-amethyst.png') no-repeat;
 	width:42px;
