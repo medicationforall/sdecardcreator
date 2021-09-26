@@ -116,7 +116,16 @@ function HasStatsControl(){
     cardNode.setWounds(wounds);
   };
 
+	/**
+	* Set card potions.
+	* @param {string} potions - Card potions.
+	*/
+	this.setPotions=function(potions){
+		var cardNode = $('.cardGroup.selected').data('node');
+		cardNode.setPotions(potions);
+	};
 
+  
   /**
    * Set card petCost.
    * @param {string} petCost - Card petCost.
