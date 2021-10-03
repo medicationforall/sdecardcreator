@@ -370,6 +370,12 @@
       }
     ]
   },
+  "Call Of The Deep": {
+    "description": "When a model with Call Of The Deep succeeds with an attack, it may spawn one Skull Point worth of 8-Bit monsters per heart rolled within 3 squares of it.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Challenge": {
     "description": "When a boss with Challenge spawns, the Party must choose one Hero as their Champion. No model except the Champion may deal damage to the boss, though the boss may suffer other effects (such as Push or status effects) caused by other models. The boss gains +1R to all offensive actions it takes that target the Champion. If the Champion is destroyed, the Party must select another Hero to become the Champion.",
     "version": 2.0,
@@ -655,6 +661,12 @@
   "Dodge": {
     "description": "A model with Dodge may use their DEX when making defense rolls unless they are suffering from Knockdown, Immobile, Slow.",
     "version": 1.5,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Dragged To The Depths": {
+    "description": "When a model with Dragged To The Depths is destroyed, the model that destroyed it must roll 1R.  If no stars are rolled, it suffers one wound.",
+    "version": 2.0,
     "hasErrata": "false",
     "errata": []
   },
