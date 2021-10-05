@@ -27,7 +27,7 @@ function ImageControl(){
     '<div class="controlContent hide">'+
     '<div class="hero monster pet arcadeSolo">Background '+
       '<select name="background">'+
-        '<option value="pic1685577_md.jpg">Fae Wood</option>'+
+        '<option value="fae_wood.jpg">Fae Wood</option>'+
         '<option value="arcadian_dunes_1.png">Arcadian Dunes 1</option>'+
         '<option value="arcadian_dunes_2.png">Arcadian Dunes 2</option>'+
         '<option value="arcadian_dunes_3.png">Arcadian Dunes 3</option>'+
@@ -44,27 +44,26 @@ function ImageControl(){
         '<option value="frostbyte_2.png">Frostbyte Peaks 2</option>'+
         '<option value="frostbyte_3.png">Frostbyte Peaks 3</option>'+
         '<option value="frostbyte_4.png">Frostbyte Peaks 4</option>'+
+        '<option value="frostbyte_5.png">Frostbyte Peaks 5</option>'+
         '<option value="glauerdoom_moor_1.png">Glauerdoom Moor 1</option>'+
         '<option value="glauerdoom_moor_2.png">Glauerdoom Moor 2</option>'+
         '<option value="glauerdoom_moor_3.png">Glauerdoom Moor 3</option>'+
+        '<option value="glauerdoom_moor_4.png">Glauerdoom Moor 4</option>'+
         '<option value="midnightTower_1.png">Midnight Tower 1</option>'+
         '<option value="midnightTower_2.png">Midnight Tower 2</option>'+
         '<option value="midnightTower_3.png">Midnight Tower 3</option>'+
+        '<option value="midnightTower_4.png">Midnight Tower 4</option>'+
+        '<option value="midnightTower_5.png">Midnight Tower 5</option>'+
+        '<option value="midnightTower_6.png">Midnight Tower 6</option>'+
+        '<option value="midnightTower_7.png">Midnight Tower 7</option>'+
+        '<option value="midnightTower_8.png">Midnight Tower 8</option>'+
         '<option value="roxors-cavern.png">Roxor\'s Cavern</option>'+
         '<option value="von-drakk.png">Von Drakk 1</option>'+
         '<option value="vulcanis_forge_1.png">Vulcanis Forge 1</option>'+
         '<option value="vulcanis_forge_2.png">Vulcanis Forge 2</option>'+
         '<option value="vulcanis_forge_3.png">Vulcanis Forge 3</option>'+
-
-        '<option disabled>---NAS----</option>'+
-        '<option value="nas.png">Ninja All-Stars</option>'+
-        '<option value="nas_2.png">Ninja All-Stars 2</option>'+
-
-        '<option disabled>----------</option>'+
-        '<option value="stone_tile.png">Stone Tile</option>'+
-        '<option disabled>----------</option>'+
-
-        '<option value="arctic.jpg">Arctic</option>'+
+        
+		'<option value="arctic.jpg">Arctic</option>'+
         '<option value="castle_room.jpg">Castle Room</option>'+
         '<option value="city_street.jpg">City Street</option>'+
         '<option value="desert.jpg">Desert</option>'+
@@ -74,13 +73,14 @@ function ImageControl(){
         '<option value="forrest_stream.jpg">Forrest Stream</option>'+
         '<option value="icy_throne.jpg">Icy Throne</option>'+
         '<option value="kings_throne.jpg">King\'s Throne</option>'+
+		'<option value="ships_in_night.png">Ships in the Night</option>'+
 
         '<option value="kitchen.jpg">Kitchen</option>'+
         '<option value="lonely_tower.jpg">Lonely Tower</option>'+
         '<option value="market.jpg">Market</option>'+
         '<option value="meadow.jpg">Meadow</option>'+
         '<option value="minotaurs_throne_room.jpg">Minotaur\'s Throne Room</option>'+
-        '<option value="f8ebe365c206a57065d4970fb91b5d78.jpg">Pirates Cove</option>'+
+        '<option value="pirate_cove.jpg">Pirates Cove</option>'+
         '<option value="prison_tower.jpg">Prison Tower</option>'+
         '<option value="queens_throne_room.jpg">Queen\'s Throne Room</option>'+
         '<option value="ruins.jpg">Ruins</option>'+
@@ -89,6 +89,22 @@ function ImageControl(){
         '<option value="temple.jpg">Temple</option>'+
         '<option value="tundra.jpg">Tundra</option>'+
         '<option value="valley.jpg">Valley</option>'+
+		
+		'<option disabled>---NAS----</option>'+
+        '<option value="nas_1.png">Ninja All-Stars</option>'+
+        '<option value="nas_2.png">Ninja All-Stars 2</option>'+
+		'<option value="nas_3.png">Ninja All-Stars 3</option>'+
+		'<option value="nas_4.png">Ninja All-Stars 4</option>'+
+		
+		'<option disabled>---RRI----</option>'+
+        '<option value="rri_1.png">Rail Raiders Infinite</option>'+
+        '<option value="rri_2.png">Rail Raiders Infinite 2</option>'+
+		
+		'<option disabled>----------</option>'+
+        '<option value="rocks_1.png">Rocks</option>'+
+        '<option value="stone_tile.png">Stone Tile</option>'+
+        '<option disabled>----------</option>'+
+
       '</select>'+
       '<a class="backgroundFlip inactive" href="" title="Mirror Background">'+
       '<svg data-reactroot="" class="Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="height: 32px; width: 32px;"><path d="M0 0h512v512H0z" fill="#ffffff" opacity="0"></path><g class="" transform="translate(0,0)" style="touch-action: none;"><path fill="#000000" d="M387.02 278.627v67.883L477.53 256l-90.51-90.51v67.883H124.98V165.49L34.47 256l90.51 90.51v-67.883h262.04z"></path></g><!-- react-empty: 6 --></svg>'+
