@@ -46,7 +46,7 @@ function Card(animate,appendAfter){
 
   this.template='<div class="cardGroup selected">'+
   	'<div class="cardDiv">'+
-  		'<div class="card hero red">'+
+  		'<div class="card hero blue">'+
 
   			'<div class="front">'+
         '<div class="slot RUBY hero"></div>'+
@@ -111,7 +111,7 @@ function Card(animate,appendAfter){
   	'</div>'+
 
   	'<div class="cardDiv">'+
-  		'<div class="card hero red">'+
+  		'<div class="card hero blue">'+
   			'<div class="back">'+
   				'<div class="hero monster pet arcadeSolo header">'+
   					'<div class=""><span class="title">title</span></div>'+

@@ -52,13 +52,23 @@ function CardControl(){
       'Author <input class="text" name="author" />'+
     '</div>'+
 
-  	'<div class="monster timeout">'+
-  		'Color '+
+  	'<div class="monster hero pet timeout">'+
+  		'Border '+
   		'<select name="region">'+
-  			'<option value="red">Red</option>'+
+  			'<option value="blue">Blue</option>'+
+			
+			'<option value="red">Red</option>'+
   			'<option value="green">Green</option>'+
   			'<option value="purple">Purple</option>'+
   			'<option value="yellow">Yellow</option>'+
+			
+			'<option value="orange">Orange</option>'+
+			'<option value="brown">Brown</option>'+
+			
+			'<option value="white">Gray</option>'+
+			'<option value="black">White</option>'+
+			'<option value="gray">Black</option>'+
+			
   		'</select>'+
   	'</div>'+
 
