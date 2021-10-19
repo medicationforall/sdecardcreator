@@ -110,7 +110,7 @@ function KeywordStore(keywords){
    *search function that returns a modified version of the text passed into with the keywords highlighted.
    */
   this.findKeywords=function(text){
-	var secondaryRe = /\b(ALL|IMMUNEBANE|IMMUNEFIRE|IMMUNEKNOCKDOWN|IMMUNEICE|IMMUNEIMMOBILE|IMMUNEPOISON|IMMUNESLOW|IMMUNEALL)\b/g;
+	var secondaryRe = /\b(ALL|IMMUNEBANE|IMMUNEHEX|IMMUNEFIRE|IMMUNEKNOCKDOWN|IMMUNEICE|IMMUNEIMMOBILE|IMMUNEPOISON|IMMUNESLOW|IMMUNEALL)\b/g;
     
     text = text.replace(secondaryRe,function(match){
 		var result = '<span class="keyword '+match+'" data-key="'+match+'">'+match+'</span>';

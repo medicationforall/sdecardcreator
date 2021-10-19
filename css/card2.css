@@ -63,7 +63,7 @@
 	/*bottom:15px;*/
 	display:inline-block;
 	/*padding-top:15px;*/
-	vertical-align:top;
+	/*vertical-align:top;*/
 }
 
 .card span.keyword.ALL{
@@ -880,11 +880,51 @@ cursor:move;
 	height:35px;
 }
 
-
 /*CARD COLORS*/
 .card.hero, .card.hero.blue, .card.pet.blue, .card.monster.blue, .card.loot{
 	/*background: radial-gradient(ellipse at center,  rgb(148,198,236) 23%, rgb(15,78,129) 79%, rgb(0,0,0) 100%);*/
-	background: radial-gradient(ellipse at center, blue, black);
+	background: radial-gradient(ellipse at center, #17174c 23%, #1d1d86 79%, rgb(0,0,0) 100%);
+}
+
+.card.hero.red, .card.pet.red, .card.monster.red, .card.treasure, .card.wonder{
+	/*background: radial-gradient(ellipse at center, rgb(212,49,38) 23%, rgb(84,16,10) 79%, rgb(0,0,0) 100%);*/
+	background: radial-gradient(ellipse at center, rgb(212,49,38) 23%, rgb(0,0,0) 100%);
+}
+
+.card.hero.green, .card.pet.green, .card.monster.green{
+	/*background: radial-gradient(ellipse at center, rgba(180,221,180,1) 0%,rgba(131,199,131,1) 17%,rgba(82,177,82,1) 33%,rgba(0,138,0,1) 67%,rgba(0,87,0,1) 83%,rgba(0,36,0,1) 100%);*/
+	/*background: radial-gradient(ellipse at center, #5bc6a4 1%,#429078 42%,#255246 93%);*/
+	background: radial-gradient(ellipse at center,  green 23%, rgb(0,0,0) 100%);
+}
+
+.card.hero.purple, .card.pet.purple, .card.monster.purple , .card.arcadeSolo, .card.arcadeGang, .card.command{
+	/*background: radial-gradient(ellipse at center, rgba(200,94,199,1) 3%, rgba(99,43,98,1) 100%);*/
+	background: radial-gradient(ellipse at center, purple 23%, rgb(0,0,0) 100%);
+}
+
+.card.hero.yellow, .card.pet.yellow, .card.monster.yellow{
+	/*background: radial-gradient(ellipse at center, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);*/
+	background: radial-gradient(ellipse at center, yellow 23%, rgb(0,0,0) 100%);
+}
+
+.card.hero.orange, .card.pet.orange, .card.monster.orange{
+	background: radial-gradient(ellipse at center, orange 23%, rgb(0,0,0) 100%);
+}
+
+.card.hero.brown, .card.pet.brown, .card.monster.brown{
+	background: radial-gradient(ellipse at center, saddlebrown 23%, rgb(0,0,0) 100%);
+}
+
+.card.hero.white, .card.pet.white, .card.monster.white{
+	background: radial-gradient(ellipse at center, white 23%, rgb(0,0,0) 100%);
+}
+
+.card.hero.black, .card.pet.black, .card.monster.black{
+	background: radial-gradient(ellipse at center, rgb(0,0,0) 23%, white 100%);
+}
+
+.card.hero.gray, .card.pet.gray, .card.monster.gray{
+	background: radial-gradient(ellipse at center, gray 23%, rgb(0,0,0) 100%);
 }
 
 .card.hero .front, .card.pet .front{
@@ -893,27 +933,6 @@ cursor:move;
 
 .card.hero .back, .card.pet .back{
 	background-image:url('image/border-back-gold.png');
-}
-
-.card.hero.red, .card.pet.red, .card.monster.red, .card.treasure, .card.wonder{
-	/*background: radial-gradient(ellipse at center, rgb(212,49,38) 23%, rgb(84,16,10) 79%, rgb(0,0,0) 100%);*/
-	background: radial-gradient(ellipse at center, red, black);
-}
-
-.card.hero.green, .card.pet.green, .card.monster.green{
-	/*background: radial-gradient(ellipse at center, rgba(180,221,180,1) 0%,rgba(131,199,131,1) 17%,rgba(82,177,82,1) 33%,rgba(0,138,0,1) 67%,rgba(0,87,0,1) 83%,rgba(0,36,0,1) 100%);*/
-	/*background: radial-gradient(ellipse at center, #5bc6a4 1%,#429078 42%,#255246 93%);*/
-	background: radial-gradient(ellipse at center,  green, black);
-}
-
-.card.hero.purple, .card.pet.purple, .card.monster.purple , .card.arcadeSolo, .card.arcadeGang, .card.command{
-	/*background: radial-gradient(ellipse at center, rgba(200,94,199,1) 3%, rgba(99,43,98,1) 100%);*/
-	background: radial-gradient(ellipse at center, purple, black);
-}
-
-.card.hero.yellow, .card.pet.yellow, .card.monster.yellow{
-	/*background: radial-gradient(ellipse at center, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);*/
-	background: radial-gradient(ellipse at center, yellow, black);
 }
 
 .card.monster .front{
@@ -930,26 +949,6 @@ cursor:move;
 
 .card.arcadeSolo .back{
 	background-image:url('image/border-back-silver.png');
-}
-
-.card.hero.orange, .card.pet.orange, .card.monster.orange{
-	background: radial-gradient(ellipse at center, orange, black);
-}
-
-.card.hero.brown, .card.pet.brown, .card.monster.brown{
-	background: radial-gradient(ellipse at center, saddlebrown, black);
-}
-
-.card.hero.white, .card.pet.white, .card.monster.white{
-	background: radial-gradient(ellipse at center, white, black);
-}
-
-.card.hero.black, .card.pet.black, .card.monster.black{
-	background: radial-gradient(ellipse at center, black, white);
-}
-
-.card.hero.gray, .card.pet.gray, .card.monster.gray{
-	background: radial-gradient(ellipse at center, gray, black);
 }
 
 /*ABILITIES*/
