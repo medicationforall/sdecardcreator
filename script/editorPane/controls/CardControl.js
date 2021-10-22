@@ -60,10 +60,11 @@ function CardControl(){
 			'<option value="red">Red</option>'+
   			'<option value="green">Green</option>'+
   			'<option value="purple">Purple</option>'+
-  			'<option value="yellow">Yellow</option>'+
-			
+  			
+			'<option value="yellow">Yellow</option>'+
 			'<option value="orange">Orange</option>'+
 			'<option value="brown">Brown</option>'+
+			'<option value="pink">Pink</option>'+
 			
 			'<option value="white">Gray</option>'+
 			'<option value="black">White</option>'+
