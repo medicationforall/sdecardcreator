@@ -889,8 +889,6 @@ cursor:move;
 .card.hero.red, .card.pet.red, .card.monster.red, .card.treasure, .card.wonder{
 	/*background: radial-gradient(ellipse at center, rgb(212,49,38) 23%, rgb(84,16,10) 79%, rgb(0,0,0) 100%);*/
 	background: radial-gradient(ellipse at center, #D43126 23%, #9B241C 79%, rgb(0,0,0) 100%);
-	
-	rgb(212,49,38) 23%, rgb(84,16,10) 79%, rgb(0,0,0) 100%)
 }
 
 .card.hero.green, .card.pet.green, .card.monster.green{
