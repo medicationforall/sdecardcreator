@@ -103,8 +103,18 @@ function ImageControl(){
 		'<option disabled>----------</option>'+
         '<option value="rocks_1.png">Rocks</option>'+
         '<option value="stone_tile.png">Stone Tile</option>'+
+        '<option disabled>-Solids-</option>'+
+		'<option value="black.png">Black</option>'+
+        '<option value="white.png">White</option>'+
+        '<option value="gray.png">Gray</option>'+
+        '<option value="brown.png">Brown</option>'+
+        '<option value="blue.png">Blue</option>'+
+        '<option value="red.png">Red</option>'+
+        '<option value="yellow.png">Yellow</option>'+
+        '<option value="green.png">Green</option>'+
+        '<option value="orange.png">Orange</option>'+
+        '<option value="purple.png">Purple</option>'+
         '<option disabled>----------</option>'+
-
       '</select>'+
       '<a class="backgroundFlip inactive" href="" title="Mirror Background">'+
       '<svg data-reactroot="" class="Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="height: 32px; width: 32px;"><path d="M0 0h512v512H0z" fill="#ffffff" opacity="0"></path><g class="" transform="translate(0,0)" style="touch-action: none;"><path fill="#000000" d="M387.02 278.627v67.883L477.53 256l-90.51-90.51v67.883H124.98V165.49L34.47 256l90.51 90.51v-67.883h262.04z"></path></g><!-- react-empty: 6 --></svg>'+
