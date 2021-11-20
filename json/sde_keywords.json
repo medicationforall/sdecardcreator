@@ -2085,8 +2085,14 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Shiny Bauble": {
+  "Shiny Bauble-C": {
     "description": "When a boss sighting space is reached on the mighty monster chart, the Consul draws the top card of the loot deck and places it next to the mighty monster chart (discard loot that increases the number of potions that may be carried and redraw).  For the remainder of the game, all monsters with Shiny Bauble gain all bonuses from loot drawn in this way as if they had it equipped.  (Arena: This ability is triggered the first time you spawn a mini-boss.)",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Shiny Bauble-A": {
+    "description": "When a plot card is drawn, roll 1R.  All monsters with Shiny Bauble gain a permanent bonus, depending on the roll:<br><br>No Stars: +1ST ARM<br>One Star: +1ST STR<br>Two or more stars: +1AC",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
