@@ -881,53 +881,53 @@ cursor:move;
 }
 
 /*CARD COLORS*/
-.card.hero, .card.hero.blue, .card.pet.blue, .card.monster.blue, .card.loot{
+.card.hero, .card.hero.blue, .card.pet.blue, .card.monster.blue, .card.loot, .blue{
 	/*background: radial-gradient(ellipse at center,  rgb(148,198,236) 23%, rgb(15,78,129) 79%, rgb(0,0,0) 100%);*/
 	background: radial-gradient(ellipse at center, #17174c 23%, #1d1d86 79%, rgb(0,0,0) 100%);
 }
 
-.card.hero.red, .card.pet.red, .card.monster.red, .card.treasure, .card.wonder{
+.card.hero.red, .card.pet.red, .card.monster.red, .card.treasure, .card.wonder, .red{
 	/*background: radial-gradient(ellipse at center, rgb(212,49,38) 23%, rgb(84,16,10) 79%, rgb(0,0,0) 100%);*/
 	background: radial-gradient(ellipse at center, #D43126 23%, #9B241C 79%, rgb(0,0,0) 100%);
 }
 
-.card.hero.green, .card.pet.green, .card.monster.green{
+.card.hero.green, .card.pet.green, .card.monster.green, .green{
 	/*background: radial-gradient(ellipse at center, rgba(180,221,180,1) 0%,rgba(131,199,131,1) 17%,rgba(82,177,82,1) 33%,rgba(0,138,0,1) 67%,rgba(0,87,0,1) 83%,rgba(0,36,0,1) 100%);*/
 	/*background: radial-gradient(ellipse at center, #5bc6a4 1%,#429078 42%,#255246 93%);*/
 	background: radial-gradient(ellipse at center,  green 23%,  darkgreen 79%, rgb(0,0,0) 100%);
 }
 
-.card.hero.purple, .card.pet.purple, .card.monster.purple , .card.arcadeSolo, .card.arcadeGang, .card.command{
+.card.hero.purple, .card.pet.purple, .card.monster.purple , .card.arcadeSolo, .card.arcadeGang, .card.command, .purple{
 	/*background: radial-gradient(ellipse at center, rgba(200,94,199,1) 3%, rgba(99,43,98,1) 100%);*/
 	background: radial-gradient(ellipse at center, purple 23%,  indigo 79%, rgb(0,0,0) 100%);
 }
 
-.card.hero.yellow, .card.pet.yellow, .card.monster.yellow{
+.card.hero.yellow, .card.pet.yellow, .card.monster.yellow, .yellow{
 	/*background: radial-gradient(ellipse at center, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);*/
 	background: radial-gradient(ellipse at center, yellow 23%, gold 79%, rgb(0,0,0) 100%);
 }
 
-.card.hero.orange, .card.pet.orange, .card.monster.orange{
+.card.hero.orange, .card.pet.orange, .card.monster.orange, .orange{
 	background: radial-gradient(ellipse at center, orange 23%, darkorange 79%, rgb(0,0,0) 100%);
 }
 
-.card.hero.pink, .card.pet.pink, .card.monster.pink{
+.card.hero.pink, .card.pet.pink, .card.monster.pink, .pink{
 	background: radial-gradient(ellipse at center, pink 23%, hotpink 79%, rgb(0,0,0) 100%);
 }
 
-.card.hero.brown, .card.pet.brown, .card.monster.brown{
+.card.hero.brown, .card.pet.brown, .card.monster.brown, .brown{
 	background: radial-gradient(ellipse at center, saddlebrown 23%, #6B3710 79%, rgb(0,0,0) 100%);
 }
 
-.card.hero.white, .card.pet.white, .card.monster.white{
+.card.hero.white, .card.pet.white, .card.monster.white, .white{
 	background: radial-gradient(ellipse at center, gray 23%, darkgray 79%, black 100%);
 }
 
-.card.hero.black, .card.pet.black, .card.monster.black{
+.card.hero.black, .card.pet.black, .card.monster.black, .black{
 	background: radial-gradient(ellipse at center, white 23%, white 79%, black 100%);
 }
 
-.card.hero.gray, .card.pet.gray, .card.monster.gray{
+.card.hero.gray, .card.pet.gray, .card.monster.gray, .gray{
 	background: radial-gradient(ellipse at center, black 23%, black 79%, white 100%);
 }
 
