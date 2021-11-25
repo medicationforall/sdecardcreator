@@ -78,7 +78,7 @@ function HasCardTypeControls(){
   this.setRegion=function(region){
     this.data.region=region;
     var cards = this.node.find('.card');
-    cards.removeClass('blue red green purple yellow orange brown white black gray').addClass(region);
+    cards.removeClass('blue red green purple yellow orange pink brown white black gray').addClass(region);
   };
 
 
