@@ -259,6 +259,12 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Bonded Creep": {
+    "description": "This Creep may not be used unless the listed Dungeon Boss is selected for this game.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Bone Collector": {
     "description": "A model with Bone Collector may use Hearts it rolls during successful offensive actions on Pets as well as Heroes.",
     "version": 1.6,
