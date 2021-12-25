@@ -187,7 +187,7 @@
     "errata": []
   },
   "Berserk": {
-    "description": "During its activation a model with Berserk may make a single a single Melee Attack costing no action points.",
+    "description": "During its activation a model with Berserk may make a single Melee Attack costing no action points.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
@@ -492,6 +492,12 @@
         "sourceDescription": "Forgotten King"
       }
     ]
+  },
+  "Crush": {
+    "description": "TBD.  Estimated: A model with Crush damages models suffering Ice as if it has Massive Damage.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
   },
   "Crystal Heart": {
     "description": "When a model with Crystal Heart enters play, place one crystal token on it's card. The model gains the abilities of the corresponding crystal until it is destroyed:<br>AMETHYST - Dark Radiance: All offense rolls and defense rolls made against a model with Dark Radiance reduce the result by 1.<br>CITRINE - Predator: When an enemy model moves out of a square that is adjacent to a model with Predator, the model with Predator may immediately make a Melee Attack against that model.<br>EMERALD - Charge: When a model with Charge uses a Lance, the model may be placed in any unoccupied square that was affected by the Lance for free.<br>RUBY - Fire, Fueled by Fire: A model with Fueled by Fire adds 1R to all offensive rolls for each model suffering fire.<br>SAPPHIRE - Defender: Models without Defender that are adjacent to a friendly model with Defender cannot be targeted by offensive actions.",
@@ -1486,7 +1492,7 @@
       }
     ]
   },
-  "Mob": {
+  "Mob-C": {
     "description": "Add +1B ATT to this model's melee attacks for every other model with Mob in melee with the target, up to +3B ATT.",
     "version": 1.0,
     "hasErrata": "true",
@@ -1496,12 +1502,30 @@
         "version": 1.6,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
+      },
+	  {
+        "description": "When making a 0SW offensive action, a model with Mob adds +1B STR to its offense roll for every additional model with Mob that is in range of its target, up to +3B STR.",
+        "version": 2.0,
+        "source": "",
+        "sourceDescription": "2.0 Explore Mode."
       }
     ]
+  },
+  "Mob-A": {
+    "description": "When a gang with Mob numbers more than 3 models it gains +1ST STR.",
+    "version": 2.0,
+    "hasErrata": "true",
+    "errata": []
   },
   "Mob Mentality": {
     "description": "Monsters with CITRINE affinity that are within 2 squares of Kobold Warrens gain Mob.",
     "version": 1.6,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Monstrous Size": {
+    "description": "A model with Monstrous Size occupies NINE squares, and uses the rules for moving large based models.  They may move through walls and treat structure squares as open squares.  Any wall or structure square a model with Monstrous Size moves through is considered difficult terrain for the rest of the game; you may want to mark it with a crystal token as a reminder.",
+    "version": 2.0,
     "hasErrata": "false",
     "errata": []
   },
