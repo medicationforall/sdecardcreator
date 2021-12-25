@@ -1514,7 +1514,7 @@
   "Mob-A": {
     "description": "When a gang with Mob numbers more than 3 models it gains +1ST STR.",
     "version": 2.0,
-    "hasErrata": "true",
+    "hasErrata": "false",
     "errata": []
   },
   "Mob Mentality": {
