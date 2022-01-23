@@ -2203,7 +2203,7 @@
     ]
   },
   "Smashing Pumpkins": {
-    "description": "If a model with Smashing Pumpkins ends a move command adjacent to one or more Heroes, destory it and any adjacent Heroes suffer Bane.",
+    "description": "If a model with Smashing Pumpkins ends a move command adjacent to one or more Heroes, destroy it and any adjacent Heroes suffer Bane.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
