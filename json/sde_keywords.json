@@ -555,7 +555,7 @@
     "errata": []
   },
   "Dark Radiance": {
-    "description": "All offense rolls and defense rolls made against a model with Dark Radiance reduce the result by 0ST.",
+    "description": "All offense rolls and defense rolls made against a model with Dark Radiance reduce the result by 1ST.",
     "version": 1.6,
     "hasErrata": "false",
     "errata": []
@@ -616,7 +616,7 @@
     "errata": []
   },
   "Despair": {
-    "description": "Enemy models within two squares of a model with Despair reduce the result of all defense rolls by 0ST.",
+    "description": "Enemy models within two squares of a model with Despair reduce the result of all defense rolls by 1ST.",
     "version": 1.6,
     "hasErrata": "false",
     "errata": []
@@ -895,6 +895,12 @@
   "Fresh Grave": {
     "description": "When creeps are spawned for this tile, also spawn one Rattlebone in each fresh grave square.",
     "version": 1.6,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Frozen Prison": {
+    "description": "While this Relic is attached to a Hero, the Hero must roll 1B before taking an action.  If no stars are rolled, the action automatically fails.  The Hero may choose to suffer one wound to reroll the die.",
+    "version": 2.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -1398,6 +1404,12 @@
         "sourceDescription": "Forgotten King Updated keyword."
       }
     ]
+  },
+  "Lucky Cat": {
+    "description": "When a model with Lucky Cat rolls dice, it may choose to reroll any dice it wishes (dice may only be rerolled once).",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
   },
   "Lycanthropy": {
     "description": "Wounded models that are not removed from play gain +1R and suffer Vulnerable Magic.",
@@ -2189,6 +2201,12 @@
         "sourceDescription": "Forgotten King Updated keyword."
       }
     ]
+  },
+  "Smashing Pumpkins": {
+    "description": "If a model with Smashing Pumpkins ends a move command adjacent to one or more Heroes, destory it and any adjacent Heroes suffer Bane.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
   },
   "Smoke": {
     "description": "Squares affected by Smoke block line of sight. Models within a square affected by Smoke are considered to have Stealth.",
