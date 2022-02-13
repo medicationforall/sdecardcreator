@@ -430,7 +430,7 @@
         "sourceDescription": "SDEv1-5_RuleBook_web.pdf"
       }
     ]
-  }
+  },
   "Clever": {
     "description": "If a challenge card springs a trap on the hero party, you can instead, take a wound and ignore the effects of the trap.",
     "version": 1.99,
@@ -1716,7 +1716,7 @@
     "errata": []
   },
   "Pest Control": {
-    "description": "This model may target Invader models on a Hero''s card using its basic attacks so long as the affected Hero is in range of the attack.",
+    "description": "This model may target Invader models on a Hero's card using its basic attacks so long as the affected Hero is in range of the attack.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
