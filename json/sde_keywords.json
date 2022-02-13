@@ -2509,6 +2509,12 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Stubborn Goat": {
+    "description": "This doesn’t allow him to move during his activation unless the Heroes choose to discard one loot card from the backpack. Stubborn Goat!",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Stun": {
     "description": "A model or effect with Stun places a Stun counter on any model it damages. A model suffering Stun discards the highest result rolled anytime it makes a roll using its WILL attribute.",
     "version": 1.0,
