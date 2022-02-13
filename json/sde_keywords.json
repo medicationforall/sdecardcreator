@@ -6,7 +6,7 @@
     "errata": [
       {
         "description": "One Use Only. When a model with 9 lives is destroyed, immediately roll 1R. Remove one wound token for each star rolled If no stars are rolled the model is destroyed as normal.",
-        "version": 1.6,
+        "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       }
@@ -31,7 +31,7 @@
     "errata": [
       {
         "description": "When a model with Alchemy rolls a heart they may choose to gain a potion instead.",
-        "version": 1.6,
+        "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       }
@@ -39,13 +39,13 @@
   },
   "All-Seeing": {
     "description": "This Pet’s Master gains Hookshot on its basic Magic attack if it has one, so long as it begins its activation within 2 squares of this Pet.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
   "Ambush": {
     "description": "When this model spawns or enters play using a Princess Coin, it may be placed on any open square in the dungeon.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
@@ -57,13 +57,13 @@
   },
   "Angry Walrus": {
     "description": "At the end of the Consul's power-up phase, the Consul rolls 1B. If no stars are rolled, nothing happens.  If any stars are rolled, the Consul may move the model with Angry Walrus up to one square for each star rolled and then make a basic melee offensive action against any other member of the party in range.  Arcade: the Hero's controller rolls and must move towards and attack the closest other friendly model if stars are rolled.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
   "Animate Soul": {
     "description": "Place a crystal token on target Hero. When the Hero is destroyed, if the model that placed the crystal is not in play, remove the crystal token to spawn the model that placed the crystal adjacent to the Hero. The model spawned in this way suffers three wounds after being placed.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
@@ -81,7 +81,7 @@
   },
   "Area": {
     "description": "When an area is drawn place the appropriate template anywhere within the tile.<br><br>Trap templates may not be placed across walls, structures, or chasms. They may be placed in the same square as a friendly or enemy models.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
@@ -136,13 +136,13 @@
     "errata": [
       {
         "description": "If a model with Backlash exceeds an offense roll with their defense roll the attacker takes one wound.",
-        "version": 1.6,
+        "version": 1.99,
         "source": "https://www.kickstarter.com/projects/1257458293/super-dungeon-explore-forgotten-king/posts/998856",
         "sourceDescription": "Kickstarter update 61"
       },
       {
         "description": "When a model with Backlash is targeted by an offensive action and wins the defense roll, the model making the Offense roll suffers one wound. A model may not draw a loot card for destroying a model due to Backlash.",
-        "version": 1.61,
+        "version": 1.991,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       }
@@ -150,12 +150,12 @@
   },
   "Backstabber": {
     "description": "Whenever the Model suffers a wound can place it on a friendly model adjacent instead.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "true",
     "errata": [
       {
         "description": "When a model with Backstabber suffers a wound, they may place the wound token on an adjacent friendly model instead.",
-        "version": 1.61,
+        "version": 1.991,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       }
@@ -163,7 +163,7 @@
   },
   "Back Strike": {
     "description": "+1ST STR if the gang's target did not activate during the previous Hero Turn.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
@@ -174,7 +174,7 @@
     "errata": [
       {
         "description": "A model suffering Bane discards the highest result rolled anytime it makes a defense roll. (Arcade: A monster suffering Bane Reduces its ARM by 0ST.)",
-        "version": 1.6,
+        "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword"
       }
@@ -182,7 +182,7 @@
   },
   "Bane Aura": {
     "description": "Monsters with RUBY affinity that are within 2 squares of Shallow Grave gain Bane.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
@@ -218,13 +218,13 @@
   },
   "Blessed Strike": {
     "description": "A model with Blessed Strike gains +1ST to all offense rolls it makes for each spent Princess Coin on its card.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
   "Blessing": {
     "description": "A tile effect with Blessing bestows a positive effect, specified on the tile effect's card, to models within the tile. Blessings only effect Hero, elite and minion models.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
@@ -235,7 +235,7 @@
     "errata": [
       {
         "description": "When a model with Blood Drinker inflicts a wound they may remove one wound or one status effect for every wound rolled.",
-        "version": 1.6,
+        "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       },
@@ -267,7 +267,7 @@
   },
   "Bone Collector": {
     "description": "A model with Bone Collector may use Hearts it rolls during successful offensive actions on Pets as well as Heroes.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
@@ -316,7 +316,7 @@
   },
   "Bruiser": {
     "description": "+0ST STR if a model with Bruiser is in the gang.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
@@ -345,13 +345,13 @@
     "errata": [
       {
         "description": "A model with Burrow ignores structures and walls when moving.",
-        "version": 1.6,
+        "version": 1.99,
         "source": "https://www.kickstarter.com/projects/1257458293/super-dungeon-explore-forgotten-king/posts/998856",
         "sourceDescription": "Kickstarter update 61"
       },
       {
         "description": "A model with Burrow may move through walls, and treats difficult terrain and structure squares as open squares. All non-blessing tile effects in squares are ignored.",
-        "version": 1.61,
+        "version": 1.991,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       }
@@ -382,6 +382,12 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Chained to Me": {
+    "description": "Enemy models that make an attack controlled by this model gain +1G to the roll.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Challenge": {
     "description": "When a boss with Challenge spawns, the Party must choose one Hero as their Champion. No model except the Champion may deal damage to the boss, though the boss may suffer other effects (such as Push or status effects) caused by other models. The boss gains +1R to all offensive actions it takes that target the Champion. If the Champion is destroyed, the Party must select another Hero to become the Champion.",
     "version": 2.0,
@@ -390,7 +396,7 @@
   },
   "Champion": {
     "description": "Models that are adjacent to a Champion structure add +1ST to all offense rolls.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
@@ -408,7 +414,7 @@
   },
   "Chasm": {
     "description": "Models cannot move through chasms. Models can draw line of sight through chasms.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
@@ -424,6 +430,12 @@
         "sourceDescription": "SDEv1-5_RuleBook_web.pdf"
       }
     ]
+  }
+  "Clever": {
+    "description": "If a challenge card springs a trap on the hero party, you can instead, take a wound and ignore the effects of the trap.",
+    "version": 1.99,
+    "hasErrata": "false",
+    "errata": []
   },
   "Cola": {
     "description": "Once per activation roll 1B. For every star rolled place a potion counter on Candy’s card.",
@@ -452,13 +464,13 @@
   },
   "Compel": {
     "description": "A model targeted by Compel may be moved a number of squares up to the value of X in any direction.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
   "Control Effects": {
     "description": "Control Effects allow one model to move another model. A model that is moved as a result of a control effect does not count as having been activated and may still activate and move as normal during their own turn. A model may never be moved in a manner that would not be legal for them to move on their own. Difficult terrain and other tile effects are treated as normal.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
@@ -470,7 +482,7 @@
   },
   "Corpse Stench": {
     "description": "When a model with Corpse Stench suffers damage, all adjacent enemy models suffer Slow.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
@@ -487,7 +499,7 @@
     "errata": [
       {
         "description": "A Cross effect is centered on the user’s base and every square within X squares of the user, but does not affect any diagonal squares.",
-        "version": 1.6,
+        "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King"
       }
@@ -501,7 +513,7 @@
   },
   "Crystal Heart": {
     "description": "When a model with Crystal Heart enters play, place one crystal token on it's card. The model gains the abilities of the corresponding crystal until it is destroyed:<br>AMETHYST - Dark Radiance: All offense rolls and defense rolls made against a model with Dark Radiance reduce the result by 1.<br>CITRINE - Predator: When an enemy model moves out of a square that is adjacent to a model with Predator, the model with Predator may immediately make a Melee Attack against that model.<br>EMERALD - Charge: When a model with Charge uses a Lance, the model may be placed in any unoccupied square that was affected by the Lance for free.<br>RUBY - Fire, Fueled by Fire: A model with Fueled by Fire adds 1R to all offensive rolls for each model suffering fire.<br>SAPPHIRE - Defender: Models without Defender that are adjacent to a friendly model with Defender cannot be targeted by offensive actions.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
@@ -556,7 +568,7 @@
   },
   "Dark Radiance": {
     "description": "All offense rolls and defense rolls made against a model with Dark Radiance reduce the result by 1ST.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
@@ -617,7 +629,7 @@
   },
   "Despair": {
     "description": "Enemy models within two squares of a model with Despair reduce the result of all defense rolls by 1ST.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
@@ -640,7 +652,7 @@
     "errata": [
 		{
 			"description": "Each square of difficult terrain a model enters costs two movement points. If a model does not have enough movement points to move into a square with difficult terrain, it may not do so.<br>If any part of a large based model enters a square of difficult terrain, the move costs two movement points. Do not count squares a large model already occupies.",
-			"version": 1.6,
+			"version": 1.99,
 			"source": "",
 			"sourceDescription": "Forgotten King Updated keyword."
 		}
@@ -690,7 +702,7 @@
   },
   "Dragon Spite": {
     "description": "A model with Dragon Spite may reroll a single dice when making offensive actions against dragon, drake, or kobold models.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
@@ -702,7 +714,13 @@
   },
   "Elemental Affinity": {
     "description": "For each model with Elemental Affinity choose one element from the Elemental Affinity card at the beginning of the game. That model gains the chosen element's abilities. If the model is a spawning point, all models spawned from that point gain the chosen elements abilities. Paired spawning points must choose the same element.",
-    "version": 1.6,
+    "version": 1.99,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Emergency Supply": {
+    "description": "Can also cart around an extra loot card for you.",
+    "version": 2.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -714,7 +732,7 @@
   },
   "Experimental Concoction": {
     "description": "Fae Alchemist draws two treasure cards. Choose one card and shuffle the other back into the deck. Fae Alchemist gains the effects listed on the chosen card until the beginning of her next activation, then discards the card. Note, Fae Alchemist gains this effect even if she has a treasure card equipped as normal. Only Fae Alchemist may drink Experimental Concoction.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
@@ -732,12 +750,12 @@
   },
   "Feed Me": {
     "description": "Eat one friendly model within melee range to heal one wound.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "true",
     "errata": [
       {
         "description": "Once per activation a model with Feed Me may remove one friendly model within melee range from play to heal one wound or remove a single a status effect.",
-        "version": 1.61,
+        "version": 1.991,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       }
@@ -750,7 +768,7 @@
     "errata": [
       {
         "description": "When a model with Feint makes an offensive action they may choose one dice from their target's defense roll and force them to reroll the result.",
-        "version": 1.6,
+        "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       }
@@ -769,7 +787,7 @@
     "errata": [
       {
         "description": "A model suffering Fire suffers one wound during its upkeep.",
-        "version": 1.6,
+        "version": 1.99,
         "source": "https://www.kickstarter.com/projects/1257458293/super-dungeon-explore-forgotten-king/posts/868841",
         "sourceDescription": "kickstarter update 41"
       }
@@ -777,24 +795,24 @@
   },
   "Fire Aura": {
     "description": "Monsters with CITRINE affinity that are within 2 squares of Lava Whirl gain Fire.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
   "Fixable": {
     "description": "When a model successfully use the Bandage basic action on a model with Fixable, remove two wound tokens instead of one.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
   "Fixed Form": {
     "description": "Once shapeshifted into X form it may not shapeshift back to its original form.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "true",
     "errata": [
       {
         "description": "A shapeshift with Fixed Form may not shapeshift into its original form during its upkeep.",
-        "version": 1.61,
+        "version": 1.991,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       }
@@ -808,7 +826,7 @@
   },
   "Flammable": {
     "description": "When a model with Flammable is targeted by an action that causes Fire, the Flammable model suffers Fire even if it wins the defense roll.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
@@ -819,7 +837,7 @@
     "errata": [
       {
         "description": "A model with Fly treats difficult terrain, chasm, and structure squares as open squares. All non-blessing tile effects in those squares are ignored. Structure squares do not block line of sight to or from models with Fly.",
-        "version": 1.6,
+        "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword. "
       }
@@ -831,14 +849,20 @@
     "hasErrata": "false",
     "errata": []
   },
+  "For Unlawful Carnal Knowledge": {
+    "description": "All Spiteful Cherubs in play gain 1SW to their strength (they may now make basic melee attacks normally).",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Forced Shift": {
     "description": "Instead of being destroyed as normal it instead automatically Shapeshifts into its X Form.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "true",
     "errata": [
       {
         "description": "When a model with Forced Shift is destroyed, instead of being removed from play it immediately Shapeshifts.",
-        "version": 1.61,
+        "version": 1.991,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       }
@@ -894,7 +918,7 @@
   },
   "Fresh Grave": {
     "description": "When creeps are spawned for this tile, also spawn one Rattlebone in each fresh grave square.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
@@ -930,7 +954,7 @@
   },
   "Ghost": {
     "description": "A model with Ghost ignores walls for the purposes of line of sight and movement.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "true",
     "errata": [
 		{
@@ -949,30 +973,30 @@
   },
   "Ghostmancer": {
     "description": "Whenever a model with Ghostmancer inflicts a wound, place a Ghost model adjacent to the wounded model.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
   "Gloom Aura": {
     "description": "While within 2 squares of Pumpkin Patch, Heroes that do not have RUBY affinity discard the highest rolled when making offense rolls.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
   "Goddess": {
     "description": "Models that end their activation adjacent to a Goddess structure may remove one wound token.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
   "Grabby": {
     "description": "No enemy model can move while it is adjacent to a model with Grabby.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "true",
     "errata": [
 		  {
 				"description": "A model that is adjacent to an enemy model with Grabby may not move.",
-				"version": 1.61,
+				"version": 1.991,
 				"source": "",
 				"sourceDescription": "Forgotten King Updated keyword."
 		  }
@@ -980,12 +1004,12 @@
   },
   "Grabby Hands": {
     "description": "Grants every monster with SAPPHIRE affinity within 2 squares the Grabby ability.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "true",
     "errata": [
       {
         "description": "Monsters with SAPPHIRE affinity that are within 2 squares of Grabby House gain Grabby.",
-        "version": 1.61,
+        "version": 1.991,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       }
@@ -1005,7 +1029,7 @@
   },
   "Gross": {
     "description": "When Pudge is destroyed, before removing the model resolve the following offensive action:<br>0AC: SW, Wave 1, +1R STR.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
@@ -1017,13 +1041,13 @@
   },
   "Halloween": {
     "description": "Replace all Bone Pile tokens with models with the Bone Pile ability from the spawning pool.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
   "Hatchery": {
     "description": "When a non-Egg Clutch spawning point spawns it may place its monsters within 2 squares of Egg Clutch in addition to its own model.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
@@ -1040,7 +1064,7 @@
     "errata": [
       {
         "description": "A model affected by Heal may remove a number of wound tokens or a number of status effect tokens equal to the value of X.",
-        "version": 1.6,
+        "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       }
@@ -1053,7 +1077,7 @@
     "errata": [
       {
         "description": "When a model with Healer rolls a potion they may choose to gain a heart instead.",
-        "version": 1.6,
+        "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       }
@@ -1061,7 +1085,7 @@
   },
   "Heart Attack": {
     "description": "When making an offense roll, a model with Heart Attack counts any hearts rolled as two hearts.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
@@ -1073,12 +1097,12 @@
   },
   "Hex": {
     "description": "A model suffering Hex discards the highest result rolled anytime it makes a defense roll.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "true",
     "errata": [
       {
         "description": "A model suffering Hex discards the highest result rolled anytime it makes an offense roll.<br>(Arcade: A monster suffering Hex reduces its STR by 0ST)",
-        "version": 1.61,
+        "version": 1.991,
         "source": "<br>",
         "sourceDescription": "Forgotten King Updated keyword."
       }
@@ -1086,13 +1110,13 @@
   },
   "Hidden": {
     "description": "Models Spawned from a spawning point with Hidden may be placed anywhere on the tile, instead of only within 2 squares.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
   "Hoard": {
     "description": "A model with Hoard may equip loot and treasure cards. When spawned, draw one treasure card and equip it on this model. When defeated heroes gain all equipment cards this model has equipped.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
@@ -1122,7 +1146,7 @@
       },
       {
         "description": "Actions with Hookshot do not require line of sight to target a model. Range must still be counted around walls and structures.",
-        "version": 1.6,
+        "version": 1.99,
         "source": "<br>",
         "sourceDescription": "Forgotten King Updated keyword."
       }
@@ -1141,7 +1165,7 @@
     "errata": [
       {
         "description": "When making a Melee Attack, a model with Hubris gains +1B STR for every equipment card equipped on their target.",
-        "version": 1.6,
+        "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       }
@@ -1179,7 +1203,7 @@
   },
   "Ice": {
     "description": "A model suffering Ice may not use unique actions.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
@@ -1208,7 +1232,7 @@
       },
       {
         "description": "A model affected by Immobile my not move during their next activation.",
-        "version": 1.6,
+        "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       }
@@ -1257,7 +1281,7 @@
     "errata": [
       {
         "description": "If a Hero is on the same dungeon tile as a model with Insignificant it may be activated in addition to any other monsters that are activated during the Consul Turn. A model may not draw a loot card for destroying a model with Insignificant.",
-        "version": 1.6,
+        "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       }
@@ -1265,12 +1289,12 @@
   },
   "Invader": {
     "description": "When Invader is used the Invader model is removed from play and placed on the target Hero's card, essentially becoming a token. While a slime model is on the Hero's card, no model other than the Hero may target or affect the slime the Slime—not even area of effects.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "true",
     "errata": [
       {
         "description": "When a model uses an action with Invader remove the model from play and place it on the target Hero's card. The Invader model may not voluntarily leave the Hero. The Hero suffers the effects of the Invader action as long as the Invader model remains on their card. Only the affected Hero may target or destroy Invader models on their card. The Invader is always considered in range. The Invader cannot be affected by area effects.",
-        "version": 1.61,
+        "version": 1.991,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       }
@@ -1296,7 +1320,7 @@
   },
   "Kitty Claws": {
     "description": "Beatrix immediately makes one Melee Attack against any model that moves into a square adjacent to Beatrix During it’s activation.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
@@ -1319,7 +1343,7 @@
       },
       {
         "description": "A model suffering Knockdown may not move or perform any other action until it spends 1 action point or all of its movement points to remove the Knockdown token.<br>(Arcade: A monster suffering Knockdown may not perform commands until the next Move command. Instead of moving it must remove the Knockdown token.)",
-        "version": 1.6,
+        "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       }
@@ -1344,7 +1368,7 @@
       },
       {
         "description": "A Lance effect draws a straight line in any direction, directly away from the user’s base along a distance of X. Every model along this line is hit. Lance effects may not be used along diagonals.",
-        "version": 1.6,
+        "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King"
       }
@@ -1364,7 +1388,7 @@
   },
   "Line": {
     "description": "When a line is drawn place the appropriate template anywhere within the tile.<br><br>Trap templates may not be placed across walls, structures, or chasms. They may be placed in the same square as a friendly or enemy models.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
@@ -1376,7 +1400,7 @@
   },
   "Little Splurt": {
     "description": "Fire Gels cannot be spawned, instead they enter play as a result of the Burning Gel's Splurt Ability.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
@@ -1393,13 +1417,13 @@
     "errata": [
       {
         "description": "A model with Luck may gain a Potion instead of a Heart when rolled on the dice and vice versa.",
-        "version": 1.6,
+        "version": 1.99,
         "source": "https://www.kickstarter.com/projects/1257458293/super-dungeon-explore-forgotten-king/posts/998856",
         "sourceDescription": "Kickstarter update 61"
       },
       {
         "description": "When a model with Luck draws treasure cards, they may draw one additional card, then choose one of the cards drawn and shuffle it back into the deck.",
-        "version": 1.61,
+        "version": 1.991,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       }
@@ -1455,11 +1479,17 @@
     "errata": [
       {
         "description": "When an offensive action with Massive Damage inflicts a wound it instead inflicts two wounds.",
-        "version": 1.6,
+        "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword. Kunoichi Candy"
       }
     ]
+  },
+  "Master Gains": {
+    "description": "The model controlling this model gains the keyword "X" when they are within (Y) spaces of one another.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
   },
   "Mastery": {
     "description": "Once per activation, this model may use a unique action listed on the card of an adjacent friendly model.",
@@ -1475,7 +1505,7 @@
   },
   "Mend": {
     "description": "A model using Mend targets the monster within range suffering the most wounds.  Remove status effect tokens and then remove would tokens until a number of tokens equal to X has been reomved or the monster has no wound tokens on it.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
@@ -1511,7 +1541,7 @@
     "errata": [
       {
         "description": "When making a Melee offensive action, a model with Mob adds +1B STR to their offense roll for every additional model with Mob that is in range of their target, up to +3B STR.",
-        "version": 1.6,
+        "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       },
@@ -1531,7 +1561,7 @@
   },
   "Mob Mentality": {
     "description": "Monsters with CITRINE affinity that are within 2 squares of Kobold Warrens gain Mob.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
@@ -1561,7 +1591,7 @@
   },
   "Never-Lost": {
     "description": "Boss Sightings do not affect friendly Heroes within three squares and Line o Sight of this model.<br>(Arcade: after drawing a Challenge Card but before resolving its effects, this Pet’s Master may discard a potion to discard the Challenge Card and draw a new one.)",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
@@ -1601,8 +1631,20 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Oiled With The Blood of Heroes": {
+    "description": "After dealing a wound due to Run Down, this model Heals 1.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "On The Move": {
     "description": "If this model began its activation completely blocking a doorway, it may not end its activation completely blocking a doorway.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "One Use Only": {
+    "description": "An action with One Use Only may only be used a single time during the game, once it has been used it may not be used again.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
@@ -1649,6 +1691,12 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Paired Hero": {
+    "description": "When a Hero with Paired Hero (X) activates, the other Hero listed also activates simultaneously.  These two Heroes may alternate moving and taking actions as if they were on eHero, and both of their activations together only count as a single Hero activation (allowing three total Heroes to activate on the Hero turn).  At the end of the turn, if one of the paired Heroes is destroyed and the other is in play, their controller may CHOOSE whether or not to bring the destroyed Hero back with a princess coin.  At the end of the turn if both Heroes are destroyed, their controller MUST spend one princess coin to bring them both back into play (a single coin is spent, even though both Heroes are brought back).",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Parade of Death": {
     "description": "A model with Parade of Death may not use the basic Dash action.  A model with Parade of Death may use its movement to leave the dungeon by moving off of a dungeon exit.  If it leaves the dungeon in this way, it is destroyed and the Party must immediately discard one Princess Coin (the Party may lose the game in this way if it has no Princess Coins).",
     "version": 2.0,
@@ -1675,7 +1723,7 @@
   },
   "Pet": {
     "description": "A model with Pet X is the master of the pet listed as X. A model with Pet X may never be a different pet’s master. The listed pet begins the game within two squares of its master.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
@@ -1686,13 +1734,13 @@
     "errata": [
       {
         "description": "+1B STR if target is suffering Knockdown.",
-        "version": 1.6,
+        "version": 1.99,
         "source": "https://www.kickstarter.com/projects/1257458293/super-dungeon-explore-forgotten-king/posts/976490",
         "sourceDescription": "kickstarter update 57"
       },
       {
         "description": "A model with Pile-On gains +1B STR if its target is suffering Knockdown.",
-        "version": 1.62,
+        "version": 1.992,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       }
@@ -1717,13 +1765,13 @@
     "errata": [
       {
         "description": "A model suffering Poison reduces its total number of action points by one.",
-        "version": 1.6,
+        "version": 1.99,
         "source": "https://www.kickstarter.com/projects/1257458293/super-dungeon-explore-forgotten-king/posts/868841",
         "sourceDescription": "kickstarter update 41"
       },
       {
         "description": "A model suffering Poison reduces its total number of action points by 1, to a minimum of 1.",
-        "version": 1.61,
+        "version": 1.991,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       }
@@ -1731,7 +1779,7 @@
   },
   "Poison Aura": {
     "description": "Monsters with CITRINE affinity that are within 2 squares of Old-Growth Hollow gain Poison.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
@@ -1743,12 +1791,12 @@
   },
   "Potion Master": {
     "description": "Use two potions during her activation instead of the standard one.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "true",
     "errata": [
       {
         "description": "A model with Potion Master may use one additional potion during their activation.",
-        "version": 1.61,
+        "version": 1.991,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       }
@@ -1756,7 +1804,7 @@
   },
   "Potion Stash": {
     "description": "A monster with Potion Stash may gain potion tokens when rolled, in the same manner as Heroes, up to the number indicated by X. The monster may spend potion tokens on abilities indicated on its card.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
@@ -1773,7 +1821,7 @@
     "errata": [
       {
         "description": "Choose an enemy model anywhere within 5 squares, and line of sight. Place the model with pounce adjacent to this target, then make the offense roll as normal.",
-        "version": 1.6,
+        "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       }
@@ -1781,13 +1829,13 @@
   },
   "Predator": {
     "description": "When an enemy model moves out of a square that is adjacent to a model with Predator, the model with Predator may immediately make a Melee Attack against that model.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
   "Primal Aura": {
     "description": "Monsters with SAPPHIRE Affinity that are within 2 squares of Tribal Stone gain +1ST ARM.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
@@ -1834,7 +1882,7 @@
       },
       {
         "description": "A model targeted by Pull may be moved a number of squares up to the value of X towards the model using Pull. Each square moved must decrease the distance between the two models. Once the two models are adjacent, the target model immediately stops.",
-        "version": 1.6,
+        "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King"
       }
@@ -1853,7 +1901,7 @@
       },
       {
         "description": "A model targeted by Push may be moved a number of squares up to the value of X away from the model using Push. Each square moved must increase the distance between the two models. If the target model cannot be moved further away, such as from contact with a wall, the model immediately stops.",
-        "version": 1.6,
+        "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King"
       }
@@ -1861,7 +1909,7 @@
   },
   "Quick Hatch": {
     "description": "After Egg Clutch performs a Spawn command, all monsters it just spawned immediately perform a Move command.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
@@ -1873,13 +1921,13 @@
   },
   "Rabid": {
     "description": "When this model activates roll 1R and consult the following:  No stars: this model moves as close as it can to, and attacks, the closest friendly model. In the case two models are equally close, this model’s controller chooses.  One star: this model may activate normally.  Two or more stars: this model may activate normally and gains +1R STR.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
   "Rage Musk": {
     "description": "If this potion is used, the Consul roll 1R instead of 1B for Angry Walrus during the following Consul Turn.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
@@ -1890,7 +1938,7 @@
     "errata": [
       {
         "description": "Replace target Bone Pile with a model with the Bone Pile ability. If a model is in the same square as the Bone Pile token, Raise has no effect.",
-        "version": 1.6,
+        "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       }
@@ -1923,7 +1971,7 @@
   },
   "Reach-A": {
     "description": "+2ST RNG if a model with Reach is in the gang.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
@@ -1940,7 +1988,7 @@
     "errata": [
       {
         "description": "Roll 1B for every wound token on the model using Regenerate. Remove one token for every star rolled.",
-        "version": 1.6,
+        "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       }
@@ -1959,7 +2007,7 @@
     "errata": [
       {
         "description": "A model affected by Remedy removes all status effect tokens.",
-        "version": 1.6,
+        "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       }
@@ -2003,7 +2051,7 @@
   },
   "Rock Aura": {
     "description": "Monsters with SAPPHIRE affinity that are within 2 squares of Rock Pile are Immune: Status Effects.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
@@ -2033,13 +2081,13 @@
   },
   "Savage": {
     "description": "All minions within 1 square of a model with Savage gain +1ST STR.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
   "Scatter": {
     "description": "When a scatter is drawn place four single square templates anywhere within the tile.<br><br>Trap templates may not be placed across walls, structures, or chasms. They may be placed in the same square as a friendly or enemy models.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
@@ -2057,7 +2105,7 @@
   },
   "Secret Passage": {
     "description": "When a model enters a Secret Passage square immediately place it in any other unoccupied Secret Passage square in the dungeon.<br><br>A large model must be able to be placed in the new location or Secret Passage has no effect.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
@@ -2081,7 +2129,7 @@
   },
   "Sentinel": {
     "description": "Models that are adjacent to a Sentinel structure add +1ST to all defense rolls.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
@@ -2093,7 +2141,7 @@
   },
   "Shallow Grave": {
     "description": "Ghosts may be spawned from Fresh Grave Tile Effects instead of Rattlebones.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
@@ -2123,7 +2171,7 @@
   },
   "Shell": {
     "description": "When a model with Shell is destroyed replace it with a Turtle Shell model. If all Turtle Shells are already on the dungeon map, move the Turtle Shell furthest from the Heroes to the new square.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
@@ -2152,7 +2200,7 @@
     "errata": [
       {
         "description": "When a model with Sidestep wins defense roll they may immediately move one square.",
-        "version": 1.6,
+        "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       }
@@ -2183,7 +2231,7 @@
       },
       {
         "description": "A model suffering Slow halves its movement points, rounding up.",
-        "version": 1.6,
+        "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       }
@@ -2196,7 +2244,7 @@
     "errata": [
       {
         "description": "An enemy model may only target a small model if it is within 3 squares of the model.",
-        "version": 1.6,
+        "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       }
@@ -2234,7 +2282,7 @@
     "errata": [
       {
         "description": "This model immediately shapeshifts back to its original form if a friendly model moves into an adjacent square and spends 1 Action to give it a kiss.",
-        "version": 1.6,
+        "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       }
@@ -2248,12 +2296,12 @@
   },
   "Soporific": {
     "description": "When this model is destroyed inflicts the attacking model with the status effect Slow.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "true",
     "errata": [
       {
         "description": "When a model with Soporific is destroyed, the model that destroyed it suffers Slow.",
-        "version": 1.61,
+        "version": 1.991,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword. "
       }
@@ -2261,7 +2309,7 @@
   },
   "Soporific Cloud": {
     "description": "When a Hero that does not have EMERALD affinity moves within 2 squares of Fungal Growth they suffer Slow.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
@@ -2279,7 +2327,19 @@
   },
   "Spawn Location": {
     "description": "When playing Arcade Mode, spawning points are placed in Spawn Location squares.",
-    "version": 1.6,
+    "version": 1.99,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Spirit Call": {
+    "description": "When a model with Spirit Call is in play, all Ghost models gain +1B to all rolls.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Spirit Sentry": {
+    "description": "When a model with Spirit Sentry either deals or suffers a wound, all SUPER monsters in play may immediately make one basic attack action.",
+    "version": 2.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -2303,18 +2363,18 @@
   },
   "Splurt": {
     "description": "When Burning Gel is destroyed, before removing the model, place two Fire Gels into play in any adjacent empty squares.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
   "Spongy": {
     "description": "Anytime a model makes an offensive action against the Kinoshroom. The model is pushed one square away.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "true",
     "errata": [
       {
         "description": "When a model with Spongy is targeted, Push the model that targeted them 1 square after the action has been resolved, even if the model with spongy was destroyed.",
-        "version": 1.61,
+        "version": 1.991,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       }
@@ -2364,7 +2424,7 @@
     "errata": [
       {
         "description": "A model with Static Charge gains +1B STR and +1B ARM for every wound they are currently suffering.",
-        "version": 1.6,
+        "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       }
@@ -2395,13 +2455,13 @@
     "errata": [
       {
         "description": "Reduces the range of all actions made against the model by 3 to a minimum of 1.",
-        "version": 1.6,
+        "version": 1.99,
         "source": "https://www.kickstarter.com/projects/1257458293/super-dungeon-explore-forgotten-king/posts/976490",
         "sourceDescription": "Kickstarter update 57"
       },
       {
         "description": "Actions targeting a model with stealth reduce their Range by 3, to a minimum of 1.",
-        "version": 1.61,
+        "version": 1.991,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       }
@@ -2409,7 +2469,7 @@
   },
   "Stealth Aura": {
     "description": "Monsters with RUBY Affinity that are within 2 squares of Salt Pillar gain Stealth.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
@@ -2439,13 +2499,13 @@
   },
   "Structure": {
     "description": "Models cannot draw line of sight across or move through structures.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
   "Student": {
     "description": "Once per game, a model with Student may use a single unique action listed on the card of any other Hero in the dungeon.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
@@ -2487,7 +2547,7 @@
     "errata": [
       {
         "description": "A model with Surefoot treats difficult terrain squares as open squares. All non-blessing tile effects in those squares are ignored.",
-        "version": 1.6,
+        "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       }
@@ -2495,7 +2555,7 @@
   },
   "Surge": {
     "description": "If a model with Surge is not in range of a Hero move it an additional 5 squares towards the Hero with the most wrath.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
@@ -2512,7 +2572,7 @@
       },
       {
         "description": "A sweep effect hits every model within X squares of any single side of the user’s base along a straight line. Sweep effects may not be used along diagonals.",
-        "version": 1.6,
+        "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King"
       }
@@ -2531,7 +2591,7 @@
     "errata": [
       {
         "description": "During his activation Starfire may make the following offensive action a single time for free: Attack Melee, Sweep 2, Knockdown.",
-        "version": 1.6,
+        "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       }
@@ -2544,7 +2604,7 @@
     "errata": [
       {
         "description": "Choose an empty square anywhere within 10 squares, and line of sight. Place the model affected by Teleport in this square.",
-        "version": 1.6,
+        "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       }
@@ -2576,7 +2636,7 @@
   },
   "Throw": {
     "description": "When using an action with Throw, choose one friendly adjacent model. Push that model a number of squares up to the value of X, as described in the rules for Push. If the model moves to a square that is adjacent to another model it immediately stops moving. Every model it stops adjacent to, friendly or enemy, suffers an offense roll of 1B per square the model moved.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
@@ -2599,7 +2659,7 @@
     "errata": [
       {
         "description": "During its upkeep, a model with Tough removes a single wound token.",
-        "version": 1.6,
+        "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       }
@@ -2607,7 +2667,7 @@
   },
   "Toxic Blood": {
     "description": "A model that inflicts a wound against a model with Toxic Blood suffers Poison.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
@@ -2678,7 +2738,7 @@
     "errata": [
       {
         "description": "Add +1B to this models offense rolls if its target is suffering from Poison.",
-        "version": 1.6,
+        "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       }
@@ -2722,7 +2782,7 @@
       },
       {
         "description": "A Wave effect is centered on the user’s base and every square within X squares of the user.",
-        "version": 1.6,
+        "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King"
       }
@@ -2740,6 +2800,12 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Widow's Secret, The": {
+    "description": "Heroes within Aura 4 suffer -1ST WILL to all WILL rolls.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Wind of Blades": {
     "description": "A model with Wind of Blades may spend all of its movement points to make a single Missile Attack basic offensive action.",
     "version": 2.0,
@@ -2748,13 +2814,13 @@
   },
   "Wisdom": {
     "description": "A model with Wisdom gains +1AC that may only be used to take support actions.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
   "Wonder": {
     "description": "Place pet model and game card in the Backpack. One Hero may become the pet's master during Power-Up.",
-    "version": 1.6,
+    "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
