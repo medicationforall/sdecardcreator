@@ -1486,7 +1486,7 @@
     ]
   },
   "Master Gains": {
-    "description": "The model controlling this model gains the keyword "X" when they are within (Y) spaces of one another.",
+    "description": "The model controlling this model gains the keyword 'X' when they are within (Y) spaces of one another.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
