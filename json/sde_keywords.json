@@ -658,9 +658,15 @@
 		}
     ]
   },
+  "Discipline": {
+    "description": "A model with Discipline gains +1B to all rolls while it is adjacent to at least one other friendly model.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Distance Effects": {
     "description": "The abilities Magic X, Missile X, and Range X are called distance<br>effects. A model with a distance effect may target another<br>model up to X squares away with any of its actions. If a distance<br>effect is part of an attack it will specify an attribute you must<br>use when making your attack roll.<br>A model with a distance effect listed in its special abilities may<br>use the listed distance effect in combination with any actions it<br>makes, unless specified otherwise. For example: If a model has<br>a distance effect listed on their card (e.g. Missile) and an action<br>listed on their card uses a different distance effect (e.g. Magic),<br>then “Magic” (i.e. WILL) would be used for that action instead<br>of “Missile” (i.e. DEX).",
-    "version": 1,
+    "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
