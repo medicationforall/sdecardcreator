@@ -229,10 +229,11 @@ function KeywordStore(keywords){
    *
    */
   this.parseDescription=function(description){
-    var affinityDescription = this.findAffinity(description);
+    var keywordDescription = this.findKeywords(description);
+    var affinityDescription = this.findAffinity(keywordDescription);
     var diceDescription = this.findDice(affinityDescription);
-    var statSescription = this.findStats(diceDescription);
-    return statSescription;
+    var statDescription = this.findStats(diceDescription);
+    return statDescription;
   };
 
 
