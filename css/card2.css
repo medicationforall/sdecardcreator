@@ -619,6 +619,7 @@ cursor:move;
 	text-transform: uppercase;
 	font-family:'Adelon';
 	font-size: 19px;
+	padding-left:7.5px;
 }
 
 .keywordsList .keyword{
