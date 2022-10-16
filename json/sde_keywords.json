@@ -186,6 +186,12 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Beat Up Some Ijin": {
+    "description": "In any scenario which has Ibaraki-doji, deal the last wound to Ibaraki-doji and destroy it.<br></br>When this quest is accomplished, equip the Lucky Peach equipment card on the reverse side of this card. It may remain equipped for the entire campaign, unless you choose to discard it.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Berserk": {
     "description": "During its activation a model with Berserk may make a single Melee Attack costing no action points.",
     "version": 1.0,
@@ -228,7 +234,7 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Blood Drinker-C": {
+  "Blood Drinker-E": {
     "description": "When a model with Blood Dinker rolls a heart they gain one heart in exactly the same manor as a Hero.",
     "version": 1.0,
     "hasErrata": "true",
@@ -296,6 +302,18 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Bouncing Betty-E": {
+    "description": "A model with Bouncing Betty may enter squares occupied by other models (and other models may enter squares containing a model with Bouncing Betty).  As soon as a model with Bouncing Betty shares a square with an enemy model, destroy it and trigger Volatile.  When a model with Bouncing Betty activates, roll 1R and move it a number of squares equal to the number of stars rolled towards the closest Hero.  If there are ever 12 models with Bouncing Betty in play, immediately destroy all of them (this triggers Volatile).",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Bouncing Betty-A": {
+    "description": "A model with Bouncing Betty may enter squares occupied by other models (and other models may enter squares containing a model with Bouncing Betty).  As soon as a model with Bouncing Betty shares a square with an enemy model, destroy it and trigger Volatile.  When a model with Bouncing Betty receives a Move command, roll 1R and move it a number of squares equal to the number of stars rolled towards the closest Hero.  If there are ever 12 models with Bouncing Betty in play, immediately destroy all of them (this triggers Volatile).",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Bound": {
     "description": "When a monster with Bound is destroyed, a SUPER on the same tile may instead choose to suffer one wound and prevent the monster from being destroyed.",
     "version": 1.0,
@@ -304,7 +322,13 @@
   },
   "Bramble Growth": {
     "description": "Heroes that do not have EMERALD affinity count squares within 2 squares of Bramble Knight as difficult terrain.",
-    "version": 2,
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Brew a Special Potion": {
+    "description": "During his activation, Black-Handed Henry may discard a potion token and place it on this card.  Have 4 potion tokens on this card during the Power-Up Phase to accomplish this quest.<br><br>When this quest is accomplished, equip the Invulnerabilty Potion equipment card on the reverse side of this card.  It may remain equipped for the entire campaign, unless you choose to discard it.",
+    "version": 2.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -382,6 +406,12 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Catastrophic Failure": {
+    "description": "When a model with Catastrophic Failure suffers more than one wound from a single attack, it immediately takes its Vent Steam action.  If the model with Catastrophic Failure would be destroyed by the attack, it takes Vent Steam before being removed.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Chained to Me": {
     "description": "Enemy models that make an attack controlled by this model gain +1G to the roll.",
     "version": 2.0,
@@ -400,7 +430,7 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Charge-C": {
+  "Charge-E": {
     "description": "When a model with Charge uses a Lance area effect, after resolving all other effects of the Lance, the model may be placed in any unoccupied square that was affected by the Lance for free.",
     "version": 2.0,
     "hasErrata": "false",
@@ -415,6 +445,12 @@
   "Chasm": {
     "description": "Models cannot move through chasms. Models can draw line of sight through chasms.",
     "version": 1.99,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Chip Off The Block": {
+    "description": "When a model with Chip Off The Block suffers a critical from an enemy''s offensive action, spawn a Frost Imp within three squares of it (up to a maximum of six Frost Imps in play).",
+    "version": 2.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -523,6 +559,12 @@
     "hasErrata": "false",
     "errata": []
   },
+  "A Curse On You": {
+    "description": "When a model with A Curse On You is destroyed, place a crystal token on the model that destroyed it.  When the model with the crystal token is destroyed, spawn a Walking Curse model in the square it had occupied.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Cursed": {
     "description": "[Equipment with Cursed] must be immediately equipped when drawn and cannote be discarded.",
     "version": 1.0,
@@ -535,6 +577,12 @@
         "sourceDescription": "Updated in 2.0."
       }
     ]
+  },
+  "Cursed Crown": {
+    "description": "When a model with Cursed Crown is destroyed, spawn a The Walking Curse in the square it had occupied.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
   },
   "Dance Party": {
     "description": "If another Hero activates after the equipped hero during the same turn, that hero gains:  +2 Movement Points,  +1 Action Point,  +1R DEX,  +1R WILL,  during that activation.",
@@ -585,18 +633,18 @@
     "errata": []
   },
   "Death Curse-A": {
-    "description": "When one or more models in this gang ends a move adjacent to a Hero, the party must select one model in the gang with Death Curse.  The selected model is destroyed and the party rolls 1G.  Apply one of the below status effects to the adjacent Hero depending on the roll:<br>0ST:  Bane<br>0ST:  Hex<br>2ST: Ice<br>3ST: Poison<br>4ST:  Immobile",
+    "description": "When one or more models in this gang ends a move adjacent to a Hero, the party must select one model in the gang with Death Curse.  The selected model is destroyed and the party rolls 1G.  Apply one of the below status effects to the adjacent Hero depending on the roll:<br>0ST:  Bane<br>1ST:  Hex<br>2ST: Ice<br>3ST: Poison<br>4ST:  Immobile",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
   },
-  "Death Curse-C": {
-    "description": "When a model with Death Curse is destroyed, roll 1G and place the corresponding status effect token on the square the model had occupied.  If a Hero enters the square with the status effect token, remove the token and the Hero gains the status effect at the end of the current activation:<br>0ST:  Bane<br>0ST:  Hex<br>2ST: Ice<br>3ST: Poison<br>4ST:  Immobile",
+  "Death Curse-E": {
+    "description": "When a model with Death Curse is destroyed, roll 1G and place the corresponding status effect token on the square the model had occupied.  If a Hero enters the square with the status effect token, remove the token and the Hero gains the status effect at the end of the current activation:<br>0ST:  Bane<br>1ST:  Hex<br>2ST: Ice<br>3ST: Poison<br>4ST:  Immobile",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
   },
-  "Death Lord-C": {
+  "Death Lord-E": {
     "description": "All Undead models within four squares of a model with Death Lord gain +1B to all offense rolls.",
     "version": 2.0,
     "hasErrata": "true",
@@ -627,6 +675,12 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Delicious": {
+    "description": "When adjacent to this model, The Guth may discard this equipment (ignoring Cursed) as if it were a friendly Goblin Creep to activate Pig Feed.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Despair": {
     "description": "Enemy models within two squares of a model with Despair reduce the result of all defense rolls by 1ST.",
     "version": 1.99,
@@ -634,13 +688,13 @@
     "errata": []
   },
   "Dibs-A": {
-    "description": "When a Hero on this tile discards a loot card due to Yoink!, place a crystal token on this model.  This model gains +1ST STR for each crystal token on it.",
+    "description": "When a Hero on this tile discards a loot card due to Yoink, place a crystal token on this model.  This model gains +1ST STR for each crystal token on it.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
   },
-  "Dibs-C": {
-    "description": "When a Hero on this tile discards a loot card due to the Yoink! ability, a model with Dibs may choose to equip the discarded loot as if it were a Hero.  Equipped loot is discarded when this model is destroyed.",
+  "Dibs-E": {
+    "description": "When a Hero on this tile discards a loot card due to the Yoink ability, a model with Dibs may choose to equip the discarded loot as if it were a Hero.  Equipped loot is discarded when this model is destroyed.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
@@ -682,7 +736,7 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Do It For Me-C": {
+  "Do It For Me-E": {
     "description": "When a Hero within four squares of a model with Do It For Me activates, the Hero must roll its WILL.  On a roll of 0 stars, the Consul controls the Hero's first action and first three moves of the activation.  The remainder of the activation is taken normally.",
     "version": 2.0,
     "hasErrata": "false",
@@ -718,6 +772,12 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Eat All The Dumplings": {
+    "description": "At the end of Scenario 3: Food Fight or Scenario 4: Rescue Lily, have at least two dumpling tokens on Adzuki''s card.<br></br>When this quest is accomplished, equip the Obaa-San Dumpling equipment card on the reverse side of this card. It may remain equipped for the entire campaign, unless you choose to discard it.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Elemental Affinity": {
     "description": "For each model with Elemental Affinity choose one element from the Elemental Affinity card at the beginning of the game. That model gains the chosen element's abilities. If the model is a spawning point, all models spawned from that point gain the chosen elements abilities. Paired spawning points must choose the same element.",
     "version": 1.99,
@@ -726,6 +786,12 @@
   },
   "Emergency Supply": {
     "description": "Can also cart around an extra loot card for you.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Exorcist": {
+    "description": "A model with Exorcist may equip one Prayer Slip treasure to each slot for free (the slot may still be used to equip other loot or treasure).  A model with Exorcist begins the game with four Prayer Slips equipped: one in each slot.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
@@ -744,6 +810,18 @@
   },
   "Extra Sparkly": {
     "description": "When a model with Extra Sparkly ends its activation, it may gain two wrath.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "The Eye is Open": {
+    "description": "Each time a Hero enters a square within range of LOS of a model with The Eye is Open, roll 1B.  If any stars are rolled, the model with The Eye is Open makes a STR 4ST attack against the Hero.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Familiar": {
+    "description": "A model with Familiar includes a familiar card.  The familiar card is equipped at the beginning of the game following normal equipment rules.  A familiar card may not be discarded.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
@@ -910,7 +988,7 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Freed In Death-C": {
+  "Freed In Death-E": {
     "description": "When a model with Freed In Death is destroyed, the party may choose one monster in range.  The model with Freed In Death makes a melee attack against the chosen monster before being removed.",
     "version": 2.0,
     "hasErrata": "false",
@@ -952,8 +1030,14 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Fury-C": {
+  "Fury-E": {
     "description": "A model with Fury gains 1B to all offense rolls for each wound it is currently suffering.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Gatekeeper": {
+    "description": "When a model with Gatekeeper is spawned, select the closest doorway to the spawning point that connects two tiles.  The model with Gatekeeper is spawned in the selected doorway.  Move any models in the way up to one space.  Then, all Heroes adjacent to the Gatekeeper suffer a STR +4ST attack.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
@@ -1033,6 +1117,18 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Greed-E": {
+    "description": "When a model with Greed makes an attack, it gains +1R to its offense roll for each Princess Coin on its target's card.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Greed-A": {
+    "description": "When a model with Greed makes an attack, it gains +1ST for each Princess Coin the Heroes have used this game.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Gross": {
     "description": "When Pudge is destroyed, before removing the model resolve the following offensive action:<br>0AC: SW, Wave 1, +1R STR.",
     "version": 1.99,
@@ -1092,6 +1188,18 @@
   "Heart Attack": {
     "description": "When making an offense roll, a model with Heart Attack counts any hearts rolled as two hearts.",
     "version": 1.99,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Heart Strike": {
+    "description": "When making an offense roll, any hearts rolled count as both a heart and a star.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Here Polly": {
+    "description": "When a model with Here Polly spawns, spawn a Potion Parrot within 3 squares of it.",
+    "version": 2.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -1195,7 +1303,7 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Hunter's Mark-C": {
+  "Hunter's Mark-E": {
     "description": "Place a crystal token on the target.  Friendly models attacking the target gain +1B to their offense rolls.  Only one friendly Mark token may be in play at one time and it may not be removed until the target is destroyed or Mark is used again.",
     "version": 2.0,
     "hasErrata": "false",
@@ -1210,6 +1318,12 @@
   "Ice": {
     "description": "A model suffering Ice may not use unique actions.",
     "version": 1.99,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Ice Fiends": {
+    "description": "When this model achiees a critial success, summon one Frost Imp adjacent to it if there are fewer than six Frost Imps in play.",
+    "version": 2.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -1262,13 +1376,19 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Impulsive": {
+    "description": "When a model with Impulsive activates, roll 1R and apply the following depending on the number of stars rolled:<br>0ST: This model gains Brutal Strike this activation.<br>1ST: This model gains Improved Critical this activation.<br>2ST+: This model gains Brutal Strike and Improved Critical this activation.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Infested-A": {
     "description": "When a Spawning Point model with Infested is destroyed, spawn up to four Dirty Rats from it before removing it.  These Dirty Rats form a Rat King Elite Gang.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
   },
-  "Infested-C": {
+  "Infested-E": {
     "description": "When a model with Infested is destroyed, spawn up to 4 Skull Points worth of monsters with the Vermin ability within 3 squares of it before removing it.",
     "version": 1.0,
     "hasErrata": "false",
@@ -1305,6 +1425,12 @@
         "sourceDescription": "Forgotten King Updated keyword."
       }
     ]
+  },
+  "Keep the Rum Flowing": {
+    "description": "A model with Keep The Rum Flowing may drink two potions per turn (both Hero and Consul), so long as the potions are different.  During the party''s power-up, if the model has no potion tokens, it suffers one wound.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
   },
   "Keep The Sake Flowing": {
     "description": "A model with Keep The Sake Flowing may drink two potions per turn (both Hero and Consul), so long as the potions are different.  During the party's power-up, if the model has no potion tokens, it suffers one wound.",
@@ -1388,6 +1514,12 @@
   },
   "Leadership": {
     "description": "If another Hero activates after this Hero, during the same turn, that Hero gains +1 action during the activation. This bonus action may only be used on support actions.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Learn Lilys Secret": {
+    "description": "Be within three squares of the Lily token when Lily is rescued in Scenario 4: Rescue Lily or Scenario 5: Devil Child. When this quest is accomplished, equip the Devil Island Map equipment card on the reverse side of this card. It may remain equipped for the entire campaign, unless you choose to discard it.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
@@ -1540,7 +1672,7 @@
       }
     ]
   },
-  "Mob-C": {
+  "Mob-E": {
     "description": "Add +1B ATT to this model's melee attacks for every other model with Mob in melee with the target, up to +3B ATT.",
     "version": 1.0,
     "hasErrata": "true",
@@ -1601,6 +1733,12 @@
     "hasErrata": "false",
     "errata": []
   },
+  "New Brew": {
+    "description": "When a model with New Brew activates, roll 1R and apply one of the following effects depending on the roll:<br>0 Stars: +1MO<br>1 Star: +1R STR<br>2+ Stars: This model''s attacks gain BANE",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "New Skull": {
     "description": "When a model with New Skull achieves a critical hit during an offensive action, spawn a Ghostflame adjacent to any Spawning Point if there are fewer than six Ghostflames in play.",
     "version": 2.0,
@@ -1620,7 +1758,7 @@
     "errata": []
   },
   "Nom Nom Nom": {
-    "description": "After a model with Nom Nom Nom! destroys a Naughtie, the model with Nom Nom Nom! Heals 2.",
+    "description": "After a model with Nom Nom Nom destroys a Naughtie, the model with Nom Nom Nom Heals 2.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
@@ -1733,7 +1871,13 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Pile-On-C": {
+  "Pig Feed": {
+    "description": "When a model with Pig Feed enters play, spawn one Spiker within three squares of each spawning point icon (four total).",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Pile-On-E": {
     "description": "+1R ATT if target is suffering Knockdown.",
     "version": 1.0,
     "hasErrata": "true",
@@ -1807,6 +1951,12 @@
         "sourceDescription": "Forgotten King Updated keyword."
       }
     ]
+  },
+  "Potion Pirate": {
+    "description": "A monster with Potion Pirate may use potions as if it were a Hero.  (It drinks blue and red potions during its own turn and green potions during the Hero turn.)",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
   },
   "Potion Stash": {
     "description": "A monster with Potion Stash may gain potion tokens when rolled, in the same manner as Heroes, up to the number indicated by X. The monster may spend potion tokens on abilities indicated on its card.",
@@ -1987,6 +2137,18 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Reckless-E": {
+    "description": "When a model with Reckless attacks, its target may score Criticals on their defending roll; if the enemy scores a Critical, this model suffers a wound.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Reckless-A": {
+    "description": "When this model rolls 0 stars during an attack, it suffers a wound.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Regenerate": {
     "description": "Roll 1B dice for every wound token on the models card and remove one token for each star rolled.",
     "version": 1.0,
@@ -2049,6 +2211,12 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Retrieve The Lost Treasure": {
+    "description": "In any scenario, while Kiji is on a treasure pile square, trade four loot from the backpack in order to draw a treasure card.<br></br>When this quest is accomplished, equip the Lost Coin equipment card on the reverse side of this card. It may remain equipped for the entire campaign, unless you choose to discard it.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Risen": {
     "description": "Models with the Risen ability may not be spawned. They may only enter play as a result of the Raise ability.",
     "version": 1.0,
@@ -2079,7 +2247,7 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Salty-C": {
+  "Salty-E": {
     "description": "A model with Salty gains +1R for each tentacles token on the target.",
     "version": 1.0,
     "hasErrata": "false",
@@ -2127,7 +2295,7 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Sense Weakness-C": {
+  "Sense Weakness-E": {
     "description": "A model with Sense Weakness gains +1G to offensive actions targeting a model with one or more status effects.",
     "version": 2.0,
     "hasErrata": "false",
@@ -2136,6 +2304,12 @@
   "Sentinel": {
     "description": "Models that are adjacent to a Sentinel structure add +1ST to all defense rolls.",
     "version": 1.99,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Serving Size": {
+    "description": "When equipped, place 6 tokens on this Treasure card, to represent 6 servings.  When the last token is discarded, discard this Treasure.",
+    "version": 2.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -2181,7 +2355,7 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Shiny Bauble-C": {
+  "Shiny Bauble-E": {
     "description": "When a boss sighting space is reached on the mighty monster chart, the Consul draws the top card of the loot deck and places it next to the mighty monster chart (discard loot that increases the number of potions that may be carried and redraw).  For the remainder of the game, all monsters with Shiny Bauble gain all bonuses from loot drawn in this way as if they had it equipped.  (Arena: This ability is triggered the first time you spawn a mini-boss.)",
     "version": 2.0,
     "hasErrata": "false",
@@ -2211,6 +2385,12 @@
         "sourceDescription": "Forgotten King Updated keyword."
       }
     ]
+  },
+  "Silverware": {
+    "description": "All Spikers in play gain +1G STR.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
   },
   "Skittish": {
     "description": "When a monster with Skittish receives a Move commands, it moves away from the closest Hero as far as it is able.",
@@ -2294,6 +2474,12 @@
       }
     ]
   },
+  "Smuggler": {
+    "description": "At the beginning of the game, draw three loot cards and one treasure card without looking at what they are.  Place them under the model''s card.  When this model is destroyed, you may discard all of the smuggled cards instead of spending a Princess Coin to return to play.  When the dungeon boss spawns you may equip the smuggled cards during the next power up phase.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Solo Spawn": {
     "description": "This solo is also a spawning point with the spawning pool listed below.  It follows commands as if it were a solo, and spawns as if it were a spawning point.  When this solo receives the move command, it moves directly away from the closest Hero.",
     "version": 2.0,
@@ -2349,7 +2535,7 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Spiteful Whispers-C": {
+  "Spiteful Whispers-E": {
     "description": "Heroes suffer -1ST WILL for each model with Spiteful Whispers adjacent to them.",
     "version": 2.0,
     "hasErrata": "false",
@@ -2411,7 +2597,7 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Spread The Love-C": {
+  "Spread The Love-E": {
     "description": "When a model with Spread The Love makes a successful offensive action, it may choose and apply one status effect on the target for each potion rolled.  These status effects are applied after fully resolving the action.",
     "version": 2.0,
     "hasErrata": "false",
@@ -2658,6 +2844,12 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Thwomp": {
+    "description": "Enemy models may attempt to move through a space containing a model with THWOMP.  If they do, the model with THWOMP immediately makes a STR 4ST attack against the enemy before the enemy moves through its space.  If the attack is successful, the enemy may not move through the space.  If the attack fails, the enemy model may move freely through all spaces containing the model with THWOMP (though it may not stop in the spaces).",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Toss Me": {
     "description": "If this model is targeted by an action with Throw, after resolving the results of the action, destroy this model. Volatile is triggered by Toss Me.",
     "version": 2.0,
@@ -2843,13 +3035,13 @@
     "errata": []
   },
   "Yoink-A": {
-    "description": "When a monster with Yoink! attacks a Hero and the Hero rolls stars for defense, the Hero must discard one equipped loot card at random, if able.",
+    "description": "When a monster with Yoink attacks a Hero and the Hero rolls stars for defense, the Hero must discard one equipped loot card at random, if able.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
   },
-  "Yoink-C": {
-    "description": "When a model with Yoink! achieves a critical success, its target must discard one equipped loot card at random, if able.",
+  "Yoink-E": {
+    "description": "When a model with Yoink achieves a critical success, its target must discard one equipped loot card at random, if able.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
