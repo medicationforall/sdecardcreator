@@ -586,6 +586,12 @@ cursor:move;
 	height:30px;
 }
 
+potionMod{
+	background:url('image/potion2.png') no-repeat 0px 3px;
+	background-size:40px 30px;
+	height: 30px;
+}
+
 .card span.stat{
 	text-shadow:2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px  1px 0 #000, 1px  1px 0 #000;
 	color:#fff;
