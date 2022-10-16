@@ -559,8 +559,8 @@
     "hasErrata": "false",
     "errata": []
   },
-  "A Curse On You!": {
-    "description": "When a model with A Curse On You! is destroyed, place a crystal token on the model that destroyed it.  When the model with the crystal token is destroyed, spawn a Walking Curse model in the square it had occupied.",
+  "A Curse On You": {
+    "description": "When a model with A Curse On You is destroyed, place a crystal token on the model that destroyed it.  When the model with the crystal token is destroyed, spawn a Walking Curse model in the square it had occupied.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
@@ -688,13 +688,13 @@
     "errata": []
   },
   "Dibs-A": {
-    "description": "When a Hero on this tile discards a loot card due to Yoink!, place a crystal token on this model.  This model gains +1ST STR for each crystal token on it.",
+    "description": "When a Hero on this tile discards a loot card due to Yoink, place a crystal token on this model.  This model gains +1ST STR for each crystal token on it.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
   },
   "Dibs-E": {
-    "description": "When a Hero on this tile discards a loot card due to the Yoink! ability, a model with Dibs may choose to equip the discarded loot as if it were a Hero.  Equipped loot is discarded when this model is destroyed.",
+    "description": "When a Hero on this tile discards a loot card due to the Yoink ability, a model with Dibs may choose to equip the discarded loot as if it were a Hero.  Equipped loot is discarded when this model is destroyed.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
@@ -772,7 +772,7 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Eat All The Dumplings!": {
+  "Eat All The Dumplings": {
     "description": "At the end of Scenario 3: Food Fight or Scenario 4: Rescue Lily, have at least two dumpling tokens on Adzuki''s card.<br></br>When this quest is accomplished, equip the Obaa-San Dumpling equipment card on the reverse side of this card. It may remain equipped for the entire campaign, unless you choose to discard it.",
     "version": 2.0,
     "hasErrata": "false",
@@ -1758,7 +1758,7 @@
     "errata": []
   },
   "Nom Nom Nom": {
-    "description": "After a model with Nom Nom Nom! destroys a Naughtie, the model with Nom Nom Nom! Heals 2.",
+    "description": "After a model with Nom Nom Nom destroys a Naughtie, the model with Nom Nom Nom Heals 2.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
@@ -3035,13 +3035,13 @@
     "errata": []
   },
   "Yoink-A": {
-    "description": "When a monster with Yoink! attacks a Hero and the Hero rolls stars for defense, the Hero must discard one equipped loot card at random, if able.",
+    "description": "When a monster with Yoink attacks a Hero and the Hero rolls stars for defense, the Hero must discard one equipped loot card at random, if able.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
   },
   "Yoink-E": {
-    "description": "When a model with Yoink! achieves a critical success, its target must discard one equipped loot card at random, if able.",
+    "description": "When a model with Yoink achieves a critical success, its target must discard one equipped loot card at random, if able.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
