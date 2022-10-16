@@ -633,13 +633,13 @@
     "errata": []
   },
   "Death Curse-A": {
-    "description": "When one or more models in this gang ends a move adjacent to a Hero, the party must select one model in the gang with Death Curse.  The selected model is destroyed and the party rolls 1G.  Apply one of the below status effects to the adjacent Hero depending on the roll:<br>0ST:  Bane<br>0ST:  Hex<br>2ST: Ice<br>3ST: Poison<br>4ST:  Immobile",
+    "description": "When one or more models in this gang ends a move adjacent to a Hero, the party must select one model in the gang with Death Curse.  The selected model is destroyed and the party rolls 1G.  Apply one of the below status effects to the adjacent Hero depending on the roll:<br>0ST:  Bane<br>1ST:  Hex<br>2ST: Ice<br>3ST: Poison<br>4ST:  Immobile",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
   },
   "Death Curse-E": {
-    "description": "When a model with Death Curse is destroyed, roll 1G and place the corresponding status effect token on the square the model had occupied.  If a Hero enters the square with the status effect token, remove the token and the Hero gains the status effect at the end of the current activation:<br>0ST:  Bane<br>0ST:  Hex<br>2ST: Ice<br>3ST: Poison<br>4ST:  Immobile",
+    "description": "When a model with Death Curse is destroyed, roll 1G and place the corresponding status effect token on the square the model had occupied.  If a Hero enters the square with the status effect token, remove the token and the Hero gains the status effect at the end of the current activation:<br>0ST:  Bane<br>1ST:  Hex<br>2ST: Ice<br>3ST: Poison<br>4ST:  Immobile",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
@@ -1518,7 +1518,7 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Learn Lily's Secret": {
+  "Learn Lilys Secret": {
     "description": "Be within three squares of the Lily token when Lily is rescued in Scenario 4: Rescue Lily or Scenario 5: Devil Child. When this quest is accomplished, equip the Devil Island Map equipment card on the reverse side of this card. It may remain equipped for the entire campaign, unless you choose to discard it.",
     "version": 2.0,
     "hasErrata": "false",
