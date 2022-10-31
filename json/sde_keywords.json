@@ -204,6 +204,12 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Biting Wind": {
+    "description": "When a model with Biting Wind is destroyed, the model that destroyed it gains ICE at the end of its activation.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Black Ice": {
     "description": "Enemy models that end an activation within 2 squares of this model are moved two squares directly away from the model with Black Ice.",
     "version": 1.0,
@@ -467,9 +473,15 @@
       }
     ]
   },
-  "Clever": {
-    "description": "If a challenge card springs a trap on the hero party, you can instead, take a wound and ignore the effects of the trap.",
-    "version": 1.99,
+  "Clever-A": {
+    "description": "When a Challenge card is drawn with a Trap effect, a model with Clever may suffer a wound to canccel the Trap effect.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Clever-C": {
+    "description": "When a Boss Sighting space is reached, a model with Clever may suffer a wound to cancel the Boss Sighting.",
+    "version": 2.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -542,7 +554,7 @@
     ]
   },
   "Crush": {
-    "description": "TBD.  Estimated: A model with Crush damages models suffering Ice as if it has Massive Damage.",
+    "description": "A model with Crush gains Massive Damage if its target was suffering Ice when it was targeted.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
@@ -1012,6 +1024,18 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Frosty Imps": {
+    "description": "Spawn Frost Imps within three squares of the dungeon boss until there are six Frost Imps in play.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Frosty Imps-A": {
+    "description": "When a model with Frosty Imps spawns, spawn Frost Imps within three squres of it until there are six Frost Imps in play.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Fueled by Fire": {
     "description": "A model with Fueled by Fire adds 1R to all offensive rolls for each model suffering Fire.",
     "version": 2.0,
@@ -1156,6 +1180,12 @@
   "Have a Heart": {
     "description": "A model with Have a Heart benefits from hearts it rolls on failed actions, as well as successful actions.",
     "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Headless Curse": {
+    "description": "She must lash out at a hero in her party once per activation. If she doesn’t discard a princess coin.",
+    "version": 2.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -1453,8 +1483,15 @@
   "Kitty Claws": {
     "description": "Beatrix immediately makes one Melee Attack against any model that moves into a square adjacent to Beatrix During it’s activation.",
     "version": 1.99,
-    "hasErrata": "false",
-    "errata": []
+    "hasErrata": "true",
+    "errata": [
+		{
+			"description": "Immediately make one Melee Attack against any enemy model that moves into a square adjacent to a model with Kitty Claws.",
+			"version": 2.0,
+			"source": "",
+			"sourceDescription": "Freyjan Stole (Treasure)"
+		}
+	]
   },
   "Knockdown": {
     "description": "A model or effect with Knockdown places a Knockdown counter on any model it damages. A model suffering Knockdown may not move or perform any other action until it spends one action point to remove the counter and stand up.",
@@ -1715,6 +1752,12 @@
     "hasErrata": "false",
     "errata": []
   },
+  "My Beautiful Skull": {
+    "description": "If she kills a friendly model from Headless Curse, search the loot deck for “My Beautiful Skull” and equip it, shuffling the deck afterwards.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "My Pet": {
     "description": "A model with My Pet may not be targeted with offensive actions while Daemonus is in play.",
     "version": 2.0,
@@ -1783,6 +1826,12 @@
   },
   "On The Move": {
     "description": "If this model began its activation completely blocking a doorway, it may not end its activation completely blocking a doorway.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "One Rich Little Lich": {
+    "description": "TBD.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
@@ -2846,6 +2895,12 @@
   },
   "Thwomp": {
     "description": "Enemy models may attempt to move through a space containing a model with THWOMP.  If they do, the model with THWOMP immediately makes a STR 4ST attack against the enemy before the enemy moves through its space.  If the attack is successful, the enemy may not move through the space.  If the attack fails, the enemy model may move freely through all spaces containing the model with THWOMP (though it may not stop in the spaces).",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Tiny Cold Hands": {
+    "description": "Spawn one Frost Imp adjacent to each Hero, up to a maximum of six Frost Imps in play.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []

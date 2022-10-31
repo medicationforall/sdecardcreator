@@ -251,7 +251,7 @@ function KeywordStore(keywords){
    */
   this.findDice=function(text){
     //regular expression - https://regex101.com/#javascript
-    var re = /(([+-]?[0-9]+)(RG|[RBGOP]|ST|SW|MI|MA|AC|MO|HE|SH))\b/g;
+    var re = /(([+-]?[0-9]+)(RG|[RBGOP]|ST|SW|MI|MA|AC|MO|HE|SH|PO))\b/g;
 
     text = text.replace(re,function(match,p1,p2,p3,p4){
       var c="";
@@ -285,6 +285,8 @@ function KeywordStore(keywords){
         c+="heartMod";
       }else if(p3==='SH'){
         c+="shieldMod";
+      }else if(p3==='PO'){
+        c+="potionMod";
       }
       return '<span class="'+c+'">'+(p2==='0'?'&nbsp;':p2)+'</span>';
     });
