@@ -1183,6 +1183,12 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Headless Curse": {
+    "description": "She must lash out at a hero in her party once per activation. If she doesn’t discard a princess coin.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Heal": {
     "description": "A model affected by Heal may remove a number of wound counters or a number of status effect counters equal to the value of X.",
     "version": 1.0,
@@ -1746,6 +1752,12 @@
     "hasErrata": "false",
     "errata": []
   },
+  "My Beautiful Skull": {
+    "description": "If she kills a friendly model from Headless Curse, search the loot deck for “My Beautiful Skull” and equip it, shuffling the deck afterwards.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "My Pet": {
     "description": "A model with My Pet may not be targeted with offensive actions while Daemonus is in play.",
     "version": 2.0,
@@ -1814,6 +1826,12 @@
   },
   "On The Move": {
     "description": "If this model began its activation completely blocking a doorway, it may not end its activation completely blocking a doorway.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "One Rich Little Lich": {
+    "description": "TBD.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
