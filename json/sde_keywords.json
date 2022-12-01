@@ -802,6 +802,20 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Enthralled": {
+    "description": "A Pet with Enthralled may only be brought into play with the Enthralling Elixir potion action.  Only one Enthralled Minion may be in play at a time.  While this monster is being used as an Enthralled Minion it may not be spawned, but if the Enthralled Minion is destroyed the monster may be spawned normally again.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  
+  
+  
+  
+  
+  
+  A Pet with Enthralled may only be brought into play with the Enthralling Elixir potion action.  Only one Enthralled Minion may be in play at a time.  While this monster is being used as an Enthralled Minion it may not be spawned, but if the Enthralled Minion is destroyed the monster may be spawned normally again.
+  
   "Exorcist": {
     "description": "A model with Exorcist may equip one Prayer Slip treasure to each slot for free (the slot may still be used to equip other loot or treasure).  A model with Exorcist begins the game with four Prayer Slips equipped: one in each slot.",
     "version": 2.0,
@@ -1103,6 +1117,12 @@
     "hasErrata": "false",
     "errata": []
   },
+  "A Good Head On My Shoulders": {
+    "description": "This model ignores the Headless Curse ability.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Grabby": {
     "description": "No enemy model can move while it is adjacent to a model with Grabby.",
     "version": 1.99,
@@ -1184,7 +1204,7 @@
     "errata": []
   },
   "Headless Curse": {
-    "description": "She must lash out at a hero in her party once per activation. If she doesn’t discard a princess coin.",
+    "description": "During the activation of a model with Headless Curse, it must make at least one basic offenseive action against another Hero.  If it does not, discard a Princess Coin.  If a model with Headless Curse destroys another Hero with a basic offensive action, search the Loot Deck for the "My Beautiful Skull" Loot and automatically equip it, then shuffle the deck.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
@@ -1455,6 +1475,12 @@
         "sourceDescription": "Forgotten King Updated keyword."
       }
     ]
+  },
+  "Jingle Jingle": {
+    "description": "After enemies spawn this Hero may move up to three squares.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
   },
   "Keep the Rum Flowing": {
     "description": "A model with Keep The Rum Flowing may drink two potions per turn (both Hero and Consul), so long as the potions are different.  During the party''s power-up, if the model has no potion tokens, it suffers one wound.",
@@ -1753,7 +1779,7 @@
     "errata": []
   },
   "My Beautiful Skull": {
-    "description": "If she kills a friendly model from Headless Curse, search the loot deck for “My Beautiful Skull” and equip it, shuffling the deck afterwards.",
+    "description": "When a Hero with My Beautiful Skull is selected at the start of the game, take the "My Beautiful Skull" Loot card along with the top nineteen cards of the Loot deck, shuffle them together, and place them on top of the Loot deck (so the My Beautiful Skull Loot card is somewhere in the top twenty Loot).",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
@@ -1831,7 +1857,7 @@
     "errata": []
   },
   "One Rich Little Lich": {
-    "description": "TBD.",
+    "description": "When this Hero is chosen, replace all Princess Coins with Lich Artifacts (use Crystal Tokens, place the box side up and draw randomly so you do not know what color they are).  These work like Princess Coins for bringing back Heroes, losing the game, and abilities that trigger off of Princess Coins.  When a Hero is brought back using a Lich Artifact, draw a random Crystal Token and place it on the Hero''s card; it will remain there for the remainder of the game (in both Explore and Arcade).  The Lich Artifact will have an effect dependent on its color:<br>RUBY:+1HE,+1R WILL<br>SAPPHIRE:+1R ARM<br>EMERALD:+2MO,+1R DEX<br>CITRINE:+1HE,+1R STR<br>AMETHYST:-1HE.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
@@ -2092,6 +2118,12 @@
         "sourceDescription": "Forgotten King"
       }
     ]
+  },
+  "Pumpkin Patch": {
+    "description": "When a model with Pumpkin Patch spawns, spawn two Rotten Pumpkins adjacent to it.  Whenever a model with Pumpkin Patch is wounded by a Critical Hit, spawn a Rotten Pumpkin adjacent to it.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
   },
   "Push": {
     "description": "A model targeted by Push may be moved a number of squares up to the value of X away from the attacker. A model moved by Push must end its move farther away from the attacker than it began.",
