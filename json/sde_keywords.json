@@ -1196,7 +1196,7 @@
     "errata": []
   },
   "Headless Curse": {
-    "description": "During the activation of a model with Headless Curse, it must make at least one basic offenseive action against another Hero.  If it does not, discard a Princess Coin.  If a model with Headless Curse destroys another Hero with a basic offensive action, search the Loot Deck for the "My Beautiful Skull" Loot and automatically equip it, then shuffle the deck.",
+    "description": "During the activation of a model with Headless Curse, it must make at least one basic offenseive action against another Hero.  If it does not, discard a Princess Coin.  If a model with Headless Curse destroys another Hero with a basic offensive action, search the Loot Deck for the \"My Beautiful Skull\" Loot and automatically equip it, then shuffle the deck.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
@@ -1771,7 +1771,7 @@
     "errata": []
   },
   "My Beautiful Skull": {
-    "description": "When a Hero with My Beautiful Skull is selected at the start of the game, take the "My Beautiful Skull" Loot card along with the top nineteen cards of the Loot deck, shuffle them together, and place them on top of the Loot deck (so the My Beautiful Skull Loot card is somewhere in the top twenty Loot).",
+    "description": "When a Hero with My Beautiful Skull is selected at the start of the game, take the \"My Beautiful Skull\" Loot card along with the top nineteen cards of the Loot deck, shuffle them together, and place them on top of the Loot deck (so the My Beautiful Skull Loot card is somewhere in the top twenty Loot).",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
