@@ -808,14 +808,6 @@
     "hasErrata": "false",
     "errata": []
   },
-  
-  
-  
-  
-  
-  
-  A Pet with Enthralled may only be brought into play with the Enthralling Elixir potion action.  Only one Enthralled Minion may be in play at a time.  While this monster is being used as an Enthralled Minion it may not be spawned, but if the Enthralled Minion is destroyed the monster may be spawned normally again.
-  
   "Exorcist": {
     "description": "A model with Exorcist may equip one Prayer Slip treasure to each slot for free (the slot may still be used to equip other loot or treasure).  A model with Exorcist begins the game with four Prayer Slips equipped: one in each slot.",
     "version": 2.0,
