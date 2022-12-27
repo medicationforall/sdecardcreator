@@ -1043,10 +1043,17 @@
     "errata": []
   },
   "Fueled by Fire": {
-    "description": "A model with Fueled by Fire adds 1R to all offensive rolls for each model suffering Fire.",
+    "description": "A model with Fueled by Fire adds 1R to all offensive rolls for each model suffering FIRE.",
     "version": 2.0,
-    "hasErrata": "false",
-    "errata": []
+    "hasErrata": "true",
+    "errata": [
+		{
+				"description": "A model with Fueled by Fire adds +1R to all offensive rolls for each enemy model suffering FIRE.",
+				"version": 2.0,
+				"source": "",
+				"sourceDescription": "2.0 Updated keyword: Stocking Full of Coal."
+		}
+	]
   },
   "Fungal Fury": {
     "description": "Enemy models that end a Push within three squares and LoS of one or more models with Fungal Fury suffer one wound.",
@@ -1094,6 +1101,18 @@
   "Ghostmancer": {
     "description": "Whenever a model with Ghostmancer inflicts a wound, place a Ghost model adjacent to the wounded model.",
     "version": 1.99,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Giddyup": {
+    "description": "TBD.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Gifts of Darkness": {
+    "description": "TBD.",
+    "version": 2.0,
     "hasErrata": "false",
     "errata": []
   },
@@ -1235,6 +1254,12 @@
   },
   "Heart Strike": {
     "description": "When making an offense roll, any hearts rolled count as both a heart and a star.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Help Meeeee!": {
+    "description": "TBD.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
@@ -1470,6 +1495,12 @@
   },
   "Jingle Jingle": {
     "description": "After enemies spawn this Hero may move up to three squares.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Keep the Drinks Flowing": {
+    "description": "A model with Keep The Rum Flowing may drink two potions per turn (both Hero and Consul), so long as the potions are different.  During the party''s power-up, if the model has no potion tokens, it suffers one wound.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
@@ -1788,6 +1819,12 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Naughty or Nice": {
+    "description": "If the Dungeon Boss is defending against an offensive action and wins the roll, the model making the offensive action suffers one wound.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Never-Lost": {
     "description": "Boss Sightings do not affect friendly Heroes within three squares and Line o Sight of this model.<br>(Arcade: after drawing a Challenge Card but before resolving its effects, this Pet’s Master may discard a potion to discard the Challenge Card and draw a new one.)",
     "version": 1.99,
@@ -2002,6 +2039,12 @@
   },
   "POP": {
     "description": "When a model with POP is destroyed, all adjacent enemies suffer one damage, and all friendly Creeps in Line of Sight may immediately move four squares.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Pork and Giftst": {
+    "description": "TBD.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
@@ -2412,6 +2455,12 @@
   },
   "Share a Sip": {
     "description": "If another hero activates after this hero during the same turn, that hero gains +3 Movement Points during that activation.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Sharp Tusks": {
+    "description": "All Truffle Hogs gain KNOCKDOWN.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
@@ -3074,6 +3123,12 @@
   "Weak": {
     "description": "A model or effect with Weak places a Weak counter on any model it damages. A model suffering Weak discards the highest result rolled anytime it makes a roll using its ATT attribute.",
     "version": 1.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Well Wrapped": {
+    "description": "All Dark Presents gain +1ST ARM.",
+    "version": 2.0,
     "hasErrata": "false",
     "errata": []
   },
