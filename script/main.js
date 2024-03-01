@@ -30,6 +30,8 @@ $.fn.extend({
 });
 
 
+var languageChoice = "en";
+
 /**
  * Application main method.
  */

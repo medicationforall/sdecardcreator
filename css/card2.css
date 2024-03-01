@@ -372,27 +372,111 @@ cursor:move;
 	z-index:2;
 }
 
-.card .stats .stat.STR{
-	background:url('image/stats/str-banner.png') no-repeat;
+.card .stats .en .stat.STR{
+	background:url('image/stats/en/str.png') no-repeat;
 	background-size:140px;
 }
 
-.card .stats .stat.ARM{
-	background:url('image/stats/arm-banner.png') no-repeat;
+.card .stats .en .stat.ARM{
+	background:url('image/stats/en/arm.png') no-repeat;
 	background-size:140px;
 }
 
-.card .stats .stat.WILL{
-	background:url('image/stats/will-banner.png') no-repeat;
+.card .stats .en .stat.WILL{
+	background:url('image/stats/en/will.png') no-repeat;
 	background-size:140px;
 }
 
-.card .stats .stat.DEX{
-	background:url('image/stats/dex-banner.png') no-repeat;
+.card .stats .en .stat.DEX{
+	background:url('image/stats/en/dex.png') no-repeat;
 	background-size:140px;
 }
+
+.card .stats .de .stat.STR{
+	background:url('image/stats/en/str.png') no-repeat;
+	background-size:140px;
+}
+
+.card .stats .de .stat.RUS{
+	background:url('image/stats/en/rus.png') no-repeat;
+	background-size:140px;
+}
+
+.card .stats .de .stat.WILL{
+	background:url('image/stats/en/will.png') no-repeat;
+	background-size:140px;
+}
+
+.card .stats .de .stat.GES{
+	background:url('image/stats/en/ges.png') no-repeat;
+	background-size:140px;
+}
+
+.card .stats .es .stat.FUE{
+	background:url('image/stats/en/fue.png') no-repeat;
+	background-size:140px;
+}
+
+.card .stats .es .stat.ARM{
+	background:url('image/stats/en/arm.png') no-repeat;
+	background-size:140px;
+}
+
+.card .stats .es .stat.VOL{
+	background:url('image/stats/en/vol.png') no-repeat;
+	background-size:140px;
+}
+
+.card .stats .es .stat.DES{
+	background:url('image/stats/en/des.png') no-repeat;
+	background-size:140px;
+}
+
+.card .stats .fr .stat.FOR{
+	background:url('image/stats/en/for.png') no-repeat;
+	background-size:140px;
+}
+
+.card .stats .fr .stat.ARM{
+	background:url('image/stats/en/arm.png') no-repeat;
+	background-size:140px;
+}
+
+.card .stats .fr .stat.VOL{
+	background:url('image/stats/en/vol.png') no-repeat;
+	background-size:140px;
+}
+
+.card .stats .fr .stat.DEX{
+	background:url('image/stats/en/dex.png') no-repeat;
+	background-size:140px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .card .stats .stat{
+	background:url('image/stats/banner.png') no-repeat;
+	background-size:140px;
 	height:70px;
 }
 

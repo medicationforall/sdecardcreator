@@ -241,7 +241,24 @@ function KeywordStore(keywords){
    *
    */
   this.findStats=function(text){
-    var re = /\b(STR|WILL|DEX|ARM)\b/g;
+    var re;
+	var en = /\b(STR|ARM|WILL|DEX)\b/g;
+	var de = /\b(STR|RUS|WILL|DEX)\b/g;
+	var es = /\b(FUE|ARM|VOL|DES)\b/g;
+	var fr = /\b(FOR|ARM|VOL|DEX)\b/g;
+
+	if(languageChoice == "en") {
+		re = en;
+	} else if(languageChoice == "de") {
+		re = de;
+	} else if(languageChoice == "es") {
+		re = es;
+	} else if(languageChoice == "fr") {
+		re = fr;
+	} else {
+		re = en;
+	}
+	
     text = text.replace(re,'<span class="stat $1">$1</span>');
     return text;
   };
