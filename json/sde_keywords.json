@@ -1897,6 +1897,12 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Oni Guards": {
+    "description": "When Bomechan is the Dungeon Boss, add one Ijin Oni to the spawning pool for the duration of the game.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Oracle": {
     "description": "When this model wins an offense roll, if it rolled no potions or hearts, it may choose to count as having rolled one potion or one heart.",
     "version": 2.0,
@@ -2043,7 +2049,7 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Pork and Giftst": {
+  "Pork and Gifts": {
     "description": "TBD.",
     "version": 2.0,
     "hasErrata": "false",
@@ -2093,8 +2099,14 @@
       }
     ]
   },
-  "Predator": {
+  "Predator-E": {
     "description": "When an enemy model moves out of a square that is adjacent to a model with Predator, the model with Predator may immediately make a Melee Attack against that model.",
+    "version": 1.99,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Predator-A": {
+    "description": "When an enemy model moves out of a square that is adjacent to a non-minion model with Predator, the model with Predator may immediately make a Basic Attack against that model.",
     "version": 1.99,
     "hasErrata": "false",
     "errata": []
@@ -2215,6 +2227,18 @@
         "sourceDescription": "Forgotten King Updated keyword."
       }
     ]
+  },
+  "Rampage-E": {
+    "description": "A model with Rampage gains +1B while making offensive actions for each spawning point that was destroyed this game.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Rampage-A": {
+    "description": "A model with Rampge gains +1ST while making offensive actions for each spawning point that was destroyed this game.",
+    "version": 2.0,
+    "hasErrata": "false",
+    "errata": []
   },
   "Range": {
     "description": "This ability allows the model to attack an enemy up to X squares away.",
