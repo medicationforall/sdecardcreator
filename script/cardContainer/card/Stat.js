@@ -24,7 +24,8 @@
  * @class
  */
 function Stat(parent, name, permissions, value){
-  this.template='<div class="'+permissions+' stat '+name+'">'+
+  this.template='<div class="banner">' +
+  '<div class="'+permissions+' stat '+languageChoice+' '+name+'">'+
   '<div class="offense">0</div>'+
   '<div class="defense"></div>'+
   '<div class="diceList">'+
@@ -34,6 +35,7 @@ function Stat(parent, name, permissions, value){
   '<div class="dice green">0</div>'+
   '<div class="dice orange">0</div>'+
   '<div class="dice purple">0</div>'+
+  '</div>'+
   '</div>'+
   '</div>';
 

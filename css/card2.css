@@ -372,28 +372,105 @@ cursor:move;
 	z-index:2;
 }
 
-.card .stats .stat.STR{
-	background:url('image/stats/str-banner.png') no-repeat;
+.card .banner{
+	background:url('image/stats/banner.png') no-repeat;
 	background-size:140px;
 }
 
-.card .stats .stat.ARM{
-	background:url('image/stats/arm-banner.png') no-repeat;
-	background-size:140px;
+.card .stats .stat.en.STR{
+	background:url('image/stats/en/str.png') no-repeat;
+	background-size:70px;
+	background-position: 50% 10%;
 }
 
-.card .stats .stat.WILL{
-	background:url('image/stats/will-banner.png') no-repeat;
-	background-size:140px;
+.card .stats .stat.en.ARM{
+	background:url('image/stats/en/arm.png') no-repeat;
+	background-size:70px;
+	background-position: 50% 10%;
 }
 
-.card .stats .stat.DEX{
-	background:url('image/stats/dex-banner.png') no-repeat;
-	background-size:140px;
+.card .stats .stat.en.WILL{
+	background:url('image/stats/en/will.png') no-repeat;
+	background-size:70px;
+	background-position: 50% 10%;
 }
 
-.card .stats .stat{
-	height:70px;
+.card .stats .stat.en.DEX{
+	background:url('image/stats/en/dex.png') no-repeat;
+	background-size:70px;
+	background-position: 50% 10%;
+}
+
+.card .stats .stat.de.STR{
+	background:url('image/stats/de/str.png') no-repeat;
+	background-size:70px;
+	background-position: 50% 10%;
+}
+
+.card .stats .stat.de.ARM{
+	background:url('image/stats/de/rus.png') no-repeat;
+	background-size:70px;
+	background-position: 50% 10%;
+}
+
+.card .stats .stat.de.WILL{
+	background:url('image/stats/de/will.png') no-repeat;
+	background-size:70px;
+	background-position: 50% 10%;
+}
+
+.card .stats .stat.de.DEX{
+	background:url('image/stats/de/ges.png') no-repeat;
+	background-size:70px;
+	background-position: 50% 10%;
+}
+
+.card .stats .stat.es.STR{
+	background:url('image/stats/es/fue.png') no-repeat;
+	background-size:70px;
+	background-position: 50% 10%;
+}
+
+.card .stats .stat.es.ARM{
+	background:url('image/stats/es/arm.png') no-repeat;
+	background-size:70px;
+	background-position: 50% 10%;
+}
+
+.card .stats .stat.es.WILL{
+	background:url('image/stats/es/vol.png') no-repeat;
+	background-size:70px;
+	background-position: 50% 10%;
+}
+
+.card .stats .stat.es.DEX{
+	background:url('image/stats/es/des.png') no-repeat;
+	background-size:70px;
+	background-position: 50% 10%;
+}
+
+.card .stats .stat.fr.STR{
+	background:url('image/stats/fr/for.png') no-repeat;
+	background-size:70px;
+	background-position: 50% 10%;
+}
+
+.card .stats .stat.fr.ARM{
+	background:url('image/stats/fr/arm.png') no-repeat;
+	background-size:70px;
+	background-position: 50% 10%;
+}
+
+.card .stats .stat.fr.WILL{
+	background:url('image/stats/fr/vol.png') no-repeat;
+	background-size:70px;
+	background-position: 50% 10%;
+}
+
+.card .stats .stat.fr.DEX{
+	background:url('image/stats/fr/dex.png') no-repeat;
+	background-size:70px;
+	background-position: 50% 10%;
 }
 
 .card .stats .stat div{
