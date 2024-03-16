@@ -56,20 +56,22 @@ function CardControl(){
   		'Border '+
   		'<select name="region">'+
   			'<option value="blue">Blue</option>'+
-			
 			'<option value="red">Red</option>'+
   			'<option value="green">Green</option>'+
   			'<option value="purple">Purple</option>'+
-  			
-			'<option value="yellow">Yellow</option>'+
+  			'<option value="yellow">Yellow</option>'+
 			'<option value="orange">Orange</option>'+
 			'<option value="brown">Brown</option>'+
 			'<option value="pink">Pink</option>'+
-			
 			'<option value="white">Gray</option>'+
 			'<option value="black">White</option>'+
 			'<option value="gray">Black</option>'+
 			
+			'<option value="classicBlue">Classic Blue</option>'+
+			'<option value="classicRed">Classic Red</option>'+
+  			'<option value="classicGreen">Classic Green</option>'+
+  			'<option value="classicPurple">Classic Purple</option>'+
+  			'<option value="classicYellow">Classic Yellow</option>'+
   		'</select>'+
   	'</div>'+
 
