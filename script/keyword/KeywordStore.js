@@ -214,7 +214,7 @@ function KeywordStore(keywords){
 		  var itemTemplate = '<div class="keyword '+keyClass.toUpperCase()+'" data-key="'+key+'">'+
 		  '<span class="keyword '+keyClass.toUpperCase()+'"></span>'+
 		  '<span class="name">'+key+'</span> '+
-		  '<span class="description">('+parsedDescription+')</span>'+
+		  '<span class="description">'+parsedDescription+'</span>'+
 		  '</div>';
 
 		  $(".cardGroup.selected .card .back .keywords").append(backTemplate);

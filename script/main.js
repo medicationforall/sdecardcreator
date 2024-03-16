@@ -92,7 +92,7 @@ function applyLanguageToDefinitions() {
 	for(var x=0; x < elements.length; x++) {
 		var element = elements[x];
 		
-		var eValue = element.innerText;
+		var eValue = element.innerHTML;
 		element.innerHTML = findStats(eValue);
 		var test = "";
 	}
@@ -103,7 +103,7 @@ function applyLanguageToDescriptions() {
 	for(var x=0; x < elements.length; x++) {
 		var element = elements[x];
 		
-		var eValue = element.innerText;
+		var eValue = element.innerHTML;
 		element.innerHTML = findStats(eValue);
 		var test = "";
 	}
