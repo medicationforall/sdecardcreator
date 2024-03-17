@@ -43,27 +43,6 @@ function changeLanguageFromTo(previousLanguage, nextLanguage) {
 	updateStatLanguage(previousLanguage, nextLanguage);
 }
 
-function updateStatLanguage(previousLanguage, nextLanguage) {
-	var elements = document.getElementsByClassName(previousLanguage);
-	var stat = 0;
-	
-	while(elements.length > 0) {
-		var element = elements[0];
-		element.classList.add('stat');
-		element.classList.replace(previousLanguage, nextLanguage);		
-		if(stat == 0) {
-			element.classList.add('STR');
-		} else if(stat == 1) {
-			element.classList.add('ARM');
-		} else if(stat == 2) {
-			element.classList.add('WILL');
-		} else if(stat == 3) {
-			element.classList.add('DEX');
-		}
-		stat++;
-	}
-}
-
 function updateKeywordLanguage() {
 	stripStatsFromKeywords();
 	
@@ -364,8 +343,6 @@ function applyLanguageToDescriptions() {
 		var test = "";
 	}
 }
-
-//Test phrase: STR WILL DEX ARM FOR RUS FUE VOL DES GES
 
  function findStats(text){
     var re;
