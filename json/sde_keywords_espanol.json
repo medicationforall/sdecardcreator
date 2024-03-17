@@ -24,13 +24,13 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Alchemy": {
-    "description": "Turn any hearts rolled into potions.",
+  "Alquimia": {
+    "description": "Convierte los corazones obtenidos en pociones.",
     "version": 1.5,
     "hasErrata": "true",
     "errata": [
       {
-        "description": "When a model with Alchemy rolls a heart they may choose to gain a potion instead.",
+        "description": "Cuando una miniatura con Alquimia saca un Corazón en una tirada, puede recibir 1 Poción en su lugar.",
         "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
@@ -129,19 +129,19 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Backlash": {
-    "description": "If a model with Backlash exceeds an attack roll with their defense roll the attacker takes one wound. Wounds caused by Backlash do not advance the Power Gauge.",
+  "Contragolpe": {
+    "description": "Si un modelo con Contragolpe supera una tirada ofensiva con su tirada defensiva, la miniatura atacante recibe una Herida. Las Heridas causadas por Contragolpe no  advance the Power Gauge.",
     "version": 1,
     "hasErrata": "true",
     "errata": [
       {
-        "description": "If a model with Backlash exceeds an offense roll with their defense roll the attacker takes one wound.",
+        "description": " Si un modelo con Contragolpe supera una tirada ofensiva con su tirada defensiva, la miniatura atacante recibe una Herida.",
         "version": 1.99,
         "source": "https://www.kickstarter.com/projects/1257458293/super-dungeon-explore-forgotten-king/posts/998856",
         "sourceDescription": "Kickstarter update 61"
       },
       {
-        "description": "When a model with Backlash is targeted by an offensive action and wins the defense roll, the model making the Offense roll suffers one wound. A model may not draw a loot card for destroying a model due to Backlash.",
+        "description": "Cuando una minatura con Contragolpe es seleccionada como objetivo de una acción ofensiva y gana su tirada defensiva, la miniatura que ha realizado la tirada ofensiva sufre 1 Herida. Al destruir una miniatura con el daño provocado por un Contragolpe no se roba carta de Botín.",
         "version": 1.991,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
@@ -167,21 +167,21 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Bane": {
-    "description": "A model suffering Bane discards the highest result rolled anytime it makes an offense roll.",
+  "BANE Estrago": {
+    "description": " Una miniatura afectada por Estrago debe descartar el resultado más alto obtenido en cada tirada defensiva que haga.",
     "version": 1.5,
     "hasErrata": "true",
     "errata": [
       {
-        "description": "A model suffering Bane discards the highest result rolled anytime it makes a defense roll. (Arcade: A monster suffering Bane Reduces its ARM by 0ST.)",
+        "description": "Una miniatura afectada por Estrago debe descartar el resultado más alto obtenido en cada tirada defensiva que haga. (En el modo Arcade, un monstruo que sufre Estrago reduce su ARM en 1ST).",
         "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword"
       }
     ]
   },
-  "Bane Aura": {
-    "description": "Monsters with RUBY affinity that are within 2 squares of Shallow Grave gain Bane.",
+  "Aura de estrago": {
+    "description": "Los monstruos con afinidad RUBY que estén a 2 casillas o menos de distancia de la Tumba poco profunda ganan BANE.",
     "version": 1.99,
     "hasErrata": "false",
     "errata": []
@@ -192,8 +192,8 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Berserk": {
-    "description": "During its activation a model with Berserk may make a single Melee Attack costing no action points.",
+  "Berserker": {
+    "description": "Durante su activación, una miniatura Berserker puede efectuar un único Ataque cuerpo a cuerpo que no le cuesta puntos de acción.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
@@ -283,21 +283,21 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Bone Pile": {
-    "description": "When this model is destroyed leave a Bone Pile counter in the same square it occupied. This counter is ignored for purposes of movement and line of sight. A model may spend two points of speed to stomp on a Bone Pile counter in their square to remove it from play.",
+  "Montón de huesos": {
+    "description": "Cuando la miniatura es destruida deja un contador de Montón de huesos en la misma casilla. Este contador se ignora para movimientos y líneas de visión. Una miniatura puede usar 2 puntos de movimiento para pisotear sobre el Montón de huesos en su casilla para eliminarlo del tablero.",
     "version": 1,
     "hasErrata": "true",
     "errata": [
       {
-        "description": "When a model with Bone Pile is destroyed replace it with a Bone Pile Token. If all Bone Piles are already on the dungeon map move the Bone Pile furthest from the Heroes to the new square. Enemy models may spend 2 movement points to remove an adjacent Bone Pile from play.",
+        "description": "Cuando una miniatura con Montón de huesos es destruida, se sustituye por una ficha de Montón de huesos. Si todas las fichas de Montón de huesos ya están sobre el tablero de la mazmorra, la ficha que esté más lejos de los Héroes se traslada a esta nueva casilla. Una miniatura enemiga puede gastar 2 puntos de movimiento para retirar del tablero una ficha de Montón de huesos que esté en una casilla adyacente.",
         "version": 2,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       }
     ]
   },
-  "Boo Booty": {
-    "description": "Boo Booty cannot by spawned, instead they enter play when their treasure card is drawn.",
+  "Botín animado": {
+    "description": "Un Botín animado no puede aparecer a través de un punto de aparición; en vez de eso, entra en juego cuando se roba su carta de Tesoro.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
@@ -626,8 +626,8 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Dark Radiance": {
-    "description": "All offense rolls and defense rolls made against a model with Dark Radiance reduce the result by 1ST.",
+  "Esplendor oscuro": {
+    "description": "Se reduce en 1ST el resultado de todas las tiradas ofensivas y defensivas realizadas contra una miniatura con Esplendor oscuro.",
     "version": 1.99,
     "hasErrata": "false",
     "errata": []
@@ -863,13 +863,13 @@
       }
     ]
   },
-  "Feint": {
-    "description": "Force the target to reroll one of its defense dice.",
+  "Finta": {
+    "description": "Obliga al objetivo a volver a tirar uno de sus dados defensivos.",
     "version": 1.0,
     "hasErrata": "true",
     "errata": [
       {
-        "description": "When a model with Feint makes an offensive action they may choose one dice from their target's defense roll and force them to reroll the result.",
+        "description": "Cuando una miniatura con Finta realiza una acción ofensiva, puede elegir 1 dado de la tirada defensiva de su objetivo y obligarle a tirarlo de nuevo.",
         "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
@@ -882,7 +882,7 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Fire": {
+  " Fire Fuego": {
     "description": "A model or effect with Fire places a Fire counter on any model it damages. A model suffering Fire takes one wound at the beginning of its activation every round until the Fire counter is removed. Wounds caused by Fire do not advance the Power Gauge.",
     "version": 1.0,
     "hasErrata": "true",
@@ -907,13 +907,19 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Fixed Form": {
-    "description": "Once shapeshifted into X form it may not shapeshift back to its original form.",
+  "Forma fija-A": {
+    "description": " Un Cambiaformas con Forma fija no puede volver a transformarse en su forma original.",
+    "version": 1.991,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Forma fija-E": {
+    "description": "Una vez transformado a una Forma X no puede volver a transformarse en su forma original.",
     "version": 1.99,
     "hasErrata": "true",
     "errata": [
       {
-        "description": "A shapeshift with Fixed Form may not shapeshift into its original form during its upkeep.",
+        "description": "Un Cambiaformas con Forma fija no puede volver a transformarse en su forma original durante su mantenimiento.",
         "version": 1.991,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
@@ -932,13 +938,13 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Fly": {
-    "description": "A model with Fly may ignore and move through squares containing enemy models, difficult terrain, and tile effects.",
+  "Vuelo": {
+    "description": "Una miniatura con Vuelo puede ignorar y moverse a través de casillas que contienen miniaturas enemigas, Terreno difícil y efectos de terreno.",
     "version": 1.0,
     "hasErrata": "true",
     "errata": [
       {
-        "description": "A model with Fly treats difficult terrain, chasm, and structure squares as open squares. All non-blessing tile effects in those squares are ignored. Structure squares do not block line of sight to or from models with Fly.",
+        "description": "Una miniatura con Vuelo puede moverse por casillas de Terreno difícil, Simas y Estructuras como si fueran casillas abiertas. Todos los efectos de terreno que haya en esas casillas y que no sean Bendiciones se ignoran. Las casillas de Estructura nno bloquean la línea de visión desde y hacia las miniaturas con Vuelo.",
         "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword. "
@@ -1079,13 +1085,13 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Ghost": {
-    "description": "A model with Ghost ignores walls for the purposes of line of sight and movement.",
+  "Fantasma": {
+    "description": "Una miniatura Fantasma ignora paredes a la hora de moverse y trazar línea de visión.",
     "version": 1.99,
     "hasErrata": "true",
     "errata": [
 		{
-				"description": "A model with Ghost ignores walls and structures for the purposes of line of sight and movement.",
+				"description": " Una miniatura Fantasma ignora paredes y estructuras a la hora de moverse y trazar línea de visión.",
 				"version": 2.0,
 				"source": "",
 				"sourceDescription": "2.0 Updated keyword: Black Hand."
@@ -1098,8 +1104,8 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Ghostmancer": {
-    "description": "Whenever a model with Ghostmancer inflicts a wound, place a Ghost model adjacent to the wounded model.",
+  "Fantasmancia": {
+    "description": "Cuando una miniatura con Fantasmancia inflinge 1 Herida, coloca una miniatura Fantasma adyacente a la miniatura herida.",
     "version": 1.99,
     "hasErrata": "false",
     "errata": []
@@ -1116,8 +1122,8 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Gloom Aura": {
-    "description": "While within 2 squares of Pumpkin Patch, Heroes that do not have RUBY affinity discard the highest rolled when making offense rolls.",
+  "Aura siniestra": {
+    "description": "Los Héroes que no tengan afinidad RUBY y estén a 2 casillas o menos de distancia del Huerto de calabazas deben descartar el resultadomás alto de sus tiradas ofensivas.",
     "version": 1.99,
     "hasErrata": "false",
     "errata": []
@@ -1134,13 +1140,13 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Grabby": {
-    "description": "No enemy model can move while it is adjacent to a model with Grabby.",
+  "Agarre": {
+    "description": " Las miniaturas enemigas no puede moverse mientras estén adyacentes a una miniatura con Agarre.",
     "version": 1.99,
     "hasErrata": "true",
     "errata": [
 		  {
-				"description": "A model that is adjacent to an enemy model with Grabby may not move.",
+				"description": " Una miniatura con Agarre impide el movimiento de miniaturas enemigas adyacentes.",
 				"version": 1.991,
 				"source": "",
 				"sourceDescription": "Forgotten King Updated keyword."
@@ -1184,12 +1190,6 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Grind": {
-    "description": "Models wounded by a model with Grind must discard one piece of equipment of their choice.",
-    "version": 1.99,
-    "hasErrata": "false",
-    "errata": []
-  },
   "Gross": {
     "description": "When Pudge is destroyed, before removing the model resolve the following offensive action:<br>0AC: SW, Wave 1, +1R STR.",
     "version": 1.99,
@@ -1226,26 +1226,26 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Heal": {
-    "description": "A model affected by Heal may remove a number of wound counters or a number of status effect counters equal to the value of X.",
+  "Curar X": {
+    "description": " Una miniatura afectada por esta capacidad puede quitarse tantos contadores de Herida o de Efecto de estado como indique el valor de X.",
     "version": 1.0,
     "hasErrata": "true",
     "errata": [
       {
-        "description": "A model affected by Heal may remove a number of wound tokens or a number of status effect tokens equal to the value of X.",
+        "description": "Una miniatura afectada por esta capacidad puede quitarse tantas fichas de Herida o de Efecto de estado como indique el valor de X.",
         "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       }
     ]
   },
-  "Healer": {
-    "description": "When a model with Healer rolls a Heart on an attack roll they gain two Hearts instead of one if they successfully inflict a wound.",
+  "Sanador": {
+    "description": "Cuando una miniatura Sanadora saca un Corazón en una tirada ofensiva, consigue 2 Corazones en lugar de uno si inflige una Herida.",
     "version": 1.0,
     "hasErrata": "true",
     "errata": [
       {
-        "description": "When a model with Healer rolls a potion they may choose to gain a heart instead.",
+        "description": "Cuando una miniatura Sanadora saca una Poción en un dado, puede recibir un Corazón en su lugar.",
         "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
@@ -1282,13 +1282,13 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Hex": {
-    "description": "A model suffering Hex discards the highest result rolled anytime it makes a defense roll.",
+  "HEX Maleficio": {
+    "description": "Una miniatura afectada por Maleficio debe descartar el resultado más alto obtenido en cada tirada ofensiva que haga.",
     "version": 1.99,
     "hasErrata": "true",
     "errata": [
       {
-        "description": "A model suffering Hex discards the highest result rolled anytime it makes an offense roll.<br>(Arcade: A monster suffering Hex reduces its STR by 0ST)",
+        "description": "Una miniatura afectada por Maleficio debe descartar el resultado más alto obtenido en cada tirada ofensiva que haga. (En el modo Arcade, un monstruo que sufre Maleficio reduce su FUE en 1ST).",
         "version": 1.991,
         "source": "<br>",
         "sourceDescription": "Forgotten King Updated keyword."
@@ -1307,32 +1307,32 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Holy": {
-    "description": "A model with Holy may reroll a single dice when making an attack roll versus undead or demons.",
+  "Sagrado": {
+    "description": " Una miniatura Sagrada puede volver a tirar 1 solo dado cuando realice una tirada ofensiva contra miniaturas de tipo No muerto, Demonio.",
     "version": 1,
     "hasErrata": "true",
     "errata": [
       {
-        "description": "A model with Holy may reroll a single dice when making offensive actions against undead, demons, or nether models.",
+        "description": "Una miniatura Sagrada puede volver a tirar 1 solo dado cuando realice acciones ofensivas contra miniaturas de tipo No muerto, Demonio o Abisal.",
         "version": 2,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       }
     ]
   },
-  "Hookshot": {
-    "description": "A Hookshot is a special type of ranged ability that allows the user to target a model it does not have line of sight to.",
+  "Tiro con efecto": {
+    "description": "Tiro con efecto es una habilidad especial de alcance que permite seleccionar una miniatura como objetivo aunque no tenga línea de visión.",
     "version": 1.0,
     "hasErrata": "true",
     "errata": [
       {
-        "description": "Hookshot may be used in combination with any distance<br>effect. Hookshot allows the user to target a model it does not have line<br>of sight to.<br>",
+        "description": "Tiro con efecto se usa con cualquier efecto de distancia. Tiro con efecto permite seleccionar una miniatura como objetivo aunque no tenga línea de visión.",
         "version": 1.1,
         "source": "http://sodapopminiatures.com/media/downloads/super-dungeon-explore-rulebook-1_5-web.pdf",
         "sourceDescription": "SDEv1-5_RuleBook_web.pdf"
       },
       {
-        "description": "Actions with Hookshot do not require line of sight to target a model. Range must still be counted around walls and structures.",
+        "description": "Las acciones provistas de la capacidad Tiro con efecto no requieren línea de visión para seleccionar una miniatura como objetivo, aunque para comprobar el alcance sí es necesario sortear paredes y Estructuras.",
         "version": 1.99,
         "source": "<br>",
         "sourceDescription": "Forgotten King Updated keyword."
@@ -1388,8 +1388,8 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Ice": {
-    "description": "A model suffering Ice may not use unique actions.",
+  " ICE Hielo": {
+    "description": "Una miniatura afectada por Hielo no puede realizar acciones únicas.",
     "version": 1.99,
     "hasErrata": "false",
     "errata": []
@@ -1412,7 +1412,7 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Immobile": {
+  "Inmovilizar": {
     "description": "A model or effect with Immobile places a Immobile counter on any model it damages. A model suffering Immobile may not move during its turn.",
     "version": 1.0,
     "hasErrata": "true",
@@ -1432,7 +1432,7 @@
     ]
   },
   "Immune": {
-    "description": "A model with immune ignores and imediately removes all counter or affects of the abilty listed as X.",
+    "description": "Una miniatura con Inmune ignora e inmediatamente elimina todos los contadores o efectos de la habilidad marcado como X.",
     "version": 1.0,
     "hasErrata": "false",
     "errata": []
@@ -1473,32 +1473,32 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Insignificant-E": {
-    "description": "When a model inflicts a wound in melee against a model with insignificant, that model may immediately make a free melee attack. Inflicting a wound on an insignificant model does not advance the Power Gauge.",
+  "Insignificante-A": {
+    "description": "Al destruir una miniatura Insignificante no se roba carta de Botín.",
+    "version": 1.99, 
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Insignificante-E": {
+    "description": "Cuando una miniatura inflinge 1 Herida en cuerpo a cuerpo a una miniatura con Insignificante, esa miniatura puede realizar inmediatamente sin coste un ataque cuerpo a cuerpo. Infligir 1 Herida a una miniatura Insignificante no advance the Power Gauge.",
     "version": 1.0,
     "hasErrata": "true",
     "errata": [
       {
-        "description": "If a Hero is on the same dungeon tile as a model with Insignificant it may be activated in addition to any other monsters that are activated during the Consul Turn. A model may not draw a loot card for destroying a model with Insignificant.",
+        "description": "Si un Héroe se encuentra en el mismo módulo de mazmorra que una miniatura Insignificante, ésta podrá activarse además de los monstruos que sean activados durante el turno del Cónsul Oscuro. Al destruir una miniatura Insignificante no se roba carta de Botín.",
         "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       }
     ]
   },
-  "Insignificant-A": {
-    "description": "A model may not draw a loot card for destroying a model with Insignificant.",
-    "version": 1.99,
-    "hasErrata": "false",
-    "errata": []
-  },
-  "Invader": {
-    "description": "When Invader is used the Invader model is removed from play and placed on the target Hero's card, essentially becoming a token. While a slime model is on the Hero's card, no model other than the Hero may target or affect the slime the Slime—not even area of effects.",
+  "Invasión": {
+    "description": "Cuando se usa Invasión, la miniatura Invasora es retirada del juego y se coloca sobre la carta del Héroe objetivo, volviéndose una ficha. Mientras la miniatura del limo está sobre la carta del Héroe, ninguna otra miniatura que el Héroe puede seleccionar o afectar al limo, ni siquiera las áreas de efecto.",
     "version": 1.99,
     "hasErrata": "true",
     "errata": [
       {
-        "description": "When a model uses an action with Invader remove the model from play and place it on the target Hero's card. The Invader model may not voluntarily leave the Hero. The Hero suffers the effects of the Invader action as long as the Invader model remains on their card. Only the affected Hero may target or destroy Invader models on their card. The Invader is always considered in range. The Invader cannot be affected by area effects.",
+        "description": "Cuando una miniatura utiliza una acción con la capacidad Invasión, esa miniatura se retira del juego y se coloca sobre la carta del Héroe objetivo. La miniatura invasora no puede abandonar voluntariamente al Héroe, que sufre los efectos de esta acción mientras la miniatura invasora continúe sobre su carta. Únicamente el Héroe afectado puede seleccionar como objetivo o destruir a las miniaturas invasoras que haya sobre su carta. Estas miniaturas siempre se consideran dentro de su alcance, pero no se ven afectadas por efectos de área.",
         "version": 1.991,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
@@ -1541,38 +1541,44 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Kitty Claws": {
-    "description": "Beatrix immediately makes one Melee Attack against any model that moves into a square adjacent to Beatrix During it’s activation.",
+  "Zarpas de Gato-A": {
+    "description": "Beatrix inmediatamente realiza una Acción Básica contra cualquier miniatura que se mueva a una casilla adyacente a Beatrix durante su activación.",
+    "version": 1.99,
+    "hasErrata": "false",
+    "errata": []
+  },
+  "Zarpas de Gato-E": {
+    "description": "Beatrix inmediatamente realiza un ataque cuerpo a cuerpo a cualquier miniatura que se mueva a una casilla adyacente a Beatrix durante su activación.",
     "version": 1.99,
     "hasErrata": "true",
     "errata": [
 		{
-			"description": "Immediately make one Melee Attack against any enemy model that moves into a square adjacent to a model with Kitty Claws.",
+			"description": "Inmediatamente realiza un ataque cuerpo a cuerpo contra cualquier miniatura enemiga que se mueva a una casilla adyacente a una miniatura con Zarpas de Gato.",
 			"version": 2.0,
 			"source": "",
 			"sourceDescription": "Freyjan Stole (Treasure)"
 		}
 	]
   },
-  "Knockdown": {
-    "description": "A model or effect with Knockdown places a Knockdown counter on any model it damages. A model suffering Knockdown may not move or perform any other action until it spends one action point to remove the counter and stand up.",
+  "KNOCKDOWN Derribo": {
+    "description": " Una miniatura o efecto con Derribo coloca un contador en la miniatura a la que inflinja 1 Herida. Una miniatura que sufre Derribo no puede moverse o realizar ninguna acción hasta haber gastado un punto de acción para retirar la ficha y levantarse.",
     "version": 1.0,
     "hasErrata": "true",
     "errata": [
       {
-        "description": "A model suffering Knockdown may not move or perform any other action until it spends all of its action points OR all of its movement points to remove the Knockdown counter.",
+        "description": " Una miniatura que sufre Derribado no puede moverse o realizar ninguna acción hasta haber gastado todos sus puntos de acción o todos sus puntos de movimiento para retirar la ficha de Derribado de su carta.",
         "version": 1.1,
         "source": "https://www.kickstarter.com/projects/1257458293/super-dungeon-explore-forgotten-king/posts/868841",
         "sourceDescription": "kickstarter update 41"
       },
       {
-        "description": "A model suffering Knockdown may not move or perform any other action until it spends 1 action point or all of its movement points to remove the Knockdown token.",
+        "description": "Una miniatura que sufre Derribado no puede moverse o realizar ninguna acción hasta haber gastado 1 punto de acción o todos sus puntos de movimiento para retirar la ficha de Derribado de su carta.",
         "version": 1.2,
         "source": "https://www.kickstarter.com/projects/1257458293/super-dungeon-explore-forgotten-king/posts/969164",
         "sourceDescription": "kickstarter update 56"
       },
       {
-        "description": "A model suffering Knockdown may not move or perform any other action until it spends 1 action point or all of its movement points to remove the Knockdown token.<br>(Arcade: A monster suffering Knockdown may not perform commands until the next Move command. Instead of moving it must remove the Knockdown token.)",
+        "description": "Una miniatura Derribada no puede moverse ni realizar ninguna otra acción hasta haber gastado 1 punto de acción o todos sus puntos de movimiento para retirar la ficha de Derribado de su carta. (En el modo Arcade, un monstruo Derribado no puede ejecutar órdenes hasta que reciba una nueva orden de Movimiento, pero en lugar de moverse lo que hará será perder la ficha de Derribado).",
         "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
@@ -1708,13 +1714,13 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Massive Damage": {
-    "description": "When an attack with Massive Damage inflicts a wound it instead inflicts two wounds.",
+  "Daño brutal": {
+    "description": " Cuando un ataque con Daño brutal inflinge 1 Herida, en vez de eso inflinge 2 Heridas.",
     "version": 1.0,
     "hasErrata": "true",
     "errata": [
       {
-        "description": "When an offensive action with Massive Damage inflicts a wound it instead inflicts two wounds.",
+        "description": "Cuando una acción ofensiva con Daño brutal inflinge 1 Herida, en vez de eso inflinge 2 Heridas.",
         "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword. Kunoichi Candy"
@@ -1739,8 +1745,8 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Mend": {
-    "description": "A model using Mend targets the monster within range suffering the most wounds.  Remove status effect tokens and then remove would tokens until a number of tokens equal to X has been reomved or the monster has no wound tokens on it.",
+  "Restaurar X": {
+    "description": "Una miniatura que utiliza esta capacidad selecciona al monstruo que tenga más Heridas y que esté dentro de su alcance. En primer lugar le quita todas las fichas de Efecto de estado, y a continuación le quita fichas de Herida hasta haberle quitado X fichas o hasta que no le queden más fichas de Herida.",
     "version": 1.99,
     "hasErrata": "false",
     "errata": []
@@ -1770,19 +1776,19 @@
       }
     ]
   },
-  "Mob-E": {
-    "description": "Add +1B ATT to this model's melee attacks for every other model with Mob in melee with the target, up to +3B ATT.",
+  "Turba-E": {
+    "description": "Añade +1B FUE al ataque cuerpo a cuerpo de esta miniatura por cada miniatura con Turba en cuerpo a cuerpo del objetivo, hasta un máximo de +3B FUE.",
     "version": 1.0,
     "hasErrata": "true",
     "errata": [
       {
-        "description": "When making a Melee offensive action, a model with Mob adds +1B STR to their offense roll for every additional model with Mob that is in range of their target, up to +3B STR.",
+        "description": "Al realizar una acción ofensiva de 0SW, una miniatura con Turba añade +1B FUE a su tirada ofensiva por cada miniatura adicional que posea la capacidad Turba y que tenga al mismo objetivo dentro de su alcance (la bonificación máxima proporcionada por esta capacidad es de +3B FUE).",
         "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       },
 	  {
-        "description": "When making a 0SW offensive action, a model with Mob adds +1B STR to its offense roll for every additional model with Mob that is in range of its target, up to +3B STR.",
+        "description": " Al realizar una acción ofensiva de 0SW, una miniatura con Turba añade +1B FUE a su tirada ofensiva por cada miniatura adicional que posea la capacidad Turba y que tenga al mismo objetivo dentro de su alcance (la bonificación máxima proporcionada por esta capacidad es de +3B FUE).",
         "version": 2.0,
         "source": "",
         "sourceDescription": "2.0 Explore Mode."
@@ -1999,27 +2005,27 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Pile-On-E": {
-    "description": "+1R ATT if target is suffering Knockdown.",
+  "Martillo pilón-E": {
+    "description": "+1R FUE si el objetivo está Derribado.",
     "version": 1.0,
     "hasErrata": "true",
     "errata": [
       {
-        "description": "+1B STR if target is suffering Knockdown.",
+        "description": "+1B FUE si su objetivo está Derribado.",
         "version": 1.99,
         "source": "https://www.kickstarter.com/projects/1257458293/super-dungeon-explore-forgotten-king/posts/976490",
         "sourceDescription": "kickstarter update 57"
       },
       {
-        "description": "A model with Pile-On gains +1B STR if its target is suffering Knockdown.",
+        "description": "Una miniatura con Martillo pilón gana +1B FUE si su objetivo está Derribado.",
         "version": 1.992,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       }
     ]
   },
-  "Pile-On-A": {
-    "description": "A model with Pile-On gains +1ST STR if its target is suffering knockdown.",
+  "Martillo pilón-A": {
+    "description": "Una miniatura con Martillo pilón gana +1ST FUE si su objetivo está Derribado.",
     "version": 2.0,
     "hasErrata": "false",
     "errata": []
@@ -2030,19 +2036,19 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Poison": {
-    "description": "A model or effect with Poison places a Poison counter on any model it damages. A model suffering Poison loses one action point its activation.",
+  "POISON Veneno": {
+    "description": "Una miniatura o efecto con Veneno coloca un contador en la miniatura a la que inflinja 1 Herida. Una miniatura que sufre Veneno pierde un punto de acción durante su activación",
     "version": 1.0,
     "hasErrata": "true",
     "errata": [
       {
-        "description": "A model suffering Poison reduces its total number of action points by one.",
+        "description": " Una miniatura afectada por Veneno reduce en 1 sus puntos de acción totales.",
         "version": 1.99,
         "source": "https://www.kickstarter.com/projects/1257458293/super-dungeon-explore-forgotten-king/posts/868841",
         "sourceDescription": "kickstarter update 41"
       },
       {
-        "description": "A model suffering Poison reduces its total number of action points by 1, to a minimum of 1.",
+        "description": "Una miniatura afectada por Veneno reduce en 1 sus puntos de acción totales (hasta un mínimo de 1).",
         "version": 1.991,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
@@ -2098,33 +2104,33 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Pounce": {
-    "description": "Choose an enemy model anywhere within 5 squares, and line of sight. Place the model with Pounce adjacent to this target, then roll to attack as normal.",
+  "Ataque en Salto": {
+    "description": "Elige una miniatura enemiga que esté a 5 casillas o menos de distancia y  dentro de la línea de visión. Coloca la miniatura con Ataque en Salto adyacente a esta miniatura objetivo y luego tira para atacar con normalidad.",
     "version": 1.0,
     "hasErrata": "true",
     "errata": [
       {
-        "description": "Choose an enemy model anywhere within 5 squares, and line of sight. Place the model with pounce adjacent to this target, then make the offense roll as normal.",
+        "description": " Elige una miniatura enemiga que esté a 5 casillas o menos de distancia y dentro de la línea de visión. Coloca la miniatura con Ataque en Salto adyacente a esta miniatura objetivo y luego realiza la tirada ofensiva con normalidad.",
         "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       }
     ]
   },
-  "Predator-E": {
-    "description": "When an enemy model moves out of a square that is adjacent to a model with Predator, the model with Predator may immediately make a Melee Attack against that model.",
+  "Depredador-E": {
+    "description": "Cuando una miniatura enemiga sale de una casilla adyacente a una miniatura Depredadora, ésta puede efectuar inmediatamente un Ataque cuerpo a cuerpo contra ella.",
     "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
-  "Predator-A": {
-    "description": "When an enemy model moves out of a square that is adjacent to a non-minion model with Predator, the model with Predator may immediately make a Basic Attack against that model.",
+  "Depredador-A": {
+    "description": "Cuando una miniatura enemiga sale de una casilla adyacente a una miniatura Depredadora, ésta puede efectuar inmediatamente un Ataque básico contra ella utilizando sus atributos como individuo.",
     "version": 1.99,
     "hasErrata": "false",
     "errata": []
   },
-  "Primal Aura": {
-    "description": "Monsters with SAPPHIRE Affinity that are within 2 squares of Tribal Stone gain +1ST ARM.",
+  "Aura primitiva": {
+    "description": "Los monstruos con afinidad SAPPHIRE que estén a 2 casillas o menos de distancia de la Piedra tribal ganan 1ST ARM.",
     "version": 1.99,
     "hasErrata": "false",
     "errata": []
@@ -2227,13 +2233,13 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Raise": {
-    "description": "Replace target Bone Pile counter with a model with the risen ability. The counter is then removed from play. If a model is in the same square as target counter Raise has no effect.",
+  "Animar cadáver": {
+    "description": "Sustituye el contador de Montón de huesos objetivo por una miniatura que posea la capacidad Montón de huesos. Retira el contador de la partida. Animar cadáver no surte efecto si hay una miniatura en la casilla ocupada por la ficha de Montón de huesos.",
     "version": 1.0,
     "hasErrata": "true",
     "errata": [
       {
-        "description": "Replace target Bone Pile with a model with the Bone Pile ability. If a model is in the same square as the Bone Pile token, Raise has no effect.",
+        "description": "Sustituye la ficha de Montón de huesos objetivo por una miniatura que posea la capacidad Montón de huesos. Animar cadáver no surte efecto si hay una miniatura en la casilla ocupada por la ficha de Montón de huesos.",
         "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
@@ -2301,13 +2307,13 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Regenerate": {
-    "description": "Roll 1B dice for every wound token on the models card and remove one token for each star rolled.",
+  "Regeneración": {
+    "description": "Tira 1B por cada ficha de Herida sobre la carta de la miniatura y quita una ficha de Herida por cada Estrella obtenida.",
     "version": 1.0,
     "hasErrata": "true",
     "errata": [
       {
-        "description": "Roll 1B for every wound token on the model using Regenerate. Remove one token for every star rolled.",
+        "description": "Tira 1B por cada ficha de Herida que haya sobre la miniatura que utiliza esta capacidad, y quita 1 ficha de Herida por cada Estrella obtenida.",
         "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
@@ -2320,13 +2326,13 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Remedy": {
-    "description": "A model affected by remedy may immediately remove all status Effect counters.",
+  "Remedio": {
+    "description": "Una miniatura afectada por Remedio puede quitarse todos los contadores de Efecto de estado.",
     "version": 1.0,
     "hasErrata": "true",
     "errata": [
       {
-        "description": "A model affected by Remedy removes all status effect tokens.",
+        "description": "Una miniatura afectada por Remedio se quita todas las fichas de Efecto de estado.",
         "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
@@ -2531,13 +2537,13 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Sidestep": {
-    "description": "Move 1 square anytime the model successfully makes a defense roll.",
+  "Paso lateral": {
+    "description": "Mueve la miniatura 1 casilla cada vez que gane una tirada defensiva.",
     "version": 1.0,
     "hasErrata": "true",
     "errata": [
       {
-        "description": "When a model with Sidestep wins defense roll they may immediately move one square.",
+        "description": "Cuando una miniatura con Paso lateral gana con una tirada defensiva, puede moverse 1 casilla inmediatamente.",
         "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
@@ -2562,32 +2568,32 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Slow": {
-    "description": "A model or effect with Slow places a Slow counter on any model it damages. A model suffering Slow halves its speed (Rounding Up) during its activation.",
+  "SLOW Ralentizar": {
+    "description": "Una miniatura o efecto con Ralentizar coloca un contador en la miniatura a la que inflinja 1 Herida. Una miniatura que sufre Ralentizado reduce a la mitad su movimiento (redondeando hacia arriba) durante su activación.",
     "version": 1,
     "hasErrata": "true",
     "errata": [
       {
-        "description": "A model suffering Slow halves its Movement, rounding up.",
+        "description": " Una miniatura Ralentizada reduce su movimiento a la mitad (redondeando hacia arriba).",
         "version": 1.1,
         "source": "https://www.kickstarter.com/projects/1257458293/super-dungeon-explore-forgotten-king/posts/868841",
         "sourceDescription": "kickstarter update 41"
       },
       {
-        "description": "A model suffering Slow halves its movement points, rounding up.",
+        "description": "Una miniatura Ralentizada reduce sus puntos de movimiento a la mitad (redondeando hacia arriba).",
         "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       }
     ]
   },
-  "Small": {
-    "description": "Small models may only be targeted by melee attacks.",
+  "Pequeño": {
+    "description": "Las miniaturas Pequeñas solo pueden ser objetivos de ataques cuerpo a cuerpo.",
     "version": 1.0,
     "hasErrata": "true",
     "errata": [
       {
-        "description": "An enemy model may only target a small model if it is within 3 squares of the model.",
+        "description": "Una miniatura enemiga solamente puede seleccionar como objetivo a una miniatura Pequeña si se encuentra a 3 casillas o menos de distancia de ella.",
         "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
@@ -2619,13 +2625,13 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Smooches": {
-    "description": "This model may Shapeshift back to is original form if a friendly model moves into an adjacent square and spends 1 Action Point to give it a kiss.",
+  "Besito": {
+    "description": "Esta miniatura puede transformarse en su forma original si una miniatura aliada se sitúa en una casilla adyacente y gasta 1AC para darle un besito.",
     "version": 1.0,
     "hasErrata": "true",
     "errata": [
       {
-        "description": "This model immediately shapeshifts back to its original form if a friendly model moves into an adjacent square and spends 1 Action to give it a kiss.",
+        "description": "Esta miniatura se transforma inmediatamente en su forma original si una miniatura aliada se sitúa en una casilla adyacente y gasta 1AC para darle un besito.",
         "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
@@ -2798,27 +2804,27 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Stealth": {
-    "description": "When a model with stealth is targeted by a ranged affect they may immediately make a DEX roll. Subtract the number of stars rolled from the attacker's range. if the roll causes the attacker to be out of range the attack is considered to have failed.",
+  "Sigilo": {
+    "description": "Cuando una miniatura con Sigilo es objetivo de un ataque a distancia, esta debe realizar una tirada de DES. Resta el número de ST obtenidas al rango de la miniatura atacante. Si la tirada hace que el atacante esté fuera del rango de alcance, se considera que el ataque ha fallado.",
     "version": 1,
     "hasErrata": "true",
     "errata": [
       {
-        "description": "Reduces the range of all actions made against the model by 3 to a minimum of 1.",
+        "description": "Reduce el rango de todas las acciones realizadas contra la miniatura en 3 (hasta un minimo de 1).",
         "version": 1.99,
         "source": "https://www.kickstarter.com/projects/1257458293/super-dungeon-explore-forgotten-king/posts/976490",
         "sourceDescription": "Kickstarter update 57"
       },
       {
-        "description": "Actions targeting a model with stealth reduce their Range by 3, to a minimum of 1.",
+        "description": "Las acciones cuyo objetivo sea una miniatura con Sigilo ven reducido su alcance en 3 (hasta un mínimo de 1).",
         "version": 1.991,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       }
     ]
   },
-  "Stealth Aura": {
-    "description": "Monsters with RUBY Affinity that are within 2 squares of Salt Pillar gain Stealth.",
+  "Aura de sigilo": {
+    "description": "Los monstruos con afinidad RUBY que estén a 2 casillas o menos de distancia de la Columna de sal ganan Sigilo.",
     "version": 1.99,
     "hasErrata": "false",
     "errata": []
@@ -2896,21 +2902,21 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Surefoot": {
-    "description": "Each square of difficult terrain a made with Surefoot enters costs one speed instead of two.",
+  "Paso seguro": {
+    "description": "Cada casilla de Terreno difícil a la que se accede con Paso seguro cuesta un movimiento en lugar de dos.",
     "version": 1.0,
     "hasErrata": "true",
     "errata": [
       {
-        "description": "A model with Surefoot treats difficult terrain squares as open squares. All non-blessing tile effects in those squares are ignored.",
+        "description": " Una miniatura con Paso seguro se desplaza por casillas de Terreno difícil como si fueran casillas abiertas. Todos los efectos de terreno que haya en esas casillas y que no sean Bendiciones se ignoran.",
         "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       }
     ]
   },
-  "Surge": {
-    "description": "If a model with Surge is not in range of a Hero move it an additional 5 squares towards the Hero with the most wrath.",
+  "Acometida": {
+    "description": "Si una miniatura con Acometida no tiene a ningún Héroe dentro de su alcance, se desplaza 5 casillas adicionales en dirección al Héroe con más Cólera acumulada.",
     "version": 1.99,
     "hasErrata": "false",
     "errata": []
@@ -2953,13 +2959,13 @@
       }
     ]
   },
-  "Teleport": {
-    "description": "A model that Teleports may move to any empty square within ten squares and line of sight of their current square.",
+  "Teletransporte": {
+    "description": "Una miniatura que se Teletransporte puede moverse a una casilla vacía situada a 10 casillas o menos de distancia y dentro de la línea de visión de su casilla actual.",
     "version": 1.0,
     "hasErrata": "true",
     "errata": [
       {
-        "description": "Choose an empty square anywhere within 10 squares, and line of sight. Place the model affected by Teleport in this square.",
+        "description": "Elige una casilla vacía situada a 10 casillas o menos de distancia y dentro de la línea de visión. Coloca la miniatura afectada por el Teletransporte en una casilla.",
         "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
@@ -3020,13 +3026,13 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Tough": {
-    "description": "At the beginning of their activation a model with tough may remove a single wound counter before status Effects are resolved.",
+  "Resistente": {
+    "description": "Una miniatura Resistente puede quitarse 1 ficha de Herida al inicio de su activación antes de resolver los Efectos de estado.",
     "version": 1.0,
     "hasErrata": "true",
     "errata": [
       {
-        "description": "During its upkeep, a model with Tough removes a single wound token.",
+        "description": "Una miniatura Resistente se quita 1 ficha de Herida durante su paso de mantenimiento.",
         "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
@@ -3099,18 +3105,24 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Virulent": {
-    "description": "Adds +1B dice to any offense roll they make if their target is suffering Poison.",
+  "Virulento-E": {
+    "description": "Añade +1B a las tiradas ofensivas que haga si su objetivo sufre Veneno.",
     "version": 1.0,
     "hasErrata": "true",
     "errata": [
       {
-        "description": "Add +1B to this models offense rolls if its target is suffering from Poison.",
+        "description": "Añade +1B a las tiradas ofensivas de esta miniatura si su objetivo sufre Veneno.",
         "version": 1.99,
         "source": "",
         "sourceDescription": "Forgotten King Updated keyword."
       }
     ]
+  },
+  "Virulento-A": {
+    "description": "+1ST FUE si la miniatura objetivo sufre Veneno.",
+    "version": 1.99,
+    "hasErrata": "false",
+    "errata": []
   },
   "Volatile": {
     "description": "When a model with Volatile is destroyed, before removing the model, resolve the following action: 0SW, Wave 1, +2R STR.",
@@ -3229,3 +3241,4 @@
     "errata": []
   }
 }
+
