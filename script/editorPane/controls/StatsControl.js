@@ -37,8 +37,8 @@ function StatsControl(){
         '<li>Blue: 1B</li>'+
         '<li>Red: 1R</li>'+
         '<li>Green: 1G</li>'+
-        '<li>Purple: 1P</li>'+
         '<li>Orange: 1O</li>'+
+        '<li>Purple: 1P</li>'+
       '</ul>'+
       '</div>'+
 
@@ -48,7 +48,11 @@ function StatsControl(){
         '<li>Melee: 1SW</li>'+
         '<li>Missile: 1MI</li>'+
         '<li>Magic: 1MA</li>'+
-        '<li>Shield: SH</li>'+
+        '<li>Range: 1RG</li>'+
+        '<li>Action: 1AC</li>'+
+        '<li>Move: 1MO</li>'+
+        '<li>Shield: 0SH</li>'+
+        '<li>Heart: 1HE</li>'+
       '</ul>'+
       '</div>'+
     '</div>'+
