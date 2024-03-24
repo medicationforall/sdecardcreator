@@ -167,7 +167,7 @@
     "hasErrata": "false",
     "errata": []
   },
-  "BANE Estrago": {
+  "Estrago": {
     "description": " Una miniatura afectada por Estrago debe descartar el resultado más alto obtenido en cada tirada defensiva que haga.",
     "version": 1.5,
     "hasErrata": "true",
