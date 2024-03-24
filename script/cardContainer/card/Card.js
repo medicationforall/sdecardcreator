@@ -126,7 +126,7 @@ function Card(animate,appendAfter){
   						'</div>'+
   						'<div><span class="timeout title">title</span></div>'+
   						'<div class="timeout abilities"></div>'+
-  						'<div class="monster pet hero arcadeSolo keywords"></div>'+
+  						'<div class="monster pet hero arcadeSolo keywords definedKeywords"></div>'+
 
   						'<div class="monster pet hero arcadeSolo flavor">'+
   						'<div class="flavorBorder"></div>'+
@@ -134,7 +134,7 @@ function Card(animate,appendAfter){
   						'<div class="flavorBorder"></div>'+
   						'</div>'+
   					'</div>'+
-            '<div class="author hero monster arcadeSolo pet timeout"></div>'+
+					'<div class="author hero monster arcadeSolo pet timeout"></div>'+
   				'</div>'+
   			'</div>'+
   		'</div>'+
