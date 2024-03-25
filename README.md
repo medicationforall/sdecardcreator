@@ -1,6 +1,6 @@
 # SDE Card Creator
 
-You can see a working version of the app at [https://rpg.medicationforall.com/sdecardcreator/](https://rpg.medicationforall.com/sdecardcreator/)
+You can see a working version of the app at [https://medicationforall.github.io/sdecardcreator/](https://medicationforall.github.io/sdecardcreator/)
 
 This is an application for creating cards for Super Dungeon Explore.<br />
 Can create Hero, Monster, Pet, Loot, Treasure, Wonder, Explore, and Timeout cards.

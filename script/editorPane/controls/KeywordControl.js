@@ -22,7 +22,7 @@
  */
 function KeywordControl(){
   BaseControl.call(this);
-  this.template='<div class="hero monster pet treasure wonder loot arcadeSolo keyword">'+
+  this.template='<div class="hero monster pet treasure wonder loot arcadeSolo keywordEditor">'+
   	'<h2><a class="toggleDisplay" href="">Keyword</a></h2>'+
     '<div class="controlContent hide">'+
     '<a href="" class="keywordSettings" title="keyword Editor"><svg data-reactroot="" class="Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="height: 32px; width: 32px;">'+
