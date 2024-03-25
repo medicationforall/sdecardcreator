@@ -146,7 +146,7 @@ function KeywordStore(keywords){
       var dataKey = this.resolveNKey(key);
       var keyClass = this.resolveKeyClass(key);
 
-      return '<span class="keyword '+keyClass+'" data-key="'+dataKey+'">'+key+' '+number+'</span>';
+      return '<span class="keyword '+keyClass.toUpperCase()+'" data-key="'+dataKey+'">'+key+' '+number+'</span>';
     }.bind(this));
     return text;
   };
@@ -185,7 +185,7 @@ function KeywordStore(keywords){
 		var keyClass = this.resolveKeyClass(key);
 
 		//check to see if the keyword is already added, and if the display flag does not equal false
-		if( data.displayBack !== false && data.displayBack !== 'false'  && $('.cardGroup.selected .card .keywords .'+keyClass).length ===0){
+		if( data.displayBack !== false && data.displayBack !== 'false'  && $('.cardGroup.selected .card .keywords .'+keyClass.toUpperCase()).length ===0){
 		  //console.log(key,data);
 
 		  var description = data.description;
@@ -205,16 +205,16 @@ function KeywordStore(keywords){
 
 		  var parsedDescription = this.parseDescription(description);
 
-		  var backTemplate = '<div class="keyword '+keyClass+'" data-key="'+key+'">'+
-		  '<span class="keyword '+keyClass+'"></span>'+
+		  var backTemplate = '<div class="keyword definedKeyword '+keyClass.toUpperCase()+'" data-key="'+key+'">'+
+		  '<span class="keyword '+keyClass.toUpperCase()+'"></span>'+
 		  '<span class="name">'+key+'</span>:'+
 		  '<span class="description">'+parsedDescription+'</span>'+
 		  '</div>';
 
-		  var itemTemplate = '<div class="keyword '+keyClass+'" data-key="'+key+'">'+
-		  '<span class="keyword '+keyClass+'"></span>'+
+		  var itemTemplate = '<div class="keyword '+keyClass.toUpperCase()+'" data-key="'+key+'">'+
+		  '<span class="keyword '+keyClass.toUpperCase()+'"></span>'+
 		  '<span class="name">'+key+'</span> '+
-		  '<span class="description">('+parsedDescription+')</span>'+
+		  '<span class="description">'+parsedDescription+'</span>'+
 		  '</div>';
 
 		  $(".cardGroup.selected .card .back .keywords").append(backTemplate);
