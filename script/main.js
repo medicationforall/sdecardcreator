@@ -31,6 +31,108 @@ $.fn.extend({
 
 
 var languageChoice = "en";
+function changeLanguage() {
+	var previousLanguage = languageChoice;
+	languageChoice = document.getElementById('languageSelection').value;
+	
+	changeLanguageFromTo(previousLanguage, languageChoice);
+}
+
+function changeLanguageFromTo(previousLanguage, nextLanguage) {
+	updateKeywordLanguage();
+	updateStatLanguage(previousLanguage, nextLanguage);
+}
+
+function updateKeywordLanguage() {
+	stripStatsFromKeywords();
+	
+	applyLanguageToDefinitions();
+	applyLanguageToDescriptions();
+}
+
+function stripStatsFromKeywords() {
+	stripFromKeywords('STR');
+	stripFromKeywords('ARM');
+	stripFromKeywords('WILL');
+	stripFromKeywords('DEX');
+}
+
+function stripFromKeywords(stat) {
+	var elements = document.getElementsByClassName(stat);
+	while(elements.length > 0) {
+		var element = elements[0];
+		element.classList.remove('stat');
+		element.classList.remove(stat);
+	}
+}
+
+function applyLanguageToDefinitions() {
+	var elements = document.getElementsByClassName('definition');
+	for(var x=0; x < elements.length; x++) {
+		var element = elements[x];
+		
+		var eValue = element.innerHTML;
+		element.innerHTML = findStats(eValue);
+		var test = "";
+	}
+}
+
+function applyLanguageToDescriptions() {
+	var elements = document.getElementsByClassName('description');
+	for(var x=0; x < elements.length; x++) {
+		var element = elements[x];
+		
+		var eValue = element.innerHTML;
+		element.innerHTML = findStats(eValue);
+		var test = "";
+	}
+}
+
+ function findStats(text){
+    var re;
+	var en = /\b(STR|ARM|WILL|DEX)\b/g;
+	var de = /\b(STR|RUS|WILL|DEX)\b/g;
+	var es = /\b(FUE|ARM|VOL|DES)\b/g;
+	var fr = /\b(FOR|ARM|VOL|DEX)\b/g;
+
+	if(languageChoice == "en") {
+		re = en;
+	} else if(languageChoice == "de") {
+		re = de;
+	} else if(languageChoice == "es") {
+		re = es;
+	} else if(languageChoice == "fr") {
+		re = fr;
+	} else {
+		re = en;
+	}
+	
+    text = text.replace(re,'<span class="stat $1">$1</span>');
+    return text;
+  };
+
+//Test phrase: STR WILL DEX ARM FOR RUS FUE VOL DES GES
+
+function updateStatLanguage(previousLanguage, nextLanguage) {
+	var elements = document.getElementsByClassName(previousLanguage);
+	var stat = 0;
+	
+	while(elements.length > 0) {
+		var element = elements[0];
+		element.classList.add('stat');
+		element.classList.replace(previousLanguage, nextLanguage);		
+		if(stat == 0) {
+			element.classList.add('STR');
+		} else if(stat == 1) {
+			element.classList.add('ARM');
+		} else if(stat == 2) {
+			element.classList.add('WILL');
+		} else if(stat == 3) {
+			element.classList.add('DEX');
+		}
+		stat++;
+	}
+}
 
 /**
  * Application main method.
@@ -40,7 +142,7 @@ $(document).ready(function(){
 
   //Initialize mainMenu
   var promises = [];
-  promises.push($.getJSON('./json/sde_keywords.json'));
+  promises.push($.getJSON('./json/sde_keywords_english.json'));
 
   //resolve the templates
   $.when.apply($, promises).done(function(keywords){
