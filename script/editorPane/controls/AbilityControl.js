@@ -33,26 +33,26 @@ function AbilityControl(){
   		'<div class="helpUnit">'+
   		'<h3>Dice Types</h3>'+
   		'<ul>'+
-      '<li>Blue: 1b</li>'+
-  			'<li>Star: 1st</li>'+
-  			'<li>Red: 1r</li>'+
-  			'<li>Green: 1g</li>'+
-  			'<li>Purple: 1p</li>'+
-        '<li>Orange: 1o</li>'+
+			'<li>Star: 1ST</li>'+
+			'<li>Blue: 1B</li>'+
+			'<li>Red: 1R</li>'+
+			'<li>Green: 1G</li>'+
+			'<li>Orange: 1O</li>'+
+			'<li>Purple: 1P</li>'+
   		'</ul>'+
   		'</div>'+
 
   		'<div class="helpUnit">'+
   		'<h3>Modifiers</h3>'+
   		'<ul>'+
-  			'<li>Melee: 1sw</li>'+
-  			'<li>Missile: 1mi</li>'+
-  			'<li>Magic: 1ma</li>'+
-  			'<li>Range: 1rg</li>'+
-  			'<li>Action: 1ac</li>'+
-  			'<li>Move: 1mo</li>'+
-  			'<li>Shield: 0sh</li>'+
-  			'<li>heart: 1he</li>'+
+  			'<li>Melee: 1SW</li>'+
+  			'<li>Missile: 1MI</li>'+
+  			'<li>Magic: 1MA</li>'+
+  			'<li>Range: 1RG</li>'+
+  			'<li>Action: 1AC</li>'+
+  			'<li>Move: 1MO</li>'+
+  			'<li>Shield: 0SH</li>'+
+  			'<li>Heart: 1HE</li>'+
   		'</ul>'+
   		'</div>'+
 

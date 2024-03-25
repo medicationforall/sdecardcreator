@@ -51,7 +51,7 @@ function ItemStatsControl(){
         '<li>Action: 1AC</li>'+
         '<li>Move: 1MO</li>'+
         '<li>Shield: 0SH</li>'+
-        '<li>heart: 1HE</li>'+
+        '<li>Heart: 1HE</li>'+
       '</ul>'+
       '</div>'+
       '<div>'+
