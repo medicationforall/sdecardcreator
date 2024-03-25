@@ -345,7 +345,7 @@
     "errata": []
   },
   "Bruiser": {
-    "description": "+0ST STR if a model with Bruiser is in the gang.",
+    "description": "+1ST STR if a model with Bruiser is in the gang.",
     "version": 1.99,
     "hasErrata": "false",
     "errata": []
@@ -1184,6 +1184,12 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Grind": {
+    "description": "Models wounded by a model with Grind must discard one piece of equipment of their choice.",
+    "version": 1.99,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Gross": {
     "description": "When Pudge is destroyed, before removing the model resolve the following offensive action:<br>0AC: SW, Wave 1, +1R STR.",
     "version": 1.99,
@@ -1467,7 +1473,7 @@
     "hasErrata": "false",
     "errata": []
   },
-  "Insignificant": {
+  "Insignificant-E": {
     "description": "When a model inflicts a wound in melee against a model with insignificant, that model may immediately make a free melee attack. Inflicting a wound on an insignificant model does not advance the Power Gauge.",
     "version": 1.0,
     "hasErrata": "true",
@@ -1479,6 +1485,12 @@
         "sourceDescription": "Forgotten King Updated keyword."
       }
     ]
+  },
+  "Insignificant-A": {
+    "description": "A model may not draw a loot card for destroying a model with Insignificant.",
+    "version": 1.99,
+    "hasErrata": "false",
+    "errata": []
   },
   "Invader": {
     "description": "When Invader is used the Invader model is removed from play and placed on the target Hero's card, essentially becoming a token. While a slime model is on the Hero's card, no model other than the Hero may target or affect the slime the Slime—not even area of effects.",
