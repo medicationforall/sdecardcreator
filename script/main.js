@@ -344,7 +344,7 @@ function findStats(){
     return text;
 }
 
- function replace1(match){
+function replace1(match){
 	var result = '<span class="keyword '+match+'" data-key="'+match+'">'+match+'</span>';
 		
 	return result;

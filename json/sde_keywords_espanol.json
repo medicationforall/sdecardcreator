@@ -1190,6 +1190,12 @@
     "hasErrata": "false",
     "errata": []
   },
+  "Grind": {
+    "description": "Models wounded by a model with Grind must discard one piece of equipment of their choice.",
+    "version": 1.99,
+    "hasErrata": "false",
+    "errata": []
+  },
   "Gross": {
     "description": "When Pudge is destroyed, before removing the model resolve the following offensive action:<br>0AC: SW, Wave 1, +1R STR.",
     "version": 1.99,
