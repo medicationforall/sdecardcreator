@@ -345,7 +345,7 @@
     "errata": []
   },
   "Bruiser": {
-    "description": "+0ST STR if a model with Bruiser is in the gang.",
+    "description": "+1ST STR if a model with Bruiser is in the gang.",
     "version": 1.99,
     "hasErrata": "false",
     "errata": []
