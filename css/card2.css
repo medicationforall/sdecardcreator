@@ -134,6 +134,8 @@
 	background:url('image/status/knockdownT.png') no-repeat 0px;
 	color:rgba(0, 0, 0, 0.0);
 	background-size: 30px;
+	padding-top:4px;
+	vertical-align:middle;
 }
 
 .card span.keyword.IMMUNEKNOCKDOWN{
@@ -150,6 +152,8 @@
 	background-size: 30px;
 	height:35px;
 	bottom:5px;
+	padding-top:4px;
+	vertical-align:middle;
 }
 
 .card span.keyword.IMMUNEPOISON{
@@ -165,6 +169,8 @@
 	background:url('image/status/iceT.png') no-repeat 0px;
 	color:rgba(0, 0, 0, 0.0);
 	background-size: 30px;
+	padding-top:4px;
+	vertical-align:middle;
 }
 
 .card span.keyword.IMMUNEICE{
@@ -195,6 +201,8 @@
 	background:url('image/status/slowT.png') no-repeat 0px;
 	color:rgba(0, 0, 0, 0.0);
 	background-size: 30px;
+	padding-top:4px;
+	vertical-align:middle;
 }
 
 .card span.keyword.IMMUNESLOW{
