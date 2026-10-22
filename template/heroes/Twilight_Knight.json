@@ -11,21 +11,21 @@
 	"backgroundFlip": false,
 	"imageSource": "default",
 	"remoteAvatar": "",
-	"STR": "1sw 1b 1r",
-	"ARM": "2b sh",
-	"WILL": "3b",
-	"DEX": "3b sh",
+	"STR": "1SW 1B 1R",
+	"ARM": "2B SH",
+	"WILL": "3B",
+	"DEX": "3B SH",
 	"flavorText": "None know from where the Twilight Knights originate. Some whisper that they come from the Dark Realm itself, and that they are the last and only Heroes from that benighted realm. For their part, Twilight Knights reveal nothing. Appearing only when situations are at their most dire, they drive back the shadows only to disappear as silently as they arrived.",
 	"abilities": [{
 			"costType": "attack",
 			"cost": "1",
 			"name": "Piercing Blade",
-			"definition": "0sw, Lance 2"
+			"definition": "0SW, Lance 2"
 		}, {
 			"costType": "support",
 			"cost": "2",
 			"name": "Gloom Shatter",
-			"definition": "Dangerous, Aura 2, Reduce all offense rolls made in the aura by 1st. Twilight Knight is not affected by gloom shatter."
+			"definition": "DANGEROUS, Aura 2, Reduce all offense rolls made in the aura by 1st. Twilight Knight is not affected by gloom shatter."
 		}, {
 			"costType": "supportPotion",
 			"cost": "1",
@@ -35,17 +35,17 @@
 	],
 	"customKeywords": {
 		"Wave X": {
-			"description": "A Wave effect is centered\non the user’s square and\nhits the user and every\nmodel within X squares of\nthe user. Waves replace the\ndistance portion (X) of a\ndistance effect, but do not\nreplace any other aspect of\nthe ability.",
+			"description": "A Wave effect is centered<br>on the user’s square and<br>hits the user and every<br>model within X squares of<br>the user. Waves replace the<br>distance portion (X) of a<br>distance effect, but do not<br>replace any other aspect of<br>the ability.",
 			"version": "1",
 			"hasErrata": true,
 			"errata": [{
 					"version": 1,
-					"description": "A Wave effect is centered\non the user’s square and\nhits the user and every\nmodel within X squares of\nthe user. Waves replace the\ndistance portion (X) of a\ndistance effect, but do not\nreplace any other aspect of\nthe ability."
+					"description": "A Wave effect is centered<br>on the user’s square and<br>hits the user and every<br>model within X squares of<br>the user. Waves replace the<br>distance portion (X) of a<br>distance effect, but do not<br>replace any other aspect of<br>the ability."
 				}
 			],
 			"displayBack": false,
 			"selectedVersion": "1"
 		}
 	},
-	"affinity": "emerald"
+	"affinity": "EMERALD"
 }

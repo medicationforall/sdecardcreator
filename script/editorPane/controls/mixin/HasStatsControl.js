@@ -21,14 +21,15 @@
  * @mixin
  */
 function HasStatsControl(){
-  this.strControl = this.node.find('input[name="STR"]');
-  this.armControl = this.node.find('input[name="ARM"]');
-  this.willControl = this.node.find('input[name="WILL"]');
-  this.dexControl = this.node.find('input[name="DEX"]');
+	this.strControl = this.node.find('input[name="STR"]');
+	this.armControl = this.node.find('input[name="ARM"]');
+	this.willControl = this.node.find('input[name="WILL"]');
+	this.dexControl = this.node.find('input[name="DEX"]');
 
-  this.woundsControl = this.node.find('input[name="wounds"]');
-  this.skullsControl = this.node.find('input[name="skulls"]');
-  this.potionsControl = this.node.find('input[name="potions"]');
+	this.woundsControl = this.node.find('input[name="wounds"]');
+	this.skullsControl = this.node.find('input[name="skulls"]');
+	this.potionsControl = this.node.find('input[name="potions"]');
+	this.petCostControl = this.node.find('input[name="petCost"]');
 
 
   /**
@@ -80,6 +81,14 @@ function HasStatsControl(){
 
 
   /**
+   * Pet Cost text input.
+   */
+  this.petCostControl.on('input',$.proxy(function(coreNode,event){
+    coreNode.setPetCost($(this).val());
+  },null,this));
+
+
+  /**
    * Skulls text input.
    */
   this.skullsControl.on('input',$.proxy(function(coreNode,event){
@@ -107,16 +116,24 @@ function HasStatsControl(){
     cardNode.setWounds(wounds);
   };
 
+	/**
+	* Set card potions.
+	* @param {string} potions - Card potions.
+	*/
+	this.setPotions=function(potions){
+		var cardNode = $('.cardGroup.selected').data('node');
+		cardNode.setPotions(potions);
+	};
 
+  
   /**
-   * Set card potions.
-   * @param {string} potions - Card potions.
+   * Set card petCost.
+   * @param {string} petCost - Card petCost.
    */
-  this.setPotions=function(potions){
+  this.setPetCost=function(petCost){
     var cardNode = $('.cardGroup.selected').data('node');
-    cardNode.setPotions(potions);
+    cardNode.setPetCost(petCost);
   };
-
 
   /**
    * Set card skulls.
@@ -154,6 +171,10 @@ function HasStatsControl(){
 
     if(data.potions!==undefined){
       this.potionsControl.val(data.potions);
+    }
+
+    if(data.petCost !== undefined){
+      this.setPetCost(data.petCost);
     }
 
     if(data.skulls!==undefined){

@@ -6,33 +6,33 @@
 	"actions": "3",
 	"potions": "1",
 	"wounds": "5",
-	"keywordsList": "Immune: Fire, Dragon Spite",
+	"keywordsList": "IMMUNEFIRE, Dragon Spite",
 	"background": "roxors-cavern.png",
 	"backgroundFlip": false,
 	"imageSource": "default",
 	"remoteAvatar": "",
-	"STR": "1sw 3b",
-	"ARM": "2b 1r sh",
-	"WILL": "3b",
-	"DEX": "3b",
+	"STR": "1SW 3B",
+	"ARM": "2B 1R SH",
+	"WILL": "3B",
+	"DEX": "3B",
 	"flavorText": "",
 	"abilities": [{
 			"costType": "attack",
 			"cost": "2",
 			"name": "Head Chopper",
-			"definition": "1sw, +1g STR"
+			"definition": "1SW, +1G STR"
 		}, {
 			"costType": "attack",
 			"cost": "3",
 			"name": "Dragon Slayer",
-			"definition": "1sw, If Dragon Slayer inflicts a wound it instead inflicts one wound for every star the offense roll exceeded the defense roll."
+			"definition": "1SW, If Dragon Slayer inflicts a wound it instead inflicts one wound for every star the offense roll exceeded the defense roll."
 		}, {
 			"costType": "offensePotion",
 			"cost": "1",
 			"name": "Bottled Dragon Breath",
-			"definition": "Dangerous, 0sw, sweep 2, Fire"
+			"definition": "Dangerous, 0SW, sweep 2, FIRE"
 		}
 	],
 	"customKeywords": {},
-	"affinity": "citrine"
+	"affinity": "CITRINE"
 }

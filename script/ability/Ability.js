@@ -149,10 +149,13 @@ function Ability(){
    */
   this.parseAbility=function(text){
     var keywordStore = $('.page').data('keywordStore');
-    var kText = keywordStore.findKeywords(text);
+	var kText = keywordStore.findKeywords(text);
+    //var yText = keywordStore.findSymbols(kText);
+    //var iText = keywordStore.findImmunities(kText);
     var dText = keywordStore.findDice(kText);
-    var aText = keywordStore.findAffinity(dText);
+    var aText = keywordStore.findAffinities(dText);
     var sText = keywordStore.findStats(aText);
+
 
     return sText;
   };

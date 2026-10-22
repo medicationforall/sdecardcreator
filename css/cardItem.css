@@ -194,7 +194,8 @@ height:auto;
 
 
 .card .item .keywordsList{
-display:none;
+	display:none;
+	padding-left: 8px;
 }
 
 .card .item .keywords{

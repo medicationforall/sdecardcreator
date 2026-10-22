@@ -57,12 +57,13 @@ function KeywordStore(keywords){
       if(data.hasOwnProperty(key)){
         raw.push(key);
         rawOrder.push(key);
-        this.lookup[key.toLowerCase()]=key;
+        //this.lookup[key.toLowerCase()]=key;
+        this.lookup[toCamelCaseLoop(key)]=key;
       }
     }
 
     this.ordered = rawOrder.sort(function (a, b) {
-      return a.toLowerCase().localeCompare(b.toLowerCase());
+      return a.localeCompare(b);
     });
 
     this.byLength = raw.sort(function(a, b){
@@ -105,30 +106,38 @@ function KeywordStore(keywords){
     this.reN = new RegExp('\\b('+reXText+')\\b \\b(\\d+)\\b','gi');
   };
 
-
-  /**
-   *search function that returns a modified version of the text passed into with the keywords highlighted.
-   */
-  this.findKeywords=function(text){
-    text = text.replace(this.re,function(match){
-      var key = this.lookup[match.toLowerCase()];
-      var keyClass = this.resolveKeyClass(key);
-      return '<span class="keyword '+keyClass+'" data-key="'+key+'">'+key+'</span>';
-    }.bind(this));
-    return text;
-  };
-
-
   /**
    * Find keywords that can contain other keywords.
    */
+  this.findKeywords=function(text){
+	var resultA = text;
+	var newText = 
+	//text = 
+	text.replace(this.re,function(match){
+		var resultB = '';
+		if(isNotEmpty(match)){
+			var key = this.lookup[toCamelCaseLoop(match)];
+			var keyClass = this.resolveKeyClass(key);
+			resultB = '<span class="keyword '+keyClass.toUpperCase()+'" data-key="'+toCamelCaseLoop(key)+'">'+toCamelCaseLoop(key)+'</span>';
+		}
+
+		return resultB;
+    }.bind(this));
+	
+	if(isNotEmpty(newText)) {
+		resultA = newText;
+	}
+	
+    return resultA;
+  };
+  
   this.findNKeywords=function(text){
     text = text.replace(this.reN,function(match,key,number){
       //console.log('findNKeywords',match,arguments);
       var dataKey = this.resolveNKey(key);
       var keyClass = this.resolveKeyClass(key);
 
-      return '<span class="keyword '+keyClass+'" data-key="'+dataKey+'">'+key+' '+number+'</span>';
+      return '<span class="keyword '+keyClass.toUpperCase()+'" data-key="'+toCamelCaseLoop(dataKey)+'">'+toCamelCaseLoop(key)+' '+number+'</span>';
     }.bind(this));
     return text;
   };
@@ -138,7 +147,7 @@ function KeywordStore(keywords){
    *
    */
   this.resolveNKey=function(key){
-    key = this.ucFirstAllWords(key)+' X';
+    //key = this.ucFirstAllWords(key)+' X';
     return key;
   };
 
@@ -146,163 +155,57 @@ function KeywordStore(keywords){
   /**
    *http://stackoverflow.com/a/8330107
    */
-  this.ucFirstAllWords=function(str){
-    str = str.toLowerCase();
-    var pieces = str.split(" ");
-    for ( var i = 0; i < pieces.length; i++ ) {
-      var j = pieces[i].charAt(0).toUpperCase();
-      pieces[i] = j + pieces[i].substr(1);
-    }
-    return pieces.join(" ");
-  };
+  //this.ucFirstAllWords=function(str){
+    //str = str.toLowerCase();
+    //var pieces = str.split(" ");
+    //for ( var i = 0; i < pieces.length; i++ ) {
+    //  var j = pieces[i].charAt(0).toUpperCase();
+    //  pieces[i] = j + pieces[i].substr(1);
+    //}
+    //return pieces.join(" ");
+	//return str;
+  //};
 
 
   /**
    *
    */
   this.addKeyword=function(key,data){
-    var lKey = key.toLowerCase();
-    var keyClass = this.resolveKeyClass(key);
-
-    //check to see if the keyword is already added, and if the display flag does not equal false
-    if( data.displayBack !== false && data.displayBack !== 'false'  && $('.cardGroup.selected .card .keywords .'+keyClass).length ===0){
-      //console.log(key,data);
-
-      var description = data.description;
-
-      if(data.selectedVersion !== undefined){
-        if(data.selectedVersion !== data.version ){
-          for(var i=0,e;(e=data.errata[i]);i++){
-            if(data.selectedVersion === e.version.toString()){
-              description=e.description;
-              break;
-            }
-          }
-        }
-      }else if(data.hasErrata === "true" || data.hasErrata === true){
-        description = data.errata[data.errata.length-1].description;
-      }
-
-      var parsedDescription = this.parseDescription(description);
-
-      var backTemplate = '<div class="keyword '+keyClass+'" data-key="'+key+'">'+
-      '<span class="keyword '+keyClass+'"></span>'+
-      '<span class="name">'+key+'</span>:'+
-      '<span class="description">'+parsedDescription+'</span>'+
-      '</div>';
-
-      var itemTemplate = '<div class="keyword '+keyClass+'" data-key="'+key+'">'+
-      '<span class="keyword '+keyClass+'"></span>'+
-      '<span class="name">'+key+'</span> '+
-      '<span class="description">('+parsedDescription+')</span>'+
-      '</div>';
-
-      $(".cardGroup.selected .card .back .keywords").append(backTemplate);
-
-      $(".cardGroup.selected .card .item .keywords").append(itemTemplate);
-    }
+	addKeyword(key,data);
   };
 
+	this.parseDescription=function(description){
+		return parseDescription(description);
+	};
+  
+	/**
+	*search function that returns a modified version of the text passed into with the keywords highlighted.
+	*/
+	this.findImmunities=function(text){
+		return findImmunities(text);
+	};
+	
+	this.findSymbols=function(text){
+		return findSymbols(text);
+	}
 
-  /**
-   *
-   */
-  this.parseDescription=function(description){
-    var affinityDescription = this.findAffinity(description);
-    var diceDescription = this.findDice(affinityDescription);
-    var statSescription = this.findStats(diceDescription);
-    return statSescription;
-  };
+	this.findAffinities=function(description){
+		return findAffinities(description);
+	};
 
+  	this.findStats=function(text){
+		return findStats(text);
+	};
 
-  /**
-   *
-   */
-  this.findStats=function(text){
-    var re = /\b(str|will|dex|arm)\b/gi;
-    text = text.replace(re,'<span class="stat $1">$1</span>');
-    return text;
-  };
-
-  /**
-   *
-   */
-  this.findDice=function(text){
-    //regular expression - https://regex101.com/#javascript
-    var re = /(([+-]?[0-9]+)(rg|[rbgop]|st|sw|mi|ma|ac|mo|he|sh))\b/gi;
-
-    text = text.replace(re,function(match,p1,p2,p3,p4){
-      var c="";
-      var v = p3.toLowerCase();
-
-      if(v==='r'){
-        c+="dice red";
-      }else if(v==='b'){
-        c+="dice blue";
-      }else if(v==='g'){
-        c+="dice green";
-      }else if(v==='o'){
-        c+="dice orange";
-      }else if(v==='p'){
-        c+="dice purple";
-      }else if(v==='st'){
-        c+="dice star";
-      }else if(v==='ma'){
-        c+="offense magic";
-      }else if(v==='mi'){
-        c+="offense missile";
-      }else if(v==='sw'){
-        c+="offense melee";
-      }else if(v==='rg'){
-        c+="offense range";
-      }else if(v==='ac'){
-        c+="actionMod";
-      }else if(v==='mo'){
-        c+="moveMod";
-      }else if(v==='he'){
-        c+="heartMod";
-      }else if(v==='sh'){
-        c+="shieldMod";
-      }
-      return '<span class="'+c+'">'+(p2==='0'?'&nbsp;':p2)+'</span>';
-    });
-    return text;
-  };
-
-
-  /**
-   *
-   */
-  this.findAffinity=function(description){
-    var re = /\b(Sapphire|Emerald|Citrine|Ruby|Amethyst)\b/gi;
-
-    description = description.replace(re,function(match){
-    return '<div class="affinity '+match.toLowerCase()+'" title="'+match+'"></div>';
-    });
-    return description;
-  };
-
+	this.findDice=function(text){
+		return findDice(text);
+	};
 
   /**
    *
    */
   this.resolveKeyClass=function(key){
-    var parts = key.split(' ');
-    var returner ='';
-
-    for(var i=0,item;(item=parts[i]);i++){
-      if(i==0){
-        item = item.toLowerCase();
-        item = item.replace('\'','');
-
-        if($.isNumeric(item[0])){
-          item="key-"+item;
-        }
-      }
-
-      returner+=item;
-    }
-    return returner;
+    return resolveKeyClass(key);
   };
 
 
@@ -357,6 +260,9 @@ function KeywordStore(keywords){
    *
    */
   this.checkKeywords=function(node){
+	  checkKeywords(node);
+  }
+  /*
     var keysFound = [];
     //clear keywords
     $('.cardGroup.selected .card .keywords').empty();
@@ -365,9 +271,9 @@ function KeywordStore(keywords){
       keysFound.push($(element).data('key'));
     });
 
-    //sort keysfound - should be case insensitive
+    //sort keysfound - should be case sensitive
     keysFound = keysFound.sort(function(a,b){
-      return a.toLowerCase().localeCompare(b.toLowerCase());
+      return a.localeCompare(b);
     });
 
     //loop through keysfound
@@ -375,7 +281,7 @@ function KeywordStore(keywords){
       this.addKeyword(key,this.data[key]);
     }
   };
-
+*/
 
   /**
    * params: name, description, version, hasErrata, displayBack

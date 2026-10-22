@@ -28,30 +28,31 @@ function Card(animate,appendAfter){
     "subTitle": "subTitle",
     "move": "6",
     "actions": "3",
-    "potions": "1",
     "wounds": "5",
+    "potions": "1",
+    "petCost": "1",
     "keywordsList": "",
-    "background": "pic1685577_md.jpg",
+    "background": "fae_wood.jpg",
     "backgroundFlip": false,
     "imageSource": "default",
-    "STR": "1sw 3b",
-    "ARM": "2b 1r sh",
-    "WILL": "3b",
-    "DEX": "3b",
+    "STR": "1SW 3B",
+    "ARM": "2B 1R SH",
+    "WILL": "3B",
+    "DEX": "3B",
     "flavorText": "",
     "abilities": [],
-    "affinity": "citrine"
+    "affinity": "CITRINE"
   };
 
   this.template='<div class="cardGroup selected">'+
   	'<div class="cardDiv">'+
-  		'<div class="card hero red">'+
+  		'<div class="card hero blue">'+
 
   			'<div class="front">'+
-        '<div class="slot ruby hero"></div>'+
-        '<div class="slot emerald hero"></div>'+
-        '<div class="slot saphire hero"></div>'+
-        '<div class="slot citrine hero"></div>'+
+        '<div class="slot RUBY hero"></div>'+
+        '<div class="slot EMERALD hero"></div>'+
+        '<div class="slot SAPPHIRE hero"></div>'+
+        '<div class="slot CITRINE hero"></div>'+
   				'<div class="model hero monster pet arcadeSolo">'+
   					'<div class="header">'+
   						'<div class="moveactions" >'+
@@ -66,16 +67,17 @@ function Card(animate,appendAfter){
   					'</div>'+
 
   					'<img class="character" src="" />'+
-  					'<div class="background" style="background:url(\'image/background/pic1685577_md.jpg\') no-repeat;background-size:100% 100%"></div>'+
+  					'<div class="background" style="background:url(\'image/background/fae_wood.jpg\') no-repeat;background-size:100% 100%"></div>'+
 
   					'<div class="keywordsSection">'+
-  						'<span class="hero monster arcadeSolo affinity citrine"></span>'+
+  						'<span class="cardAffinity hero monster arcadeSolo CITRINE"></span>'+
   						'<span class="keywordsList"></span>'+
 
   						'<div class="subStats">'+
-  							'<span class="hero monster wounds">5</span>'+
+  							'<span class="hero pet monster wounds">5</span>'+
   							'<span class="hero potions">1</span>'+
-                '<span class="monster skulls">1</span>'+
+							'<span class="pet petCost">1</span>'+
+							'<span class="monster skulls">1</span>'+
   						'</div>'+
   					'</div>'+
 
@@ -109,7 +111,7 @@ function Card(animate,appendAfter){
   	'</div>'+
 
   	'<div class="cardDiv">'+
-  		'<div class="card hero red">'+
+  		'<div class="card hero blue">'+
   			'<div class="back">'+
   				'<div class="hero monster pet arcadeSolo header">'+
   					'<div class=""><span class="title">title</span></div>'+
@@ -124,7 +126,7 @@ function Card(animate,appendAfter){
   						'</div>'+
   						'<div><span class="timeout title">title</span></div>'+
   						'<div class="timeout abilities"></div>'+
-  						'<div class="monster pet hero arcadeSolo keywords"></div>'+
+  						'<div class="monster pet hero arcadeSolo keywords definedKeywords"></div>'+
 
   						'<div class="monster pet hero arcadeSolo flavor">'+
   						'<div class="flavorBorder"></div>'+
@@ -132,7 +134,7 @@ function Card(animate,appendAfter){
   						'<div class="flavorBorder"></div>'+
   						'</div>'+
   					'</div>'+
-            '<div class="author hero monster arcadeSolo pet timeout"></div>'+
+					'<div class="author hero monster arcadeSolo pet timeout"></div>'+
   				'</div>'+
   			'</div>'+
   		'</div>'+
@@ -146,11 +148,15 @@ function Card(animate,appendAfter){
    */
   this._constructor=function(){
     var cardContainer = $('.cardContainer').data('node');
-    if(appendAfter){
-      this.node=$(this.template).insertAfter(appendAfter);
-    }else{
-      this.node=$(this.template).appendTo(cardContainer.node);
-    }
+    if(appendAfter != null){
+		if(appendAfter != undefined){
+			this.node=$(this.template).insertAfter(appendAfter);
+		}else{
+			this.node=$(this.template).appendTo(cardContainer.node);
+		}
+	}else{
+		this.node=$(this.template).appendTo(cardContainer.node);
+	}
     this.node.data('node',this);
 
     HasSetTypeDisplay.call(this);
@@ -209,7 +215,7 @@ function Card(animate,appendAfter){
 
   this.initFirstCard=function(){
     //hero
-    var data = {"name":"Ability 1","costType":"attack","cost":1,"definition":"+1r -2b 3g 4o 5p 1st 0mi 1ma 2sw 3rg augment fire STR WILL DEX ARM 1ac 2mo 0sh +1he"};
+    var data = {"name":"Ability 1","costType":"attack","cost":1,"definition":"0ST -1B +2R 3G 4Y 5P 6O 7L 8N 9I 9W 0MI 1MA 2SW 3RG STR WILL DEX ARM 1AC 2MO 2PO 0SH +1HE ALLAFFINITY AMETHYST AMETHYSTCITRINE CITRINE CITRINEEMERALD EMERALD EMERALDRUBY RUBY RUBYSAPPHIRE SAPPHIRE SAPPHIRECITRINE AUGMENT DANGEROUS BANE HEX FIRE KNOCKDOWN ICE IMMOBILE POISON SLOW IMMUNE: BANE IMMUNE: HEX IMMUNE: FIRE IMMUNE: KNOCKDOWN IMMUNE: ICE IMMUNE: IMMOBILE IMMUNE: POISON IMMUNE: SLOW IMMUNE: ALL"};
 
     //griefer
     //data = {"cardType": "command","title": "Griefer","imageSource": "default","remoteAvatar": "","abilities": [{"costType": "special","cost": "1","name": "Bully","definition": "All Commands target Hero with the least wrath."}, {"costType": "nameOnly","cost": "1","name": "Move x1","definition": ""}, {"costType": "nameOnly","cost": "1","name": "Fight x1","definition": ""}],"customKeywords": {}};

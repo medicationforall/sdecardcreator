@@ -68,7 +68,7 @@ function KeywordSettings(store){
     this.node.find('.keywordList ul').empty();
     for(var i=0,key;(key=this.store.ordered[i]);i++){
       var selectedClass= '';
-      if(selected && selected === key){
+      if(selected && selected === key.toUpperCase()){
         selectedClass='selected';
         this.selectedKey = key;
       }

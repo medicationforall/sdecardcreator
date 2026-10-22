@@ -23,7 +23,6 @@
 
 .card .front, .card .back{
 	margin:20px;
-	margin-top;
 }
 
 
@@ -34,15 +33,27 @@
 
 
 /*Keyword*/
-.card span.keyword.fire,
-.card span.keyword.knockdown,
-.card span.keyword.poison,
-.card span.keyword.ice,
-.card span.keyword.slow,
-.card span.keyword.dangerous,
-.card span.keyword.augment,
-.card span.keyword.bane,
-.card span.keyword.hex,
+.card span.keyword.ALL,
+.card span.keyword.BANE,
+.card span.keyword.FIRE,
+.card span.keyword.HEX,
+.card span.keyword.ICE,
+.card span.keyword.IMMOBILE,
+.card span.keyword.KNOCKDOWN,
+.card span.keyword.POISON,
+.card span.keyword.SLOW,
+.card span.keyword.DANGEROUS,
+.card span.keyword.IMMUNEALL,
+.card span.keyword.IMMUNEBANE,
+.card span.keyword.IMMUNEFIRE,
+.card span.keyword.IMMUNEHEX,
+.card span.keyword.IMMUNEICE,
+.card span.keyword.IMMUNEIMMOBILE,
+.card span.keyword.IMMUNEKNOCKDOWN,
+.card span.keyword.IMMUNEPOISON,
+.card span.keyword.IMMUNESLOW,
+.card span.keyword.IMMUNEDANGEROUS,
+.card span.keyword.AUGMENT,
 .card span.keyword.line,
 .card span.keyword.area,
 .card span.keyword.scatter{
@@ -52,60 +63,26 @@
 	/*bottom:15px;*/
 	display:inline-block;
 	/*padding-top:15px;*/
-	vertical-align:top;
+	/*vertical-align:top;*/
 }
 
-.card span.keyword.fire{
-	background:url('image/status/fireT.png') no-repeat 0px;
+.card span.keyword.ALL{
+	background:url('image/status/all.png') no-repeat 0px;
 	color:rgba(0, 0, 0, 0.0);
 	background-size: 30px;
 	padding-top:4px;
 	vertical-align:middle;
 }
 
-.card span.keyword.knockdown{
-	background:url('image/status/knockdownT.png') no-repeat 0px;
+.card span.keyword.IMMUNEALL{
+	background:url('image/status/allI.png') no-repeat 0px;
 	color:rgba(0, 0, 0, 0.0);
 	background-size: 30px;
-}
-
-.card span.keyword.poison{
-	background:url('image/status/poisonT.png') no-repeat 0px;
-	color:rgba(0, 0, 0, 0.0);
-	background-size: 30px;
-	height:35px;
-	bottom:5px;
-}
-
-.card span.keyword.ice{
-	background:url('image/status/iceT.png') no-repeat 0px;
-	color:rgba(0, 0, 0, 0.0);
-	background-size: 30px;
-}
-
-.card span.keyword.slow{
-	background:url('image/status/slowT.png') no-repeat 0px;
-	color:rgba(0, 0, 0, 0.0);
-	background-size: 30px;
-}
-
-
-.card span.keyword.dangerous{
-	background:url('image/status/dangerousSmall.png') no-repeat 0px;
-	color:rgba(0, 0, 0, 0.0);
-	background-size: 30px;
+	padding-top:4px;
 	vertical-align:middle;
 }
 
-
-.card span.keyword.augment{
-	background:url('image/status/augmentSmall.png') no-repeat 0px;
-	color:rgba(0, 0, 0, 0.0);
-	background-size: 30px;
-	vertical-align:middle;
-}
-
-.card span.keyword.bane{
+.card span.keyword.BANE{
 	background:url('image/status/baneT.png') no-repeat 0px;
 	color:rgba(0, 0, 0, 0.0);
 	background-size: 30px;
@@ -113,13 +90,344 @@
 	vertical-align:middle;
 }
 
-.card span.keyword.hex{
+.card span.keyword.IMMUNEBANE{
+	background:url('image/status/baneI.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+	padding-top: 3px;
+	vertical-align:middle;
+}
+
+.card span.keyword.FIRE{
+	background:url('image/status/fireT.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+	padding-top:4px;
+	vertical-align:middle;
+}
+
+.card span.keyword.IMMUNEFIRE{
+	background:url('image/status/fireI.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+	padding-top:4px;
+	vertical-align:middle;
+}
+
+.card span.keyword.HEX{
 	background:url('image/status/hexT.png') no-repeat 0px;
 	color:rgba(0, 0, 0, 0.0);
 	background-size: 30px;
+	padding-top: 3px;
+	vertical-align:middle;
 }
 
-.card span.keyword.line{
+.card span.keyword.IMMUNEHEX{
+	background:url('image/status/hexI.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+	padding-top: 3px;
+	vertical-align:middle;
+}
+
+.card span.keyword.KNOCKDOWN{
+	background:url('image/status/knockdownT.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+	padding-top:4px;
+	vertical-align:middle;
+}
+
+.card span.keyword.IMMUNEKNOCKDOWN{
+	background:url('image/status/knockdownI.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+	positive: relative;
+	top: 20px;
+}
+
+.card span.keyword.POISON{
+	background:url('image/status/poisonT.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+	height:35px;
+	bottom:5px;
+	padding-top:4px;
+	vertical-align:middle;
+}
+
+.card span.keyword.IMMUNEPOISON{
+	background:url('image/status/poisonI.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+	height:35px;
+	positive: relative;
+	top: 15px;
+}
+
+.card span.keyword.ICE{
+	background:url('image/status/iceT.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+	padding-top:4px;
+	vertical-align:middle;
+}
+
+.card span.keyword.IMMUNEICE{
+	background:url('image/status/iceI.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+	positive: relative;
+	top: 20px;
+}
+
+.card span.keyword.IMMOBILE{
+	background:url('image/status/immobile.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+	height:40px;
+	vertical-align: middle;
+}
+
+.card span.keyword.IMMUNEIMMOBILE{
+	background:url('image/status/immobileI.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+	height:40px;
+	vertical-align: middle;
+}
+
+.card span.keyword.SLOW{
+	background:url('image/status/slowT.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+	padding-top:4px;
+	vertical-align:middle;
+}
+
+.card span.keyword.IMMUNESLOW{
+	background:url('image/status/slowI.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+	positive: relative;
+	top: 20px;
+}
+
+.card span.keyword.DANGEROUS{
+	background:url('image/status/dangerousSmall.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+	vertical-align:middle;
+}
+
+.card span.keyword.IMMUNEDANGEROUS{
+	background:url('image/status/dangerousSmallI.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+	vertical-align:middle;
+}
+
+.card span.keyword.AUGMENT{
+	background:url('image/status/augmentSmall.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+	vertical-align:middle;
+}
+
+
+.keywordsList span.keyword.ALL{
+	background:url('image/status/30_All.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+	padding-top:4px;
+	vertical-align:middle;
+}
+
+.keywordsList span.keyword.IMMUNEALL{
+	background:url('image/status/30_All_Immune.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 20px;
+	vertical-align:middle;
+	height:20px;
+	position: relative;
+	top: -5px;
+}
+
+.keywordsList span.keyword.BANE{
+	background:url('image/status/30_Bane.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+	padding-top: 3px;
+	vertical-align:middle;
+	position: relative;
+	top: -5px;
+}
+
+.keywordsList span.keyword.IMMUNEBANE{
+	background:url('image/status/30_Bane_Immune.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+	vertical-align:middle;
+	position: relative;
+	top: -5px;
+}
+
+.keywordsList span.keyword.FIRE{
+	background:url('image/status/30_Fire.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 20px;
+	padding-top:4px;
+	vertical-align:middle;
+	position: relative;
+	top: 0px;
+	height: 20px;
+}
+
+.keywordsList span.keyword.IMMUNEFIRE{
+	background:url('image/status/30_Fire_Immune.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 20px;
+	padding-top:4px;
+	vertical-align:middle;
+	position: relative;
+	top: 0px;
+	height: 20px;
+}
+
+.keywordsList span.keyword.HEX{
+	background:url('image/status/30_Hex.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+	padding-top: 3px;
+	vertical-align:middle;
+	position: relative;
+	top: -5px;
+}
+
+.keywordsList span.keyword.IMMUNEHEX{
+	background:url('image/status/30_Hex_Immune.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+	padding-top: 3px;
+	vertical-align:middle;
+	position: relative;
+	top: -5px;
+}
+
+.keywordsList span.keyword.KNOCKDOWN{
+	background:url('image/status/30_Knockdown.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+	position: relative;
+	top: -5px;
+}
+
+.keywordsList span.keyword.IMMUNEKNOCKDOWN{
+	background:url('image/status/30_Knockdown_Immune.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+	position: relative;
+	top: -5px;
+}
+
+.keywordsList span.keyword.POISON{
+	background:url('image/status/30_Poison.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 20px;
+	height:30px;
+	position: relative;
+	top: -5px;
+}
+
+.keywordsList span.keyword.IMMUNEPOISON{
+	background:url('image/status/30_Poison_Immune.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 20px;
+	height:30px;
+	position: relative;
+	top: -5px;
+}
+
+.keywordsList span.keyword.ICE{
+	background:url('image/status/30_Ice.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+	position: relative;
+	top: -5px;
+}
+
+.keywordsList span.keyword.IMMUNEICE{
+	background:url('image/status/30_Ice_Immune.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+	position: relative;
+	top: -5px;
+}
+
+.keywordsList span.keyword.IMMOBILE{
+	background:url('image/status/30_Immobile.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+	height:30px;
+	vertical-align: middle;
+	position: relative;
+	top: -5px;
+}
+
+.keywordsList span.keyword.IMMUNEIMMOBILE{
+	background:url('image/status/30_Immobile_Immune.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+	height:30px;
+	vertical-align: middle;
+	position: relative;
+	top: -5px;
+}
+
+.keywordsList span.keyword.SLOW{
+	background:url('image/status/30_Slow.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+	position: relative;
+	top: -5px;
+}
+
+.keywordsList span.keyword.IMMUNESLOW{
+	background:url('image/status/30_Slow_Immune.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+	position: relative;
+	top: -5px;
+}
+
+.keywordsList span.keyword.DANGEROUS{
+	background:url('image/status/30_Dangerous.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+	vertical-align:middle;
+	position: relative;
+	top: -5px;
+}
+
+.keywordsList span.keyword.IMMUNEDANGEROUS{
+	background:url('image/status/30_Dangerous_Immune.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+	vertical-align:middle;
+	position: relative;
+	top: -5px;
+}
+
+.keywordsList span.keyword.AUGMENT{
+	background:url('image/status/30_Augment.png') no-repeat 0px;
+	color:rgba(0, 0, 0, 0.0);
+	background-size: 30px;
+	vertical-align:middle;
+	position: relative;
+	top: -5px;
+}
+
+.keywordsList span.keyword.line{
 	background:url('image/trap/line.png') no-repeat 0px;
 	color:rgba(0, 0, 0, 0.0);
 	background-size: 20px 60px;
@@ -128,7 +436,7 @@
 	width:20px;
 }
 
-.card span.keyword.area{
+.keywordsList span.keyword.area{
 	background:url('image/trap/area.png') no-repeat 0px;
 	color:rgba(0, 0, 0, 0.0);
 	background-size: 40px;
@@ -136,7 +444,7 @@
 	height:40px
 }
 
-.card span.keyword.scatter{
+.keywordsList span.keyword.scatter{
 	background:url('image/trap/scatter.png') no-repeat 0px;
 	color:rgba(0, 0, 0, 0.0);
 	background-size: 40px;
@@ -266,28 +574,105 @@ cursor:move;
 	z-index:2;
 }
 
-.card .stats .stat.STR{
-	background:url('image/stats/str-banner.png') no-repeat;
+.card .banner{
+	background:url('image/stats/banner.png') no-repeat;
 	background-size:140px;
 }
 
-.card .stats .stat.ARM{
-	background:url('image/stats/arm-banner.png') no-repeat;
-	background-size:140px;
+.card .stats .stat.en.STR{
+	background:url('image/stats/en/str.png') no-repeat;
+	background-size:70px;
+	background-position: 50% 10%;
 }
 
-.card .stats .stat.WILL{
-	background:url('image/stats/will-banner.png') no-repeat;
-	background-size:140px;
+.card .stats .stat.en.ARM{
+	background:url('image/stats/en/arm.png') no-repeat;
+	background-size:70px;
+	background-position: 50% 10%;
 }
 
-.card .stats .stat.DEX{
-	background:url('image/stats/dex-banner.png') no-repeat;
-	background-size:140px;
+.card .stats .stat.en.WILL{
+	background:url('image/stats/en/will.png') no-repeat;
+	background-size:70px;
+	background-position: 50% 10%;
 }
 
-.card .stats .stat{
-	height:70px;
+.card .stats .stat.en.DEX{
+	background:url('image/stats/en/dex.png') no-repeat;
+	background-size:70px;
+	background-position: 50% 10%;
+}
+
+.card .stats .stat.de.STR{
+	background:url('image/stats/de/str.png') no-repeat;
+	background-size:70px;
+	background-position: 50% 10%;
+}
+
+.card .stats .stat.de.ARM{
+	background:url('image/stats/de/rus.png') no-repeat;
+	background-size:70px;
+	background-position: 50% 10%;
+}
+
+.card .stats .stat.de.WILL{
+	background:url('image/stats/de/will.png') no-repeat;
+	background-size:70px;
+	background-position: 50% 10%;
+}
+
+.card .stats .stat.de.DEX{
+	background:url('image/stats/de/ges.png') no-repeat;
+	background-size:70px;
+	background-position: 50% 10%;
+}
+
+.card .stats .stat.es.STR{
+	background:url('image/stats/es/fue.png') no-repeat;
+	background-size:70px;
+	background-position: 50% 10%;
+}
+
+.card .stats .stat.es.ARM{
+	background:url('image/stats/es/arm.png') no-repeat;
+	background-size:70px;
+	background-position: 50% 10%;
+}
+
+.card .stats .stat.es.WILL{
+	background:url('image/stats/es/vol.png') no-repeat;
+	background-size:70px;
+	background-position: 50% 10%;
+}
+
+.card .stats .stat.es.DEX{
+	background:url('image/stats/es/des.png') no-repeat;
+	background-size:70px;
+	background-position: 50% 10%;
+}
+
+.card .stats .stat.fr.STR{
+	background:url('image/stats/fr/for.png') no-repeat;
+	background-size:70px;
+	background-position: 50% 10%;
+}
+
+.card .stats .stat.fr.ARM{
+	background:url('image/stats/fr/arm.png') no-repeat;
+	background-size:70px;
+	background-position: 50% 10%;
+}
+
+.card .stats .stat.fr.WILL{
+	background:url('image/stats/fr/vol.png') no-repeat;
+	background-size:70px;
+	background-position: 50% 10%;
+}
+
+.card .stats .stat.fr.DEX{
+	background:url('image/stats/fr/dex.png') no-repeat;
+	background-size:70px;
+	background-position: 50% 10%;
 }
 
 .card .stats .stat div{
@@ -376,9 +761,39 @@ cursor:move;
 	background-size:40px 40px;
 }
 
+.card .stats .stat .dice.yellow{
+	background:url('image/dice/yellow-dice.png');
+	background-size:40px 40px;
+}
+
 .card .stats .stat .dice.orange{
 	background:url('image/dice/orange-dice.png');
 	background-size:40px 40px;
+}
+
+.card .stats .stat .dice.black{
+	background:url('image/dice/black-dice.png');
+	background-size:40px 40px;
+}
+
+.card .stats .stat .dice.brown{
+	background:url('image/dice/brown-dice.png');
+	background-size:40px 40px;
+}
+
+.card .stats .stat .dice.pink{
+	background:url('image/dice/pink-dice.png');
+	background-size:40px 40px;
+}
+
+.card .stats .stat .dice.white{
+	background:url('image/dice/white-dice.png');
+	background-size:40px 40px;
+}
+
+span.dice.star{
+	background:url('image/dice/white-star.png') no-repeat;
+	background-size:15px 15px;
 }
 
 .card span.dice,
@@ -386,6 +801,7 @@ cursor:move;
 .card span.actionMod,
 .card span.moveMod,
 .card span.heartMod,
+.card span.potionMod,
 .card span.shieldMod{
 	width:40px;
 	height:37px;
@@ -414,6 +830,11 @@ cursor:move;
 	background-size:40px 40px;
 }
 
+.card span.dice.yellow{
+	background:url('image/dice/yellow-dice.png') no-repeat;
+	background-size:40px 40px;
+}
+
 .card span.dice.orange{
 	background:url('image/dice/orange-dice.png') no-repeat;
 	background-size:40px 40px;
@@ -421,6 +842,26 @@ cursor:move;
 
 .card span.dice.purple{
 	background:url('image/dice/purple-dice.png') no-repeat;
+	background-size:40px 40px;
+}
+
+.card span.dice.black{
+	background:url('image/dice/black-dice.png') no-repeat;
+	background-size:40px 40px;
+}
+
+.card span.dice.brown{
+	background:url('image/dice/brown-dice.png') no-repeat;
+	background-size:40px 40px;
+}
+
+.card span.dice.pink{
+	background:url('image/dice/pink-dice.png') no-repeat;
+	background-size:40px 40px;
+}
+
+.card span.dice.white{
+	background:url('image/dice/white-dice.png') no-repeat;
 	background-size:40px 40px;
 }
 
@@ -480,6 +921,12 @@ cursor:move;
 	height:30px;
 }
 
+.card span.potionMod{
+	background:url('image/potion/potion2.png') no-repeat 0px 3px;
+	background-size:40px 30px;
+	height: 30px;
+}
+
 .card span.stat{
 	text-shadow:2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px  1px 0 #000, 1px  1px 0 #000;
 	color:#fff;
@@ -498,22 +945,23 @@ cursor:move;
 	margin-bottom:27px;
 }
 
-.card .affinity{
-	margin-top:-20px;
-	margin-left:-5px;
-}
-
 .card .back .keywordsSection .affinity{
 	margin:0px;
 }
 
 .card .keywordsList{
-	display: inline-block;
 	vertical-align: top;
 	font-weight:bold;
 	text-transform: uppercase;
 	font-family:'Adelon';
 	font-size: 19px;
+	padding-left:7.5px;
+}
+
+.keywordsList .keyword{
+	display:inline-block;
+	position:relative;
+	vertical-align: top;
 }
 
 
@@ -534,6 +982,14 @@ cursor:move;
 
 .card.hero .keywordsSection .subStats{
 	background:url('image/heart-potion2.png') no-repeat 0px 10px;
+	width:120px;
+	height:80px;
+	margin-top:-40px;
+	padding-top:20px;
+}
+
+.card.pet .keywordsSection .subStats{
+	background:url('image/heart-can.png') no-repeat 0px 10px;
 	width:120px;
 	height:80px;
 	margin-top:-40px;
@@ -568,194 +1024,269 @@ cursor:move;
 	left: 5px;
 }
 
+.card.pet .keywordsSection .subStats .petCost{
+	top: 27px;
+	left: 20px;
+}
+
+.card.pet .keywordsSection .subStats .wounds{
+	left: 15px;
+	top: 3px;
+}
+
 
 /*AFFINITY*/
-/*CITRINE*/
-.card .affinity.citrine{
+.cardAffinity{
 	display:inline-block;
-	background: url('image/affinity/citrine.png') no-repeat;
+	margin-top:-20px;
+	margin-left:-5px;
 	width:42px;
 	height:60px;
-	position: relative;
-    top: 10px;
 }
 
-
-.card .back .affinity.citrine, .card .item .affinity.citrine{
-	background-size:auto 35px;
+.card .affinity{
+	display:inline-block;
+	margin-top:-20px;
+	margin-left:-5px;
 	width:25px;
 	height:35px;
+	position: relative;
+    top: 10px;
 }
 
-.card .affinity.citrine.emerald{
-	display:inline-block;
+/*CITRINE*/
+.cardAffinity.CITRINE{
+	background: url('image/affinity/citrine.png') no-repeat;
+	background-size:auto 60px;
+}
+
+.card .affinity.CITRINE{
+	background: url('image/affinity/citrine.png') no-repeat;
+	background-size:auto 35px;
+}
+
+.cardAffinity.CITRINEEMERALD, .cardAffinity.EMERALDCITRINE{
 	background: url('image/affinity/citrine-emerald.png') no-repeat;
-	width:42px;
-	height:60px;
-	position: relative;
-    top: 10px;
+	background-size:auto 60px;
 }
 
-.card .affinity.citrine.ruby{
-	display:inline-block;
+.card .affinity.CITRINEEMERALD, .card .affinity.EMERALDCITRINE{
+	background: url('image/affinity/citrine-emerald.png') no-repeat;
+	background-size:auto 35px;
+}
+
+.cardAffinity.CITRINERUBY, .cardAffinity.RUBYCITRINE{
 	background: url('image/affinity/citrine-ruby.png') no-repeat;
-	width:42px;
-	height:60px;
-	position: relative;
-    top: 10px;
+	background-size:auto 60px;
 }
 
-.card .affinity.citrine.sapphire{
-	display:inline-block;
+.card .affinity.CITRINERUBY, .card .affinity.RUBYCITRINE{
+	background: url('image/affinity/citrine-ruby.png') no-repeat;
+	background-size:auto 35px;
+}
+
+.cardAffinity.CITRINESAPPHIRE, .cardAffinity.SAPPHIRECITRINE{
 	background: url('image/affinity/citrine-sapphire.png') no-repeat;
-	width:42px;
-	height:60px;
-	position: relative;
-    top: 10px;
+	background-size:auto 60px;
 }
 
-.card .affinity.citrine.amethyst{
-	display:inline-block;
+.card .affinity.CITRINESAPPHIRE, .card .affinity.SAPPHIRECITRINE{
+	background: url('image/affinity/citrine-sapphire.png') no-repeat;
+	background-size:auto 35px;
+}
+
+.cardAffinity.AMETHYSTCITRINE, .cardAffinity.CITRINEAMETHYST{
 	background: url('image/affinity/citrine-amethyst.png') no-repeat;
-	width:42px;
-	height:60px;
-	position: relative;
-    top: 10px;
+	background-size:auto 60px;
 }
 
-.card .affinity.all{
-	display:inline-block;
-	background: url('image/affinity/rainbow.png') no-repeat;
-	width:42px;
-	height:60px;
-	position: relative;
-    top: 10px;
+.card .affinity.AMETHYSTCITRINE, .card .affinity.CITRINEAMETHYST{
+	background: url('image/affinity/citrine-amethyst.png') no-repeat;
+	background-size:auto 35px;
 }
 
 /*EMERALD*/
-.card .affinity.emerald{
-	display:inline-block;
+.cardAffinity.EMERALD{
 	background: url('image/affinity/emerald.png') no-repeat;
-	width:42px;
-	height:60px;
-	position: relative;
-    top: 10px;
+	background-size:auto 60px;
 }
 
-.card .back .affinity.emerald, .card .item .affinity.emerald{
+.card .affinity.EMERALD{
+	background: url('image/affinity/emerald.png') no-repeat;
 	background-size:auto 35px;
-	width:25px;
-	height:35px;
 }
 
-.card .affinity.emerald.ruby{
-	display:inline-block;
+.cardAffinity.EMERALDRUBY, .cardAffinity.RUBYEMERALD{
 	background: url('image/affinity/emerald-ruby.png') no-repeat;
-	width:42px;
-	height:60px;
-	position: relative;
-    top: 10px;
+	background-size:auto 60px;
 }
 
-.card .affinity.emerald.sapphire{
-	display:inline-block;
+.card .affinity.EMERALDRUBY, .card .affinity.RUBYEMERALD{
+	background: url('image/affinity/emerald-ruby.png') no-repeat;
+	background-size:auto 35px;
+}
+
+.cardAffinity.EMERALDSAPPHIRE, .cardAffinity.SAPPHIREEMERALD{
 	background: url('image/affinity/emerald-sapphire.png') no-repeat;
-	width:42px;
-	height:70px;
+	background-size:auto 60px;
 }
 
-.card .affinity.emerald.amethyst{
-	display:inline-block;
+.card .affinity.EMERALDSAPPHIRE, .card .affinity.SAPPHIREEMERALD{
+	background: url('image/affinity/emerald-sapphire.png') no-repeat;
+	background-size:auto 35px;
+}
+
+.cardAffinity.AMETHYSTEMERALD, .cardAffinity.EMERALDAMETHYST{
 	background: url('image/affinity/emerald-amethyst.png') no-repeat;
-	width:42px;
-	height:60px;
-	position: relative;
-    top: 10px;
+	background-size:auto 60px;
+}
+
+.card .affinity.AMETHYSTEMERALD, .card .affinity.EMERALDAMETHYST{
+	background: url('image/affinity/emerald-amethyst.png') no-repeat;
+	background-size:auto 35px;
 }
 
 
 /*RUBY*/
-.card .affinity.ruby{
-	display:inline-block;
+.cardAffinity.RUBY{
 	background: url('image/affinity/ruby.png') no-repeat;
-	width:42px;
-	height:60px;
-	position: relative;
-    top: 10px;
+	background-size:auto 60px;
 }
 
-.card .back .affinity.ruby, .card .item .affinity.ruby{
+.card .affinity.RUBY{
+	background: url('image/affinity/ruby.png') no-repeat;
 	background-size:auto 35px;
-	width:25px;
-	height:35px;
 }
 
-.card .affinity.ruby.sapphire{
-	display:inline-block;
+.cardAffinity.RUBYSAPPHIRE, .cardAffinity.SAPPHIRERUBY{
 	background: url('image/affinity/ruby-sapphire.png') no-repeat;
-	width:42px;
-	height:60px;
-	position: relative;
-    top: 10px;
+	background-size:auto 60px;
 }
 
-.card .affinity.ruby.amethyst{
-	display:inline-block;
+.card .affinity.RUBYSAPPHIRE, .card .affinity.SAPPHIRERUBY{
+	background: url('image/affinity/ruby-sapphire.png') no-repeat;
+	background-size:auto 35px;
+}
+
+.cardAffinity.RUBYAMETHYST, .cardAffinity.AMETHYSTRUBY{
 	background: url('image/affinity/ruby-amethyst.png') no-repeat;
-	width:42px;
-	height:60px;
-	position: relative;
-    top: 10px;
+	background-size:auto 60px;
+}
+
+.card .affinity.RUBYAMETHYST, .card .affinity.AMETHYSTRUBY{
+	background: url('image/affinity/ruby-amethyst.png') no-repeat;
+	background-size:auto 35px;
 }
 
 
 /*SAPPHIRE*/
-.card .affinity.sapphire{
-	display:inline-block;
+.cardAffinity.SAPPHIRE{
 	background: url('image/affinity/sapphire.png') no-repeat;
-	width:42px;
-	height:60px;
-	position: relative;
-    top: 10px;
+	background-size:auto 60px;
 }
 
-
-.card .back .affinity.sapphire, .card .item .affinity.sapphire{
+.card .affinity.SAPPHIRE{
+	background: url('image/affinity/sapphire.png') no-repeat;
 	background-size:auto 35px;
-	width:25px;
-	height:35px;
 }
 
-.card .affinity.sapphire.amethyst{
-	display:inline-block;
+.cardAffinity.AMETHYSTSAPPHIRE, .cardAffinity.SAPPHIREAMETHYST{
 	background: url('image/affinity/amethyst-sapphire.png') no-repeat;
-	width:42px;
-	height:60px;
-	position: relative;
-    top: 10px;
+	background-size:auto 60px;
+}
+
+.card .affinity.AMETHYSTSAPPHIRE, .card .affinity.SAPPHIREAMETHYST{
+	background: url('image/affinity/amethyst-sapphire.png') no-repeat;
+	background-size:auto 35px;
 }
 
 /*Amethyst*/
-.card .affinity.amethyst{
-	display:inline-block;
+.cardAffinity.AMETHYST{
 	background: url('image/affinity/amethyst.png') no-repeat;
-	width:42px;
-	height:60px;
-	position: relative;
-    top: 10px;
+	background-size:auto 60px;
 }
 
-.card .back .affinity.amethyst, .card .item .affinity.amethyst{
+.card .affinity.AMETHYST{
+	background: url('image/affinity/amethyst.png') no-repeat;
 	background-size:auto 35px;
-	width:25px;
-	height:35px;
 }
 
+/*All*/
+.cardAffinity.ALL, .cardAffinity.ALLAFFINITY{
+	background: url('image/affinity/rainbow.png') no-repeat;
+	background-size:auto 60px;
+}
+
+.card .affinity.ALL, .card .affinity.ALLAFFINITY{
+	background: url('image/affinity/rainbow.png') no-repeat;
+	background-size:auto 35px;
+}
+
+/*CLASSIC CARD COLORS*/
+.card.hero, .card.hero.classicBlue, .card.pet.classicBlue, .card.monster.classicBlue, .card.loot, .classicBlue{
+	background: radial-gradient(ellipse at center,  rgb(148,198,236) 23%, rgb(15,78,129) 79%, rgb(0,0,0) 100%);
+}
+
+.card.hero.classicRed, .card.pet.classicRed, .card.monster.classicRed, .card.treasure, .card.wonder, .classicRed{
+	background: radial-gradient(ellipse at center, rgb(212,49,38) 23%, rgb(84,16,10) 79%, rgb(0,0,0) 100%);
+}
+
+.card.hero.classicGreen, .card.pet.classicGreen, .card.monster.classicGreen, .classicGreen{
+	/*background: radial-gradient(ellipse at center, rgba(180,221,180,1) 0%,rgba(131,199,131,1) 17%,rgba(82,177,82,1) 33%,rgba(0,138,0,1) 67%,rgba(0,87,0,1) 83%,rgba(0,36,0,1) 100%);*/
+	background: radial-gradient(ellipse at center, #5bc6a4 1%,#429078 42%,#255246 93%);
+}
+
+.card.hero.classicPurple, .card.pet.classicPurple, .card.monster.classicPurple , .card.arcadeSolo, .card.arcadeGang, .card.command, .classicPurple{
+	background: radial-gradient(ellipse at center, rgba(200,94,199,1) 3%, rgba(99,43,98,1) 100%);
+}
+
+.card.hero.classicYellow, .card.pet.classicYellow, .card.monster.classicYellow, .classicYellow{
+	background: radial-gradient(ellipse at center, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+}
 
 /*CARD COLORS*/
-.card.hero, .card.loot{
-	background:blue;
-	background: radial-gradient(ellipse at center,  rgb(148,198,236) 23%,rgb(15,78,129) 79%,rgb(0,0,0) 100%);
+.card.hero, .card.hero.blue, .card.pet.blue, .card.monster.blue, .card.loot, .blue{
+	background: radial-gradient(ellipse at center, #17174c 23%, #1d1d86 79%, rgb(0,0,0) 100%);
+}
+
+.card.hero.red, .card.pet.red, .card.monster.red, .card.treasure, .card.wonder, .red{
+	background: radial-gradient(ellipse at center, #D43126 23%, #9B241C 79%, rgb(0,0,0) 100%);
+}
+
+.card.hero.green, .card.pet.green, .card.monster.green, .green{
+	background: radial-gradient(ellipse at center,  green 23%,  darkgreen 79%, rgb(0,0,0) 100%);
+}
+
+.card.hero.purple, .card.pet.purple, .card.monster.purple , .card.arcadeSolo.purple, .card.arcadeGang.purple, .card.command.purple, .purple{
+	background: radial-gradient(ellipse at center, purple 23%,  indigo 79%, rgb(0,0,0) 100%);
+}
+
+.card.hero.yellow, .card.pet.yellow, .card.monster.yellow, .yellow{
+	background: radial-gradient(ellipse at center, yellow 23%, gold 79%, rgb(0,0,0) 100%);
+}
+
+.card.hero.orange, .card.pet.orange, .card.monster.orange, .orange{
+	background: radial-gradient(ellipse at center, orange 23%, darkorange 79%, rgb(0,0,0) 100%);
+}
+
+.card.hero.pink, .card.pet.pink, .card.monster.pink, .pink{
+	background: radial-gradient(ellipse at center, pink 23%, hotpink 79%, rgb(0,0,0) 100%);
+}
+
+.card.hero.brown, .card.pet.brown, .card.monster.brown, .brown{
+	background: radial-gradient(ellipse at center, saddlebrown 23%, #6B3710 79%, rgb(0,0,0) 100%);
+}
+
+.card.hero.gray, .card.pet.gray, .card.monster.gray, .gray{
+	background: radial-gradient(ellipse at center, gray 23%, darkgray 79%, black 100%);
+}
+
+.card.hero.white, .card.pet.white, .card.monster.white, .white{
+	background: radial-gradient(ellipse at center, white 23%, white 79%, black 100%);
+}
+
+.card.hero.black, .card.pet.black, .card.monster.black, .black{
+	background: radial-gradient(ellipse at center, black 23%, black 79%, white 100%);
 }
 
 .card.hero .front, .card.pet .front{
@@ -765,25 +1296,6 @@ cursor:move;
 .card.hero .back, .card.pet .back{
 	background-image:url('image/border-back-gold.png');
 }
-
-.card.monster.red, .card.treasure, .card.wonder{
-	background:red;
-	background: radial-gradient(ellipse at center,  rgb(212,49,38) 23%,rgb(84,16,10) 79%,rgb(0,0,0) 100%);
-}
-
-.card.monster.green{
-	/*background: radial-gradient(ellipse at center, rgba(180,221,180,1) 0%,rgba(131,199,131,1) 17%,rgba(82,177,82,1) 33%,rgba(0,138,0,1) 67%,rgba(0,87,0,1) 83%,rgba(0,36,0,1) 100%);*/
-	background: radial-gradient(ellipse at center, #5bc6a4 1%,#429078 42%,#255246 93%);
-}
-
-.card.monster.purple , .card.arcadeSolo, .card.arcadeGang, .card.command{
-	background: radial-gradient(ellipse at center, rgba(200,94,199,1) 3%,rgba(99,43,98,1) 100%);
-}
-
-.card.monster.yellow{
-	background: radial-gradient(ellipse at center, rgba(241,231,103,1) 0%,rgba(254,182,69,1) 100%);
-}
-
 
 .card.monster .front{
 	background-image:url('image/border-silver.png');
@@ -800,13 +1312,6 @@ cursor:move;
 .card.arcadeSolo .back{
 	background-image:url('image/border-back-silver.png');
 }
-
-.card.pet{
-	background:orange;
-	background: radial-gradient(ellipse at center,  rgb(221,131,63) 23%,rgb(95,49,11) 79%,rgb(0,0,0) 100%);
-	background: radial-gradient(ellipse at center, rgba(255,102,0,1) 14%,rgba(153,17,0,1) 76%);
-}
-
 
 /*ABILITIES*/
 .card .abilities{
@@ -1009,7 +1514,7 @@ cursor:move;
 	top: 15px;
 }
 
-.card .slot.ruby{
+.card .slot.RUBY{
 	background:url('image/heroSlot/hero_ruby.png');
 	width: 45px;
 	height: 43px;
@@ -1019,7 +1524,7 @@ cursor:move;
 	left: 311px;
 }
 
-.card .slot.emerald{
+.card .slot.EMERALD{
 	background:url('image/heroSlot/hero_emerald.png');
 	width: 43px;
 	height: 45px;
@@ -1030,8 +1535,8 @@ cursor:move;
 	z-index: 2;
 }
 
-.card .slot.saphire{
-	background:url('image/heroSlot/hero_saphire.png');
+.card .slot.SAPPHIRE{
+	background:url('image/heroSlot/hero_sapphire.png');
 	width: 45px;
 	height: 43px;
 	display: inline-block;
@@ -1041,7 +1546,7 @@ cursor:move;
 	z-index: 2;
 }
 
-.card .slot.citrine{
+.card .slot.CITRINE{
 	background:url('image/heroSlot/hero_citrine.png');
 	width: 42px;
 	height: 46px;

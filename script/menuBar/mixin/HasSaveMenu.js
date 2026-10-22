@@ -29,8 +29,10 @@ function HasSaveMenu(){
    */
   this.saveMenu.find('.saveAsJson').click($.proxy(function(coreNode,event){
     event.preventDefault();
+	
+	var temp = $('input[name="title"]')[0];
 
-    if($('input[name="title"]')[0].checkValidity()){
+    if(temp.checkValidity()){
       var data = coreNode.gatherData();
       coreNode.saveAsFile(JSON.stringify(data),$('.form input[name="title"]').val()+'.json',"text/plain;charset=utf-8");
     }else{
@@ -46,6 +48,12 @@ function HasSaveMenu(){
     var data = {};
     data.versionSpec = "2.0";
     data.cards = $('.cardContainer').data('node').gatherData();
+
+    var keywordStore = $('.page').data('keywordStore');
+    if(keywordStore && keywordStore.customKeywords && Object.keys(keywordStore.customKeywords).length > 0){
+      data.customKeywords = JSON.parse(JSON.stringify(keywordStore.customKeywords));
+    }
+
     return data;
   };
 
